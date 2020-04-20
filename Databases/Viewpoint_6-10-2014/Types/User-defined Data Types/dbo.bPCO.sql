@@ -1,0 +1,2 @@
+CREATE TYPE [dbo].[bPCO] FROM varchar (10) NOT NULL
+GO

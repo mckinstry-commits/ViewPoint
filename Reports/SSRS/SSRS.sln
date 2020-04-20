@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "VistaSSRSReports", "VistaSSRSReports\VistaSSRSReports.rptproj", "{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		2016|Default = 2016|Default
+		Apple|Default = Apple|Default
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		ProductionTest|Default = ProductionTest|Default
+		Release|Default = Release|Default
+		rpts-Dev|Default = rpts-Dev|Default
+		rpts-prod|Default = rpts-prod|Default
+		rpts-stage|Default = rpts-stage|Default
+		rpts-test|Default = rpts-test|Default
+		StagingEvl|Default = StagingEvl|Default
+		Subscription|Default = Subscription|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.2016|Default.ActiveCfg = 2016
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.2016|Default.Build.0 = 2016
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.2016|Default.Deploy.0 = 2016
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Apple|Default.ActiveCfg = Apple
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Apple|Default.Build.0 = Apple
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Apple|Default.Deploy.0 = Apple
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Debug|Default.ActiveCfg = Debug
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Debug|Default.Build.0 = Debug
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Debug|Default.Deploy.0 = Debug
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.DebugLocal|Default.Build.0 = DebugLocal
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.ProductionTest|Default.ActiveCfg = Production
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.ProductionTest|Default.Build.0 = Production
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.ProductionTest|Default.Deploy.0 = Production
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Release|Default.ActiveCfg = Release
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Release|Default.Build.0 = Release
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Release|Default.Deploy.0 = Release
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-Dev|Default.ActiveCfg = rpts-Dev
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-Dev|Default.Build.0 = rpts-Dev
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-Dev|Default.Deploy.0 = rpts-Dev
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-prod|Default.ActiveCfg = rpts-prod
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-prod|Default.Build.0 = rpts-prod
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-prod|Default.Deploy.0 = rpts-prod
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-stage|Default.ActiveCfg = reports.stage
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-stage|Default.Build.0 = reports.stage
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-stage|Default.Deploy.0 = reports.stage
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-test|Default.ActiveCfg = rpts-test
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-test|Default.Build.0 = rpts-test
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.rpts-test|Default.Deploy.0 = rpts-test
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.StagingEvl|Default.ActiveCfg = Staging
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.StagingEvl|Default.Build.0 = Staging
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.StagingEvl|Default.Deploy.0 = Staging
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Subscription|Default.ActiveCfg = Subscription
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Subscription|Default.Build.0 = Subscription
+		{BBE78A73-8AC6-4C91-BCD7-81845F1283C9}.Subscription|Default.Deploy.0 = Subscription
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29E08CEF-8849-4949-A91E-185AD823FBB6}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://setfs01:8080/tfs/mckinstry%20team
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VistaSSRSReports\\VistaSSRSReports.rptproj
+		SccProjectName1 = VistaSSRSReports
+		SccLocalPath1 = VistaSSRSReports
+	EndGlobalSection
+EndGlobal

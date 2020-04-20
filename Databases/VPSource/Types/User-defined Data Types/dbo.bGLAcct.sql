@@ -1,0 +1,2 @@
+CREATE TYPE [dbo].[bGLAcct] FROM char (20) NOT NULL
+GO

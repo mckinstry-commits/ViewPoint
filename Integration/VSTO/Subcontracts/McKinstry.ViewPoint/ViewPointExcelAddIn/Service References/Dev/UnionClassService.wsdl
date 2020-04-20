@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UnionClassService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52963/UnionClassService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52963/UnionClassService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52963/UnionClassService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" />
+      <xsd:import schemaLocation="http://localhost:52963/UnionClassService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+      <xsd:import schemaLocation="http://localhost:52963/UnionClassService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://localhost:52963/UnionClassService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUnionClassService_AddUpdateCraftClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUpdateCraftClass" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_AddUpdateCraftClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUpdateCraftClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_AddUpdateDeductions_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUpdateDeductions" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_AddUpdateDeductions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUpdateDeductionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_AddUpdateEarnings_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUpdateEarnings" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_AddUpdateEarnings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUpdateEarningsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_AddUpdateShiftRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUpdateShiftRate" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_AddUpdateShiftRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUpdateShiftRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_GetMasterEarnings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterEarnings" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_GetMasterEarnings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterEarningsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_GetMasterDeductions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterDeductions" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_GetMasterDeductions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterDeductionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_GetMasterCrafts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterCrafts" />
+  </wsdl:message>
+  <wsdl:message name="IUnionClassService_GetMasterCrafts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterCraftsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUnionClassService">
+    <wsdl:operation name="AddUpdateCraftClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnionClassService/AddUpdateCraftClass" message="tns:IUnionClassService_AddUpdateCraftClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnionClassService/AddUpdateCraftClassResponse" message="tns:IUnionClassService_AddUpdateCraftClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateDeductions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnionClassService/AddUpdateDeductions" message="tns:IUnionClassService_AddUpdateDeductions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnionClassService/AddUpdateDeductionsResponse" message="tns:IUnionClassService_AddUpdateDeductions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateEarnings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnionClassService/AddUpdateEarnings" message="tns:IUnionClassService_AddUpdateEarnings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnionClassService/AddUpdateEarningsResponse" message="tns:IUnionClassService_AddUpdateEarnings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateShiftRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnionClassService/AddUpdateShiftRate" message="tns:IUnionClassService_AddUpdateShiftRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnionClassService/AddUpdateShiftRateResponse" message="tns:IUnionClassService_AddUpdateShiftRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterEarnings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnionClassService/GetMasterEarnings" message="tns:IUnionClassService_GetMasterEarnings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnionClassService/GetMasterEarningsResponse" message="tns:IUnionClassService_GetMasterEarnings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterDeductions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnionClassService/GetMasterDeductions" message="tns:IUnionClassService_GetMasterDeductions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnionClassService/GetMasterDeductionsResponse" message="tns:IUnionClassService_GetMasterDeductions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCrafts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnionClassService/GetMasterCrafts" message="tns:IUnionClassService_GetMasterCrafts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnionClassService/GetMasterCraftsResponse" message="tns:IUnionClassService_GetMasterCrafts_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUnionClassService" type="tns:IUnionClassService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddUpdateCraftClass">
+      <soap:operation soapAction="http://tempuri.org/IUnionClassService/AddUpdateCraftClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateDeductions">
+      <soap:operation soapAction="http://tempuri.org/IUnionClassService/AddUpdateDeductions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateEarnings">
+      <soap:operation soapAction="http://tempuri.org/IUnionClassService/AddUpdateEarnings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateShiftRate">
+      <soap:operation soapAction="http://tempuri.org/IUnionClassService/AddUpdateShiftRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterEarnings">
+      <soap:operation soapAction="http://tempuri.org/IUnionClassService/GetMasterEarnings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterDeductions">
+      <soap:operation soapAction="http://tempuri.org/IUnionClassService/GetMasterDeductions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCrafts">
+      <soap:operation soapAction="http://tempuri.org/IUnionClassService/GetMasterCrafts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UnionClassService">
+    <wsdl:port name="BasicHttpBinding_IUnionClassService" binding="tns:BasicHttpBinding_IUnionClassService">
+      <soap:address location="http://localhost:52963/UnionClassService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

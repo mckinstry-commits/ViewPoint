@@ -1,0 +1,2 @@
+GRANT EXECUTE TO [public]
+GRANT VIEW DEFINITION TO [public]

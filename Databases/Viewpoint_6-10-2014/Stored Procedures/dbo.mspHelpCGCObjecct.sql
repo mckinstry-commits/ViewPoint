@@ -1,0 +1,155 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[mspHelpCGCObjecct]
+(
+	@cgcSchema VARCHAR(30)=null
+,	@cgcTableName VARCHAR(30)=null
+)
+
+AS
+
+BEGIN
+
+DECLARE @sysname VARCHAR(30)
+DECLARE @table_schema VARCHAR(30)
+DECLARE @table_name VARCHAR(30)
+DECLARE @table_type VARCHAR(30)
+DECLARE @table_descr VARCHAR(50)
+DECLARE @table_descr2 VARCHAR(50)
+
+DECLARE @COLUMN_NAME  VARCHAR(50)
+DECLARE @DATA_TYPE  VARCHAR(50)
+DECLARE @LENGTH  VARCHAR(50)
+DECLARE @CHARACTER_MAXIMUM_LENGTH  VARCHAR(50)
+DECLARE @NUMERIC_SCALE  VARCHAR(50)
+DECLARE @NUMERIC_PRECISION  VARCHAR(50)
+DECLARE @IS_NULLABLE  VARCHAR(50)
+DECLARE @IS_UPDATABLE  VARCHAR(50)
+DECLARE @COLUMN_TEXT  VARCHAR(50)
+DECLARE @COLUMN_HEADING   VARCHAR(50)
+
+SELECT @sysname=CATALOG_NAME FROM CMS.S1017192.QSYS2.CATALOG_NAME
+--SELECT
+--	@cgcSchema='CMSFIL'
+--,	@cgcTableName='PRPMST'
+
+SELECT 
+	@table_schema=COALESCE(cgcsystables.TABLE_SCHEMA,'')
+,	@table_name=COALESCE(cgcsystables.TABLE_NAME,'')
+,	@table_type=COALESCE(cgcsystables.TABLE_TYPE,'')	
+,	@table_descr=COALESCE(cgcsystables.TABLE_TEXT,'')
+,	@table_descr2=COALESCE(cgcsystables.LONG_COMMENT,'')
+FROM 
+	CMS.S1017192.QSYS2.SYSTABLES cgcsystables	
+WHERE
+	cgcsystables.TABLE_SCHEMA=@cgcSchema
+AND cgcsystables.TABLE_NAME=@cgcTableName
+AND cgcsystables.TABLE_TYPE IN ('P','V')
+ORDER BY
+	cgcsystables.TABLE_SCHEMA	
+,	cgcsystables.TABLE_NAME
+,	cgcsystables.TABLE_TYPE
+
+PRINT 
+	'[ '
++	CAST(@sysname + '.' + @table_schema + '.' + @table_name + ' (' + @table_type + ')' AS CHAR(50))
++	CAST(@table_descr AS CHAR(55))
++	CAST(@table_descr2 AS CHAR(55))
++	' ]'
+
+DECLARE colcur CURSOR for	
+SELECT 
+	COALESCE(cgcsyscolumns.COLUMN_NAME,'')
+,	COALESCE(cgcsyscolumns.DATA_TYPE,'')
+,	COALESCE(cgcsyscolumns.LENGTH,'')
+,	COALESCE(cgcsyscolumns.CHARACTER_MAXIMUM_LENGTH,'')
+,	COALESCE(cgcsyscolumns.NUMERIC_SCALE,'')
+,	COALESCE(cgcsyscolumns.NUMERIC_PRECISION,'')
+,	COALESCE(cgcsyscolumns.IS_NULLABLE,'')
+,	COALESCE(cgcsyscolumns.IS_UPDATABLE,'')
+,	COALESCE(cgcsyscolumns.COLUMN_TEXT,'')
+,	COALESCE(cgcsyscolumns.COLUMN_HEADING,'')
+FROM 
+	CMS.S1017192.QSYS2.SYSCOLUMNS cgcsyscolumns
+WHERE 
+	cgcsyscolumns.TABLE_NAME=@cgcTableName
+AND cgcsyscolumns.TABLE_SCHEMA=@cgcSchema
+ORDER BY 
+	cgcsyscolumns.ORDINAL_POSITION
+FOR READ ONLY
+
+OPEN colcur
+FETCH colcur INTO 
+	@COLUMN_NAME
+,	@DATA_TYPE
+,	@LENGTH  
+,	@CHARACTER_MAXIMUM_LENGTH 
+,	@NUMERIC_SCALE 
+,	@NUMERIC_PRECISION 
+,	@IS_NULLABLE 
+,	@IS_UPDATABLE 
+,	@COLUMN_TEXT 
+,	@COLUMN_HEADING   
+
+WHILE @@fetch_status=0
+BEGIN
+	IF @DATA_TYPE='CHAR'
+	BEGIN
+	PRINT
+		CAST('' AS CHAR(5))
+	+	CAST(@COLUMN_NAME AS CHAR(20))
+	+	CAST(@COLUMN_TEXT AS CHAR(30))
+	+	CAST(@DATA_TYPE
+	--+	'(' + @LENGTH  + ')'
+	+	'(' + @CHARACTER_MAXIMUM_LENGTH + ')' AS CHAR(20))
+	--+	'(' + @NUMERIC_SCALE   + ')'
+	--+	'(' + @NUMERIC_PRECISION   + ')'
+--	+	'(' + @IS_NULLABLE 
+--	+	'(' + @IS_UPDATABLE 
+--	+	'(' + @COLUMN_HEADING   	
+	END
+	ELSE
+	BEGIN
+	PRINT
+		CAST('' AS CHAR(5))
+	+	CAST(@COLUMN_NAME AS CHAR(20))
+	+	CAST(@COLUMN_TEXT AS CHAR(30))
+	+	CAST(@DATA_TYPE +'(' + @NUMERIC_PRECISION +	',' + @NUMERIC_SCALE + ')' AS CHAR(20))
+	--+	'(' + @LENGTH  + ')'
+	--+	'(' + @CHARACTER_MAXIMUM_LENGTH   + ')'
+--	+	'(' + @IS_NULLABLE 
+--	+	'(' + @IS_UPDATABLE 
+--	+	'(' + @COLUMN_HEADING   	
+	
+	END
+	FETCH colcur INTO 
+		@COLUMN_NAME
+	,	@DATA_TYPE
+	,	@LENGTH  
+	,	@CHARACTER_MAXIMUM_LENGTH 
+	,	@NUMERIC_SCALE 
+	,	@NUMERIC_PRECISION 
+	,	@IS_NULLABLE 
+	,	@IS_UPDATABLE 
+	,	@COLUMN_TEXT 
+	,	@COLUMN_HEADING   
+END
+
+CLOSE colcur
+DEALLOCATE colcur
+
+	
+--SELECT 
+--	*
+--FROM 
+--	CMS.S1017192.QSYS2.SYSINDEXES cgcsysindexes
+--WHERE 
+--	cgcsysindexes.TABLE_NAME=@cgcTableName
+--AND cgcsysindexes.TABLE_SCHEMA=@cgcSchema
+--AND cgcsysindexes.IS_UNIQUE=1
+	
+	
+END
+GO

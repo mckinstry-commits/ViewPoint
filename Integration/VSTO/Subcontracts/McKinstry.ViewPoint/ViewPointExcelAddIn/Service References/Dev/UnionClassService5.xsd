@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:52963/UnionClassService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" />
+  <xs:import schemaLocation="http://localhost:52963/UnionClassService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Services" />
+  <xs:element name="AddUpdateCraftClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="craftclasses" nillable="true" type="q1:ArrayOfCraftInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUpdateCraftClassResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUpdateDeductions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="deduction" nillable="true" type="q2:ArrayOfDeduction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUpdateDeductionsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUpdateEarnings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="earnings" nillable="true" type="q3:ArrayOfEarning" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUpdateEarningsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUpdateShiftRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="shiftrates" nillable="true" type="q4:ArrayOfShiftRate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUpdateShiftRateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMasterEarnings">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMasterEarningsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="GetMasterEarningsResult" nillable="true" type="q5:ArrayOfMasterEarning" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMasterDeductions">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMasterDeductionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="GetMasterDeductionsResult" nillable="true" type="q6:ArrayOfMasterDeduction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMasterCrafts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMasterCraftsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Services" minOccurs="0" name="GetMasterCraftsResult" nillable="true" type="q7:ArrayOfCraftValue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

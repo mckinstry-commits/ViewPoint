@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Each siteMapNode tag represents a menu item in the menu control. 
+The tags are case-sensitive and should contain the following case-sensitive attributes:
+  title: Text to be displayed for the menu item. Surround any part of the title to be retrieved from a RESX file with {}.
+  eg. title="{Menu:Add} Categories".
+	
+  desciption: Tool tip for the menu item. Surround any part of the title to be retrieved from a RESX file with {}.
+  eg. description="{Menu:Add} Categories".
+
+  url: The url value may be an empty string or may contain a unique value. The value should be one of the following types:
+      Absolute url: a complete path of the web page you want to display. 
+      eg: http://www.ironspeed.com
+      Relative url: url relative to application root. 
+      eg: ~/Categories/ShowCategoriesTablePage.aspx.
+      
+  imageUrl: The URL of the image to be displayed for each menu item.
+  eg. imageUrl="~/Images/MenuTopLevel.gif"
+
+  roles: A list of comma separated role ids defined as part of application's security (use role names as role ids
+  for Microsoft Active Directory and Microsoft AzMan Role management). To specify standard Iron Speed Designer roles, use:
+        Everyone: For all users.
+        NOT_ANONYMOUS: For signed in users only.
+        ANONYMOUS: For users who are not signed in.
+        NO_ACCESS: For none of the users.
+  The user should belong to one of the listed roles in order for the menu item to be displayed.
+	
+  order: (Please do not modify this attribute.) Specifies the order in which the elements are displayed. Changing the value 
+  of this attribute will not affect the order of the menu items on the display. They are used whenever a new menu item is 
+  inserted into the sitemap file to locate the position where the new menu item should be added.
+  -->
+<siteMap>
+  <siteMapNode>
+    <siteMapNode title="ISD Customer Cross Reference" description="ISD Customer Cross Reference" url="~/_layouts/ViewpointXRef/mvwISDCustomerXref/Show-MvwISDCustomerXref-Table-Mobile.aspx?" roles="" order="0" />
+    <siteMapNode title="ISD Job Cross Reference" description="ISD Job Cross Reference" url="~/_layouts/ViewpointXRef/mvwISDJobXref/Show-MvwISDJobXref-Table-Mobile.aspx?" roles="" order="0" />
+    <siteMapNode title="ISD Job Phase Cross Reference" description="ISD Job Phase Cross Reference" url="~/_layouts/ViewpointXRef/mvwISDJobPhaseXref/Show-MvwISDJobPhaseXref-Table-Mobile.aspx?" roles="" order="0" />
+    <siteMapNode title="ISD Vendor Cross Reference" description="ISD Vendor Cross Reference" url="~/_layouts/ViewpointXRef/mvwISDVendorXref/Show-MvwISDVendorXref-Table-Mobile.aspx?" roles="" order="0" />
+  </siteMapNode>
+</siteMap>

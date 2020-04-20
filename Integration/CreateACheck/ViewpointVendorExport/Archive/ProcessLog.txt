@@ -1,0 +1,16 @@
+1:58:44 PM	-----------------------------------------------
+1:58:44 PM	Monday, March 24, 2014
+1:58:44 PM	-----------------------------------------------
+1:58:44 PM	FTP Source:   sftp.server.com
+1:58:44 PM	FTP Protocol: Sftp
+1:58:44 PM	Remote Upload Dir:   /Inbound/
+1:58:44 PM	Remote Download Dir:   /Outbound/
+1:58:44 PM	Server:       SEABILLOXPS
+1:58:44 PM	Local Dir:    C:\TFS\ViewPoint\Integration\CreateACheck\ViewpointVendorExport\Download\
+1:58:44 PM	SQL Server:    MCKTESTSQL04\VIEWPOINT
+1:58:44 PM	Database:    Viewpoint
+1:58:44 PM	-----------------------------------------------
+1:58:44 PM	** VP Vendor Export "SELECT * FROM tmp_mvwCreateACheckVendorExport ORDER BY VendorName" (10 records)
+1:58:44 PM		to C:\TFS\ViewPoint\Integration\CreateACheck\ViewpointVendorExport\Upload\VP_CAC_Vendor_Export.csv
+1:58:44 PM	** Sending Email
+1:58:44 PM		To: billo@mckinstry.com

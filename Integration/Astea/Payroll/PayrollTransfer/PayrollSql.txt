@@ -1,0 +1,107 @@
+SELECT * FROM
+(
+SELECT dd.mck_extract_date, dd.mck_extract_status, CAST(dd.duration AS VARCHAR(10)) duration
+		, dd.sa_person_id, dd.order_id, dd.actual_dt, dd.bpart_id
+		,   AV.actv_type_id     
+        , 	P.search_name  
+        , 	P.actgr_id  
+        , 	P.last_name  
+        , 	emp.node_id 
+		,   CAST(dbo.fnGetTinyCompany(emp.node_id) AS VARCHAR(3)) Co 
+        , 	dd.site_company_id  
+		,   dd.order_stat_uniq_id
+		,   CASE WHEN RTRIM(dd.mck_job_phase) = '2320-0000-      -' THEN '2300-0000-      -   ' ELSE dd.mck_job_phase END mck_job_phase
+		,   CASE WHEN dd.mck_geo_id IS NULL AND LTRIM(RTRIM(state_prov_id)) = 'OR' AND LTRIM(RTRIM(city)) = 'Portland' THEN '503' ELSE dd.mck_geo_id END mck_geo_id
+		,	CAST(dd.demand_id AS VARCHAR(20)) demand_id
+		,   CAST(dbo.fnMcKGetTinySMCo() AS VARCHAR(3)) SMCo
+		,   CASE WHEN emp.node_id IN ('711', '655') THEN '10' ELSE CASE WHEN emp.node_id IN ('251', '907') THEN '7' ELSE '1' END END PaySeq
+		,   UPPER(RIGHT(dd.sa_person_id, LEN(dd.sa_person_id) - 3)) Employee
+		,   CASE WHEN dbo.fnMcKIsVPJobNo(dd.mck_string_2) = 0 THEN 'N' ELSE 'Y' END IsVPJob
+		,   dd.history
+		,   dd.mck_string_2
+		,   dd.refno
+		,	CASE WHEN UPPER(dd.mck_string_1) LIKE 'Z%' THEN 'Y' ELSE 'N' END isOverhead
+FROM
+(
+        SELECT  
+            DL.mck_extract_date     
+        ,   DL.mck_extract_status     
+        ,   DL.duration       
+        ,   DL.demand_id     
+        ,   D.sa_person_id     
+        ,   D.order_id  
+        , 	D.actual_dt  
+		,   D.bpart_id
+		,   OL.site_company_id
+		,   OL.order_stat_uniq_id
+		,   DL.mck_job_phase
+		,   DL.mck_geo_id
+		,   E.mck_string_2
+		,   'N' history
+		,   AD.state_prov_id
+		,	AD.city
+		,   S.refno
+		,	E.mck_string_1
+			FROM demand_labor DL 
+			INNER JOIN demand D ON DL.demand_id = D.demand_id 
+			INNER JOIN order_line OL 
+				INNER JOIN company C 
+					INNER JOIN address AD ON C.address_id = AD.address_id
+				ON OL.site_company_id = C.company_id
+			ON D.order_id = OL.order_id 
+			INNER JOIN order_env E ON D.order_id = E.order_id
+			INNER JOIN service_call S on D.order_id = S.order_id
+         WHERE  
+          D.actual_dt is not null  
+          AND D.actual_dt >= @dtmStartDate  
+          AND D.actual_dt < @dtmEndDate 
+		  AND (DL.mck_extract_status IS NULL OR DL.mck_extract_status = '')
+		  AND (DL.mck_extract_date IS NULL OR DL.mck_extract_date = '')
+         UNION ALL 
+        SELECT  
+            DL.mck_extract_date     
+        ,   DL.mck_extract_status     
+        ,   DL.duration       
+        ,   DL.demand_id     
+        ,   D.sa_person_id     
+        ,   D.order_id   
+        , 	D.actual_dt  
+		,   D.bpart_id
+		,   OL.site_company_id
+		,   OL.order_stat_uniq_id
+		,   DL.mck_job_phase
+		,   DL.mck_geo_id
+		,   E.mck_string_2
+		,   'Y' history
+		,   AD.state_prov_id
+		,	AD.city	
+		,   S.refno	
+		,	E.mck_string_1		
+			FROM demand_labor_done DL 
+			INNER JOIN demand_done D ON DL.demand_id = D.demand_id 
+			INNER JOIN c_order_line OL 
+				INNER JOIN company C 
+					INNER JOIN address AD ON C.address_id = AD.address_id
+				ON OL.site_company_id = C.company_id			
+			ON D.order_id = OL.order_id 
+			INNER JOIN c_order_env E ON D.order_id = E.order_id
+			INNER JOIN c_service_call S on D.order_id = S.order_id
+         WHERE  
+          D.actual_dt is not null  
+          AND D.actual_dt >= @dtmStartDate  
+          AND D.actual_dt < @dtmEndDate 
+		  AND (DL.mck_extract_status IS NULL OR DL.mck_extract_status = '')
+		  AND (DL.mck_extract_date IS NULL OR DL.mck_extract_date = '')
+) dd
+INNER JOIN actv AV ON dd.bpart_id = AV.bpart_id 
+INNER JOIN person P 
+	INNER JOIN employee emp ON P.person_id = emp.person_id
+	--INNER JOIN actgr AG ON P.actgr_id = AG.actgr_id 
+ON dd.sa_person_id = P.person_id AND P.first_name NOT LIKE '%unassigned%' and P.person_id NOT LIKE 'TECH-%'
+WHERE AV.actv_type_id in ('REGULAR_TIME','OVERTIME','OTHER') 
+      AND dd.order_stat_uniq_id not in ('2600','2700','2500','2000') 
+	  AND dd.duration > 0
+		 AND (1=1)
+) ddd
+WHERE PaySeq = @PaySeq
+ORDER BY Employee, actual_dt

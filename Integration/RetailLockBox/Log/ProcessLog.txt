@@ -1,0 +1,30 @@
+5:22:43 PM	-----------------------------------------------
+5:22:43 PM	Thursday, October 02, 2014
+5:22:43 PM	-----------------------------------------------
+5:22:43 PM	FTP Source:   sftp.retaillockbox.com
+5:22:43 PM	FTP Protocol: Sftp
+5:22:43 PM	Remote AP Upload Dir:   /VPERP/Inbound/
+5:22:43 PM	Remote AP Download Dir:   /VPERP/Outbound/AP/
+5:22:43 PM	Server:       SEABILLOXPS
+5:22:43 PM	Local Dir:    C:\TFS\ViewPoint\Integration\RetailLockBox\Download\
+5:22:43 PM	SQL Server:    MCKTESTSQL04\VIEWPOINT
+5:22:43 PM	Database:    Viewpoint
+5:22:43 PM	-----------------------------------------------
+5:22:45 PM	** AP Export "SELECT * FROM mvwRLBAPExport ORDER BY RecordType,Company, Number" (19414 records)
+5:22:45 PM		to C:\TFS\ViewPoint\Integration\RetailLockBox\Upload\RLB_AP_Header_Export.csv
+5:22:46 PM	
+5:22:49 PM	** Upload SEABILLOXPS:"C:\TFS\ViewPoint\Integration\RetailLockBox\Upload\RLB_AP_Header_Export.csv"
+5:22:49 PM		 -->> sftp.retaillockbox.com/VPERP/Inbound/
+5:22:49 PM	        	C:\TFS\ViewPoint\Integration\RetailLockBox\Upload\RLB_AP_Header_Export.csv (0 %) ... 
+5:22:49 PM	        	C:\TFS\ViewPoint\Integration\RetailLockBox\Upload\RLB_AP_Header_Export.csv (0 %) ... 
+5:22:50 PM	        	C:\TFS\ViewPoint\Integration\RetailLockBox\Upload\RLB_AP_Header_Export.csv (30 %) ... 
+5:22:51 PM	        	C:\TFS\ViewPoint\Integration\RetailLockBox\Upload\RLB_AP_Header_Export.csv (84 %) ... 
+5:22:51 PM	        	C:\TFS\ViewPoint\Integration\RetailLockBox\Upload\RLB_AP_Header_Export.csv (100 %) ... 
+5:22:51 PM	        	C:\TFS\ViewPoint\Integration\RetailLockBox\Upload\RLB_AP_Header_Export.csv (100 %) ... 
+5:22:52 PM	
+5:22:52 PM	** Download AP Files from sftp.retaillockbox.com:/VPERP/Outbound/AP/
+5:22:52 PM		 to SEABILLOXPS:C:\TFS\ViewPoint\Integration\RetailLockBox\Download\AP\
+5:22:55 PM	
+5:22:55 PM	
+5:22:55 PM	** Sending Email
+5:22:55 PM		To: billo@mckinstry.com

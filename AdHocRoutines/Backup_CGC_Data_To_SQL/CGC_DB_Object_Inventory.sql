@@ -1,0 +1,30 @@
+-- tables
+select
+	*
+from
+	CMS.S1017192.QSYS2.SYSTABLES	
+where 
+	TABLE_SCHEMA='CMSFIL'
+order by
+	TABLE_NAME
+
+-- columns
+select
+	st.TABLE_NAME
+,	st.TABLE_TEXT
+,	sc.COLUMN_NAME
+,	sc.COLUMN_HEADING
+,	sc.DATA_TYPE
+from
+	CMS.S1017192.QSYS2.SYSTABLES st join
+	CMS.S1017192.QSYS2.SYSCOLUMNS sc on
+		st.TABLE_NAME=sc.TABLE_NAME
+	and st.TABLE_OWNER=sc.TABLE_OWNER
+	and st.TABLE_SCHEMA='CMSFIL'
+	and sc.DATA_TYPE <> 'TIMESTMP'
+order by
+	sc.TABLE_NAME
+,	sc.ORDINAL_POSITION
+,	sc.COLUMN_NAME
+
+

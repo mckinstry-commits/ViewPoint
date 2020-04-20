@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppenateData", "AppenateData\AppenateData.csproj", "{0542EB53-FF19-4C67-964B-AF1B8B09E115}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0542EB53-FF19-4C67-964B-AF1B8B09E115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0542EB53-FF19-4C67-964B-AF1B8B09E115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0542EB53-FF19-4C67-964B-AF1B8B09E115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0542EB53-FF19-4C67-964B-AF1B8B09E115}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A0AF35A-2AB1-4BFF-B7E6-EFCF3A43BE95}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://setfs01.mckinstry.com/tfs/mckinstry%20team
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AppenateData\\AppenateData.csproj
+		SccProjectName1 = AppenateData
+		SccLocalPath1 = AppenateData
+	EndGlobalSection
+EndGlobal

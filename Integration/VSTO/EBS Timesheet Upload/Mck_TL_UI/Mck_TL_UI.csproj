@@ -1,0 +1,263 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>Mck_TL_UI</RootNamespace>
+    <AssemblyName>Mck_TL_UI</AssemblyName>
+    <VSTO_HostDocumentName>McK_TimeSheet_Load.xltx</VSTO_HostDocumentName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DefineConstants>VSTO40</DefineConstants>
+    <OfficeApplication>Excel</OfficeApplication>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ProjectGuid>{69A8E098-3B31-4A1F-A94D-AF90CF529234}</ProjectGuid>
+    <SolutionID>de7ed0f9-6504-40a3-a9a6-e5c023ea4b1f</SolutionID>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <PublishUrl>\\SEA-STGUPGVP01\Viewpoint Repository\Reports\Custom\TrustedAPP\VSTO\McKTimesheetLoad\</PublishUrl>
+    <InstallUrl>\\SEA-STGUPGVP01\Viewpoint Repository\Reports\Custom\TrustedAPP\VSTO\McKTimesheetLoad\</InstallUrl>
+    <TargetCulture>en</TargetCulture>
+    <ApplicationVersion>1.0.1.8</ApplicationVersion>
+    <AutoIncrementApplicationRevision>false</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>0</UpdateInterval>
+    <UpdateIntervalUnits>days</UpdateIntervalUnits>
+    <ProductName>Mck_TL_UI</ProductName>
+    <PublisherName>McKinstry</PublisherName>
+    <SupportUrl />
+    <FriendlyName>Mck_TL_UI</FriendlyName>
+    <OfficeApplicationDescription>Import EBS timesheet data into Viewpoint</OfficeApplicationDescription>
+  </PropertyGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <PropertyGroup>
+    <VSTO_EmbedTypeLibraryInAssembly>false</VSTO_EmbedTypeLibraryInAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!--
+    This section specifies references for the project.
+  -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.Common.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActionPane.Designer.cs">
+      <DependentUpon>ActionPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperUI.cs" />
+    <Compile Include="NetPath.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SheetBuilderDynamic.cs" />
+    <Compile Include="sht_Co1.cs">
+      <DependentUpon>McK_TimeSheet_Load.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="sht_Co1.Designer.cs">
+      <DependentUpon>sht_Co1.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="sht_Co20.cs">
+      <DependentUpon>McK_TimeSheet_Load.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="sht_Co20.Designer.cs">
+      <DependentUpon>sht_Co20.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="sht_Summary.cs">
+      <DependentUpon>McK_TimeSheet_Load.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="sht_Summary.Designer.cs">
+      <DependentUpon>sht_Summary.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="sht_Detail.cs">
+      <DependentUpon>McK_TimeSheet_Load.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="sht_Detail.Designer.cs">
+      <DependentUpon>sht_Detail.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="ThisWorkbook.cs">
+      <DependentUpon>McK_TimeSheet_Load.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="ThisWorkbook.Designer.cs">
+      <DependentUpon>ThisWorkbook.Designer.xml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActionPane.resx">
+      <DependentUpon>ActionPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sht_Summary.resx">
+      <DependentUpon>sht_Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="McK_TimeSheet_Load.xltx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ThisWorkbook.Designer.xml">
+      <DependentUpon>ThisWorkbook.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sht_Summary.Designer.xml">
+      <DependentUpon>sht_Summary.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sht_Detail.Designer.xml">
+      <DependentUpon>sht_Detail.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\McK_TL_DataConnection\McK.Data.Viewpoint.csproj">
+      <Project>{dc19a653-d7b7-422e-868b-3190927e61e9}</Project>
+      <Name>McK.Data.Viewpoint</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McKinstry_Logo_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sht_Co1.Designer.xml">
+      <DependentUpon>sht_Co1.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sht_Co20.Designer.xml">
+      <DependentUpon>sht_Co20.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>79D8131B99C534DBD20554CC86E2601EDE5D96E6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
+        <ProjectProperties HostName="McK_TimeSheet_Load.xltx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLT" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files (x86)\Microsoft Office\root\Office16\excel.exe" DebugInfoCommandLine="/t /x &quot;[$OUTPUT]McK_TimeSheet_Load.xltx&quot;" />
+        <Host Name="Excel Document" Path=".\McK_TimeSheet_Load.xltx" GeneratedCodeNamespace="Mck_TL_UI" PublishedHash="AA7D8001F2D33F8CAF0E81446EA31ECE96E54E1D">
+          <HostItem Name="Sheet3" Code="sht_Co1.cs" CanonicalName="Sheet3" PublishedHash="F00502EBF41DDBED603608A57D502FDFDE8CEFD9" DisplayName="Co_1_Detail" Blueprint="sht_Co1.Designer.xml" GeneratedCode="sht_Co1.Designer.cs" />
+          <HostItem Name="Sheet4" Code="sht_Co20.cs" CanonicalName="Sheet4" PublishedHash="B08DDA16F54F52599B7BF51F3417F6B4F4A8B0E8" DisplayName="Co_20_Detail" Blueprint="sht_Co20.Designer.xml" GeneratedCode="sht_Co20.Designer.cs" />
+          <HostItem Name="Sheet2" Code="sht_Detail.cs" CanonicalName="Sheet2" PublishedHash="E3651029775F876567EA84EBAA3B0C3EC75604F8" DisplayName="DetailData" Blueprint="sht_Detail.Designer.xml" GeneratedCode="sht_Detail.Designer.cs" />
+          <HostItem Name="Sheet1" Code="sht_Summary.cs" CanonicalName="Sheet1" PublishedHash="7409C8B65FC12AB6971D5356031C8766AD90C4C8" DisplayName="SummaryTotals" Blueprint="sht_Summary.Designer.xml" GeneratedCode="sht_Summary.Designer.cs" />
+          <HostItem Name="ThisWorkbook" Code="ThisWorkbook.cs" CanonicalName="ThisWorkbook" PublishedHash="D606D5FC1E5576148F40748DD7C37E4C072BA0A2" Blueprint="ThisWorkbook.Designer.xml" GeneratedCode="ThisWorkbook.Designer.cs" />
+        </Host>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!--
+    To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

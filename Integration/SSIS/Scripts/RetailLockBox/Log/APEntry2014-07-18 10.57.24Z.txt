@@ -1,0 +1,7 @@
+2014-07-18 10:57:25Z	Started import for zip files in folder: C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\
+2014-07-18 10:57:25Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-07-18 10:57:25Z	Unable to process zip file 26221.zip. No APHB header. Expense ID: 26221
+2014-07-18 10:57:25Z	Unable to process zip file 26527.zip. No APHB header. Expense ID: 26527
+2014-07-18 10:57:25Z	Unable to process zip file 26670.zip. No APHB header. Expense ID: 26670
+2014-07-18 10:57:25Z	Unable to process zip file 26730.zip. No APHB header. Expense ID: 26730
+2014-07-18 10:57:25Z	Completed import for zip files in folder: C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\

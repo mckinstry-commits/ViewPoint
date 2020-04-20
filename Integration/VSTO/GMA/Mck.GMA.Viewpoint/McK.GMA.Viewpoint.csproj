@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>McK.GMA.Viewpoint</RootNamespace>
+    <AssemblyName>McK.GMA.Viewpoint-Dev</AssemblyName>
+    <VSTO_HostDocumentName>GMA Template.xltx</VSTO_HostDocumentName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DefineConstants>VSTO40</DefineConstants>
+    <OfficeApplication>Excel</OfficeApplication>
+    <ProjectGuid>{D727C6BF-79E5-4B44-ACA8-96EDE16CD546}</ProjectGuid>
+    <!--PROD-->
+    <!--SolutionID>3E2F5C3E-6C6C-4323-8977-25F32AD1B32F</SolutionID-->
+    <!--TRAINING -->
+    <!--SolutionID></SolutionID-->
+    <!--STAGING-->
+    <!--SolutionID>5CC5B567-AF86-42AF-8F6C-BD3A174AF2F0</SolutionID-->
+    <!--DEV-->
+    <SolutionID>2ED08072-6F8A-4E11-A437-7C73E6644F6E</SolutionID>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <PublishUrl>\\setestviewpoint\Viewpoint Repository\Reports\Custom\TrustedAPP\VSTO\McKinstryGMA\</PublishUrl>
+    <InstallUrl>\\setestviewpoint\Viewpoint Repository\Reports\Custom\TrustedAPP\VSTO\McKinstryGMA\</InstallUrl>
+    <TargetCulture>en</TargetCulture>
+    <ApplicationVersion>1.1.2.0</ApplicationVersion>
+    <AutoIncrementApplicationRevision>false</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>0</UpdateInterval>
+    <UpdateIntervalUnits>days</UpdateIntervalUnits>
+    <ProductName>McK.GMA.Viewpoint-Dev</ProductName>
+    <PublisherName>McKinstry</PublisherName>
+    <SupportUrl />
+    <FriendlyName>McK.GMA.Viewpoint</FriendlyName>
+    <OfficeApplicationDescription>Gross Margin Analysis tool for Vista by Viewpoint</OfficeApplicationDescription>
+  </PropertyGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <PropertyGroup>
+    <VSTO_EmbedTypeLibraryInAssembly>false</VSTO_EmbedTypeLibraryInAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!--
+    This section specifies references for the project.
+  -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.Common.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionsPaneGMA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActionsPaneGMA.Designer.cs">
+      <DependentUpon>ActionsPaneGMA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperUI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GMA.cs">
+      <DependentUpon>GMA Template.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="GMA.Designer.cs">
+      <DependentUpon>GMA.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="GMABLANK.cs">
+      <DependentUpon>GMA Template.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="GMABLANK.Designer.cs">
+      <DependentUpon>GMABLANK.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Summary.cs">
+      <DependentUpon>GMA Template.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="Summary.Designer.cs">
+      <DependentUpon>Summary.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="ThisWorkbook.cs">
+      <DependentUpon>GMA Template.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="ThisWorkbook.Designer.cs">
+      <DependentUpon>ThisWorkbook.Designer.xml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActionsPaneGMA.resx">
+      <DependentUpon>ActionsPaneGMA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GMA.resx">
+      <DependentUpon>GMA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GMA Template.xltx" />
+    <None Include="McKinstry-Co.--LLC-McKinstry-IT.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ThisWorkbook.Designer.xml">
+      <DependentUpon>ThisWorkbook.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GMA.Designer.xml">
+      <DependentUpon>GMA.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\McK.Data.Viewpoint\McK.Data.Viewpoint.csproj">
+      <Project>{943df297-b45a-46a7-8416-d4e4a09f7af1}</Project>
+      <Name>McK.Data.Viewpoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\McK.Models.Viewpoint\McK.Models.Viewpoint.csproj">
+      <Project>{48242c28-b652-44eb-9df2-94dcd5f2d848}</Project>
+      <Name>McK.Models.Viewpoint</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McKinstry_Logo_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Summary.Designer.xml">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GMABLANK.Designer.xml">
+      <DependentUpon>GMABLANK.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>McKinstry-Co.--LLC-McKinstry-IT.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>79D8131B99C534DBD20554CC86E2601EDE5D96E6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
+        <ProjectProperties HostName="GMA Template.xltx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLT" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files (x86)\Microsoft Office\root\Office16\Excel.exe" DebugInfoCommandLine="/t /x &quot;[$OUTPUT]GMA Template.xltx&quot;" />
+        <Host Name="Excel Document" Path=".\GMA Template.xltx" GeneratedCodeNamespace="McK.GMA.Viewpoint" PublishedHash="FEDBF9DFB69047C294E871B9B7BD428DCA8504F7">
+          <HostItem Name="Sheet2" Code="GMA.cs" CanonicalName="Sheet2" PublishedHash="B83671D50E62858F340DAF6D2B2DC1A320B789D9" DisplayName="MCK Gross Margin" Blueprint="GMA.Designer.xml" GeneratedCode="GMA.Designer.cs" />
+          <HostItem Name="Sheet3" Code="GMABLANK.cs" CanonicalName="Sheet3" PublishedHash="E7C9C21758F8398AFF163FCE4276725A16D05841" CanActivate="false" DisplayName="BLANK-GMA-" Blueprint="GMABLANK.Designer.xml" GeneratedCode="GMABLANK.Designer.cs" />
+          <HostItem Name="Sheet1" Code="Summary.cs" CanonicalName="Sheet1" PublishedHash="47C7E2FC1D95543871C49D7D2EFFC96F6D35C9A8" CanActivate="false" DisplayName="Summary" Blueprint="Summary.Designer.xml" GeneratedCode="Summary.Designer.cs" />
+          <HostItem Name="ThisWorkbook" Code="ThisWorkbook.cs" CanonicalName="ThisWorkbook" PublishedHash="1CC37E39DF52850C535FE25C2BCB4FB2728BA911" Blueprint="ThisWorkbook.Designer.xml" GeneratedCode="ThisWorkbook.Designer.cs" />
+        </Host>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!--
+    To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,2813 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/1/2014 1:24:29 PM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="DEV-VSTO2007"
+  DTS:CreatorName="MCKINSTRY\SUBBUK"
+  DTS:Description="SSIS Package Description"
+  DTS:DTSID="{2F7B9A86-8CBF-4A35-B456-E9BFC4670027}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:LocaleID="1033"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="Zip2Tax_Process"
+  DTS:VersionBuild="90"
+  DTS:VersionGUID="{D4FEB0FE-A3F2-4BC9-8EE1-46953961D5A3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DBSource]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{a75dab5e-a478-4525-aebb-5319142b7bcd}"
+      DTS:ObjectName="DBSource">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=VIEWPOINTAG\VIEWPOINT;User ID=IntegrationAccount;Initial Catalog=MCK_INTEGRATION;Persist Security Info=True;Application Name=SSIS-Package-{BD4D9619-9438-43FF-B2A8-DB9E5998AF35}MCKTESTSQL04\VIEWPOINT.VPIntegration;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7KOoXyFqfUWPPPWIJkeGlwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABxSs+ygrIho96EL6wV9ntlAAAAAASAAACgAAAAEAAAAMxamZnGgbhC8Y1csA/rm5wgAAAAJO0OkH7/8y+k/0qAwPgZd8xs6uF6hDc1FX0yjk/gEQcUAAAA0kDDaaTz2t3a6j3Bi1FSybtcs6c</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{07250AB9-D541-451F-9FDB-2B2280DDFD81}"
+      DTS:ObjectName="DestinationConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=VIEWPOINTAG\VIEWPOINT;User ID=IntegrationAccount;Initial Catalog=MCK_INTEGRATION;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=false;Application Name=SSIS-Zip2Tax_Process-{07250AB9-D541-451F-9FDB-2B2280DDFD81}DestinationConnectionOLEDB;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7KOoXyFqfUWPPPWIJkeGlwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB0FSyKG9myqAXvc+zW6ymCAAAAAASAAACgAAAAEAAAAJW9rYvUpDVbnuGz4KMDMO8gAAAAaZOVvgWdusYJm/ByEZaXZYRBeZ3m1bW5dET0jpfTPeIUAAAAqJUOFlsCl0RG7XDIgH2kVC0pDcg</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationFlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2BEB731A-78AB-4A5B-BEE6-A565591F623E}"
+      DTS:ObjectName="DestinationFlatFile">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">"\\\\sestgviewpoint\\viewpoint repository\\bulk inserts\\ETL\\GL\\AdaptivePlanning\\AutoImport\\AdaptiveBudget_" + (DT_STR,4,1252)YEAR(GETDATE()) + RIGHT("0" + (DT_STR,2,1252)MONTH(GETDATE()),2) + RIGHT("0" + (DT_STR,2,1252)DAY(GETDATE()),2) + ".csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier=""
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\sestgviewpoint\viewpoint repository\bulk inserts\ETL\GL\AdaptivePlanning\AutoImport\AdaptiveBudget_20140828.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{FE489C04-8491-49A4-806D-B2BB7D33EFD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 1"
+              DTS:DTSID="{D3806A50-970B-4BF3-9506-BD78DD54CA38}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 2"
+              DTS:DTSID="{B50D62F3-D23E-4EC7-9F78-A129B1DC9722}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{6B8E8782-D02D-41A6-B79A-9B1C7F588F92}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 4"
+              DTS:DTSID="{BFF16B7C-0072-4328-A369-36665BB28FB3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MCK_INTEGRATION]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3914f42c-05a8-4fcb-bd4d-ef351fa3bdbc}"
+      DTS:ObjectName="MCK_INTEGRATION">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=VIEWPOINTAG\VIEWPOINT;User ID=IntegrationAccount;Initial Catalog=MCK_INTEGRATION;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{1648D71A-4D4E-4556-9719-D5336520C96A}MCKTESTSQL04\VIEWPOINT.MCK_INTEGRATION1;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7KOoXyFqfUWPPPWIJkeGlwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACF/irHj1ZGlLwLnC+umgnvAAAAAASAAACgAAAAEAAAAAS2YD5Mq7MqjkrCBaDfVJogAAAAH4P70j85LWwvTb2Hs2AoZOU8siPGocUXJpd8BYt2TCsUAAAARSUtQkaHw3VuJcCxkqrKOiIjQZs</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{DC715CD8-4B3E-42A4-A91C-4AC46A08235F}"
+      DTS:ObjectName="SourceConnectionFlatFile">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::LocalFolder] + "zip2tax.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\sestgviewpoint\viewpoint repository\bulk inserts\ETL\AR\Zip2Tax\zip2tax.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="z2t_ID"
+              DTS:DTSID="{B85D35CF-DCA9-4003-8C7C-0157E420F6C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ZipCode"
+              DTS:DTSID="{C5D068D0-3B8B-471F-8C4B-5C004050316E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesTaxRate"
+              DTS:DTSID="{3413C9F5-C18C-418D-BC25-0A801C82BD0F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RateState"
+              DTS:DTSID="{381D49C1-B528-46CA-85F0-62E096D430D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReportingCodeState"
+              DTS:DTSID="{62F09035-8DB8-4E4A-8357-8045DB441A41}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RateCounty"
+              DTS:DTSID="{BAB5C2B8-B8D2-4C64-BFBF-FC617CDE8147}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReportingCodeCounty"
+              DTS:DTSID="{C1C467C2-EA81-42B3-9550-918A85789F25}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RateCity"
+              DTS:DTSID="{BA7F7128-C39B-42DC-9BF1-714EAEE85138}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReportingCodeCity"
+              DTS:DTSID="{F7B5F251-E8E6-495F-BEE7-CA120AC4948E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RateSpecialDistrict"
+              DTS:DTSID="{CDFBA2B6-3FD5-47C1-B3CD-3E86D56C1812}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReportingCodeSpecialDistrict"
+              DTS:DTSID="{F412A8BE-37D6-4FE9-8DD6-B6DA1D885EA3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{054BAACC-C458-414A-87C3-AEB950F73205}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PostOffice"
+              DTS:DTSID="{7302D783-02F2-4DE1-B459-FCD1326F51A6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{859CA1F9-A108-4263-B853-D77F8E26AF4C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="County"
+              DTS:DTSID="{4A53FE03-E331-4325-80EB-5F0957AB8F62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="17"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ShippingTaxable"
+              DTS:DTSID="{A5E8352C-0D78-47A8-9D32-3015BFF5C2D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PrimaryRecord"
+              DTS:DTSID="{61BED9E6-DF4B-4AD5-B9B2-78DE8303FEE3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Zip2Tax]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{0E482EF2-708E-40E8-9304-36747A04D545}"
+      DTS:ObjectName="Zip2Tax">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="http://tables.zip2tax.com?usr=mckinstb&amp;pwd=bzm~58ft&amp;id=1">
+          <DTS:HttpConnection
+            DTS:ServerURL="http://tables.zip2tax.com?usr=mckinstb&amp;pwd=bzm~58ft&amp;id=1">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7KOoXyFqfUWPPPWIJkeGlwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADBN+OwsuUEEueWnCjSPSdkAAAAAASAAACgAAAAEAAAAHBaV4LG7CNKsJWSOFTiABcIAAAAKAvOIFRWF0QUAAAAqSyy9e5mEN0IU97auPVpGzySzZU</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7KOoXyFqfUWPPPWIJkeGlwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACsbuqRZc2aqPyVwmrddzB8AAAAAASAAACgAAAAEAAAAFlg/UH+660mwmf7585/y0UIAAAAEhRFbkl6GyYUAAAAXLGeFD1TBKz9+8DxH+GiI5Yrs7A</DTS:Property>
+          </DTS:HttpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:LogProviders>
+    <DTS:LogProvider
+      DTS:ConfigString="MCK_INTEGRATION"
+      DTS:CreationName="DTS.LogProviderSQLServer.3"
+      DTS:Description="Writes log entries for events to a SQL Server database"
+      DTS:DTSID="{9EBCD358-3BCC-48A9-9824-2B6E7ED0A060}"
+      DTS:ObjectName="SSIS log provider for SQL Server">
+      <DTS:ObjectData>
+        <InnerObject />
+      </DTS:ObjectData>
+    </DTS:LogProvider>
+  </DTS:LogProviders>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8C80B3D2-C480-4E59-B041-3DE5475924BB}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="EmailCompletion">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2FCC447D-E51E-4FFD-A51D-8DD0B3E55FDA}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="LocalFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">\\sestgviewpoint\viewpoint repository\bulk inserts\ETL\AR\Zip2Tax\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{38E1A7DC-E951-40D6-9867-0964A41DB468}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="RemoteUri">
+      <DTS:VariableValue
+        DTS:DataType="8">http://tables.zip2tax.com/?usr=mckinstb&amp;pwd=bzm~58ft&amp;id=1</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9919FB8F-9E9B-4069-8700-CB4255CF063D}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="RowCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9A506A9A-7077-4537-AF24-887F8B77BECD}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SQLQuery">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FECF2E3B-BC78-4C3D-B42B-99FB54C80684}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TransformName">
+      <DTS:VariableValue
+        DTS:DataType="8">Zip2TaxSalesTax</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1">
+    <DTS:Property
+      DTS:DataType="8"
+      DTS:Name="EventFilter">5,7,OnError,13,OnInformation,13,OnQueryCancel,12,OnTaskFailed,9,OnWarning</DTS:Property>
+    <DTS:Property
+      DTS:EventName="Diagnostic"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnError"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnInformation"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnPostExecute"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnPostValidate"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnQueryCancel"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnTaskFailed"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnVariableValueChanged"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnWarning"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:SelectedLogProviders>
+      <DTS:SelectedLogProvider
+        DTS:InstanceID="{9EBCD358-3BCC-48A9-9824-2B6E7ED0A060}" />
+    </DTS:SelectedLogProviders>
+  </DTS:LoggingOptions>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{8ec4f9f6-7f02-4131-b81e-48f4f2c5fddd}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2">
+        <DTS:Property
+          DTS:DataType="8"
+          DTS:Name="EventFilter">3,7,OnError,13,OnPostExecute,10,OnProgress</DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnError"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnPostExecute"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnProgress"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+      </DTS:LoggingOptions>
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{a75dab5e-a478-4525-aebb-5319142b7bcd}"
+          SQLTask:IsStoredProc="True"
+          SQLTask:SqlStatementSource="[dbo].[GetSourceServers]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="TransformPath"
+            SQLTask:DtsVariableName="User::SQLQuery"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="16"
+            SQLTask:ParameterSize="4000" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="TransformName"
+            SQLTask:DtsVariableName="User::TransformName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="16"
+            SQLTask:ParameterSize="250" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="EmailCompletion"
+            SQLTask:DtsVariableName="User::EmailCompletion"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="16"
+            SQLTask:ParameterSize="250" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="SourceServer"
+            SQLTask:DtsVariableName="User::RemoteUri"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="16"
+            SQLTask:ParameterSize="4000" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Send Mail Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask, Microsoft.SqlServer.SendMailTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Send Mail Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{696d2608-1e6b-4511-9c51-82418794fed7}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask, Microsoft.SqlServer.SendMailTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Send Mail Task"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2">
+        <DTS:Property
+          DTS:DataType="8"
+          DTS:Name="EventFilter">4,7,OnError,13,OnPostExecute,10,OnProgress,9,OnWarning</DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnError"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnPostExecute"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnProgress"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnWarning"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+      </DTS:LoggingOptions>
+      <DTS:ObjectData />
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SyncGeoLookupFromTaxSource"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{020d09cc-aaa7-4f6b-9515-51cda19c907d}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SyncGeoLookupFromTaxSource"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2">
+        <DTS:Property
+          DTS:DataType="8"
+          DTS:Name="EventFilter">3,7,OnError,13,OnPostExecute,10,OnProgress</DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnError"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnPostExecute"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnProgress"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+      </DTS:LoggingOptions>
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{a75dab5e-a478-4525-aebb-5319142b7bcd}"
+          SQLTask:IsStoredProc="True"
+          SQLTask:SqlStatementSource="dbo.mspSyncGeoLookupFromTaxSource" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Tax Table"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{7a460d56-d062-4fd8-9976-c648341b25f1}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Tax Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2">
+        <DTS:Property
+          DTS:DataType="8"
+          DTS:Name="EventFilter">3,7,OnError,13,OnPostExecute,10,OnProgress</DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnError"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnPostExecute"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnProgress"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+      </DTS:LoggingOptions>
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{a75dab5e-a478-4525-aebb-5319142b7bcd}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [MCK_INTEGRATION].[dbo].[Zip2TaxSourceTaxTable];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Zip2Tax Download"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask, Microsoft.SqlServer.ScriptTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Zip2Tax Download"
+      DTS:DTSID="{5E82602F-F85B-4EC9-A4C6-B2341B0D7E78}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask, Microsoft.SqlServer.ScriptTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Zip2Tax Download"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_da285fedbb6c47e0bcdb2c0a4979da8f"
+          VSTAMajorVersion="3"
+          VSTAMinorVersion="0"
+          Language="CSharp">
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.resx"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+          <ProjectItem
+            Name="st_da285fedbb6c47e0bcdb2c0a4979da8f.csproj"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- This section defines project-level properties.
+
+       Configuration - Specifies whether the default configuration is Release or Debug.
+       Platform - Specifies what CPU the output of this project can run on.
+       OutputType - Must be "Library" for VSTA.
+       NoStandardLibraries - Set to "false" for VSTA.
+       RootNamespace - In C#, this specifies the namespace given to new files.
+                       In Visual Basic, all objects are wrapped in this namespace at runtime.
+       AssemblyName - Name of the output assembly.
+  -->
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj</RootNamespace>
+    <AssemblyName>ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj</AssemblyName>
+    <ProjectGuid>{20BDA0C9-BDE0-4102-B48C-40AE2D73BF35}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <!-- This section defines properties that are set when the "Debug" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- This section defines properties that are set when the "Release" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- This section enables pre- and post-build steps. However,
+       it is recommended that MSBuild tasks be used instead of these properties.
+  -->
+  <PropertyGroup>
+    <PreBuildEvent></PreBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
+  </PropertyGroup>
+  <!-- This sections specifies references for the project. -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=11.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=11.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <!-- This section defines the user source files that are part of the
+       project.
+
+       Compile - Specifies a source file to compile.
+       EmbeddedResource - Specifies a .resx file for embedded resources.
+       None - Specifies a file that is not to be passed to the compiler (for instance,
+              a text file or XML file).
+       AppDesigner - Specifies the directory where the application properties files can
+                     be found.
+  -->
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <!-- Include the default configuration information and metadata files for the add-in.
+         These files are copied to the build output directory when the project is
+         built, and the path to the configuration file is passed to add-in on the command
+         line when debugging.
+    -->
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="#HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\InstallDir#\devenv.exe" />
+        <Host Name="SSIS_ScriptTask" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST110</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+</Project>]]></ProjectItem>
+          <ProjectItem
+            Name="ScriptMain.cs"
+            Encoding="UTF8"><![CDATA[/*
+   Microsoft SQL Server Integration Services Script Task
+   Write scripts using Microsoft Visual C# 2008.
+   The ScriptMain is the entry point class of the script.
+*/
+
+using System;
+using System.Data;
+using System.IO;
+using System.Net;
+using System.Web ;
+using Microsoft.SqlServer.Dts.Runtime;
+using System.Windows.Forms;
+
+namespace ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj
+{
+    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+    {
+
+        #region VSTA generated code
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+        #endregion
+
+        /*
+		The execution engine calls this method when the task executes.
+		To access the object model, use the Dts property. Connections, variables, events,
+		and logging features are available as members of the Dts property as shown in the following examples.
+
+		To reference a variable, call Dts.Variables["MyCaseSensitiveVariableName"].Value;
+		To post a log entry, call Dts.Log("This is my log text", 999, null);
+		To fire an event, call Dts.Events.FireInformation(99, "test", "hit the help message", "", 0, true);
+
+		To use the connections collection use something like the following:
+		ConnectionManager cm = Dts.Connections.Add("OLEDB");
+		cm.ConnectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;Provider=SQLNCLI10;Integrated Security=SSPI;Auto Translate=False;";
+
+		Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+		
+		To open Help, press F1.
+	*/
+
+        public void Main()
+        {
+            Variables varCollection = null;
+
+            Dts.VariableDispenser.LockForRead("User::RemoteUri");
+            Dts.VariableDispenser.LockForRead("User::LocalFolder");
+            Dts.VariableDispenser.GetVariables(ref varCollection);
+
+            System.Net.WebClient myWebClient = new System.Net.WebClient();
+            string webResource = varCollection["User::RemoteUri"].Value.ToString();
+            string fileName = varCollection["User::LocalFolder"].Value.ToString() + "Zip2Tax.csv" ;
+
+            byte[] data;
+            using (WebClient client = new WebClient())
+            {
+                client.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
+                data = client.DownloadData(webResource);
+            }
+            FileInfo file = new System.IO.FileInfo(fileName);
+            file.Directory.Create(); // If the directory already exists, this method does nothing.
+            File.WriteAllBytes(file.FullName, data);
+
+            Dts.TaskResult = (int)ScriptResults.Success;
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:ProjectId>{4380EBBD-4D9F-4682-8057-7BB914B8164D}</msb:ProjectId>
+		<msb:NoContent>Reference;Import;Folder</msb:NoContent>
+		<msb:Language>msBuild</msb:Language>
+		<msb:DisplayName>st_da285fedbb6c47e0bcdb2c0a4979da8f</msb:DisplayName>
+		<msb:CodeName>st_da285fedbb6c47e0bcdb2c0a4979da8f</msb:CodeName>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="ScriptMain.cs"/>
+		<msb:Project Include="st_da285fedbb6c47e0bcdb2c0a4979da8f.csproj"/>
+	</msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj.Properties.Settings.get_Default():ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj.Properties.Sett" +
+    "ings")]
+
+namespace ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj.Properties
+{
+
+
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
+    {
+
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+
+        public static Settings Default
+        {
+            get
+            {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj")]
+[assembly: AssemblyCopyright("Copyright @  2014")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//     Runtime Version:2.0.50727.5483
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+namespace ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj.Properties {
+    using System;
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "2.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <BinaryItem
+            Name="ST_da285fedbb6c47e0bcdb2c0a4979da8f.csproj.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDACio/1MAAAAAAAAAAOAAAiELAQsAABQAAAAIAAAAAAAAXjIA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAAgyAABTAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAZBIAAAAgAAAAFAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABA
+MgAAAAAAAEgAAAACAAUAgCIAAIgPAAABAAAAAAAAAMghAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqEzACADMAAAABAAARfgEAAAQUKBEAAAosIHIB
+AABw0AIAAAIoEgAACm8TAAAKcxQAAAoKBoABAAAEfgEAAAQqGn4CAAAEKh4CgAIAAAQqGn4DAAAE
+Ki5zBgAABoADAAAEKh4CKBYAAAoqAAAAGzADANwAAAACAAARFAoCKBgAAApvGQAACnKBAABwbxoA
+AAoCKBgAAApvGQAACnKhAABwbxoAAAoCKBgAAApvGQAAChIAbxsAAApzHAAACiYGcoEAAHBvHQAA
+Cm8eAAAKbx8AAAoLBnKhAABwbx0AAApvHgAACm8fAAAKcsUAAHAoIAAACgxzHAAAChMEEQRvIQAA
+CnLdAABwcvMAAHBvIgAAChEEB28jAAAKDd4MEQQsBxEEbyQAAArcCHMlAAAKEwURBW8mAAAKbycA
+AAoRBW8oAAAKCSgpAAAKAigYAAAKFm8qAAAKKgEQAAACAIEAIaIADAAAAAAeAigrAAAKKgAAAAC0
+AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGli
+LCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVj
+NTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAA
+AFBBRFBBRFC0AAAAQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAaAQAACN+AADU
+BAAAPAcAACNTdHJpbmdzAAAAABAMAACEAQAAI1VTAJQNAAAQAAAAI0dVSUQAAACkDQAA5AEAACNC
+bG9iAAAAAAAAAAIAAAFXHaIBCQMAAAD6JTMAFgAAAQAAACgAAAAFAAAABgAAAAkAAAABAAAAKwAA
+AAIAAAARAAAAAgAAAAIAAAADAAAABAAAAAEAAAAEAAAAAQAAAAEAAAAAAAoAAQAAAAAABgDWAM8A
+CgDyAN0ADgBSASkBBgBuAc8ABgCEAXMBBgC1AaABBgBsAlICBgCXAoUCBgCuAoUCBgDLAoUCBgDq
+AoUCBgADA4UCBgAcA4UCBgA3A4UCBgBSA4UCBgBrA4UCBgCkA4QDBgDEA4QDCgD6A+IDBgAkBBEE
+BgBBBIQDBgBsBM8ABgBxBM8ABgCVBIUCCgDBBKsECgDaBKsEDgD2BCkBDgAYBSkBEgBxBVEFEgCl
+BVEFCgDHBbwFEgDRBVEFBgD2Bc8ACgAEBrwFCgBDBiQGBgBoBs8ABgCGBnwGBgCPBnwGBgCyBnwG
+BgDOBnwGAAAAAAEAAAAAAAEAAQAAABAAOQBDAAUAAQABAAABEAB5AEMACQADAAUAAQAQAIIAjQAN
+AAQACAADAQAAuAAAABEABAAKABEAlAETABEAwQEXABEACwI5AAYGNAJHAFaAPAJKAFaARAJKAFAg
+AAAAAIMY0QEbAAEAWCAAAAAAkwjXAR8AAQCXIAAAAACTCOsBJAABAJ4gAAAAAJMI9wEpAAEApiAA
+AAAAlggbAj0AAgC5IAAAAACGGNEBGwACAK0gAAAAAJEY7wTWAAIAxCAAAAAAhgAvAhsAAgC8IQAA
+AACGGNEBGwACAAAAAQBMAjkA0QFYAEEA0QFYAEkA0QFYAFEA0QFYAFkA0QFYAGEA0QFYAGkA0QFY
+AHEA0QFYAHkA0QFYAIEA0QFYAIkA0QFdAJEA0QEbAJkA0QFiAKEA0QEbAKkA0QEbAAkA0QEbAAkA
+XASpALEAgwSvALEAngS2ACkA0QG7AMkA0QHHABEA0QEbANkA0QEbABkAKgXaAOEAgwXfAOkAmQVY
+AOkArwXkAPkA0QEbAPEA2gXrAAEB4wXyAAkA7QX2AAkB/QX6APkAGAYAARkBVwZiAPkAWwYGASEB
+dAYbACkB0QFYACkBnQYMATEBqwYbADkBwQb2AEEB0wYSAeEA4QZdABkA0QEbAAgAFABOAAgAGABT
+ACkAqwDNAC4AEwBvAS4AGwCfAS4AYwDFAS4ACwAnAS4AIwCfAS4AKwCfAS4AMwBvAS4AOwClAS4A
+QwCfAS4AWwC8AUMAcwBTAEMAewBTAEMAawBoAEkAqwDNAGEAewBTAIMAuwBTAMIAGQECAAEAAwAD
+AAAAhAEvAAAAAwI0AAAAJwJCAAIAAgADAAIAAwAFAAEABAAFAAIABQAHAASAAAABAAAA6RRUYwAA
+AAAAAI0AAAAEAAAAAAAAAAAAAAABAMYAAAAAAAQAAAAAAAAAAAAAAAEAzwAAAAAACwAAAAAAAAAA
+AAAACgAKAQAAAAALAAAAAAAAAAAAAAAKADIFAAAAAAAAAAABAAAA8AYAAAUABAAAAAAAADxNb2R1
+bGU+AFNUX2RhMjg1ZmVkYmI2YzQ3ZTBiY2RiMmMwYTQ5NzlkYThmLmNzcHJvai5kbGwAUmVzb3Vy
+Y2VzAFNUX2RhMjg1ZmVkYmI2YzQ3ZTBiY2RiMmMwYTQ5NzlkYThmLmNzcHJvai5Qcm9wZXJ0aWVz
+AFNldHRpbmdzAFNjcmlwdE1haW4AU1RfZGEyODVmZWRiYjZjNDdlMGJjZGIyYzBhNDk3OWRhOGYu
+Y3Nwcm9qAFNjcmlwdFJlc3VsdHMAbXNjb3JsaWIAU3lzdGVtAE9iamVjdABTeXN0ZW0uQ29uZmln
+dXJhdGlvbgBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBNaWNyb3NvZnQuU3FsU2VydmVyLlNjcmlw
+dFRhc2sATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuVGFza3MuU2NyaXB0VGFzawBWU1RBUlRTY3Jp
+cHRPYmplY3RNb2RlbEJhc2UARW51bQBTeXN0ZW0uUmVzb3VyY2VzAFJlc291cmNlTWFuYWdlcgBy
+ZXNvdXJjZU1hbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBDdWx0dXJlSW5mbwByZXNvdXJjZUN1bHR1
+cmUALmN0b3IAZ2V0X1Jlc291cmNlTWFuYWdlcgBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQBDdWx0
+dXJlAGRlZmF1bHRJbnN0YW5jZQBnZXRfRGVmYXVsdABEZWZhdWx0AE1haW4AdmFsdWVfXwBTdWNj
+ZXNzAEZhaWx1cmUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUYXJnZXRGcmFtZXdv
+cmtBdHRyaWJ1dGUAU3lzdGVtLlJlZmxlY3Rpb24AQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3Nl
+bWJseURlc2NyaXB0aW9uQXR0cmlidXRlAEFzc2VtYmx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBB
+c3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5
+Q29weXJpZ2h0QXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAEFzc2VtYmx5Q3Vs
+dHVyZUF0dHJpYnV0ZQBBc3NlbWJseVZlcnNpb25BdHRyaWJ1dGUAU3lzdGVtLlJ1bnRpbWUuQ29t
+cGlsZXJTZXJ2aWNlcwBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAFJ1bnRpbWVDb21w
+YXRpYmlsaXR5QXR0cmlidXRlAFN5c3RlbS5Db2RlRG9tLkNvbXBpbGVyAEdlbmVyYXRlZENvZGVB
+dHRyaWJ1dGUAU3lzdGVtLkRpYWdub3N0aWNzAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUA
+Q29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUAUmVmZXJlbmNlRXF1YWxzAFR5cGUAUnVudGltZVR5
+cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUAQXNzZW1ibHkAZ2V0X0Fzc2VtYmx5AFN5c3RlbS5D
+b21wb25lbnRNb2RlbABFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlU3Rh
+dGUALmNjdG9yAFNTSVNTY3JpcHRUYXNrRW50cnlQb2ludEF0dHJpYnV0ZQBTY3JpcHRPYmplY3RN
+b2RlbABnZXRfRHRzAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuTWFuYWdlZERUUwBNaWNyb3NvZnQuU3Fs
+U2VydmVyLkR0cy5SdW50aW1lAFZhcmlhYmxlRGlzcGVuc2VyAGdldF9WYXJpYWJsZURpc3BlbnNl
+cgBMb2NrRm9yUmVhZABWYXJpYWJsZXMAR2V0VmFyaWFibGVzAFN5c3RlbS5OZXQAV2ViQ2xpZW50
+AFZhcmlhYmxlAGdldF9JdGVtAGdldF9WYWx1ZQBUb1N0cmluZwBTdHJpbmcAQ29uY2F0AFdlYkhl
+YWRlckNvbGxlY3Rpb24AZ2V0X0hlYWRlcnMAU3lzdGVtLkNvbGxlY3Rpb25zLlNwZWNpYWxpemVk
+AE5hbWVWYWx1ZUNvbGxlY3Rpb24AQWRkAERvd25sb2FkRGF0YQBJRGlzcG9zYWJsZQBEaXNwb3Nl
+AFN5c3RlbS5JTwBGaWxlSW5mbwBEaXJlY3RvcnlJbmZvAGdldF9EaXJlY3RvcnkAQ3JlYXRlAEZp
+bGVTeXN0ZW1JbmZvAGdldF9GdWxsTmFtZQBGaWxlAFdyaXRlQWxsQnl0ZXMAc2V0X1Rhc2tSZXN1
+bHQAU1RfZGEyODVmZWRiYjZjNDdlMGJjZGIyYzBhNDk3OWRhOGYuY3Nwcm9qLlByb3BlcnRpZXMu
+UmVzb3VyY2VzLnJlc291cmNlcwAAAAB/UwBUAF8AZABhADIAOAA1AGYAZQBkAGIAYgA2AGMANAA3
+AGUAMABiAGMAZABiADIAYwAwAGEANAA5ADcAOQBkAGEAOABmAC4AYwBzAHAAcgBvAGoALgBQAHIA
+bwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAB9VAHMAZQByADoAOgBSAGUAbQBv
+AHQAZQBVAHIAaQAAI1UAcwBlAHIAOgA6AEwAbwBjAGEAbABGAG8AbABkAGUAcgAAF1oAaQBwADIA
+VABhAHgALgBjAHMAdgAAFXUAcwBlAHIALQBhAGcAZQBuAHQAAYCNTQBvAHoAaQBsAGwAYQAvADQA
+LgAwACAAKABjAG8AbQBwAGEAdABpAGIAbABlADsAIABNAFMASQBFACAANgAuADAAOwAgAFcAaQBu
+AGQAbwB3AHMAIABOAFQAIAA1AC4AMgA7ACAALgBOAEUAVAAgAEMATABSACAAMQAuADAALgAzADcA
+MAA1ADsAKQAAAADcLXxpVSwTQo7RnRmh5yS+AAi3elxWGTTgiQiJhF3NgIDMkQMGEhUDBhIZAyAA
+AQQAABIVBAAAEhkFAAEBEhkECAASFQQIABIZAwYSDAQAABIMBAgAEgwCBggDBhEUBAAAAAAEAQAA
+AAQgAQEOBCABAQgFIAIBDg5AAQAzU3lzdGVtLlJlc291cmNlcy5Ub29scy5TdHJvbmdseVR5cGVk
+UmVzb3VyY2VCdWlsZGVyBzIuMC4wLjAAAAUAAgIcHAYAARJZEV0EIAASYQYgAgEOEmEEBwESFQUg
+AQERaQgBAAIAAAAAAAMAAAEEIAAScQQgABJ1BiABARASeQYgARKAgRwDIAAcAyAADgUAAg4ODgUg
+ABKAiQUgAR0FDgUgABKAmQYAAgEOHQUNBwYSeQ4OHQUSfRKAlUcBABouTkVURnJhbWV3b3JrLFZl
+cnNpb249djQuMAEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUQLk5FVCBGcmFtZXdvcmsgNC8BACpT
+VF9kYTI4NWZlZGJiNmM0N2UwYmNkYjJjMGE0OTc5ZGE4Zi5jc3Byb2oAAAUBAAAAABYBABFDb3B5
+cmlnaHQgQCAgMjAxNAAACAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzATAy
+AAAAAAAAAAAAAE4yAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAMgAAAAAAAAAAAAAAAAAAAABf
+Q29yRGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
+SAAAAFhAAADwAwAAAAAAAAAAAADwAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
+AAAAvQTv/gAAAQAAAAEAVGPpFAAAAQBUY+kUPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
+AAAAAAAAALAEUAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAALAMAAAEAMAAwADAA
+MAAwADQAYgAwAAAAgAArAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAVABf
+AGQAYQAyADgANQBmAGUAZABiAGIANgBjADQANwBlADAAYgBjAGQAYgAyAGMAMABhADQAOQA3ADkA
+ZABhADgAZgAuAGMAcwBwAHIAbwBqAAAAAABAAA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAA
+ADEALgAwAC4ANQAzADUAMwAuADIANQA0ADIAOAAAAAAAgAAvAAEASQBuAHQAZQByAG4AYQBsAE4A
+YQBtAGUAAABTAFQAXwBkAGEAMgA4ADUAZgBlAGQAYgBiADYAYwA0ADcAZQAwAGIAYwBkAGIAMgBj
+ADAAYQA0ADkANwA5AGQAYQA4AGYALgBjAHMAcAByAG8AagAuAGQAbABsAAAAAABIABIAAQBMAGUA
+ZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAx
+ADQAAACIAC8AAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBUAF8AZABhADIA
+OAA1AGYAZQBkAGIAYgA2AGMANAA3AGUAMABiAGMAZABiADIAYwAwAGEANAA5ADcAOQBkAGEAOABm
+AC4AYwBzAHAAcgBvAGoALgBkAGwAbAAAAAAAeAArAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAA
+AABTAFQAXwBkAGEAMgA4ADUAZgBlAGQAYgBiADYAYwA0ADcAZQAwAGIAYwBkAGIAMgBjADAAYQA0
+ADkANwA5AGQAYQA4AGYALgBjAHMAcAByAG8AagAAAAAARAAPAAEAUAByAG8AZAB1AGMAdABWAGUA
+cgBzAGkAbwBuAAAAMQAuADAALgA1ADMANQAzAC4AMgA1ADQAMgA4AAAAAABIAA8AAQBBAHMAcwBl
+AG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgA1ADMANQAzAC4AMgA1ADQAMgA4AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAYDIAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
+        </ScriptProject>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Zip2Tax Upload"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:DTSID="{57bf9ff5-248a-4247-9c97-6a4b9e9fd0c6}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Zip2Tax Upload"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server v10; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2">
+        <DTS:Property
+          DTS:DataType="8"
+          DTS:Name="EventFilter">8,7,OnError,13,OnInformation,18,OnPipelineRowsSent,13,OnPostExecute,10,OnProgress,13,OnQueryCancel,12,OnTaskFailed,9,OnWarning</DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnError"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnInformation"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnPipelineRowsSent"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnPostExecute"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnProgress"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnQueryCancel"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnTaskFailed"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+        <DTS:Property
+          DTS:EventName="OnWarning"
+          DTS:Name="ColumnFilter">
+          <DTS:Property
+            DTS:Name="Computer">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="Operator">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceName">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="SourceID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="ExecutionID">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="MessageText">-1</DTS:Property>
+          <DTS:Property
+            DTS:Name="DataBytes">-1</DTS:Property>
+        </DTS:Property>
+      </DTS:LoggingOptions>
+      <DTS:ObjectData>
+        <pipeline
+          BLOBTempStoragePath=""
+          bufferTempStoragePath=""
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Zip2Tax Upload\OLE DB Destination"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Zip2TaxSourceTaxTable]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Zip2Tax Upload\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[z2t_ID]"
+                      cachedDataType="ui8"
+                      cachedName="z2t_ID"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[z2t_ID]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[z2t_ID]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ZipCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="ZipCode"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZipCode]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ZipCode]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SalesTaxRate]"
+                      cachedDataType="r8"
+                      cachedName="SalesTaxRate"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalesTaxRate]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[SalesTaxRate]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RateState]"
+                      cachedDataType="ui8"
+                      cachedName="RateState"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RateState]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateState]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ReportingCodeState]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="ReportingCodeState"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReportingCodeState]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeState]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RateCounty]"
+                      cachedDataType="r8"
+                      cachedName="RateCounty"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RateCounty]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateCounty]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ReportingCodeCounty]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="ReportingCodeCounty"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReportingCodeCounty]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeCounty]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RateCity]"
+                      cachedDataType="r8"
+                      cachedName="RateCity"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RateCity]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateCity]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ReportingCodeCity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="ReportingCodeCity"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReportingCodeCity]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeCity]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RateSpecialDistrict]"
+                      cachedDataType="r8"
+                      cachedName="RateSpecialDistrict"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RateSpecialDistrict]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateSpecialDistrict]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ReportingCodeSpecialDistrict]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="ReportingCodeSpecialDistrict"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReportingCodeSpecialDistrict]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeSpecialDistrict]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[City]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PostOffice]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PostOffice"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostOffice]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[PostOffice]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[State]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="State"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[State]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[County]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="County"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[County]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[County]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShippingTaxable]"
+                      cachedDataType="ui1"
+                      cachedName="ShippingTaxable"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShippingTaxable]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ShippingTaxable]" />
+                    <inputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PrimaryRecord]"
+                      cachedDataType="ui8"
+                      cachedName="PrimaryRecord"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PrimaryRecord]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[PrimaryRecord]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[z2t_ID]"
+                      dataType="i4"
+                      name="z2t_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="ZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalesTaxRate]"
+                      dataType="numeric"
+                      name="SalesTaxRate"
+                      precision="8"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RateState]"
+                      dataType="numeric"
+                      name="RateState"
+                      precision="8"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReportingCodeState]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="ReportingCodeState" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RateCounty]"
+                      dataType="numeric"
+                      name="RateCounty"
+                      precision="8"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReportingCodeCounty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="ReportingCodeCounty" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RateCity]"
+                      dataType="numeric"
+                      name="RateCity"
+                      precision="8"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReportingCodeCity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="ReportingCodeCity" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RateSpecialDistrict]"
+                      dataType="numeric"
+                      name="RateSpecialDistrict"
+                      precision="8"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReportingCodeSpecialDistrict]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="ReportingCodeSpecialDistrict" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostOffice]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PostOffice" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[County]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="County" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShippingTaxable]"
+                      dataType="i4"
+                      name="ShippingTaxable" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PrimaryRecord]"
+                      dataType="i4"
+                      name="PrimaryRecord" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Values]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Values" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Zip2Tax Upload\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Zip2Tax Upload\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Zip2Tax Upload\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Source - AdaptiveBudget_20140701_csv"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[z2t_ID]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[z2t_ID]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[z2t_ID]"
+                      name="z2t_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ZipCode]"
+                      length="10"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ZipCode]"
+                      name="ZipCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[SalesTaxRate]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[SalesTaxRate]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[SalesTaxRate]"
+                      name="SalesTaxRate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateState]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[RateState]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateState]"
+                      name="RateState"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeState]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ReportingCodeState]"
+                      length="20"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeState]"
+                      name="ReportingCodeState"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateCounty]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[RateCounty]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateCounty]"
+                      name="RateCounty"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeCounty]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ReportingCodeCounty]"
+                      length="20"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeCounty]"
+                      name="ReportingCodeCounty"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateCity]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[RateCity]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateCity]"
+                      name="RateCity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeCity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ReportingCodeCity]"
+                      length="20"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeCity]"
+                      name="ReportingCodeCity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateSpecialDistrict]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[RateSpecialDistrict]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[RateSpecialDistrict]"
+                      name="RateSpecialDistrict"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeSpecialDistrict]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ReportingCodeSpecialDistrict]"
+                      length="20"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ReportingCodeSpecialDistrict]"
+                      name="ReportingCodeSpecialDistrict"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[City]"
+                      length="50"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[PostOffice]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[PostOffice]"
+                      length="50"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[PostOffice]"
+                      name="PostOffice"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[State]"
+                      length="2"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[State]"
+                      name="State"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[County]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[County]"
+                      length="50"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[County]"
+                      name="County"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ShippingTaxable]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ShippingTaxable]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[ShippingTaxable]"
+                      name="ShippingTaxable"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[PrimaryRecord]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[PrimaryRecord]"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].Columns[PrimaryRecord]"
+                      name="PrimaryRecord"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[z2t_ID]"
+                      dataType="ui8"
+                      name="z2t_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="ZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[SalesTaxRate]"
+                      dataType="r8"
+                      name="SalesTaxRate" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[RateState]"
+                      dataType="ui8"
+                      name="RateState" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ReportingCodeState]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="ReportingCodeState" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[RateCounty]"
+                      dataType="r8"
+                      name="RateCounty" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ReportingCodeCounty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="ReportingCodeCounty" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[RateCity]"
+                      dataType="r8"
+                      name="RateCity" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ReportingCodeCity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="ReportingCodeCity" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[RateSpecialDistrict]"
+                      dataType="r8"
+                      name="RateSpecialDistrict" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ReportingCodeSpecialDistrict]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="ReportingCodeSpecialDistrict" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[PostOffice]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PostOffice" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[County]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="County" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[ShippingTaxable]"
+                      dataType="ui1"
+                      name="ShippingTaxable" />
+                    <externalMetadataColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output].ExternalColumns[PrimaryRecord]"
+                      dataType="ui8"
+                      name="PrimaryRecord" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Zip2Tax Upload.Paths[Flat File Source Output]"
+              endId="Package\Zip2Tax Upload\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{2F44B789-25FF-428C-A602-2EEDF60C1904}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Zip2Tax Download" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{7E0CD4B7-361F-4FCC-8F20-6B7B8175802A}"
+      DTS:From="Package\Zip2Tax Download"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Truncate Tax Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{417D62C3-957C-4CA1-AC65-98BCD3697FAB}"
+      DTS:From="Package\SyncGeoLookupFromTaxSource"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Send Mail Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{6B3E51FD-CE5E-40AE-8A71-F19D5755AEE8}"
+      DTS:From="Package\Zip2Tax Upload"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\SyncGeoLookupFromTaxSource" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{14962773-C7D9-4388-84AA-724FCE72B715}"
+      DTS:From="Package\Truncate Tax Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Zip2Tax Upload" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="136,44"
+          Id="Package\Execute SQL Task"
+          TopLeft="5.5,5.5" />
+        <NodeLayout
+          Size="136,44"
+          Id="Package\Send Mail Task"
+          TopLeft="5.5,413.801886792453" />
+        <NodeLayout
+          Size="136,44"
+          Id="Package\SyncGeoLookupFromTaxSource"
+          TopLeft="5.5,332.141509433962" />
+        <NodeLayout
+          Size="136,44"
+          Id="Package\Truncate Tax Table"
+          TopLeft="5.5,168.820754716981" />
+        <NodeLayout
+          Size="136,44"
+          Id="Package\Zip2Tax Download"
+          TopLeft="5.5,87.1603773584906" />
+        <NodeLayout
+          Size="136,44"
+          Id="Package\Zip2Tax Upload"
+          TopLeft="5.5,250.481132075472" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="73.3867924528302,49.4245283018868">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.7358490566038"
+              Start="0,0"
+              End="0,30.2358490566038">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.2358490566038" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="73.3867924528302,376.066037735849">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.7358490566037"
+              Start="0,0"
+              End="0,30.2358490566037">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.2358490566037" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="73.3867924528302,294.405660377359">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.7358490566037"
+              Start="0,0"
+              End="0,30.2358490566037">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.2358490566037" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="73.3867924528302,131.084905660377">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.7358490566038"
+              Start="0,0"
+              End="0,30.2358490566038">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.2358490566038" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="73.3867924528302,212.745283018868">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.7358490566038"
+              Start="0,0"
+              End="0,30.2358490566038">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.2358490566038" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Zip2Tax Upload">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="136,44"
+          Id="Package\Zip2Tax Upload\OLE DB Destination"
+          TopLeft="71.6132075471698,184.783018867925" />
+        <NodeLayout
+          Size="136,44"
+          Id="Package\Zip2Tax Upload\Source - AdaptiveBudget_20140701_csv"
+          TopLeft="5.5,5.5" />
+        <EdgeLayout
+          Id="Package\Zip2Tax Upload.Paths[Flat File Source Output]"
+          TopLeft="73.3867924528302,49.4245283018868">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="66.1132075471698,135.358490566038"
+              Start="0,0"
+              End="66.1132075471698,127.858490566038">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.6603773584906" />
+                  <mssgle:LineSegment
+                    End="66.1132075471698,67.6603773584906" />
+                  <mssgle:LineSegment
+                    End="66.1132075471698,127.858490566038" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="7.87603736733491,72.6603773584906,50.3611328125,11.2431640625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

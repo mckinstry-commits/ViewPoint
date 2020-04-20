@@ -1,0 +1,2869 @@
+/**********************************************************************
+ * BaseStyles.LeftToRight.css                                         *
+ *                                                                    *
+ * This file contains the styles for Left to Right languages.         *
+ * This file will be copied to BaseStyles.css if you select a LTR     *
+ * language as the primary language of your application.              *
+ *                                                                    *
+ * Do not modify this file.  To override any of the styles, please    *
+ * modify the Styles.css file.                                        *
+ *                                                                    *
+ **********************************************************************/
+
+HTML { /* language direction flow of content on page */
+	direction: ltr;
+	}
+
+
+/**********************************************************************
+ * Page Background Styles                                             *
+ **********************************************************************/
+.pageBackground, .pBack { /* body */
+	background-color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	width: 100%;
+	}
+
+.blank { /* blank master page content vertical offset */
+	padding-top: 0px;
+	}
+
+.pWrapper { /* page content container */
+	margin: 0px;
+	width: 100%;
+	}
+
+
+/**********************************************************************
+ * Page Container Styles                                              *
+ **********************************************************************/
+.pageTL { /* page container top left edge */
+	display: none;
+	}
+
+.pageTLSpace { /* page container top left edge buttress */
+	display: none;
+	}
+
+.pageT { /* page container top center edge */
+	display: none;
+	}
+
+.pageTSpace { /* page container top center edge buttress */
+	display: none;
+	}
+
+.pageTR { /* page container top right edge */
+	display: none;
+	}
+
+.pageTRSpace { /* page container top right edge buttress */
+	display: none;
+	}	
+	
+.pageL { /* page container left middle edge */
+	display: none;
+	}
+
+.pageLSpace { /* page container left middle edge buttress */
+	display: none;
+	}
+
+.pageC { /* page container center (contents of page container) */
+	vertical-align: top;
+	width: 100%;
+	}
+
+.pageR { /* page container right middle edge */
+	display: none;
+	}
+
+.pageRSpace { /* page container right middle edge buttress */
+	display: none;
+	}
+
+.pageBL { /* page container bottom left edge */
+	display: none;
+	}
+
+.pageBLSpace { /* page container bottom left edge buttress */
+	display: none;
+	}
+
+.pageB { /* page container bottom center edge (footer container) */
+	display: none;
+	}
+
+.pageBSpace { /* page container bottom center edge buttress */
+	display: none;
+	}
+
+.pageBR { /* page container bottom right edge */
+	display: none;
+	}
+
+.pageBRSpace { /* page container bottom right edge buttress */
+	display: none;
+	}
+
+
+/**********************************************************************
+ * Page Margin Styles                                                 *
+ **********************************************************************/
+.marginTL { /* page centering top left margin */
+	display: none;
+	}
+
+.marginTR { /* page centering top right margin */
+	display: none;
+	}
+
+.marginmL { /* page centering left margin (horizontal menu row) */
+	display: none;
+	}
+
+.marginmR { /* page centering right margin (horizontal menu row) */
+	display: none;
+	}
+
+.marginL { /* page centering left margin */
+	display: none;
+	}
+
+.marginR { /* page centering right margin */
+	display: none;
+	}
+
+.marginBL { /* page centering bottom left margin */
+	display: none;
+	}
+
+.marginBR { /* page centering bottom right margin */
+	display: none;
+	}
+
+
+/**********************************************************************
+ * Page Center Styles                                                 *
+ **********************************************************************/
+.pcT { /* page container top center edge (header container) */
+	background-color: #444444;
+	height: 56px;
+	left: 0px;
+	opacity: 1.0;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+	}
+
+.logoBG { /* inner header container */
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	}
+
+.pcmL { /* page container left middle edge (horizontal menu row) */
+	background-color: #0a0a0a;
+	}
+
+.pcmC { /* page container center (horizontal menu container) */
+	/*
+	background: -moz-linear-gradient( center top, #e5e5e5 5%, #d8d8d8 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5e5e5), color-stop(1, #d8d8d8) );
+	background: -ms-linear-gradient(top, #e5e5e5 5%, #d8d8d8 100%);
+	*/
+	background-color: #d8d8d8;
+	border-top: 1px solid #666666; 
+	border-radius: 0px;
+	display: inline-block;
+	/* filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#e5e5e5', endColorStr='#d8d8d8'); */
+	left: 0px;
+	position: fixed; 
+	top: 56px;
+	width: 100%;
+	}
+
+.pcL { /* page container left middle edge (vertical menu container) */
+	padding-right: 6px;
+	vertical-align: top;
+	}
+
+.pcC { /* page container center (contents of page container) */
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+	}
+
+.pcBL { /* page container bottom left edge */
+	display: none;
+	}
+
+.pcB { /* page container bottom center edge (footer container) */
+	vertical-align: top;
+	width: 100%;
+	}
+
+
+/**********************************************************************
+ * Page Header Styles                                                 *
+ **********************************************************************/
+.pHeaderT { /* page header skip navigation link container */
+	text-align: left;
+	}
+
+.pHeaderL { /* page header left edge */
+	padding-left: 14px;
+	vertical-align: middle;
+	width: 500px;
+	}
+
+.pHeaderC { /* page header logo container */
+	text-align: center;
+	vertical-align: middle;
+	width: 250px;
+	}
+
+.pHeaderR { /* page header security panel container */
+	text-align: right;
+	width: 250px;
+	}
+
+
+/**********************************************************************
+ * Button/Link Styles                                                 *
+ **********************************************************************/
+a:link, a:visited { /* default link text */
+	color: #000000;
+    text-decoration: none;
+	}
+
+a:hover { /* default link text hover state */
+	color: #000000;
+	text-decoration: underline;
+	}
+
+a.button_link,
+.bC a.button_link,
+.buttonPadding a.button_link,
+.dBody a.button_link,
+.galleryttc a.button_link,
+.popupTableCellValue a.button_link,
+.tableCellValue a.button_link,
+.thc a.button_link,
+.tic a.button_link,
+.ttc a.button_link { /* link text of buttons */ 
+	color: #fafafa;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 6px;
+	padding-right: 6px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #666666;
+	text-transform: uppercase;
+	width: 100%;
+	}
+
+.themeButton { /* theme button wrapper */
+	background: -moz-linear-gradient( center top, #999999 5%, #777777 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #999999), color-stop(1, #777777) );
+	background: -ms-linear-gradient(top, #999999 5%, #777777 100%);
+	border: none; 
+	border-radius: 2px;
+	display: inline-block;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#999999', endColorStr='#777777');
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 4px 7px 4px 7px;
+	text-decoration: none;
+	white-space: nowrap;
+	}
+
+.prbggo a.button_link { /* link text of buttons within pagination row */
+	border: 0px;
+	color: #666666;
+	font-size: 13px;
+	font-weight: normal;
+	text-transform: none;
+	white-space: nowrap;
+	}
+
+a.button_link:hover,
+.bC a.button_link:hover,
+.buttonPadding a.button_link:hover,
+.dBody a.button_link:hover,
+.galleryttc a.button_link:hover,
+.popupTableCellValue a.button_link:hover,
+.tableCellValue a.button_link:hover,
+.thc a.button_link:hover,
+.tic a.button_link:hover,
+.ttc a.button_link:hover { /* link text of buttons hover state */
+	color: #fafafa;
+	text-decoration: none;
+	}
+
+.themeButton:hover { /* theme button wrapper hover state */
+	background: -moz-linear-gradient( center top, #555555 5%, #333333 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #555555), color-stop(1, #333333) );
+	background: -ms-linear-gradient(top, #555555 5%, #333333 100%);
+	border: none; 
+	box-shadow: 0px 0px 0px 2px rgba(187, 187, 187, 0.25);
+	color: #fafafa;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#555555', endColorStr='#333333');
+	-moz-transition: all 0.2s ease-in-out 0s;
+	white-space: nowrap;
+	}
+
+.prbggo a.button_link:hover { /* link text of buttons within pagination row hover state */
+	color: #666666;
+	}
+
+.dfv a,
+.dialog_field_value a,
+.galleryttc a,
+.popupTableCellValue a,
+.tableCellValue a,
+.ttc a,
+.ttch a,
+.ttcs a { /* data grid data link text */
+	color: #000000;
+	cursor: pointer !important;
+	text-decoration: none;
+	}
+
+.dfv a:hover,
+.dialog_field_value a:hover,
+.galleryttc a:hover,
+.popupTableCellValue a:hover,
+.tableCellValue a:hover,
+.ttc a:hover,
+.ttch a:hover,
+.ttcs a:hover { /* data grid data link text hover state */
+	color: #000000;
+	text-decoration: underline;
+	}
+
+a.truncatedText { /* truncated text link */
+	color: #666666;
+	text-decoration: none;
+	}
+
+a.truncatedText:hover { /* truncated text link hover state */
+	color: #666666;
+	text-decoration: underline;
+	}
+
+a.skipNavigationLinks { /* skip navigation link */
+	color: #fafafa;
+	text-decoration: none;
+	}
+
+a.skipNavigationLinks:hover { /* skip navigation link hover state */
+	text-decoration: underline;
+	}
+
+
+/**********************************************************************
+ * Multi-level Menu Styles                                            *
+ **********************************************************************/
+.MLMmenuAlign { /* horizontal menu container alignment */
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 100%;
+	}
+
+.MLMmenu { /* horizontal menu container */	
+	}
+
+.MLMmC { /* horizontal menu item container */
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	padding: 8px;
+	text-shadow: 0px 1px 0px #ffffff;
+	}
+
+.MLMmC a { /* horizontal menu item link text */
+	color: #000000;
+	text-transform: none;
+	}
+
+.MLMmoC { /* horizontal menu item hover state */
+	background: -moz-linear-gradient( center top, #333333 5%, #111111 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #333333), color-stop(1, #111111) );
+	background: -ms-linear-gradient(top, #333333 5%, #111111 100%);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#333333', endColorStr='#111111');
+	}
+
+.MLMmoC a, .MLMmoC a:hover { /* horizontal menu item hover state link text */
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: none; 
+	}
+
+.MLMmenusub { /* horizontal submenu container (menu leaves) */
+	background-color: transparent !important;
+	border: 1px solid #444444; 
+	box-shadow: 3px 3px 10px #ff9900 !important;
+	}
+
+.MLMsubmC { /* horizontal submenu item container */
+	background-color: rgba(96, 96, 96, 0.9);
+	border: none;
+	font-size: 16px;
+	padding: 10px;
+	text-align: left;
+	width: 100%;
+	}
+
+.MLMsubmC a { /* horizontal submenu item link text */	
+	background-color: transparent;
+	color: #fafafa;
+	cursor: pointer !important;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	text-transform: none;
+	}
+
+.MLMsubmoC { /* horizontal submenu item hover state */
+	background-color: rgba(216, 216, 216, 1);
+	}
+
+.MLMsubmoC a { /* horizontal submenu item hover state link text */
+	color: #222222;
+	text-decoration: none;
+	}
+
+.MLMmbbg { /* horizontal menu bottom trim */
+	display: none;
+	}
+
+.MLMmenuVAlign { /* vertical menu container alignment */
+	background-color: #d8d8d8;
+	}
+
+.MLMmenuV { /* vertical menu container */
+	}
+
+.MLMmvC { /* vertical menu item container */
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	padding: 8px;
+	}
+
+.MLMmvC a { /* vertical menu item link text */
+	color: #000000;
+	text-transform: none;
+	}
+
+.MLMmvoC { /* vertical menu item hover state */
+	background: -moz-linear-gradient( center top, #333333 5%, #111111 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #333333), color-stop(1, #111111) );
+	background: -ms-linear-gradient(top, #333333 5%, #111111 100%);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#333333', endColorStr='#111111');
+	}
+
+.MLMmvoC a, .MLMmvoC a:hover { /* vertical menu item hover state link text */
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: none; 
+	}
+
+div.MLMmenuVsub { /* vertical submenu container (menu leaves) */
+	background-color: transparent !important;
+	border: 1px solid #444444; 
+	box-shadow: 3px 3px 10px #ff9900 !important;
+	display: inline;
+	}
+
+.MLMsubmvC { /* vertical submenu item container */
+	background-color: rgba(96, 96, 96, 0.9);
+	border: none;
+	font-size: 16px;
+	padding: 10px;
+	text-align: left;
+	width: 100%;
+	}
+
+.MLMsubmvC a { /* vertical submenu item link text */	
+	background-color: transparent;
+	color: #fafafa;
+	cursor: pointer !important;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	text-transform: none;
+	}
+
+.MLMsubmvoC { /* vertical submenu item hover state */
+	background-color: rgba(216, 216, 216, 1);
+	}
+
+.MLMsubmvoC a { /* vertical submenu item hover state link text */
+	color: #222222;
+	text-decoration: none;
+	}
+
+.MLMmveTL { /* vertical menu top left edge */
+	display: none;
+	}
+
+.MLMmveT { /* vertical menu top center edge */
+	display: none;
+	}
+
+.MLMmveTR { /* vertical menu top right edge */
+	display: none;
+	}
+
+.MLMmveBL { /* vertical menu bottom left edge */
+	display: none;
+	}
+
+.MLMmveB { /* vertical menu bottom center edge */
+	display: none;
+	}
+
+.MLMmveBR { /* vertical menu bottom right edge */
+	display: none;
+	}
+
+
+/**********************************************************************
+ * Footer Styles                                            	      *
+ **********************************************************************/
+.footer { /* footer content */
+	color: #999999;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding-left: 10px;
+	text-transform: none;
+	vertical-align: top;
+	white-space: nowrap;
+	width: 200px;
+	}
+
+
+/**********************************************************************
+ * Panel Container Styles                                             *
+ **********************************************************************/
+.panelTL { /* panel container top left edge */
+	}
+
+.panelTLSpace { /* panel container top left edge buttress */
+	display: none;
+	}
+
+.panelT { /* panel container top edge */
+	}
+
+.panelTSpace { /* panel container top edge buttress */
+	display: none;
+	}
+
+
+.panelTR { /* panel container top right edge */
+	}
+
+.panelTRSpace { /* panel container top right edge buttress */
+	display: none;
+	}
+
+.panelHeaderL { /* panel container header left edge */
+	}
+
+.panelHeaderLSpace { /* panel container header left edge buttress */
+	display: none;
+	}
+
+.panelHeaderR { /* panel container header right edge */
+	}
+
+.panelHeaderRSpace { /* panel container header right edge buttress */
+	display: none;
+	}
+
+.panelL { /* panel container left edge */
+	}
+
+.panelLSpace { /* panel container left edge buttress */
+	display: none;
+	}
+
+.dialog_view, .dv, .panelC { /* panel container (includes panel header) */
+	border-radius: 2px;
+	/* box-shadow: 0px 0px 1px #bbbbbb; */
+	margin-bottom: 10px;
+	text-align: left;
+	vertical-align: top;
+	width: auto;
+	}
+
+.panelR { /* panel container right edge */
+	}
+	
+.panelRSpace { /* panel container right edge buttress */
+	display: none;
+	}
+
+.panelPaginationL { /* panel container pagination left edge */
+	width: 50%;
+	}
+
+.panelPaginationC { /* panel container pagination center */
+	background-color: #ffffff;
+	border-top: 1px solid #999999; 
+	height: 30px;
+	text-align: center;
+	width: 100%;
+	}
+	
+.panelPaginationC a.button_link { /* panel container pagination link */
+	text-shadow: none;
+	}
+
+.panelPaginationCContainer { /* pagination container table */
+        /* width: 100%; */ /* uncomment out for full panel width pagination control */
+        }
+
+.panelPaginationCContainerL { /* pagination container left cell (left margin) */
+        /* width: 50%; */ /* uncomment out for full panel width pagination control */ 
+        }
+
+.panelPaginationCContainerC { /* pagination container center cell  (current page control) */
+        /* width: 100%; */ /* uncomment out for full panel width pagination control */ 
+        }
+
+.panelPaginationCContainerR { /* pagination container right cell (page size control) */
+        width: 50%; /* uncomment out for full panel width pagination control */
+        }
+
+.panelPaginationR { /* panel container pagination right edge */
+	width: 50%;
+	}
+
+.panelBL { /* panel container bottom left edge */
+	}
+
+.panelBLSpace { /* panel container bottom left edge buttress */
+	display: none;
+	}
+
+.panelB { /* panel container bottom edge */
+	}
+
+.panelBSpace { /* panel container bottom edge buttress */
+	display: none;
+	}
+
+.panelBR { /* panel container bottom right edge */
+	}
+
+.panelBRSpace { /* panel container bottom right edge buttress */
+	display: none;
+	}
+
+.panelButtonSpacing { /* */
+	width: 100%;
+	}
+
+.panelSearchBox { /* panel search textbox */
+	background-color: #fafafa;
+	border: 1px solid #aaaaaa;
+	border-radius: 0px;
+	height: 16px;
+	padding: 4px;
+	width: 286px;
+	}
+
+.panelSearchBox:hover { /* panel search textbox hover state */
+	background-color: #ffffff;
+	border-radius: 1px;
+	box-shadow: 0px 0px 0px 2px rgba(187, 187, 187, 0.25);
+	}
+
+.Search_Input, .si { /* search textbox */
+	background-color: transparent; 
+	border: none;
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 0px;
+	width: 246px;
+	} 
+
+.Search_InputHint { /* "search for..." text inside search textbox */
+	background-color: transparent; 
+	border: none;
+	color: #999999;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 0px;
+	width: 246px;
+	} 
+
+.Search_Input_Classic { /* classic style needed for LLS search textboxes */
+	border: 1px solid #dddddd;
+	border-radius: 0px;
+	color: #999999;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding: 0px;
+	width: 246px;
+	} 
+
+.Search_Input2, .si2 { /* search textbox (classic style needed for workflow page type) */
+	border: 1px solid #dddddd;
+	border-radius: 0px;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding: 0px;
+	} 
+
+.recordPanelButtonsAlignment, .rpbAlign { /* page buttons padding */
+	padding-bottom: 5px;
+	padding-top: 5px;
+	}
+
+.recordPanelButtonsAlignment table { /* page buttons alignment */
+	/* margin-left: auto; */ /* uncomment out to center align page buttons */
+	/* margin-right: auto; */ /* uncomment out to center align page buttons */
+	}
+
+.pageButtonsContainer { /* page buttons container */
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	}
+
+.buttonPadding { /* page buttons padding */
+	padding-right: 6px;
+	}
+
+.floatContainer { /* */
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	}
+
+
+/**********************************************************************
+ * Panel Body Styles                                                  *
+ **********************************************************************/
+.updatePanelContent { /* panel container */
+	width: 100%;
+	}
+
+.dialogHeaderEdgeL, .dhel { /* panel header left edge */
+	display: none;
+	}
+
+.dialogHeaderEdgeR, .dher { /* panel header right edge */
+	display: none;
+	}
+
+.dialog_header, .dh { /* panel header container */
+	background-color: transparent;
+	border-bottom: 1px solid #999999;
+	height: 34px;
+	vertical-align: middle;
+	}
+
+.dialogHeaderBackground, .dhb { /* panel header */
+	padding-bottom: 4px;
+	padding-left: 4px;
+	padding-right: 10px;
+	padding-top: 4px;
+	}
+
+.dialog_header_text, .dht { /* panel header title text */
+	color: #444444;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	padding-left: 10px;
+	text-shadow: 0px 2px 1px #cccccc;
+	text-transform: none;
+	white-space: nowrap;
+	}
+
+.dheci { /* padding around panel expand/collapse icon */
+	padding-left: 10px;
+	}
+
+.dhir { /* padding between panel header title text and edit icon */
+	padding-left: 6px;
+	}
+
+.dialog_body, .dBody { /* panel content container (excludes panel header) */ 
+	background-color: #ffffff;
+	color: #555555;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding: 8px;
+	text-align: left;	
+	}
+	
+.field_label, .fl { /* field label on top */
+	color: #999999;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+	text-align: left;
+	text-transform: none;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.field_label_on_side, .fls { /* field label on side */
+	color: #999999;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	font-weight: normal; 
+	padding-bottom: 8px;
+	padding-left: 4px;
+	padding-right: 2px;
+	padding-top: 4px;
+	text-align: right;
+	text-transform: none;
+	vertical-align: top;
+	white-space: nowrap;	
+	}
+
+.field_value, .fv { /* field value */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding: 0px;
+	}
+
+.field_input, .fi { /* input textbox */
+	background-color: #fafafa;
+	border: 1px solid #cccccc;
+	border-radius: 0px;
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding: 4px 7px 4px 7px;
+	vertical-align: top;
+	}
+
+.field_input:hover { /* input textbox hover state */
+	background-color: #ffffff;
+	border-radius: 1px;
+	box-shadow: 0px 0px 0px 2px rgba(187, 187, 187, 0.25);
+	}
+
+.dialog_field_value, .dfv { /* panel field value text */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-bottom: 8px;
+	padding-left: 4px;
+	text-align: left;
+	vertical-align: top;
+	}
+
+.Filter_Input, .fili { /* filter drop-down list */
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	border-radius: 0px;
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	vertical-align: top;
+	}
+
+.Filter_Input:hover { /* drop-down list hover state */
+	background-color: #ffffff;
+	border-radius: 1px;
+	box-shadow: 0px 0px 0px 2px rgba(187, 187, 187, 0.25);
+	}
+
+.filter_area, .fila { /* filter label */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding: 4px 7px 4px 7px;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+	
+.search_area, .sa { /* search area container */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	}
+
+.search_label, .sl { /* search label */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding: 5px;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.rangeFilterText, .rft { /* range filter label */
+	color: #999999;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	padding-left: 6px;
+	padding-right: 6px;
+	text-decoration: none;
+	text-transform: none;
+	}
+
+
+/**********************************************************************
+ * Dropshadow Styles                        			      * 
+ **********************************************************************/
+.imageDropshadow { /* image thumbnail dropshadow */
+	-moz-box-shadow: 0px 0px 2px #666666;
+	-webkit-box-shadow: 0px 0px 2px #666666;
+	box-shadow: 0px 0px 2px #666666;
+	}
+
+
+/**********************************************************************
+ * Auto Type Ahead (Interactive Search) Styles                        * 
+ **********************************************************************/
+.autotypeahead_completionListElement { /* textbox value */   
+	background-color: #eeeeee;
+	border-bottom: 1px solid #555555;
+	border-left: 1px solid #555555;
+	border-right: 1px solid #555555;
+	border-top: 1px solid #555555;
+	left: 0px;
+	list-style-type: none;
+	margin: 0px;
+	overflow: auto;
+	padding: 0px;
+	padding: 4px;
+	position: absolute;
+	top: 0px;
+	visibility: hidden;
+	}
+
+.autotypeahead_highlightedListItem { /* highlighted list item */
+	background-color: #dddddd;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding-bottom: 1px; 
+	}
+
+.autotypeahead_listItem { /* list item */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding-bottom: 1px; 
+	}
+
+
+/**********************************************************************
+ * Table Rows Styles                                                  *
+ **********************************************************************/ 
+.header_cell,
+.header_cell_scrolling,
+.thc,
+.thcs,
+.thcnb,
+.thcwb { /* column header container (above select checkbox) */
+	background-color: #efefef;
+	color: #999999;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	padding-bottom: 5px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 5px;
+	text-align: left;
+	vertical-align: top;
+	}
+
+.column_header a,
+.column_header_scrolling a,
+.tch a,
+.tchs a { /* column header link text */
+	color: #666666;
+	cursor: pointer !important;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: underline;
+	} 
+	
+.column_header a:hover,
+.column_header_scrolling a:hover,
+.tch a:hover,
+.tchs a:hover { /* column header link text hover state */
+	color: #333333;
+	text-decoration: none;
+	}
+
+.icon_cell, .alt_icon_cell, .tic, .taic { /* deprecated: data grid row button container */
+	background-color: #ffffff;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.icon_cell_highlighted, .alt_icon_cell_highlighted, .tich, .taich { /* deprecated: data grid row button container highlighted state */
+	background-color: #dddddd;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.icon_cell_selected, .tics { /* deprecated: data grid row button container selected state */
+	background-color: #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.ticnb { /* data grid row button container */
+	background-color: #ffffff;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-left: 2px;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tichnb { /* data grid row button container highlighted state */
+	background-color: #dddddd;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-left: 2px;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.ticsnb { /* data grid row button container selected state */
+	background-color: #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-left: 2px;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+	
+.ticwb { /* data grid select checkbox container */
+	background-color: #ffffff;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tichwb { /* data grid select checkbox container highlighted state */
+	background-color: #dddddd;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.ticswb { /* data grid select checkbox container selected state */
+	background-color: #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tichb { /* data grid right-most row button container (when no select checkbox is present) */
+	background-color: #ffffff;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tichhb { /* data grid right-most row button container (when no select checkbox is present) highlighted state */
+	background-color: #dddddd;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.ticshb { /* data grid right-most row button container (when no select checkbox is present) selected state */
+	background-color: #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+			
+.icon_cell_empty, .tice { /* data grid row button container (when no row button is present) */
+	background-color: #ffffff;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	width: 0px;
+	}
+
+.icon_cell_highlighted_empty, .tiche { /* data grid row button container (when no row button is present) highlighted state */
+	background-color: #dddddd;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	width: 0px;
+	}
+
+.icon_cell_selected_empty, .ticse { /* data grid row button container (when no row button is present) selected state */
+	background-color: #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	width: 0px;
+	}
+	
+.table_cell, .alt_table_cell, .ttc, .tatc { /* data grid data container */
+	background-color: #ffffff;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	color: #555555;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding: 5px;
+	vertical-align: top;
+	text-align: left;
+	}
+
+.table_cell_highlighted, .alt_table_cell_highlighted, .ttch, .tatch { /* data grid data container highlighted state */
+	background-color: #dddddd;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding: 5px;
+	vertical-align: top;
+	text-align: left;
+	}
+
+.table_cell_selected, .ttcs { /* data grid data container selected state */
+	background-color: #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding: 5px;
+	vertical-align: top;
+	text-align: left;
+	}
+
+.ttc .dv, .ttch .dv, .ttcs .dv { /* panel container nested within data grid */
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	}
+
+.ttc .ajax__tab_xp, .ttch .ajax__tab_xp, .ttcs .ajax__tab_xp { /* tab container nested within data grid */
+	margin: 0px;
+	padding: 0px;
+	}
+
+.totals_cell, .tpttc { /* data grid totals container */
+	background-color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+	width: 48px;
+	}
+
+.totals_cell_value, .tpttcv { /* data grid totals text */
+	background-color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding: 5px;
+	text-align: right;
+	vertical-align: top;
+	}
+
+.page_total_label, .tptl { /* data grid page totals label */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding-left: 20px;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.page_total_value, .tptv { /* data grid page totals text */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding: 3px;
+	}
+
+.grand_total_label, .tgtl { /* data grid grand total label */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding-left: 20px;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.grand_total_value, .tgtv { /* data grid grand total text */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 3px;
+	}
+
+.tableCellLabel {/* table cell field label text */
+	color: #bbbbbb;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding-bottom: 4px;
+	padding-left: 6px;
+	padding-right: 2px;
+	padding-top: 8px;
+	text-align: right;
+	text-transform: none;
+	vertical-align: top;
+	white-space: nowrap;	
+	}
+
+.tableCellValue { /* table cell field value text */
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding: 8px;
+	text-align: left;
+	/* text-shadow: 0px 1px 1px #cccccc; */
+	vertical-align: top;
+	}
+
+.tableRowDivider { /* table row divider between consecutive records */
+	border-bottom: 1px solid #dddddd;
+	height: 1px;
+	}
+
+.tableRowButton { /* table row buttons container */
+	font-size: 4px;
+	padding-left: 2px;
+	padding-top: 8px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tableRowButtonsCellHorizontal { /* table row buttons horizontal orientation */
+	vertical-align: top;
+	white-space: nowrap;
+	width: 16px;
+	}
+
+.tableRowButtonsCellHorizontal input.button_link { /* table row button (horizontal orientation) */
+	display: inline;
+	padding-left: 2px; 
+	padding-right: 2px;
+	padding-top: 8px;
+	}
+
+.tableRowButtonsCellHorizontal input.button_link:hover { /* table row button hover state (horizontal orientation) */
+	}
+
+.tableRowButtonsCellVertical { /* table row buttons vertical orientation */
+	padding-bottom: 6px;
+	padding-top: 6px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tableRowButtonsCellVertical input.button_link { /* table row button (vertical orientation) */
+	display: block;
+	padding: 2px;
+	}
+
+.tableRowButtonsCellVertical input.button_link:hover { /* table row button hover state (vertical orientation) */
+	}
+
+.tableCellSelectCheckbox { /* table row select checkbox container */
+	padding-left: 6px;
+	padding-top: 7px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tableRowsEdge, .tre { /* data grid container */
+	}
+
+
+/**********************************************************************
+ * Scrolling Table Styles                                             *
+ **********************************************************************/
+div.tableContainer { /* scrolling table container */
+	clear: both;
+	height: 285px;  /* defines scrolling region height */
+	overflow: auto; /* enables scroll bar */
+	}
+
+div.tableContainer table { /* data grid container of scrolling table */
+	width: 97%; /* defines data region width (provide room for scroll bar) */
+	}
+
+thead.fixedHeader tr { /* fixed column header of data grid */
+	position: relative; 	   /* fixes headers in place */
+	}
+
+.scrollContent { /* data grid (excludes fixed column header) within scrolling table */
+	display: ;
+	}
+
+thead.fixedHeader td.button-white { /* theme button container within scrolling table column header */
+	white-space: nowrap;
+	width: 0%;
+	}
+
+thead.fixedHeader table { /* deprecated */
+	width: 0%;
+	}
+
+
+/**********************************************************************
+ * Pagination Styles                                                  *
+ **********************************************************************/
+.pagination_row, .pr { /* button bar/pagination row container (classic style needed for workflow page type) */
+	background-color: rgba(0,0,0,0.3);
+	color: #999999;
+	height: 30px;
+	padding-top: 4px;
+	vertical-align: middle;
+	width: 100%;
+	}
+
+.prbbc { /* button bar button container */
+	}
+
+.prbg { /* pagination row button container */
+	color: #999999;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	padding-left: 3px;
+	padding-right: 3px;
+	white-space: nowrap;
+	}
+
+.prbg input { /* pagination row input textbox */
+	padding-right: 8px;
+	padding-top: 2px;
+	}
+	
+.prbggo { /* pagination row "go" button container */
+	}
+
+.prspace { /* pagination short buttons and navigation sections spacing */
+	padding-bottom: 3px;
+	vertical-align: bottom;
+	width: auto;
+	}
+
+.prspaceEnd { /* pagination short buttons and navigation sections spacing end */
+	/* display: none; */ /* uncomment out for full panel width pagination control */
+	width: 100%; /* comment out for full panel width pagination control */
+	}
+
+.Pagination_Input, .pri { /* pagination row input textbox/drop-down list container */
+	background-color: #fafafa;
+	border: 1px solid #dddddd;
+	border-radius: 0px;
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding: 4px 7px 4px 7px;
+	text-align: center;
+	}
+	
+.Pagination_Input:hover { /* pagination textboxt/drop-down list hover state */
+	background-color: #ffffff;
+	border-radius: 1px;
+	box-shadow: 0px 0px 0px 2px rgba(187, 187, 187, 0.25);
+	}
+
+.menuDivider { /* */
+	padding: 0px;
+	border-top: 1px solid #ffffff;
+	}
+
+
+/**********************************************************************
+ * Tab Control Styles                                                 *
+ **********************************************************************/
+.ajax__tab_xp { /* tab container alignment */
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	}
+
+.ajax__tab_xp div.ajax__tab_body { /* tab container */
+	background-color: transparent;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	}
+
+.ajax__tab_panel { /* tab container background */
+	background-color: transparent;
+	}
+
+.ajax__tab_xp div.ajax__tab_header { /* tab container top edge */
+	background-image: none;
+	color: #ff9900;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-size: 16px;
+	text-shadow: 0px 2px 1px #cccccc;
+	}
+
+.ajax__tab_xp span.ajax__tab_outer { /* tab container tab height */
+	height: 26px;
+	}
+
+.ajax__tab_xp .ajax__tab_active span.ajax__tab_outer, .ajax__tab_xp div.ajax__tab_header .ajax__tab_active span.ajax__tab_outer { /* tab container active tab */
+	background-color: #fafafa;
+	background-image: none;
+	border-left: 1px solid #dddddd; 
+	border-radius: 0px;
+	border-right: 1px solid #dddddd;
+	border-top: 3px solid #444444;
+	}
+
+
+.ajax__tab_xp .ajax__tab_hover span.ajax__tab_outer, .ajax__tab_xp div.ajax__tab_header .ajax__tab_hover span.ajax__tab_outer { /* tab container hovered-over tab */
+	background-color: #ffffff;
+	background-image: none;
+	border-radius: 0px;
+	}
+
+.ajax__tab_xp span.ajax__tab_outer, .ajax__tab_xp div.ajax__tab_header span.ajax__tab_outer { /* tab container non-active tab */
+	background-color: #fafafa;
+	background-image: none;
+	border: none; 
+	border-left: 1px solid #dddddd; 
+	border-radius: 0px;
+	border-right: 1px solid #eeeeee;
+	border-top: 1px solid #dddddd;
+	}
+
+.ajax__tab_xp .ajax__tab_active span.ajax__tab_inner, .ajax__tab_xp div.ajax__tab_header .ajax__tab_active span.ajax__tab_inner { /* tab container active tab contents */
+	background-image: none;
+	}
+
+.ajax__tab_xp .ajax__tab_hover span.ajax__tab_inner, .ajax__tab_xp div.ajax__tab_header .ajax__tab_hover span.ajax__tab_inner { /* tab container hovered-over tab contents */
+	background-image: none;
+	}
+
+.ajax__tab_xp span.ajax__tab_inner, .ajax__tab_xp div.ajax__tab_header span.ajax__tab_inner { /* tab container non-active tab background image */
+	background-image: none;
+	}
+
+.ajax__tab_xp .ajax__tab_active span.ajax__tab_tab, .ajax__tab_xp div.ajax__tab_header .ajax__tab_active .ajax__tab_tab { /* tab container active tab background image */
+	background-image: none;
+	}
+
+.ajax__tab_xp .ajax__tab_hover span.ajax__tab_tab, .ajax__tab_xp div.ajax__tab_header .ajax__tab_hover .ajax__tab_tab { /* tab container hovered-over tab background image */
+	background-image: none;
+	}
+
+.ajax__tab_xp span.ajax__tab_tab, .ajax__tab_xp div.ajax__tab_header .ajax__tab_tab { /* tab container tab text */
+	background-image: none;
+	color: #444444;
+	padding-bottom: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	}
+
+.ajax__tab_xp .dialog_view, .ajax__tab_xp .dv { /* panel container within tab container */
+	border: 1px solid #dddddd;
+	border-top: none;
+	border-radius: 0px;
+	box-shadow: 0px -1px 1px #dddddd;
+	margin: 0px;
+	margin-bottom: 10px;
+	padding: 0px;
+	text-align: left;
+	vertical-align: top;
+	width: auto;
+	}
+
+.tableCellValue .ajax__tab_xp .dv { /* panel container within tab container within table */
+	width: 100%; 
+	}
+
+.ajax__tab_xp .dBody { /* panel content container (excludes panel header) within tab container */ 
+	background-color: #fafafa;
+	border: none;
+	padding: 16px;
+	width: 100%;
+	}
+
+.ajax__tab_xp .tre { /* data grid container within tab container */
+	}
+
+
+/**********************************************************************
+ * HTML Editor Styles                                                 *
+ **********************************************************************/
+.ajax__htmleditor_editor_container:hover { /* html editor container hover state */
+	background-color: #ffffff;
+	border-radius: 1px;
+	box-shadow: 0px 0px 0px 2px rgba(187, 187, 187, 0.25);
+	}
+
+
+/**********************************************************************
+ * Sign In Bar Styles                                                 *
+ **********************************************************************/
+.signInSpacing { /* application logo and sign in bar spacing */
+	width: 100%;
+	}
+
+.signInBar { /* sign in bar */
+	color: #fafafa;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding-bottom: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+	white-space: nowrap;
+	}
+	
+.signInBar a { /* sign in bar link text */
+	color: #fafafa;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+	white-space: nowrap;
+	}
+
+.signInBar a:hover { /* sign in bar link text hover state */
+	text-decoration: underline;
+	}
+
+.signInBarStatus { /* sign in bar status message text */
+	color: #fafafa;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding-left: 10px;
+	padding-right: 20px;
+	text-align: right;
+	white-space: nowrap;
+	}
+
+
+/**********************************************************************
+ * Security Forms (Sign In, Sign Out, Forgot User pages) Styles       *
+ **********************************************************************/
+.securityGraphicWrapper { /* sign in/out graphic, saluation and instruction container */
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+	}
+
+.securityForm { /* sign in/out form container */
+	height: 100px;
+	padding: 16px;
+	text-align: left;
+	vertical-align: top;
+	}
+
+.QSContainer .securityGraphicWrapper .imageDropshadow { /* reduce security graphic image size so contents fit within QuickPopup */
+	width: 430px;
+	} 
+
+
+/**********************************************************************
+ * Actions/Filters/Settings Popup Styles                              *
+ **********************************************************************/
+.popupPosition { /* */
+	/* z-index: 100; */
+	}
+
+.popupWrapper { /* popup container */
+	-moz-border-radius: 2px;
+	-moz-box-shadow: 0px 0px 4px #bbbbbb;
+	-webkit-border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 4px #bbbbbb;
+	background-color: rgba(68, 68, 68, 0.9);
+	border-radius: 2px;
+	box-shadow: 0px 0px 4px #333333;
+	color: #eeeeee;
+	display: inline-block;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	left: 0px;
+	padding: 10px;
+	position: absolute;
+	text-align: left;
+	top: 0px;
+	visibility: hidden;
+	z-index: 200;
+	}
+
+.popupTableCellLabel {/* popup table cell field label text */
+	color: #bbbbbb;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	padding-bottom: 4px;
+	padding-left: 6px;
+	padding-right: 2px;
+	padding-top: 4px;
+	text-align: left;
+	text-transform: none;
+	vertical-align: top;
+	white-space: nowrap;
+	}
+
+.popupTableCellValue { /* popup table cell field value text */
+	color: #eeeeee;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding: 4px;
+	vertical-align: top;
+	white-space: nowrap;
+	}
+
+.popupTableCellValue .rft { /* popup table cell range filter label */
+	color: #cccccc;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	}
+
+.popupTableCellAction { /* popup action item cell */
+	background-color: #ffffff;
+	font-size: 13px;
+	padding: 8px;
+	text-align: left;
+	width: 100%;
+	}
+
+.popupTableCellAction:hover { /* popup action item cell hover state */
+	background-color: #dddddd;
+	}
+
+.popupTableCellValue a, .popupTableCellAction a { /* popup item link */
+	color: #eeeeee;
+	cursor: pointer !important;
+	font-family: Arial, Verdana, sans-serif;
+	text-decoration: none;
+	text-transform: none;
+	}
+
+.popupTableCellValue a:hover, .popupTableCellAction a:hover { /* popup item link hover state */
+	color: #ffffff;
+	text-decoration: underline;
+	}
+
+.popupTableRowDivider { /* popup filter divider, separating "filter by" from "sort by" */
+	border-top: 1px solid #eeeeee;
+	padding-bottom: 6px;
+	}
+
+.popupWrapper .Filter_Input { /* filter drop-down list within popup */
+	font-size: 13px;
+	}
+
+.popupWrapper input { /* actions popup buttons spacer */ 
+	padding-left: 3px;
+	padding-right: 3px;
+	}
+
+
+/**********************************************************************
+ * Detail Rollover Popup Styles                                       *
+ **********************************************************************/
+.detailRolloverPopup { /* detail rollover popup container */
+	position: absolute;
+	visibility: visible;
+	z-index: 2;
+	}
+
+.detailRolloverTitle { /* detail rollover popup title */
+	color: #fafafa;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	height: 10px;
+	padding: 4px 10px 4px 10px;
+	vertical-align: middle;
+	width: 100%;
+	}
+
+.detailRolloverTitlePadding { /* detail rollver popup title padding (work-around classic implementation) */
+	display: none;
+	}
+
+.detailRolloverPopupCloseButtonAlignment { /* detail rollover popup close button container */
+	padding-left: 4px;
+	padding-right: 4px;
+	}
+
+.detailRolloverTL { /* detail rollover popup top left edge */
+	display: none;
+	}
+
+.detailRolloverT { /* detail rollover popup top center edge */
+	}
+
+.detailRolloverTR { /* detail rollover popup top right edge */
+	display: none;
+	}
+
+.detailRolloverL { /* detail rollover popup left middle edge */
+	display: none;
+	}
+
+.detailRolloverC { /* detail rollover popup center */
+	padding: 0px;
+	}
+
+.detailRolloverC div { /* detail rollover popup center div container (overrides popupWrapper div's inline styles added by generation) */
+	/*
+	height: auto !important;
+	overflow: visible !important;
+	padding: 2px;
+	width: auto !important;
+	*/
+	padding: 10px;
+	}
+
+.detailRolloverR { /* detail rollover popup right middle edge */
+	display: none;
+	}
+
+.detailRolloverBL { /* detail rollover popup bottom left edge */
+	display: none;
+	}
+
+.detailRolloverB { /* detail rollover popup bottom center edge */
+	display: none;
+	}
+
+.detailRolloverBR { /* detail rollover popup bottom right edge */
+	display: none;
+	}
+
+
+/**********************************************************************
+ * AJAX Calendar Styles                                               *
+ **********************************************************************/
+.MyCalendar .ajax__calendar_container { /* AJAX calendar container */
+	background-color: #ffffff;
+	border: 1px solid #636563;
+	color: #000000;
+	z-index: 20;
+	}
+
+.MyCalendar .ajax__calendar_container table { /* AJAX calendar days container */
+	height: 100%;
+	width: 100%;
+	}
+
+.MyCalendar .ajax__calendar_day { /* AJAX calendar non-current day container */ 
+	border: 1px solid #ffffff;
+	}
+
+.MyCalendar .ajax__calendar_other .ajax__calendar_day,
+.MyCalendar .ajax__calendar_other .ajax__calendar_year { /* AJAX calendar non-current month day/year container */
+	border: 1px solid #ffffff;
+	color: #636563;
+	}
+
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_year { /* AJAX calendar day/month/year hover state */
+	background-color: #effbff;
+	border: 1px solid #def3ff;
+	color: #0065ce;
+	}
+
+.MyCalendar .ajax__calendar_active .ajax__calendar_day,
+.MyCalendar .ajax__calendar_active .ajax__calendar_month,
+.MyCalendar .ajax__calendar_active .ajax__calendar_year { /* AJAX calendar current day/month/year container */
+	background-color: #effbff;
+	border: 1px solid #0065ce;
+	color: #0065ce;
+	}
+
+
+/**********************************************************************
+ * AJAX Smooth Panel Update Styles                                    *
+ **********************************************************************/
+.ajaxUpdatePanel { /* AJAX smooth panel update screen overlay */
+	background-color: #000000;
+	height: 100%;
+	left: 0px;
+	opacity: 0.50;
+	padding: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1999;
+	}
+
+div.updatingContainer { /* AJAX smooth panel update loading icon position */
+	height: 100%;
+	left: 0px;
+	padding: 0px !important;
+	position: fixed !important;
+	text-align: center;
+	top: 0px;
+	width: 100%;
+	z-index: 2000;
+	}
+
+div.updatingContainer img { /* AJAX smooth panel update loading icon */
+	position: relative;
+	top: 50%;
+	}
+
+
+/**********************************************************************
+ * AJAX Modal Popup Control Styles                                    *
+ **********************************************************************/
+.modalPopup { /* */
+	background-color: #eeeeee;
+	border: 1px solid #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	height: 35px;
+	padding: 10px; 
+	position: absolute;
+	text-align: center;
+	top: -1000px;
+	vertical-align: middle;
+	width: 200px;
+	}
+
+
+/**********************************************************************
+ * Web Accordion Styles                                               * 
+ **********************************************************************/
+.accordionHeader { /* accordion header area */ 
+	background-color: #444444;
+	border: 1px solid #eeeeee;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	vertical-align: middle;
+	}
+
+.accordionHeaderTitle { /* accordion header area title */
+	color: #fafafa;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	text-align: left;
+	text-transform: none;
+   	vertical-align: middle;
+	width: 100%;
+	}
+
+
+/**********************************************************************
+ * Gallery Styles                                                     * 
+ **********************************************************************/
+.gallerydBody { /* modern gallery panel content container (excludes panel header) */
+	background-color: #ffffff;
+	color: #555555;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding: 0px;
+	text-align: left;	
+	}
+
+.gallerydBody .galleryttc { /* modern gallery panel cell */
+	border-bottom: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	padding: 0px;
+	width: 250px;
+	}
+
+.galleryttc { /* classic gallery panel cell */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding: 20px;
+	text-align: center;
+	vertical-align: top;
+	}
+
+.gallerytic { /* classic gallery panel icon cell */
+	padding: 0px;
+	padding-left: 8px;
+	padding-top: 24px; 
+	vertical-align: top;    
+	width: 16px;       
+	}
+
+.galleryttl { /* classic gallery panel page/grand totals cell */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+	}
+
+.galleryBackgroundImage { /* gallery item background image */
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%; /* uncomment out to have background image scaled to fill gallery cell */
+	cursor: pointer !important;
+	width: 250px;
+	}
+
+.galleryDescriptionBackground { /* gallery item description background */
+	color: #eeeeee;
+	font-size: 14px;
+	height: 250px;
+	text-align: left;
+	text-shadow: 0px -1px 0px #222222;
+	text-transform: none;
+	vertical-align: bottom;
+	width: 250px;
+	}
+
+.galleryDescriptionBackground a.button_link { /* gallery item description link */
+	color: #eeeeee;
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #222222;
+	text-transform: none;
+	}
+
+.galleryDescriptionBackground a.button_link:hover { /* gallery item description link hover state */
+	color: #ffffff;
+	text-decoration: underline;
+	}
+
+.galleryTitleCrop { /* gallery item description title truncation */
+	background-color: rgba(51, 51, 51, 0.4);
+	overflow: hidden;
+	padding: 4px;
+	text-overflow: ellipsis;
+	height: 40px;
+	vertical-align: bottom;
+	width: 242px;
+	}
+
+.galleryTitle { /* gallery item descripton title */
+	color: #eeeeee;
+	font-size: 13px;
+	font-weight: normal;
+	}
+
+
+/**********************************************************************
+ * Configuration/Error Page Styles                                    *
+ **********************************************************************/
+.pContent { /* configure error page panel container (excludes panel header) */
+	background-color: #ffffff;
+	width: 100%;
+	}
+
+.configureErrorPagesText { /* configure/error page body text */
+	color: #555555;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	}
+	
+
+/**********************************************************************
+ * Section 508 Compliance Styles                                      *
+ **********************************************************************/
+.skipNavigationLinks { /* skip navigation links container*/
+	font-family: Arial, Verdana, sans-serif;
+	color: #dddddd;
+	font-size: 14px;
+	}
+	
+
+/**********************************************************************
+ * Mobile Web Page Styles                                             * 
+ **********************************************************************/
+.mobileBase { /* mobile page default settings */
+	background-color: #ffffff;
+	color: #555555;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 3.0em;
+	width: 100%;
+	}
+
+.mobileBase a:hover { /* prevent underline of menu items */
+	text-decoration: none;
+	}
+
+.mobileHeader { /* mobile header area */
+	background-color: #444444;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 100%;
+	}
+
+.mobileHeaderPagination { /* mobile header area */
+	background-color: #f6f6f6;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 100%;
+	}
+
+.mobileBody { /* mobile main content area */ 
+	padding-bottom: 4%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 2%;
+	width: 100%;
+	}
+
+.mobileBodyNoPadding { /* mobile main content area (with padding removed) */
+	padding: 0px;
+	width: 100%;
+	}
+
+.mobileBodyText { /* mobile main content area default text styles */
+	color: #555555;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.73em;
+	}
+
+.mobileHeaderLeft { /* mobile header area left button container */
+	text-align: left;
+	width: 10%;
+	}
+
+.mobileHeaderTitle { /* mobile header title area */
+	color: #fafafa;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-size: 1.2em;
+	padding-bottom: 4%;
+	padding-top: 4%;
+	text-align: center;
+	}
+
+.mobileFontAdjust90 { /* mobile font downscale to 90% original size (used in <span> tag around text to be adjusted) */
+	font-size: 0.9em;
+	}
+
+.mobileFontAdjust80 { /* mobile font downscale to 80% original size (used in <span> tag around text to be adjusted) */
+	font-size: 0.8em;
+	}
+
+.mobileFontAdjust70 { /* mobile font downscale to 70% original size (used in <span> tag around text to be adjusted) */ 
+	font-size: 0.7em;
+	}
+
+.mobileFontAdjust60 { /* mobile font downscale to 60% original size (used in <span> tag around text to be adjusted) */
+	font-size: 0.6em;
+	}
+
+.mobileHeaderOptions { /* mobile header area icon button container */
+	width: 10%;
+	}
+
+.mobileHeaderRight { /* mobile header area right button container */
+	text-align: right;
+	width: 10%;
+	}
+
+.mobileSignInStatus { /* mobile sign in bar status message text */
+	color: #fafafa;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.8em;
+	text-align: right;
+	}
+
+.mobileFilterArea { /* mobile header filter area */
+	background-color: #efefef;
+	}
+
+.mobileFooter { /* mobile footer area */
+	background-color: #f6f6f6; 
+	border-top: 2px solid #eeeeee;
+	color: #999999;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-size: 0.5em;
+	padding-bottom: 2%;
+	padding-left: 3%;
+	padding-top: 1%;
+	text-transform: none;
+	width: 100%;
+	}
+
+.mobileMenu { /* mobile vertical menu item */
+	background: -moz-linear-gradient( center top, #e5e5e5 5%, #d8d8d8 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5e5e5), color-stop(1, #d8d8d8) );
+	background: -ms-linear-gradient(top, #e5e5e5 5%, #d8d8d8 100%);
+	border-bottom: 2px solid #eeeeee;
+	border-top: 2px solid #eeeeee;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	color: #000000;
+	cursor: pointer !important;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#e5e5e5', endColorStr='#d8d8d8');
+	font-size: 1.2em;
+	font-weight: normal;
+	padding-bottom: 3%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 3%;
+	text-shadow: 0px 1px 0px #ffffff;
+	text-transform: none;
+	width: 100%;
+	}
+
+.mobileSubmenuContainer { /* submenu container (menu leaves) */
+	border: 1px solid #444444;
+	z-index: 100;
+	}
+
+.mobileSubmenu { /* mobile menu item submenu */
+	background-color: #d8d8d8;
+	color: #fafafa;
+	cursor: pointer !important;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-size: 1.0em;
+	padding: 1%;
+	text-transform: none;
+	}
+
+.mobileMenuHorizontal { /* mobile horizontal menu item */
+	background: -moz-linear-gradient( center top, #e5e5e5 5%, #d8d8d8 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5e5e5), color-stop(1, #d8d8d8) );
+	background: -ms-linear-gradient(top, #e5e5e5 5%, #d8d8d8 100%);
+	border-bottom: 2px solid #eeeeee;
+	border-right: 2px solid #eeeeee;
+	border-top: 2px solid #eeeeee;
+	color: #000000;
+	cursor: pointer !important;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#e5e5e5', endColorStr='#d8d8d8');
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-size: 1.2em;
+	font-weight: normal;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	text-transform: none;
+	}
+
+a.mobileButtonLink:link, a.mobileButtonLink:visited, .mobileButtonLink { /* mobile theme button link text */
+	color: #fafafa;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.87em;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
+
+a.mobileLink:link, a.mobileLink:visited, .mobileLink { /* mobile link text */
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 1.0em;
+	text-decoration: none;
+	}
+
+.mobileThemeButton { /* mobile theme button */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: -moz-linear-gradient( center top, #999999 5%, #777777 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #999999), color-stop(1, #777777) );
+	background: -ms-linear-gradient(top, #999999 5%, #777777 100%);
+	border: none; 
+	border-radius: 10px;
+	display: inline-block;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#999999', endColorStr='#777777');
+	padding: 22px 10px 22px 10px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #666666;
+	white-space: nowrap;
+	}
+
+.mobileTableCellTitle { /* mobile show table cell title */
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+
+.mobileTableCell { /* mobile show table cell */
+	border-bottom: 2px solid #eeeeee;
+	color: #555555;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.9em;
+	padding: 2%;
+	}
+
+.mobileTableImageCell { /* mobile show table cell (to keep image cell narrow) */
+	border-bottom: 2px solid #eeeeee;
+	color: #555555;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.9em;
+	padding: 2%;
+	width: 18%;
+	}
+
+.mobileChildTableContainer { /* mobile child table container */
+	border: 2px solid #eeeeee;
+	margin-bottom: 2%;
+	}
+
+.mobileAccordionHeader { /* mobile accordion header area */ 
+	background-color: #444444;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	padding-bottom: 2%;
+	padding-left: 2%;
+	padding-top: 2%;
+	vertical-align: middle;
+	}
+
+.mobileAccordionHeaderTitle { /* mobile accordion header area title */
+	color: #fafafa;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-size: 1.2em;
+	font-weight: normal;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-decoration: none;
+	width: 100%;
+	}
+
+.mobileChildTableCellTitle { /* mobile show child table title */
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+
+.mobileChildTableCell { /* mobile show child table cell */
+	background-color: #ffffff;
+	border-bottom: 2px solid #eeeeee;
+	color: #555555;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.9em;
+	padding: 2%;	
+	}
+
+.mobileRecordPanel { /* mobile record panel area */
+	padding-bottom: 10%;
+	}
+
+.mobileFieldLabelOnTop { /* mobile record field label (above field value) */
+	color: #bbbbbb;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.87em;
+	padding-bottom: 1%;
+	padding-top: 3%;
+	}
+
+.mobileFieldLabelOnRight { /* mobile record field label (to right of checkbox) */
+	color: #bbbbbb;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.67em;
+	padding-bottom: 2%;
+	width: 100%;
+	}
+
+.mobileFieldLabelOnLeft { /* mobile record field label (checkbox) */
+	color: #bbbbbb;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.67em;
+	padding-bottom: 2%;
+	}
+
+.mobileFieldValueOnBottom { /* mobile record field value (below field label) */
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 1.0em;
+	padding-bottom: 2%;
+	}
+
+.mobileFieldInput { /* mobile input textbox */
+	background-color: #fafafa;
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 1.0em;
+	}
+
+textarea.mobileFieldInput { /* explicitly define width of mobile textarea (work-around for compressed textarea in Live Preview) */
+	width: 86%;
+	}
+
+.mobileFilterInput { /* mobile drop-down list */
+	background-color: #fafafa;
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 1.0em;
+	width: 86%;
+	}
+
+.mobilePaginationArea { /* mobile pagination area */
+	}
+
+.mobilePaginationAreaFirst { /* mobile pagination first button container */
+	text-align: left;
+	}
+
+.mobilePaginationAreaPrevious { /* mobile pagination previous button container */
+	text-align: right;
+	}
+
+.mobilePaginationAreaCurrentPage { /* mobile pagination current page text */
+	color: #999999;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 1.0em;
+	text-align: center;
+	white-space: nowrap;
+	width: 30%;
+	}
+
+.mobilePaginationAreaNext { /* mobile pagination next button container */
+	text-align: left;
+	}
+
+.mobilePaginationAreaLast { /* mobile pagination last button container */
+	text-align: right;
+	}
+
+.mobilePaginationAreaSize { /* mobile pagination page size container */
+	}
+
+.mobileCheckbox input, input.mobileCheckbox { /* mobile checkbox (accounts for <span> container around checkbox) */
+	height: 50px;
+	width: 50px;
+	}
+
+.mobileRadioButton input, input.mobileRadioButton { /* mobile radio button (accounts for <span> container around checkbox) */
+	height: 50px;
+	width: 50px;
+	}
+
+.MyCalendarMobile .ajax__calendar_container { /* mobile ajax calendar container */
+	background-color: #ffffff;
+	border: 1px solid #444444;
+	color: #666666;
+	height: 780px;
+	width: 720px;
+	z-index: 20;
+	}
+
+.MyCalendarMobile .ajax__calendar_body, .MyCalendarMobile .ajax__calendar_body table { /* mobile ajax calendar container inner table */
+	background-color: #ffffff;
+	height: 600px;
+	width: 720px;
+	}
+
+.MyCalendarMobile .ajax__calendar_header { /* mobile ajax calendar header */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 4.0em;
+	padding-bottom: 40px;
+	}
+
+.MyCalendarMobile .ajax__calendar_title { /* mobile ajax calendar title */
+	color: #bbbbbb;
+	font-size: 1.2em;
+	padding-top: 30px;
+	}
+
+.MyCalendarMobile .ajax__calendar_footer { /* mobile ajax calendar footer (today's date) */
+	color: #bbbbbb;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 3.0em;
+	padding-top: 20px;
+	}
+
+.MyCalendarMobile .ajax__calendar_prev { /* mobile ajax calendar previous button */
+	background-image: url(../../Images/MobileButtonPrevious.ltr.png);
+	background-repeat: no-repeat;
+	height: 120px;
+	width: 100px; 
+	}
+
+.MyCalendarMobile .ajax__calendar_next { /* mobile ajax calendar next button */
+	background-image: url(../../Images/MobileButtonNext.ltr.png);
+	background-repeat: no-repeat;
+	height: 120px;
+	width: 100px; 
+	}
+
+.MyCalendarMobile .ajax__calendar_dayname { /* mobile ajax calendar days of week title */
+	color: #bbbbbb;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 4.0em;
+	}
+
+.MyCalendarMobile .ajax__calendar_day { /* mobile ajax calendar all days */ 
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 4.0em;
+	}
+
+.MyCalendarMobile .ajax__calendar_month, .MyCalendarMobile .ajax__calendar_year { /* mobile ajax calendar month, year */ 
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 2.0em;
+	}
+
+.MyCalendarMobile .ajax__calendar_months, .MyCalendarMobile .ajax__calendar_years { /* mobile ajax calendar all months, years */
+	}
+
+.MyCalendarMobile .ajax__calendar_other .ajax__calendar_day,
+.MyCalendarMobile .ajax__calendar_other .ajax__calendar_month,
+.MyCalendarMobile .ajax__calendar_other .ajax__calendar_year { /* mobile ajax calendar non-current days */
+	color: #bbbbbb;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 4.0em;
+	}
+
+.MyCalendarMobile .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendarMobile .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendarMobile .ajax__calendar_hover .ajax__calendar_year { /* mobile ajax calendar today/selected day hover */
+	color: #bbbbbb;
+	}
+
+.MyCalendarMobile .ajax__calendar_active .ajax__calendar_day,
+.MyCalendarMobile .ajax__calendar_active .ajax__calendar_month,
+.MyCalendarMobile .ajax__calendar_active .ajax__calendar_year { /* mobile ajax calendar current day */
+	color: #bbbbbb;
+	}
+
+.mobileRecaptchaImage img { /* mobile recaptcha image */
+	height: 300px; 
+	width: 640px; 
+	margin: 0px; 
+	padding: 0px; 
+	}
+
+.mobileRecaptchaContainer {  /* mobile recaptcha container */
+	height: 300px;
+	width: 640px;
+	margin: 0px; 
+	padding: 0px; 
+	}
+
+
+/**********************************************************************
+ * .NET Trace Log                                                     *
+ **********************************************************************/
+span.tracecontent table { /* .NET trace log background color */
+	background-color: #ffffff;
+	}
+
+
+/**********************************************************************
+ * Import Wizard Styles                                               * 
+ **********************************************************************/
+.importWizardpBack { /* import wizard body */
+	background-color: #e6e6e6;
+	}
+
+.importWizardmarginTL { /* import wizard page centering top left margin */
+	}
+
+.importWizardmarginTR { /* import wizard page centering top right margin */
+	}
+
+.importWizardmarginL { /* import wizard page centering left margin */
+	}
+
+.importWizardmarginR { /* import wizard page centering right margin */
+	}
+
+.importWizardmarginBL { /* import wizard page centering bottom left margin */
+	}
+
+.importWizardmarginBR { /* import wizard page centering bottom right margin */
+	}
+
+.importWizardpcT { /* import wizard page container top center edge (header container) */
+	}
+
+.importWizardpcC { /* import wizard page container center (contents of page container) */
+	}
+
+.importWizardpcB { /* import wizard page container bottom center edge (footer container) */
+	}
+
+.importWizarddv { /* panel container (includes panel header) */
+	background-color: #ffffff;
+	border-radius: 2px;
+	box-shadow: 0px 0px 1px #bbbbbb;
+	margin-bottom: 10px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 6px;
+	text-align: left;
+	vertical-align: top;
+	}
+
+.importWizarddBody { /* panel content container (excludes panel header) */ 
+	}
+
+.importWizarddBody .ttc { /* import wizard table cells */
+	background-color: transparent;
+	}
+
+
+/**********************************************************************
+ * Quick Popup Styles                                                 *
+ **********************************************************************/
+.QDialog { /* quick popup container */ 
+	background-color: transparent; 
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px #111111;
+	left: 200px;
+	margin: 0px;
+	overflow: hidden;
+	position: absolute;
+	top: 300px;
+	z-index: 1000;
+	}
+
+.QpBack { /* body of page displayed within quick popup */
+	background-color: #ffffff;
+	margin: 0px;
+	}
+
+
+/**********************************************************************
+ * Quick Selector Styles                                              *
+ **********************************************************************/
+div.modal { /* modal popup parent overlay */
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	background-color: #000000;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 900;
+	}
+
+.themeButtonMini { /* small theme button */
+	background: -moz-linear-gradient( center top, #999999 5%, #777777 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #999999), color-stop(1, #777777) );
+	background: -ms-linear-gradient(top, #999999 5%, #777777 100%);
+	border: none; 
+	border-radius: 2px;
+	display: inline-block;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#999999', endColorStr='#777777');
+	padding: 4px 7px 4px 7px;
+	white-space: nowrap;
+	}
+
+.themeButtonMini:hover { /* small theme button hover state */
+	background: -moz-linear-gradient( center top, #555555 5%, #333333 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #555555), color-stop(1, #333333) );
+	background: -ms-linear-gradient(top, #555555 5%, #333333 100%);
+	border: none; 
+	box-shadow: 0px 0px 0px 2px rgba(187, 187, 187, 0.25);
+	color: #fafafa;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#555555', endColorStr='#333333');
+	-moz-transition: all 0.2s ease-in-out 0s;
+	white-space: nowrap;
+	}
+
+.themeButtonMini a.button_link, .themeButtonMini a.button_link:hover, .themeButtonMini a, .themeButtonMini a:hover { /* link within small theme button */ 
+	color: #fafafa;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	padding-right: 6px;
+	text-decoration: none;
+	text-shadow: 0px -1px -0px #666666;
+	text-transform: uppercase;
+	}
+
+.themeButtonMiniDisabled, .themeButtonMiniDisabled:hover { /* small theme button disabled */
+	background: -moz-linear-gradient( center top, #ffffff 5%, #cccccc 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #cccccc) );
+	background: -ms-linear-gradient(top, #ffffff 5%, #cccccc 100%);
+	border: 1px solid #999999; 
+	box-shadow: none;
+	opacity: 0.5;
+	}
+
+.themeButtonMiniDisabled a, .themeButtonMiniDisabled a:hover, .themeButtonMiniDisabled a:visited { /* disabled link within small theme button */
+	color: #999999;
+	}
+
+.QSContainer { /* quick selector container */
+	width: 100%;
+	}
+
+.QSContainer .panelSearchBox { /* quick selector search box */
+	padding: 4px;
+	width: 180px;
+	}
+
+.QSContainer .Search_Input { /* quick selector search box text */
+	width: 240px;
+	}
+
+.QSContainer .Search_InputHint { /* quick selector search box hint */
+	width: 240px;
+	}
+
+.QSSize { /* iframe within which quick selector is displayed */ 
+	height: 330px;
+	width: 330px;
+	}
+
+.QSdh { /* quick selector title bar */
+	background-color: #f6f6f6;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 6px;
+	height: 36px;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 3;
+	}
+
+.QSContainer .dhb { /* padding to accommodate popup close button */
+	padding-right: 40px;
+	}
+
+.QSContainer .QSscrollRegion { /* quick selector scrolled region */
+	background-color: #ffffff;
+	height: 250px;
+	left: 0px;
+	overflow: auto;
+	position: absolute;
+	top: 42px;
+	width: 100%;
+	z-index: 2;	
+	}
+
+.QSfooter { /* quick selector footer bar */
+	background-color: #f6f6f6; 
+	height: 38px;
+	left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	position: fixed;
+	top: 291px;
+	width: 100%;
+	z-index: 3;
+	}
+
+.QSButtonContainer { /* quick selector clear/add button container */ 
+	width: 100px;
+	}
+
+.QSButtonContainer .themeButton { /* quick selector theme button container */
+	padding: 3px;
+	}
+
+.QSCloseButtonContainer { /* quick selector close button container */
+	width: 54px;
+	}
+
+.QSPaginationContainer { /* quick selector pagination container */
+	width: 210px;
+	}
+
+.QSPaginationContainer .Pagination_Input { /* quick selector pagination current page input textbox */
+	padding: 2px 7px 2px 7px;
+	}
+
+.QSPageSizeButton { /* quick selector page size button */
+	display: none;
+	}
+
+.QStr { /* quick selector row */
+	}
+
+.QStr:hover, .QStrHighlighted, .QStrHighlighted:hover, .QStrSelected:hover { /* quick selector hover/highlighted state */
+	background-color: #dddddd;
+	}
+
+.QStrSelected { /* quick selector selected state */
+	background-color: #eeeeee;
+	}
+
+.QSthc { /* quick selector header cell */
+	color: #999999;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 12px;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	white-space: nowrap;
+	}
+
+.QSthc a { /* link within quick selector header cell */
+	color: #666666;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+.QSthc a:hover { /* hover state of link within quick selector header cell */
+	}
+
+.QSthc a.button_link { /* link with class button_link within quick selector header cell */
+	color: #fafafa;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+.QSthc a.button_link:hover { /* hover state of link with class button_link within quick selector header cell */
+	}
+
+.QSttc { /* quick selector cell */
+	border-bottom: 1px solid #eeeeee;
+	color: #555555;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	height: 14.5px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	vertical-align: top;
+	white-space: nowrap;
+	}
+
+.QSttc div { /* quick selector cell content container (used for long text truncation) */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 290px;
+	}
+
+.QSttc a { /* link within quick selector cell */
+	color: #666666;
+	text-decoration: none;
+	}
+
+.QSttc a:hover { /* hover state of link within quick selector cell */
+	}
+
+.QSttc a.button_link { /* link with class button_link within quick selector cell */
+	color: #fafafa;
+	text-decoration: none;
+	}
+
+.QSttc a.button_link:hover { /* hover state of link with class button_link within quick selector cell */
+	}
+
+
+/**********************************************************************
+ * Quick (Add/Edit) Page Styles                                       *
+ **********************************************************************/
+.QSContainer .pContent { /* quick page configure error page panel */
+	width: 801px;
+	}
+
+.QSContainer .dv, .QSContainer .dialog_view, .QSContainer .panelC { /* quick page panel */
+	border: none;
+	box-shadow: none;
+	width: 100%;
+	}
+
+.QSContainer .dh, .QSContainer .dialog_header { /* quick page panel header */
+	background-color: #f6f6f6; 
+	height: 40px;
+	width: 100%; 
+	z-index: 3;
+	}
+
+.QSContainer .dh2 { /* quick page top panel header */
+	background-color: #f6f6f6; 
+	height: 40px;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%; 
+	z-index: 3;
+	}
+
+.QSContainer .scrollRegion { /* quick page scrolled region */
+	background-color: #ffffff;
+	height: 428px;
+	left: 0px;
+	overflow: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: absolute;
+	top: 40px;
+	width: 785px;
+	z-index: 2;	
+	}
+
+.QSContainer .scrollRegion div { /* quick page scroll region margin */
+	margin: 0px;
+	}
+
+.QPageSize { /* dimensions of quick page */
+	height: 508px;
+	width: 805px;
+	}
+
+.QSContainer .scrollRegion .pageButtonsContainer { /* quick page page buttons (save, cancel) container */
+	background-color: #f6f6f6; 
+	height: 40px;
+	left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: fixed;
+	top: 468px;
+	width: 100%;
+	z-index: 3;
+	}
+
+.QPCloseBarButtonContainer { /* quick page close button container */
+	position: absolute;
+	right: 0px;
+	z-index: 4;
+	}
+
+.QPCloseBarButtonPosition { /* quick page close button position */
+	padding-right: 10px;
+	padding-top: 10px;
+	}
+
+.QPContainerPanelPadding { /* quick page panel position */
+	padding: 0px;
+	}
+
+
+/**********************************************************************
+ * Hidden Control Styles                                              * 
+ **********************************************************************/
+.hide { /* hidden control (instead of using display:none), e.g., used in QuickSelector tab navigation */
+	height: 0px;
+	width: 0px;
+	}
+

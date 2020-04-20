@@ -1,0 +1,1593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MckIntegrationModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="APCompanyMove">
+          <Key>
+            <PropertyRef Name="APCompanyMoveID" />
+          </Key>
+          <Property Name="APCompanyMoveID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LogFileName" Type="varchar" MaxLength="200" />
+          <Property Name="HeaderSuccess" Type="bit" />
+          <Property Name="AttachSuccess" Type="bit" />
+          <Property Name="AttachCopySuccess" Type="bit" />
+          <Property Name="Mth" Type="smalldatetime" />
+          <Property Name="Vendor" Type="int" />
+          <Property Name="APRef" Type="varchar" MaxLength="15" />
+          <Property Name="InvTotal" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="Co" Type="tinyint" />
+          <Property Name="UISeq" Type="smallint" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="KeyID" Type="bigint" />
+          <Property Name="DestCo" Type="tinyint" />
+          <Property Name="DestUISeq" Type="smallint" />
+          <Property Name="DestUniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="DestKeyID" Type="bigint" />
+          <Property Name="RLBProcessNotesID" Type="int" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+        </EntityType>
+        <EntityType Name="AttachCompanyMove">
+          <Key>
+            <PropertyRef Name="AttachCompanyMoveID" />
+          </Key>
+          <Property Name="AttachCompanyMoveID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyMoveID" Type="int" Nullable="false" />
+          <Property Name="KeepOldAttach" Type="bit" />
+          <Property Name="OldAttachDeleted" Type="bit" />
+          <Property Name="FileCopied" Type="bit" />
+          <Property Name="OrigFileName" Type="varchar" MaxLength="512" />
+          <Property Name="FormName" Type="varchar" MaxLength="30" />
+          <Property Name="TableName" Type="varchar" MaxLength="128" />
+          <Property Name="DocName" Type="varchar" MaxLength="512" />
+          <Property Name="AttachmentID" Type="int" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="DestDocName" Type="varchar" MaxLength="512" />
+          <Property Name="DestAttachmentID" Type="int" />
+          <Property Name="DestUniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="RLBProcessNotesID" Type="int" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+        </EntityType>
+        <EntityType Name="CompanyMoveMetrics">
+          <Key>
+            <PropertyRef Name="CompanyMoveMetricsID" />
+          </Key>
+          <Property Name="CompanyMoveMetricsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ApplicationKey" Type="varchar" MaxLength="100" />
+          <Property Name="LastNotifyDate" Type="datetime" />
+          <Property Name="LastNotifyLogFileName" Type="varchar" MaxLength="200" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+        </EntityType>
+        <EntityType Name="MissingAttachments">
+          <Key>
+            <PropertyRef Name="MissingAttachmentsID" />
+          </Key>
+          <Property Name="MissingAttachmentsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Company" Type="tinyint" />
+          <Property Name="FormName" Type="varchar" MaxLength="30" />
+          <Property Name="TableName" Type="varchar" MaxLength="128" />
+          <Property Name="KeyID" Type="bigint" />
+          <Property Name="AttachmentID" Type="bigint" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="AddedBy" Type="varchar" MaxLength="128" />
+          <Property Name="AddDate" Type="datetime" />
+          <Property Name="DocName" Type="varchar" MaxLength="512" />
+          <Property Name="OrigFileName" Type="varchar" MaxLength="512" />
+          <Property Name="CurrentState" Type="char" MaxLength="1" />
+          <Property Name="FileExists" Type="bit" />
+          <Property Name="Created" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RLBAPImportDetail">
+          <Key>
+            <PropertyRef Name="RLBAPImportDetailID" />
+          </Key>
+          <Property Name="RLBAPImportDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RLBImportBatchID" Type="int" Nullable="false" />
+          <Property Name="FileName" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="LastWriteTime" Type="datetime" Nullable="false" />
+          <Property Name="Length" Type="bigint" Nullable="false" />
+          <Property Name="RLBImportDetailStatusCode" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="RLBProcessNotesID" Type="int" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+          <Property Name="UnmatchedNumber" Type="varchar" MaxLength="30" />
+          <Property Name="RecordType" Type="varchar" MaxLength="30" />
+          <Property Name="Company" Type="tinyint" />
+          <Property Name="Number" Type="varchar" MaxLength="30" />
+          <Property Name="VendorGroup" Type="tinyint" />
+          <Property Name="Vendor" Type="int" />
+          <Property Name="VendorName" Type="varchar" MaxLength="60" />
+          <Property Name="TransactionDate" Type="datetime" />
+          <Property Name="JCCo" Type="tinyint" />
+          <Property Name="Job" Type="varchar" MaxLength="10" />
+          <Property Name="JobDescription" Type="varchar" MaxLength="60" />
+          <Property Name="Description" Type="varchar" MaxLength="30" />
+          <Property Name="DetailLineCount" Type="int" />
+          <Property Name="TotalOrigCost" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="TotalOrigTax" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="RemainingAmount" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="RemainingTax" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="CollectedInvoiceDate" Type="smalldatetime" />
+          <Property Name="CollectedInvoiceNumber" Type="varchar" MaxLength="50" />
+          <Property Name="CollectedTaxAmount" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="CollectedShippingAmount" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="CollectedInvoiceAmount" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="CollectedImage" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="RLBAPImportRecord">
+          <Key>
+            <PropertyRef Name="RLBAPImportRecordID" />
+          </Key>
+          <Property Name="RLBAPImportRecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RLBAPImportDetailID" Type="int" Nullable="false" />
+          <Property Name="Co" Type="tinyint" />
+          <Property Name="Mth" Type="smalldatetime" />
+          <Property Name="UISeq" Type="smallint" />
+          <Property Name="Vendor" Type="int" />
+          <Property Name="APRef" Type="varchar" MaxLength="15" />
+          <Property Name="InvDate" Type="smalldatetime" />
+          <Property Name="InvTotal" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="HeaderKeyID" Type="bigint" />
+          <Property Name="FooterKeyID" Type="bigint" />
+          <Property Name="DocName" Type="varchar" MaxLength="512" />
+          <Property Name="AttachmentID" Type="int" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="OrigFileName" Type="varchar" MaxLength="512" />
+          <Property Name="FileCopied" Type="bit" />
+          <Property Name="RLBProcessNotesID" Type="int" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RLBARImportDetail">
+          <Key>
+            <PropertyRef Name="RLBARImportDetailID" />
+          </Key>
+          <Property Name="RLBARImportDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RLBImportBatchID" Type="int" Nullable="false" />
+          <Property Name="FileName" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="LastWriteTime" Type="datetime" Nullable="false" />
+          <Property Name="Length" Type="bigint" Nullable="false" />
+          <Property Name="RLBImportDetailStatusCode" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="RLBProcessNotesID" Type="int" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+          <Property Name="Company" Type="tinyint" />
+          <Property Name="InvoiceNumber" Type="varchar" MaxLength="10" />
+          <Property Name="CustGroup" Type="tinyint" />
+          <Property Name="Customer" Type="int" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="60" />
+          <Property Name="TransactionDate" Type="smalldatetime" />
+          <Property Name="InvoiceDescription" Type="varchar" MaxLength="30" />
+          <Property Name="DetailLineCount" Type="int" />
+          <Property Name="AmountDue" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="OriginalAmount" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="Tax" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="CollectedCheckDate" Type="smalldatetime" />
+          <Property Name="CollectedCheckNumber" Type="char" MaxLength="10" />
+          <Property Name="CollectedCheckAmount" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="CollectedImage" Type="varchar" MaxLength="255" />
+          <Property Name="Notes" Type="varchar" MaxLength="512" />
+        </EntityType>
+        <EntityType Name="RLBARImportRecord">
+          <Key>
+            <PropertyRef Name="RLBARImportRecordID" />
+          </Key>
+          <Property Name="RLBARImportRecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RLBARImportDetailID" Type="int" Nullable="false" />
+          <Property Name="Co" Type="tinyint" />
+          <Property Name="Mth" Type="smalldatetime" />
+          <Property Name="BatchId" Type="int" />
+          <Property Name="BatchSeq" Type="int" />
+          <Property Name="CMDeposit" Type="varchar" MaxLength="10" />
+          <Property Name="CheckNo" Type="char" MaxLength="10" />
+          <Property Name="CheckDate" Type="smalldatetime" />
+          <Property Name="TransDate" Type="smalldatetime" />
+          <Property Name="CreditAmt" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="HeaderKeyID" Type="bigint" />
+          <Property Name="DocName" Type="varchar" MaxLength="512" />
+          <Property Name="AttachmentID" Type="int" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="OrigFileName" Type="varchar" MaxLength="512" />
+          <Property Name="FileCopied" Type="bit" />
+          <Property Name="RLBProcessNotesID" Type="int" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RLBDropFolderWatcher">
+          <Key>
+            <PropertyRef Name="DropFolderWatcherID" />
+          </Key>
+          <Property Name="DropFolderWatcherID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Activity" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Success" Type="bit" />
+          <Property Name="RLBProcessNotesID" Type="int" />
+          <Property Name="Created" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RLBImportBatch">
+          <Key>
+            <PropertyRef Name="RLBImportBatchID" />
+          </Key>
+          <Property Name="RLBImportBatchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RLBProcessNotesID" Type="int" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="LastWriteTime" Type="datetime" Nullable="false" />
+          <Property Name="Length" Type="bigint" Nullable="false" />
+          <Property Name="Type" Type="nvarchar" MaxLength="2" Nullable="false" />
+          <Property Name="RLBImportBatchStatusCode" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+          <Property Name="CompleteTime" Type="datetime" />
+          <Property Name="ArchiveFolderName" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RLBImportBatchStatus">
+          <Key>
+            <PropertyRef Name="RLBImportBatchStatusID" />
+          </Key>
+          <Property Name="RLBImportBatchStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StatusCode" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RLBImportDetailStatus">
+          <Key>
+            <PropertyRef Name="RLBImportDetailStatusID" />
+          </Key>
+          <Property Name="RLBImportDetailStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StatusCode" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RLBProcessNotes">
+          <Key>
+            <PropertyRef Name="RLBProcessNotesID" />
+          </Key>
+          <Property Name="RLBProcessNotesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProcessNotes" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="Created" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RLBRemoteDownload">
+          <Key>
+            <PropertyRef Name="KeyID" />
+          </Key>
+          <Property Name="KeyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="LastWriteTime" Type="datetime" Nullable="false" />
+          <Property Name="Length" Type="bigint" Nullable="false" />
+          <Property Name="CompleteTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RLBRemoteUpload">
+          <Key>
+            <PropertyRef Name="KeyID" />
+          </Key>
+          <Property Name="KeyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="LastWriteTime" Type="datetime" Nullable="false" />
+          <Property Name="Length" Type="bigint" Nullable="false" />
+          <Property Name="CompleteTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ViewpointAttachFiles">
+          <Key>
+            <PropertyRef Name="ViewpointAttachFilesID" />
+          </Key>
+          <Property Name="ViewpointAttachFilesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Environment" Type="varchar" MaxLength="20" />
+          <Property Name="FileName" Type="varchar" MaxLength="200" />
+          <Property Name="Company" Type="varchar" MaxLength="100" />
+          <Property Name="Module" Type="varchar" MaxLength="30" />
+          <Property Name="FormName" Type="varchar" MaxLength="30" />
+          <Property Name="Month" Type="varchar" MaxLength="20" />
+          <Property Name="FullFilePath" Type="varchar" MaxLength="512" />
+          <Property Name="FileCreationTime" Type="datetime2" Precision="7" />
+          <Property Name="Created" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'MCK_INTEGRATION.dbo.mckvwRLBAPImportRecord' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="mckvwRLBAPImportRecord">
+          <Key>
+            <PropertyRef Name="RLBImportBatchID" />
+            <PropertyRef Name="RLBAPImportRecordID" />
+            <PropertyRef Name="RLBAPImportDetailID" />
+          </Key>
+          <Property Name="RLBImportBatchID" Type="int" Nullable="false" />
+          <Property Name="RLBAPImportRecordID" Type="int" Nullable="false" />
+          <Property Name="RLBAPImportDetailID" Type="int" Nullable="false" />
+          <Property Name="Co" Type="tinyint" />
+          <Property Name="Mth" Type="smalldatetime" />
+          <Property Name="UISeq" Type="smallint" />
+          <Property Name="Vendor" Type="int" />
+          <Property Name="APRef" Type="varchar" MaxLength="15" />
+          <Property Name="InvDate" Type="smalldatetime" />
+          <Property Name="InvTotal" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="HeaderKeyID" Type="bigint" />
+          <Property Name="FooterKeyID" Type="bigint" />
+          <Property Name="DocName" Type="varchar" MaxLength="512" />
+          <Property Name="AttachmentID" Type="int" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="OrigFileName" Type="varchar" MaxLength="512" />
+          <Property Name="FileCopied" Type="bit" />
+          <Property Name="RLBProcessNotesID" Type="int" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'MCK_INTEGRATION.dbo.mckvwRLBARImportRecord' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="mckvwRLBARImportRecord">
+          <Key>
+            <PropertyRef Name="RLBImportBatchID" />
+            <PropertyRef Name="RLBARImportRecordID" />
+            <PropertyRef Name="RLBARImportDetailID" />
+          </Key>
+          <Property Name="RLBImportBatchID" Type="int" Nullable="false" />
+          <Property Name="RLBARImportRecordID" Type="int" Nullable="false" />
+          <Property Name="RLBARImportDetailID" Type="int" Nullable="false" />
+          <Property Name="Co" Type="tinyint" />
+          <Property Name="Mth" Type="smalldatetime" />
+          <Property Name="BatchId" Type="int" />
+          <Property Name="BatchSeq" Type="int" />
+          <Property Name="CMDeposit" Type="varchar" MaxLength="10" />
+          <Property Name="CheckNo" Type="char" MaxLength="10" />
+          <Property Name="CheckDate" Type="smalldatetime" />
+          <Property Name="TransDate" Type="smalldatetime" />
+          <Property Name="CreditAmt" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="HeaderKeyID" Type="bigint" />
+          <Property Name="DocName" Type="varchar" MaxLength="512" />
+          <Property Name="AttachmentID" Type="int" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="OrigFileName" Type="varchar" MaxLength="512" />
+          <Property Name="FileCopied" Type="bit" />
+          <Property Name="RLBProcessNotesID" Type="int" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Modified" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_APCompanyMove_RLBProcessNotesID">
+          <End Role="RLBProcessNotes" Type="Self.RLBProcessNotes" Multiplicity="0..1" />
+          <End Role="APCompanyMove" Type="Self.APCompanyMove" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNotes">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="APCompanyMove">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AttachCompanyMove_RLBProcessNotesID">
+          <End Role="RLBProcessNotes" Type="Self.RLBProcessNotes" Multiplicity="0..1" />
+          <End Role="AttachCompanyMove" Type="Self.AttachCompanyMove" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNotes">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="AttachCompanyMove">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBAPImportDetail_RLBImportBatch">
+          <End Role="RLBImportBatch" Type="Self.RLBImportBatch" Multiplicity="1" />
+          <End Role="RLBAPImportDetail" Type="Self.RLBAPImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBImportBatch">
+              <PropertyRef Name="RLBImportBatchID" />
+            </Principal>
+            <Dependent Role="RLBAPImportDetail">
+              <PropertyRef Name="RLBImportBatchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_RLBAPImportDetail_RLBImportDetailStatusCode' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_RLBAPImportDetail_RLBImportDetailStatusCode" />-->
+        <Association Name="FK_RLBAPImportDetail_RLBProcessNotesID">
+          <End Role="RLBProcessNotes" Type="Self.RLBProcessNotes" Multiplicity="0..1" />
+          <End Role="RLBAPImportDetail" Type="Self.RLBAPImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNotes">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="RLBAPImportDetail">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBAPImportRecord_RLBAPImportDetailID">
+          <End Role="RLBAPImportDetail" Type="Self.RLBAPImportDetail" Multiplicity="1" />
+          <End Role="RLBAPImportRecord" Type="Self.RLBAPImportRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBAPImportDetail">
+              <PropertyRef Name="RLBAPImportDetailID" />
+            </Principal>
+            <Dependent Role="RLBAPImportRecord">
+              <PropertyRef Name="RLBAPImportDetailID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBAPImportRecord_RLBProcessNotesID">
+          <End Role="RLBProcessNotes" Type="Self.RLBProcessNotes" Multiplicity="0..1" />
+          <End Role="RLBAPImportRecord" Type="Self.RLBAPImportRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNotes">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="RLBAPImportRecord">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBARImportDetail_RLBImportBatch">
+          <End Role="RLBImportBatch" Type="Self.RLBImportBatch" Multiplicity="1" />
+          <End Role="RLBARImportDetail" Type="Self.RLBARImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBImportBatch">
+              <PropertyRef Name="RLBImportBatchID" />
+            </Principal>
+            <Dependent Role="RLBARImportDetail">
+              <PropertyRef Name="RLBImportBatchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_RLBARImportDetail_RLBImportDetailStatusCode' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_RLBARImportDetail_RLBImportDetailStatusCode" />-->
+        <Association Name="FK_RLBARImportDetail_RLBProcessNotesID">
+          <End Role="RLBProcessNotes" Type="Self.RLBProcessNotes" Multiplicity="0..1" />
+          <End Role="RLBARImportDetail" Type="Self.RLBARImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNotes">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="RLBARImportDetail">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBARImportRecord_RLBARImportDetailID">
+          <End Role="RLBARImportDetail" Type="Self.RLBARImportDetail" Multiplicity="1" />
+          <End Role="RLBARImportRecord" Type="Self.RLBARImportRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBARImportDetail">
+              <PropertyRef Name="RLBARImportDetailID" />
+            </Principal>
+            <Dependent Role="RLBARImportRecord">
+              <PropertyRef Name="RLBARImportDetailID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBARImportRecord_RLBProcessNotesID">
+          <End Role="RLBProcessNotes" Type="Self.RLBProcessNotes" Multiplicity="0..1" />
+          <End Role="RLBARImportRecord" Type="Self.RLBARImportRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNotes">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="RLBARImportRecord">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBDropFolderWatcher_RLBProcessNotesID">
+          <End Role="RLBProcessNotes" Type="Self.RLBProcessNotes" Multiplicity="0..1" />
+          <End Role="RLBDropFolderWatcher" Type="Self.RLBDropFolderWatcher" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNotes">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="RLBDropFolderWatcher">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_RLBImportBatch_RLBImportBatchStatusCode' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_RLBImportBatch_RLBImportBatchStatusCode" />-->
+        <Function Name="mckfnAPCompanyMoveError" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="LogFileName" Type="varchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="HeaderMoved" Type="bit" />
+                <Property Name="AttachmentsMoved" Type="bit" />
+                <Property Name="AttachmentsCopied" Type="bit" />
+                <Property Name="Co" Type="tinyint" />
+                <Property Name="Mth" Type="smalldatetime" />
+                <Property Name="UISeq" Type="smallint" />
+                <Property Name="Vendor" Type="int" />
+                <Property Name="APRef" Type="varchar" MaxLength="15" />
+                <Property Name="InvTotal" Type="numeric" Precision="12" Scale="2" />
+                <Property Name="Notes" Type="nvarchar" MaxLength="512" Nullable="false" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <EntityContainer Name="MckIntegrationModelStoreContainer">
+          <EntitySet Name="APCompanyMove" EntityType="Self.APCompanyMove" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AttachCompanyMove" EntityType="Self.AttachCompanyMove" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompanyMoveMetrics" EntityType="Self.CompanyMoveMetrics" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MissingAttachments" EntityType="Self.MissingAttachments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBAPImportDetail" EntityType="Self.RLBAPImportDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBAPImportRecord" EntityType="Self.RLBAPImportRecord" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBARImportDetail" EntityType="Self.RLBARImportDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBARImportRecord" EntityType="Self.RLBARImportRecord" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBDropFolderWatcher" EntityType="Self.RLBDropFolderWatcher" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBImportBatch" EntityType="Self.RLBImportBatch" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBImportBatchStatus" EntityType="Self.RLBImportBatchStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBImportDetailStatus" EntityType="Self.RLBImportDetailStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBProcessNotes" EntityType="Self.RLBProcessNotes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBRemoteDownload" EntityType="Self.RLBRemoteDownload" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RLBRemoteUpload" EntityType="Self.RLBRemoteUpload" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ViewpointAttachFiles" EntityType="Self.ViewpointAttachFiles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mckvwRLBAPImportRecord" EntityType="Self.mckvwRLBAPImportRecord" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [mckvwRLBAPImportRecord].[RLBImportBatchID] AS [RLBImportBatchID], 
+    [mckvwRLBAPImportRecord].[RLBAPImportRecordID] AS [RLBAPImportRecordID], 
+    [mckvwRLBAPImportRecord].[RLBAPImportDetailID] AS [RLBAPImportDetailID], 
+    [mckvwRLBAPImportRecord].[Co] AS [Co], 
+    [mckvwRLBAPImportRecord].[Mth] AS [Mth], 
+    [mckvwRLBAPImportRecord].[UISeq] AS [UISeq], 
+    [mckvwRLBAPImportRecord].[Vendor] AS [Vendor], 
+    [mckvwRLBAPImportRecord].[APRef] AS [APRef], 
+    [mckvwRLBAPImportRecord].[InvDate] AS [InvDate], 
+    [mckvwRLBAPImportRecord].[InvTotal] AS [InvTotal], 
+    [mckvwRLBAPImportRecord].[HeaderKeyID] AS [HeaderKeyID], 
+    [mckvwRLBAPImportRecord].[FooterKeyID] AS [FooterKeyID], 
+    [mckvwRLBAPImportRecord].[DocName] AS [DocName], 
+    [mckvwRLBAPImportRecord].[AttachmentID] AS [AttachmentID], 
+    [mckvwRLBAPImportRecord].[UniqueAttchID] AS [UniqueAttchID], 
+    [mckvwRLBAPImportRecord].[OrigFileName] AS [OrigFileName], 
+    [mckvwRLBAPImportRecord].[FileCopied] AS [FileCopied], 
+    [mckvwRLBAPImportRecord].[RLBProcessNotesID] AS [RLBProcessNotesID], 
+    [mckvwRLBAPImportRecord].[Created] AS [Created], 
+    [mckvwRLBAPImportRecord].[Modified] AS [Modified]
+    FROM [dbo].[mckvwRLBAPImportRecord] AS [mckvwRLBAPImportRecord]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="mckvwRLBARImportRecord" EntityType="Self.mckvwRLBARImportRecord" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [mckvwRLBARImportRecord].[RLBImportBatchID] AS [RLBImportBatchID], 
+    [mckvwRLBARImportRecord].[RLBARImportRecordID] AS [RLBARImportRecordID], 
+    [mckvwRLBARImportRecord].[RLBARImportDetailID] AS [RLBARImportDetailID], 
+    [mckvwRLBARImportRecord].[Co] AS [Co], 
+    [mckvwRLBARImportRecord].[Mth] AS [Mth], 
+    [mckvwRLBARImportRecord].[BatchId] AS [BatchId], 
+    [mckvwRLBARImportRecord].[BatchSeq] AS [BatchSeq], 
+    [mckvwRLBARImportRecord].[CMDeposit] AS [CMDeposit], 
+    [mckvwRLBARImportRecord].[CheckNo] AS [CheckNo], 
+    [mckvwRLBARImportRecord].[CheckDate] AS [CheckDate], 
+    [mckvwRLBARImportRecord].[TransDate] AS [TransDate], 
+    [mckvwRLBARImportRecord].[CreditAmt] AS [CreditAmt], 
+    [mckvwRLBARImportRecord].[HeaderKeyID] AS [HeaderKeyID], 
+    [mckvwRLBARImportRecord].[DocName] AS [DocName], 
+    [mckvwRLBARImportRecord].[AttachmentID] AS [AttachmentID], 
+    [mckvwRLBARImportRecord].[UniqueAttchID] AS [UniqueAttchID], 
+    [mckvwRLBARImportRecord].[OrigFileName] AS [OrigFileName], 
+    [mckvwRLBARImportRecord].[FileCopied] AS [FileCopied], 
+    [mckvwRLBARImportRecord].[RLBProcessNotesID] AS [RLBProcessNotesID], 
+    [mckvwRLBARImportRecord].[Created] AS [Created], 
+    [mckvwRLBARImportRecord].[Modified] AS [Modified]
+    FROM [dbo].[mckvwRLBARImportRecord] AS [mckvwRLBARImportRecord]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_APCompanyMove_RLBProcessNotesID" Association="Self.FK_APCompanyMove_RLBProcessNotesID">
+            <End Role="RLBProcessNotes" EntitySet="RLBProcessNotes" />
+            <End Role="APCompanyMove" EntitySet="APCompanyMove" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AttachCompanyMove_RLBProcessNotesID" Association="Self.FK_AttachCompanyMove_RLBProcessNotesID">
+            <End Role="RLBProcessNotes" EntitySet="RLBProcessNotes" />
+            <End Role="AttachCompanyMove" EntitySet="AttachCompanyMove" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBAPImportDetail_RLBImportBatch" Association="Self.FK_RLBAPImportDetail_RLBImportBatch">
+            <End Role="RLBImportBatch" EntitySet="RLBImportBatch" />
+            <End Role="RLBAPImportDetail" EntitySet="RLBAPImportDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBAPImportDetail_RLBProcessNotesID" Association="Self.FK_RLBAPImportDetail_RLBProcessNotesID">
+            <End Role="RLBProcessNotes" EntitySet="RLBProcessNotes" />
+            <End Role="RLBAPImportDetail" EntitySet="RLBAPImportDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBAPImportRecord_RLBAPImportDetailID" Association="Self.FK_RLBAPImportRecord_RLBAPImportDetailID">
+            <End Role="RLBAPImportDetail" EntitySet="RLBAPImportDetail" />
+            <End Role="RLBAPImportRecord" EntitySet="RLBAPImportRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBAPImportRecord_RLBProcessNotesID" Association="Self.FK_RLBAPImportRecord_RLBProcessNotesID">
+            <End Role="RLBProcessNotes" EntitySet="RLBProcessNotes" />
+            <End Role="RLBAPImportRecord" EntitySet="RLBAPImportRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBARImportDetail_RLBImportBatch" Association="Self.FK_RLBARImportDetail_RLBImportBatch">
+            <End Role="RLBImportBatch" EntitySet="RLBImportBatch" />
+            <End Role="RLBARImportDetail" EntitySet="RLBARImportDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBARImportDetail_RLBProcessNotesID" Association="Self.FK_RLBARImportDetail_RLBProcessNotesID">
+            <End Role="RLBProcessNotes" EntitySet="RLBProcessNotes" />
+            <End Role="RLBARImportDetail" EntitySet="RLBARImportDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBARImportRecord_RLBARImportDetailID" Association="Self.FK_RLBARImportRecord_RLBARImportDetailID">
+            <End Role="RLBARImportDetail" EntitySet="RLBARImportDetail" />
+            <End Role="RLBARImportRecord" EntitySet="RLBARImportRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBARImportRecord_RLBProcessNotesID" Association="Self.FK_RLBARImportRecord_RLBProcessNotesID">
+            <End Role="RLBProcessNotes" EntitySet="RLBProcessNotes" />
+            <End Role="RLBARImportRecord" EntitySet="RLBARImportRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBDropFolderWatcher_RLBProcessNotesID" Association="Self.FK_RLBDropFolderWatcher_RLBProcessNotesID">
+            <End Role="RLBProcessNotes" EntitySet="RLBProcessNotes" />
+            <End Role="RLBDropFolderWatcher" EntitySet="RLBDropFolderWatcher" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MckIntegrationModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="MckIntegrationEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="RLBRemoteDownloads" EntityType="MckIntegrationModel.RLBRemoteDownload" />
+          <EntitySet Name="RLBRemoteUploads" EntityType="MckIntegrationModel.RLBRemoteUpload" />
+          <EntitySet Name="RLBAPImportDetails" EntityType="MckIntegrationModel.RLBAPImportDetail" />
+          <EntitySet Name="RLBAPImportRecords" EntityType="MckIntegrationModel.RLBAPImportRecord" />
+          <EntitySet Name="RLBImportBatches" EntityType="MckIntegrationModel.RLBImportBatch" />
+          <EntitySet Name="RLBImportBatchStatus" EntityType="MckIntegrationModel.RLBImportBatchStatu" />
+          <EntitySet Name="RLBImportDetailStatus" EntityType="MckIntegrationModel.RLBImportDetailStatu" />
+          <EntitySet Name="RLBProcessNotes" EntityType="MckIntegrationModel.RLBProcessNote" />
+          <AssociationSet Name="FK_RLBAPImportDetail_RLBImportBatch" Association="MckIntegrationModel.FK_RLBAPImportDetail_RLBImportBatch">
+            <End Role="RLBImportBatch" EntitySet="RLBImportBatches" />
+            <End Role="RLBAPImportDetail" EntitySet="RLBAPImportDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBAPImportDetail_RLBProcessNotesID" Association="MckIntegrationModel.FK_RLBAPImportDetail_RLBProcessNotesID">
+            <End Role="RLBProcessNote" EntitySet="RLBProcessNotes" />
+            <End Role="RLBAPImportDetail" EntitySet="RLBAPImportDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBAPImportRecord_RLBAPImportDetailID" Association="MckIntegrationModel.FK_RLBAPImportRecord_RLBAPImportDetailID">
+            <End Role="RLBAPImportDetail" EntitySet="RLBAPImportDetails" />
+            <End Role="RLBAPImportRecord" EntitySet="RLBAPImportRecords" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBAPImportRecord_RLBProcessNotesID" Association="MckIntegrationModel.FK_RLBAPImportRecord_RLBProcessNotesID">
+            <End Role="RLBProcessNote" EntitySet="RLBProcessNotes" />
+            <End Role="RLBAPImportRecord" EntitySet="RLBAPImportRecords" />
+          </AssociationSet>
+          <EntitySet Name="RLBARImportDetails" EntityType="MckIntegrationModel.RLBARImportDetail" />
+          <EntitySet Name="RLBARImportRecords" EntityType="MckIntegrationModel.RLBARImportRecord" />
+          <AssociationSet Name="FK_RLBARImportDetail_RLBImportBatch" Association="MckIntegrationModel.FK_RLBARImportDetail_RLBImportBatch">
+            <End Role="RLBImportBatch" EntitySet="RLBImportBatches" />
+            <End Role="RLBARImportDetail" EntitySet="RLBARImportDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBARImportDetail_RLBProcessNotesID" Association="MckIntegrationModel.FK_RLBARImportDetail_RLBProcessNotesID">
+            <End Role="RLBProcessNote" EntitySet="RLBProcessNotes" />
+            <End Role="RLBARImportDetail" EntitySet="RLBARImportDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBARImportRecord_RLBARImportDetailID" Association="MckIntegrationModel.FK_RLBARImportRecord_RLBARImportDetailID">
+            <End Role="RLBARImportDetail" EntitySet="RLBARImportDetails" />
+            <End Role="RLBARImportRecord" EntitySet="RLBARImportRecords" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RLBARImportRecord_RLBProcessNotesID" Association="MckIntegrationModel.FK_RLBARImportRecord_RLBProcessNotesID">
+            <End Role="RLBProcessNote" EntitySet="RLBProcessNotes" />
+            <End Role="RLBARImportRecord" EntitySet="RLBARImportRecords" />
+          </AssociationSet>
+          <EntitySet Name="mckvwRLBARImportRecords" EntityType="MckIntegrationModel.mckvwRLBARImportRecord" />
+          <EntitySet Name="AttachCompanyMoves" EntityType="MckIntegrationModel.AttachCompanyMove" />
+          <AssociationSet Name="FK_AttachCompanyMove_RLBProcessNotesID" Association="MckIntegrationModel.FK_AttachCompanyMove_RLBProcessNotesID">
+            <End Role="RLBProcessNote" EntitySet="RLBProcessNotes" />
+            <End Role="AttachCompanyMove" EntitySet="AttachCompanyMoves" />
+          </AssociationSet>
+          <EntitySet Name="APCompanyMoves" EntityType="MckIntegrationModel.APCompanyMove" />
+          <AssociationSet Name="FK_APCompanyMove_RLBProcessNotesID" Association="MckIntegrationModel.FK_APCompanyMove_RLBProcessNotesID">
+            <End Role="RLBProcessNote" EntitySet="RLBProcessNotes" />
+            <End Role="APCompanyMove" EntitySet="APCompanyMoves" />
+          </AssociationSet>
+          <FunctionImport Name="mckfnAPCompanyMoveError" IsComposable="true" ReturnType="Collection(MckIntegrationModel.mckfnAPCompanyMoveError_Result)">
+          <Parameter Name="LogFileName" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="RLBDropFolderWatchers" EntityType="MckIntegrationModel.RLBDropFolderWatcher" />
+          <AssociationSet Name="FK_RLBDropFolderWatcher_RLBProcessNotesID" Association="MckIntegrationModel.FK_RLBDropFolderWatcher_RLBProcessNotesID">
+            <End Role="RLBProcessNote" EntitySet="RLBProcessNotes" />
+            <End Role="RLBDropFolderWatcher" EntitySet="RLBDropFolderWatchers" />
+          </AssociationSet>
+          <EntitySet Name="CompanyMoveMetrics" EntityType="MckIntegrationModel.CompanyMoveMetric" />
+          <EntitySet Name="mckvwRLBAPImportRecords" EntityType="MckIntegrationModel.mckvwRLBAPImportRecord" />
+          <EntitySet Name="MissingAttachments" EntityType="MckIntegrationModel.MissingAttachment" />
+          <EntitySet Name="ViewpointAttachFiles" EntityType="MckIntegrationModel.ViewpointAttachFile" />
+          </EntityContainer>
+        <EntityType Name="RLBRemoteDownload">
+          <Key>
+            <PropertyRef Name="KeyID" />
+          </Key>
+          <Property Name="KeyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FileName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="LastWriteTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Length" Type="Int64" Nullable="false" />
+          <Property Name="CompleteTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="RLBRemoteUpload">
+          <Key>
+            <PropertyRef Name="KeyID" />
+          </Key>
+          <Property Name="KeyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FileName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="LastWriteTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Length" Type="Int64" Nullable="false" />
+          <Property Name="CompleteTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="RLBAPImportDetail">
+          <Key>
+            <PropertyRef Name="RLBAPImportDetailID" />
+          </Key>
+          <Property Name="RLBAPImportDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RLBImportBatchID" Type="Int32" Nullable="false" />
+          <Property Name="FileName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="LastWriteTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Length" Type="Int64" Nullable="false" />
+          <Property Name="RLBImportDetailStatusCode" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="RLBProcessNotesID" Type="Int32" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+          <Property Name="RecordType" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Company" Type="Byte" />
+          <Property Name="Number" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="VendorGroup" Type="Byte" />
+          <Property Name="Vendor" Type="Int32" />
+          <Property Name="VendorName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="TransactionDate" Type="DateTime" Precision="3" />
+          <Property Name="JCCo" Type="Byte" />
+          <Property Name="Job" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="JobDescription" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="DetailLineCount" Type="Int32" />
+          <Property Name="TotalOrigCost" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="TotalOrigTax" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="RemainingAmount" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="RemainingTax" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="CollectedInvoiceDate" Type="DateTime" Precision="0" />
+          <Property Name="CollectedInvoiceNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CollectedTaxAmount" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="CollectedShippingAmount" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="CollectedInvoiceAmount" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="CollectedImage" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="RLBImportBatch" Relationship="MckIntegrationModel.FK_RLBAPImportDetail_RLBImportBatch" FromRole="RLBAPImportDetail" ToRole="RLBImportBatch" />
+          <NavigationProperty Name="RLBProcessNote" Relationship="MckIntegrationModel.FK_RLBAPImportDetail_RLBProcessNotesID" FromRole="RLBAPImportDetail" ToRole="RLBProcessNote" />
+          <NavigationProperty Name="RLBAPImportRecords" Relationship="MckIntegrationModel.FK_RLBAPImportRecord_RLBAPImportDetailID" FromRole="RLBAPImportDetail" ToRole="RLBAPImportRecord" />
+          <Property Name="UnmatchedNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="RLBAPImportRecord">
+          <Key>
+            <PropertyRef Name="RLBAPImportRecordID" />
+          </Key>
+          <Property Name="RLBAPImportRecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RLBAPImportDetailID" Type="Int32" Nullable="false" />
+          <Property Name="Co" Type="Byte" />
+          <Property Name="Mth" Type="DateTime" Precision="0" />
+          <Property Name="UISeq" Type="Int16" />
+          <Property Name="Vendor" Type="Int32" />
+          <Property Name="APRef" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="InvDate" Type="DateTime" Precision="0" />
+          <Property Name="InvTotal" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="HeaderKeyID" Type="Int64" />
+          <Property Name="FooterKeyID" Type="Int64" />
+          <Property Name="DocName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="AttachmentID" Type="Int32" />
+          <Property Name="UniqueAttchID" Type="Guid" />
+          <Property Name="OrigFileName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="FileCopied" Type="Boolean" />
+          <Property Name="RLBProcessNotesID" Type="Int32" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="RLBAPImportDetail" Relationship="MckIntegrationModel.FK_RLBAPImportRecord_RLBAPImportDetailID" FromRole="RLBAPImportRecord" ToRole="RLBAPImportDetail" />
+          <NavigationProperty Name="RLBProcessNote" Relationship="MckIntegrationModel.FK_RLBAPImportRecord_RLBProcessNotesID" FromRole="RLBAPImportRecord" ToRole="RLBProcessNote" />
+        </EntityType>
+        <EntityType Name="RLBImportBatch">
+          <Key>
+            <PropertyRef Name="RLBImportBatchID" />
+          </Key>
+          <Property Name="RLBImportBatchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RLBProcessNotesID" Type="Int32" />
+          <Property Name="FileName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="LastWriteTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Length" Type="Int64" Nullable="false" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="RLBImportBatchStatusCode" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CompleteTime" Type="DateTime" Precision="3" />
+          <Property Name="ArchiveFolderName" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="RLBAPImportDetails" Relationship="MckIntegrationModel.FK_RLBAPImportDetail_RLBImportBatch" FromRole="RLBImportBatch" ToRole="RLBAPImportDetail" />
+          <NavigationProperty Name="RLBARImportDetails" Relationship="MckIntegrationModel.FK_RLBARImportDetail_RLBImportBatch" FromRole="RLBImportBatch" ToRole="RLBARImportDetail" />
+        </EntityType>
+        <EntityType Name="RLBImportBatchStatu">
+          <Key>
+            <PropertyRef Name="RLBImportBatchStatusID" />
+          </Key>
+          <Property Name="RLBImportBatchStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StatusCode" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="RLBImportDetailStatu">
+          <Key>
+            <PropertyRef Name="RLBImportDetailStatusID" />
+          </Key>
+          <Property Name="RLBImportDetailStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StatusCode" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="RLBProcessNote">
+          <Key>
+            <PropertyRef Name="RLBProcessNotesID" />
+          </Key>
+          <Property Name="RLBProcessNotesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProcessNotes" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="RLBAPImportDetails" Relationship="MckIntegrationModel.FK_RLBAPImportDetail_RLBProcessNotesID" FromRole="RLBProcessNote" ToRole="RLBAPImportDetail" />
+          <NavigationProperty Name="RLBAPImportRecords" Relationship="MckIntegrationModel.FK_RLBAPImportRecord_RLBProcessNotesID" FromRole="RLBProcessNote" ToRole="RLBAPImportRecord" />
+          <NavigationProperty Name="RLBARImportDetails" Relationship="MckIntegrationModel.FK_RLBARImportDetail_RLBProcessNotesID" FromRole="RLBProcessNote" ToRole="RLBARImportDetail" />
+          <NavigationProperty Name="RLBARImportRecords" Relationship="MckIntegrationModel.FK_RLBARImportRecord_RLBProcessNotesID" FromRole="RLBProcessNote" ToRole="RLBARImportRecord" />
+          <NavigationProperty Name="AttachCompanyMoves" Relationship="MckIntegrationModel.FK_AttachCompanyMove_RLBProcessNotesID" FromRole="RLBProcessNote" ToRole="AttachCompanyMove" />
+          <NavigationProperty Name="APCompanyMoves" Relationship="MckIntegrationModel.FK_APCompanyMove_RLBProcessNotesID" FromRole="RLBProcessNote" ToRole="APCompanyMove" />
+          <NavigationProperty Name="RLBDropFolderWatchers" Relationship="MckIntegrationModel.FK_RLBDropFolderWatcher_RLBProcessNotesID" FromRole="RLBProcessNote" ToRole="RLBDropFolderWatcher" />
+        </EntityType>
+        <Association Name="FK_RLBAPImportDetail_RLBImportBatch">
+          <End Type="MckIntegrationModel.RLBImportBatch" Role="RLBImportBatch" Multiplicity="1" />
+          <End Type="MckIntegrationModel.RLBAPImportDetail" Role="RLBAPImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBImportBatch">
+              <PropertyRef Name="RLBImportBatchID" />
+            </Principal>
+            <Dependent Role="RLBAPImportDetail">
+              <PropertyRef Name="RLBImportBatchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBAPImportDetail_RLBProcessNotesID">
+          <End Type="MckIntegrationModel.RLBProcessNote" Role="RLBProcessNote" Multiplicity="0..1" />
+          <End Type="MckIntegrationModel.RLBAPImportDetail" Role="RLBAPImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNote">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="RLBAPImportDetail">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBAPImportRecord_RLBAPImportDetailID">
+          <End Type="MckIntegrationModel.RLBAPImportDetail" Role="RLBAPImportDetail" Multiplicity="1" />
+          <End Type="MckIntegrationModel.RLBAPImportRecord" Role="RLBAPImportRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBAPImportDetail">
+              <PropertyRef Name="RLBAPImportDetailID" />
+            </Principal>
+            <Dependent Role="RLBAPImportRecord">
+              <PropertyRef Name="RLBAPImportDetailID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBAPImportRecord_RLBProcessNotesID">
+          <End Type="MckIntegrationModel.RLBProcessNote" Role="RLBProcessNote" Multiplicity="0..1" />
+          <End Type="MckIntegrationModel.RLBAPImportRecord" Role="RLBAPImportRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNote">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="RLBAPImportRecord">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="RLBARImportDetail">
+          <Key>
+            <PropertyRef Name="RLBARImportDetailID" />
+          </Key>
+          <Property Name="RLBARImportDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RLBImportBatchID" Type="Int32" Nullable="false" />
+          <Property Name="FileName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="LastWriteTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Length" Type="Int64" Nullable="false" />
+          <Property Name="RLBImportDetailStatusCode" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="RLBProcessNotesID" Type="Int32" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+          <Property Name="Company" Type="Byte" />
+          <Property Name="InvoiceNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CustGroup" Type="Byte" />
+          <Property Name="Customer" Type="Int32" />
+          <Property Name="CustomerName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="TransactionDate" Type="DateTime" Precision="0" />
+          <Property Name="InvoiceDescription" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="DetailLineCount" Type="Int32" />
+          <Property Name="AmountDue" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="OriginalAmount" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="Tax" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="CollectedCheckDate" Type="DateTime" Precision="0" />
+          <Property Name="CollectedCheckNumber" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="CollectedCheckAmount" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="CollectedImage" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Notes" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="RLBImportBatch" Relationship="MckIntegrationModel.FK_RLBARImportDetail_RLBImportBatch" FromRole="RLBARImportDetail" ToRole="RLBImportBatch" />
+          <NavigationProperty Name="RLBProcessNote" Relationship="MckIntegrationModel.FK_RLBARImportDetail_RLBProcessNotesID" FromRole="RLBARImportDetail" ToRole="RLBProcessNote" />
+          <NavigationProperty Name="RLBARImportRecords" Relationship="MckIntegrationModel.FK_RLBARImportRecord_RLBARImportDetailID" FromRole="RLBARImportDetail" ToRole="RLBARImportRecord" />
+        </EntityType>
+        <EntityType Name="RLBARImportRecord">
+          <Key>
+            <PropertyRef Name="RLBARImportRecordID" />
+          </Key>
+          <Property Name="RLBARImportRecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RLBARImportDetailID" Type="Int32" Nullable="false" />
+          <Property Name="Co" Type="Byte" />
+          <Property Name="Mth" Type="DateTime" Precision="0" />
+          <Property Name="BatchId" Type="Int32" />
+          <Property Name="BatchSeq" Type="Int32" />
+          <Property Name="CMDeposit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CheckNo" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="CheckDate" Type="DateTime" Precision="0" />
+          <Property Name="TransDate" Type="DateTime" Precision="0" />
+          <Property Name="CreditAmt" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="HeaderKeyID" Type="Int64" />
+          <Property Name="DocName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="AttachmentID" Type="Int32" />
+          <Property Name="UniqueAttchID" Type="Guid" />
+          <Property Name="OrigFileName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="FileCopied" Type="Boolean" />
+          <Property Name="RLBProcessNotesID" Type="Int32" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="RLBARImportDetail" Relationship="MckIntegrationModel.FK_RLBARImportRecord_RLBARImportDetailID" FromRole="RLBARImportRecord" ToRole="RLBARImportDetail" />
+          <NavigationProperty Name="RLBProcessNote" Relationship="MckIntegrationModel.FK_RLBARImportRecord_RLBProcessNotesID" FromRole="RLBARImportRecord" ToRole="RLBProcessNote" />
+        </EntityType>
+        <Association Name="FK_RLBARImportDetail_RLBImportBatch">
+          <End Type="MckIntegrationModel.RLBImportBatch" Role="RLBImportBatch" Multiplicity="1" />
+          <End Type="MckIntegrationModel.RLBARImportDetail" Role="RLBARImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBImportBatch">
+              <PropertyRef Name="RLBImportBatchID" />
+            </Principal>
+            <Dependent Role="RLBARImportDetail">
+              <PropertyRef Name="RLBImportBatchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBARImportDetail_RLBProcessNotesID">
+          <End Type="MckIntegrationModel.RLBProcessNote" Role="RLBProcessNote" Multiplicity="0..1" />
+          <End Type="MckIntegrationModel.RLBARImportDetail" Role="RLBARImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNote">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="RLBARImportDetail">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBARImportRecord_RLBARImportDetailID">
+          <End Type="MckIntegrationModel.RLBARImportDetail" Role="RLBARImportDetail" Multiplicity="1" />
+          <End Type="MckIntegrationModel.RLBARImportRecord" Role="RLBARImportRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBARImportDetail">
+              <PropertyRef Name="RLBARImportDetailID" />
+            </Principal>
+            <Dependent Role="RLBARImportRecord">
+              <PropertyRef Name="RLBARImportDetailID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RLBARImportRecord_RLBProcessNotesID">
+          <End Type="MckIntegrationModel.RLBProcessNote" Role="RLBProcessNote" Multiplicity="0..1" />
+          <End Type="MckIntegrationModel.RLBARImportRecord" Role="RLBARImportRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNote">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="RLBARImportRecord">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="mckvwRLBARImportRecord">
+          <Key>
+            <PropertyRef Name="RLBImportBatchID" />
+            <PropertyRef Name="RLBARImportRecordID" />
+            <PropertyRef Name="RLBARImportDetailID" />
+          </Key>
+          <Property Name="RLBImportBatchID" Type="Int32" Nullable="false" />
+          <Property Name="RLBARImportRecordID" Type="Int32" Nullable="false" />
+          <Property Name="RLBARImportDetailID" Type="Int32" Nullable="false" />
+          <Property Name="Co" Type="Byte" />
+          <Property Name="Mth" Type="DateTime" Precision="0" />
+          <Property Name="BatchId" Type="Int32" />
+          <Property Name="BatchSeq" Type="Int32" />
+          <Property Name="CMDeposit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CheckNo" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="CheckDate" Type="DateTime" Precision="0" />
+          <Property Name="TransDate" Type="DateTime" Precision="0" />
+          <Property Name="CreditAmt" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="HeaderKeyID" Type="Int64" />
+          <Property Name="DocName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="AttachmentID" Type="Int32" />
+          <Property Name="UniqueAttchID" Type="Guid" />
+          <Property Name="OrigFileName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="FileCopied" Type="Boolean" />
+          <Property Name="RLBProcessNotesID" Type="Int32" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="AttachCompanyMove">
+          <Key>
+            <PropertyRef Name="AttachCompanyMoveID" />
+          </Key>
+          <Property Name="AttachCompanyMoveID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyMoveID" Type="Int32" Nullable="false" />
+          <Property Name="KeepOldAttach" Type="Boolean" />
+          <Property Name="OldAttachDeleted" Type="Boolean" />
+          <Property Name="FileCopied" Type="Boolean" />
+          <Property Name="OrigFileName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="FormName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="TableName" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="DocName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="AttachmentID" Type="Int32" />
+          <Property Name="UniqueAttchID" Type="Guid" />
+          <Property Name="DestDocName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="DestAttachmentID" Type="Int32" />
+          <Property Name="DestUniqueAttchID" Type="Guid" />
+          <Property Name="RLBProcessNotesID" Type="Int32" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="RLBProcessNote" Relationship="MckIntegrationModel.FK_AttachCompanyMove_RLBProcessNotesID" FromRole="AttachCompanyMove" ToRole="RLBProcessNote" />
+        </EntityType>
+        <Association Name="FK_AttachCompanyMove_RLBProcessNotesID">
+          <End Type="MckIntegrationModel.RLBProcessNote" Role="RLBProcessNote" Multiplicity="0..1" />
+          <End Type="MckIntegrationModel.AttachCompanyMove" Role="AttachCompanyMove" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNote">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="AttachCompanyMove">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="APCompanyMove">
+          <Key>
+            <PropertyRef Name="APCompanyMoveID" />
+          </Key>
+          <Property Name="APCompanyMoveID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LogFileName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="HeaderSuccess" Type="Boolean" />
+          <Property Name="AttachSuccess" Type="Boolean" />
+          <Property Name="AttachCopySuccess" Type="Boolean" />
+          <Property Name="Mth" Type="DateTime" Precision="0" />
+          <Property Name="Vendor" Type="Int32" />
+          <Property Name="APRef" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="InvTotal" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="Co" Type="Byte" />
+          <Property Name="UISeq" Type="Int16" />
+          <Property Name="UniqueAttchID" Type="Guid" />
+          <Property Name="KeyID" Type="Int64" />
+          <Property Name="DestCo" Type="Byte" />
+          <Property Name="DestUISeq" Type="Int16" />
+          <Property Name="DestUniqueAttchID" Type="Guid" />
+          <Property Name="DestKeyID" Type="Int64" />
+          <Property Name="RLBProcessNotesID" Type="Int32" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="RLBProcessNote" Relationship="MckIntegrationModel.FK_APCompanyMove_RLBProcessNotesID" FromRole="APCompanyMove" ToRole="RLBProcessNote" />
+        </EntityType>
+        <Association Name="FK_APCompanyMove_RLBProcessNotesID">
+          <End Type="MckIntegrationModel.RLBProcessNote" Role="RLBProcessNote" Multiplicity="0..1" />
+          <End Type="MckIntegrationModel.APCompanyMove" Role="APCompanyMove" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNote">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="APCompanyMove">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="mckfnAPCompanyMoveError_Result">
+          <Property Type="Boolean" Name="HeaderMoved" Nullable="true" />
+          <Property Type="Boolean" Name="AttachmentsMoved" Nullable="true" />
+          <Property Type="Boolean" Name="AttachmentsCopied" Nullable="true" />
+          <Property Type="Byte" Name="Co" Nullable="true" />
+          <Property Type="DateTime" Name="Mth" Nullable="true" Precision="16" />
+          <Property Type="Int16" Name="UISeq" Nullable="true" />
+          <Property Type="Int32" Name="Vendor" Nullable="true" />
+          <Property Type="String" Name="APRef" Nullable="true" MaxLength="15" />
+          <Property Type="Decimal" Name="InvTotal" Nullable="true" Precision="12" Scale="2" />
+          <Property Type="String" Name="Notes" Nullable="false" MaxLength="512" />
+        </ComplexType>
+        <EntityType Name="RLBDropFolderWatcher">
+          <Key>
+            <PropertyRef Name="DropFolderWatcherID" />
+          </Key>
+          <Property Name="DropFolderWatcherID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Activity" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Success" Type="Boolean" />
+          <Property Name="RLBProcessNotesID" Type="Int32" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="RLBProcessNote" Relationship="MckIntegrationModel.FK_RLBDropFolderWatcher_RLBProcessNotesID" FromRole="RLBDropFolderWatcher" ToRole="RLBProcessNote" />
+        </EntityType>
+        <Association Name="FK_RLBDropFolderWatcher_RLBProcessNotesID">
+          <End Type="MckIntegrationModel.RLBProcessNote" Role="RLBProcessNote" Multiplicity="0..1" />
+          <End Type="MckIntegrationModel.RLBDropFolderWatcher" Role="RLBDropFolderWatcher" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RLBProcessNote">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Principal>
+            <Dependent Role="RLBDropFolderWatcher">
+              <PropertyRef Name="RLBProcessNotesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="CompanyMoveMetric">
+          <Key>
+            <PropertyRef Name="CompanyMoveMetricsID" />
+          </Key>
+          <Property Name="CompanyMoveMetricsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ApplicationKey" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LastNotifyDate" Type="DateTime" Precision="3" />
+          <Property Name="LastNotifyLogFileName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="mckvwRLBAPImportRecord">
+          <Key>
+            <PropertyRef Name="RLBImportBatchID" />
+            <PropertyRef Name="RLBAPImportRecordID" />
+            <PropertyRef Name="RLBAPImportDetailID" />
+          </Key>
+          <Property Name="RLBImportBatchID" Type="Int32" Nullable="false" />
+          <Property Name="RLBAPImportRecordID" Type="Int32" Nullable="false" />
+          <Property Name="RLBAPImportDetailID" Type="Int32" Nullable="false" />
+          <Property Name="Co" Type="Byte" />
+          <Property Name="Mth" Type="DateTime" Precision="0" />
+          <Property Name="UISeq" Type="Int16" />
+          <Property Name="Vendor" Type="Int32" />
+          <Property Name="APRef" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="InvDate" Type="DateTime" Precision="0" />
+          <Property Name="InvTotal" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="HeaderKeyID" Type="Int64" />
+          <Property Name="FooterKeyID" Type="Int64" />
+          <Property Name="DocName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="AttachmentID" Type="Int32" />
+          <Property Name="UniqueAttchID" Type="Guid" />
+          <Property Name="OrigFileName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="FileCopied" Type="Boolean" />
+          <Property Name="RLBProcessNotesID" Type="Int32" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Modified" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="MissingAttachment">
+          <Key>
+            <PropertyRef Name="MissingAttachmentsID" />
+          </Key>
+          <Property Name="MissingAttachmentsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Company" Type="Byte" />
+          <Property Name="FormName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="TableName" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="AttachmentID" Type="Int64" />
+          <Property Name="UniqueAttchID" Type="Guid" />
+          <Property Name="AddedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="AddDate" Type="DateTime" Precision="3" />
+          <Property Name="DocName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="OrigFileName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="FileExists" Type="Boolean" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="KeyID" Type="Int64" />
+          <Property Name="CurrentState" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ViewpointAttachFile">
+          <Key>
+            <PropertyRef Name="ViewpointAttachFilesID" />
+          </Key>
+          <Property Name="ViewpointAttachFilesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Environment" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="FileName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Company" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Module" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="FormName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Month" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="FullFilePath" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="FileCreationTime" Type="DateTime" Precision="7" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MckIntegrationModelStoreContainer" CdmEntityContainer="MckIntegrationEntities">
+          <EntitySetMapping Name="RLBRemoteDownloads">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBRemoteDownload">
+              <MappingFragment StoreEntitySet="RLBRemoteDownload">
+                <ScalarProperty Name="CompleteTime" ColumnName="CompleteTime" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="LastWriteTime" ColumnName="LastWriteTime" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RLBRemoteUploads">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBRemoteUpload">
+              <MappingFragment StoreEntitySet="RLBRemoteUpload">
+                <ScalarProperty Name="CompleteTime" ColumnName="CompleteTime" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="LastWriteTime" ColumnName="LastWriteTime" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RLBAPImportDetails">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBAPImportDetail">
+              <MappingFragment StoreEntitySet="RLBAPImportDetail">
+                <ScalarProperty Name="UnmatchedNumber" ColumnName="UnmatchedNumber" />
+                <ScalarProperty Name="CollectedImage" ColumnName="CollectedImage" />
+                <ScalarProperty Name="CollectedInvoiceAmount" ColumnName="CollectedInvoiceAmount" />
+                <ScalarProperty Name="CollectedShippingAmount" ColumnName="CollectedShippingAmount" />
+                <ScalarProperty Name="CollectedTaxAmount" ColumnName="CollectedTaxAmount" />
+                <ScalarProperty Name="CollectedInvoiceNumber" ColumnName="CollectedInvoiceNumber" />
+                <ScalarProperty Name="CollectedInvoiceDate" ColumnName="CollectedInvoiceDate" />
+                <ScalarProperty Name="RemainingTax" ColumnName="RemainingTax" />
+                <ScalarProperty Name="RemainingAmount" ColumnName="RemainingAmount" />
+                <ScalarProperty Name="TotalOrigTax" ColumnName="TotalOrigTax" />
+                <ScalarProperty Name="TotalOrigCost" ColumnName="TotalOrigCost" />
+                <ScalarProperty Name="DetailLineCount" ColumnName="DetailLineCount" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+                <ScalarProperty Name="Job" ColumnName="Job" />
+                <ScalarProperty Name="JCCo" ColumnName="JCCo" />
+                <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="VendorGroup" ColumnName="VendorGroup" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="RecordType" ColumnName="RecordType" />
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+                <ScalarProperty Name="RLBImportDetailStatusCode" ColumnName="RLBImportDetailStatusCode" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="LastWriteTime" ColumnName="LastWriteTime" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="RLBImportBatchID" ColumnName="RLBImportBatchID" />
+                <ScalarProperty Name="RLBAPImportDetailID" ColumnName="RLBAPImportDetailID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RLBAPImportRecords">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBAPImportRecord">
+              <MappingFragment StoreEntitySet="RLBAPImportRecord">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+                <ScalarProperty Name="FileCopied" ColumnName="FileCopied" />
+                <ScalarProperty Name="OrigFileName" ColumnName="OrigFileName" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="AttachmentID" ColumnName="AttachmentID" />
+                <ScalarProperty Name="DocName" ColumnName="DocName" />
+                <ScalarProperty Name="FooterKeyID" ColumnName="FooterKeyID" />
+                <ScalarProperty Name="HeaderKeyID" ColumnName="HeaderKeyID" />
+                <ScalarProperty Name="InvTotal" ColumnName="InvTotal" />
+                <ScalarProperty Name="InvDate" ColumnName="InvDate" />
+                <ScalarProperty Name="APRef" ColumnName="APRef" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="UISeq" ColumnName="UISeq" />
+                <ScalarProperty Name="Mth" ColumnName="Mth" />
+                <ScalarProperty Name="Co" ColumnName="Co" />
+                <ScalarProperty Name="RLBAPImportDetailID" ColumnName="RLBAPImportDetailID" />
+                <ScalarProperty Name="RLBAPImportRecordID" ColumnName="RLBAPImportRecordID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RLBImportBatches">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBImportBatch">
+              <MappingFragment StoreEntitySet="RLBImportBatch">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="ArchiveFolderName" ColumnName="ArchiveFolderName" />
+                <ScalarProperty Name="CompleteTime" ColumnName="CompleteTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="RLBImportBatchStatusCode" ColumnName="RLBImportBatchStatusCode" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="LastWriteTime" ColumnName="LastWriteTime" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+                <ScalarProperty Name="RLBImportBatchID" ColumnName="RLBImportBatchID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RLBImportBatchStatus">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBImportBatchStatu">
+              <MappingFragment StoreEntitySet="RLBImportBatchStatus">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+                <ScalarProperty Name="RLBImportBatchStatusID" ColumnName="RLBImportBatchStatusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RLBImportDetailStatus">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBImportDetailStatu">
+              <MappingFragment StoreEntitySet="RLBImportDetailStatus">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+                <ScalarProperty Name="RLBImportDetailStatusID" ColumnName="RLBImportDetailStatusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RLBProcessNotes">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBProcessNote">
+              <MappingFragment StoreEntitySet="RLBProcessNotes">
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="ProcessNotes" ColumnName="ProcessNotes" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RLBARImportDetails">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBARImportDetail">
+              <MappingFragment StoreEntitySet="RLBARImportDetail">
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="CollectedImage" ColumnName="CollectedImage" />
+                <ScalarProperty Name="CollectedCheckAmount" ColumnName="CollectedCheckAmount" />
+                <ScalarProperty Name="CollectedCheckNumber" ColumnName="CollectedCheckNumber" />
+                <ScalarProperty Name="CollectedCheckDate" ColumnName="CollectedCheckDate" />
+                <ScalarProperty Name="Tax" ColumnName="Tax" />
+                <ScalarProperty Name="OriginalAmount" ColumnName="OriginalAmount" />
+                <ScalarProperty Name="AmountDue" ColumnName="AmountDue" />
+                <ScalarProperty Name="DetailLineCount" ColumnName="DetailLineCount" />
+                <ScalarProperty Name="InvoiceDescription" ColumnName="InvoiceDescription" />
+                <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="CustGroup" ColumnName="CustGroup" />
+                <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+                <ScalarProperty Name="RLBImportDetailStatusCode" ColumnName="RLBImportDetailStatusCode" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="LastWriteTime" ColumnName="LastWriteTime" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="RLBImportBatchID" ColumnName="RLBImportBatchID" />
+                <ScalarProperty Name="RLBARImportDetailID" ColumnName="RLBARImportDetailID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RLBARImportRecords">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBARImportRecord">
+              <MappingFragment StoreEntitySet="RLBARImportRecord">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+                <ScalarProperty Name="FileCopied" ColumnName="FileCopied" />
+                <ScalarProperty Name="OrigFileName" ColumnName="OrigFileName" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="AttachmentID" ColumnName="AttachmentID" />
+                <ScalarProperty Name="DocName" ColumnName="DocName" />
+                <ScalarProperty Name="HeaderKeyID" ColumnName="HeaderKeyID" />
+                <ScalarProperty Name="CreditAmt" ColumnName="CreditAmt" />
+                <ScalarProperty Name="TransDate" ColumnName="TransDate" />
+                <ScalarProperty Name="CheckDate" ColumnName="CheckDate" />
+                <ScalarProperty Name="CheckNo" ColumnName="CheckNo" />
+                <ScalarProperty Name="CMDeposit" ColumnName="CMDeposit" />
+                <ScalarProperty Name="BatchSeq" ColumnName="BatchSeq" />
+                <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+                <ScalarProperty Name="Mth" ColumnName="Mth" />
+                <ScalarProperty Name="Co" ColumnName="Co" />
+                <ScalarProperty Name="RLBARImportDetailID" ColumnName="RLBARImportDetailID" />
+                <ScalarProperty Name="RLBARImportRecordID" ColumnName="RLBARImportRecordID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mckvwRLBARImportRecords">
+            <EntityTypeMapping TypeName="MckIntegrationModel.mckvwRLBARImportRecord">
+              <MappingFragment StoreEntitySet="mckvwRLBARImportRecord">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+                <ScalarProperty Name="FileCopied" ColumnName="FileCopied" />
+                <ScalarProperty Name="OrigFileName" ColumnName="OrigFileName" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="AttachmentID" ColumnName="AttachmentID" />
+                <ScalarProperty Name="DocName" ColumnName="DocName" />
+                <ScalarProperty Name="HeaderKeyID" ColumnName="HeaderKeyID" />
+                <ScalarProperty Name="CreditAmt" ColumnName="CreditAmt" />
+                <ScalarProperty Name="TransDate" ColumnName="TransDate" />
+                <ScalarProperty Name="CheckDate" ColumnName="CheckDate" />
+                <ScalarProperty Name="CheckNo" ColumnName="CheckNo" />
+                <ScalarProperty Name="CMDeposit" ColumnName="CMDeposit" />
+                <ScalarProperty Name="BatchSeq" ColumnName="BatchSeq" />
+                <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+                <ScalarProperty Name="Mth" ColumnName="Mth" />
+                <ScalarProperty Name="Co" ColumnName="Co" />
+                <ScalarProperty Name="RLBARImportDetailID" ColumnName="RLBARImportDetailID" />
+                <ScalarProperty Name="RLBARImportRecordID" ColumnName="RLBARImportRecordID" />
+                <ScalarProperty Name="RLBImportBatchID" ColumnName="RLBImportBatchID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AttachCompanyMoves">
+            <EntityTypeMapping TypeName="MckIntegrationModel.AttachCompanyMove">
+              <MappingFragment StoreEntitySet="AttachCompanyMove">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+                <ScalarProperty Name="DestUniqueAttchID" ColumnName="DestUniqueAttchID" />
+                <ScalarProperty Name="DestAttachmentID" ColumnName="DestAttachmentID" />
+                <ScalarProperty Name="DestDocName" ColumnName="DestDocName" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="AttachmentID" ColumnName="AttachmentID" />
+                <ScalarProperty Name="DocName" ColumnName="DocName" />
+                <ScalarProperty Name="TableName" ColumnName="TableName" />
+                <ScalarProperty Name="FormName" ColumnName="FormName" />
+                <ScalarProperty Name="OrigFileName" ColumnName="OrigFileName" />
+                <ScalarProperty Name="FileCopied" ColumnName="FileCopied" />
+                <ScalarProperty Name="OldAttachDeleted" ColumnName="OldAttachDeleted" />
+                <ScalarProperty Name="KeepOldAttach" ColumnName="KeepOldAttach" />
+                <ScalarProperty Name="CompanyMoveID" ColumnName="CompanyMoveID" />
+                <ScalarProperty Name="AttachCompanyMoveID" ColumnName="AttachCompanyMoveID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="APCompanyMoves">
+            <EntityTypeMapping TypeName="MckIntegrationModel.APCompanyMove">
+              <MappingFragment StoreEntitySet="APCompanyMove">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+                <ScalarProperty Name="DestKeyID" ColumnName="DestKeyID" />
+                <ScalarProperty Name="DestUniqueAttchID" ColumnName="DestUniqueAttchID" />
+                <ScalarProperty Name="DestUISeq" ColumnName="DestUISeq" />
+                <ScalarProperty Name="DestCo" ColumnName="DestCo" />
+                <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="UISeq" ColumnName="UISeq" />
+                <ScalarProperty Name="Co" ColumnName="Co" />
+                <ScalarProperty Name="InvTotal" ColumnName="InvTotal" />
+                <ScalarProperty Name="APRef" ColumnName="APRef" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="Mth" ColumnName="Mth" />
+                <ScalarProperty Name="AttachCopySuccess" ColumnName="AttachCopySuccess" />
+                <ScalarProperty Name="AttachSuccess" ColumnName="AttachSuccess" />
+                <ScalarProperty Name="HeaderSuccess" ColumnName="HeaderSuccess" />
+                <ScalarProperty Name="LogFileName" ColumnName="LogFileName" />
+                <ScalarProperty Name="APCompanyMoveID" ColumnName="APCompanyMoveID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="mckfnAPCompanyMoveError" FunctionName="MckIntegrationModel.Store.mckfnAPCompanyMoveError">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="MckIntegrationModel.mckfnAPCompanyMoveError_Result">
+                <ScalarProperty Name="HeaderMoved" ColumnName="HeaderMoved" />
+                <ScalarProperty Name="AttachmentsMoved" ColumnName="AttachmentsMoved" />
+                <ScalarProperty Name="AttachmentsCopied" ColumnName="AttachmentsCopied" />
+                <ScalarProperty Name="Co" ColumnName="Co" />
+                <ScalarProperty Name="Mth" ColumnName="Mth" />
+                <ScalarProperty Name="UISeq" ColumnName="UISeq" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="APRef" ColumnName="APRef" />
+                <ScalarProperty Name="InvTotal" ColumnName="InvTotal" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="RLBDropFolderWatchers">
+            <EntityTypeMapping TypeName="MckIntegrationModel.RLBDropFolderWatcher">
+              <MappingFragment StoreEntitySet="RLBDropFolderWatcher">
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+                <ScalarProperty Name="Success" ColumnName="Success" />
+                <ScalarProperty Name="Activity" ColumnName="Activity" />
+                <ScalarProperty Name="DropFolderWatcherID" ColumnName="DropFolderWatcherID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompanyMoveMetrics">
+            <EntityTypeMapping TypeName="MckIntegrationModel.CompanyMoveMetric">
+              <MappingFragment StoreEntitySet="CompanyMoveMetrics">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="LastNotifyLogFileName" ColumnName="LastNotifyLogFileName" />
+                <ScalarProperty Name="LastNotifyDate" ColumnName="LastNotifyDate" />
+                <ScalarProperty Name="ApplicationKey" ColumnName="ApplicationKey" />
+                <ScalarProperty Name="CompanyMoveMetricsID" ColumnName="CompanyMoveMetricsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mckvwRLBAPImportRecords">
+            <EntityTypeMapping TypeName="MckIntegrationModel.mckvwRLBAPImportRecord">
+              <MappingFragment StoreEntitySet="mckvwRLBAPImportRecord">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="RLBProcessNotesID" ColumnName="RLBProcessNotesID" />
+                <ScalarProperty Name="FileCopied" ColumnName="FileCopied" />
+                <ScalarProperty Name="OrigFileName" ColumnName="OrigFileName" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="AttachmentID" ColumnName="AttachmentID" />
+                <ScalarProperty Name="DocName" ColumnName="DocName" />
+                <ScalarProperty Name="FooterKeyID" ColumnName="FooterKeyID" />
+                <ScalarProperty Name="HeaderKeyID" ColumnName="HeaderKeyID" />
+                <ScalarProperty Name="InvTotal" ColumnName="InvTotal" />
+                <ScalarProperty Name="InvDate" ColumnName="InvDate" />
+                <ScalarProperty Name="APRef" ColumnName="APRef" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="UISeq" ColumnName="UISeq" />
+                <ScalarProperty Name="Mth" ColumnName="Mth" />
+                <ScalarProperty Name="Co" ColumnName="Co" />
+                <ScalarProperty Name="RLBAPImportDetailID" ColumnName="RLBAPImportDetailID" />
+                <ScalarProperty Name="RLBAPImportRecordID" ColumnName="RLBAPImportRecordID" />
+                <ScalarProperty Name="RLBImportBatchID" ColumnName="RLBImportBatchID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MissingAttachments">
+            <EntityTypeMapping TypeName="MckIntegrationModel.MissingAttachment">
+              <MappingFragment StoreEntitySet="MissingAttachments">
+                <ScalarProperty Name="CurrentState" ColumnName="CurrentState" />
+                <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="FileExists" ColumnName="FileExists" />
+                <ScalarProperty Name="OrigFileName" ColumnName="OrigFileName" />
+                <ScalarProperty Name="DocName" ColumnName="DocName" />
+                <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="AttachmentID" ColumnName="AttachmentID" />
+                <ScalarProperty Name="TableName" ColumnName="TableName" />
+                <ScalarProperty Name="FormName" ColumnName="FormName" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="MissingAttachmentsID" ColumnName="MissingAttachmentsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ViewpointAttachFiles">
+            <EntityTypeMapping TypeName="MckIntegrationModel.ViewpointAttachFile">
+              <MappingFragment StoreEntitySet="ViewpointAttachFiles">
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="FileCreationTime" ColumnName="FileCreationTime" />
+                <ScalarProperty Name="FullFilePath" ColumnName="FullFilePath" />
+                <ScalarProperty Name="Month" ColumnName="Month" />
+                <ScalarProperty Name="FormName" ColumnName="FormName" />
+                <ScalarProperty Name="Module" ColumnName="Module" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="Environment" ColumnName="Environment" />
+                <ScalarProperty Name="ViewpointAttachFilesID" ColumnName="ViewpointAttachFilesID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

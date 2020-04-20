@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ContractService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IContractService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <http:NegotiateAuthentication xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://setestviewpoint/ViewPointServiceDev/ContractService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://setestviewpoint/ViewPointServiceDev/ContractService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://setestviewpoint/ViewPointServiceDev/ContractService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" />
+      <xsd:import schemaLocation="http://setestviewpoint/ViewPointServiceDev/ContractService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+      <xsd:import schemaLocation="http://setestviewpoint/ViewPointServiceDev/ContractService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IContractService_getContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:getContract" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_getContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_getLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocations" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_getLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_getCompanies_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanies" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_getCompanies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCompaniesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_getMasterContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMasterContract" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_getMasterContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMasterContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_getSubcontractCOs_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSubcontractCOs" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_getSubcontractCOs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSubcontractCOsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IContractService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IContractService">
+    <wsdl:operation name="getContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractService/getContract" message="tns:IContractService_getContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractService/getContractResponse" message="tns:IContractService_getContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractService/getLocations" message="tns:IContractService_getLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractService/getLocationsResponse" message="tns:IContractService_getLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCompanies">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractService/getCompanies" message="tns:IContractService_getCompanies_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractService/getCompaniesResponse" message="tns:IContractService_getCompanies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMasterContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractService/getMasterContract" message="tns:IContractService_getMasterContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractService/getMasterContractResponse" message="tns:IContractService_getMasterContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSubcontractCOs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractService/getSubcontractCOs" message="tns:IContractService_getSubcontractCOs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractService/getSubcontractCOsResponse" message="tns:IContractService_getSubcontractCOs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractService/GetData" message="tns:IContractService_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractService/GetDataResponse" message="tns:IContractService_GetData_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IContractService" type="tns:IContractService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IContractService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getContract">
+      <soap:operation soapAction="http://tempuri.org/IContractService/getContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <soap:operation soapAction="http://tempuri.org/IContractService/getLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompanies">
+      <soap:operation soapAction="http://tempuri.org/IContractService/getCompanies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMasterContract">
+      <soap:operation soapAction="http://tempuri.org/IContractService/getMasterContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSubcontractCOs">
+      <soap:operation soapAction="http://tempuri.org/IContractService/getSubcontractCOs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IContractService/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ContractService">
+    <wsdl:port name="BasicHttpBinding_IContractService" binding="tns:BasicHttpBinding_IContractService">
+      <soap:address location="http://setestviewpoint/ViewPointServiceDev/ContractService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,2 @@
+CREATE TYPE [dbo].[bFirm] FROM int NOT NULL
+GO

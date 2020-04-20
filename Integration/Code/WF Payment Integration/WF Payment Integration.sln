@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "WF Payment Integration", "WF Payment Integration\WF Payment Integration.dtproj", "{485C7FD3-FA34-46F3-BEE4-7FBE0F1453F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{485C7FD3-FA34-46F3-BEE4-7FBE0F1453F8}.Development|Default.ActiveCfg = Development
+		{485C7FD3-FA34-46F3-BEE4-7FBE0F1453F8}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C50960C-5208-4695-92EA-AAD3FC1A3CBB}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://setfs01:8080/tfs/mckinstry%20team
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WF\u0020Payment\u0020Integration\\WF\u0020Payment\u0020Integration.dtproj
+		SccProjectName1 = WF\u0020Payment\u0020Integration
+		SccLocalPath1 = WF\u0020Payment\u0020Integration
+	EndGlobalSection
+EndGlobal

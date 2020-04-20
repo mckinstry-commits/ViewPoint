@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cb36c430c8974b84b3a7afcbb6cfb33c" Name="Diagram1">
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBRemoteDownload" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBRemoteUpload" Width="1.5" PointX="2.625" PointY="7.75" />
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBAPImportDetail" Width="2" PointX="10.625" PointY="1.25" />
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBAPImportRecord" Width="1.875" PointX="7.875" PointY="5.625" />
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBImportBatch" Width="2.125" PointX="7.375" PointY="1.25" />
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBImportBatchStatu" Width="1.5" PointX="4.625" PointY="1" />
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBImportDetailStatu" Width="1.5" PointX="2.5" PointY="1" />
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBProcessNote" Width="1.5" PointX="4.625" PointY="4.5" />
+        <AssociationConnector Association="MckIntegrationModel.FK_RLBAPImportDetail_RLBImportBatch" />
+        <AssociationConnector Association="MckIntegrationModel.FK_RLBAPImportDetail_RLBProcessNotesID" />
+        <AssociationConnector Association="MckIntegrationModel.FK_RLBAPImportRecord_RLBAPImportDetailID" />
+        <AssociationConnector Association="MckIntegrationModel.FK_RLBAPImportRecord_RLBProcessNotesID" />
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBARImportDetail" Width="1.875" PointX="13.25" PointY="0.875" />
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBARImportRecord" Width="2" PointX="15.5" PointY="1.375" />
+        <AssociationConnector Association="MckIntegrationModel.FK_RLBARImportDetail_RLBImportBatch" />
+        <AssociationConnector Association="MckIntegrationModel.FK_RLBARImportDetail_RLBProcessNotesID" />
+        <AssociationConnector Association="MckIntegrationModel.FK_RLBARImportRecord_RLBARImportDetailID" />
+        <AssociationConnector Association="MckIntegrationModel.FK_RLBARImportRecord_RLBProcessNotesID" />
+        <EntityTypeShape EntityType="MckIntegrationModel.mckvwRLBARImportRecord" Width="1.5" PointX="0.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MckIntegrationModel.AttachCompanyMove" Width="1.5" PointX="6.875" PointY="11.625" />
+        <AssociationConnector Association="MckIntegrationModel.FK_AttachCompanyMove_RLBProcessNotesID" />
+        <EntityTypeShape EntityType="MckIntegrationModel.APCompanyMove" Width="1.5" PointX="6.875" PointY="17.375" />
+        <AssociationConnector Association="MckIntegrationModel.FK_APCompanyMove_RLBProcessNotesID" />
+        <EntityTypeShape EntityType="MckIntegrationModel.RLBDropFolderWatcher" Width="1.5" PointX="6.875" PointY="23.875" />
+        <AssociationConnector Association="MckIntegrationModel.FK_RLBDropFolderWatcher_RLBProcessNotesID" />
+        <EntityTypeShape EntityType="MckIntegrationModel.CompanyMoveMetric" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MckIntegrationModel.mckvwRLBAPImportRecord" Width="1.5" PointX="3.375" PointY="10.75" />
+        <EntityTypeShape EntityType="MckIntegrationModel.MissingAttachment" Width="1.5" PointX="10.375" PointY="9.75" />
+        <EntityTypeShape EntityType="MckIntegrationModel.ViewpointAttachFile" Width="1.5" PointX="12.375" PointY="9.875" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

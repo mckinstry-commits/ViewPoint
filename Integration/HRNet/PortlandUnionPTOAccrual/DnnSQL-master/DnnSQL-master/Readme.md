@@ -1,0 +1,1 @@
+Blog on BulkUserCreation can be found [here](http://www.dotnetnuke.com/Resources/Blogs/EntryId/3524/Tips-from-Ash-Create-test-users-in-bulk-using-SQL.aspx)

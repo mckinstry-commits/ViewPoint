@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<XMLDefinition Generator="Iron Speed Designer" Version="11.1" Type="GENERIC">
+  <ColumnDefinition>
+    <Column InternalName="0" Priority="1" ColumnNum="0">
+      <columnName>UserID</columnName>
+      <columnUIName>%ISD_DEFAULT%</columnUIName>
+      <columnType>Number</columnType>
+      <columnDBType>int</columnDBType>
+      <columnLengthSet>10.0</columnLengthSet>
+      <columnDefault>
+      </columnDefault>
+      <columnDBDefault>
+      </columnDBDefault>
+      <columnIndex>Y</columnIndex>
+      <columnUnique>Y</columnUnique>
+      <columnFunction>notrim</columnFunction>
+      <columnDBFormat>
+      </columnDBFormat>
+      <columnPK>Y</columnPK>
+      <columnPermanent>N</columnPermanent>
+      <columnComputed>N</columnComputed>
+      <columnIdentity>N</columnIdentity>
+      <columnReadOnly>N</columnReadOnly>
+      <columnRequired>Y</columnRequired>
+      <columnNotNull>Y</columnNotNull>
+      <columnCaseSensitive>N</columnCaseSensitive>
+      <columnCollation>
+      </columnCollation>
+      <columnFullText>N</columnFullText>
+      <columnVisibleWidth>%ISD_DEFAULT%</columnVisibleWidth>
+      <columnTableAliasName>
+      </columnTableAliasName>
+      <applyLabelText>Y</applyLabelText>
+      <foreignKey>
+        <columnFKName>FK_pUserLicenseType_pUsers</columnFKName>
+        <columnFKTable>pUsers</columnFKTable>
+        <columnFKOwner>dbo</columnFKOwner>
+        <columnFKColumn>UserID</columnFKColumn>
+        <columnFKColumnDisplay>= LastName + ", " + FirstName + " " + MiddleName</columnFKColumnDisplay>
+        <foreignKeyType>Explicit</foreignKeyType>
+      </foreignKey>
+      <applyDFKA>Y</applyDFKA>
+    </Column>
+    <Column InternalName="1" Priority="2" ColumnNum="1">
+      <columnName>LicenseTypeID</columnName>
+      <columnUIName>%ISD_DEFAULT%</columnUIName>
+      <columnType>Number</columnType>
+      <columnDBType>int</columnDBType>
+      <columnLengthSet>10.0</columnLengthSet>
+      <columnDefault>
+      </columnDefault>
+      <columnDBDefault>
+      </columnDBDefault>
+      <columnIndex>Y</columnIndex>
+      <columnUnique>Y</columnUnique>
+      <columnFunction>notrim</columnFunction>
+      <columnDBFormat>
+      </columnDBFormat>
+      <columnPK>Y</columnPK>
+      <columnPermanent>N</columnPermanent>
+      <columnComputed>N</columnComputed>
+      <columnIdentity>N</columnIdentity>
+      <columnReadOnly>N</columnReadOnly>
+      <columnRequired>Y</columnRequired>
+      <columnNotNull>Y</columnNotNull>
+      <columnCaseSensitive>N</columnCaseSensitive>
+      <columnCollation>
+      </columnCollation>
+      <columnFullText>N</columnFullText>
+      <columnVisibleWidth>%ISD_DEFAULT%</columnVisibleWidth>
+      <columnTableAliasName>
+      </columnTableAliasName>
+      <applyLabelText>Y</applyLabelText>
+      <foreignKey>
+        <columnFKName>FK_pUserLicenseType_pLicenseType</columnFKName>
+        <columnFKTable>pLicenseType</columnFKTable>
+        <columnFKOwner>dbo</columnFKOwner>
+        <columnFKColumn>LicenseTypeID</columnFKColumn>
+        <columnFKColumnDisplay>LicenseType</columnFKColumnDisplay>
+        <foreignKeyType>Explicit</foreignKeyType>
+      </foreignKey>
+      <applyDFKA>Y</applyDFKA>
+    </Column>
+  </ColumnDefinition>
+  <TableName>pUserLicenseType</TableName>
+  <Version>
+  </Version>
+  <Owner>dbo</Owner>
+  <TableAliasName>pUserLicenseType_</TableAliasName>
+  <ConnectionName>DatabaseViewpoint</ConnectionName>
+  <InUse>N</InUse>
+  <PagingMethod>RowNum</PagingMethod>
+  <canCreateRecords Source="Database">Y</canCreateRecords>
+  <canEditRecords Source="Database">Y</canEditRecords>
+  <canDeleteRecords Source="Database">Y</canDeleteRecords>
+  <canViewRecords Source="Database">Y</canViewRecords>
+  <ConcurrencyMethod>BinaryChecksum</ConcurrencyMethod>
+  <AppShortName>VPLookup</AppShortName>
+  <FolderName>pUserLicenseType</FolderName>
+  <MenuName>User License Type</MenuName>
+  <QSPath>../pUserLicenseType/PUserLicenseType-QuickSelector.aspx</QSPath>
+  <TableCodeName>PUserLicenseType</TableCodeName>
+</XMLDefinition>

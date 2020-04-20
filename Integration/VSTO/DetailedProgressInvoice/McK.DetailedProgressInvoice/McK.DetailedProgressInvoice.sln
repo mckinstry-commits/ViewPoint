@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.DetailedProgressInvoice", "McK.DetailedProgressInvoice\McK.DetailedProgressInvoice.csproj", "{EC29050A-8D7E-4659-9036-B8A30AF09429}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6E713C41-692F-460B-B7A6-CC37C62B37DC} = {6E713C41-692F-460B-B7A6-CC37C62B37DC}
+		{43832080-CB42-456C-8354-28BF61088C58} = {43832080-CB42-456C-8354-28BF61088C58}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.Data.Viewpoint", "Mck.Data.Viewpoint\McK.Data.Viewpoint.csproj", "{6E713C41-692F-460B-B7A6-CC37C62B37DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.Models.Viewpoint", "McK.Models.Viewpoint\McK.Models.Viewpoint.csproj", "{43832080-CB42-456C-8354-28BF61088C58}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "McK.SQL.Objects", "McK.DetailedProgressInvoice.SQL\McK.SQL.Objects.sqlproj", "{4C0EAFB3-E604-4B25-A00D-71C736327083}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC29050A-8D7E-4659-9036-B8A30AF09429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC29050A-8D7E-4659-9036-B8A30AF09429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC29050A-8D7E-4659-9036-B8A30AF09429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC29050A-8D7E-4659-9036-B8A30AF09429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E713C41-692F-460B-B7A6-CC37C62B37DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E713C41-692F-460B-B7A6-CC37C62B37DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E713C41-692F-460B-B7A6-CC37C62B37DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E713C41-692F-460B-B7A6-CC37C62B37DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43832080-CB42-456C-8354-28BF61088C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43832080-CB42-456C-8354-28BF61088C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43832080-CB42-456C-8354-28BF61088C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43832080-CB42-456C-8354-28BF61088C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0EAFB3-E604-4B25-A00D-71C736327083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0EAFB3-E604-4B25-A00D-71C736327083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0EAFB3-E604-4B25-A00D-71C736327083}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4C0EAFB3-E604-4B25-A00D-71C736327083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0EAFB3-E604-4B25-A00D-71C736327083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0EAFB3-E604-4B25-A00D-71C736327083}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B8C6F0B-7ECD-42CE-85FC-BCCAD200E971}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.mckinstry.com:8080/tfs/mckinstry%20team
+		SccProjectUniqueName0 = McK.DetailedProgressInvoice\\McK.DetailedProgressInvoice.csproj
+		SccProjectName0 = McK.DetailedProgressInvoice
+		SccLocalPath0 = McK.DetailedProgressInvoice
+		SccProjectUniqueName1 = McK.Models.Viewpoint\\McK.Models.Viewpoint.csproj
+		SccProjectName1 = McK.Models.Viewpoint
+		SccLocalPath1 = McK.Models.Viewpoint
+		SccProjectUniqueName2 = McK.DetailedProgressInvoice.SQL\\McK.SQL.Objects.sqlproj
+		SccProjectName2 = McK.DetailedProgressInvoice.SQL
+		SccLocalPath2 = McK.DetailedProgressInvoice.SQL
+		SccLocalPath3 = .
+		SccProjectUniqueName4 = Mck.Data.Viewpoint\\McK.Data.Viewpoint.csproj
+		SccProjectName4 = Mck.Data.Viewpoint
+		SccLocalPath4 = Mck.Data.Viewpoint
+	EndGlobalSection
+EndGlobal

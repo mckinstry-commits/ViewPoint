@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Viewpoint">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=VPSTAGINGAG\VIEWPOINT;Initial Catalog=Viewpoint</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+    <Prompt>Specify a user name and password for data source Viewpoint</Prompt>
+  </ConnectionProperties>
+  <DataSourceID>5c64970d-841a-4458-a54a-016816475e49</DataSourceID>
+</RptDataSource>

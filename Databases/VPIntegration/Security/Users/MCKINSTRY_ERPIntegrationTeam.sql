@@ -1,0 +1,6 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'MCKINSTRY\ERPIntegrationTeam')
+CREATE LOGIN [MCKINSTRY\ERPIntegrationTeam] FROM WINDOWS
+GO
+CREATE USER [MCKINSTRY\ERPIntegrationTeam] FOR LOGIN [MCKINSTRY\ERPIntegrationTeam]
+GO
+GRANT CONNECT TO [MCKINSTRY\ERPIntegrationTeam]

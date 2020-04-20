@@ -1,0 +1,25 @@
+#Begin CompileApplication.rsp
+/nologo 
+
+/optimize+
+
+/target:library 
+
+#/reference:..\bin\AjaxControlToolkit.dll 
+/reference:..\bin\BaseClasses.dll
+#/reference:..\bin\CarlosAg.ExcelXmlWriter.dll
+#/reference:..\bin\NPOI.dll
+#/reference:..\bin\MySql.Data.dll
+#/reference:..\bin\Report.dll
+/reference:System.Configuration.dll
+/reference:System.Data.dll
+/reference:System.dll
+/reference:System.Drawing.dll
+/reference:System.EnterpriseServices.dll
+/reference:System.Web.dll
+/reference:System.Web.Mobile.dll
+/reference:System.Web.Services.dll
+/reference:System.Xml.dll 
+/reference:..\bin\Ciloci.Flee.dll
+
+#End CompileApplication.rsp

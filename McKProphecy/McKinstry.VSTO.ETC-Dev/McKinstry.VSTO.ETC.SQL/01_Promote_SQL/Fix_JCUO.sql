@@ -1,0 +1,1 @@
+﻿UPDATE JCUO SET ProjInactivePhases='Y' where Form='JCProjection' and JCCo in (1,20) and ProjInactivePhases='N';

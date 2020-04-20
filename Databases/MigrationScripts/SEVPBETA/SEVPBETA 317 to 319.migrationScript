@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!---->
+<MigrationScript version="2" type="MigrationScript">
+  <Name>SEVPBETA 317 to 319</Name>
+  <FromVersion version="1" type="VersionInfoRaw">
+    <Version>317</Version>
+    <ScriptFolderLocation>&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;!----&gt;
+&lt;ISOCCompareLocation version="1" type="TfsLocation"&gt;
+  &lt;ServerUrl&gt;http://setfs01:8080/tfs/mckinstry team&lt;/ServerUrl&gt;
+  &lt;SourceControlFolder&gt;$/ViewPoint/Databases/SEVPBETA&lt;/SourceControlFolder&gt;
+&lt;/ISOCCompareLocation&gt;</ScriptFolderLocation>
+  </FromVersion>
+  <ToVersion version="1" type="VersionInfoRaw">
+    <Version>319</Version>
+    <ScriptFolderLocation>&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;!----&gt;
+&lt;ISOCCompareLocation version="1" type="TfsLocation"&gt;
+  &lt;ServerUrl&gt;http://setfs01:8080/tfs/mckinstry team&lt;/ServerUrl&gt;
+  &lt;SourceControlFolder&gt;$/ViewPoint/Databases/SEVPBETA&lt;/SourceControlFolder&gt;
+&lt;/ISOCCompareLocation&gt;</ScriptFolderLocation>
+  </ToVersion>
+  <ObjectIdentifiers type="ObjectIdentifiers" version="2">
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bAPTH]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bAPTL]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bPMSL]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bPMOL]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bPREH]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bSLCO]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vAPAUPayeeTaxPaymentATO]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vAPAUPayerTaxPaymentATO]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vPMSubmittal]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vPMSubmittalPackage]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vSLClaimHeader]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vSLClaimItem]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vPRAULimitsAndRates]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vPRCraftClassAllowance]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vPRCraftClassTemplateAllowance]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vPRCraftMasterAllowance]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vPRCraftTemplateAllowance]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vPREmplPeriodsWithoutPay]</FullyQualifiedName>
+      <Type>Table</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vfPRRateDefault]</FullyQualifiedName>
+      <Type>Function</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vfAPAUATOAddressGet]</FullyQualifiedName>
+      <Type>Function</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[APAUPayeeTaxPaymentATO]</FullyQualifiedName>
+      <Type>View</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[APAUPayerTaxPaymentATO]</FullyQualifiedName>
+      <Type>View</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[PMSCOTotal]</FullyQualifiedName>
+      <Type>View</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[PREmplPeriodsWithoutPay]</FullyQualifiedName>
+      <Type>View</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[PRAULimitsAndRates]</FullyQualifiedName>
+      <Type>View</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[udxrefAPVendor]</FullyQualifiedName>
+      <Type>View</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[udxrefARCustomer]</FullyQualifiedName>
+      <Type>View</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vwMckNewProject]</FullyQualifiedName>
+      <Type>View</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPAUATOAmendedDateVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspSLClaimUpdateAPGridFill]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bspPMSLInitialize]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspHQCOInfoGetVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPRAUItemVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPT5018XML]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspVACompanyCopyWizardGetParentTables]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bspAPPurge]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bspVAWDNotifier]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPTaxablePaymentUpdate]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPAUATOPayeeTaxPaymentsInit]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPRProcessArrearsPayback]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPMInterfacePOCONum]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_Standard]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_ETP_Pre83TaxFreeGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_ETP_RedundancyTaxFreeGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPMPCOApprovePMSL]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_TaxYearWagesGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_Redundancy]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPRGetEmplNoTimecardsForArrears]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bspEMBFVal_Usage]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPRAUPAYGItemSetup]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_Death]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vrptPRPAYGPaymentDetails]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bspPRProcessFed]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bspEMBFRevBdownVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspSLValForPMOL]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_ETP_CapAmtsGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_UnderPreservationAgeYN]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_ETP_LimitsAndRatesGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspEMACProcess]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPTaxablePaymentGridFill]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPMSendSearchAvailableDocuments]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bspAPLBVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bspPRRMInit]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPREmplPWPDateVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_Unfair]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPT5018PRINT]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPRAUPAYGItemVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_Marginal_PAYG]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspSMWorkCompletedLaborUpdate]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPAUATOPayerTaxYearVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPAUATOExportGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bspMSIBVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_Invalidity]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[bspPRProcess]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspIMUploadAPDB]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspIMUploadHeaderDetailPay]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPMSLGetNextSLVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPAUATOClearAmendedEFile]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspSMWorkCompletedLaborCreate]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPRLoadAllowances]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPRProcessArrears]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspSMGLDistributionPost]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPRDaysWithoutPayGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_ETP_TaxComputations]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_ETP_TaxRatesGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPMSLGetNextSLSeq]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPRAUPAYGEmplItemAmountsGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPR_AU_ETP_InvalidityTaxFreeGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPTaxableTaxYearVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspAPTaxableCreditorVal]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspSLClaimNoTotalsGet]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspPRLoadAllowanceHoursAggregated]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[vspSLClaimBalForwardCreate]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+  </ObjectIdentifiers>
+  <Description>Rollback Upgrade 6.6.0 -&gt; 6.6.2</Description>
+</MigrationScript>

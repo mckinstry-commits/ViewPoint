@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="ServiceCenters">
+    <Query>
+      <DataSourceReference>Viewpoint</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@SMCo">
+          <DefaultValue>1</DefaultValue>
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>--Declare @SMCo varchar(50) =1 -- For SSMS testing
+set transaction isolation level read uncommitted
+SELECT  ServiceCenterID, SMCo, ServiceCenter, [Description] [Service Center Name] 
+FROM dbo.SMServiceCenter sc 
+where sc.SMCo = @SMCo
+Union
+select -1, @SMCo, ' All', 'All Service Centers'
+order by 2,3</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="ServiceCenterID">
+        <DataField>ServiceCenterID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SMCo">
+        <DataField>SMCo</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="ServiceCenter">
+        <DataField>ServiceCenter</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Service_Center_Name">
+        <DataField>Service Center Name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

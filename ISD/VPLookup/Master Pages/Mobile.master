@@ -1,0 +1,33 @@
+﻿<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Master Language="C#" %>
+<%@ Register Tagprefix="VPLookup" TagName="FooterMobile" Src="../Header and Footer/FooterMobile.ascx" %>
+
+<%@ Register Tagprefix="Selectors" Namespace="VPLookup" Assembly="VPLookup" %>
+
+<%@ Register Tagprefix="BaseClasses" Namespace="BaseClasses.Web.UI.WebControls" Assembly="BaseClasses" %><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="Head1" runat="server">
+    <meta name="keywords" content="VPLookup" />
+    <meta name="format-detection" content="telephone=yes" />
+    <title></title>
+    </head>
+    <body id="Body1" runat="server" style="margin: 0px; padding: 0px;">
+        <form id="Form1" method="post" runat="server">
+<input type="hidden" name="isd_geo_location" id="isd_geo_location" value="<%= BaseFormulaUtils.GetBrowserLocationForHiddenField() %>" />
+<script type="text/javascript">
+<!--
+ISD_GeolocationInit();
+//-->
+</script>
+            <BaseClasses:ScrollCoordinates id="ScrollCoordinates1" runat="server"></BaseClasses:ScrollCoordinates>
+            <BaseClasses:BasePageSettings id="PageSettings" runat="server"></BaseClasses:BasePageSettings>
+            <script language="JavaScript" type="text/javascript">clearRTL()</script>
+            <asp:ToolkitScriptManager ID="scriptManager1" runat="server" EnablePartialRendering="True" EnablePageMethods="True" EnableScriptGlobalization="True" EnableScriptLocalization="True">
+			</asp:ToolkitScriptManager>
+          <table width="100%" cellpadding="0" cellspacing="0" class="mobileBase"><tr><td><asp:ContentPlaceHolder id="PageContent" Runat="server" /></td></tr><tr><td><VPLookup:FooterMobile runat="server" id="_PageFooter"></VPLookup:FooterMobile></td></tr></table>
+      </form>
+      
+      </body>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css' />
+      </html>
+      

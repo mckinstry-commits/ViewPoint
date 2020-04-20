@@ -1,0 +1,16 @@
+4:29:10 PM	-----------------------------------------------
+4:29:10 PM	Monday, February 24, 2014
+4:29:10 PM	-----------------------------------------------
+4:29:10 PM	FTP Server:   sftp.metlife.com
+4:29:10 PM	FTP Protocol: Sftp
+4:29:10 PM	Remote Upload Dir:   /Inbound/
+4:29:10 PM	Remote Download Dir:   /Outbound
+4:29:10 PM	Server:       SEABILLOXPS
+4:29:10 PM	Local Dir:    C:\TFS\ViewPoint\Integration\MetLife\Download\
+4:29:10 PM	-----------------------------------------------
+4:29:52 PM	** Benefits Eligible Roster Export "SELECT * FROM dbo.mfnBenefitEligibleEmployees(20140216)" (941 records)
+4:29:52 PM		to C:\TFS\ViewPoint\Integration\MetLife\Upload\McKinstry_MetLife_Benefits_Elligible_20140224.csv
+4:29:52 PM	
+4:29:52 PM	
+4:29:52 PM	** Sending Email
+4:29:52 PM		To: billo@mckinstry.com

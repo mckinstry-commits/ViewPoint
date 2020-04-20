@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[bPMFM07162013]
+(
+[VendorGroup] [dbo].[bGroup] NOT NULL,
+[FirmNumber] [dbo].[bFirm] NOT NULL,
+[FirmName] [varchar] (60) COLLATE Latin1_General_BIN NULL,
+[FirmType] [varchar] (10) COLLATE Latin1_General_BIN NULL,
+[SortName] [dbo].[bSortName] NOT NULL,
+[Vendor] [dbo].[bVendor] NULL,
+[ContactName] [varchar] (30) COLLATE Latin1_General_BIN NULL,
+[MailAddress] [varchar] (60) COLLATE Latin1_General_BIN NULL,
+[MailCity] [varchar] (30) COLLATE Latin1_General_BIN NULL,
+[MailState] [varchar] (4) COLLATE Latin1_General_BIN NULL,
+[MailZip] [dbo].[bZip] NULL,
+[MailAddress2] [varchar] (60) COLLATE Latin1_General_BIN NULL,
+[ShipAddress] [varchar] (60) COLLATE Latin1_General_BIN NULL,
+[ShipCity] [varchar] (30) COLLATE Latin1_General_BIN NULL,
+[ShipState] [varchar] (4) COLLATE Latin1_General_BIN NULL,
+[ShipZip] [dbo].[bZip] NULL,
+[ShipAddress2] [varchar] (60) COLLATE Latin1_General_BIN NULL,
+[Phone] [dbo].[bPhone] NULL,
+[Fax] [dbo].[bPhone] NULL,
+[EMail] [varchar] (60) COLLATE Latin1_General_BIN NULL,
+[URL] [varchar] (60) COLLATE Latin1_General_BIN NULL,
+[Notes] [varchar] (max) COLLATE Latin1_General_BIN NULL,
+[UniqueAttchID] [uniqueidentifier] NULL,
+[UpdateAP] [dbo].[bYN] NOT NULL,
+[KeyID] [bigint] NOT NULL IDENTITY(1, 1),
+[MailCountry] [char] (2) COLLATE Latin1_General_BIN NULL,
+[ShipCountry] [char] (2) COLLATE Latin1_General_BIN NULL,
+[ExcludeYN] [dbo].[bYN] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

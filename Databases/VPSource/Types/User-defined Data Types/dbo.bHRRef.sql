@@ -1,0 +1,2 @@
+CREATE TYPE [dbo].[bHRRef] FROM int NOT NULL
+GO

@@ -1,0 +1,942 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Btn:Actions" xml:space="preserve">
+    <value>Actions</value>
+    <comment>Original English: Actions</comment>
+  </data>
+  <data name="Btn:Add" xml:space="preserve">
+    <value>Add</value>
+    <comment>Original English: Add</comment>
+  </data>
+  <data name="Btn:Back" xml:space="preserve">
+    <value>Back</value>
+    <comment>Original English: Back</comment>
+  </data>
+  <data name="Btn:Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Original English: Cancel</comment>
+  </data>
+  <data name="Btn:Copy" xml:space="preserve">
+    <value>Copy</value>
+    <comment>Original English: Copy</comment>
+  </data>
+  <data name="Btn:Day" xml:space="preserve">
+    <value>Day</value>
+    <comment>Original English: Day</comment>
+  </data>
+  <data name="Btn:Delete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Original English: Delete</comment>
+  </data>
+  <data name="Btn:Edit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Original English: Edit</comment>
+  </data>
+  <data name="Btn:ExpandCollapse" xml:space="preserve">
+    <value>Expand / Collapse</value>
+    <comment>Original English: Expand / Collapse</comment>
+  </data>
+  <data name="Btn:Export" xml:space="preserve">
+    <value>Export to CSV</value>
+    <comment>Original English: Export</comment>
+  </data>
+  <data name="Btn:ExportExcel" xml:space="preserve">
+    <value>Export to Excel</value>
+    <comment>Original English: Export to Excel</comment>
+  </data>
+  <data name="Btn:Filters" xml:space="preserve">
+    <value>Filters</value>
+    <comment>Original English: Filters</comment>
+  </data>
+  <data name="Btn:FirstPage" xml:space="preserve">
+    <value>First page</value>
+    <comment>Original English: First page</comment>
+  </data>
+  <data name="Btn:ForgetSignInButton" xml:space="preserve">
+    <value>Forget my sign in information</value>
+    <comment>Original English: Forget my sign in information</comment>
+  </data>
+  <data name="Btn:Go" xml:space="preserve">
+    <value>Go</value>
+    <comment>Original English: Go</comment>
+  </data>
+  <data name="Btn:Import" xml:space="preserve">
+    <value>Import data</value>
+    <comment>Original English: Import data</comment>
+  </data>
+  <data name="Btn:LastPage" xml:space="preserve">
+    <value>Last page</value>
+    <comment>Original English: Last page</comment>
+  </data>
+  <data name="Btn:Menu" xml:space="preserve">
+    <value>Menu</value>
+    <comment>Original English: Menu</comment>
+  </data>
+  <data name="Btn:Month" xml:space="preserve">
+    <value>Month</value>
+    <comment>Original English: Month</comment>
+  </data>
+  <data name="Btn:New" xml:space="preserve">
+    <value>New</value>
+    <comment>Original English: New</comment>
+  </data>
+  <data name="Btn:NextPage" xml:space="preserve">
+    <value>Next page</value>
+    <comment>Original English: Next page</comment>
+  </data>
+  <data name="Btn:OK" xml:space="preserve">
+    <value>OK</value>
+    <comment>Original English: OK</comment>
+  </data>
+  <data name="Btn:PDF" xml:space="preserve">
+    <value>PDF Report</value>
+    <comment>Original English: PDF Report</comment>
+  </data>
+  <data name="Btn:PreviousPage" xml:space="preserve">
+    <value>Previous page</value>
+    <comment>Original English: Previous page</comment>
+  </data>
+  <data name="Btn:Print" xml:space="preserve">
+    <value>Print</value>
+    <comment>Original English: Print</comment>
+  </data>
+  <data name="Btn:Quarter" xml:space="preserve">
+    <value>Quarter</value>
+    <comment>Original English: Quarter</comment>
+  </data>
+  <data name="Btn:Refresh" xml:space="preserve">
+    <value>Refresh</value>
+    <comment>Original English: Refresh</comment>
+  </data>
+  <data name="Btn:Reset" xml:space="preserve">
+    <value>Reset filters</value>
+    <comment>Original English: Reset filters</comment>
+  </data>
+  <data name="Btn:Save" xml:space="preserve">
+    <value>Save</value>
+    <comment>Original English: Save</comment>
+  </data>
+  <data name="Btn:SaveNNew" xml:space="preserve">
+    <value>Save and New</value>
+    <comment>Original English: Save and New</comment>
+  </data>
+  <data name="Btn:SearchGoButtonText" xml:space="preserve">
+    <value>Go</value>
+    <comment>Original English: Go</comment>
+  </data>
+  <data name="Btn:Send" xml:space="preserve">
+    <value>Send</value>
+    <comment>Original English: Send</comment>
+  </data>
+  <data name="Btn:Settings" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Original English: Settings</comment>
+  </data>
+  <data name="Btn:Week" xml:space="preserve">
+    <value>Week</value>
+    <comment>Original English: Week</comment>
+  </data>
+  <data name="Btn:Word" xml:space="preserve">
+    <value>Microsoft Word Report</value>
+    <comment>Original English: Microsoft Word Report</comment>
+  </data>
+  <data name="Btn:Year" xml:space="preserve">
+    <value>Year</value>
+    <comment>Original English: Year</comment>
+  </data>
+  <data name="DeleteConfirm" xml:space="preserve">
+    <value>Are you sure you want to delete the selected records?</value>
+    <comment>Original English: Are you sure you want to delete the selected records?</comment>
+  </data>
+  <data name="DeleteConfirmOneRecord" xml:space="preserve">
+    <value>Are you sure you want to delete this record?</value>
+    <comment>Original English: Are you sure you want to delete this record?</comment>
+  </data>
+  <data name="DeleteRecordConfirm" xml:space="preserve">
+    <value>Are you sure you want to delete this record?</value>
+    <comment>Original English: Are you sure you want to delete this record?</comment>
+  </data>
+  <data name="DS:Text" xml:space="preserve">
+    <value>Select</value>
+    <comment>Original English: Select</comment>
+  </data>
+  <data name="Err:CannotDelRecs" xml:space="preserve">
+    <value>The selected records could not be deleted.</value>
+    <comment>Original English: The selected records could not be deleted.</comment>
+  </data>
+  <data name="Err:EnterPassword" xml:space="preserve">
+    <value>Please enter your password.</value>
+    <comment>Original English: Please enter your password.</comment>
+  </data>
+  <data name="Err:EnterUserName" xml:space="preserve">
+    <value>Please enter your user name.</value>
+    <comment>Original English: Please enter your user name.</comment>
+  </data>
+  <data name="Err:FileDownLoadAlert" xml:space="preserve">
+    <value>The record could not be retrieved because the table {TableName} does not have any primary key field in it.</value>
+    <comment>Original English: The record could not be retrieved because the table {TableName} does not have any primary key field in it.</comment>
+  </data>
+  <data name="Err:InternalErrorLogin" xml:space="preserve">
+    <value>Login failed due to an internal error.</value>
+    <comment>Original English: Login failed due to an internal error.</comment>
+  </data>
+  <data name="Err:InvalidLoginInfo" xml:space="preserve">
+    <value>Invalid login information. Please enter a valid user name and password.</value>
+    <comment>Original English: Invalid login information. Please enter a valid user name and password.</comment>
+  </data>
+  <data name="Err:MoreThanOneRecRetrieved" xml:space="preserve">
+    <value>More than one record was found. Only one record was expected.</value>
+    <comment>Original English: More than one record was found. Only one record was expected.</comment>
+  </data>
+  <data name="Err:NoParentRecId" xml:space="preserve">
+    <value>The data could not be saved because the parent record ID could not be retrieved.</value>
+    <comment>Original English: The data could not be saved because the parent record ID could not be retrieved.</comment>
+  </data>
+  <data name="Err:NoRecRetrieved" xml:space="preserve">
+    <value>No record was found.</value>
+    <comment>Original English: No record was found.</comment>
+  </data>
+  <data name="Err:NoRecSelected" xml:space="preserve">
+    <value>Please select a record.</value>
+    <comment>Original English: Please select a record.</comment>
+  </data>
+  <data name="Err:ParentNotInitialized" xml:space="preserve">
+    <value>The data could not be retrieved because the parent record is not initialized.</value>
+    <comment>Original English: The data could not be retrieved because the parent record is not initialized.</comment>
+  </data>
+  <data name="Err:RecChangedByOtherUser" xml:space="preserve">
+    <value>This record has been changed by another user.</value>
+    <comment>Original English: This record has been changed by another user.</comment>
+  </data>
+  <data name="Err:RecDataSrcNotInitialized" xml:space="preserve">
+    <value>The record could not be retrieved.</value>
+    <comment>Original English: The record could not be retrieved.</comment>
+  </data>
+  <data name="Err:RecDoesNotExist" xml:space="preserve">
+    <value>The selected record does not exist anymore.</value>
+    <comment>Original English: The selected record does not exist anymore.</comment>
+  </data>
+  <data name="Err:RetrieveRec" xml:space="preserve">
+    <value>The requested record could not be retrieved.</value>
+    <comment>Original English: The requested record could not be retrieved.</comment>
+  </data>
+  <data name="Err:SelectedItemOverLimit" xml:space="preserve">
+    <value>You have selected {SelectedCount} filter values.  Please select no more than {Limit}.</value>
+    <comment>Original English: You have selected {SelectedCount} filter values.  Please select no more than {Limit}.</comment>
+  </data>
+  <data name="Err:UrlParamMissing" xml:space="preserve">
+    <value>The URL parameter value is missing for {URL}.</value>
+    <comment>Original English: The URL parameter value is missing for {URL}.</comment>
+  </data>
+  <data name="ExportConfirm" xml:space="preserve">
+    <value>The number of rows to be exported exceeds the maximum limit. Your file will be exported as ASCII CSV instead, using data fields only in the current table.</value>
+    <comment>Original English: The number of rows to be exported exceeds the maximum limit. Your file will be exported as ASCII CSV instead, using data fields only in the current table.</comment>
+  </data>
+  <data name="Import:AccessPassword" xml:space="preserve">
+    <value>Password:</value>
+    <comment>Original English: Password:</comment>
+  </data>
+  <data name="Import:AccessPasswordOptional" xml:space="preserve">
+    <value>(Optional)</value>
+    <comment>Original English: (Optional)</comment>
+  </data>
+  <data name="Import:AccessTable" xml:space="preserve">
+    <value>Table name:</value>
+    <comment>Original English: Table name:</comment>
+  </data>
+  <data name="Import:AccessText" xml:space="preserve">
+    <value>Microsoft Access (Office 2000-2003, Office 2007, Office 2010)</value>
+    <comment>Original English: Microsoft Access (Office 2000-2003, Office 2007, Office 2010)</comment>
+  </data>
+  <data name="Import:Column" xml:space="preserve">
+    <value>Column</value>
+    <comment>Original English: Column</comment>
+  </data>
+  <data name="Import:ColumnNames" xml:space="preserve">
+    <value>Column Names</value>
+    <comment>Original English: Column Names</comment>
+  </data>
+  <data name="Import:CompositeColumn" xml:space="preserve">
+    <value>The Import Wizard cannot import data into tables with composite foreign keys.</value>
+    <comment>Original English: The Import Wizard cannot import data into tables with composite foreign keys.</comment>
+  </data>
+  <data name="Import:CSVText" xml:space="preserve">
+    <value>ASCII comma separated value (CSV)</value>
+    <comment>Original English: ASCII comma separated value (CSV)</comment>
+  </data>
+  <data name="Import:DuplicateColumn" xml:space="preserve">
+    <value>The {ColumnName} column has already been selected. Please select a unique column name for each data column.</value>
+    <comment>Original English: The {ColumnName} column has already been selected. Please select a unique column name for each data column.</comment>
+  </data>
+  <data name="Import:ErrorMessage" xml:space="preserve">
+    <value>Error:</value>
+    <comment>Original English: Error:</comment>
+  </data>
+  <data name="Import:ExcelSheet" xml:space="preserve">
+    <value>Worksheet name:</value>
+    <comment>Original English: Worksheet name:</comment>
+  </data>
+  <data name="Import:ExcelText" xml:space="preserve">
+    <value>Microsoft Excel (Office 97-2003, Office 2007, Office 2010)</value>
+    <comment>Original English: Microsoft Excel (Office 97-2003, Office 2007, Office 2010)</comment>
+  </data>
+  <data name="Import:FailedToSaveFile" xml:space="preserve">
+    <value>The Import Wizard cannot save a temporary file.
+This may be due to insufficient privileges to write within the application folder, or the application is running under Medium Trust with the file operation disabled.</value>
+    <comment>Original English: The Import Wizard cannot save a temporary file.
+This may be due to insufficient privileges to write within the application folder, or the application is running under Medium Trust with the file operation disabled.</comment>
+  </data>
+  <data name="Import:FileError" xml:space="preserve">
+    <value>This file is in use by another application. Please close the file and try again.</value>
+    <comment>Original English: This file is in use by another application. Please close the file and try again.</comment>
+  </data>
+  <data name="Import:FileInfoText" xml:space="preserve">
+    <value>Select the file type.</value>
+    <comment>Original English: Select the file type.</comment>
+  </data>
+  <data name="Import:FileTypeMsg" xml:space="preserve">
+    <value>Please select file according to selected file type.</value>
+    <comment>Original English: Please select file according to selected file type.</comment>
+  </data>
+  <data name="Import:Finish" xml:space="preserve">
+    <value>Finish</value>
+    <comment>Original English: Finish</comment>
+  </data>
+  <data name="Import:FirstRowText" xml:space="preserve">
+    <value>My data has a header row.</value>
+    <comment>Original English: My data has a header row.</comment>
+  </data>
+  <data name="Import:FirstSkippedRecords" xml:space="preserve">
+    <value>Skipped records (first {Number} shown):</value>
+    <comment>Original English: Skipped records (first {Number} shown):</comment>
+  </data>
+  <data name="Import:Import" xml:space="preserve">
+    <value>Import</value>
+    <comment>Original English: Import</comment>
+  </data>
+  <data name="Import:InfoText" xml:space="preserve">
+    <value>Select the file you would like to import.</value>
+    <comment>Original English: Select the file you would like to import.</comment>
+  </data>
+  <data name="Import:LineNumber" xml:space="preserve">
+    <value>Line {Number}:</value>
+    <comment>Original English: Line {Number}:</comment>
+  </data>
+  <data name="Import:Next" xml:space="preserve">
+    <value>Next</value>
+    <comment>Original English: Next</comment>
+  </data>
+  <data name="Import:NextMsg" xml:space="preserve">
+    <value>You are currently on the last step of the Import Wizard.</value>
+    <comment>Original English: You are currently on the last step of the Import Wizard.</comment>
+  </data>
+  <data name="Import:Previous" xml:space="preserve">
+    <value>Previous</value>
+    <comment>Original English: Previous</comment>
+  </data>
+  <data name="Import:PreviousMsg" xml:space="preserve">
+    <value>You are currently on the first step of the Import Wizard.</value>
+    <comment>Original English: You are currently on the first step of the Import Wizard.</comment>
+  </data>
+  <data name="Import:PrimaryKey" xml:space="preserve">
+    <value>The {ColumnName} column is a primary key and cannot be updated.</value>
+    <comment>Original English: The {ColumnName} column is a primary key and cannot be updated.</comment>
+  </data>
+  <data name="Import:ReadOnly" xml:space="preserve">
+    <value>The {ColumnName} column  is read only and cannot be updated.</value>
+    <comment>Original English: The {ColumnName} column  is read only and cannot be updated.</comment>
+  </data>
+  <data name="Import:ResolveForeignKeys" xml:space="preserve">
+    <value>Update related database tables.</value>
+    <comment>Original English: Update related database tables.</comment>
+  </data>
+  <data name="Import:SelectFile" xml:space="preserve">
+    <value>Please select a file to import.</value>
+    <comment>Original English: Please select a file to import.</comment>
+  </data>
+  <data name="Import:Skipped" xml:space="preserve">
+    <value>{Records} record(s) were skipped.</value>
+    <comment>Original English: {Records} record(s) were skipped.</comment>
+  </data>
+  <data name="Import:SkippedRecords" xml:space="preserve">
+    <value>Skipped records:</value>
+    <comment>Original English: Skipped records:</comment>
+  </data>
+  <data name="Import:Step1" xml:space="preserve">
+    <value>Import Wizard: Step 1 of 2</value>
+    <comment>Original English: Import Wizard: Step 1 of 2</comment>
+  </data>
+  <data name="Import:Step2" xml:space="preserve">
+    <value>Import Wizard: Step 2 of 2</value>
+    <comment>Original English: Import Wizard: Step 2 of 2</comment>
+  </data>
+  <data name="Import:Success" xml:space="preserve">
+    <value>{Records} record(s) were successfully imported.</value>
+    <comment>Original English: {Records} record(s) were successfully imported.</comment>
+  </data>
+  <data name="Import:Table" xml:space="preserve">
+    <value>table</value>
+    <comment>Original English: table</comment>
+  </data>
+  <data name="Import:TABText" xml:space="preserve">
+    <value>TAB delimited</value>
+    <comment>Original English: TAB delimited</comment>
+  </data>
+  <data name="Import:Title" xml:space="preserve">
+    <value>Select the data file to import.</value>
+    <comment>Original English: Select the data file to import.</comment>
+  </data>
+  <data name="Import:ValidFileMsg" xml:space="preserve">
+    <value>The file you selected cannot be imported. Please select an ASCII comma separated value (CSV) file to import.</value>
+    <comment>Original English: The file you selected cannot be imported. Please select an ASCII comma separated value (CSV) file to import.</comment>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>en-US</value>
+    <comment>Comment Language: en-US</comment>
+  </data>
+  <data name="LLS:Text" xml:space="preserve">
+    <value>More</value>
+    <comment>Original English: More</comment>
+  </data>
+  <data name="Menu:Add" xml:space="preserve">
+    <value>Add</value>
+    <comment>Original English: Add</comment>
+  </data>
+  <data name="Menu:By" xml:space="preserve">
+    <value>By</value>
+    <comment>Original English: By</comment>
+  </data>
+  <data name="Menu:Edit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Original English: Edit</comment>
+  </data>
+  <data name="Menu:EditSearch" xml:space="preserve">
+    <value>Search and Edit</value>
+    <comment>Original English: Search and Edit</comment>
+  </data>
+  <data name="Menu:EditSelected" xml:space="preserve">
+    <value>Select and Edit</value>
+    <comment>Original English: Select and Edit</comment>
+  </data>
+  <data name="Menu:GroupBy" xml:space="preserve">
+    <value>Group By</value>
+    <comment>Original English: Group By</comment>
+  </data>
+  <data name="Menu:More" xml:space="preserve">
+    <value>More</value>
+    <comment>Original English: More</comment>
+  </data>
+  <data name="Menu:Show" xml:space="preserve">
+    <value>Show</value>
+    <comment>Original English: Show</comment>
+  </data>
+  <data name="Menu:ShowSearch" xml:space="preserve">
+    <value>Search</value>
+    <comment>Original English: Search</comment>
+  </data>
+  <data name="Menu:ShowSelected" xml:space="preserve">
+    <value>Select</value>
+    <comment>Original English: Select</comment>
+  </data>
+  <data name="Menu:TableInsideTable" xml:space="preserve">
+    <value>table inside table</value>
+    <comment>Original English: table inside table</comment>
+  </data>
+  <data name="Menu:WebReport" xml:space="preserve">
+    <value>Web Report</value>
+    <comment>Original English: Web Report</comment>
+  </data>
+  <data name="Msg:ErrorProcessing" xml:space="preserve">
+    <value>There was an error processing your request.</value>
+    <comment>Original English: There was an error processing your request.</comment>
+  </data>
+  <data name="Msg:NoEmail" xml:space="preserve">
+    <value>There was no email address given.</value>
+    <comment>Original English: There was no email address given.</comment>
+  </data>
+  <data name="Msg:NoLoginTable" xml:space="preserve">
+    <value>There was no table for login information.</value>
+    <comment>Original English: There was no table for login information.</comment>
+  </data>
+  <data name="Msg:PwdEmailed" xml:space="preserve">
+    <value>Your password has been emailed to you at</value>
+    <comment>Original English: Your password has been emailed to you at</comment>
+  </data>
+  <data name="Msg:SendToFailed" xml:space="preserve">
+    <value>Failed sending to</value>
+    <comment>Original English: Failed sending to</comment>
+  </data>
+  <data name="Title:Add" xml:space="preserve">
+    <value>Add</value>
+    <comment>Original English: Add</comment>
+  </data>
+  <data name="Title:Edit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Original English: Edit</comment>
+  </data>
+  <data name="Title:ForgotUser" xml:space="preserve">
+    <value>Retrieve User Name and Password</value>
+    <comment>Original English: Retrieve User Name and Password</comment>
+  </data>
+  <data name="Title:Search" xml:space="preserve">
+    <value>Search</value>
+    <comment>Original English: Search</comment>
+  </data>
+  <data name="Title:SearchAndEdit" xml:space="preserve">
+    <value>Search and Edit</value>
+    <comment>Original English: Search and Edit</comment>
+  </data>
+  <data name="Title:Select" xml:space="preserve">
+    <value>Select</value>
+    <comment>Original English: Select</comment>
+  </data>
+  <data name="Title:SelectAndEdit" xml:space="preserve">
+    <value>Select and Edit</value>
+    <comment>Original English: Select and Edit</comment>
+  </data>
+  <data name="Title:Show" xml:space="preserve">
+    <value>Show</value>
+    <comment>Original English: Show</comment>
+  </data>
+  <data name="Title:SignIn" xml:space="preserve">
+    <value>Sign In</value>
+    <comment>Original English: Sign In</comment>
+  </data>
+  <data name="Title:SignOut" xml:space="preserve">
+    <value>Sign Out</value>
+    <comment>Original English: Sign Out</comment>
+  </data>
+  <data name="Title:WebReport" xml:space="preserve">
+    <value>Web Report</value>
+    <comment>Original English: Web Report</comment>
+  </data>
+  <data name="Translator:Company" xml:space="preserve">
+    <value>Iron Speed Inc.</value>
+  </data>
+  <data name="Translator:IronSpeedVersion" xml:space="preserve">
+    <value>9.2.0</value>
+    <comment>Example: 9.2.0</comment>
+  </data>
+  <data name="Translator:Name" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Translator:OriginalIronSpeedVersion">
+    <value>9.2.0</value>
+    <comment></comment>
+  </data>
+  <data name="Txt:AddDialogTitle" xml:space="preserve">
+    <value>Add Record</value>
+    <comment>Original English: Add Record</comment>
+  </data>
+  <data name="Txt:All" xml:space="preserve">
+    <value>All</value>
+    <comment>Original English: All</comment>
+  </data>
+  <data name="Txt:AutoLogin" xml:space="preserve">
+    <value>Automatically Sign In</value>
+    <comment>Original English: Automatically Sign In</comment>
+  </data>
+  <data name="Txt:CloseWindowMessage" xml:space="preserve">
+    <value>Please close your browser window to completely log out.</value>
+    <comment>Original English: Please close your browser window to completely log out.</comment>
+  </data>
+  <data name="Txt:Contains" xml:space="preserve">
+    <value>Contains</value>
+    <comment>Original English: Contains</comment>
+  </data>
+  <data name="Txt:CopyRecord" xml:space="preserve">
+    <value>Copy Record</value>
+    <comment>Original English: Copy Record</comment>
+  </data>
+  <data name="Txt:DeleteRecord" xml:space="preserve">
+    <value>Delete Record</value>
+    <comment>Original English: Delete Record</comment>
+  </data>
+  <data name="Txt:EditDialogTitle" xml:space="preserve">
+    <value>Edit Record</value>
+    <comment>Original English: Edit Record</comment>
+  </data>
+  <data name="Txt:EditRecord" xml:space="preserve">
+    <value>Edit Record</value>
+    <comment>Original English: Edit Record</comment>
+  </data>
+  <data name="Txt:EnterCaptcha" xml:space="preserve">
+    <value>Then enter these words in the text box below</value>
+    <comment>Original English: Then enter these words in the text box below</comment>
+  </data>
+  <data name="Txt:EnterEmail" xml:space="preserve">
+    <value>Enter the email address associated with your account</value>
+    <comment>Original English: Enter the email address associated with your account</comment>
+  </data>
+  <data name="Txt:ExpandCollapse" xml:space="preserve">
+    <value>Expand / Collapse</value>
+    <comment>Original English: Expand / Collapse</comment>
+  </data>
+  <data name="Txt:ExpandCollapseRow" xml:space="preserve">
+    <value>Expand / Collapse Row</value>
+    <comment>Original English: Expand / Collapse Row</comment>
+  </data>
+  <data name="Txt:FillinCaptcha" xml:space="preserve">
+    <value>Please enter the correct values in the reCaptcha control</value>
+    <comment>Original English: Please enter the correct values in the reCaptcha control</comment>
+  </data>
+  <data name="Txt:ForbiddenLine1" xml:space="preserve">
+    <value>The security settings of the application do not permit you to view this page.</value>
+    <comment>Original English: The security settings of the application do not permit you to view this page.</comment>
+  </data>
+  <data name="Txt:ForbiddenLine2" xml:space="preserve">
+    <value>If you believe this is an error, please contact your system administrator to change the security settings.</value>
+    <comment>Original English: If you believe this is an error, please contact your system administrator to change the security settings.</comment>
+  </data>
+  <data name="Txt:ForgetSignInButton" xml:space="preserve">
+    <value>Clear stored user name and password information</value>
+    <comment>Original English: Clear stored user name and password information</comment>
+  </data>
+  <data name="Txt:ForgotPassword" xml:space="preserve">
+    <value>Forgot your password?</value>
+    <comment>Original English: Forgot your password?</comment>
+  </data>
+  <data name="Txt:GetSignin" xml:space="preserve">
+    <value>Sign In information retrieval</value>
+    <comment>Original English: Sign In information retrieval</comment>
+  </data>
+  <data name="Txt:GrandTotal" xml:space="preserve">
+    <value>Grand Total:</value>
+    <comment>Original English: Grand Total:</comment>
+  </data>
+  <data name="Txt:Hello" xml:space="preserve">
+    <value>Hello </value>
+    <comment>Original English: Hello</comment>
+  </data>
+  <data name="Txt:HereisSignin" xml:space="preserve">
+    <value>Here are your user name(s) and password(s) for</value>
+    <comment>Original English: Here are your user name(s) and password(s) for</comment>
+  </data>
+  <data name="Txt:ImportSelectColumns" xml:space="preserve">
+    <value>Select and assign the data columns you wish to import.</value>
+    <comment>Original English: Select and assign the data columns you wish to import.</comment>
+  </data>
+  <data name="Txt:Items" xml:space="preserve">
+    <value>Items</value>
+    <comment>Original English: Items</comment>
+  </data>
+  <data name="Txt:LoginMsg" xml:space="preserve">
+    <value>Enter your user name and password.</value>
+    <comment>Original English: Enter your user name and password.</comment>
+  </data>
+  <data name="Txt:LoginMsgSessionInvalid" xml:space="preserve">
+    <value>You have been signed out.&lt;br&gt; Please sign in to continue.</value>
+    <comment>Original English: You have been signed out.&lt;br&gt; Please sign in to continue.</comment>
+  </data>
+  <data name="Txt:NoSigninInfo" xml:space="preserve">
+    <value>There was no Sign In information for </value>
+    <comment>Original English: There was no Sign In information for</comment>
+  </data>
+  <data name="Txt:Of" xml:space="preserve">
+    <value>of</value>
+    <comment>Original English: of</comment>
+  </data>
+  <data name="Txt:OpenFile" xml:space="preserve">
+    <value>Open File</value>
+    <comment>Original English: Open File</comment>
+  </data>
+  <data name="Txt:Other" xml:space="preserve">
+    <value>Other</value>
+    <comment>Original English: Other</comment>
+  </data>
+  <data name="Txt:Page" xml:space="preserve">
+    <value>Page</value>
+    <comment>Original English: Page</comment>
+  </data>
+  <data name="Txt:PageHeader" xml:space="preserve">
+    <value>Application logo</value>
+    <comment>Original English: Application logo</comment>
+  </data>
+  <data name="Txt:PageSize" xml:space="preserve">
+    <value>Page Size</value>
+    <comment>Original English: Page Size</comment>
+  </data>
+  <data name="Txt:PageTotal" xml:space="preserve">
+    <value>Page Total:</value>
+    <comment>Original English: Page Total:</comment>
+  </data>
+  <data name="Txt:Password" xml:space="preserve">
+    <value>Password</value>
+    <comment>Original English: Password</comment>
+  </data>
+  <data name="Txt:PasswordCol" xml:space="preserve">
+    <value>Password</value>
+    <comment>Original English: PASSWORD</comment>
+  </data>
+  <data name="Txt:PleaseSelect" xml:space="preserve">
+    <value>** Please Select **</value>
+    <comment>Original English: ** Please Select **</comment>
+  </data>
+  <data name="Txt:PrintPage" xml:space="preserve">
+    <value>Print Page</value>
+    <comment>Original English: Print Page</comment>
+  </data>
+  <data name="Txt:RemainderLabel" xml:space="preserve">
+    <value>Others</value>
+    <comment>Original English: Others</comment>
+  </data>
+  <data name="Txt:RememberPassword" xml:space="preserve">
+    <value>Remember Password</value>
+    <comment>Original English: Remember Password</comment>
+  </data>
+  <data name="Txt:RememberUN" xml:space="preserve">
+    <value>Remember User Name</value>
+    <comment>Original English: Remember User Name</comment>
+  </data>
+  <data name="Txt:SaveRecord" xml:space="preserve">
+    <value>Your data is being saved.</value>
+    <comment>Original English: Your data is being saved.</comment>
+  </data>
+  <data name="Txt:SearchFor" xml:space="preserve">
+    <value>Search for</value>
+    <comment>Original English: Search for</comment>
+  </data>
+  <data name="Txt:SearchForEllipsis" xml:space="preserve">
+    <value>Search for...</value>
+    <comment>Original English: Search for...</comment>
+  </data>
+  <data name="Txt:SetLanguage" xml:space="preserve">
+    <value>Select Language</value>
+    <comment>Original English: Select Language</comment>
+  </data>
+  <data name="Txt:ShowDirections">
+    <value>Directions</value>
+    <comment>Original English: Directions</comment>
+  </data>
+  <data name="Txt:ShowErrorLine1" xml:space="preserve">
+    <value>Unable to access data.  Please contact your system administrator or customer support.</value>
+    <comment>Original English: Unable to access data.  Please contact your system administrator or customer support.</comment>
+  </data>
+  <data name="Txt:ShowMap">
+    <value>Map</value>
+    <comment>Original English: Map</comment>
+  </data>
+  <data name="Txt:SignIn" xml:space="preserve">
+    <value>Sign In</value>
+    <comment>Original English: Sign In</comment>
+  </data>
+  <data name="Txt:SignOut" xml:space="preserve">
+    <value>Sign Out</value>
+    <comment>Original English: Sign Out</comment>
+  </data>
+  <data name="Txt:SkipNavigation" xml:space="preserve">
+    <value>Skip navigation links</value>
+    <comment>Original English: Skip navigation links</comment>
+  </data>
+  <data name="Txt:SortBy" xml:space="preserve">
+    <value>Sort By</value>
+    <comment>Original English: Sort By</comment>
+  </data>
+  <data name="Txt:StartsWith" xml:space="preserve">
+    <value>Starts with</value>
+    <comment>Original English: Starts with</comment>
+  </data>
+  <data name="Txt:SuccessfullySignOut" xml:space="preserve">
+    <value>You have successfully signed out.</value>
+    <comment>Original English: You have successfully signed out.</comment>
+  </data>
+  <data name="Txt:To" xml:space="preserve">
+    <value>to</value>
+    <comment>Original English: to</comment>
+  </data>
+  <data name="Txt:TotalItems" xml:space="preserve">
+    <value>Total Items:</value>
+    <comment>Original English: Total Items:</comment>
+  </data>
+  <data name="Txt:UpdatePanels" xml:space="preserve">
+    <value>Show related</value>
+    <comment>Original English: Show related</comment>
+  </data>
+  <data name="Txt:UserEmailed" xml:space="preserve">
+    <value>Your User Name and Password will be emailed directly to the email address you enter.</value>
+    <comment>Original English: Your User Name and Password will be emailed directly to the email address you enter.</comment>
+  </data>
+  <data name="Txt:UserName" xml:space="preserve">
+    <value>User Name</value>
+    <comment>Original English: User Name</comment>
+  </data>
+  <data name="Txt:UsernameCol" xml:space="preserve">
+    <value>User Name</value>
+    <comment>Original English: USER NAME</comment>
+  </data>
+  <data name="Txt:UserNotSignedIn" xml:space="preserve">
+    <value>You are not signed-in.</value>
+    <comment>Original English: You are not signed-in.</comment>
+  </data>
+  <data name="Txt:ViewDialogTitle" xml:space="preserve">
+    <value>Show Record</value>
+    <comment>Original English: Show Record</comment>
+  </data>
+  <data name="Txt:ViewRecord" xml:space="preserve">
+    <value>Show Record</value>
+    <comment>Original English: Show Record</comment>
+  </data>
+  <data name="Txt:YourMessageGoesHere" xml:space="preserve">
+    <value>Your message goes here.</value>
+    <comment>Original English: Your message goes here.</comment>
+  </data>
+  <data name="Val:Separator" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+    <comment>Original English: &amp;nbsp;</comment>
+  </data>
+  <data name="Val:ValueIsRequired" xml:space="preserve">
+    <value>A value for {FieldName} is required.</value>
+    <comment>Original English: A value for {FieldName} is required.</comment>
+  </data>
+  <data name="Val:ValueTooLong" xml:space="preserve">
+    <value>The {FieldName} value is too long.</value>
+    <comment>Original English: The {FieldName} value is too long.</comment>
+  </data>
+  <data name="ValidationSummaryHeaderText" xml:space="preserve">
+    <value>Please correct the following errors:</value>
+    <comment>Original English: Please correct the following errors:</comment>
+  </data>
+  <data name="Btn:Clear">
+    <value>Clear</value>
+    <comment></comment>
+  </data>
+  <data name="Btn:Close">
+    <value>Close</value>
+    <comment></comment>
+  </data>
+  
+  
+  <data name="Txt:ShowIncluded">
+    <value>Show Included</value>
+    <comment>Original English: Show Included</comment>
+  </data>
+  <data name="Txt:ShowAll">
+    <value>Show All</value>
+    <comment>Original English: Show All</comment>
+  </data>
+  <data name="Txt:Descending">
+    <value>Desc</value>
+    <comment></comment>
+  </data>
+  <data name="Txt:Ascending">
+    <value>Asc</value>
+    <comment></comment>
+  </data>
+</root>

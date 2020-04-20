@@ -1,0 +1,94 @@
+2015.08.07 - LWO
+--------------------------------------------------------------------------------------------------------------
+Viewpoint Report ID: 10136
+Viewpoint Report Name: "MCK AR Aged Dataset"
+Viewpoint Report Filename: McKARAgingDataset.xltm
+Workbook Password: (see passwordstate) [for secured VBA code and worksheet locking)
+
+TFS Repository: $/ViewPoint/Reports/Excel/ARAging
+
+--------------------------------------------------------------------------------------------------------------
+
+All SQL elements are created in all environments, but if needed, the source is assembled in the ".\SQL" folder in order of 
+required execution.  All objects will be dropped and recreated with the exception of the table (in case there is data that '
+needs to be preserved).
+	.\SQL\1_budARAgingHistory.sql
+	.\SQL\2_mfnGetARCollectionNotes.sql
+	.\SQL\3_mfnGetARRelatedProjMgrs.sql
+	.\SQL\4_mfnGetARTranHistory.sql
+	.\SQL\5_mfnARAgingDetail.sql
+	.\SQL\6_mfnARAgingSummary.sql
+	.\SQL\7_mspARAgeCustCont.sql
+	.\SQL\8_mspRefreshARAging.sql
+	.\SQL\9_SQLAgent_Job_AR_Aging_Refresh.sql
+	.\SQL\J_RefreshCurrentMonth.sql
+	.\SQL\S_SelectCurrentMonthData.sql
+
+Verify the appropriate connection strings in each of Excel workbooks.
+
+Launch Excel
+Open respective McKARAgingDataset.xltm file (do not double click on the xltm file as it is a template and will lauch a new "instance"
+Navigate to the "Data" tab
+Click the "Connections" button
+For each listed Connection, click the "Properties" button, then the "Definition" tab and verify the connection information.
+When complete, save the xltm file.
+
+Note:  
+If you test using the actual xltm file , be sure to reset the queries so that the where clause includes "1=0" 
+and refresh before saving.  Also reset the default value of the "Snapshot Month" field on the "Overview" tab (cell M2) to be "=EOMONTH(NOW(),-1)+1"
+This will allow the workbook to be saved with no data preloaded and the "Snapshot Month" to be defaulted to the first day of the current month.
+
+.\Development 	= Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=True;Data Source=MCKTESTSQL04\VIEWPOINT;Application Intent=ReadOnly;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SEABILLOXPS;Use Encryption for Data=False;Tag with column collation when possible=False;Initial Catalog=Viewpoint
+.\Staging 	= Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=True;Data Source=VPSTAGINGAG\VIEWPOINT;Application Intent=ReadOnly;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SEABILLOXPS;Use Encryption for Data=False;Tag with column collation when possible=False;Initial Catalog=Viewpoint
+.\Production 	= Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=True;Data Source=VIEWPOINTAG\VIEWPOINT;Application Intent=ReadOnly;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SEABILLOXPS;Use Encryption for Data=False;Tag with column collation when possible=False;Initial Catalog=Viewpoint
+
+
+Copy the respective xltm files to the appropiate Viewpoint application servers.
+copy .\Development\McKARAgingDataset.xltm  "\\setestVIEWPOINT\Viewpoint Repository\Reports\Custom\TrustedAPP" /Y
+copy .\Staging\McKARAgingDataset.xltm  "\\sestgviewpoint\Viewpoint Repository\Reports\Custom\TrustedAPP" /Y
+copy .\Production\McKARAgingDataset.xltm "\\mckviewpoint\Viewpoint Repository\Reports\Custom\TrustedAPP" /Y
+
+copy .\Development\McKARCollectionDataset.xltm  "\\setestVIEWPOINT\Viewpoint Repository\Reports\Custom\TrustedAPP" /Y
+copy .\Staging\McKARCollectionDataset.xltm  "\\sestgviewpoint\Viewpoint Repository\Reports\Custom\TrustedAPP" /Y
+copy .\Production\McKARCollectionDataset.xltm "\\mckviewpoint\Viewpoint Repository\Reports\Custom\TrustedAPP" /Y
+
+Verify Report settings in Viewpoint
+Log into each Viewpoint system (Development, Staging and Production)
+Navigate to the "Reports/Programs"
+Run "Report Titles"
+Verify/Create report (currently 10136)
+
+	* INFO TAB *
+	Application: Other
+	Report Location: Custom_PM
+	FileName: McKARAgingDataset.xltm
+	Title: MCK AR Aged Dataset
+	Report Type: Acct
+	Memo: AR Aging Summary & Detail
+	Description: AR Aging Summary & Detail
+	Icon: MONEY
+
+	* ASSIGNED MODULES TAB *
+	Module(s): AR & RP
+	
+	* ASSIGNED FORMS TAB *
+	Form(s): ARCustomers
+
+Navigate to the "Viewpoint Administration/Programs"
+Run "VA Report Security"
+Verify/Create report security so that the following groups are "Allowed" access to the report.
+	Allowed Group: 	(21) 	AR Reports - Full
+			(510)	IT Admin Reports
+			(1198)	TEMP ERP Team
+	
+
+Verify Operations
+Log into each Viewpoint system (Development, Staging and Production)
+Navigate to the "Accounts Receivable (AR)/Reports"
+Run the "MCK AR Aged Dataset" report
+Use the "Refresh" button to populate data into the workbook instance.
+Navigate to the "ARAgingDetailPivot" tab.
+Double click on any of the summary dollar amounts (e.g. the Aged1to30 amount for the first record)
+In the resulting sheet, navigate to the last column and review the last five columns.
+Ensure that the "Source" column matches with the Viewpoint environment you lanched the report from.
+

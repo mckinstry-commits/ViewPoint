@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>Email</Name>
+    <Type>Master</Type>
+
+	<SubType>SharePointNested</SubType>
+    <GenerateDirectory>Master Pages</GenerateDirectory>
+    <Layout>Master Pages\Email.html</Layout>
+    <DisplayName>Email</DisplayName>
+    <Description>Master Page with a Emailable Header.</Description>
+  </Self>
+  <ComposedOf>
+    <ContainedComponent>
+      <Name>PageFooter</Name>
+      <Type>Footer</Type>
+      <Layout>..\Header and Footer\EmailFooter.ascx</Layout>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PageHeader</Name>
+      <Type>Header</Type>
+      <Layout>..\Header and Footer\EmailHeader.ascx</Layout>
+    </ContainedComponent>
+  </ComposedOf>
+  <LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;LayoutDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Layout Name="Master" Type="RootLayout"&gt;
+        &lt;Prolog&gt;
+
+          &lt;Value&gt;&amp;lt;asp:Content id="PageTitleContent_PlaceHolderPageTitle" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server"&amp;gt;
+		    &amp;lt;asp:Literal id="PageTitle" runat="server" text="ViewpointXRef" /&amp;gt; &amp;lt;/asp:Content&amp;gt;
+		    &amp;lt;asp:Content id="PageTitleContent_PlaceHolderMain" ContentPlaceHolderID="PlaceHolderMain" runat="server"&amp;gt;
+		    &amp;lt;BaseClasses:ScrollCoordinates id="ScrollCoordinates1" runat="server"&amp;gt;&amp;lt;/BaseClasses:ScrollCoordinates&amp;gt;
+            &amp;lt;BaseClasses:BasePageSettings id="PageSettings" runat="server"&amp;gt;&amp;lt;/BaseClasses:BasePageSettings&amp;gt;
+            &amp;lt;script language="JavaScript" type="text/javascript"&amp;gt;{ScriptDirectionTemplate}&amp;lt;/script&amp;gt;
+            
+          &lt;/Value&gt;    
+        &lt;/Prolog&gt;
+        &lt;Row&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:PANEL NAME="MainPanel"/&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes /&gt;
+      &lt;/Cell&gt;
+      &lt;RowAttributes /&gt;
+    &lt;/Row&gt;
+    &lt;Epilog&gt;
+
+	        &lt;Value&gt;&amp;lt;/asp:Content&amp;gt;&lt;/Value&gt;
+    &lt;/Epilog&gt;
+    &lt;TableAttributes&gt;
+      &lt;Attribute&gt;
+        &lt;Name&gt;align&lt;/Name&gt;
+        &lt;AttributeValue&gt;center&lt;/AttributeValue&gt;
+      &lt;/Attribute&gt;
+    &lt;/TableAttributes&gt;
+  &lt;/Layout&gt;
+  &lt;Layout Name="MainPanel" Type="BlankPanel"&gt;
+    &lt;Prolog /&gt;
+    &lt;Row&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:HEADER NAME="PageHeader"/&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;style&lt;/Name&gt;
+
+            &lt;AttributeValue&gt;background-color: #ffffff; height: 60px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 4px;&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;RowAttributes /&gt;
+    &lt;/Row&gt;
+    &lt;Row&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;asp:ContentPlaceHolder id="PageContent" Runat="server"/&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;style&lt;/Name&gt;
+
+            &lt;AttributeValue&gt;background-color: #ffffff;  height: 300px; padding: 10px; vertical-align: top; width:600px;&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;RowAttributes /&gt;
+    &lt;/Row&gt;
+    &lt;Row&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:FOOTER NAME="PageFooter" /&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;style&lt;/Name&gt;
+            &lt;AttributeValue&gt;color: #555555; font-family: Verdana, Arial, Georgia, sans-serif; font-size: 12px; padding-top: 10px;&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;RowAttributes /&gt;
+    &lt;/Row&gt;
+    &lt;Epilog /&gt;
+    &lt;TableAttributes&gt;
+      &lt;Attribute&gt;
+        &lt;Name&gt;border&lt;/Name&gt;
+        &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+      &lt;/Attribute&gt;
+      &lt;Attribute&gt;
+        &lt;Name&gt;cellpadding&lt;/Name&gt;
+        &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+      &lt;/Attribute&gt;
+      &lt;Attribute&gt;
+        &lt;Name&gt;cellspacing&lt;/Name&gt;
+        &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+      &lt;/Attribute&gt;
+      &lt;Attribute&gt;
+        &lt;Name&gt;style&lt;/Name&gt;
+        &lt;AttributeValue&gt;width:100%;&lt;/AttributeValue&gt;
+      &lt;/Attribute&gt;
+    &lt;/TableAttributes&gt;
+  &lt;/Layout&gt;
+&lt;/LayoutDefinition&gt;]]&gt;</LayoutDefinition>
+</ComponentDefinition>

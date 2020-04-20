@@ -1,0 +1,57 @@
+<Settings>
+	<EmailSettings>
+		<SMTPServer>smtp.office365.com</SMTPServer>
+		<SMTPPort>587</SMTPPort>
+		<MailFrom>Bill Orebaugh &lt;billo@mckinstry.com&gt;</MailFrom>
+		<MailTo>
+			<Recipient>billo@mckinstry.com</Recipient>
+		</MailTo>
+	</EmailSettings>
+	<VistaEnvironments>
+		<Environment>
+			<Name>Staging</Name>
+			<SQLServer>VPSTAGINGAG\VIEWPOINT</SQLServer>
+			<Database>Viewpoint</Database>
+			<PRESTEPS>
+				<SQL Order="1">ALTER DATABASE Viewpoint SET Trustworthy ON;</SQL>
+            </PRESTEPS>
+			<ScrubFields>
+        <!-- Additional fields added, not in the original XML file 2/4/2020 -->
+        <Field TableName="SMCustomer" FieldName="BillingEmail" FieldValue="'erptest@mckinstry.com'"/>
+        <Field TableName="IMNotifications" FieldName="DestinationName" FieldValue="'erptest@mckinstry.com'"/>
+        <!--End additional fields 2/4/2020-->
+				<Field TableName="HQRV" FieldName="RevEmail" FieldValue="'erptest@mckinstry.com'"/>
+				<Field TableNAme="DDUP" FieldName="EMail" FieldValue="'erptest@mckinstry.com'"/>
+				<Field TableNAme="JCMP" FieldName="Email" FieldValue="'erptest@mckinstry.com'"/>	
+				<Field TableNAme="ARCM" FieldName="EMail" FieldValue="'erptest@mckinstry.com'"/>
+				<Field TableNAme="ARCM" FieldName="udEmail" FieldValue="'erptest@mckinstry.com'"/>
+				<Field TableNAme="APVM" FieldName="EMail" FieldValue="'erptest@mckinstry.com'"/>	
+				<Field TableNAme="HQContact" FieldName="Email" FieldValue="'erptest@mckinstry.com'"/>	
+				<Field TableNAme="PREH" FieldName="Email" FieldValue="'erptest@mckinstry.com'"/>	
+				<Field TableNAme="bPRDD" FieldName="RoutingId" FieldValue="'123456789'"/>	
+				<Field TableNAme="bPRDD" FieldName="BankAcct" FieldValue="'001500'"/>	
+<!--			<Field TableNAme="bPREH" FieldName="LastName" FieldValue="'Data'"/> -->
+<!--			<Field TableNAme="bPREH" FieldName="FirstName" FieldValue="'Test'"/> -->
+<!--			<Field TableNAme="bPREH" FieldName="MidName" FieldValue="'A'"/> -->
+<!--			<Field TableNAme="bPREH" FieldName="SortName" FieldValue="CONCAT('SORT',Employee)"/> -->
+				<Field TableNAme="bPREH" FieldName="Address" FieldValue="'5005 3rd Avenue South'"/>
+				<Field TableNAme="bPREH" FieldName="City" FieldValue="'Seattle'"/>
+<!--			<Field TableNAme="bPREH" FieldName="State" FieldValue="'WA'"/> -->
+				<Field TableNAme="bPREH" FieldName="Zip" FieldValue="'98124'"/>
+				<Field TableNAme="bPREH" FieldName="SSN" FieldValue="SUBSTRING(RIGHT('000000000' + CAST(ABS(CAST(CAST(NEWID() AS varbinary(4)) AS int)) AS varchar(10)), 9), 1, 3)+'-'+SUBSTRING(RIGHT('000000000' + CAST(ABS(CAST(CAST(NEWID() AS varbinary(4)) AS int)) AS varchar(10)), 9), 4, 2)+'-'+SUBSTRING(RIGHT('000000000' + CAST(ABS(CAST(CAST(NEWID() AS varbinary(4)) AS int)) AS varchar(10)), 9), 3, 4)"/>
+<!--				<Field TableNAme="bPREH" FieldName="Race" FieldValue="FLOOR(RAND(ABS(CAST(CAST(NEWID() AS varbinary(4)) AS int)))*(7-0+1))+0"/>  -->
+				<Field TableNAme="bPREH" FieldName="BirthDate" FieldValue="'01-JAN-1980'"/>
+				<Field TableNAme="bPREH" FieldName="HireDate" FieldValue="'1-JAN-2005'"/>
+				<Field TableNAme="bPREH" FieldName="LastUpdated" FieldValue="getdate()"/>
+				<Field TableNAme="bPREH" FieldName="HrlyRate" FieldValue="FLOOR(RAND(Employee)*(95-1+1))+1"/>
+				<Field TableNAme="bPREH" FieldName="SalaryAmt" FieldValue="FLOOR(RAND(Employee)*(9000-1000+1))+1000"/>
+				<Field TableNAme="bPREH" FieldName="RoutingId" FieldValue="'123456789'"/>
+				<Field TableNAme="bPREH" FieldName="BankAcct" FieldValue="'001500'"/>
+				<Field TableNAme="bPREH" FieldName="udOrigHireDate" FieldValue="'1-JAN-2005'"/>
+            </ScrubFields>
+			<POSTSTEPS>
+				<SQL Order="1">select @@servername;</SQL>
+            </POSTSTEPS>
+        </Environment>				
+	</VistaEnvironments>
+</Settings>

@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">            
+<html>
+  <head id="Head1" runat="server">
+      <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <Title ID="onetidTitle">
+      <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server" /></Title>
+      <asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server" />
+</head>
+  <body scroll="yes">
+    <form method="post" runat="server">
+      <asp:ScriptManager id="ScriptManager1" runat="server" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true"       EnableScriptLocalization="true" />
+	
+
+<div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+	<a id="linkTurnOnAcc" href="#" class="ms-TurnOnAcc" ><asp:Literal runat="server" text="<%$Resources:wss,master_turnonaccessibility%>" /></a>
+</div>
+<div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+	<a id="linkTurnOffAcc" href="#" class="ms-TurnOffAcc" ><asp:Literal runat="server" text="<%$Resources:wss,master_turnoffaccessibility%>" /></a>
+</div>
+<div class="s4-notdlg s4-skipribbonshortcut noindex">
+</div>
+<div class="s4-notdlg noindex">
+</div>
+
+<div id="s4-ribbonrow" class="s4-pr s4-ribbonrowhidetitle">
+	<div id="s4-ribboncont">
+			</div>
+	<div id="notificationArea" class="s4-noti">
+	</div>
+	<asp:ContentPlaceHolder ID="SPNavigation" runat="server">			
+	</asp:ContentPlaceHolder>
+	<div id="WebPartAdderUpdatePanelContainer">		
+	</div>
+</div>
+<div id="isd-workspace">
+		<div id="s4-bodyContainer">
+			<div id="s4-titlerow" class="s4-pr s4-notdlg s4-titlerowhidetitle">
+				<div class="s4-title s4-lp">
+					<div class="s4-title-inner">
+						<table class="s4-titletable" cellspacing="0">
+							<tbody>
+								<tr>
+									<td class="s4-titlelogo">
+										
+									</td>
+									<td class="s4-titletext">
+										<h1 name="onetidProjectPropertyTitle">
+											<asp:ContentPlaceHolder id="PlaceHolderSiteName" runat="server">											
+											</asp:ContentPlaceHolder>
+										</h1>
+										<span id="onetidPageTitleSeparator" class="s4-nothome s4-bcsep s4-titlesep"> </span>
+										<h2>
+											<asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
+										</h2>
+										<div class="s4-pagedescription" tabindex="0" >
+											<asp:ContentPlaceHolder id="PlaceHolderPageDescription" runat="server"/>
+										</div>
+									</td>
+									<td class="s4-socialdata-notif">										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div id="s4-topheader2" class="s4-pr s4-notdlg">
+					<a name="startNavigation"></a>
+					<div id="s4-searcharea" class="s4-search s4-rp">
+						<asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">							
+						</asp:ContentPlaceHolder>
+						<span class="s4-help">
+								<span style="height:17px;width:17px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><a href="#" style="height:17px;width:17px;display:inline-block;" onclick="TopHelpButtonClick('HelpHome');return false" accesskey="<%$Resources:wss,multipages_helplink_accesskey%>" id="TopHelpLink" title="<%$Resources:wss,multipages_helplinkalt_text%>" runat="server"><img src="/_layouts/images/fgimg.png" alt="<%$Resources:wss,multipages_helplinkalt_text%>" style="left:-0px !important;top:-309px !important;position:absolute;" align="absmiddle" border="0" runat="server" /></a></span>
+						</span>
+					</div>
+					<div class="s4-rp s4-app">
+					</div>
+					<div class="s4-lp s4-toplinks">
+						<asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server">
+								<asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" runat="server">	
+								</asp:ContentPlaceHolder>
+						</asp:ContentPlaceHolder>
+					</div>
+				</div>
+			</div>
+			<div id="s4-statusbarcontainer">
+				<div id="pageStatusBar" class="s4-status-s1">
+				</div>
+			</div>				
+			<div id="s4-mainarea" class="s4-pr s4-widecontentarea">
+				<div id="s4-leftpanel" class="s4-notdlg">
+					<div id="s4-leftpanel-content">
+						<asp:ContentPlaceHolder id="PlaceHolderLeftNavBarDataSource" runat="server" />
+						<asp:ContentPlaceHolder id="PlaceHolderCalendarNavigator" runat="server" />
+						<asp:ContentPlaceHolder id="PlaceHolderLeftActions" runat="server"></asp:ContentPlaceHolder>
+							<asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" runat="server"/>
+						<asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" runat="server">
+				<div class="ms-quicklaunchouter">
+				<div class="ms-quickLaunch">
+				<asp:ContentPlaceHolder id="PlaceHolderQuickLaunchTop" runat="server">				
+				</asp:ContentPlaceHolder>	
+				<asp:ContentPlaceHolder id="PlaceHolderQuickLaunchBottom" runat="server">
+				</asp:ContentPlaceHolder>
+				</div>
+				</div>
+						</asp:ContentPlaceHolder>
+					</div>
+				</div>
+				<div class="s4-ca s4-ca-dlgNoRibbon" id="MSO_ContentTable">
+					<div class="s4-die">
+						<asp:ContentPlaceHolder id="PlaceHolderPageImage" runat="server" Visible="false"/>
+						<asp:ContentPlaceHolder id="PlaceHolderTitleLeftBorder" runat="server" Visible="false">
+						</asp:ContentPlaceHolder>
+							<div id="onetidPageTitleAreaFrame" class='ms-pagetitleareaframe s4-pagetitle'></div>
+						<asp:ContentPlaceHolder id="PlaceHolderMiniConsole" runat="server" Visible="false"/>
+						<span class="s4-die">
+							<asp:ContentPlaceHolder id="PlaceHolderTitleRightMargin" runat="server" Visible="false"/>
+						</span>
+						<asp:ContentPlaceHolder id="PlaceHolderTitleAreaSeparator" runat="server" Visible="false"/>
+							<asp:ContentPlaceHolder id="PlaceHolderNavSpacer" runat="server" Visible="false"><img src="/_layouts/images/blank.gif" width='138' height='1' alt="" /></asp:ContentPlaceholder>
+						<asp:ContentPlaceHolder id="PlaceHolderLeftNavBarBorder" runat="server" Visible="false"></asp:ContentPlaceHolder>
+						<asp:ContentPlaceHolder id="PlaceHolderBodyLeftBorder" runat="server" Visible="false">
+						</asp:ContentPlaceHolder>
+					</div>					
+						<div class='s4-ba'><div class='ms-bodyareacell'>
+							<div id="MSO_ContentDiv" runat="server">
+						<a name="mainContent"></a>
+                             				<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server">
+						</asp:ContentPlaceHolder>
+							</div>
+						</div></div>
+					<div class="s4-die">
+						<asp:ContentPlaceHolder id="PlaceHolderBodyRightMargin" runat="server">
+						</asp:ContentPlaceHolder>
+					</div>
+				</div>
+			</div>			
+		</div>
+</div>
+  <asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server">	  
+  </asp:ContentPlaceHolder>
+  </form>
+  <asp:ContentPlaceHolder id="PlaceHolderUtilityContent" runat="server"/>	
+</body>
+</html>

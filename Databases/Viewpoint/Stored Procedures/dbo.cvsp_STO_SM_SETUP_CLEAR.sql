@@ -1,0 +1,367 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+/**
+=========================================================================================
+Copyright Â© 2013 Viewpoint Construction Software (VCS) 
+The TSQL code in this procedure may not be reproduced, copied, modified,
+or executed without written consent from VCS.
+=========================================================================================
+	Title:	Clear Viewpoint SM Setup Tables	
+	Created: 2013
+	Created by:	VCS Technical Services - Brenda Ackerson
+	Revisions:	
+		1. 
+
+	Notes:		
+**/
+
+CREATE PROCEDURE [dbo].[cvsp_STO_SM_SETUP_CLEAR] 
+(@Co bCompany, @DefaultRateTemplate varchar(10))
+
+AS 
+
+/* DISABLE FOREIGN KEYS */
+EXEC cvsp_Disable_Foreign_Keys;
+
+/** DECLARE AND SET PARAMETERS **/
+DECLARE @CustGroup tinyint	
+SET @CustGroup=(SELECT CustGroup FROM bHQCO WHERE HQCo=@Co)
+
+/** BACKUP SM SETUP TABLES **/
+
+/** SM Agreement Type **/
+IF OBJECT_ID('vSMAgreementType_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMAgreementType_bak
+END;
+BEGIN
+	SELECT * INTO vSMAgreementType_bak FROM vSMAgreementType
+END;
+
+/** SM Call Type **/
+IF OBJECT_ID('vSMCallType_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMCallType_bak
+END;
+BEGIN
+	SELECT * INTO vSMCallType_bak FROM vSMCallType
+END;
+
+/** SM Class **/
+IF OBJECT_ID('vSMClass_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMClass_bak
+END;
+BEGIN
+	SELECT * INTO vSMClass_bak FROM vSMClass
+END;
+
+/** SM Cost Type **/
+IF OBJECT_ID('vSMCostType_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMCostType_bak
+END;
+BEGIN
+	SELECT * INTO vSMCostType_bak FROM vSMCostType
+END;
+
+/** SM Department **/
+IF OBJECT_ID('vSMDepartment_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMDepartment_bak
+END;
+BEGIN
+	SELECT * INTO vSMDepartment_bak FROM vSMDepartment
+END;
+
+/** SM Labor Code **/
+IF OBJECT_ID('vSMLaborCode_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMLaborCode_bak
+END;
+BEGIN
+	SELECT * INTO vSMLaborCode_bak FROM vSMLaborCode
+END;
+
+/** SM Pay Type **/
+IF OBJECT_ID('vSMPayType_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMPayType_bak
+END;
+BEGIN
+	SELECT * INTO vSMPayType_bak FROM vSMPayType
+END;
+
+/** SM Rate Template **/
+IF OBJECT_ID('vSMRateTemplate_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMRateTemplate_bak
+END;
+BEGIN
+	SELECT * INTO vSMRateTemplate_bak FROM vSMRateTemplate
+END;
+
+/** SM Rate Template Effective Date **/
+IF OBJECT_ID('vSMRateTemplateEffectiveDate_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMRateTemplateEffectiveDate_bak
+END;
+BEGIN
+	SELECT * INTO vSMRateTemplateEffectiveDate_bak FROM vSMRateTemplateEffectiveDate
+END;
+
+
+/** SM Service Center **/
+IF OBJECT_ID('vSMServiceCenter_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMServiceCenter_bak
+END;
+BEGIN
+	SELECT * INTO vSMServiceCenter_bak FROM vSMServiceCenter
+END;
+
+
+/** SM Standard Item **/
+IF OBJECT_ID('vSMStandardItem_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMStandardItem_bak
+END;
+BEGIN
+	SELECT * INTO vSMStandardItem_bak FROM vSMStandardItem
+END;
+
+/** SM Standard Task **/
+IF OBJECT_ID('vSMStandardTask_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMStandardTask_bak
+END;
+BEGIN
+	SELECT * INTO vSMStandardTask_bak FROM vSMStandardTask
+END;
+
+/** SM Type **/
+IF OBJECT_ID('vSMType_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMType_bak
+END;
+BEGIN
+	SELECT * INTO vSMType_bak FROM vSMType
+END;
+
+/** SM Work Scope **/
+IF OBJECT_ID('vSMWorkScope_bak','U') IS NOT NULL
+BEGIN
+	DROP TABLE vSMWorkScope_bak
+END;
+BEGIN
+	SELECT * INTO vSMWorkScope_bak FROM vSMWorkScope
+END;
+
+
+/* DELETE SM SETUP TABLES FOR @Co COMPANY */
+
+BEGIN
+
+	/** SM Aggreement Type **/
+	ALTER TABLE vSMAgreementType NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMAgreementType DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMAgreementType WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMAgreementType CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMAgreementType ENABLE TRIGGER ALL;	
+
+	/** SM Call Type **/
+	ALTER TABLE vSMCallType NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMCallType DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMCallType WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMCallType CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMCallType ENABLE TRIGGER ALL;
+
+	/** SM Class **/
+	ALTER TABLE vSMClass NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMClass DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMClass WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMClass CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMClass ENABLE TRIGGER ALL;	
+
+	/** SM Cost Type **/
+	ALTER TABLE vSMCostType NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMCostType DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMCostType WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMCostType CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMCostType ENABLE TRIGGER ALL;	
+	
+	/** SM Department **/
+	ALTER TABLE vSMDepartment NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMDepartment DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMDepartment WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMDepartment CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMDepartment ENABLE TRIGGER ALL;	
+		
+	/** SM Labor Code **/
+	ALTER TABLE vSMLaborCode NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMLaborCode DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMLaborCode WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMLaborCode CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMLaborCode ENABLE TRIGGER ALL;
+
+	/** SM Pay Type **/
+	ALTER TABLE vSMPayType NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMPayType DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMPayType WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMPayType CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMPayType ENABLE TRIGGER ALL;	
+
+	/** SM Rate Template Effective Date **/
+	ALTER TABLE vSMRateTemplateEffectiveDate NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMRateTemplateEffectiveDate DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMRateTemplateEffectiveDate 
+		WHERE SMCo=@Co
+			AND RateTemplate<>@DefaultRateTemplate
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMRateTemplateEffectiveDate CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMRateTemplateEffectiveDate ENABLE TRIGGER ALL;	
+
+	/** SM Rate Template **/
+	ALTER TABLE vSMRateTemplate NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMRateTemplate DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMRateTemplate 
+		WHERE SMCo=@Co
+			AND RateTemplate<>@DefaultRateTemplate
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMRateTemplate CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMRateTemplate ENABLE TRIGGER ALL;	
+
+	/** SM Service Center **/
+	ALTER TABLE vSMServiceCenter NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMServiceCenter DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMServiceCenter WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMServiceCenter CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMServiceCenter ENABLE TRIGGER ALL;	
+
+	/** SM Standard Item **/
+	ALTER TABLE vSMStandardItem NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMStandardItem DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMStandardItem WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMStandardItem CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMStandardItem ENABLE TRIGGER ALL;	
+	
+	/** SM Standard Task **/
+	ALTER TABLE vSMStandardTask NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMStandardTask DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMStandardTask WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMStandardTask CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMStandardTask ENABLE TRIGGER ALL;	
+	
+	/** SM Type **/
+	ALTER TABLE vSMType NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMType DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMType WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMType CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMType ENABLE TRIGGER ALL;		
+
+	/** SM Work Scope **/
+	ALTER TABLE vSMWorkScope NOCHECK CONSTRAINT ALL;
+	ALTER TABLE vSMWorkScope DISABLE TRIGGER ALL;
+	BEGIN TRAN
+		DELETE vSMWorkScope WHERE SMCo=@Co
+	COMMIT TRAN
+	CHECKPOINT;
+	WAITFOR DELAY '00:00:02.000';	
+	ALTER TABLE vSMWorkScope CHECK CONSTRAINT ALL;
+	ALTER TABLE vSMWorkScope ENABLE TRIGGER ALL;		
+	
+		PRINT 'SM SETUP TABLES HAVE BEEN DELETED FOR SPECIFIED COMPANY.'
+		
+END;
+
+
+/* ENABLE FOREIGN KEYS */
+EXEC cvsp_Enable_Foreign_Keys;	
+
+		
+/** RECORD COUNT **/ 
+--declare @Co bCompany set @Co=
+SELECT COUNT(*) AS SMAgreementType_Count FROM vSMAgreementType WHERE SMCo=@Co; 
+SELECT COUNT(*) AS SMCallType_Count FROM vSMCallType WHERE SMCo=@Co; 
+SELECT COUNT(*) AS SMClass_Count FROM vSMClass WHERE SMCo=@Co; 
+SELECT COUNT(*) AS SMCostType_Count FROM vSMCostType WHERE SMCo=@Co; 
+SELECT COUNT(*) AS SMDepartment_Count FROM vSMDepartment WHERE SMCo=@Co; 
+SELECT COUNT(*) AS vSMLaborCode_Count FROM vSMLaborCode WHERE SMCo=@Co; 
+SELECT COUNT(*) AS SMPayType_Count FROM vSMPayType WHERE SMCo=@Co; 
+SELECT COUNT(*) AS vSMServiceCenter_Count FROM vSMServiceCenter WHERE SMCo=@Co; 
+SELECT COUNT(*) AS SMStandardItem_Count FROM vSMStandardItem WHERE SMCo=@Co; 
+SELECT COUNT(*) AS SMStandardTask_Count FROM vSMStandardTask WHERE SMCo=@Co; 
+SELECT COUNT(*) AS SMType_Count FROM vSMType WHERE SMCo=@Co; 
+SELECT COUNT(*) AS SMWorkScope_Count FROM vSMWorkScope WHERE SMCo=@Co; 
+
+
+/** DATA REVIEW 
+--declare @Co bCompany set @Co=
+SELECT * FROM vSMAgreementType WHERE SMCo=@Co; 
+SELECT * FROM vSMCallType WHERE SMCo=@Co; 
+SELECT * FROM vSMClass WHERE SMCo=@Co; 
+SELECT * FROM vSMCostType WHERE SMCo=@Co; 
+SELECT * FROM vSMDepartment WHERE SMCo=@Co; 
+SELECT * FROM vSMLaborCode WHERE SMCo=@Co; 
+SELECT * FROM vSMPayType WHERE SMCo=@Co; 
+SELECT * FROM vSMServiceCenter WHERE SMCo=@Co;
+SELECT * FROM vSMStandardItem WHERE SMCo=@Co; 
+SELECT * FROM vSMStandardTask WHERE SMCo=@Co; 
+SELECT * FROM vSMType WHERE SMCo=@Co; 
+SELECT * FROM vSMWorkScope WHERE SMCo=@Co; 
+**/
+
+GO

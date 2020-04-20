@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>ViewPoint</DataSourceReference>
+      <CommandText>SELECT HQCo from HQCO</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="HQCo">
+        <DataField>HQCo</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.GMA.Viewpoint", "McK.GMA.Viewpoint\McK.GMA.Viewpoint.csproj", "{D727C6BF-79E5-4B44-ACA8-96EDE16CD546}"
+	ProjectSection(ProjectDependencies) = postProject
+		{943DF297-B45A-46A7-8416-D4E4A09F7AF1} = {943DF297-B45A-46A7-8416-D4E4A09F7AF1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.Data.Viewpoint", "McK.Data.Viewpoint\McK.Data.Viewpoint.csproj", "{943DF297-B45A-46A7-8416-D4E4A09F7AF1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48242C28-B652-44EB-9DF2-94DCD5F2D848} = {48242C28-B652-44EB-9DF2-94DCD5F2D848}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.Models.Viewpoint", "McK.Models.Viewpoint\McK.Models.Viewpoint.csproj", "{48242C28-B652-44EB-9DF2-94DCD5F2D848}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GMA_SQL_Objects", "GMA_SQL_Objects\GMA_SQL_Objects.sqlproj", "{67CAEAA2-52F9-4079-994A-BBDAFEF7317A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D727C6BF-79E5-4B44-ACA8-96EDE16CD546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D727C6BF-79E5-4B44-ACA8-96EDE16CD546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D727C6BF-79E5-4B44-ACA8-96EDE16CD546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D727C6BF-79E5-4B44-ACA8-96EDE16CD546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943DF297-B45A-46A7-8416-D4E4A09F7AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943DF297-B45A-46A7-8416-D4E4A09F7AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943DF297-B45A-46A7-8416-D4E4A09F7AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943DF297-B45A-46A7-8416-D4E4A09F7AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48242C28-B652-44EB-9DF2-94DCD5F2D848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48242C28-B652-44EB-9DF2-94DCD5F2D848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48242C28-B652-44EB-9DF2-94DCD5F2D848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48242C28-B652-44EB-9DF2-94DCD5F2D848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CAEAA2-52F9-4079-994A-BBDAFEF7317A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CAEAA2-52F9-4079-994A-BBDAFEF7317A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CAEAA2-52F9-4079-994A-BBDAFEF7317A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{67CAEAA2-52F9-4079-994A-BBDAFEF7317A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CAEAA2-52F9-4079-994A-BBDAFEF7317A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CAEAA2-52F9-4079-994A-BBDAFEF7317A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D73F2BC6-4E74-4201-B675-0EB345DAD22A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.mckinstry.com:8080/tfs/mckinstry%20team
+		SccProjectUniqueName0 = McK.GMA.Viewpoint\\McK.GMA.Viewpoint.csproj
+		SccProjectName0 = McK.GMA.Viewpoint
+		SccLocalPath0 = McK.GMA.Viewpoint
+		SccProjectUniqueName1 = McK.Models.Viewpoint\\McK.Models.Viewpoint.csproj
+		SccProjectName1 = McK.Models.Viewpoint
+		SccLocalPath1 = McK.Models.Viewpoint
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = GMA_SQL_Objects\\GMA_SQL_Objects.sqlproj
+		SccProjectName3 = GMA_SQL_Objects
+		SccLocalPath3 = GMA_SQL_Objects
+		SccProjectUniqueName4 = McK.Data.Viewpoint\\McK.Data.Viewpoint.csproj
+		SccProjectName4 = McK.Data.Viewpoint
+		SccLocalPath4 = McK.Data.Viewpoint
+	EndGlobalSection
+EndGlobal

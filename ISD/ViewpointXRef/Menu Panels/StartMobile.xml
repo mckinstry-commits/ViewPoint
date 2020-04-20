@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>StartMobile</Name>
+    <Type>Page</Type>
+    <SubType>DotNet</SubType>
+    <PopupCssClass>QPageSize</PopupCssClass>
+    <GenerateDirectory>Menu Panels</GenerateDirectory>
+    <Layout>Menu Panels\StartMobile.html</Layout>
+    <DisplayName>StartMobile</DisplayName>
+    <Description>Standard Mobile Start Page.</Description>
+    <DeviceSize>Small</DeviceSize>
+  </Self>
+  <ComposedOf>
+    <ContainedComponent>
+      <Name>MenuV</Name>
+      <Type>Menu</Type>
+      <Layout>..\Menu Panels\MenuMobile.ascx</Layout>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>HiliteSettings</Name>
+          <Value />
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PageFooter</Name>
+      <Type>Footer</Type>
+      <Layout>..\Header and Footer\FooterMobile.ascx</Layout>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PageHeader</Name>
+      <Type>Header</Type>
+      <Layout>..\Header and Footer\HeaderMobile.ascx</Layout>
+    </ContainedComponent>
+  </ComposedOf>
+  <LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-16"?&gt;
+    &lt;LayoutDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;    
+      &lt;Layout Name="Master" Type="RootLayout"&gt;      
+        &lt;Prolog&gt;
+
+          &lt;Value&gt;&amp;lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt;
+&amp;lt;html xmlns="http://www.w3.org/1999/xhtml"&amp;gt;
+    &amp;lt;head id="Head1" runat="server"&amp;gt;
+    &amp;lt;meta name="keywords" content="ViewpointXRef"/&amp;gt;
+    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body id="Body1" runat="server" style="margin: 0px; padding: 0px;"&amp;gt;
+        &amp;lt;form id="Form1" method="post" runat="server"&amp;gt;
+            &amp;lt;BaseClasses:ScrollCoordinates id="ScrollCoordinates1" runat="server"&amp;gt;&amp;lt;/BaseClasses:ScrollCoordinates&amp;gt;
+            &amp;lt;BaseClasses:BasePageSettings id="PageSettings" runat="server"&amp;gt;&amp;lt;/BaseClasses:BasePageSettings&amp;gt;
+            &amp;lt;script language="JavaScript" type="text/javascript"&amp;gt;{ScriptDirectionTemplate}&amp;lt;/script&amp;gt;
+            &amp;lt;asp:ToolkitScriptManager ID="scriptManager1" runat="server" EnablePartialRendering="True" EnablePageMethods="True" EnableScriptGlobalization="True" EnableScriptLocalization="True" &amp;gt;
+			&amp;lt;/asp:ToolkitScriptManager&amp;gt;
+          &lt;/Value&gt;
+        &lt;/Prolog&gt;
+      
+        &lt;Row&gt;
+	  &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;a id="StartOfPageContent"&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;GEN:HEADER NAME="PageHeader"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:MENU NAME="MenuV"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:FOOTER NAME="PageFooter"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+
+        &lt;Row&gt;
+          &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;div id="detailPopup" class="detailRolloverPopup" onmouseout="detailRolloverPopupClose();" onmouseover="clearTimeout(gPopupTimer);"&amp;gt;&amp;lt;/div&amp;gt;          
+        &amp;lt;asp:ValidationSummary id="ValidationSummary1" ShowMessageBox="true" ShowSummary="false" runat="server"&amp;gt;&amp;lt;/asp:ValidationSummary&amp;gt;
+    &amp;lt;/asp:Content&amp;gt;
+          &lt;/Value&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+
+        &lt;Epilog&gt;
+
+
+          &lt;Value&gt;
+        &amp;lt;/form&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+          &lt;/Value&gt;
+        &lt;/Epilog&gt;
+        &lt;TableAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellpadding&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellspacing&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;border&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;width&lt;/Name&gt;
+            &lt;AttributeValue&gt;100%&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;mobileBase&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/TableAttributes&gt;
+		
+      &lt;/Layout&gt;
+    &lt;/LayoutDefinition&gt;]]&gt;
+  </LayoutDefinition>
+</ComponentDefinition>

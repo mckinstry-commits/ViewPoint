@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.ViewPoint.Subcontract", "McKinstry.ViewPoint.Subcontract\McKinstry.ViewPoint.Subcontract.csproj", "{9281EA76-7591-45D7-BCB7-55DB03060A48}"
+	ProjectSection(ProjectDependencies) = postProject
+		{66932AD5-593B-4CD7-8182-5753B0E40E1C} = {66932AD5-593B-4CD7-8182-5753B0E40E1C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.ViewPoint.Data", "McKinstry.ViewPoint.Data\McKinstry.ViewPoint.Data.csproj", "{884AFC11-1EA3-431D-876B-4C972AD966A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.ViewPoint.Services", "McKinstry.ViewPoint.Services\McKinstry.ViewPoint.Services.csproj", "{66932AD5-593B-4CD7-8182-5753B0E40E1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewPointExcelAddIn", "ViewPointExcelAddIn\ViewPointExcelAddIn.csproj", "{538B28FE-803E-4DA3-ADB9-3E76C66BED3D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{66932AD5-593B-4CD7-8182-5753B0E40E1C} = {66932AD5-593B-4CD7-8182-5753B0E40E1C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://setfs01:8080/tfs/mckinstry%20team
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = McKinstry.ViewPoint.Data\\McKinstry.ViewPoint.Data.csproj
+		SccProjectName1 = McKinstry.ViewPoint.Data
+		SccLocalPath1 = McKinstry.ViewPoint.Data
+		SccProjectUniqueName2 = McKinstry.ViewPoint.Services\\McKinstry.ViewPoint.Services.csproj
+		SccProjectName2 = McKinstry.ViewPoint.Services
+		SccLocalPath2 = McKinstry.ViewPoint.Services
+		SccProjectUniqueName3 = McKinstry.ViewPoint.Subcontract\\McKinstry.ViewPoint.Subcontract.csproj
+		SccProjectName3 = McKinstry.ViewPoint.Subcontract
+		SccLocalPath3 = McKinstry.ViewPoint.Subcontract
+		SccProjectUniqueName4 = ViewPointExcelAddIn\\ViewPointExcelAddIn.csproj
+		SccProjectName4 = ViewPointExcelAddIn
+		SccLocalPath4 = ViewPointExcelAddIn
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9281EA76-7591-45D7-BCB7-55DB03060A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9281EA76-7591-45D7-BCB7-55DB03060A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9281EA76-7591-45D7-BCB7-55DB03060A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9281EA76-7591-45D7-BCB7-55DB03060A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{884AFC11-1EA3-431D-876B-4C972AD966A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884AFC11-1EA3-431D-876B-4C972AD966A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884AFC11-1EA3-431D-876B-4C972AD966A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884AFC11-1EA3-431D-876B-4C972AD966A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66932AD5-593B-4CD7-8182-5753B0E40E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66932AD5-593B-4CD7-8182-5753B0E40E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66932AD5-593B-4CD7-8182-5753B0E40E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66932AD5-593B-4CD7-8182-5753B0E40E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538B28FE-803E-4DA3-ADB9-3E76C66BED3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538B28FE-803E-4DA3-ADB9-3E76C66BED3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538B28FE-803E-4DA3-ADB9-3E76C66BED3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538B28FE-803E-4DA3-ADB9-3E76C66BED3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

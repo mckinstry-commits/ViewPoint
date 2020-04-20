@@ -1,0 +1,2 @@
+"c:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" .\GetAdaptiveBudgetDownload_20140730.ps1 /u vpsvcacct@mckinstry.com /p v1ewp@int /i MCKINSTRY2
+COPY /Y .\APDownloads\*.csv   "\\sestgviewpoint\Viewpoint Repository\bulk inserts\ETL\GL\AdaptivePlanning\AutoImport\."

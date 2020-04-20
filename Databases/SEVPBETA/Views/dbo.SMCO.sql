@@ -1,0 +1,19 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+
+
+
+
+CREATE VIEW [dbo].[SMCO]
+AS
+SELECT a.* FROM dbo.vSMCO a
+GO
+GRANT SELECT ON  [dbo].[SMCO] TO [public]
+GRANT INSERT ON  [dbo].[SMCO] TO [public]
+GRANT DELETE ON  [dbo].[SMCO] TO [public]
+GRANT UPDATE ON  [dbo].[SMCO] TO [public]
+GO

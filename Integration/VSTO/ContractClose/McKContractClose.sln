@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.ContractClose", "Mck.ContractClose\McK.ContractClose.csproj", "{69C30C5D-FA2F-464C-811C-27BDEDE5812D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151} = {8098057C-BD3D-49FF-BC7F-404ACA9CD151}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.Data.Viewpoint", "McK.Data.Viewpoint\McK.Data.Viewpoint.csproj", "{8098057C-BD3D-49FF-BC7F-404ACA9CD151}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|x64.Build.0 = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|x86.Build.0 = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|x64.ActiveCfg = Release|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|x64.Build.0 = Release|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|x86.ActiveCfg = Release|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|x86.Build.0 = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|x64.Build.0 = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|x86.Build.0 = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|x64.ActiveCfg = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|x64.Build.0 = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|x86.ActiveCfg = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13349240-9E31-4D00-8ABB-F4A3FCACFE42}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.mckinstry.com:8080/tfs/mckinstry%20team
+		SccProjectUniqueName0 = Mck.ContractClose\\McK.ContractClose.csproj
+		SccProjectName0 = Mck.ContractClose
+		SccLocalPath0 = Mck.ContractClose
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = McK.Data.Viewpoint\\McK.Data.Viewpoint.csproj
+		SccProjectName2 = McK.Data.Viewpoint
+		SccLocalPath2 = McK.Data.Viewpoint
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 4.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>4.0</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CategoryFilterInitialText" xml:space="preserve">
+    <value>All</value>
+    <comment>Original English: All</comment>
+  </data>
+  <data name="ContactDbAdministrator" xml:space="preserve">
+    <value>Please see your database administrator for more information.</value>
+    <comment>Original English: Please see your database administrator for more information.</comment>
+  </data>
+  <data name="ContactSystemAdministrator" xml:space="preserve">
+    <value>Please contact your system administrator or customer support.</value>
+    <comment>Original English: Please contact your system administrator or customer support.</comment>
+  </data>
+  <data name="Err:AccessData" xml:space="preserve">
+    <value>Unable to access data.</value>
+    <comment>Original English: Unable to access data.</comment>
+  </data>
+  <data name="Err:ButtonError" xml:space="preserve">
+    <value>The {BUTTON} button caused an error:{NEWLINE}{DETAILS}</value>
+    <comment>Original English: The {BUTTON} button caused an error:{NEWLINE}{DETAILS}</comment>
+  </data>
+  <data name="Err:CreateRecord" xml:space="preserve">
+    <value>Unable to create record. </value>
+    <comment>Original English: Unable to create record.</comment>
+  </data>
+  <data name="Err:DbConcurrency" xml:space="preserve">
+    <value>While you were editing, another user updated the same record(s) you were modifying. We recommend you cancel this edit, and start the edit process again with the updated information.</value>
+    <comment>Original English: While you were editing, another user updated the same record(s) you were modifying. We recommend you cancel this edit, and start the edit process again with the updated information.</comment>
+  </data>
+  <data name="Err:DbConcurrency_RecordDeleted" xml:space="preserve">
+    <value>While you were editing, another user deleted the same record(s) you were modifying.</value>
+    <comment>Original English: While you were editing, another user deleted the same record(s) you were modifying.</comment>
+  </data>
+  <data name="Err:DbConcurrency_RecordDeleted_Table" xml:space="preserve">
+    <value>While you were editing, another user deleted the same {Table} record(s) you were modifying.</value>
+    <comment>Original English: While you were editing, another user deleted the same {Table} record(s) you were modifying.</comment>
+  </data>
+  <data name="Err:DbConcurrency_Table" xml:space="preserve">
+    <value>While you were editing, another user updated the same {Table} record(s) you were modifying. We recommend you cancel this edit, and start the edit process again with the updated information.</value>
+    <comment>Original English: While you were editing, another user updated the same {Table} record(s) you were modifying. We recommend you cancel this edit, and start the edit process again with the updated information.</comment>
+  </data>
+  <data name="Err:DbConstraintViolated" xml:space="preserve">
+    <value>The data you entered conflicts with a database constraint.</value>
+    <comment>Original English: The data you entered conflicts with a database constraint.</comment>
+  </data>
+  <data name="Err:DbConstraintViolated_Custom" xml:space="preserve">
+    <value>The data you entered conflicts with a custom database constraint.</value>
+    <comment>Original English: The data you entered conflicts with a custom database constraint.</comment>
+  </data>
+  <data name="Err:DbConstraintViolated_FK" xml:space="preserve">
+    <value>A record you were attempting to modify contains a foreign key to a database record that does not exist.</value>
+    <comment>Original English: A record you were attempting to modify contains a foreign key to a database record that does not exist.</comment>
+  </data>
+  <data name="Err:DbConstraintViolated_Null" xml:space="preserve">
+    <value>You must enter values for all required fields.</value>
+    <comment>Original English: You must enter values for all required fields.</comment>
+  </data>
+  <data name="Err:DbConstraintViolated_PK" xml:space="preserve">
+    <value>The primary key of a record you were attempting to modify conflicts with the primary key of an existing record.</value>
+    <comment>Original English: The primary key of a record you were attempting to modify conflicts with the primary key of an existing record.</comment>
+  </data>
+  <data name="Err:DbConstraintViolated_PKInUse" xml:space="preserve">
+    <value>A record you were attempting to delete or modify is referenced by other records.</value>
+    <comment>Original English: A record you were attempting to delete or modify is referenced by other records.</comment>
+  </data>
+  <data name="Err:DbConstraintViolated_Unique" xml:space="preserve">
+    <value>The data you entered conflicts with unique data in an existing record.</value>
+    <comment>Original English: The data you entered conflicts with unique data in an existing record.</comment>
+  </data>
+  <data name="Err:DeleteFailed" xml:space="preserve">
+    <value>Unable to delete record. </value>
+    <comment>Original English: Unable to delete record.</comment>
+  </data>
+  <data name="Err:DeleteRecord" xml:space="preserve">
+    <value>Unable to delete record: {ID}</value>
+    <comment>Original English: Unable to delete record: {ID}</comment>
+  </data>
+  <data name="Err:DeleteRecords" xml:space="preserve">
+    <value>Unable to delete records. </value>
+    <comment>Original English: Unable to delete records.</comment>
+  </data>
+  <data name="Err:ExportRecords" xml:space="preserve">
+    <value>Unable to Export records.</value>
+    <comment>Original English: Unable to Export records.</comment>
+  </data>
+  <data name="Err:GetColumnValues" xml:space="preserve">
+    <value>Unable to get column values. </value>
+    <comment>Original English: Unable to get column values.</comment>
+  </data>
+  <data name="Err:GetNonUniqueRecord" xml:space="preserve">
+    <value>Unable to get record: {ID}.  The record ID is not unique.</value>
+    <comment>Original English: Unable to get record: {ID}.  The record ID is not unique.</comment>
+  </data>
+  <data name="Err:GetRecord" xml:space="preserve">
+    <value>Unable to get record: {ID}</value>
+    <comment>Original English: Unable to get record: {ID}</comment>
+  </data>
+  <data name="Err:GetRecords" xml:space="preserve">
+    <value>Unable to get records. </value>
+    <comment>Original English: Unable to get records.</comment>
+  </data>
+  <data name="Err:GetStatistics" xml:space="preserve">
+    <value>Unable to get table statistics. </value>
+    <comment>Original English: Unable to get table statistics.</comment>
+  </data>
+  <data name="Err:InvalidColumnValue" xml:space="preserve">
+    <value>An invalid value for "{Column}" was entered.</value>
+    <comment>Original English: An invalid value for "{Column}" was entered.</comment>
+  </data>
+  <data name="Err:InvalidColumnValueSize" xml:space="preserve">
+    <value>The content you entered has exceeded the space permitted for the "{Column}" database field, {CharNumber} characters.</value>
+    <comment>Original English: The content you entered has exceeded the space permitted for the "{Column}" database field, {CharNumber} characters.</comment>
+  </data>
+  <data name="Err:InvalidDbOperation_ImplicitConversion" xml:space="preserve">
+    <value>The data you entered conflicts with the database schema.</value>
+    <comment>Original English: The data you entered conflicts with the database schema.</comment>
+  </data>
+  <data name="Err:InvalidDbOperation_ImplicitTruncation" xml:space="preserve">
+    <value>The data you entered conflicts with the database schema.</value>
+    <comment>Original English: The data you entered conflicts with the database schema.</comment>
+  </data>
+  <data name="Err:InvalidEnumValueString" xml:space="preserve">
+    <value>The specified text string could not be converted to a {Type} enumeration value.</value>
+    <comment>Original English: The specified text string could not be converted to a {Type} enumeration value.</comment>
+  </data>
+  <data name="Err:InvalidFKValue" xml:space="preserve">
+    <value>Invalid value for Foreign Key "{Key}".</value>
+    <comment>Original English: Invalid value for Foreign Key "{Key}".</comment>
+  </data>
+  <data name="Err:InvalidRecordExpression" xml:space="preserve">
+    <value>The expression "{Expression}" could not be evaluated.</value>
+    <comment>Original English: The expression "{Expression}" could not be evaluated.</comment>
+  </data>
+  <data name="Err:InvalidRecordFK_WrongTable" xml:space="preserve">
+    <value>The key and record belong to different tables.</value>
+    <comment>Original English: The key and record belong to different tables.</comment>
+  </data>
+  <data name="Err:InvalidRecordId" xml:space="preserve">
+    <value>A record with the ID '{ID}' could not be retrieved.</value>
+    <comment>Original English: A record with the ID '{ID}' could not be retrieved.</comment>
+  </data>
+  <data name="Err:InvalidValueForFormattedFvc" xml:space="preserve">
+    <value>The string "{ValueString}" could not be parsed as a field value using the format "{ValueFormat}".</value>
+    <comment>Original English: The string "{ValueString}" could not be parsed as a field value using the format "{ValueFormat}".</comment>
+  </data>
+  <data name="Err:MissingConnectionString" xml:space="preserve">
+    <value>A connection string was not found for "{ConnectionName}".</value>
+    <comment>Original English: A connection string was not found for "{ConnectionName}".</comment>
+  </data>
+  <data name="Err:MustBeFalse" xml:space="preserve">
+    <value>Must be False.</value>
+    <comment>Original English: Must be False.</comment>
+  </data>
+  <data name="Err:MustBeNonNegative" xml:space="preserve">
+    <value>The {Parameter} parameter must be greater than or equal to 0. The current value is {Value}.</value>
+    <comment>Original English: The {Parameter} parameter must be greater than or equal to 0. The current value is {Value}.</comment>
+  </data>
+  <data name="Err:MustBeNumeric" xml:space="preserve">
+    <value>Must be numeric.</value>
+    <comment>Original English: Must be numeric.</comment>
+  </data>
+  <data name="Err:MustBeNumeric_Int" xml:space="preserve">
+    <value>Must be an integer.</value>
+    <comment>Original English: Must be an integer.</comment>
+  </data>
+  <data name="Err:MustBePositive" xml:space="preserve">
+    <value>The {Parameter} parameter must be greater than 0. The current value is {Value}.</value>
+    <comment>Original English: The {Parameter} parameter must be greater than 0. The current value is {Value}.</comment>
+  </data>
+  <data name="Err:MustBeTrue" xml:space="preserve">
+    <value>Must be True.</value>
+    <comment>Original English: Must be True.</comment>
+  </data>
+  <data name="Err:PKColumnsAssignment" xml:space="preserve">
+    <value>Error occurred while assigning primary key columns to DataTable.</value>
+    <comment>Original English: Error occurred while assigning primary key columns to DataTable.</comment>
+  </data>
+  <data name="Err:RecordMissingColumn" xml:space="preserve">
+    <value>The specified record does not have a column named "{Column}".</value>
+    <comment>Original English: The specified record does not have a column named "{Column}".</comment>
+  </data>
+  <data name="Err:RecordMissingFK" xml:space="preserve">
+    <value>The specified record does not have a foreign key named "{Key}".</value>
+    <comment>Original English: The specified record does not have a foreign key named "{Key}".</comment>
+  </data>
+  <data name="Err:RecordMissingPK" xml:space="preserve">
+    <value>The specified record does not have a primary key.</value>
+    <comment>Original English: The specified record does not have a primary key.</comment>
+  </data>
+  <data name="Err:TableDoesNotAllowNewRecords" xml:space="preserve">
+    <value>The "{Table}" table does not allow new records to be added.</value>
+    <comment>Original English: The "{Table}" table does not allow new records to be added.</comment>
+  </data>
+  <data name="Err:TableDoesNotAllowRecordDeletion" xml:space="preserve">
+    <value>The "{Table}" table does not allow records to be deleted.</value>
+    <comment>Original English: The "{Table}" table does not allow records to be deleted.</comment>
+  </data>
+  <data name="Err:TableDoesNotAllowRecordUpdate" xml:space="preserve">
+    <value>The "{Table}" table does not allow records to be updated.</value>
+    <comment>Original English: The "{Table}" table does not allow records to be updated.</comment>
+  </data>
+  <data name="Err:UiConcurrency" xml:space="preserve">
+    <value>While you were editing, another user updated the same record you were modifying. We recommend you cancel this edit, and start the edit process again with the updated information.</value>
+    <comment>Original English: While you were editing, another user updated the same record you were modifying. We recommend you cancel this edit, and start the edit process again with the updated information.</comment>
+  </data>
+  <data name="Err:UiConcurrency_RecordDeleted" xml:space="preserve">
+    <value>While you were editing, another user may have deleted the same record(s) you were modifying.</value>
+    <comment>Original English: While you were editing, another user may have deleted the same record(s) you were modifying.</comment>
+  </data>
+  <data name="Err:UiUpdate_ContainerFK" xml:space="preserve">
+    <value>The container's record's foreign key could not be updated.</value>
+    <comment>Original English: The container's record's foreign key could not be updated.</comment>
+  </data>
+  <data name="Err:UiUpdate_InvalidRecordData" xml:space="preserve">
+    <value>Cannot update record.  Record data is invalid.</value>
+    <comment>Original English: Cannot update record.  Record data is invalid.</comment>
+  </data>
+  <data name="Err:UpdateFailed" xml:space="preserve">
+    <value>Unable to update record. </value>
+    <comment>Original English: Unable to update record.</comment>
+  </data>
+  <data name="Err:UpdateRecord" xml:space="preserve">
+    <value>Unable to update record: {ID}</value>
+    <comment>Original English: Unable to update record: {ID}</comment>
+  </data>
+  <data name="Err:ValidCreditCard" xml:space="preserve">
+    <value>{ColumnName} must be a valid credit card number.</value>
+    <comment>Original English: {ColumnName} must be a valid credit card number.</comment>
+  </data>
+  <data name="Err:ValidCreditCardDate" xml:space="preserve">
+    <value>{ColumnName} must be a valid credit card expiration date.</value>
+    <comment>Original English: {ColumnName} must be a valid credit card expiration date.</comment>
+  </data>
+  <data name="Err:ValidDate" xml:space="preserve">
+    <value>{ColumnName} must be a valid date.</value>
+    <comment>Original English: {ColumnName} must be a valid date.</comment>
+  </data>
+  <data name="Err:ValidEmailAddress" xml:space="preserve">
+    <value>{ColumnName} must be a valid email address.</value>
+    <comment>Original English: {ColumnName} must be a valid email address.</comment>
+  </data>
+  <data name="Err:ValidFileName" xml:space="preserve">
+    <value>{ColumnName} must be a valid file name.</value>
+    <comment>Original English: {ColumnName} must be a valid file name.</comment>
+  </data>
+  <data name="Err:ValidMinLength" xml:space="preserve">
+    <value>{ColumnName} must contain at least {MinLength} characters.</value>
+    <comment>Original English: {ColumnName} must contain at least {MinLength} characters.</comment>
+  </data>
+  <data name="Err:ValidMonetary" xml:space="preserve">
+    <value>{ColumnName} must be a valid monetary value.</value>
+    <comment>Original English: {ColumnName}  must be a valid monetary value.</comment>
+  </data>
+  <data name="Err:ValidNonDecimal" xml:space="preserve">
+    <value>{ColumnName} must be a valid non-decimal number.</value>
+    <comment>Original English: {ColumnName}  must be a valid non-decimal number.</comment>
+  </data>
+  <data name="Err:ValidPercentage" xml:space="preserve">
+    <value>{ColumnName} must be a valid percentage.</value>
+    <comment>Original English: {ColumnName} must be a valid percentage.</comment>
+  </data>
+  <data name="Err:ValidUrl" xml:space="preserve">
+    <value>{ColumnName} must be a valid URL.</value>
+    <comment>Original English: {ColumnName} must be a valid URL.</comment>
+  </data>
+  <data name="Err:ValidZipCode" xml:space="preserve">
+    <value>{ColumnName} must be a valid ZIP Code.</value>
+    <comment>Original English: {ColumnName} must be a valid ZIP Code.</comment>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>en-US</value>
+    <comment>Comment Language: en-US</comment>
+  </data>
+  <data name="ListItemNoSelectionText" xml:space="preserve">
+    <value>** Please Select **</value>
+    <comment>Original English: ** Please Select **</comment>
+  </data>
+  <data name="ListItemNoSelectionText_RadioButtonList" xml:space="preserve">
+    <value>No Selection</value>
+    <comment>Original English: No Selection</comment>
+  </data>
+  <data name="MaskedPasswordText" xml:space="preserve">
+    <value>******</value>
+    <comment>Original English: ******</comment>
+  </data>
+  <data name="Translator:Company" xml:space="preserve">
+    <value>Iron Speed Inc.</value>
+  </data>
+  <data name="Translator:IronSpeedVersion" xml:space="preserve">
+    <value>9.2.0</value>
+    <comment>Example: 9.2.0</comment>
+  </data>
+  <data name="Translator:Name" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Translator:OriginalIronSpeedVersion">
+    <value>9.2.0</value>
+    <comment></comment>
+  </data>
+  <data name="Val:InvalidValue" xml:space="preserve">
+    <value>The {FieldName} value you entered is invalid.  It may be invalid for a number of reasons.  You may have entered a value that is longer than what is allowed, the value may contain invalid characters or the value might be out of range of allowed values.  Please review the value and correct it and submit the changes again.</value>
+    <comment>Original English: The {FieldName} value you entered is invalid.  It may be invalid for a number of reasons.  You may have entered a value that is longer than what is allowed, the value may contain invalid characters or the value might be out of range of allowed values.  Please review the value and correct it and submit the changes again.</comment>
+  </data>
+  <data name="Warn:MissingUrlParam" xml:space="preserve">
+    <value>Please specify a value for the following URL parameter: {ParamName}.</value>
+    <comment>Original English: Please specify a value for the following URL parameter: {ParamName}.</comment>
+  </data>
+  <data name="Warn:MissingUrlParam_Int" xml:space="preserve">
+    <value>Please specify an integer value for the following URL parameter: {ParamName}.</value>
+    <comment>Original English: Please specify an integer value for the following URL parameter: {ParamName}.</comment>
+  </data>
+  <data name="Warn:MissingUrlParam_Num" xml:space="preserve">
+    <value>Please specify a numeric value for the following URL parameter: {ParamName}.</value>
+    <comment>Original English: Please specify a numeric value for the following URL parameter: {ParamName}.</comment>
+  </data>
+  <data name="Warn:NoRecordSelected" xml:space="preserve">
+    <value>Please select a record before proceeding.</value>
+    <comment>Original English: Please select a record before proceeding.</comment>
+  </data>
+</root>

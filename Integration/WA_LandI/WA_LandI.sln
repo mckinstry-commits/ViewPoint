@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WA_LandI", "WA_LandI\WA_LandI.csproj", "{CC188FFD-A18F-43AE-BD1A-DF3D08A9FD91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WALandIASP", "WALandIASP\WALandIASP.csproj", "{2023DB2E-40D9-4089-89AC-C6C0892ACF75}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5CC15880-3EF7-43C9-8F6B-A1A29C4D696F} = {5CC15880-3EF7-43C9-8F6B-A1A29C4D696F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML_Maker", "XML_Maker\XML_Maker.csproj", "{5CC15880-3EF7-43C9-8F6B-A1A29C4D696F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpecialPasteXML", "SpecialPasteXML\SpecialPasteXML.csproj", "{CACFC4AC-C538-4CCE-83AA-FE2B2CBD334B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC188FFD-A18F-43AE-BD1A-DF3D08A9FD91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC188FFD-A18F-43AE-BD1A-DF3D08A9FD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC188FFD-A18F-43AE-BD1A-DF3D08A9FD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC188FFD-A18F-43AE-BD1A-DF3D08A9FD91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2023DB2E-40D9-4089-89AC-C6C0892ACF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2023DB2E-40D9-4089-89AC-C6C0892ACF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2023DB2E-40D9-4089-89AC-C6C0892ACF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2023DB2E-40D9-4089-89AC-C6C0892ACF75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CC15880-3EF7-43C9-8F6B-A1A29C4D696F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CC15880-3EF7-43C9-8F6B-A1A29C4D696F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CC15880-3EF7-43C9-8F6B-A1A29C4D696F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CC15880-3EF7-43C9-8F6B-A1A29C4D696F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACFC4AC-C538-4CCE-83AA-FE2B2CBD334B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACFC4AC-C538-4CCE-83AA-FE2B2CBD334B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACFC4AC-C538-4CCE-83AA-FE2B2CBD334B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACFC4AC-C538-4CCE-83AA-FE2B2CBD334B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28878F1E-7491-451F-9EE0-011DDC69C54E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://setfs01.mckinstry.com/tfs/mckinstry%20team
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SpecialPasteXML\\SpecialPasteXML.csproj
+		SccProjectName1 = SpecialPasteXML
+		SccLocalPath1 = SpecialPasteXML
+		SccProjectUniqueName2 = WA_LandI\\WA_LandI.csproj
+		SccProjectName2 = WA_LandI
+		SccLocalPath2 = WA_LandI
+		SccProjectUniqueName3 = WALandIASP\\WALandIASP.csproj
+		SccProjectName3 = WALandIASP
+		SccLocalPath3 = WALandIASP
+		SccProjectUniqueName4 = XML_Maker\\XML_Maker.csproj
+		SccProjectName4 = XML_Maker
+		SccLocalPath4 = XML_Maker
+	EndGlobalSection
+EndGlobal

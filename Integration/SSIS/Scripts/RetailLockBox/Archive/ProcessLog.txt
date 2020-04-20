@@ -1,0 +1,29 @@
+4:02:20 PM	-----------------------------------------------
+4:02:20 PM	Sunday, November 2, 2014
+4:02:20 PM	-----------------------------------------------
+4:02:20 PM	FTP Source:   sftp.retaillockbox.com
+4:02:20 PM	FTP Protocol: Sftp
+4:02:20 PM	Remote AR Upload Dir:   /VPERP/Inbound/
+4:02:20 PM	Remote AR Download Dir:   /VPERP/Outbound/AR/
+4:02:20 PM	Server:       MCKVIEWPOINT
+4:02:20 PM	Local Dir:    C:\Scripts\RetailLockBox\Download\
+4:02:20 PM	SQL Server:    VIEWPOINTAG\VIEWPOINT
+4:02:20 PM	Database:    Viewpoint
+4:02:20 PM	-----------------------------------------------
+4:02:20 PM	** AR Export "SELECT * FROM mvwRLBARExport ORDER BY Company, InvoiceNumber" (4024 records)
+4:02:20 PM		to C:\Scripts\RetailLockBox\Upload\RLB_AR_Header_Export.csv
+4:02:20 PM	
+4:02:23 PM	** Upload MCKVIEWPOINT:"C:\Scripts\RetailLockBox\Upload\RLB_AR_Header_Export.csv"
+4:02:23 PM		 -->> sftp.retaillockbox.com/VPERP/Inbound/
+4:02:24 PM	        	C:\Scripts\RetailLockBox\Upload\RLB_AR_Header_Export.csv (0 %) ... 
+4:02:24 PM	        	C:\Scripts\RetailLockBox\Upload\RLB_AR_Header_Export.csv (0 %) ... 
+4:02:24 PM	        	C:\Scripts\RetailLockBox\Upload\RLB_AR_Header_Export.csv (0 %) ... 
+4:02:24 PM	        	C:\Scripts\RetailLockBox\Upload\RLB_AR_Header_Export.csv (100 %) ... 
+4:02:24 PM	        	C:\Scripts\RetailLockBox\Upload\RLB_AR_Header_Export.csv (100 %) ... 
+4:02:25 PM	
+4:02:25 PM	** Download AR Files from sftp.retaillockbox.com:/VPERP/Outbound/AR/
+4:02:25 PM		 to MCKVIEWPOINT:C:\Scripts\RetailLockBox\Download\AR\
+4:02:28 PM	
+4:02:28 PM	
+4:02:28 PM	** Sending Email
+4:02:28 PM		To: billo@mckinstry.com

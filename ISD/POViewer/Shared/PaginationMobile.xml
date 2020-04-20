@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>PaginationMobile</Name>
+    <Type>Pagination</Type>
+    <GenerateDirectory>Shared</GenerateDirectory>
+    <Layout>Shared\PaginationMobile.html</Layout>
+    <DisplayName>PaginationMobile</DisplayName>
+    <Description>(Description)</Description>
+    <CheckSum>CUSTOMIZED</CheckSum>
+    <DeviceSize>Small</DeviceSize>
+  </Self>
+  <ComposedOf>
+    <ContainedComponent>
+      <Name>CurrentPage</Name>
+      <Type>Label</Type>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>FirstPage</Name>
+      <Type>ImageButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>onclientclick</Name>
+          <Value>return SubmitHRefOnce(this, "");</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>FirstPage</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ImageURL</Name>
+          <Value>../Images/MobileButtonFirst.png</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ToolTip</Name>
+          <Value>Btn:FirstPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>alt</Name>
+          <Value>Btn:FirstPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>Visible</Name>
+          <Value>False</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>LastPage</Name>
+      <Type>ImageButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>onclientclick</Name>
+          <Value>return SubmitHRefOnce(this, "");</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>LastPage</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ImageURL</Name>
+          <Value>../Images/MobileButtonLast.png</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ToolTip</Name>
+          <Value>Btn:LastPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>alt</Name>
+          <Value>Btn:LastPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>Visible</Name>
+          <Value>False</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>NextPage</Name>
+      <Type>ImageButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>onclientclick</Name>
+          <Value>return SubmitHRefOnce(this, "");</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>NextPage</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ImageURL</Name>
+          <Value>../Images/MobileButtonNext.png</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ToolTip</Name>
+          <Value>Btn:NextPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>alt</Name>
+          <Value>Btn:NextPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PageSizeButton</Name>
+      <Type>LinkButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>PageSize</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CssClass</Name>
+          <Value>button_link</Value>
+        </Attribute>
+        <Attribute>
+          <Name>style</Name>
+          <Value>visibility:hidden;display:none</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Txt:PageSize</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PageText</Name>
+      <Type>Text</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Txt:Page</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PreviousPage</Name>
+      <Type>ImageButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>onclientclick</Name>
+          <Value>return SubmitHRefOnce(this, "");</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>PreviousPage</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ImageURL</Name>
+          <Value>../Images/MobileButtonPrevious.png</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ToolTip</Name>
+          <Value>Btn:PreviousPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>alt</Name>
+          <Value>Btn:PreviousPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+  </ComposedOf>
+  <LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-16"?&gt;
+    &lt;LayoutDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+	
+      &lt;Layout Name="Pagination" Type="RootLayout"&gt;
+	  
+		&lt;TableAttributes&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;cellspacing&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;cellpadding&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;border&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		&lt;/TableAttributes&gt;	   
+			  
+		&lt;Prolog&gt;
+		  &lt;Value&gt;&lt;/Value&gt;
+	    &lt;/Prolog&gt;
+
+        &lt;Row&gt;
+		  &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:ImageButton Name="FirstPage" /&amp;gt;&lt;/Value&gt;
+          &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;mobilePaginationAreaFirst&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+          &lt;/CellAttributes&gt;
+
+          &lt;/Cell&gt;
+		  &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:ImageButton Name="PreviousPage" /&amp;gt;&lt;/Value&gt;
+          &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;mobilePaginationAreaPrevious&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+          &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+		  &lt;Cell&gt;
+            &lt;Value&gt;
+&amp;lt;GEN:Text name="PageText" /&amp;gt; &amp;lt;GEN:Label Name="CurrentPage" /&amp;gt;
+&lt;/Value&gt;
+			&lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;mobilePaginationAreaCurrentPage&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;nowrap&lt;/Name&gt;
+                &lt;AttributeValue&gt;nowrap&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+
+		  &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:ImageButton Name="NextPage" /&amp;gt;&lt;/Value&gt;
+          &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;mobilePaginationAreaNext&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+          &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+
+		  &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:ImageButton Name="LastPage" /&amp;gt;&lt;/Value&gt;
+          &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;mobilePaginationAreaLast&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+          &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+	  &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:LINKBUTTON NAME="PageSizeButton" /&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;mobilePaginationAreaLast&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;RowAttributes /&gt;
+
+		&lt;/Row&gt;
+
+    &lt;TableAttributes&gt;
+    &lt;Attribute&gt;
+    &lt;Name&gt;class&lt;/Name&gt;
+    &lt;AttributeValue&gt;mobileHeaderPagination&lt;/AttributeValue&gt;
+    &lt;/Attribute&gt;
+    &lt;/TableAttributes&gt;
+
+    &lt;Epilog&gt;
+		  &lt;Value&gt;&lt;/Value&gt;
+	    &lt;/Epilog&gt;
+      &lt;/Layout&gt;
+	  	  		 
+	&lt;/LayoutDefinition&gt;]]&gt;
+  </LayoutDefinition>
+</ComponentDefinition>

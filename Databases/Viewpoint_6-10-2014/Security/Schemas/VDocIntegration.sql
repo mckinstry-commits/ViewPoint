@@ -1,0 +1,3 @@
+CREATE SCHEMA [VDocIntegration]
+AUTHORIZATION [dbo]
+GO

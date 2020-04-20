@@ -1,0 +1,15 @@
+CREATE TABLE [dbo].[bEMAE]
+(
+[EMCo] [dbo].[bCompany] NOT NULL,
+[AllocCode] [tinyint] NOT NULL,
+[Equipment] [dbo].[bEquip] NOT NULL
+) ON [PRIMARY]
+ALTER TABLE [dbo].[bEMAE] ADD
+CONSTRAINT [FK_bEMAE_bEMCO_EMCo] FOREIGN KEY ([EMCo]) REFERENCES [dbo].[bEMCO] ([EMCo])
+ALTER TABLE [dbo].[bEMAE] ADD
+CONSTRAINT [FK_bEMAE_bEMAH_AllocCode] FOREIGN KEY ([EMCo], [AllocCode]) REFERENCES [dbo].[bEMAH] ([EMCo], [AllocCode]) ON DELETE CASCADE
+ALTER TABLE [dbo].[bEMAE] ADD
+CONSTRAINT [FK_bEMAE_bEMEM_Equipment] FOREIGN KEY ([EMCo], [Equipment]) REFERENCES [dbo].[bEMEM] ([EMCo], [Equipment]) ON UPDATE CASCADE
+GO
+CREATE UNIQUE CLUSTERED INDEX [biEMAE] ON [dbo].[bEMAE] ([EMCo], [AllocCode], [Equipment]) WITH (FILLFACTOR=90) ON [PRIMARY]
+GO

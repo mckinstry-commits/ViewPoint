@@ -1,0 +1,1676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ViewpointModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ViewpointModelStoreContainer">
+          <EntitySet Name="HQCO" EntityType="ViewpointModel.Store.HQCO" store:Type="Views" store:Schema="dbo" store:Name="HQCO">
+            <DefiningQuery>SELECT 
+      [HQCO].[HQCo] AS [HQCo], 
+      [HQCO].[Name] AS [Name], 
+      [HQCO].[Address] AS [Address], 
+      [HQCO].[City] AS [City], 
+      [HQCO].[State] AS [State], 
+      [HQCO].[Zip] AS [Zip], 
+      [HQCO].[Address2] AS [Address2], 
+      [HQCO].[FedTaxId] AS [FedTaxId], 
+      [HQCO].[Phone] AS [Phone], 
+      [HQCO].[Fax] AS [Fax], 
+      [HQCO].[VendorGroup] AS [VendorGroup], 
+      [HQCO].[MatlGroup] AS [MatlGroup], 
+      [HQCO].[PhaseGroup] AS [PhaseGroup], 
+      [HQCO].[CustGroup] AS [CustGroup], 
+      [HQCO].[TaxGroup] AS [TaxGroup], 
+      [HQCO].[EMGroup] AS [EMGroup], 
+      [HQCO].[Vendor] AS [Vendor], 
+      [HQCO].[Customer] AS [Customer], 
+      [HQCO].[AuditCoParams] AS [AuditCoParams], 
+      [HQCO].[AuditTax] AS [AuditTax], 
+      [HQCO].[AuditMatl] AS [AuditMatl], 
+      [HQCO].[Notes] AS [Notes], 
+      [HQCO].[UniqueAttchID] AS [UniqueAttchID], 
+      [HQCO].[ShopGroup] AS [ShopGroup], 
+      [HQCO].[STEmpId] AS [STEmpId], 
+      [HQCO].[MenuImage] AS [MenuImage], 
+      [HQCO].[KeyID] AS [KeyID], 
+      [HQCO].[Country] AS [Country], 
+      [HQCO].[DefaultCountry] AS [DefaultCountry], 
+      [HQCO].[ReportDateFormat] AS [ReportDateFormat], 
+      [HQCO].[ContactGroup] AS [ContactGroup], 
+      [HQCO].[AuditContact] AS [AuditContact], 
+      [HQCO].[DFId] AS [DFId], 
+      [HQCO].[CurrencyID] AS [CurrencyID], 
+      [HQCO].[MaskId] AS [MaskId], 
+      [HQCO].[udTESTCo] AS [udTESTCo]
+      FROM [dbo].[HQCO] AS [HQCO]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="mckvwDocLocations" EntityType="ViewpointModel.Store.mckvwDocLocations" store:Type="Views" store:Schema="dbo" store:Name="mckvwDocLocations">
+            <DefiningQuery>SELECT 
+      [mckvwDocLocations].[ID] AS [ID], 
+      [mckvwDocLocations].[Path] AS [Path], 
+      [mckvwDocLocations].[Location] AS [Location], 
+      [mckvwDocLocations].[Description] AS [Description], 
+      [mckvwDocLocations].[Filename] AS [Filename], 
+      [mckvwDocLocations].[Sequence] AS [Sequence], 
+      [mckvwDocLocations].[FilePath] AS [FilePath], 
+      [mckvwDocLocations].[Notes] AS [Notes], 
+      [mckvwDocLocations].[LocType] AS [LocType]
+      FROM [dbo].[mckvwDocLocations] AS [mckvwDocLocations]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="mckvwMasterContract" EntityType="ViewpointModel.Store.mckvwMasterContract" store:Type="Views" store:Schema="dbo" store:Name="mckvwMasterContract">
+            <DefiningQuery>SELECT 
+      [mckvwMasterContract].[Title] AS [Title], 
+      [mckvwMasterContract].[Vendor] AS [Vendor], 
+      [mckvwMasterContract].[VendorGroup] AS [VendorGroup], 
+      [mckvwMasterContract].[udInsurance] AS [udInsurance], 
+      [mckvwMasterContract].[udSpecTandC] AS [udSpecTandC], 
+      [mckvwMasterContract].[udStateTandC] AS [udStateTandC], 
+      [mckvwMasterContract].[ExecDate] AS [ExecDate], 
+      [mckvwMasterContract].[OrigDate] AS [OrigDate], 
+      [mckvwMasterContract].[udBalancing] AS [udBalancing], 
+      [mckvwMasterContract].[udConsulting] AS [udConsulting], 
+      [mckvwMasterContract].[udControls] AS [udControls], 
+      [mckvwMasterContract].[udDesign] AS [udDesign], 
+      [mckvwMasterContract].[udFacility] AS [udFacility], 
+      [mckvwMasterContract].[udProServYN] AS [udProServYN], 
+      [mckvwMasterContract].[NegotiatedModYN] AS [NegotiatedModYN], 
+      [mckvwMasterContract].[udLighting] AS [udLighting], 
+      [mckvwMasterContract].[udRoofing] AS [udRoofing], 
+      [mckvwMasterContract].[udSafety] AS [udSafety], 
+      [mckvwMasterContract].[udEEO] AS [udEEO], 
+      [mckvwMasterContract].[udInvYN] AS [udInvYN], 
+      [mckvwMasterContract].[udGTC] AS [udGTC], 
+      [mckvwMasterContract].[udCommissioningYN] AS [udCommissioningYN], 
+      [mckvwMasterContract].[udSoftProServ] AS [udSoftProServ], 
+      [mckvwMasterContract].[udSoftSupMaintYN] AS [udSoftSupMaintYN], 
+      [mckvwMasterContract].[udSoftLicense] AS [udSoftLicense], 
+      [mckvwMasterContract].[udSoftHost] AS [udSoftHost], 
+      [mckvwMasterContract].[udCostPlusYN] AS [udCostPlusYN], 
+      [mckvwMasterContract].[udFederalYN] AS [udFederalYN], 
+      [mckvwMasterContract].[udAddendum] AS [udAddendum], 
+      [mckvwMasterContract].[udmasIns] AS [udmasIns], 
+      [mckvwMasterContract].[udCertPRPrevYN] AS [udCertPRPrevYN], 
+      [mckvwMasterContract].[udPerfBondYN] AS [udPerfBondYN], 
+      [mckvwMasterContract].[udConstruction] AS [udConstruction], 
+      [mckvwMasterContract].[StateExhibit] AS [StateExhibit], 
+      [mckvwMasterContract].[VendorName] AS [VendorName], 
+      [mckvwMasterContract].[VendorAddress] AS [VendorAddress], 
+      [mckvwMasterContract].[VendorCity] AS [VendorCity], 
+      [mckvwMasterContract].[VendorState] AS [VendorState], 
+      [mckvwMasterContract].[VendorZip] AS [VendorZip], 
+      [mckvwMasterContract].[VendorContactName] AS [VendorContactName], 
+      [mckvwMasterContract].[VendorPhone] AS [VendorPhone], 
+      [mckvwMasterContract].[VendorEmail] AS [VendorEmail], 
+      [mckvwMasterContract].[OurCompany] AS [OurCompany], 
+      [mckvwMasterContract].[CompanyNumber] AS [CompanyNumber], 
+      [mckvwMasterContract].[Sample] AS [Sample], 
+      [mckvwMasterContract].[Seq] AS [Seq]
+      FROM [dbo].[mckvwMasterContract] AS [mckvwMasterContract]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="mckvwSubcontractCO" EntityType="ViewpointModel.Store.mckvwSubcontractCO" store:Type="Views" store:Schema="dbo" store:Name="mckvwSubcontractCO">
+            <DefiningQuery>SELECT 
+      [mckvwSubcontractCO].[SL] AS [SL], 
+      [mckvwSubcontractCO].[SubCO] AS [SubCO], 
+      [mckvwSubcontractCO].[Seq] AS [Seq], 
+      [mckvwSubcontractCO].[JObNumber] AS [JObNumber], 
+      [mckvwSubcontractCO].[ChangeOrderName] AS [ChangeOrderName], 
+      [mckvwSubcontractCO].[Details] AS [Details], 
+      [mckvwSubcontractCO].[Reference] AS [Reference], 
+      [mckvwSubcontractCO].[ChangeOrderDate] AS [ChangeOrderDate], 
+      [mckvwSubcontractCO].[JobName] AS [JobName], 
+      [mckvwSubcontractCO].[JobAddress] AS [JobAddress], 
+      [mckvwSubcontractCO].[JobAddress2] AS [JobAddress2], 
+      [mckvwSubcontractCO].[JobCity] AS [JobCity], 
+      [mckvwSubcontractCO].[JobState] AS [JobState], 
+      [mckvwSubcontractCO].[JobZip] AS [JobZip], 
+      [mckvwSubcontractCO].[JobPhone] AS [JobPhone], 
+      [mckvwSubcontractCO].[ContactCode] AS [ContactCode], 
+      [mckvwSubcontractCO].[ProjectMgr] AS [ProjectMgr], 
+      [mckvwSubcontractCO].[PMEmail] AS [PMEmail], 
+      [mckvwSubcontractCO].[ProjectManager] AS [ProjectManager], 
+      [mckvwSubcontractCO].[VendorName] AS [VendorName], 
+      [mckvwSubcontractCO].[VendorAddress] AS [VendorAddress], 
+      [mckvwSubcontractCO].[VendorAddress2] AS [VendorAddress2], 
+      [mckvwSubcontractCO].[VendorCity] AS [VendorCity], 
+      [mckvwSubcontractCO].[VendorState] AS [VendorState], 
+      [mckvwSubcontractCO].[VendorZip] AS [VendorZip], 
+      [mckvwSubcontractCO].[OurCompany] AS [OurCompany], 
+      [mckvwSubcontractCO].[CompanyNumber] AS [CompanyNumber], 
+      [mckvwSubcontractCO].[VendorEmail] AS [VendorEmail], 
+      [mckvwSubcontractCO].[VendorPhone] AS [VendorPhone], 
+      [mckvwSubcontractCO].[VendorContactName] AS [VendorContactName], 
+      [mckvwSubcontractCO].[SLItem] AS [SLItem], 
+      [mckvwSubcontractCO].[SLItemDescription] AS [SLItemDescription], 
+      [mckvwSubcontractCO].[SLItemType] AS [SLItemType], 
+      [mckvwSubcontractCO].[Phase] AS [Phase], 
+      [mckvwSubcontractCO].[CostType] AS [CostType], 
+      [mckvwSubcontractCO].[Units] AS [Units], 
+      [mckvwSubcontractCO].[UnitCost] AS [UnitCost], 
+      [mckvwSubcontractCO].[UM] AS [UM], 
+      [mckvwSubcontractCO].[Amount] AS [Amount], 
+      [mckvwSubcontractCO].[SLTotalOriginal] AS [SLTotalOriginal], 
+      [mckvwSubcontractCO].[AmountSubCOPrevious] AS [AmountSubCOPrevious], 
+      [mckvwSubcontractCO].[CurrentSubcontract] AS [CurrentSubcontract], 
+      [mckvwSubcontractCO].[AmountSubCOCurrent] AS [AmountSubCOCurrent], 
+      [mckvwSubcontractCO].[TotalPendingSubcontract] AS [TotalPendingSubcontract], 
+      [mckvwSubcontractCO].[CostTypeValue] AS [CostTypeValue]
+      FROM [dbo].[mckvwSubcontractCO] AS [mckvwSubcontractCO]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwMcKSubcontracts" EntityType="ViewpointModel.Store.vwMcKSubcontracts" store:Type="Views" store:Schema="dbo" store:Name="vwMcKSubcontracts">
+            <DefiningQuery>SELECT 
+      [vwMcKSubcontracts].[OurCompany] AS [OurCompany], 
+      [vwMcKSubcontracts].[CompanyAddress] AS [CompanyAddress], 
+      [vwMcKSubcontracts].[CompanyAddress2] AS [CompanyAddress2], 
+      [vwMcKSubcontracts].[CompanyCity] AS [CompanyCity], 
+      [vwMcKSubcontracts].[CompanyState] AS [CompanyState], 
+      [vwMcKSubcontracts].[CompanyPhone] AS [CompanyPhone], 
+      [vwMcKSubcontracts].[CompanyZip] AS [CompanyZip], 
+      [vwMcKSubcontracts].[VendorName] AS [VendorName], 
+      [vwMcKSubcontracts].[VendorAddress] AS [VendorAddress], 
+      [vwMcKSubcontracts].[VendorAddress2] AS [VendorAddress2], 
+      [vwMcKSubcontracts].[VendorCity] AS [VendorCity], 
+      [vwMcKSubcontracts].[VendorState] AS [VendorState], 
+      [vwMcKSubcontracts].[VendorZip] AS [VendorZip], 
+      [vwMcKSubcontracts].[PMCo] AS [PMCo], 
+      [vwMcKSubcontracts].[Project] AS [Project], 
+      [vwMcKSubcontracts].[SLCo] AS [SLCo], 
+      [vwMcKSubcontracts].[SL] AS [SL], 
+      [vwMcKSubcontracts].[JCCo] AS [JCCo], 
+      [vwMcKSubcontracts].[Job] AS [Job], 
+      [vwMcKSubcontracts].[Description] AS [Description], 
+      [vwMcKSubcontracts].[VendorGroup] AS [VendorGroup], 
+      [vwMcKSubcontracts].[Vendor] AS [Vendor], 
+      [vwMcKSubcontracts].[HoldCode] AS [HoldCode], 
+      [vwMcKSubcontracts].[PayTerms] AS [PayTerms], 
+      [vwMcKSubcontracts].[CompGroup] AS [CompGroup], 
+      [vwMcKSubcontracts].[Status] AS [Status], 
+      [vwMcKSubcontracts].[MthClosed] AS [MthClosed], 
+      [vwMcKSubcontracts].[InUseMth] AS [InUseMth], 
+      [vwMcKSubcontracts].[InUseBatchId] AS [InUseBatchId], 
+      [vwMcKSubcontracts].[Purge] AS [Purge], 
+      [vwMcKSubcontracts].[Approved] AS [Approved], 
+      [vwMcKSubcontracts].[ApprovedBy] AS [ApprovedBy], 
+      [vwMcKSubcontracts].[Notes] AS [Notes], 
+      [vwMcKSubcontracts].[AddedMth] AS [AddedMth], 
+      [vwMcKSubcontracts].[AddedBatchID] AS [AddedBatchID], 
+      [vwMcKSubcontracts].[OrigDate] AS [OrigDate], 
+      [vwMcKSubcontracts].[UniqueAttchID] AS [UniqueAttchID], 
+      [vwMcKSubcontracts].[KeyID] AS [KeyID], 
+      [vwMcKSubcontracts].[SLCloseBatchID] AS [SLCloseBatchID], 
+      [vwMcKSubcontracts].[MaxRetgOpt] AS [MaxRetgOpt], 
+      [vwMcKSubcontracts].[MaxRetgPct] AS [MaxRetgPct], 
+      [vwMcKSubcontracts].[MaxRetgAmt] AS [MaxRetgAmt], 
+      [vwMcKSubcontracts].[InclACOinMaxYN] AS [InclACOinMaxYN], 
+      [vwMcKSubcontracts].[MaxRetgDistStyle] AS [MaxRetgDistStyle], 
+      [vwMcKSubcontracts].[ApprovalRequired] AS [ApprovalRequired], 
+      [vwMcKSubcontracts].[udSLContractNo] AS [udSLContractNo], 
+      [vwMcKSubcontracts].[udSource] AS [udSource], 
+      [vwMcKSubcontracts].[udConv] AS [udConv], 
+      [vwMcKSubcontracts].[udCGCTable] AS [udCGCTable], 
+      [vwMcKSubcontracts].[udCGCTableID] AS [udCGCTableID], 
+      [vwMcKSubcontracts].[udSLDrawings] AS [udSLDrawings], 
+      [vwMcKSubcontracts].[udSafety] AS [udSafety], 
+      [vwMcKSubcontracts].[udScheduleOVal] AS [udScheduleOVal], 
+      [vwMcKSubcontracts].[udProjSchedule] AS [udProjSchedule], 
+      [vwMcKSubcontracts].[udBalancing] AS [udBalancing], 
+      [vwMcKSubcontracts].[udConsulting] AS [udConsulting], 
+      [vwMcKSubcontracts].[udFacility] AS [udFacility], 
+      [vwMcKSubcontracts].[udScope] AS [udScope], 
+      [vwMcKSubcontracts].[udControls] AS [udControls], 
+      [vwMcKSubcontracts].[udDesignServ] AS [udDesignServ], 
+      [vwMcKSubcontracts].[udProServTesting] AS [udProServTesting], 
+      [vwMcKSubcontracts].[udSoftProServ] AS [udSoftProServ], 
+      [vwMcKSubcontracts].[udSoftLicense] AS [udSoftLicense], 
+      [vwMcKSubcontracts].[udSoftSupMaintYN] AS [udSoftSupMaintYN], 
+      [vwMcKSubcontracts].[udSoftHost] AS [udSoftHost], 
+      [vwMcKSubcontracts].[udWorkOrderYN] AS [udWorkOrderYN], 
+      [vwMcKSubcontracts].[udFederalYN] AS [udFederalYN], 
+      [vwMcKSubcontracts].[udPerfBondYN] AS [udPerfBondYN], 
+      [vwMcKSubcontracts].[udCostPlusYN] AS [udCostPlusYN], 
+      [vwMcKSubcontracts].[udNegMods] AS [udNegMods], 
+      [vwMcKSubcontracts].[udSubType] AS [udSubType], 
+      [vwMcKSubcontracts].[udGTC] AS [udGTC], 
+      [vwMcKSubcontracts].[udInvYN] AS [udInvYN], 
+      [vwMcKSubcontracts].[udEEO] AS [udEEO], 
+      [vwMcKSubcontracts].[udMastSub] AS [udMastSub], 
+      [vwMcKSubcontracts].[udInsurance] AS [udInsurance], 
+      [vwMcKSubcontracts].[udCommissioningYN] AS [udCommissioningYN], 
+      [vwMcKSubcontracts].[udRoofingYN] AS [udRoofingYN], 
+      [vwMcKSubcontracts].[udLighting] AS [udLighting], 
+      [vwMcKSubcontracts].[udAddendum] AS [udAddendum], 
+      [vwMcKSubcontracts].[udMasIns] AS [udMasIns], 
+      [vwMcKSubcontracts].[udCertPRPrevYN] AS [udCertPRPrevYN], 
+      [vwMcKSubcontracts].[udConstruction] AS [udConstruction], 
+      [vwMcKSubcontracts].[DocType] AS [DocType], 
+      [vwMcKSubcontracts].[udProServYN] AS [udProServYN], 
+      [vwMcKSubcontracts].[udBillType] AS [udBillType], 
+      [vwMcKSubcontracts].[udSbstntlComp] AS [udSbstntlComp], 
+      [vwMcKSubcontracts].[JobName] AS [JobName], 
+      [vwMcKSubcontracts].[JobAddress] AS [JobAddress], 
+      [vwMcKSubcontracts].[JobAddress2] AS [JobAddress2], 
+      [vwMcKSubcontracts].[JobCity] AS [JobCity], 
+      [vwMcKSubcontracts].[JobState] AS [JobState], 
+      [vwMcKSubcontracts].[JobZip] AS [JobZip], 
+      [vwMcKSubcontracts].[JobPhone] AS [JobPhone], 
+      [vwMcKSubcontracts].[ContactCode] AS [ContactCode], 
+      [vwMcKSubcontracts].[ProjectMgr] AS [ProjectMgr], 
+      [vwMcKSubcontracts].[PMEmail] AS [PMEmail], 
+      [vwMcKSubcontracts].[ProjectManager] AS [ProjectManager], 
+      [vwMcKSubcontracts].[VendorEmail] AS [VendorEmail], 
+      [vwMcKSubcontracts].[VendorPhone] AS [VendorPhone], 
+      [vwMcKSubcontracts].[SLTotalOrig] AS [SLTotalOrig], 
+      [vwMcKSubcontracts].[VendorContactName] AS [VendorContactName], 
+      [vwMcKSubcontracts].[MaxRetgByPct] AS [MaxRetgByPct], 
+      [vwMcKSubcontracts].[StateExhibit] AS [StateExhibit], 
+      [vwMcKSubcontracts].[ExecuteDate] AS [ExecuteDate]
+      FROM [dbo].[vwMcKSubcontracts] AS [vwMcKSubcontracts]</DefiningQuery>
+          </EntitySet>
+			<EntitySet Name="PRCC" EntityType="ViewpointModel.Store.PRCC" store:Type="Tables" Schema="dbo" >
+			</EntitySet>
+			<EntitySet Name="PRCD" EntityType="ViewpointModel.Store.PRCD" store:Type="Tables" Schema="dbo" >
+			</EntitySet>
+			<EntitySet Name="PRCF" EntityType="ViewpointModel.Store.PRCF" store:Type="Tables" Schema="dbo" >
+			</EntitySet>
+			<EntitySet Name="PRCP" EntityType="ViewpointModel.Store.PRCP" store:Type="Tables" Schema="dbo" >
+			</EntitySet>
+			<EntitySet Name="PRDL" EntityType="ViewpointModel.Store.PRDL" store:Type="Tables" Schema="dbo" >
+			</EntitySet>
+          <EntitySet Name="mckVwPRCM" EntityType="ViewpointModel.Store.mckVwPRCM" store:Type="Views" store:Schema="dbo" store:Name="mckVwPRCM">
+            <DefiningQuery>SELECT 
+      [mckVwPRCM].[PRCo] AS [PRCo], 
+      [mckVwPRCM].[Craft] AS [Craft], 
+      [mckVwPRCM].[Description] AS [Description], 
+      [mckVwPRCM].[VendorGroup] AS [VendorGroup]
+      FROM [dbo].[mckVwPRCM] AS [mckVwPRCM]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.HQCO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="HQCO">
+          <Key>
+            <PropertyRef Name="HQCo" />
+            <PropertyRef Name="AuditCoParams" />
+            <PropertyRef Name="AuditTax" />
+            <PropertyRef Name="AuditMatl" />
+            <PropertyRef Name="KeyID" />
+            <PropertyRef Name="DefaultCountry" />
+            <PropertyRef Name="ReportDateFormat" />
+            <PropertyRef Name="AuditContact" />
+          </Key>
+          <Property Name="HQCo" Type="tinyint" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="60" />
+          <Property Name="Address" Type="varchar" MaxLength="60" />
+          <Property Name="City" Type="varchar" MaxLength="30" />
+          <Property Name="State" Type="varchar" MaxLength="4" />
+          <Property Name="Zip" Type="varchar" MaxLength="12" />
+          <Property Name="Address2" Type="varchar" MaxLength="60" />
+          <Property Name="FedTaxId" Type="varchar" MaxLength="20" />
+          <Property Name="Phone" Type="varchar" MaxLength="20" />
+          <Property Name="Fax" Type="varchar" MaxLength="20" />
+          <Property Name="VendorGroup" Type="tinyint" />
+          <Property Name="MatlGroup" Type="tinyint" />
+          <Property Name="PhaseGroup" Type="tinyint" />
+          <Property Name="CustGroup" Type="tinyint" />
+          <Property Name="TaxGroup" Type="tinyint" />
+          <Property Name="EMGroup" Type="tinyint" />
+          <Property Name="Vendor" Type="int" />
+          <Property Name="Customer" Type="int" />
+          <Property Name="AuditCoParams" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="AuditTax" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="AuditMatl" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="ShopGroup" Type="tinyint" />
+          <Property Name="STEmpId" Type="varchar" MaxLength="30" />
+          <Property Name="MenuImage" Type="varchar" MaxLength="256" />
+          <Property Name="KeyID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Country" Type="char" MaxLength="2" />
+          <Property Name="DefaultCountry" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="ReportDateFormat" Type="tinyint" Nullable="false" />
+          <Property Name="ContactGroup" Type="tinyint" />
+          <Property Name="AuditContact" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="DFId" Type="int" />
+          <Property Name="CurrencyID" Type="int" />
+          <Property Name="MaskId" Type="int" />
+          <Property Name="udTESTCo" Type="char" MaxLength="1" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.mckvwDocLocations' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="mckvwDocLocations">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Location" />
+            <PropertyRef Name="LocType" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Path" Type="varchar" MaxLength="10" />
+          <Property Name="Location" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="Description" Type="varchar" MaxLength="60" />
+          <Property Name="Filename" Type="varchar" MaxLength="255" />
+          <Property Name="Sequence" Type="int" />
+          <Property Name="FilePath" Type="varchar" MaxLength="132" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="LocType" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.mckvwMasterContract' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="mckvwMasterContract">
+          <Key>
+            <PropertyRef Name="Vendor" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="udSpecTandC" />
+            <PropertyRef Name="udStateTandC" />
+            <PropertyRef Name="udBalancing" />
+            <PropertyRef Name="udConsulting" />
+            <PropertyRef Name="udControls" />
+            <PropertyRef Name="udDesign" />
+            <PropertyRef Name="udFacility" />
+            <PropertyRef Name="udProServYN" />
+            <PropertyRef Name="NegotiatedModYN" />
+            <PropertyRef Name="udLighting" />
+            <PropertyRef Name="udRoofing" />
+            <PropertyRef Name="udSafety" />
+            <PropertyRef Name="udEEO" />
+            <PropertyRef Name="udInvYN" />
+            <PropertyRef Name="udCommissioningYN" />
+            <PropertyRef Name="udSoftProServ" />
+            <PropertyRef Name="udSoftSupMaintYN" />
+            <PropertyRef Name="udSoftLicense" />
+            <PropertyRef Name="udSoftHost" />
+            <PropertyRef Name="udCostPlusYN" />
+            <PropertyRef Name="udFederalYN" />
+            <PropertyRef Name="udAddendum" />
+            <PropertyRef Name="udCertPRPrevYN" />
+            <PropertyRef Name="udPerfBondYN" />
+            <PropertyRef Name="udConstruction" />
+            <PropertyRef Name="Seq" />
+            <PropertyRef Name="StateExhibit" />
+          </Key>
+          <Property Name="Title" Type="varchar" MaxLength="30" />
+          <Property Name="Vendor" Type="int" Nullable="false" />
+          <Property Name="VendorGroup" Type="tinyint" Nullable="false" />
+          <Property Name="udInsurance" Type="varchar" MaxLength="30" />
+          <Property Name="udSpecTandC" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udStateTandC" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="ExecDate" Type="smalldatetime" />
+          <Property Name="OrigDate" Type="smalldatetime" />
+          <Property Name="udBalancing" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udConsulting" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udControls" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udDesign" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udFacility" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udProServYN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="NegotiatedModYN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udLighting" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udRoofing" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udSafety" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udEEO" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udInvYN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udGTC" Type="varchar" MaxLength="30" />
+          <Property Name="udCommissioningYN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udSoftProServ" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udSoftSupMaintYN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udSoftLicense" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udSoftHost" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udCostPlusYN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udFederalYN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udAddendum" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udmasIns" Type="varchar" MaxLength="30" />
+          <Property Name="udCertPRPrevYN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udPerfBondYN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udConstruction" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="StateExhibit" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="VendorName" Type="varchar" MaxLength="60" />
+          <Property Name="VendorAddress" Type="varchar" MaxLength="60" />
+          <Property Name="VendorCity" Type="varchar" MaxLength="30" />
+          <Property Name="VendorState" Type="varchar" MaxLength="4" />
+          <Property Name="VendorZip" Type="varchar" MaxLength="12" />
+          <Property Name="VendorContactName" Type="varchar" MaxLength="30" />
+          <Property Name="VendorPhone" Type="varchar" MaxLength="20" />
+          <Property Name="VendorEmail" Type="varchar" MaxLength="60" />
+          <Property Name="OurCompany" Type="varchar" MaxLength="60" />
+          <Property Name="CompanyNumber" Type="tinyint" />
+          <Property Name="Sample" Type="varchar" MaxLength="1" />
+          <Property Name="Seq" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.mckvwSubcontractCO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="mckvwSubcontractCO">
+          <Key>
+            <PropertyRef Name="SL" />
+            <PropertyRef Name="SubCO" />
+            <PropertyRef Name="Seq" />
+            <PropertyRef Name="JObNumber" />
+            <PropertyRef Name="Units" />
+            <PropertyRef Name="UM" />
+          </Key>
+          <Property Name="SL" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="SubCO" Type="smallint" Nullable="false" />
+          <Property Name="Seq" Type="int" Nullable="false" />
+          <Property Name="JObNumber" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="ChangeOrderName" Type="varchar" MaxLength="60" />
+          <Property Name="Details" Type="varchar(max)" />
+          <Property Name="Reference" Type="varchar" MaxLength="30" />
+          <Property Name="ChangeOrderDate" Type="nvarchar" />
+          <Property Name="JobName" Type="varchar" MaxLength="60" />
+          <Property Name="JobAddress" Type="varchar" MaxLength="60" />
+          <Property Name="JobAddress2" Type="varchar" MaxLength="60" />
+          <Property Name="JobCity" Type="varchar" MaxLength="30" />
+          <Property Name="JobState" Type="varchar" MaxLength="4" />
+          <Property Name="JobZip" Type="varchar" MaxLength="12" />
+          <Property Name="JobPhone" Type="varchar" MaxLength="20" />
+          <Property Name="ContactCode" Type="int" />
+          <Property Name="ProjectMgr" Type="int" />
+          <Property Name="PMEmail" Type="varchar" MaxLength="60" />
+          <Property Name="ProjectManager" Type="varchar" MaxLength="30" />
+          <Property Name="VendorName" Type="varchar" MaxLength="60" />
+          <Property Name="VendorAddress" Type="varchar" MaxLength="60" />
+          <Property Name="VendorAddress2" Type="varchar" MaxLength="60" />
+          <Property Name="VendorCity" Type="varchar" MaxLength="30" />
+          <Property Name="VendorState" Type="varchar" MaxLength="4" />
+          <Property Name="VendorZip" Type="varchar" MaxLength="12" />
+          <Property Name="OurCompany" Type="varchar" MaxLength="60" />
+          <Property Name="CompanyNumber" Type="tinyint" />
+          <Property Name="VendorEmail" Type="varchar" MaxLength="60" />
+          <Property Name="VendorPhone" Type="varchar" MaxLength="20" />
+          <Property Name="VendorContactName" Type="varchar" MaxLength="61" />
+          <Property Name="SLItem" Type="smallint" />
+          <Property Name="SLItemDescription" Type="varchar" MaxLength="60" />
+          <Property Name="SLItemType" Type="tinyint" />
+          <Property Name="Phase" Type="varchar" MaxLength="20" />
+          <Property Name="CostType" Type="tinyint" />
+          <Property Name="Units" Type="numeric" Nullable="false" Precision="12" Scale="3" />
+          <Property Name="UnitCost" Type="nvarchar" />
+          <Property Name="UM" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Amount" Type="nvarchar" />
+          <Property Name="SLTotalOriginal" Type="nvarchar" />
+          <Property Name="AmountSubCOPrevious" Type="nvarchar" />
+          <Property Name="CurrentSubcontract" Type="nvarchar" />
+          <Property Name="AmountSubCOCurrent" Type="nvarchar" />
+          <Property Name="TotalPendingSubcontract" Type="nvarchar" />
+          <Property Name="CostTypeValue" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.vwMcKSubcontracts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwMcKSubcontracts">
+          <Key>
+            <PropertyRef Name="PMCo" />
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="SLCo" />
+            <PropertyRef Name="SL" />
+            <PropertyRef Name="JCCo" />
+            <PropertyRef Name="Job" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="Vendor" />
+            <PropertyRef Name="Status" />
+            <PropertyRef Name="Purge" />
+            <PropertyRef Name="KeyID" />
+            <PropertyRef Name="MaxRetgOpt" />
+            <PropertyRef Name="MaxRetgAmt" />
+            <PropertyRef Name="InclACOinMaxYN" />
+            <PropertyRef Name="MaxRetgDistStyle" />
+            <PropertyRef Name="ApprovalRequired" />
+            <PropertyRef Name="udSubType" />
+            <PropertyRef Name="MaxRetgPct" />
+          </Key>
+          <Property Name="OurCompany" Type="varchar" MaxLength="60" />
+          <Property Name="CompanyAddress" Type="varchar" MaxLength="60" />
+          <Property Name="CompanyAddress2" Type="varchar" MaxLength="60" />
+          <Property Name="CompanyCity" Type="varchar" MaxLength="30" />
+          <Property Name="CompanyState" Type="varchar" MaxLength="4" />
+          <Property Name="CompanyPhone" Type="varchar" MaxLength="20" />
+          <Property Name="CompanyZip" Type="varchar" MaxLength="12" />
+          <Property Name="VendorName" Type="varchar" MaxLength="60" />
+          <Property Name="VendorAddress" Type="varchar" MaxLength="60" />
+          <Property Name="VendorAddress2" Type="varchar" MaxLength="60" />
+          <Property Name="VendorCity" Type="varchar" MaxLength="30" />
+          <Property Name="VendorState" Type="varchar" MaxLength="4" />
+          <Property Name="VendorZip" Type="varchar" MaxLength="12" />
+          <Property Name="PMCo" Type="tinyint" Nullable="false" />
+          <Property Name="Project" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="SLCo" Type="tinyint" Nullable="false" />
+          <Property Name="SL" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="JCCo" Type="tinyint" Nullable="false" />
+          <Property Name="Job" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Description" Type="varchar" MaxLength="60" />
+          <Property Name="VendorGroup" Type="tinyint" Nullable="false" />
+          <Property Name="Vendor" Type="int" Nullable="false" />
+          <Property Name="HoldCode" Type="varchar" MaxLength="10" />
+          <Property Name="PayTerms" Type="varchar" MaxLength="10" />
+          <Property Name="CompGroup" Type="varchar" MaxLength="10" />
+          <Property Name="Status" Type="tinyint" Nullable="false" />
+          <Property Name="MthClosed" Type="smalldatetime" />
+          <Property Name="InUseMth" Type="smalldatetime" />
+          <Property Name="InUseBatchId" Type="int" />
+          <Property Name="Purge" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="Approved" Type="char" MaxLength="1" />
+          <Property Name="ApprovedBy" Type="varchar" MaxLength="128" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="AddedMth" Type="smalldatetime" />
+          <Property Name="AddedBatchID" Type="int" />
+          <Property Name="OrigDate" Type="smalldatetime" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="KeyID" Type="bigint" Nullable="false" />
+          <Property Name="SLCloseBatchID" Type="int" />
+          <Property Name="MaxRetgOpt" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="MaxRetgPct" Type="nvarchar" Nullable="false" />
+          <Property Name="MaxRetgAmt" Type="numeric" Nullable="false" Precision="12" Scale="2" />
+          <Property Name="InclACOinMaxYN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="MaxRetgDistStyle" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="ApprovalRequired" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="udSLContractNo" Type="varchar" MaxLength="15" />
+          <Property Name="udSource" Type="varchar" MaxLength="30" />
+          <Property Name="udConv" Type="varchar" MaxLength="1" />
+          <Property Name="udCGCTable" Type="varchar" MaxLength="10" />
+          <Property Name="udCGCTableID" Type="decimal" Precision="12" />
+          <Property Name="udSLDrawings" Type="char" MaxLength="1" />
+          <Property Name="udSafety" Type="char" MaxLength="1" />
+          <Property Name="udScheduleOVal" Type="char" MaxLength="1" />
+          <Property Name="udProjSchedule" Type="char" MaxLength="1" />
+          <Property Name="udBalancing" Type="char" MaxLength="1" />
+          <Property Name="udConsulting" Type="char" MaxLength="1" />
+          <Property Name="udFacility" Type="char" MaxLength="1" />
+          <Property Name="udScope" Type="varchar(max)" />
+          <Property Name="udControls" Type="char" MaxLength="1" />
+          <Property Name="udDesignServ" Type="char" MaxLength="1" />
+          <Property Name="udProServTesting" Type="char" MaxLength="1" />
+          <Property Name="udSoftProServ" Type="char" MaxLength="1" />
+          <Property Name="udSoftLicense" Type="char" MaxLength="1" />
+          <Property Name="udSoftSupMaintYN" Type="char" MaxLength="1" />
+          <Property Name="udSoftHost" Type="char" MaxLength="1" />
+          <Property Name="udWorkOrderYN" Type="char" MaxLength="1" />
+          <Property Name="udFederalYN" Type="char" MaxLength="1" />
+          <Property Name="udPerfBondYN" Type="char" MaxLength="1" />
+          <Property Name="udCostPlusYN" Type="char" MaxLength="1" />
+          <Property Name="udNegMods" Type="char" MaxLength="1" />
+          <Property Name="udSubType" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="udGTC" Type="varchar" MaxLength="30" />
+          <Property Name="udInvYN" Type="char" MaxLength="1" />
+          <Property Name="udEEO" Type="char" MaxLength="1" />
+          <Property Name="udMastSub" Type="int" />
+          <Property Name="udInsurance" Type="varchar" MaxLength="5" />
+          <Property Name="udCommissioningYN" Type="char" MaxLength="1" />
+          <Property Name="udRoofingYN" Type="char" MaxLength="1" />
+          <Property Name="udLighting" Type="char" MaxLength="1" />
+          <Property Name="udAddendum" Type="char" MaxLength="1" />
+          <Property Name="udMasIns" Type="varchar" MaxLength="30" />
+          <Property Name="udCertPRPrevYN" Type="char" MaxLength="1" />
+          <Property Name="udConstruction" Type="char" MaxLength="1" />
+          <Property Name="DocType" Type="varchar" MaxLength="10" />
+          <Property Name="udProServYN" Type="char" MaxLength="1" />
+          <Property Name="udBillType" Type="varchar" MaxLength="60" />
+          <Property Name="udSbstntlComp" Type="smalldatetime" />
+          <Property Name="JobName" Type="varchar" MaxLength="60" />
+          <Property Name="JobAddress" Type="varchar" MaxLength="60" />
+          <Property Name="JobAddress2" Type="varchar" MaxLength="60" />
+          <Property Name="JobCity" Type="varchar" MaxLength="30" />
+          <Property Name="JobState" Type="varchar" MaxLength="4" />
+          <Property Name="JobZip" Type="varchar" MaxLength="12" />
+          <Property Name="JobPhone" Type="varchar" MaxLength="20" />
+          <Property Name="ContactCode" Type="int" />
+          <Property Name="ProjectMgr" Type="int" />
+          <Property Name="PMEmail" Type="varchar" MaxLength="60" />
+          <Property Name="ProjectManager" Type="varchar" MaxLength="30" />
+          <Property Name="VendorEmail" Type="varchar" MaxLength="60" />
+          <Property Name="VendorPhone" Type="varchar" MaxLength="20" />
+          <Property Name="SLTotalOrig" Type="nvarchar" />
+          <Property Name="VendorContactName" Type="varchar" MaxLength="61" />
+          <Property Name="MaxRetgByPct" Type="numeric" Scale="2" />
+          <Property Name="StateExhibit" Type="varchar" MaxLength="4" />
+          <Property Name="ExecuteDate" Type="nvarchar" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.mckVwPRCM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+		<EntityType Name="PRCC">
+			<Key>
+				<PropertyRef Name="PRCo" />
+				<PropertyRef Name="Craft" />
+				<PropertyRef Name="Class" />
+			</Key>
+			<Property Name="PRCo" Type="tinyint" Nullable="false" />
+			<Property Name="Craft" Type="varchar" Nullable="false" MaxLength="10" />
+			<Property Name="Class" Type="varchar" Nullable="false" MaxLength="10" />
+			<Property Name="Description" Type="varchar" MaxLength="30" />
+			<Property Name="EEOClass" Type="char" MaxLength="1" />
+			<Property Name="OldCapLimit" Type="numeric" Nullable="false" Precision="16" Scale="5" />
+			<Property Name="NewCapLimit" Type="numeric" Nullable="false" Precision="16" Scale="5" />
+			<Property Name="Notes" Type="varchar(max)" />
+			<Property Name="UniqueAttchID" Type="uniqueidentifier" />
+			<Property Name="WghtAvgOT" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="KeyID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+			<Property Name="SuperWeeklyMin" Type="numeric" Nullable="false" Precision="12" Scale="2" />
+			<Property Name="udShopYN" Type="char" MaxLength="1" />
+		</EntityType>
+		<!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.PRCD' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+		<EntityType Name="PRCD">
+			<Key>
+				<PropertyRef Name="PRCo" />
+				<PropertyRef Name="Craft" />
+				<PropertyRef Name="Class" />
+				<PropertyRef Name="DLCode" />
+				<PropertyRef Name="Factor" />
+
+
+
+			</Key>
+			<Property Name="PRCo" Type="tinyint" Nullable="false" />
+			<Property Name="Craft" Type="varchar" Nullable="false" MaxLength="10" />
+			<Property Name="Class" Type="varchar" Nullable="false" MaxLength="10" />
+			<Property Name="DLCode" Type="smallint" Nullable="false" />
+			<Property Name="Factor" Type="numeric" Nullable="false" Precision="8" Scale="6" />
+			<Property Name="OldRate" Type="numeric" Nullable="false" Precision="16" Scale="5" />
+			<Property Name="NewRate" Type="numeric" Nullable="false" Precision="16" Scale="5" />
+			<Property Name="UniqueAttchID" Type="uniqueidentifier" />
+			<Property Name="KeyID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+		</EntityType>
+		<!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.PRCF' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+		<EntityType Name="PRCF">
+			<Key>
+				<PropertyRef Name="PRCo" />
+				<PropertyRef Name="Craft" />
+				<PropertyRef Name="Class" />
+				<PropertyRef Name="EarnCode" />
+				<PropertyRef Name="Factor" />
+
+
+
+			</Key>
+			<Property Name="PRCo" Type="tinyint" Nullable="false" />
+			<Property Name="Craft" Type="varchar" Nullable="false" MaxLength="10" />
+			<Property Name="Class" Type="varchar" Nullable="false" MaxLength="10" />
+			<Property Name="EarnCode" Type="smallint" Nullable="false" />
+			<Property Name="Factor" Type="numeric" Nullable="false" Precision="8" Scale="6" />
+			<Property Name="OldRate" Type="numeric" Nullable="false" Precision="16" Scale="5" />
+			<Property Name="NewRate" Type="numeric" Nullable="false" Precision="16" Scale="5" />
+			<Property Name="UniqueAttchID" Type="uniqueidentifier" />
+			<Property Name="KeyID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+		</EntityType>
+		<!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.PRCP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+		<EntityType Name="PRCP">
+			<Key>
+				<PropertyRef Name="PRCo" />
+				<PropertyRef Name="Craft" />
+				<PropertyRef Name="Class" />
+				<PropertyRef Name="Shift" />
+
+
+
+			</Key>
+			<Property Name="PRCo" Type="tinyint" Nullable="false" />
+			<Property Name="Craft" Type="varchar" Nullable="false" MaxLength="10" />
+			<Property Name="Class" Type="varchar" Nullable="false" MaxLength="10" />
+			<Property Name="Shift" Type="tinyint" Nullable="false" />
+			<Property Name="OldRate" Type="numeric" Nullable="false" Precision="16" Scale="5" />
+			<Property Name="NewRate" Type="numeric" Nullable="false" Precision="16" Scale="5" />
+			<Property Name="UniqueAttchID" Type="uniqueidentifier" />
+			<Property Name="KeyID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+		</EntityType>
+		<!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.PRDL' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+		<EntityType Name="PRDL">
+			<Key>
+				<PropertyRef Name="PRCo" />
+				<PropertyRef Name="DLCode" />
+				<PropertyRef Name="DLType" />
+				<PropertyRef Name="Method" />
+				<PropertyRef Name="RateAmt1" />
+				<PropertyRef Name="RateAmt2" />
+				<PropertyRef Name="SeqOneOnly" />
+				<PropertyRef Name="YTDCorrect" />
+				<PropertyRef Name="BonusOverride" />
+				<PropertyRef Name="LimitBasis" />
+				<PropertyRef Name="LimitAmt" />
+				<PropertyRef Name="AutoAP" />
+				<PropertyRef Name="AccumSubjAmts" />
+				<PropertyRef Name="SelectPurge" />
+				<PropertyRef Name="DetOnCert" />
+				<PropertyRef Name="GLCo" />
+				<PropertyRef Name="GLAcct" />
+				<PropertyRef Name="CalcCategory" />
+				<PropertyRef Name="RndToDollar" />
+				<PropertyRef Name="IncldW2" />
+				<PropertyRef Name="KeyID" />
+				<PropertyRef Name="PreTax" />
+				<PropertyRef Name="PreTaxCatchUpYN" />
+				<PropertyRef Name="SubjToArrearsPayback" />
+				<PropertyRef Name="RptArrearsThreshold" />
+				<PropertyRef Name="ThresholdFactor" />
+				<PropertyRef Name="ThresholdAmount" />
+				<PropertyRef Name="PaybackPerPayPeriod" />
+				<PropertyRef Name="PaybackFactor" />
+				<PropertyRef Name="PaybackAmount" />
+				<PropertyRef Name="ROEInsurableYN" />
+				<PropertyRef Name="SuperWeeklyMin" />
+			</Key>
+			<Property Name="PRCo" Type="tinyint" Nullable="false" />
+			<Property Name="DLCode" Type="smallint" Nullable="false" />
+			<Property Name="Description" Type="varchar" MaxLength="30" />
+			<Property Name="DLType" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="LiabType" Type="smallint" />
+			<Property Name="Method" Type="varchar" Nullable="false" MaxLength="10" />
+			<Property Name="Routine" Type="varchar" MaxLength="10" />
+			<Property Name="DednCode" Type="smallint" />
+			<Property Name="GarnGroup" Type="tinyint" />
+			<Property Name="RateAmt1" Type="numeric" Nullable="false" Precision="16" Scale="5" />
+			<Property Name="RateAmt2" Type="numeric" Nullable="false" Precision="16" Scale="5" />
+			<Property Name="SeqOneOnly" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="YTDCorrect" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="BonusOverride" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="BonusRate" Type="numeric" Precision="8" Scale="6" />
+			<Property Name="LimitBasis" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="LimitAmt" Type="numeric" Nullable="false" Precision="12" Scale="2" />
+			<Property Name="LimitPeriod" Type="char" MaxLength="1" />
+			<Property Name="LimitCorrect" Type="char" MaxLength="1" />
+			<Property Name="AutoAP" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="VendorGroup" Type="tinyint" />
+			<Property Name="Vendor" Type="int" />
+			<Property Name="TransByEmployee" Type="char" MaxLength="1" />
+			<Property Name="PayType" Type="tinyint" />
+			<Property Name="Frequency" Type="varchar" MaxLength="10" />
+			<Property Name="AccumSubjAmts" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="SelectPurge" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="DetOnCert" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="GLCo" Type="tinyint" Nullable="false" />
+			<Property Name="GLAcct" Type="char" Nullable="false" MaxLength="20" />
+			<Property Name="Notes" Type="varchar(max)" />
+			<Property Name="UniqueAttchID" Type="uniqueidentifier" />
+			<Property Name="CalcCategory" Type="varchar" Nullable="false" MaxLength="1" />
+			<Property Name="FedType" Type="varchar" MaxLength="1" />
+			<Property Name="RndToDollar" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="IncldW2" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="W2State" Type="varchar" MaxLength="4" />
+			<Property Name="W2Local" Type="varchar" MaxLength="10" />
+			<Property Name="TaxType" Type="char" MaxLength="1" />
+			<Property Name="LimitRate" Type="numeric" Precision="8" Scale="6" />
+			<Property Name="KeyID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+			<Property Name="PreTax" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="PreTaxGroup" Type="tinyint" />
+			<Property Name="ATOCategory" Type="varchar" MaxLength="4" />
+			<Property Name="SchemeID" Type="smallint" />
+			<Property Name="PreTaxCatchUpYN" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="SubjToArrearsPayback" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="RptArrearsThreshold" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="ThresholdFactor" Type="numeric" Nullable="false" Precision="8" Scale="6" />
+			<Property Name="ThresholdAmount" Type="numeric" Nullable="false" Precision="12" Scale="2" />
+			<Property Name="PaybackPerPayPeriod" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="PaybackFactor" Type="numeric" Nullable="false" Precision="8" Scale="6" />
+			<Property Name="PaybackAmount" Type="numeric" Nullable="false" Precision="12" Scale="2" />
+			<Property Name="ROEInsurableYN" Type="char" Nullable="false" MaxLength="1" />
+			<Property Name="SuperWeeklyMin" Type="numeric" Nullable="false" Precision="12" Scale="2" />
+		</EntityType>
+		<!--Errors Found During Generation:
+      warning 6002: The table/view 'Viewpoint.dbo.vwMcKSubcontracts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="mckVwPRCM">
+          <Key>
+            <PropertyRef Name="PRCo" />
+            <PropertyRef Name="Craft" />
+          </Key>
+          <Property Name="PRCo" Type="tinyint" Nullable="false" />
+          <Property Name="Craft" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Description" Type="varchar" MaxLength="30" />
+          <Property Name="VendorGroup" Type="tinyint" />
+        </EntityType>
+        <Function Name="mckspPRDL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="mckspPREC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ViewpointModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ViewpointEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DocLocations" EntityType="ViewpointModel.DocLocation" />
+          <EntitySet Name="Companies" EntityType="ViewpointModel.Company" />
+          <EntitySet Name="MasterContracts" EntityType="ViewpointModel.MasterContract" />
+          <EntitySet Name="SubcontractCOes" EntityType="ViewpointModel.SubcontractCO" />
+          <FunctionImport Name="GetMasterDeductions" ReturnType="Collection(ViewpointModel.MasterDeduction)" />
+          <FunctionImport Name="GetMasterEarnings" ReturnType="Collection(ViewpointModel.MasterEarning)" />
+          <EntitySet Name="Deductions" EntityType="ViewpointModel.Deduction" />
+          <EntitySet Name="Earnings" EntityType="ViewpointModel.Earning" />
+          <EntitySet Name="ShiftRates" EntityType="ViewpointModel.ShiftRate" />
+          <EntitySet Name="MasterCrafts" EntityType="ViewpointModel.MasterCraft" />
+          <EntitySet Name="CraftInfoes" EntityType="ViewpointModel.CraftInfo" />
+          <EntitySet Name="Subcontracts" EntityType="ViewpointModel.Subcontract" />
+        </EntityContainer>
+        <EntityType Name="DocLocation">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Location" />
+            <PropertyRef Name="LocType" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Path" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Location" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Filename" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Sequence" />
+          <Property Type="String" Name="FilePath" MaxLength="132" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LocType" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="HQCo1" />
+            <PropertyRef Name="AuditCoParams" />
+            <PropertyRef Name="AuditTax" />
+            <PropertyRef Name="AuditMatl" />
+            <PropertyRef Name="KeyID" />
+            <PropertyRef Name="DefaultCountry" />
+            <PropertyRef Name="ReportDateFormat" />
+            <PropertyRef Name="AuditContact" />
+          </Key>
+          <Property Type="Byte" Name="HQCo1" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Address" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="City" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="State" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Zip" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Address2" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FedTaxId" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Phone" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Fax" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="VendorGroup" />
+          <Property Type="Byte" Name="MatlGroup" />
+          <Property Type="Byte" Name="PhaseGroup" />
+          <Property Type="Byte" Name="CustGroup" />
+          <Property Type="Byte" Name="TaxGroup" />
+          <Property Type="Byte" Name="EMGroup" />
+          <Property Type="Int32" Name="Vendor" />
+          <Property Type="Int32" Name="Customer" />
+          <Property Type="String" Name="AuditCoParams" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="AuditTax" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="AuditMatl" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="UniqueAttchID" />
+          <Property Type="Byte" Name="ShopGroup" />
+          <Property Type="String" Name="STEmpId" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MenuImage" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="KeyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Country" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="DefaultCountry" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Type="Byte" Name="ReportDateFormat" Nullable="false" />
+          <Property Type="Byte" Name="ContactGroup" />
+          <Property Type="String" Name="AuditContact" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Int32" Name="DFId" />
+          <Property Type="Int32" Name="CurrencyID" />
+          <Property Type="Int32" Name="MaskId" />
+          <Property Type="String" Name="udTESTCo" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="MasterContract">
+          <Key>
+            <PropertyRef Name="Vendor" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="udSpecTandC" />
+            <PropertyRef Name="udStateTandC" />
+            <PropertyRef Name="udBalancing" />
+            <PropertyRef Name="udConsulting" />
+            <PropertyRef Name="udControls" />
+            <PropertyRef Name="udDesign" />
+            <PropertyRef Name="udFacility" />
+            <PropertyRef Name="udProServYN" />
+            <PropertyRef Name="NegotiatedModYN" />
+            <PropertyRef Name="udLighting" />
+            <PropertyRef Name="udRoofing" />
+            <PropertyRef Name="udSafety" />
+            <PropertyRef Name="udEEO" />
+            <PropertyRef Name="udInvYN" />
+            <PropertyRef Name="udCommissioningYN" />
+            <PropertyRef Name="udSoftProServ" />
+            <PropertyRef Name="udSoftSupMaintYN" />
+            <PropertyRef Name="udSoftLicense" />
+            <PropertyRef Name="udSoftHost" />
+            <PropertyRef Name="udCostPlusYN" />
+            <PropertyRef Name="udFederalYN" />
+            <PropertyRef Name="udAddendum" />
+            <PropertyRef Name="udCertPRPrevYN" />
+            <PropertyRef Name="udPerfBondYN" />
+            <PropertyRef Name="udConstruction" />
+            <PropertyRef Name="StateExhibit" />
+            <PropertyRef Name="Seq" />
+          </Key>
+          <Property Type="String" Name="Title" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Vendor" Nullable="false" />
+          <Property Type="Byte" Name="VendorGroup" Nullable="false" />
+          <Property Type="String" Name="udInsurance" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udSpecTandC" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udStateTandC" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="DateTime" Name="ExecDate" />
+          <Property Type="DateTime" Name="OrigDate" />
+          <Property Type="String" Name="udBalancing" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udConsulting" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udControls" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udDesign" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udFacility" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udProServYN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="NegotiatedModYN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udLighting" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udRoofing" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSafety" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udEEO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udInvYN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udGTC" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udCommissioningYN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSoftProServ" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSoftSupMaintYN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSoftLicense" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSoftHost" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udCostPlusYN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udFederalYN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udAddendum" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udmasIns" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udCertPRPrevYN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udPerfBondYN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udConstruction" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="StateExhibit" MaxLength="4" FixedLength="false" Unicode="false" DefaultValue="0" Nullable="false" />
+          <Property Type="String" Name="VendorName" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorAddress" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorCity" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorState" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorZip" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorContactName" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorPhone" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorEmail" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="OurCompany" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="CompanyNumber" />
+          <Property Type="String" Name="Sample" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Seq" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SubcontractCO">
+          <Key>
+            <PropertyRef Name="SL" />
+            <PropertyRef Name="SubCO" />
+            <PropertyRef Name="JObNumber" />
+            <PropertyRef Name="Units" />
+            <PropertyRef Name="UM" />
+            <PropertyRef Name="Seq" />
+          </Key>
+          <Property Type="String" Name="SL" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="SubCO" Nullable="false" />
+          <Property Type="String" Name="JObNumber" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ChangeOrderName" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Reference" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ChangeOrderDate" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobName" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobAddress" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobAddress2" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobCity" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobState" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobZip" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobPhone" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ContactCode" />
+          <Property Type="Int32" Name="ProjectMgr" />
+          <Property Type="String" Name="PMEmail" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ProjectManager" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorName" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorAddress" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorAddress2" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorCity" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorState" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorZip" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="OurCompany" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="CompanyNumber" />
+          <Property Type="String" Name="VendorEmail" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorPhone" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorContactName" MaxLength="61" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="SLItem" />
+          <Property Type="String" Name="SLItemDescription" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="SLItemType" />
+          <Property Type="String" Name="Phase" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="CostType" />
+          <Property Type="Decimal" Name="Units" Nullable="false" Precision="12" Scale="3" />
+          <Property Type="String" Name="UnitCost" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UM" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Amount" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AmountSubCOCurrent" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AmountSubCOPrevious" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SLTotalOriginal" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CostTypeValue" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Seq" Nullable="false" />
+          <Property Type="String" Name="Details" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CurrentSubcontract" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TotalPendingSubcontract" MaxLength="4000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="MasterDeduction">
+          <Property Type="Byte" Name="PRCo" Nullable="false" />
+          <Property Type="Int16" Name="DLCode" Nullable="false" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="DLType" Nullable="false" MaxLength="1" />
+          <Property Type="String" Name="Method" Nullable="false" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="MasterEarning">
+          <Property Type="Byte" Name="PRCo" Nullable="false" />
+          <Property Type="Int16" Name="EarnCode" Nullable="false" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Method" Nullable="false" MaxLength="1" />
+          <Property Type="Decimal" Name="Factor" Nullable="false" Precision="8" Scale="6" />
+        </ComplexType>
+        <EntityType Name="Deduction">
+          <Key>
+            <PropertyRef Name="PRCo" />
+            <PropertyRef Name="Craft" />
+            <PropertyRef Name="Class" />
+            <PropertyRef Name="DLCode" />
+            <PropertyRef Name="Factor" />
+          </Key>
+          <Property Type="Byte" Name="PRCo" Nullable="false" />
+          <Property Type="String" Name="Craft" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Class" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="DLCode" Nullable="false" />
+          <Property Type="Decimal" Name="Factor" Nullable="false" Precision="8" Scale="6" />
+          <Property Type="Decimal" Name="OldRate" Nullable="false" Precision="16" Scale="5" />
+          <Property Type="Decimal" Name="NewRate" Nullable="false" Precision="16" Scale="5" />
+          <Property Type="Guid" Name="UniqueAttchID" />
+          <Property Type="Int64" Name="KeyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Earning">
+          <Key>
+            <PropertyRef Name="PRCo" />
+            <PropertyRef Name="Craft" />
+            <PropertyRef Name="Class" />
+            <PropertyRef Name="EarnCode" />
+            <PropertyRef Name="Factor" />
+          </Key>
+          <Property Type="Byte" Name="PRCo" Nullable="false" />
+          <Property Type="String" Name="Craft" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Class" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="EarnCode" Nullable="false" />
+          <Property Type="Decimal" Name="Factor" Nullable="false" Precision="8" Scale="6" />
+          <Property Type="Decimal" Name="OldRate" Nullable="false" Precision="16" Scale="5" />
+          <Property Type="Decimal" Name="NewRate" Nullable="false" Precision="16" Scale="5" />
+          <Property Type="Guid" Name="UniqueAttchID" />
+          <Property Type="Int64" Name="KeyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="ShiftRate">
+          <Key>
+            <PropertyRef Name="PRCo" />
+            <PropertyRef Name="Craft" />
+            <PropertyRef Name="Class" />
+            <PropertyRef Name="Shift" />
+          </Key>
+          <Property Type="Byte" Name="PRCo" Nullable="false" />
+          <Property Type="String" Name="Craft" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Class" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="Shift" Nullable="false" />
+          <Property Type="Decimal" Name="OldRate" Nullable="false" Precision="16" Scale="5" />
+          <Property Type="Decimal" Name="NewRate" Nullable="false" Precision="16" Scale="5" />
+          <Property Type="Guid" Name="UniqueAttchID" />
+          <Property Type="Int64" Name="KeyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="MasterCraft">
+          <Key>
+            <PropertyRef Name="PRCo" />
+            <PropertyRef Name="Craft" />
+          </Key>
+          <Property Type="Byte" Name="PRCo" Nullable="false" />
+          <Property Type="String" Name="Craft" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="VendorGroup" />
+        </EntityType>
+        <EntityType Name="CraftInfo">
+          <Key>
+            <PropertyRef Name="PRCo" />
+            <PropertyRef Name="Craft" />
+            <PropertyRef Name="Class" />
+          </Key>
+          <Property Type="Byte" Name="PRCo" Nullable="false" />
+          <Property Type="String" Name="Craft" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Class" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EEOClass" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="OldCapLimit" Nullable="false" Precision="16" Scale="5" />
+          <Property Type="Decimal" Name="NewCapLimit" Nullable="false" Precision="16" Scale="5" />
+          <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="UniqueAttchID" />
+          <Property Type="String" Name="WghtAvgOT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Int64" Name="KeyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="SuperWeeklyMin" Nullable="false" Precision="12" Scale="2" />
+          <Property Type="String" Name="udShopYN" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Subcontract">
+          <Key>
+            <PropertyRef Name="PMCo" />
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="SLCo" />
+            <PropertyRef Name="SL" />
+            <PropertyRef Name="JCCo" />
+            <PropertyRef Name="Job" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="Vendor" />
+            <PropertyRef Name="Status" />
+            <PropertyRef Name="Purge" />
+            <PropertyRef Name="KeyID" />
+            <PropertyRef Name="MaxRetgOpt" />
+            <PropertyRef Name="MaxRetgPct" />
+            <PropertyRef Name="MaxRetgAmt" />
+            <PropertyRef Name="InclACOinMaxYN" />
+            <PropertyRef Name="MaxRetgDistStyle" />
+            <PropertyRef Name="ApprovalRequired" />
+            <PropertyRef Name="udSubType" />
+          </Key>
+          <Property Type="String" Name="OurCompany" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CompanyAddress" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CompanyAddress2" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CompanyCity" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CompanyState" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CompanyPhone" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CompanyZip" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorName" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorAddress" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorAddress2" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorCity" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorState" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorZip" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="PMCo" Nullable="false" />
+          <Property Type="String" Name="Project" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="SLCo" Nullable="false" />
+          <Property Type="String" Name="SL" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="JCCo" Nullable="false" />
+          <Property Type="String" Name="Job" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="VendorGroup" Nullable="false" />
+          <Property Type="Int32" Name="Vendor" Nullable="false" />
+          <Property Type="String" Name="HoldCode" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PayTerms" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CompGroup" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="Status" Nullable="false" />
+          <Property Type="DateTime" Name="MthClosed" />
+          <Property Type="DateTime" Name="InUseMth" />
+          <Property Type="Int32" Name="InUseBatchId" />
+          <Property Type="String" Name="Purge" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Approved" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="ApprovedBy" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="AddedMth" />
+          <Property Type="Int32" Name="AddedBatchID" />
+          <Property Type="DateTime" Name="OrigDate" />
+          <Property Type="Guid" Name="UniqueAttchID" />
+          <Property Type="Int64" Name="KeyID" Nullable="false" />
+          <Property Type="Int32" Name="SLCloseBatchID" />
+          <Property Type="String" Name="MaxRetgOpt" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="MaxRetgPct" Nullable="false" MaxLength="10" />
+          <Property Type="Decimal" Name="MaxRetgAmt" Nullable="false" Precision="12" Scale="2" />
+          <Property Type="String" Name="InclACOinMaxYN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="MaxRetgDistStyle" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="ApprovalRequired" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSLContractNo" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udSource" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udConv" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udCGCTable" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="udCGCTableID" Precision="12" Scale="0" />
+          <Property Type="String" Name="udSLDrawings" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSafety" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udScheduleOVal" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udProjSchedule" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udBalancing" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udConsulting" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udFacility" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udScope" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udControls" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udDesignServ" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udProServTesting" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSoftProServ" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSoftLicense" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSoftSupMaintYN" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSoftHost" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udWorkOrderYN" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udFederalYN" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udPerfBondYN" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udCostPlusYN" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udNegMods" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udSubType" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udGTC" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udInvYN" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udEEO" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Int32" Name="udMastSub" />
+          <Property Type="String" Name="udInsurance" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udCommissioningYN" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udRoofingYN" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udLighting" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udAddendum" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udMasIns" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udCertPRPrevYN" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udConstruction" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="DocType" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="udProServYN" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="udBillType" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="udSbstntlComp" />
+          <Property Type="String" Name="JobName" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobAddress" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobAddress2" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobCity" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobState" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobZip" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobPhone" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ContactCode" />
+          <Property Type="Int32" Name="ProjectMgr" />
+          <Property Type="String" Name="PMEmail" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ProjectManager" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorEmail" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VendorPhone" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SLTotalOrig" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VendorContactName" MaxLength="61" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="MaxRetgByPct" Precision="18" Scale="2" />
+          <Property Type="String" Name="StateExhibit" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ExecuteDate" MaxLength="4000" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ViewpointModelStoreContainer" CdmEntityContainer="ViewpointEntities">
+          <EntitySetMapping Name="DocLocations">
+            <EntityTypeMapping TypeName="ViewpointModel.DocLocation">
+              <MappingFragment StoreEntitySet="mckvwDocLocations">
+                <ScalarProperty Name="LocType" ColumnName="LocType" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="Filename" ColumnName="Filename" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Companies">
+            <EntityTypeMapping TypeName="ViewpointModel.Company">
+              <MappingFragment StoreEntitySet="HQCO">
+                <ScalarProperty Name="udTESTCo" ColumnName="udTESTCo" />
+                <ScalarProperty Name="MaskId" ColumnName="MaskId" />
+                <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+                <ScalarProperty Name="DFId" ColumnName="DFId" />
+                <ScalarProperty Name="AuditContact" ColumnName="AuditContact" />
+                <ScalarProperty Name="ContactGroup" ColumnName="ContactGroup" />
+                <ScalarProperty Name="ReportDateFormat" ColumnName="ReportDateFormat" />
+                <ScalarProperty Name="DefaultCountry" ColumnName="DefaultCountry" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+                <ScalarProperty Name="MenuImage" ColumnName="MenuImage" />
+                <ScalarProperty Name="STEmpId" ColumnName="STEmpId" />
+                <ScalarProperty Name="ShopGroup" ColumnName="ShopGroup" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="AuditMatl" ColumnName="AuditMatl" />
+                <ScalarProperty Name="AuditTax" ColumnName="AuditTax" />
+                <ScalarProperty Name="AuditCoParams" ColumnName="AuditCoParams" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="EMGroup" ColumnName="EMGroup" />
+                <ScalarProperty Name="TaxGroup" ColumnName="TaxGroup" />
+                <ScalarProperty Name="CustGroup" ColumnName="CustGroup" />
+                <ScalarProperty Name="PhaseGroup" ColumnName="PhaseGroup" />
+                <ScalarProperty Name="MatlGroup" ColumnName="MatlGroup" />
+                <ScalarProperty Name="VendorGroup" ColumnName="VendorGroup" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="FedTaxId" ColumnName="FedTaxId" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="HQCo1" ColumnName="HQCo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MasterContracts">
+            <EntityTypeMapping TypeName="ViewpointModel.MasterContract">
+              <MappingFragment StoreEntitySet="mckvwMasterContract">
+                <ScalarProperty Name="Seq" ColumnName="Seq" />
+                <ScalarProperty Name="Sample" ColumnName="Sample" />
+                <ScalarProperty Name="CompanyNumber" ColumnName="CompanyNumber" />
+                <ScalarProperty Name="OurCompany" ColumnName="OurCompany" />
+                <ScalarProperty Name="VendorEmail" ColumnName="VendorEmail" />
+                <ScalarProperty Name="VendorPhone" ColumnName="VendorPhone" />
+                <ScalarProperty Name="VendorContactName" ColumnName="VendorContactName" />
+                <ScalarProperty Name="VendorZip" ColumnName="VendorZip" />
+                <ScalarProperty Name="VendorState" ColumnName="VendorState" />
+                <ScalarProperty Name="VendorCity" ColumnName="VendorCity" />
+                <ScalarProperty Name="VendorAddress" ColumnName="VendorAddress" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="StateExhibit" ColumnName="StateExhibit" />
+                <ScalarProperty Name="udConstruction" ColumnName="udConstruction" />
+                <ScalarProperty Name="udPerfBondYN" ColumnName="udPerfBondYN" />
+                <ScalarProperty Name="udCertPRPrevYN" ColumnName="udCertPRPrevYN" />
+                <ScalarProperty Name="udmasIns" ColumnName="udmasIns" />
+                <ScalarProperty Name="udAddendum" ColumnName="udAddendum" />
+                <ScalarProperty Name="udFederalYN" ColumnName="udFederalYN" />
+                <ScalarProperty Name="udCostPlusYN" ColumnName="udCostPlusYN" />
+                <ScalarProperty Name="udSoftHost" ColumnName="udSoftHost" />
+                <ScalarProperty Name="udSoftLicense" ColumnName="udSoftLicense" />
+                <ScalarProperty Name="udSoftSupMaintYN" ColumnName="udSoftSupMaintYN" />
+                <ScalarProperty Name="udSoftProServ" ColumnName="udSoftProServ" />
+                <ScalarProperty Name="udCommissioningYN" ColumnName="udCommissioningYN" />
+                <ScalarProperty Name="udGTC" ColumnName="udGTC" />
+                <ScalarProperty Name="udInvYN" ColumnName="udInvYN" />
+                <ScalarProperty Name="udEEO" ColumnName="udEEO" />
+                <ScalarProperty Name="udSafety" ColumnName="udSafety" />
+                <ScalarProperty Name="udRoofing" ColumnName="udRoofing" />
+                <ScalarProperty Name="udLighting" ColumnName="udLighting" />
+                <ScalarProperty Name="NegotiatedModYN" ColumnName="NegotiatedModYN" />
+                <ScalarProperty Name="udProServYN" ColumnName="udProServYN" />
+                <ScalarProperty Name="udFacility" ColumnName="udFacility" />
+                <ScalarProperty Name="udDesign" ColumnName="udDesign" />
+                <ScalarProperty Name="udControls" ColumnName="udControls" />
+                <ScalarProperty Name="udConsulting" ColumnName="udConsulting" />
+                <ScalarProperty Name="udBalancing" ColumnName="udBalancing" />
+                <ScalarProperty Name="OrigDate" ColumnName="OrigDate" />
+                <ScalarProperty Name="ExecDate" ColumnName="ExecDate" />
+                <ScalarProperty Name="udStateTandC" ColumnName="udStateTandC" />
+                <ScalarProperty Name="udSpecTandC" ColumnName="udSpecTandC" />
+                <ScalarProperty Name="udInsurance" ColumnName="udInsurance" />
+                <ScalarProperty Name="VendorGroup" ColumnName="VendorGroup" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SubcontractCOes">
+            <EntityTypeMapping TypeName="ViewpointModel.SubcontractCO">
+              <MappingFragment StoreEntitySet="mckvwSubcontractCO">
+                <ScalarProperty Name="TotalPendingSubcontract" ColumnName="TotalPendingSubcontract" />
+                <ScalarProperty Name="CurrentSubcontract" ColumnName="CurrentSubcontract" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="Seq" ColumnName="Seq" />
+                <ScalarProperty Name="CostTypeValue" ColumnName="CostTypeValue" />
+                <ScalarProperty Name="SLTotalOriginal" ColumnName="SLTotalOriginal" />
+                <ScalarProperty Name="AmountSubCOPrevious" ColumnName="AmountSubCOPrevious" />
+                <ScalarProperty Name="AmountSubCOCurrent" ColumnName="AmountSubCOCurrent" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="UM" ColumnName="UM" />
+                <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+                <ScalarProperty Name="Units" ColumnName="Units" />
+                <ScalarProperty Name="CostType" ColumnName="CostType" />
+                <ScalarProperty Name="Phase" ColumnName="Phase" />
+                <ScalarProperty Name="SLItemType" ColumnName="SLItemType" />
+                <ScalarProperty Name="SLItemDescription" ColumnName="SLItemDescription" />
+                <ScalarProperty Name="SLItem" ColumnName="SLItem" />
+                <ScalarProperty Name="VendorContactName" ColumnName="VendorContactName" />
+                <ScalarProperty Name="VendorPhone" ColumnName="VendorPhone" />
+                <ScalarProperty Name="VendorEmail" ColumnName="VendorEmail" />
+                <ScalarProperty Name="CompanyNumber" ColumnName="CompanyNumber" />
+                <ScalarProperty Name="OurCompany" ColumnName="OurCompany" />
+                <ScalarProperty Name="VendorZip" ColumnName="VendorZip" />
+                <ScalarProperty Name="VendorState" ColumnName="VendorState" />
+                <ScalarProperty Name="VendorCity" ColumnName="VendorCity" />
+                <ScalarProperty Name="VendorAddress2" ColumnName="VendorAddress2" />
+                <ScalarProperty Name="VendorAddress" ColumnName="VendorAddress" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="ProjectManager" ColumnName="ProjectManager" />
+                <ScalarProperty Name="PMEmail" ColumnName="PMEmail" />
+                <ScalarProperty Name="ProjectMgr" ColumnName="ProjectMgr" />
+                <ScalarProperty Name="ContactCode" ColumnName="ContactCode" />
+                <ScalarProperty Name="JobPhone" ColumnName="JobPhone" />
+                <ScalarProperty Name="JobZip" ColumnName="JobZip" />
+                <ScalarProperty Name="JobState" ColumnName="JobState" />
+                <ScalarProperty Name="JobCity" ColumnName="JobCity" />
+                <ScalarProperty Name="JobAddress2" ColumnName="JobAddress2" />
+                <ScalarProperty Name="JobAddress" ColumnName="JobAddress" />
+                <ScalarProperty Name="JobName" ColumnName="JobName" />
+                <ScalarProperty Name="ChangeOrderDate" ColumnName="ChangeOrderDate" />
+                <ScalarProperty Name="Reference" ColumnName="Reference" />
+                <ScalarProperty Name="ChangeOrderName" ColumnName="ChangeOrderName" />
+                <ScalarProperty Name="JObNumber" ColumnName="JObNumber" />
+                <ScalarProperty Name="SubCO" ColumnName="SubCO" />
+                <ScalarProperty Name="SL" ColumnName="SL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetMasterDeductions" FunctionName="ViewpointModel.Store.mckspPRDL" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ViewpointModel.MasterDeduction">
+                <ScalarProperty Name="PRCo" ColumnName="PRCo" />
+                <ScalarProperty Name="DLCode" ColumnName="DLCode" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="DLType" ColumnName="DLType" />
+                <ScalarProperty Name="Method" ColumnName="Method" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetMasterEarnings" FunctionName="ViewpointModel.Store.mckspPREC">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ViewpointModel.MasterEarning">
+                <ScalarProperty Name="PRCo" ColumnName="PRCo" />
+                <ScalarProperty Name="EarnCode" ColumnName="EarnCode" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Method" ColumnName="Method" />
+                <ScalarProperty Name="Factor" ColumnName="Factor" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="MasterCrafts">
+            <EntityTypeMapping TypeName="ViewpointModel.MasterCraft">
+              <MappingFragment StoreEntitySet="mckVwPRCM">
+                <ScalarProperty Name="VendorGroup" ColumnName="VendorGroup" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Craft" ColumnName="Craft" />
+                <ScalarProperty Name="PRCo" ColumnName="PRCo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subcontracts">
+            <EntityTypeMapping TypeName="ViewpointModel.Subcontract">
+              <MappingFragment StoreEntitySet="vwMcKSubcontracts">
+                <ScalarProperty Name="ExecuteDate" ColumnName="ExecuteDate" />
+                <ScalarProperty Name="StateExhibit" ColumnName="StateExhibit" />
+                <ScalarProperty Name="MaxRetgByPct" ColumnName="MaxRetgByPct" />
+                <ScalarProperty Name="VendorContactName" ColumnName="VendorContactName" />
+                <ScalarProperty Name="SLTotalOrig" ColumnName="SLTotalOrig" />
+                <ScalarProperty Name="VendorPhone" ColumnName="VendorPhone" />
+                <ScalarProperty Name="VendorEmail" ColumnName="VendorEmail" />
+                <ScalarProperty Name="ProjectManager" ColumnName="ProjectManager" />
+                <ScalarProperty Name="PMEmail" ColumnName="PMEmail" />
+                <ScalarProperty Name="ProjectMgr" ColumnName="ProjectMgr" />
+                <ScalarProperty Name="ContactCode" ColumnName="ContactCode" />
+                <ScalarProperty Name="JobPhone" ColumnName="JobPhone" />
+                <ScalarProperty Name="JobZip" ColumnName="JobZip" />
+                <ScalarProperty Name="JobState" ColumnName="JobState" />
+                <ScalarProperty Name="JobCity" ColumnName="JobCity" />
+                <ScalarProperty Name="JobAddress2" ColumnName="JobAddress2" />
+                <ScalarProperty Name="JobAddress" ColumnName="JobAddress" />
+                <ScalarProperty Name="JobName" ColumnName="JobName" />
+                <ScalarProperty Name="udSbstntlComp" ColumnName="udSbstntlComp" />
+                <ScalarProperty Name="udBillType" ColumnName="udBillType" />
+                <ScalarProperty Name="udProServYN" ColumnName="udProServYN" />
+                <ScalarProperty Name="DocType" ColumnName="DocType" />
+                <ScalarProperty Name="udConstruction" ColumnName="udConstruction" />
+                <ScalarProperty Name="udCertPRPrevYN" ColumnName="udCertPRPrevYN" />
+                <ScalarProperty Name="udMasIns" ColumnName="udMasIns" />
+                <ScalarProperty Name="udAddendum" ColumnName="udAddendum" />
+                <ScalarProperty Name="udLighting" ColumnName="udLighting" />
+                <ScalarProperty Name="udRoofingYN" ColumnName="udRoofingYN" />
+                <ScalarProperty Name="udCommissioningYN" ColumnName="udCommissioningYN" />
+                <ScalarProperty Name="udInsurance" ColumnName="udInsurance" />
+                <ScalarProperty Name="udMastSub" ColumnName="udMastSub" />
+                <ScalarProperty Name="udEEO" ColumnName="udEEO" />
+                <ScalarProperty Name="udInvYN" ColumnName="udInvYN" />
+                <ScalarProperty Name="udGTC" ColumnName="udGTC" />
+                <ScalarProperty Name="udSubType" ColumnName="udSubType" />
+                <ScalarProperty Name="udNegMods" ColumnName="udNegMods" />
+                <ScalarProperty Name="udCostPlusYN" ColumnName="udCostPlusYN" />
+                <ScalarProperty Name="udPerfBondYN" ColumnName="udPerfBondYN" />
+                <ScalarProperty Name="udFederalYN" ColumnName="udFederalYN" />
+                <ScalarProperty Name="udWorkOrderYN" ColumnName="udWorkOrderYN" />
+                <ScalarProperty Name="udSoftHost" ColumnName="udSoftHost" />
+                <ScalarProperty Name="udSoftSupMaintYN" ColumnName="udSoftSupMaintYN" />
+                <ScalarProperty Name="udSoftLicense" ColumnName="udSoftLicense" />
+                <ScalarProperty Name="udSoftProServ" ColumnName="udSoftProServ" />
+                <ScalarProperty Name="udProServTesting" ColumnName="udProServTesting" />
+                <ScalarProperty Name="udDesignServ" ColumnName="udDesignServ" />
+                <ScalarProperty Name="udControls" ColumnName="udControls" />
+                <ScalarProperty Name="udScope" ColumnName="udScope" />
+                <ScalarProperty Name="udFacility" ColumnName="udFacility" />
+                <ScalarProperty Name="udConsulting" ColumnName="udConsulting" />
+                <ScalarProperty Name="udBalancing" ColumnName="udBalancing" />
+                <ScalarProperty Name="udProjSchedule" ColumnName="udProjSchedule" />
+                <ScalarProperty Name="udScheduleOVal" ColumnName="udScheduleOVal" />
+                <ScalarProperty Name="udSafety" ColumnName="udSafety" />
+                <ScalarProperty Name="udSLDrawings" ColumnName="udSLDrawings" />
+                <ScalarProperty Name="udCGCTableID" ColumnName="udCGCTableID" />
+                <ScalarProperty Name="udCGCTable" ColumnName="udCGCTable" />
+                <ScalarProperty Name="udConv" ColumnName="udConv" />
+                <ScalarProperty Name="udSource" ColumnName="udSource" />
+                <ScalarProperty Name="udSLContractNo" ColumnName="udSLContractNo" />
+                <ScalarProperty Name="ApprovalRequired" ColumnName="ApprovalRequired" />
+                <ScalarProperty Name="MaxRetgDistStyle" ColumnName="MaxRetgDistStyle" />
+                <ScalarProperty Name="InclACOinMaxYN" ColumnName="InclACOinMaxYN" />
+                <ScalarProperty Name="MaxRetgAmt" ColumnName="MaxRetgAmt" />
+                <ScalarProperty Name="MaxRetgPct" ColumnName="MaxRetgPct" />
+                <ScalarProperty Name="MaxRetgOpt" ColumnName="MaxRetgOpt" />
+                <ScalarProperty Name="SLCloseBatchID" ColumnName="SLCloseBatchID" />
+                <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="OrigDate" ColumnName="OrigDate" />
+                <ScalarProperty Name="AddedBatchID" ColumnName="AddedBatchID" />
+                <ScalarProperty Name="AddedMth" ColumnName="AddedMth" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+                <ScalarProperty Name="Approved" ColumnName="Approved" />
+                <ScalarProperty Name="Purge" ColumnName="Purge" />
+                <ScalarProperty Name="InUseBatchId" ColumnName="InUseBatchId" />
+                <ScalarProperty Name="InUseMth" ColumnName="InUseMth" />
+                <ScalarProperty Name="MthClosed" ColumnName="MthClosed" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CompGroup" ColumnName="CompGroup" />
+                <ScalarProperty Name="PayTerms" ColumnName="PayTerms" />
+                <ScalarProperty Name="HoldCode" ColumnName="HoldCode" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="VendorGroup" ColumnName="VendorGroup" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Job" ColumnName="Job" />
+                <ScalarProperty Name="JCCo" ColumnName="JCCo" />
+                <ScalarProperty Name="SL" ColumnName="SL" />
+                <ScalarProperty Name="SLCo" ColumnName="SLCo" />
+                <ScalarProperty Name="Project" ColumnName="Project" />
+                <ScalarProperty Name="PMCo" ColumnName="PMCo" />
+                <ScalarProperty Name="VendorZip" ColumnName="VendorZip" />
+                <ScalarProperty Name="VendorState" ColumnName="VendorState" />
+                <ScalarProperty Name="VendorCity" ColumnName="VendorCity" />
+                <ScalarProperty Name="VendorAddress2" ColumnName="VendorAddress2" />
+                <ScalarProperty Name="VendorAddress" ColumnName="VendorAddress" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="CompanyZip" ColumnName="CompanyZip" />
+                <ScalarProperty Name="CompanyPhone" ColumnName="CompanyPhone" />
+                <ScalarProperty Name="CompanyState" ColumnName="CompanyState" />
+                <ScalarProperty Name="CompanyCity" ColumnName="CompanyCity" />
+                <ScalarProperty Name="CompanyAddress2" ColumnName="CompanyAddress2" />
+                <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
+                <ScalarProperty Name="OurCompany" ColumnName="OurCompany" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+			<EntitySetMapping Name="Deductions">
+				<EntityTypeMapping TypeName="ViewpointModel.Deduction">
+					<MappingFragment StoreEntitySet="PRCD">
+						<ScalarProperty Name="KeyID" ColumnName="KeyID" />
+						<ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+						<ScalarProperty Name="NewRate" ColumnName="NewRate" />
+						<ScalarProperty Name="OldRate" ColumnName="OldRate" />
+						<ScalarProperty Name="Factor" ColumnName="Factor" />
+						<ScalarProperty Name="DLCode" ColumnName="DLCode" />
+						<ScalarProperty Name="Class" ColumnName="Class" />
+						<ScalarProperty Name="Craft" ColumnName="Craft" />
+						<ScalarProperty Name="PRCo" ColumnName="PRCo" />
+					</MappingFragment>
+				</EntityTypeMapping>
+			</EntitySetMapping>
+			<EntitySetMapping Name="Earnings">
+				<EntityTypeMapping TypeName="ViewpointModel.Earning">
+					<MappingFragment StoreEntitySet="PRCF">
+						<ScalarProperty Name="KeyID" ColumnName="KeyID" />
+						<ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+						<ScalarProperty Name="NewRate" ColumnName="NewRate" />
+						<ScalarProperty Name="OldRate" ColumnName="OldRate" />
+						<ScalarProperty Name="Factor" ColumnName="Factor" />
+						<ScalarProperty Name="EarnCode" ColumnName="EarnCode" />
+						<ScalarProperty Name="Class" ColumnName="Class" />
+						<ScalarProperty Name="Craft" ColumnName="Craft" />
+						<ScalarProperty Name="PRCo" ColumnName="PRCo" />
+					</MappingFragment>
+				</EntityTypeMapping>
+			</EntitySetMapping>
+			<EntitySetMapping Name="ShiftRates">
+				<EntityTypeMapping TypeName="ViewpointModel.ShiftRate">
+					<MappingFragment StoreEntitySet="PRCP">
+						<ScalarProperty Name="KeyID" ColumnName="KeyID" />
+						<ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+						<ScalarProperty Name="NewRate" ColumnName="NewRate" />
+						<ScalarProperty Name="OldRate" ColumnName="OldRate" />
+						<ScalarProperty Name="Shift" ColumnName="Shift" />
+						<ScalarProperty Name="Class" ColumnName="Class" />
+						<ScalarProperty Name="Craft" ColumnName="Craft" />
+						<ScalarProperty Name="PRCo" ColumnName="PRCo" />
+					</MappingFragment>
+				</EntityTypeMapping>
+			</EntitySetMapping>
+			<EntitySetMapping Name="CraftInfoes">
+				<EntityTypeMapping TypeName="ViewpointModel.CraftInfo">
+					<MappingFragment StoreEntitySet="PRCC">
+						<ScalarProperty Name="udShopYN" ColumnName="udShopYN" />
+						<ScalarProperty Name="SuperWeeklyMin" ColumnName="SuperWeeklyMin" />
+						<ScalarProperty Name="KeyID" ColumnName="KeyID" />
+						<ScalarProperty Name="WghtAvgOT" ColumnName="WghtAvgOT" />
+						<ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+						<ScalarProperty Name="Notes" ColumnName="Notes" />
+						<ScalarProperty Name="NewCapLimit" ColumnName="NewCapLimit" />
+						<ScalarProperty Name="OldCapLimit" ColumnName="OldCapLimit" />
+						<ScalarProperty Name="EEOClass" ColumnName="EEOClass" />
+						<ScalarProperty Name="Description" ColumnName="Description" />
+						<ScalarProperty Name="Class" ColumnName="Class" />
+						<ScalarProperty Name="Craft" ColumnName="Craft" />
+						<ScalarProperty Name="PRCo" ColumnName="PRCo" />
+					</MappingFragment>
+				</EntityTypeMapping>
+			</EntitySetMapping>
+			</EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ViewPoint" ZoomLevel="62">
+        <EntityTypeShape EntityType="ViewpointModel.DocLocation" Width="1.5" PointX="5.375" PointY="0.75" Height="2.4140429687499996" />
+        <EntityTypeShape EntityType="ViewpointModel.Company" Width="1.5" PointX="5.375" PointY="4.75" Height="6.8514208984375031" />
+        <EntityTypeShape EntityType="ViewpointModel.MasterContract" Width="1.5" PointX="0.75" PointY="0.75" Height="8.1661995442708317" />
+        <EntityTypeShape EntityType="ViewpointModel.SubcontractCO" Width="1.5" PointX="7.375" PointY="0.75" Height="7.6731575520833317" />
+        <EntityTypeShape EntityType="ViewpointModel.Deduction" Width="1.5" PointX="18" PointY="0.5" Height="2.4140429687500031" />
+        <EntityTypeShape EntityType="ViewpointModel.Earning" Width="1.5" PointX="11.75" PointY="0.75" Height="2.4140429687500031" />
+        <EntityTypeShape EntityType="ViewpointModel.ShiftRate" Width="1.5" PointX="13.75" PointY="0.75" Height="2.2496956380208388" />
+        <EntityTypeShape EntityType="ViewpointModel.MasterCraft" Width="1.5" PointX="13.5" PointY="5.5" Height="1.5923063151041674" />
+        <EntityTypeShape EntityType="ViewpointModel.CraftInfo" Width="1.5" PointX="9.5" PointY="2.125" Height="3.0714322916666674" />
+        <EntityTypeShape EntityType="ViewpointModel.Subcontract" Width="1.5" PointX="10.125" PointY="5.875" Height="18.191386718750003" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

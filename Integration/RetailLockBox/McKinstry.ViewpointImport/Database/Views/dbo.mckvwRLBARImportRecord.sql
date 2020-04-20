@@ -1,0 +1,22 @@
+USE [MCK_INTEGRATION]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF EXISTS (SELECT TABLE_NAME FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'mckvwRLBARImportRecord')
+DROP VIEW [dbo].[mckvwRLBARImportRecord]
+GO
+
+CREATE VIEW [dbo].[mckvwRLBARImportRecord] AS
+
+SELECT Detail.RLBImportBatchID, Record.*
+FROM
+RLBARImportRecord Record
+JOIN  RLBARImportDetail Detail ON
+Detail.RLBARImportDetailID = Record.RLBARImportDetailID
+
+GO

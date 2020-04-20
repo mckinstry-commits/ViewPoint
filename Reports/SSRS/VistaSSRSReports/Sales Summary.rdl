@@ -1,0 +1,954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Viewpoint">
+      <DataSourceReference>Viewpoint</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>b041bd6a-fb38-4a50-b96e-12b709145ab0</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="AgreementTotals">
+      <Query>
+        <DataSourceName>Viewpoint</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@AsofDate">
+            <Value>=Parameters!AsofDate.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@AMgr">
+            <Value>=Parameters!AMgr.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>set transaction isolation level read uncommitted
+/*  Declarations are used in SSMS */
+/*
+--Agreement/Contract work order activity
+
+--Declare @workorders nvarchar(300) = ''--'9521222,9523714,9523797,9523717,9106649,9523720,9523786,9523784,9523718,9523659,9523674,9523706,9523707,8033111,8033113,8033122,8033124,9523721,9523725,9523793'
+Declare @customers nvarchar(300) = ''--'211321,245764,24770,246389,200437,247531,213569'
+Declare @SMCo int = 1
+--Declare @AMgr nvarchar(300) ='31218,2320'-- -1 --='1013,1018,10164'
+Declare @AMgr nvarchar(300) ='-2,-1'-- -1 --='1013,1018,10164'
+
+*/
+
+/*
+Created By Elizabeth Jayne Stitt EJS
+Created date 2018/11/01
+
+Modified 2018/11/15 EJS --Deprecated two of the joins that I had initially found pricing on, added Customer Details
+
+
+Modified
+
+2018/11/05 EJS PREHFullName causing dups because of employee number being in multiple companies, but (in theory) only one company is active.  Added function to just get one record the first 
+active or the first last current record
+
+Most records in SMAgreementService don't have multiple service centers or divisions, but some do at the time of this code's creation. 
+Pricing is SUPPOSED to be entered individually, but the observation is that when it's the same department, it isn't. Instead it's entered only at the agreement level.
+Consequently there are multiple agreement/revision lines returned from SMAgreementService with no pricing information. This is supposed to be the desired source for pricing when not null.
+However, there is no way to know how to split prices among the multiple lines when multiple rows are retured.  This will cause dollar amounts to be overstated.
+
+The ServiceSite field also causes this issue.
+
+I can detect this situation and I have created the query so that any record that has duplicate entries will have a dupflag value of 1.  I use this in SSRS to highlight discrepant
+line items in the report.
+
+
+*/
+set nocount on
+
+Declare @SMASdup table(SMCo	bCompany, Agreement varchar(15), Revision int, Scnt int null, Dcnt int null, SScnt int null, /* Price bDollar null,*/ Price2 bDollar null,  PRIMARY KEY ([SMCo] ASC, [Agreement] ASC, [Revision] ASC))
+Declare @SMASdiv table(dupflag int, SMCo bCompany, Agreement varchar(15),Revision int,ServiceCenter varchar(10), Division varchar(10), /* Price bDollar null, */ Price2 bDollar null,Scnt int null, Dcnt int null,   PRIMARY KEY ([SMCo] ASC, [Agreement] ASC, [Revision] ASC, ServiceCenter ASC, Division ASC))
+Declare @PREHNames Table (Employee bEmployee, FullName varchar(83), ActiveYN bYN, PRCo bCompany, Email varchar(60), RowN int, PRIMARY KEY (PRCo asc, Employee ASC))
+
+
+--Find duplicate service center/ division record counts
+Insert @SMASdup
+Select  
+      SMCo, Agreement, Revision
+	, count(distinct ServiceCenter) SCnt
+	, count(distinct Division) DCnt
+	, count(distinct ServiceSite) SScnt
+	--, sum(PricingPrice) Price 
+	, sum(PricingTermPrice) Price2
+	from SMAgreementService group by SMCo, Agreement, Revision--, ServiceCenter, Division 
+	having count(distinct ServiceCenter) &gt; 1 or count(distinct Division) &gt;1 or count(distinct ServiceSite) &gt; 1
+	--10119
+--select * from @SMASdup 
+
+--Get Pricing by SMCo, Agreement, Revision, ServiceCenter, and Division. Flag records that will generate duplicate pricing results (any count &gt; 1 where price is also null).
+Insert @SMASdiv
+--Select case when dup.Scnt &gt;1 or dup.Dcnt&gt;1 and coalesce(a.Price,a.Price2) is null then 1 else 0 end dupflag, 
+Select case when (dup.Scnt &gt;1 or dup.Dcnt&gt;1 or dup.SScnt &gt;1) and a.Price2 is null then 1 else 0 end dupflag, 
+a.*, dup.Scnt,dup.Dcnt
+from ( select SMCo, Agreement, Revision, ServiceCenter, Division, /*sum(PricingPrice) Price,*/ sum(PricingTermPrice) Price2 from SMAgreementService where ServiceCenter is not null group by SMCo, Agreement, Revision, ServiceCenter, Division ) a
+left join @SMASdup dup  on dup.SMCo=a.SMCo and dup.Agreement=a.Agreement and dup.Revision=a.Revision
+
+--select * from @SMASdiv where dupflag &gt;0
+-- Get one distinct record for Employee 
+insert @PREHNames
+Select * from (
+
+select * from (
+select *, ROW_NUMBER() over(Partition by udAccountExec order by udAccountExec desc, ActiveYN desc) RowN from (  
+select  udAccountExec, p.FullName, ActiveYN, PRCo, Email from PREHFullName p
+Join (select distinct udAccountExec from dbo.SMServiceSite) s on p.Employee = s.udAccountExec) q
+) AE1
+where AE1.RowN=1
+union
+select * from (
+select *, ROW_NUMBER() over(Partition by udAccountExec2 order by udAccountExec2 desc, ActiveYN desc) RowN from (  
+select  udAccountExec2, p.FullName, ActiveYN, PRCo, Email from PREHFullName p
+Join (select distinct udAccountExec2 from dbo.SMServiceSite) s on p.Employee = s.udAccountExec2) q
+) AE2
+where AE2.RowN=1
+union
+
+select * from (
+select *, ROW_NUMBER() over(Partition by udAccountMgr order by udAccountMgr desc, ActiveYN desc) RowN from (  
+select  udAccountMgr, p.FullName, ActiveYN, PRCo, Email from PREHFullName p
+Join (select distinct udAccountMgr from dbo.SMServiceSite) s on p.Employee = s.udAccountMgr) q
+) AM1
+where AM1.RowN=1
+union
+select * from (
+select *, ROW_NUMBER() over(Partition by udAccountMgr2 order by udAccountMgr2 desc, ActiveYN desc) RowN from (  
+select  udAccountMgr2, p.FullName, ActiveYN, PRCo, Email from PREHFullName p
+Join (select distinct udAccountMgr2 from dbo.SMServiceSite) s on p.Employee = s.udAccountMgr2) q
+) AM2
+where AM2.RowN=1
+) q
+
+order by ActiveYN, FullName
+--where q.ActiveYN='Y'
+
+
+--Select *  from PREHNames
+
+--Result Set
+select 
+ isnull('AM1:'+pm1.FullName + ' ','') + isnull('AE1:'+pe1.FullName + ' ','') + isnull('AM2:'+pm2.FullName + ' ','') + isnull('AE2:'+pe2.FullName + ' ','') AcctMgrs --For report grouping purposes
+,isnull('AM1:'+cast(pm1.Employee as varchar(10)) + ' ','') + isnull('AE1:'+cast(pe1.Employee as varchar(10)) + ' ','') + isnull('AM2:'+cast(pm2.Employee as varchar(10)) + ' ','') + isnull('AE2:'+cast(pe2.Employee as varchar(10) ) + ' ','') AcctMgrsNo
+ 
+,sum(isnull(dupflag,0)) dupflag --Duplicate records indicator
+--, isnull(a.Agreement+'/','')+isnull(cast(a.Revision as varchar(20)),'') ARGroup
+--, a.SMCo,a.Agreement,a.Revision
+--, vss.ServiceSite, vss.TrueDescription
+--, vss.Address1, vss.Address2, vss.Zip
+--, vss.TrueCustomer
+--, ARCM.Name Customer_Name,ARCM.Address Customer_Address,ARCM.Address2 Customer_Address2,ARCM.City Customer_City,ARCM.[State] Customer_State, ARCM.Zip Customer_Zip
+--, pm1.FullName AcctMgr1, vss.udAccountMgr
+--, pe1.FullName AcctExe1, vss.udAccountExec
+--, pm2.FullName AcctMgr2, vss.udAccountMgr2
+--, pe2.FullName AcctExe2,vss.udAccountExec2
+--, vss.udAccountCat
+----, No Company Group substitute for Astea column on report
+--, a.EffectiveDate,a.ExpirationDate
+----, No PreAuth source known
+----Not sure where to get Agreement, but if detail pricing exists in SMAS.price use that instead of a.AgreementPrice
+, sum( coalesce (smas.Price2, a.AgreementPrice  /*,mae.AgreementPrice , vatx.AgreementPrice*/)) AgreementPrice --Removed other questionalble sources
+--, sum( isnull( cast(coalesce (  smas.Price2-smas.Price2 +1,a.AgreementPrice-a.AgreementPrice +2/*, mae.AgreementPrice-mae.AgreementPrice +3, vatx.AgreementPrice-vatx.AgreementPrice +4*/) as int),0)) APind
+--, case  isnull(coalesce (  smas.Price2-smas.Price2 +1,a.AgreementPrice-a.AgreementPrice +2/*, mae.AgreementPrice-mae.AgreementPrice +3, vatx.AgreementPrice-vatx.AgreementPrice +4*/),0) 
+--  when 0 then 'No Agreement Price'
+--  when 1 then 'SMAgreementService'
+--  when 2 then 'Agreement'
+--  when 3 then 'mckExtended' --NoLongerUsed
+--  when 4 then 'vrv...PriceTaxTotal' --NoLongerUsed
+--  else 'Unexpected Source' end APsource
+, Sum(a.AgreementPrice) APrice, sum(smas.Price2) SMASPrice /*,mae.AgreementPrice MAEPrice, vatx.AgreementPrice VATXPrice */ -- for information purposes, this was where I found pricing information.  
+
+, smas.ServiceCenter, smas.Division, count(Distinct a.Agreement) AgCnt
+--, vss.City, vss.[State]
+
+
+--, a.DateActivated,a.DateCancelled,a.DateCreated,a.DateTerminated,a.StartDate
+--,  * 
+from SMAgreement a --where Revision is null
+
+--left Join  SMAgreementExtended ae on a.Agreement=ae.Agreement and a.Revision=ae.Revision and a.SMCo=ae.SMCo --using MAE instead
+--left join mckSMAgreementExtended mae on a.Agreement=mae.Agreement and a.Revision=mae.Revision and a.SMCo=mae.SMCo --Deprecated as a source
+--left join vrvSMAgreementPriceTaxTotal vatx on a.Agreement=vatx.Agreement and a.Revision=vatx.Revision and a.SMCo=vatx.SMCo --Deprecated as a source
+--This has Service Site to Agreement
+left join(select distinct SMCo,Agreement,Revision,ServiceSite from dbo.SMAgreementService) ai on ai.Agreement=a.Agreement and ai.Revision=a.Revision and ai.SMCo=a.SMCo
+--This has customer and manager fields.
+left join vrvSMServiceSiteCustomer vss on vss.SMCo=a.SMCo and vss.ServiceSite=ai.ServiceSite
+--Get names for manager fields
+left join @PREHNames pm1 on pm1.Employee=vss.udAccountMgr
+left join @PREHNames pm2 on pm2.Employee=vss.udAccountMgr2
+left join @PREHNames pe1 on pe1.Employee=vss.udAccountExec
+left join @PREHNames pe2 on pe2.Employee=vss.udAccountExec2
+--left join @SMASdup dup on dup.SMCo=a.SMCo and dup.Agreement=a.Agreement and dup.Revision=a.Revision --Switched to a declared table
+--left join (Select  SMCo, Agreement, Revision, ServiceCenter, Division, sum(PricingPrice) Price from SMAgreementService group by SMCo, Agreement, Revision, ServiceCenter, Division  ) smas on smas.SMCo=a.SMCo and smas.Agreement=a.Agreement and smas.Revision=a.Revision
+left join @SMASdiv smas on smas.SMCo=a.SMCo and smas.Agreement=a.Agreement and smas.Revision=a.Revision
+left join ARCM on ARCM.Customer=vss.TrueCustomer and ARCM.CustGroup=vss.TrueCustGroup
+
+where a.DateCancelled is null and a.DateTerminated is null and @AsofDate between a.EffectiveDate and a.ExpirationDate
+--and ( (isnull('AM1:'+pm1.FullName + ' ','') + isnull('AE1:'+pe1.FullName + ' ','') + isnull('AM2:'+pm2.FullName + ' ','') + isnull('AE2:'+pe2.FullName + ' ','') ) &lt;&gt; '')
+
+	--and (--SSMS
+	--(  (vss.udAccountMgr in (select splitdata from dbo.fnSplitString(@AMgr,',')) )  --SSMS
+	--or (vss.udAccountMgr2 in (select splitdata from dbo.fnSplitString(@AMgr,',')) ) --SSMS
+	--or (vss.udAccountExec in (select splitdata from dbo.fnSplitString(@AMgr,',')) ) --SSMS
+	--or (vss.udAccountExec2 in (select splitdata from dbo.fnSplitString(@AMgr,',')) ) --SSMS
+	--or (-1 in (select splitdata from dbo.fnSplitString(@AMgr,',')) and coalesce(vss.udAccountMgr,vss.udAccountMgr2,vss.udAccountExec,vss.udAccountExec2,0) &lt;&gt; 0)--SSMS
+	--) --SSMS
+	--or (coalesce(vss.udAccountMgr,vss.udAccountMgr2,vss.udAccountExec,vss.udAccountExec2,0) = 0 and -2 in (select splitdata from dbo.fnSplitString(@AMgr,',')))--SSMS
+	--)--SSMS
+	
+	and (
+	   (vss.udAccountMgr in (@AMgr) or vss.udAccountMgr2 in (@AMgr) or vss.udAccountExec in (@AMgr) or vss.udAccountExec2 in (@AMgr) or (-1 IN (@AMgr) and coalesce(vss.udAccountMgr,vss.udAccountMgr2,vss.udAccountExec,vss.udAccountExec2,0)&lt;&gt;0)
+	   or (coalesce(vss.udAccountMgr,vss.udAccountMgr2,vss.udAccountExec,vss.udAccountExec2,0) = 0 and -2 in (@AMgr))
+	   )) --SSRS
+
+
+
+group by isnull('AM1:'+pm1.FullName + ' ','') + isnull('AE1:'+pe1.FullName + ' ','') + isnull('AM2:'+pm2.FullName + ' ','') + isnull('AE2:'+pe2.FullName + ' ','')  --For report grouping purposes
+, isnull('AM1:'+cast(pm1.Employee as varchar(10)) + ' ','') + isnull('AE1:'+cast(pe1.Employee as varchar(10)) + ' ','') + isnull('AM2:'+cast(pm2.Employee as varchar(10)) + ' ','') + isnull('AE2:'+cast(pe2.Employee as varchar(10) ) + ' ','') 
+ , smas.ServiceCenter, smas.Division
+order by 1,6,7</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="AcctMgrs">
+          <DataField>AcctMgrs</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AcctMgrsNo">
+          <DataField>AcctMgrsNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dupflag">
+          <DataField>dupflag</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AgreementPrice">
+          <DataField>AgreementPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="APrice">
+          <DataField>APrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SMASPrice">
+          <DataField>SMASPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ServiceCenter">
+          <DataField>ServiceCenter</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Division">
+          <DataField>Division</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AgCnt">
+          <DataField>AgCnt</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="ftrAcctMgrs">
+      <SharedDataSet>
+        <SharedDataSetReference>ftrAcctMgrs</SharedDataSetReference>
+        <QueryParameters>
+          <QueryParameter Name="@SMCo">
+            <Value>=Parameters!SMCo.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </SharedDataSet>
+      <Fields>
+        <Field Name="SMCo">
+          <DataField>SMCo</DataField>
+          <rd:TypeName>System.Object</rd:TypeName>
+        </Field>
+        <Field Name="AcctMgr">
+          <DataField>AcctMgr</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FullName">
+          <DataField>FullName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="HQCO">
+      <SharedDataSet>
+        <SharedDataSetReference>HQCO</SharedDataSetReference>
+      </SharedDataSet>
+      <Fields>
+        <Field Name="HQCo">
+          <DataField>HQCo</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Subreport Name="ActiveAgreements">
+            <ReportName>Active Agreement by Account Manager</ReportName>
+            <Parameters>
+              <Parameter Name="SMCo">
+                <Value>=Parameters!SMCo.Value</Value>
+              </Parameter>
+              <Parameter Name="AMgr">
+                <Value>=Parameters!AMgr.Value</Value>
+              </Parameter>
+              <Parameter Name="AsofDate">
+                <Value>=Parameters!AsofDate.Value</Value>
+              </Parameter>
+            </Parameters>
+            <Top>1.05083in</Top>
+            <Height>1.14584in</Height>
+            <Width>11.96875in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Invoices">
+            <ReportName>subSMInvoice</ReportName>
+            <Parameters>
+              <Parameter Name="SMCo">
+                <Value>=Parameters!SMCo.Value</Value>
+              </Parameter>
+              <Parameter Name="AMgr">
+                <Value>=Parameters!AMgr.Value</Value>
+              </Parameter>
+              <Parameter Name="AsofDate">
+                <Value>=Parameters!AsofDate.Value</Value>
+              </Parameter>
+            </Parameters>
+            <Top>2.22792in</Top>
+            <Height>1.42708in</Height>
+            <Width>11.96875in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle1">
+            <ReportItems>
+              <Tablix Name="table1">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>3in</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>1in</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>1in</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>1in</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>1in</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.5in</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Image Name="image1">
+                              <Source>Embedded</Source>
+                              <Value>mckinstrylogo</Value>
+                              <Sizing>FitProportional</Sizing>
+                              <ZIndex>44</ZIndex>
+                              <Style />
+                            </Image>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox6">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Sales Summary</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <FontSize>24pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Color>#666666</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox6</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <ColSpan>4</ColSpan>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell />
+                        <TablixCell />
+                        <TablixCell />
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.22in</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="textbox2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Acct Mgrs</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <FontSize>11pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Color>#666666</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>textbox2</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <FontFamily />
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="textbox3">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Agreement Price</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <FontSize>11pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Color>#666666</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <FontFamily />
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>textbox3</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <FontFamily />
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox7">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Agree Cnt</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <FontSize>11pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Color>#666666</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox7</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="textbox4">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Service Center</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <FontSize>11pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Color>#666666</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>textbox4</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <FontFamily />
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="textbox5">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Division</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <FontSize>11pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Color>#666666</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>textbox5</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <FontFamily />
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.21in</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="AcctMgrs">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!AcctMgrs.Value</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <Color>#333333</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>AcctMgrs</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <FontFamily />
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="AgreementPrice">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!AgreementPrice.Value</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <Format>#,0.00;(#,0.00)</Format>
+                                        <Color>#333333</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>AgreementPrice</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <BackgroundColor>=iif(Fields!dupflag.Value&gt;0,"Red","White")</BackgroundColor>
+                                <FontFamily />
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="AgCnt">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!AgCnt.Value</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <Color>#333333</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>AgCnt</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <BackgroundColor>=iif(Fields!dupflag.Value&gt;0,"Red","White")</BackgroundColor>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="ServiceCenter">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!ServiceCenter.Value</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <Color>#333333</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>ServiceCenter</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <FontFamily />
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Division">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!Division.Value</Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <Color>#333333</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Division</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <FontFamily />
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <KeepWithGroup>After</KeepWithGroup>
+                      <RepeatOnNewPage>true</RepeatOnNewPage>
+                    </TablixMember>
+                    <TablixMember>
+                      <KeepWithGroup>After</KeepWithGroup>
+                      <RepeatOnNewPage>true</RepeatOnNewPage>
+                      <KeepTogether>true</KeepTogether>
+                    </TablixMember>
+                    <TablixMember>
+                      <Group Name="table1_Details_Group">
+                        <DataElementName>Detail</DataElementName>
+                      </Group>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                      <DataElementName>Detail_Collection</DataElementName>
+                      <DataElementOutput>Output</DataElementOutput>
+                      <KeepTogether>true</KeepTogether>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>AgreementTotals</DataSetName>
+                <Top>0.03805in</Top>
+                <Height>0.93in</Height>
+                <Width>7in</Width>
+                <Style />
+              </Tablix>
+            </ReportItems>
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.05695in</Top>
+            <Height>0.96805in</Height>
+            <Width>7in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>3.655in</Height>
+        <Style />
+      </Body>
+      <Width>11.96875in</Width>
+      <Page>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="SMCo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>1</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Company:</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>HQCO</DataSetName>
+          <ValueField>HQCo</ValueField>
+          <LabelField>Name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="AMgr">
+      <DataType>String</DataType>
+      <Prompt>Account Mgr(s):</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>ftrAcctMgrs</DataSetName>
+          <ValueField>AcctMgr</ValueField>
+          <LabelField>FullName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="AsofDate">
+      <DataType>DateTime</DataType>
+      <Prompt>As of Date:</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>1</NumberOfColumns>
+      <NumberOfRows>3</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>SMCo</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>AMgr</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>AsofDate</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="mckinstrylogo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>9fa37403-d609-42b0-8754-8e85e133366e</rd:ReportID>
+</Report>

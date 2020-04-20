@@ -1,0 +1,12 @@
+﻿<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Tagprefix="Selectors" Namespace="ViewpointXRef" Assembly="ViewpointXRef" %>
+
+<%@ Master Language="C#" MasterPageFile="../Master Pages/SharePointMobile.master" %>
+<%@ Register Tagprefix="BaseClasses" Namespace="BaseClasses.Web.UI.WebControls" Assembly="BaseClasses" %><asp:Content id="PageTitleContent_PlaceHolderPageTitle" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
+		    <asp:Literal id="PageTitle" runat="server" text="ViewpointXRef" /> </asp:Content>
+		    <asp:Content id="PageTitleContent_PlaceHolderMain" ContentPlaceHolderID="PlaceHolderMain" runat="server">
+		    <BaseClasses:ScrollCoordinates id="ScrollCoordinates1" runat="server"></BaseClasses:ScrollCoordinates>
+            <BaseClasses:BasePageSettings id="PageSettings" runat="server"></BaseClasses:BasePageSettings>
+            <script language="JavaScript" type="text/javascript">clearRTL()</script>
+            
+          <table width="100%" cellpadding="0" cellspacing="0" class="mobileBase"><tr><td><asp:ContentPlaceHolder id="PageContent" Runat="server" /></td></tr></table></asp:Content>

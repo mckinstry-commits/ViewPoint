@@ -1,0 +1,38 @@
+﻿SCHEMA:
+dbo
+
+STAGING TABLES:
+==============
+MCKPRCCLoad
+MCKPRCPLoad
+MCKPRCDSLoad
+MCKPRCDVLoad
+MCKPRCFSLoad
+MCKPRCFVLoad
+
+ERROR TABLES:
+-------------
+MCKPRCCerror
+MCKPRCPerror
+MCKPRCDerror
+MCKPRCFerror
+
+VIEWPOINT TABLES:
+----------------
+bHQCO
+bPRCM
+bPRCC
+bPRDL
+bPREC
+
+SPs:
+=======
+MCKspPRClassRateBatch
+MCKspPRCCInsert
+MCKspPRCPInsert
+MCKspPRCDSInsert
+MCKspPRCDVInsert
+MCKspPRCFSInsert
+MCKspPRCFVInsert
+MCKspPRClassRateVal
+MCKspPRClassRateProcess

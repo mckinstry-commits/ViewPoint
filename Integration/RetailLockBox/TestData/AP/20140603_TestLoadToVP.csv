@@ -1,0 +1,9 @@
+RecordType,Company,Number,VendorGroup,Vendor,VendorName,TransactionDate,JCCo,Job,JobDescription,Description,DetailLineCount,TotalOrigCost,TotalOrigTax,RemainingAmount,RemainingTax,CollectedInvoiceDate,CollectedInvoiceNumber,CollectedInvoiceAmount,CollectedTaxAmount,CollectedShippingAmount,CollectedImage
+PO,1,1-10036029,1,51342,INFINIT TECH SOLUTIONS,2/5/2010 0:00,1, 13732-001,I-CTR IT SETUP,EQUIPMENT                     ,1,16988,0,1473,0,6/3/2014 13:13,10036029,1473,22.095,14.73,Images\PO_1_10036029.pdf
+PO,1,1-10092086,1,51928,NET-IG,4/2/2010 0:00,1, 13732-001,I-CTR IT SETUP,MISC ITEMS                    ,1,5500,0,125.8,0,6/3/2014 13:13,10092086,125.8,1.887,1.258,Images\PO_1_10092086.pdf
+SC,,,,,,,,,815 WBRP TI,No Description,2,0,0,115,0,6/3/2014 13:13,,115,1.725,1.15,Images\SC_Unknown1.pdf
+SC,,,,,,,,,CHILDRENS HOSPITAL,No Description,1,0,0,-150800,0,6/3/2014 13:13,,-150800,-2262,-1508,Images\SC_Unknown2.pdf
+SC,1,11017-657073,1,53956,DRAKE MECHANICAL INC,6/20/2012 0:00,1,  8805-001,NIKE FACTORY STORE,PDX SERVICE,1,1820,0,1820,0,6/3/2014 13:13,657073,1820,27.3,18.2,Images\SC_11017_657073.pdf
+SC,1,30289-07605,1,53894,DCI ENGINEERS INC,3/21/2011 0:00,1,  1249-001,EGWW MODERNIZATION,DCI ENGINEERS,2,600,0,920,0,6/3/2014 13:13,07605,920,13.8,9.2,Images\SC_30289_07605.pdf
+PO,1,,,,Test Vendor 1,,,,,,,,,,,6/3/2014 13:13,,0,0,0,Images\PO_Unknown1.pdf
+PO,1,,,,Test Vendor 2,,,,,,,,,,,6/3/2014 13:13,,0,0,0,Images\PO_Unknown2.pdf

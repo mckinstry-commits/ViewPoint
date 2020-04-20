@@ -1,0 +1,3 @@
+copy .\Development\SubcontractComplianceAudit.xltm "\\setestVIEWPOINT\Viewpoint Repository\Reports\Custom\TrustedAPP\SubcontractComplianceAudit.xltm" /Y
+copy .\Staging\SubcontractComplianceAudit.xltm "\\sestgviewpoint\Viewpoint Repository\Reports\Custom\TrustedAPP\SubcontractComplianceAudit.xltm" /Y
+copy .\Production\SubcontractComplianceAudit.xltm "\\mckviewpoint\Viewpoint Repository\Reports\Custom\TrustedAPP\SubcontractComplianceAudit.xltm" /Y

@@ -1,0 +1,30 @@
+2014-06-20 11:35:07Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\
+2014-06-20 11:35:07Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140604.zip
+2014-06-20 11:35:07Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1
+2014-06-20 11:35:07Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1
+2014-06-20 11:35:08Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\McKinstryRLBAP_20140604.csv
+2014-06-20 11:35:08Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-06-20 11:35:08Z	Upload record 100003-001001: Successful : Header, Footer and Attachment records created successfully.
+2014-06-20 11:35:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\Images\SC_20_100003-001001.pdf' to '\\setestconimg\Viewpoint\Company20\AP\APUnappInv\07-2014': Successful
+2014-06-20 11:35:08Z	Upload record 100008-001001: Successful : Header, Footer and Attachment records created successfully.
+2014-06-20 11:35:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\Images\SC_20_100008-001001.pdf' to '\\setestconimg\Viewpoint\Company20\AP\APUnappInv\06-2014': Successful
+2014-06-20 11:35:09Z	Upload record 100004-001001: Successful : Header, Footer and Attachment records created successfully.
+2014-06-20 11:35:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\Images\SC_20_100004-001001.pdf' to '\\setestconimg\Viewpoint\Company20\AP\APUnappInv\06-2014': Successful
+2014-06-20 11:35:09Z	Upload record 100006-001001: Successful : Header, Footer and Attachment records created successfully.
+2014-06-20 11:35:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\Images\SC_1_100006-001001.pdf' to '\\setestconimg\Viewpoint\Company1\AP\APUnappInv\07-2014': Successful
+2014-06-20 11:35:09Z	Upload record 100009-001001: Successful : Header, Footer and Attachment records created successfully.
+2014-06-20 11:35:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\Images\SC_1_100009-001001.pdf' to '\\setestconimg\Viewpoint\Company1\AP\APUnappInv\07-2014': Successful
+2014-06-20 11:35:09Z	Upload record 14154002: Successful : Header, Footer and Attachment records created successfully.
+2014-06-20 11:35:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\Images\PO_20_14154002.pdf' to '\\setestconimg\Viewpoint\Company20\AP\APUnappInv\06-2014': Successful
+2014-06-20 11:35:09Z	Upload record 14154004: Successful : Header, Footer and Attachment records created successfully.
+2014-06-20 11:35:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\Images\PO_20_14154004.pdf' to '\\setestconimg\Viewpoint\Company20\AP\APUnappInv\06-2014': Successful
+2014-06-20 11:35:09Z	Upload record 14154003: Successful : Header, Footer and Attachment records created successfully.
+2014-06-20 11:35:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\Images\PO_20_14154003.pdf' to '\\setestconimg\Viewpoint\Company20\AP\APUnappInv\06-2014': Successful
+2014-06-20 11:35:10Z	Upload record 14154001: Successful : Header, Footer and Attachment records created successfully.
+2014-06-20 11:35:10Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\Images\PO_1_14154001.pdf' to '\\setestconimg\Viewpoint\Company1\AP\APUnappInv\06-2014': Successful
+2014-06-20 11:35:10Z	Upload record 14154005: Successful : Header, Footer and Attachment records created successfully.
+2014-06-20 11:35:10Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\Images\PO_1_14154005.pdf' to '\\setestconimg\Viewpoint\Company1\AP\APUnappInv\06-2014': Successful
+2014-06-20 11:35:10Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1\McKinstryRLBAP_20140604.csv
+2014-06-20 11:35:10Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.35.07Z_1
+2014-06-20 11:35:10Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140604.zip
+2014-06-20 11:35:10Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\

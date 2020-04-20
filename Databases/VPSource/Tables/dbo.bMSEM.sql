@@ -1,0 +1,41 @@
+CREATE TABLE [dbo].[bMSEM]
+(
+[MSCo] [dbo].[bCompany] NOT NULL,
+[Mth] [dbo].[bMonth] NOT NULL,
+[BatchId] [dbo].[bBatchID] NOT NULL,
+[EMCo] [dbo].[bCompany] NOT NULL,
+[Equipment] [dbo].[bEquip] NOT NULL,
+[EMGroup] [dbo].[bGroup] NOT NULL,
+[RevCode] [dbo].[bRevCode] NOT NULL,
+[SaleType] [char] (1) COLLATE Latin1_General_BIN NOT NULL,
+[BatchSeq] [int] NOT NULL,
+[HaulLine] [smallint] NOT NULL,
+[OldNew] [tinyint] NOT NULL,
+[MSTrans] [dbo].[bTrans] NULL,
+[SaleDate] [dbo].[bDate] NOT NULL,
+[FromLoc] [dbo].[bLoc] NOT NULL,
+[MatlGroup] [dbo].[bGroup] NOT NULL,
+[Material] [dbo].[bMatl] NOT NULL,
+[JCCo] [dbo].[bCompany] NULL,
+[Job] [dbo].[bJob] NULL,
+[PhaseGroup] [dbo].[bGroup] NULL,
+[Phase] [dbo].[bPhase] NULL,
+[JCCType] [dbo].[bJCCType] NULL,
+[CustGroup] [dbo].[bGroup] NULL,
+[Customer] [dbo].[bCustomer] NULL,
+[INCo] [dbo].[bCompany] NULL,
+[ToLoc] [dbo].[bLoc] NULL,
+[PRCo] [dbo].[bCompany] NULL,
+[Employee] [dbo].[bEmployee] NULL,
+[GLCo] [dbo].[bCompany] NOT NULL,
+[GLAcct] [dbo].[bGLAcct] NULL,
+[UM] [dbo].[bUM] NOT NULL,
+[Units] [dbo].[bUnits] NOT NULL,
+[RevRate] [dbo].[bUnitCost] NOT NULL,
+[Amount] [dbo].[bDollar] NOT NULL,
+[Hours] [dbo].[bHrs] NOT NULL CONSTRAINT [DF_bMSEM_Hours] DEFAULT ((0)),
+[EMTrans] [dbo].[bTrans] NULL
+) ON [PRIMARY]
+GO
+CREATE UNIQUE CLUSTERED INDEX [biMSEM] ON [dbo].[bMSEM] ([MSCo], [Mth], [BatchId], [EMCo], [Equipment], [EMGroup], [RevCode], [SaleType], [BatchSeq], [HaulLine], [OldNew]) WITH (FILLFACTOR=90) ON [PRIMARY]
+GO

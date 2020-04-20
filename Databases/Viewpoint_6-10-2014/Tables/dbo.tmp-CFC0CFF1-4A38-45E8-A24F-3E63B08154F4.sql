@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[tmp-CFC0CFF1-4A38-45E8-A24F-3E63B08154F4]
+(
+[SecurityUpdater] [varchar] (max) COLLATE Latin1_General_BIN NOT NULL,
+[SeqForTmpTable] [int] NOT NULL IDENTITY(1, 1)
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

@@ -1,0 +1,25 @@
+3:45:09 PM	-----------------------------------------------
+3:45:09 PM	Tuesday, March 04, 2014
+3:45:09 PM	-----------------------------------------------
+3:45:09 PM	FTP Server:   sftp.metlife.com
+3:45:09 PM	FTP Protocol: Sftp
+3:45:09 PM	Remote Upload Dir:   /Inbound/
+3:45:09 PM	Remote Download Dir:   /Outbound
+3:45:09 PM	Server:       SEABILLOXPS
+3:45:09 PM	Local Dir:    C:\TFS\ViewPoint\Integration\MetLife\Download\
+3:45:09 PM	-----------------------------------------------
+3:45:38 PM	** Benefits Eligible Roster Export "SELECT * FROM dbo.mfnBenefitEligibleEmployees(20140223)" (939 records)
+3:45:38 PM		to C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls
+3:45:38 PM	
+3:45:38 PM	-----------------------------------------------
+3:45:38 PM	Upload File: C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls to sftp.metlife.com:/Inbound/
+3:45:38 PM	-----------------------------------------------
+3:45:38 PM	Encypting C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls for secured delivery.
+3:45:38 PM	C:\TFS\ViewPoint\Integration\MetLife\gnupgp\gpg2.exe -q -e -u McKinstry -r 96765440 C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls
+3:45:39 PM	** Upload SEABILLOXPS:"C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls.pgp" -->> sftp.metlife.com/Inbound/
+3:45:39 PM	
+3:45:39 PM	** Sending Email
+3:45:39 PM		To: billo@mckinstry.com
+3:45:39 PM	
+3:45:39 PM	Archive C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls to C:\TFS\ViewPoint\Integration\MetLife\Archive
+3:45:39 PM	Archive C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls.pgp to C:\TFS\ViewPoint\Integration\MetLife\Archive

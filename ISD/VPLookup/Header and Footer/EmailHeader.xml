@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>EmailHeader</Name>
+    <Type>Header</Type>
+    <GenerateDirectory>Header and Footer</GenerateDirectory>
+    <Layout>Header and Footer\EmailHeader.html</Layout>
+    <DisplayName>Header</DisplayName>
+    <Description>(Description)</Description>
+  </Self>
+  <ComposedOf>
+    <ContainedComponent>
+      <Name>Logo</Name>
+      <Type>Image</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>ImageURL</Name>
+          <Value>../Images/Logo.gif</Value>
+        </Attribute>
+        <Attribute>
+          <Name>style</Name>
+          <Value>border-width:0px;</Value>
+        </Attribute>
+	  <Attribute>
+          <Name>alt</Name>
+          <Value>Txt:PageHeader</Value>
+	    <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+     </ContainedComponent>
+  </ComposedOf>
+  <LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-16"?&gt;
+    &lt;LayoutDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+      &lt;Layout Name="Header"  Type="RootLayout"&gt;
+	  
+		&lt;Prolog&gt;
+		  &lt;Value&gt;&lt;/Value&gt;
+	    &lt;/Prolog&gt;
+		   
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:IMAGE NAME="Logo"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+		
+		&lt;Epilog&gt;
+		  &lt;Value&gt;&lt;/Value&gt;
+	    &lt;/Epilog&gt;
+		   
+	    &lt;TableAttributes&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;cellpadding&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;cellspacing&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+		 	&lt;Name&gt;border&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+		 	&lt;Name&gt;width&lt;/Name&gt;
+			&lt;AttributeValue&gt;100%&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;logoEmailBG&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+		&lt;/TableAttributes&gt;
+
+      &lt;/Layout&gt;
+    &lt;/LayoutDefinition&gt;]]&gt;
+  </LayoutDefinition>
+</ComponentDefinition>

@@ -1,0 +1,63 @@
+CREATE TABLE [dbo].[vJCCostEntryTransaction]
+(
+[JCCostEntryID] [bigint] NOT NULL,
+[JCCostTransaction] [int] NOT NULL,
+[JCCo] [dbo].[bCompany] NOT NULL,
+[Job] [dbo].[bJob] NOT NULL,
+[PhaseGroup] [dbo].[bGroup] NOT NULL,
+[Phase] [dbo].[bPhase] NOT NULL,
+[CostType] [dbo].[bJCCType] NOT NULL,
+[ActualDate] [dbo].[bDate] NULL,
+[Description] [dbo].[bItemDesc] NULL,
+[UM] [dbo].[bUM] NULL,
+[ActualUnitCost] [dbo].[bUnitCost] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_ActualUnitCost] DEFAULT ((0)),
+[PerECM] [dbo].[bECM] NULL,
+[ActualHours] [dbo].[bHrs] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_ActualHours] DEFAULT ((0)),
+[ActualUnits] [dbo].[bUnits] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_ActualUnits] DEFAULT ((0)),
+[ActualCost] [dbo].[bDollar] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_ActualCost] DEFAULT ((0)),
+[PostedUM] [dbo].[bUM] NULL,
+[PostedUnits] [dbo].[bUnits] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_PostedUnits] DEFAULT ((0)),
+[PostedUnitCost] [dbo].[bDollar] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_PostedUnitCost] DEFAULT ((0)),
+[PostedECM] [dbo].[bECM] NULL,
+[PostRemCmUnits] [dbo].[bUnits] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_PostRemCmUnits] DEFAULT ((0)),
+[RemainCmtdCost] [dbo].[bDollar] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_RemainCmtdCost] DEFAULT ((0)),
+[RemCmtdTax] [dbo].[bDollar] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_RemCmtdTax] DEFAULT ((0)),
+[PRCo] [dbo].[bCompany] NULL,
+[Employee] [dbo].[bEmployee] NULL,
+[Craft] [dbo].[bCraft] NULL,
+[Class] [dbo].[bClass] NULL,
+[Crew] [varchar] (10) COLLATE Latin1_General_BIN NULL,
+[EarnFactor] [dbo].[bRate] NULL,
+[EarnType] [dbo].[bEarnType] NULL,
+[Shift] [tinyint] NULL,
+[LiabilityType] [dbo].[bLiabilityType] NULL,
+[VendorGroup] [dbo].[bGroup] NULL,
+[Vendor] [dbo].[bVendor] NULL,
+[APCo] [dbo].[bCompany] NULL,
+[PO] [varchar] (30) COLLATE Latin1_General_BIN NULL,
+[POItem] [dbo].[bItem] NULL,
+[POItemLine] [int] NULL,
+[MatlGroup] [dbo].[bGroup] NULL,
+[Material] [dbo].[bMatl] NULL,
+[INCo] [dbo].[bCompany] NULL,
+[Loc] [dbo].[bLoc] NULL,
+[INStdUnitCost] [dbo].[bUnitCost] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_INStdUnitCost] DEFAULT ((0)),
+[INStdECM] [dbo].[bECM] NULL,
+[INStdUM] [dbo].[bUM] NULL,
+[EMCo] [dbo].[bCompany] NULL,
+[Equipment] [dbo].[bEquip] NULL,
+[EMGroup] [dbo].[bGroup] NULL,
+[RevCode] [dbo].[bRevCode] NULL,
+[TaxType] [tinyint] NULL,
+[TaxGroup] [dbo].[bGroup] NULL,
+[TaxCode] [dbo].[bTaxCode] NULL,
+[TaxBasis] [dbo].[bDollar] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_TaxBasis] DEFAULT ((0)),
+[TaxAmt] [dbo].[bDollar] NOT NULL CONSTRAINT [DF_vJCCostEntryTransaction_TaxAmt] DEFAULT ((0))
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[vJCCostEntryTransaction] ADD CONSTRAINT [PK_vJCCostEntryTransaction] PRIMARY KEY CLUSTERED  ([JCCostEntryID], [JCCostTransaction]) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[vJCCostEntryTransaction] WITH NOCHECK ADD CONSTRAINT [FK_vJCCostEntryTransaction_vJCCostEntry] FOREIGN KEY ([JCCostEntryID]) REFERENCES [dbo].[vJCCostEntry] ([JCCostEntryID]) ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[vJCCostEntryTransaction] NOCHECK CONSTRAINT [FK_vJCCostEntryTransaction_vJCCostEntry]
+GO

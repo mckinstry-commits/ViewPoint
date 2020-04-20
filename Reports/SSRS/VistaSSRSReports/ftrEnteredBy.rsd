@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>Viewpoint</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@SMCo">
+          <DefaultValue>1</DefaultValue>
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>--Declare @SMCo varchar(50) =1--= '&lt;SM Company param&gt;' 1, 20
+select distinct EnteredBy Fname, replace(q.EnteredBy,'MCKINSTRY\','') EnteredBy 
+FROM dbo.SMWorkOrderQuoteExt q 
+where q.SMCo=@SMCo
+union all
+select 'Any' Fname, 'Any' EnteredBy
+order by 1
+</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Fname">
+        <DataField>Fname</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="EnteredBy">
+        <DataField>EnteredBy</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

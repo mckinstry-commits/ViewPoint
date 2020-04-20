@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# SQL Server Management Studio Solution File, Format Version 11.00
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "ViewpointRateSchedule", "ViewpointRateSchedule\ViewpointRateSchedule.ssmssqlproj", "{2B5B09A3-A1C5-45EF-86A3-268D78304728}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B5B09A3-A1C5-45EF-86A3-268D78304728}.Default|Default.ActiveCfg = Default
+		{7AA17D7B-9008-4CDE-B5FC-344BB8034DEE}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

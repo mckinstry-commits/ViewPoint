@@ -1,0 +1,9 @@
+zip2tax
+
+Username:	mckinstj
+Password: 	jxm@68gt
+
+
+http://www.zip2tax.com/Link/Lookup.asp?zip=90210&usr=mckinstj&pwd=jxm@68gt
+http://www.zip2tax.com/Link/Lookup_Extended.asp?zip=90210&usr=mckinstj&pwd=jxm@68gt
+

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="AsteaProduction">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=SEA-SQLARCH01.MCKINSTRY.COM;Initial Catalog=Astea84Production</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>e32d0a80-f5b9-4184-90a7-113f84f14fd2</DataSourceID>
+</RptDataSource>

@@ -1,0 +1,17 @@
+2014-07-18 11:05:40Z	Started import for zip files in folder: C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\
+2014-07-18 11:05:40Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-07-18 11:05:40Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\26221.zip
+2014-07-18 11:05:40Z	Creating directory: C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\2014-07-18 11.05.39Z_1
+2014-07-18 11:05:40Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\2014-07-18 11.05.39Z_1
+2014-07-18 11:05:40Z	Create attachment: 26221.pdf: Successful : Attachment record created successfully.
+2014-07-18 11:05:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\2014-07-18 11.05.39Z_1\26221\26221.pdf' to '\\setestconimg\Viewpoint\Company101\AP\APEntry\05-2014': Successful
+2014-07-18 11:05:40Z	Archiving file 'C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\2014-07-18 11.05.39Z_1\26221\26221.pdf' to '': Successful
+2014-07-18 11:05:41Z	Removing file 'C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\2014-07-18 11.05.39Z_1\26221\26221.pdf': Successful
+2014-07-18 11:05:41Z	Found unprocessed image files: 0
+2014-07-18 11:05:41Z	Removing file 'C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\26221.zip': Successful
+2014-07-18 11:05:41Z	Removing directory: C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\2014-07-18 11.05.39Z_1
+2014-07-18 11:05:41Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\26221.zip
+2014-07-18 11:05:41Z	Unable to process zip file 26527.zip. No APHB header. Expense ID: 26527
+2014-07-18 11:05:41Z	Unable to process zip file 26670.zip. No APHB header. Expense ID: 26670
+2014-07-18 11:05:41Z	Unable to process zip file 26730.zip. No APHB header. Expense ID: 26730
+2014-07-18 11:05:41Z	Completed import for zip files in folder: C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\

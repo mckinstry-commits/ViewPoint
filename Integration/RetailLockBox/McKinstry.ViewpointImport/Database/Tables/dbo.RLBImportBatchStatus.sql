@@ -1,0 +1,42 @@
+USE [MCK_INTEGRATION]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[RLBImportBatchStatus](
+	[RLBImportBatchStatusID] [int] IDENTITY(1,1) NOT NULL,
+	[StatusCode] [varchar](3) NOT NULL,
+	[Status] [varchar](100) NOT NULL,
+	[Created] [datetime] NULL,
+	[Modified] [datetime] NULL,
+
+ CONSTRAINT [PK_RLBImportBatchStatus] PRIMARY KEY CLUSTERED 
+(
+	[RLBImportBatchStatusID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+
+ CONSTRAINT [UQ_RLBImportBatchStatus] UNIQUE NONCLUSTERED 
+(
+	[StatusCode] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[RLBImportBatchStatus] ADD  CONSTRAINT [DF_RLBImportBatchStatus_Created]  DEFAULT (getdate()) FOR [Created]
+GO
+
+ALTER TABLE [dbo].[RLBImportBatchStatus] ADD  CONSTRAINT [DF_RLBImportBatchStatus_Modified]  DEFAULT (getdate()) FOR [Modified]
+GO
+
+

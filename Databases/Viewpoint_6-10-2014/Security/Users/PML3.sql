@@ -1,0 +1,5 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'PML3')
+CREATE LOGIN [PML3] WITH PASSWORD = 'p@ssw0rd'
+GO
+CREATE USER [PML3] FOR LOGIN [PML3]
+GO

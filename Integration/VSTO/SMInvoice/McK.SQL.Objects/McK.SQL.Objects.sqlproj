@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>McK.SQL.Objects</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{ddcba574-b4a6-4387-953f-d9725f948af4}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>McK.SQL.Objects</RootNamespace>
+    <AssemblyName>McK.SQL.Objects</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="02_Promote_SQL" />
+    <Folder Include="03_Master_SQL" />
+    <Folder Include="01_Dev_SQL" />
+    <Folder Include="04_Archive" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="03_Master_SQL\mckfnGetWOinvoiceHeader.sql" />
+    <None Include="03_Master_SQL\MCKspInvoiceDetail.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="03_Master_SQL\Add index to vSMWorkOrder.sql" />
+    <None Include="03_Master_SQL\CREATE NONCLUSTERED INDEX IX_Customer on vSMInvoice.sql" />
+    <None Include="03_Master_SQL\mckfnAgreement.sql" />
+    <None Include="03_Master_SQL\mckfnCustomersBySortName.sql" />
+    <None Include="03_Master_SQL\mckfnDivisionServiceCenters.sql" />
+    <None Include="03_Master_SQL\mckfnGetAgreemtMcKContact.sql" />
+    <None Include="03_Master_SQL\mckfnGetWOinvoiceHeader.sql" />
+    <None Include="03_Master_SQL\MCKspDeliverInvoice.sql" />
+    <None Include="03_Master_SQL\MCKspInvoiceDetail.sql" />
+    <None Include="03_Master_SQL\MCKspSetDelivered.sql" />
+    <None Include="03_Master_SQL\McKspSMInvoiceDeliverySearch.sql" />
+    <None Include="03_Master_SQL\MCKspSMRecipients.sql" />
+    <None Include="03_Master_SQL\McKtyInvoiceList.sql" />
+    <None Include="03_Master_SQL\SMCustomerInfo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive\add Customer Index to bARCM.sql" />
+    <None Include="04_Archive\mckfnAgreement.sql" />
+    <None Include="04_Archive\mckfnCustomersBySortName.sql" />
+    <None Include="04_Archive\mckfnDivisionServiceCenters.sql" />
+    <None Include="04_Archive\mckfnGetAgreementInvoiceHeader-SEALawrenceTest.sql" />
+    <None Include="04_Archive\mckfnGetWOinvoiceHeader.sql" />
+    <None Include="04_Archive\mckfnGetWOinvoiceHeader-SEALawrenceTest.sql" />
+    <None Include="04_Archive\MCKspInvoiceDetail.sql" />
+    <None Include="04_Archive\McKspSMInvoiceDeliverySearch.sql" />
+    <None Include="04_Archive\MCKspSMRecipients.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="04_Archive\mckfnGetAgreementInvoiceHeader.sql" />
+    <Build Include="03_Master_SQL\5859 mckfnGetAgreementInvoiceHeader.sql" />
+  </ItemGroup>
+</Project>

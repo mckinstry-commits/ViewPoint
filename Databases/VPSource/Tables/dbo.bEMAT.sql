@@ -1,0 +1,18 @@
+CREATE TABLE [dbo].[bEMAT]
+(
+[EMCo] [dbo].[bCompany] NOT NULL,
+[AllocCode] [tinyint] NOT NULL,
+[CostType] [dbo].[bEMCType] NOT NULL,
+[EMGroup] [dbo].[bGroup] NOT NULL
+) ON [PRIMARY]
+ALTER TABLE [dbo].[bEMAT] ADD
+CONSTRAINT [FK_bEMAT_bEMCO_EMCo] FOREIGN KEY ([EMCo]) REFERENCES [dbo].[bEMCO] ([EMCo])
+ALTER TABLE [dbo].[bEMAT] ADD
+CONSTRAINT [FK_bEMAT_bEMAH_AllocCode] FOREIGN KEY ([EMCo], [AllocCode]) REFERENCES [dbo].[bEMAH] ([EMCo], [AllocCode]) ON DELETE CASCADE
+ALTER TABLE [dbo].[bEMAT] ADD
+CONSTRAINT [FK_bEMAT_bHQGP_EMGroup] FOREIGN KEY ([EMGroup]) REFERENCES [dbo].[bHQGP] ([Grp])
+ALTER TABLE [dbo].[bEMAT] ADD
+CONSTRAINT [FK_bEMAT_bEMCT_CostType] FOREIGN KEY ([EMGroup], [CostType]) REFERENCES [dbo].[bEMCT] ([EMGroup], [CostType])
+GO
+CREATE UNIQUE CLUSTERED INDEX [biEMAT] ON [dbo].[bEMAT] ([EMCo], [AllocCode], [CostType], [EMGroup]) WITH (FILLFACTOR=90) ON [PRIMARY]
+GO

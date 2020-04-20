@@ -1,0 +1,12 @@
+3:25:57 PM	SEABILLOXPS
+3:25:58 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\Budgets
+3:25:59 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\Budgets\GetAdaptiveBudget.ps1
+3:26:00 PM	https://live.adaptiveplanning.com/api/v7
+3:26:02 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\Budgets\Log\ProcessLog_20140427.txt
+3:26:03 PM	----------------------------------------------------------------------------------------------------
+3:26:04 PM	Start ==>Sunday, April 27, 2014
+3:26:05 PM	----------------------------------------------------------------------------------------------------
+3:26:15 PM	https://live.adaptiveplanning.com/api/v7 [billo@mckinstry.com:Loreba1ug]
+3:26:17 PM	<?xml version='1.0' encoding='UTF-8'?><call method='exportAccounts'><credentials login='billo@mckinstry.com' password='Loreba1ug'/></call>
+3:28:06 PM	----------------------------------------------------------------------------------------------------
+3:28:07 PM	End ==>Sunday, April 27, 2014

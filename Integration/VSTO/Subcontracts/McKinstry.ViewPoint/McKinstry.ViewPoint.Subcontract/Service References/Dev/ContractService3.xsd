@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:52963/ContractService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:52963/ContractService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:complexType name="ArrayOfSubcontract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Subcontract" nillable="true" type="tns:Subcontract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubcontract" nillable="true" type="tns:ArrayOfSubcontract" />
+  <xs:complexType name="Subcontract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddedBatchID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="AddedMth" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ApprovalRequired" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Approved" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ApprovedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyZip" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactCode" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DocType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HoldCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InUseBatchId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="InUseMth" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="InclACOinMaxYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JCCo" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="Job" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobZip" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="KeyID" type="xs:long" />
+          <xs:element minOccurs="0" name="MaxRetgAmt" type="xs:decimal" />
+          <xs:element minOccurs="0" name="MaxRetgByPct" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="MaxRetgDistStyle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaxRetgOpt" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaxRetgPct" type="xs:decimal" />
+          <xs:element minOccurs="0" name="MthClosed" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrigDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OurCompany" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PMCo" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="PMEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PayTerms" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Project" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProjectManager" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProjectMgr" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Purge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SL" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SLCloseBatchID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="SLCo" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="SLTotalOrig" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="StateExhibit" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="UniqueAttchID" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="Vendor" type="xs:int" />
+          <xs:element minOccurs="0" name="VendorAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorContactName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorGroup" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="VendorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorZip" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udAddendum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udBalancing" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udBillType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udCGCTable" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udCGCTableID" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="udCertPRPrevYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udCommissioningYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udConstruction" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udConsulting" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udControls" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udConv" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udCostPlusYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udDesignServ" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udEEO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udFacility" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udFederalYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udGTC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udInsurance" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udInvYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udLighting" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udMasIns" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udMastSub" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="udNegMods" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udPerfBondYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udProServTesting" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udProServYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udProjSchedule" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udRoofingYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSLContractNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSLDrawings" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSafety" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSbstntlComp" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="udScheduleOVal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udScopeOfWork" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSoftHost" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSoftLicense" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSoftProServ" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSoftSupMaintYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSubType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udWorkOrderYN" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Subcontract" nillable="true" type="tns:Subcontract" />
+  <xs:complexType name="ArrayOfDocLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocLocation" nillable="true" type="tns:DocLocation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocLocation" nillable="true" type="tns:ArrayOfDocLocation" />
+  <xs:complexType name="DocLocation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q2:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FilePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Filename" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="LocType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Path" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Sequence" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DocLocation" nillable="true" type="tns:DocLocation" />
+  <xs:complexType name="ArrayOfCompany">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Company" nillable="true" type="tns:Company" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCompany" nillable="true" type="tns:ArrayOfCompany" />
+  <xs:complexType name="Company">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q3:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AuditCoParams" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AuditContact" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AuditMatl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AuditTax" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactGroup" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CustGroup" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="Customer" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="DFId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="DefaultCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EMGroup" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FedTaxId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HQCo1" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="KeyID" type="xs:long" />
+          <xs:element minOccurs="0" name="MaskId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="MatlGroup" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="MenuImage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhaseGroup" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReportDateFormat" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="STEmpId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShopGroup" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaxGroup" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="UniqueAttchID" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="Vendor" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="VendorGroup" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="Zip" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udTESTCo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Company" nillable="true" type="tns:Company" />
+  <xs:complexType name="MasterContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q4:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CompanyNumber" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="ExecDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="NegotiatedModYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrigDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OurCompany" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateExhibit" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Vendor" type="xs:int" />
+          <xs:element minOccurs="0" name="VendorAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorContactName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorGroup" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="VendorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorZip" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udAddendum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udBalancing" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udCertPRPrevYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udCommissioningYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udConstruction" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udConsulting" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udControls" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udCostPlusYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udDesign" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udEEO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udFacility" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udFederalYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udGTC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udInsurance" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udInvYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udLighting" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udPerfBondYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udProServYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udRoofing" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSafety" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSoftHost" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSoftLicense" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSoftProServ" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSoftSupMaintYN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udSpecTandC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udStateTandC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udmasIns" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MasterContract" nillable="true" type="tns:MasterContract" />
+</xs:schema>

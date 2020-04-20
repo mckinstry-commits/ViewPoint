@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.APImport.Viewpoint", "McK.APImport.Viewpoint\McK.APImport.Viewpoint.csproj", "{667AAE55-D03A-4CD2-8353-C775C65BFAD2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{39DAC121-DC73-4CDD-8BFB-87337D266FAB} = {39DAC121-DC73-4CDD-8BFB-87337D266FAB}
+		{ED02B4C3-2304-4392-BB52-CCC17B697CF1} = {ED02B4C3-2304-4392-BB52-CCC17B697CF1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.Data.Viewpoint", "McK.Data.Viewpoint\McK.Data.Viewpoint.csproj", "{ED02B4C3-2304-4392-BB52-CCC17B697CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.APImport.Common", "McK.APImport.Common\McK.APImport.Common.csproj", "{39DAC121-DC73-4CDD-8BFB-87337D266FAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{667AAE55-D03A-4CD2-8353-C775C65BFAD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667AAE55-D03A-4CD2-8353-C775C65BFAD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667AAE55-D03A-4CD2-8353-C775C65BFAD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667AAE55-D03A-4CD2-8353-C775C65BFAD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED02B4C3-2304-4392-BB52-CCC17B697CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED02B4C3-2304-4392-BB52-CCC17B697CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED02B4C3-2304-4392-BB52-CCC17B697CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED02B4C3-2304-4392-BB52-CCC17B697CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39DAC121-DC73-4CDD-8BFB-87337D266FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39DAC121-DC73-4CDD-8BFB-87337D266FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39DAC121-DC73-4CDD-8BFB-87337D266FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39DAC121-DC73-4CDD-8BFB-87337D266FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D2C1166-D5D3-4386-B6B6-FFD5B241C490}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://setfs01:8080/tfs/mckinstry%20team
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = McK.APImport.Common\\McK.APImport.Common.csproj
+		SccProjectName1 = McK.APImport.Common
+		SccLocalPath1 = McK.APImport.Common
+		SccProjectUniqueName2 = McK.APImport.Viewpoint\\McK.APImport.Viewpoint.csproj
+		SccProjectName2 = McK.APImport.Viewpoint
+		SccLocalPath2 = McK.APImport.Viewpoint
+		SccProjectUniqueName3 = McK.Data.Viewpoint\\McK.Data.Viewpoint.csproj
+		SccProjectName3 = McK.Data.Viewpoint
+		SccLocalPath3 = McK.Data.Viewpoint
+	EndGlobalSection
+EndGlobal

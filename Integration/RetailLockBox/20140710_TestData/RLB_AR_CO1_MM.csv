@@ -1,0 +1,17 @@
+Company,InvoiceNumber,CustGroup,Customer,CustomerName,TransactionDate,InvoiceDescription,DetailLineCount,AmountDue,OriginalAmount,Tax
+1,15,1,219735,Weyerhaeuser Co Seatac   ,4/15/2014 0:00,                    ,12,-33966.96,11322.32,982.32
+1,293,1,215905,Skanska USA Bldg WA Divis,2/10/2014 0:00,RETENTION BILLING   ,4,-60226.2,0,0
+1,2642,1,221190,Mobilitie                ,4/1/2014 0:00,APRIL BILLING       ,4,120000,120000,0
+1,6133,1,215905,Skanska USA Bldg WA Divis,2/10/2014 0:00,RETENTION BILLING   ,4,-98305.4,0,0
+1,6452,1,208556,Jackson Dean Construction,3/21/2014 0:00,MARCH BILLING       ,8,-40440,13480,0
+1,7124,1,219130,UW Information Technology,6/16/2014 0:00,                    ,8,22108.08,-7369.36,-639.36
+1,7160,1,210900,Mukilteo School District ,3/31/2014 0:00,MARCH BILLING       ,12,1848.64,1848.64,132.64
+1,7990,1,217601,Unimark Construction     ,6/12/2014 0:00,CRCT APLD PMTS      ,4,1857.6,0,0
+1,7990,1,217601,Unimark Construction     ,6/12/2014 0:00,CRCT APLD PMTS      ,4,16718.4,0,0
+1,8268,1,205515,Ed Barber                ,5/30/2013 0:00,                    ,4,-10318.88,0,0
+1,   S993314,1,202131,Beacon Hill Dental Associ,5/7/2014 0:00,SERVICEALLIANCE     ,8,-4628.52,1542.84,133.84
+1,   S993414,1,221277,Boeing 7-107             ,5/7/2014 0:00,SERVICEALLIANCE     ,8,9625.52,9625.52,835.08
+1,   S993914,1,204165,Cooley LLP               ,5/7/2014 0:00,SERVICEALLIANCE     ,8,5470.64,5470.64,474.64
+1,   S994214,1,205528,Eden Hill                ,5/7/2014 0:00,SERVICEALLIANCE     ,12,-48184.44,16061.48,1393.48
+1,   S994414,1,205454,EXECUTIVE POOL ESTATES   ,5/7/2014 0:00,SERVICEALLIANCE     ,8,-11119.68,3706.56,321.56
+1,   S994514,1,205813,Expedia.com              ,5/7/2014 0:00,SERVICEALLIANCE     ,8,-95967.96,31989.32,2775.32

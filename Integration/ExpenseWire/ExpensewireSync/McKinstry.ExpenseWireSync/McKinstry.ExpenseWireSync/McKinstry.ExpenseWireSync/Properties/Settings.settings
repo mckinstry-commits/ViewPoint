@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="McKinstry.ExpenseWireSync.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="McKinstry_ExpenseWireSync_cgcService_Utility" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://seapp02:81/McKinstry.CGC.WebServices/McKinstry.WebServices.Utility.asmx</Value>
+    </Setting>
+    <Setting Name="McKinstry_ExpenseWireSync_ExpenseWireProxy_ExpenseWireService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sandbox.expensewire.com/openaccess/webmethods/expensewire.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

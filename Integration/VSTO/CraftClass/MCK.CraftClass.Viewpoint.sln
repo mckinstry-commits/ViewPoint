@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCK.CraftClass.Viewpoint", "MCK.CraftClass.Viewpoint\MCK.CraftClass.Viewpoint.csproj", "{E9843A2F-A41D-4FF0-B57D-174621AF60B1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FF31B6E-D23C-46DF-B7D3-DDC9F4985AD5} = {4FF31B6E-D23C-46DF-B7D3-DDC9F4985AD5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.Data.Viewpoint", "..\CraftClassUpdate\McK.Data.Viewpoint\McK.Data.Viewpoint.csproj", "{4FF31B6E-D23C-46DF-B7D3-DDC9F4985AD5}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "McK.SQL.Objects", "McK.SQL.Objects\McK.SQL.Objects.sqlproj", "{2195D8FD-8DC7-4AB1-9F8C-413212369653}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9843A2F-A41D-4FF0-B57D-174621AF60B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9843A2F-A41D-4FF0-B57D-174621AF60B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9843A2F-A41D-4FF0-B57D-174621AF60B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9843A2F-A41D-4FF0-B57D-174621AF60B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF31B6E-D23C-46DF-B7D3-DDC9F4985AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF31B6E-D23C-46DF-B7D3-DDC9F4985AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF31B6E-D23C-46DF-B7D3-DDC9F4985AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF31B6E-D23C-46DF-B7D3-DDC9F4985AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2195D8FD-8DC7-4AB1-9F8C-413212369653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2195D8FD-8DC7-4AB1-9F8C-413212369653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6CA995D-5EBA-4565-ADCD-0152B2929831}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.mckinstry.com:8080/tfs/mckinstry%20team
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = McK.SQL.Objects\\McK.SQL.Objects.sqlproj
+		SccProjectName1 = McK.SQL.Objects
+		SccLocalPath1 = McK.SQL.Objects
+		SccProjectUniqueName2 = ..\\CraftClassUpdate\\McK.Data.Viewpoint\\McK.Data.Viewpoint.csproj
+		SccProjectName2 = ../CraftClassUpdate/McK.Data.Viewpoint
+		SccLocalPath2 = ..\\CraftClassUpdate\\McK.Data.Viewpoint
+		SccProjectUniqueName3 = MCK.CraftClass.Viewpoint\\MCK.CraftClass.Viewpoint.csproj
+		SccProjectName3 = MCK.CraftClass.Viewpoint
+		SccLocalPath3 = MCK.CraftClass.Viewpoint
+	EndGlobalSection
+EndGlobal

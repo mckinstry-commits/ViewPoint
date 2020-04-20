@@ -1,0 +1,4 @@
+C:
+CD \
+REM dtexec /file EBS_Timesheet_VP_Package.dtsx
+dtexec /FILE "\"C:\Scripts\EBSTimesheets\EBS_Timesheet_VP_Package.dtsx\"" /CONNECTION DBSource;"\"Data Source=VIEWPOINTAG\VIEWPOINT;Initial Catalog=MCK_INTEGRATION;Integrated Security=True;Application Name=SSIS-Package-{BD4D9619-9438-43FF-B2A8-DB9E5998AF35}VIEWPOINTAG\VIEWPOINT.VPIntegration;\"" /CONNECTION FileOutput;"\"\\mckviewpoint\viewpoint repository\bulk inserts\ETL\PR\EBS\AutoImport\EBSTimesheet_VP_Import10312014125341PM.csv\"" /CONNECTION "\"VIEWPOINTAG\VIEWPOINT.MCK_INTEGRATION1\"";"\"Data Source=VIEWPOINTAG\VIEWPOINT;Initial Catalog=MCK_INTEGRATION;Provider=SQLNCLI11;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{1648D71A-4D4E-4556-9719-D5336520C96A}VIEWPOINTAG\VIEWPOINT.MCK_INTEGRATION1;\""  /CHECKPOINTING OFF  /REPORTING EWCDI 

@@ -1,0 +1,43 @@
+3:59:08 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\GLExtractForAdaptive\Upload\VP1_Adaptive_GLTransaction_Export.csv
+4:00:09 PM	** VP Adaptive GL Transaction Export "exec [msprptGLTransForAdaptiveDet]
+					@GLCo			=	1
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'03/12/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" (137646 records)
+4:00:09 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\GLExtractForAdaptive\Upload\VP1_Adaptive_GLTransaction_Export.csv
+4:00:30 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\GLExtractForAdaptive\Upload\VP20_Adaptive_GLTransaction_Export.csv
+4:00:42 PM	** VP Adaptive GL Transaction Export "exec [msprptGLTransForAdaptiveDet]
+					@GLCo			=	20
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'03/12/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" (21524 records)
+4:00:42 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\GLExtractForAdaptive\Upload\VP20_Adaptive_GLTransaction_Export.csv
+4:00:46 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\GLExtractForAdaptive\Upload\VP60_Adaptive_GLTransaction_Export.csv
+4:00:46 PM	** VP Adaptive GL Transaction Export "exec [msprptGLTransForAdaptiveDet]
+					@GLCo			=	60
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'03/12/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" (518 records)
+4:00:46 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\GLExtractForAdaptive\Upload\VP60_Adaptive_GLTransaction_Export.csv
+4:00:46 PM	Achive File: C:\TFS\ViewPoint\Integration\AdaptivePlanning\GLExtractForAdaptive\Upload\VP_Adaptive_GLTransaction_Export_20150312.zip
+4:00:46 PM	* Zipping VP1_Adaptive_GLTransaction_Export.csv
+4:00:47 PM	* Zipping VP20_Adaptive_GLTransaction_Export.csv
+4:00:47 PM	* Zipping VP60_Adaptive_GLTransaction_Export.csv
+4:00:48 PM	Finished zipping successfully
+4:00:48 PM	** Sending Email
+4:00:48 PM		To: mikes@mckinstry.com

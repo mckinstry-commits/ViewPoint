@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MCK_INTEGRATIONModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="MCK_INTEGRATIONModelStoreContainer">
+          <EntitySet Name="ExpenseDetails" EntityType="MCK_INTEGRATIONModel.Store.ExpenseDetails" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ExpenseHeader" EntityType="MCK_INTEGRATIONModel.Store.ExpenseHeader" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="TimeSheets" EntityType="MCK_INTEGRATIONModel.Store.TimeSheets" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="vmEWCheckNumbers" EntityType="MCK_INTEGRATIONModel.Store.vmEWCheckNumbers" store:Type="Views" store:Schema="dbo" store:Name="vmEWCheckNumbers" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+            <DefiningQuery>SELECT 
+      [vmEWCheckNumbers].[APCo] AS [APCo], 
+      [vmEWCheckNumbers].[CMCo] AS [CMCo], 
+      [vmEWCheckNumbers].[CMAcct] AS [CMAcct], 
+      [vmEWCheckNumbers].[PayMethod] AS [PayMethod], 
+      [vmEWCheckNumbers].[CMRef] AS [CMRef], 
+      [vmEWCheckNumbers].[CMRefSeq] AS [CMRefSeq], 
+      [vmEWCheckNumbers].[EFTSeq] AS [EFTSeq], 
+      [vmEWCheckNumbers].[PDEFTSeq] AS [PDEFTSeq], 
+      [vmEWCheckNumbers].[Vendor] AS [Vendor], 
+      [vmEWCheckNumbers].[Name] AS [Name], 
+      [vmEWCheckNumbers].[ExpenseID] AS [ExpenseID], 
+      [vmEWCheckNumbers].[ExpenseWireBatchID] AS [ExpenseWireBatchID]
+      FROM [dbo].[vmEWCheckNumbers] AS [vmEWCheckNumbers]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwVPEmployeeInfo" EntityType="MCK_INTEGRATIONModel.Store.vwVPEmployeeInfo" store:Type="Views" store:Schema="dbo" store:Name="vwVPEmployeeInfo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+            <DefiningQuery>SELECT 
+      [vwVPEmployeeInfo].[PRCo] AS [PRCo], 
+      [vwVPEmployeeInfo].[Craft] AS [Craft], 
+      [vwVPEmployeeInfo].[Class] AS [Class], 
+      [vwVPEmployeeInfo].[PRDept] AS [PRDept], 
+      [vwVPEmployeeInfo].[GLDept] AS [GLDept], 
+      [vwVPEmployeeInfo].[PRGroup] AS [PRGroup], 
+      [vwVPEmployeeInfo].[Employee] AS [Employee], 
+      [vwVPEmployeeInfo].[MatlGroup] AS [MatlGroup], 
+      [vwVPEmployeeInfo].[TaxGroup] AS [TaxGroup]
+      FROM [dbo].[vwVPEmployeeInfo] AS [vwVPEmployeeInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwVPEmployeeVendorInfo" EntityType="MCK_INTEGRATIONModel.Store.vwVPEmployeeVendorInfo" store:Type="Views" store:Schema="dbo" store:Name="vwVPEmployeeVendorInfo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+            <DefiningQuery>SELECT 
+      [vwVPEmployeeVendorInfo].[PRCo] AS [PRCo], 
+      [vwVPEmployeeVendorInfo].[Craft] AS [Craft], 
+      [vwVPEmployeeVendorInfo].[Class] AS [Class], 
+      [vwVPEmployeeVendorInfo].[PRDept] AS [PRDept], 
+      [vwVPEmployeeVendorInfo].[PRGroup] AS [PRGroup], 
+      [vwVPEmployeeVendorInfo].[Employee] AS [Employee], 
+      [vwVPEmployeeVendorInfo].[VendorGroup] AS [VendorGroup], 
+      [vwVPEmployeeVendorInfo].[MatlGroup] AS [MatlGroup], 
+      [vwVPEmployeeVendorInfo].[TaxGroup] AS [TaxGroup], 
+      [vwVPEmployeeVendorInfo].[Vendor] AS [Vendor], 
+      [vwVPEmployeeVendorInfo].[GLDept] AS [GLDept]
+      FROM [dbo].[vwVPEmployeeVendorInfo] AS [vwVPEmployeeVendorInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwVPJobPhaseCodeCostType" EntityType="MCK_INTEGRATIONModel.Store.vwVPJobPhaseCodeCostType" store:Type="Views" store:Schema="dbo" store:Name="vwVPJobPhaseCodeCostType" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+            <DefiningQuery>SELECT 
+      [vwVPJobPhaseCodeCostType].[JCCo] AS [JCCo], 
+      [vwVPJobPhaseCodeCostType].[Job] AS [Job], 
+      [vwVPJobPhaseCodeCostType].[McKJobNo] AS [McKJobNo], 
+      [vwVPJobPhaseCodeCostType].[JobDescription] AS [JobDescription], 
+      [vwVPJobPhaseCodeCostType].[JobStatus] AS [JobStatus], 
+      [vwVPJobPhaseCodeCostType].[JobStatusDescription] AS [JobStatusDescription], 
+      [vwVPJobPhaseCodeCostType].[PhaseGroup] AS [PhaseGroup], 
+      [vwVPJobPhaseCodeCostType].[Phase] AS [Phase], 
+      [vwVPJobPhaseCodeCostType].[McKPhase] AS [McKPhase], 
+      [vwVPJobPhaseCodeCostType].[JobPhaseDescription] AS [JobPhaseDescription], 
+      [vwVPJobPhaseCodeCostType].[PhaseMasterDescription] AS [PhaseMasterDescription], 
+      [vwVPJobPhaseCodeCostType].[PhaseActive] AS [PhaseActive], 
+      [vwVPJobPhaseCodeCostType].[PhaseCostType] AS [PhaseCostType], 
+      [vwVPJobPhaseCodeCostType].[PhaseCostTypeCode] AS [PhaseCostTypeCode], 
+      [vwVPJobPhaseCodeCostType].[PhaseCostTypeDescription] AS [PhaseCostTypeDescription], 
+      [vwVPJobPhaseCodeCostType].[MailAddress] AS [MailAddress], 
+      [vwVPJobPhaseCodeCostType].[MailAddress2] AS [MailAddress2], 
+      [vwVPJobPhaseCodeCostType].[MailCity] AS [MailCity], 
+      [vwVPJobPhaseCodeCostType].[MailState] AS [MailState], 
+      [vwVPJobPhaseCodeCostType].[MailZip] AS [MailZip], 
+      [vwVPJobPhaseCodeCostType].[JobPhone] AS [JobPhone], 
+      [vwVPJobPhaseCodeCostType].[ContactCode] AS [ContactCode], 
+      [vwVPJobPhaseCodeCostType].[UpdatedDate] AS [UpdatedDate], 
+      [vwVPJobPhaseCodeCostType].[CreatedDate] AS [CreatedDate], 
+      [vwVPJobPhaseCodeCostType].[PhaseIsInterfacedYN] AS [PhaseIsInterfacedYN], 
+      [vwVPJobPhaseCodeCostType].[SourceStatus] AS [SourceStatus], 
+      [vwVPJobPhaseCodeCostType].[InterfaceDate] AS [InterfaceDate]
+      FROM [dbo].[vwVPJobPhaseCodeCostType] AS [vwVPJobPhaseCodeCostType]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <EntityType Name="ExpenseDetails">
+          <Key>
+            <PropertyRef Name="ExpenseID" />
+            <PropertyRef Name="SequenceNumber" />
+          </Key>
+          <Property Name="ExpenseID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="SequenceNumber" Type="smallint" Nullable="false" />
+          <Property Name="EmployeeNumber" Type="varchar" MaxLength="50" />
+          <Property Name="JobCompany" Type="tinyint" />
+          <Property Name="JobNumber" Type="varchar" MaxLength="10" />
+          <Property Name="PhaseCode" Type="varchar" MaxLength="20" />
+          <Property Name="JobGLDept" Type="varchar" MaxLength="50" />
+          <Property Name="EmployeeGLDept" Type="varchar" MaxLength="50" />
+          <Property Name="CostType" Type="varchar" MaxLength="50" />
+          <Property Name="ExpenseTitle" Type="varchar" MaxLength="500" />
+          <Property Name="ExpenseAmount" Type="money" />
+          <Property Name="ExpenseWireBatchID" Type="varchar" MaxLength="50" />
+          <Property Name="ProcessStatus" Type="char" MaxLength="1" />
+          <Property Name="GLAccount" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="ExpenseHeader">
+          <Key>
+            <PropertyRef Name="ExpenseID" />
+          </Key>
+          <Property Name="ExpenseID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="EmployeeNumber" Type="varchar" MaxLength="50" />
+          <Property Name="ExpenseTitle" Type="varchar" MaxLength="150" />
+          <Property Name="EmployeeCompany" Type="tinyint" />
+          <Property Name="EmployeeVendorNumber" Type="varchar" MaxLength="50" />
+          <Property Name="EmployeeGLDept" Type="varchar" MaxLength="50" />
+          <Property Name="InvoiceNumber" Type="varchar" MaxLength="50" />
+          <Property Name="DueDate" Type="smalldatetime" />
+          <Property Name="CreatedDate" Type="smalldatetime" />
+          <Property Name="ExpenseTotal" Type="money" />
+          <Property Name="ExpenseWireBatchID" Type="varchar" MaxLength="50" />
+          <Property Name="ProcessStatus" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="MailCounter" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TimeSheets">
+          <Key>
+            <PropertyRef Name="TimesheetID" />
+          </Key>
+          <Property Name="TimesheetID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="StatusCode" Type="int" />
+          <Property Name="CompanyNumber" Type="int" />
+          <Property Name="DivisionNumber" Type="int" />
+          <Property Name="GroupNumber" Type="int" />
+          <Property Name="SequenceNumber" Type="int" />
+          <Property Name="CheckType" Type="varchar" MaxLength="50" />
+          <Property Name="ErrorCode" Type="varchar" MaxLength="50" />
+          <Property Name="EmployeeNumber" Type="int" />
+          <Property Name="WeekNumber" Type="int" />
+          <Property Name="JobNumber" Type="varchar" MaxLength="50" />
+          <Property Name="JSDistribution" Type="varchar" MaxLength="50" />
+          <Property Name="CostType" Type="varchar" MaxLength="50" />
+          <Property Name="EmployeeClass" Type="varchar" MaxLength="50" />
+          <Property Name="StateCode" Type="int" />
+          <Property Name="LocalCode" Type="int" />
+          <Property Name="DayOfWeek" Type="int" />
+          <Property Name="EmployeeType" Type="varchar" MaxLength="50" />
+          <Property Name="WorkersCompCode" Type="int" />
+          <Property Name="WorkersCompreference" Type="int" />
+          <Property Name="RegularHours" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="OvertimeHours" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="OtherHours" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="RegularRate" Type="money" />
+          <Property Name="OverTimeRate" Type="money" />
+          <Property Name="OtherRate" Type="money" />
+          <Property Name="AdjustmentAmount" Type="money" />
+          <Property Name="DeductionNumber" Type="int" />
+          <Property Name="UnionCode" Type="int" />
+          <Property Name="AdjustmentGLAccount" Type="int" />
+          <Property Name="ShiftNumber" Type="int" />
+          <Property Name="DepartmentNumber" Type="int" />
+          <Property Name="DistributionCompany" Type="int" />
+          <Property Name="DistributionDivision" Type="int" />
+          <Property Name="Salary" Type="money" />
+          <Property Name="WorkOrderNumber" Type="int" />
+          <Property Name="EquipmentCostType" Type="int" />
+          <Property Name="TicketNumber" Type="int" />
+          <Property Name="CustomerNumber" Type="int" />
+          <Property Name="WorkmensCompStateCodeAlsoUsedForSutaCode" Type="int" />
+          <Property Name="WeekEndingDate_YYYY_MMDD" Type="int" />
+          <Property Name="ExemptCertified_N_NO_Y_YES_R_Report" Type="varchar" MaxLength="50" />
+          <Property Name="CrewNumber" Type="int" />
+          <Property Name="ExecutiveNumber" Type="varchar" MaxLength="50" />
+          <Property Name="LocalCode2UsedForRecipocalTax" Type="int" />
+          <Property Name="CustomerWorkOrderNumber" Type="varchar" MaxLength="50" />
+          <Property Name="EquipmentLineNumber" Type="int" />
+          <Property Name="BatchNumber" Type="int" />
+          <Property Name="RecStateCode" Type="int" />
+          <Property Name="HomeStateCode" Type="int" />
+          <Property Name="SDIStateCode" Type="int" />
+          <Property Name="EquipRegularHours" Type="int" />
+          <Property Name="EquipmentOverTimeHours" Type="int" />
+          <Property Name="EquipmentOtherHours" Type="int" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="QuantityRate" Type="float" />
+          <Property Name="SocialSecurityNumber" Type="int" />
+          <Property Name="CostCodeSequence" Type="int" />
+          <Property Name="CheckNumber" Type="int" />
+          <Property Name="EmployeeNumberLDA" Type="int" />
+          <Property Name="EmplCompanyNo" Type="int" />
+          <Property Name="EmplDivisionNo" Type="int" />
+          <Property Name="EmployeeName" Type="varchar" MaxLength="255" />
+          <Property Name="TimeSheetSource" Type="nchar" Nullable="false" MaxLength="3" />
+          <Property Name="ProcessStatus" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="ProcessTimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ProcessDesc" Type="varchar" MaxLength="250" />
+          <Property Name="MailCounter" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'MCK_INTEGRATION.dbo.vmEWCheckNumbers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vmEWCheckNumbers">
+          <Key>
+            <PropertyRef Name="APCo" />
+            <PropertyRef Name="CMCo" />
+            <PropertyRef Name="CMAcct" />
+            <PropertyRef Name="PayMethod" />
+            <PropertyRef Name="CMRef" />
+            <PropertyRef Name="CMRefSeq" />
+            <PropertyRef Name="EFTSeq" />
+            <PropertyRef Name="Vendor" />
+            <PropertyRef Name="ExpenseID" />
+          </Key>
+          <Property Name="APCo" Type="tinyint" Nullable="false" />
+          <Property Name="CMCo" Type="tinyint" Nullable="false" />
+          <Property Name="CMAcct" Type="smallint" Nullable="false" />
+          <Property Name="PayMethod" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="CMRef" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="CMRefSeq" Type="tinyint" Nullable="false" />
+          <Property Name="EFTSeq" Type="smallint" Nullable="false" />
+          <Property Name="PDEFTSeq" Type="smallint" />
+          <Property Name="Vendor" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="60" />
+          <Property Name="ExpenseID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ExpenseWireBatchID" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'MCK_INTEGRATION.dbo.vwVPEmployeeInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwVPEmployeeInfo">
+          <Key>
+            <PropertyRef Name="PRCo" />
+            <PropertyRef Name="PRDept" />
+            <PropertyRef Name="PRGroup" />
+            <PropertyRef Name="Employee" />
+          </Key>
+          <Property Name="PRCo" Type="tinyint" Nullable="false" />
+          <Property Name="Craft" Type="varchar" MaxLength="10" />
+          <Property Name="Class" Type="varchar" MaxLength="10" />
+          <Property Name="PRDept" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="GLDept" Type="varchar" MaxLength="4" />
+          <Property Name="PRGroup" Type="tinyint" Nullable="false" />
+          <Property Name="Employee" Type="int" Nullable="false" />
+          <Property Name="MatlGroup" Type="tinyint" />
+          <Property Name="TaxGroup" Type="tinyint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'MCK_INTEGRATION.dbo.vwVPEmployeeVendorInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwVPEmployeeVendorInfo">
+          <Key>
+            <PropertyRef Name="PRCo" />
+            <PropertyRef Name="PRDept" />
+            <PropertyRef Name="PRGroup" />
+            <PropertyRef Name="Employee" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="Vendor" />
+          </Key>
+          <Property Name="PRCo" Type="tinyint" Nullable="false" />
+          <Property Name="Craft" Type="varchar" MaxLength="10" />
+          <Property Name="Class" Type="varchar" MaxLength="10" />
+          <Property Name="PRDept" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="PRGroup" Type="tinyint" Nullable="false" />
+          <Property Name="Employee" Type="int" Nullable="false" />
+          <Property Name="VendorGroup" Type="tinyint" Nullable="false" />
+          <Property Name="MatlGroup" Type="tinyint" />
+          <Property Name="TaxGroup" Type="tinyint" />
+          <Property Name="Vendor" Type="int" Nullable="false" />
+          <Property Name="GLDept" Type="varchar" MaxLength="4" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'MCK_INTEGRATION.dbo.vwVPJobPhaseCodeCostType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwVPJobPhaseCodeCostType">
+          <Key>
+            <PropertyRef Name="JCCo" />
+            <PropertyRef Name="Job" />
+            <PropertyRef Name="JobStatus" />
+            <PropertyRef Name="JobStatusDescription" />
+            <PropertyRef Name="PhaseIsInterfacedYN" />
+          </Key>
+          <Property Name="JCCo" Type="tinyint" Nullable="false" />
+          <Property Name="Job" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="McKJobNo" Type="varchar" />
+          <Property Name="JobDescription" Type="varchar" MaxLength="60" />
+          <Property Name="JobStatus" Type="tinyint" Nullable="false" />
+          <Property Name="JobStatusDescription" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="PhaseGroup" Type="tinyint" />
+          <Property Name="Phase" Type="varchar" MaxLength="20" />
+          <Property Name="McKPhase" Type="varchar" />
+          <Property Name="JobPhaseDescription" Type="varchar" MaxLength="60" />
+          <Property Name="PhaseMasterDescription" Type="varchar" MaxLength="60" />
+          <Property Name="PhaseActive" Type="varchar" MaxLength="1" />
+          <Property Name="PhaseCostType" Type="tinyint" />
+          <Property Name="PhaseCostTypeCode" Type="varchar" MaxLength="10" />
+          <Property Name="PhaseCostTypeDescription" Type="varchar" MaxLength="30" />
+          <Property Name="MailAddress" Type="varchar" MaxLength="60" />
+          <Property Name="MailAddress2" Type="varchar" MaxLength="60" />
+          <Property Name="MailCity" Type="varchar" MaxLength="30" />
+          <Property Name="MailState" Type="varchar" MaxLength="4" />
+          <Property Name="MailZip" Type="varchar" MaxLength="12" />
+          <Property Name="JobPhone" Type="varchar" MaxLength="20" />
+          <Property Name="ContactCode" Type="int" />
+          <Property Name="UpdatedDate" Type="varchar" MaxLength="23" />
+          <Property Name="CreatedDate" Type="smalldatetime" />
+          <Property Name="PhaseIsInterfacedYN" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="SourceStatus" Type="char" MaxLength="1" />
+          <Property Name="InterfaceDate" Type="smalldatetime" />
+        </EntityType>
+        <Function Name="sp_ExtractTimesheets" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MCK_INTEGRATIONModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="MCK_INTEGRATIONEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="ExpenseDetails" EntityType="MCK_INTEGRATIONModel.ExpenseDetail" />
+          <EntitySet Name="JobPhaseCodeInfoes" EntityType="MCK_INTEGRATIONModel.JobPhaseCodeInfo" />
+          <EntitySet Name="TimeSheets" EntityType="MCK_INTEGRATIONModel.TimeSheet" />
+          <EntitySet Name="EWCheckNumbers" EntityType="MCK_INTEGRATIONModel.EWCheckNumber" />
+          <EntitySet Name="ExpenseHeaders" EntityType="MCK_INTEGRATIONModel.ExpenseHeader" />
+          <EntitySet Name="EmployeeInfoes" EntityType="MCK_INTEGRATIONModel.EmployeeInfo" />
+          <EntitySet Name="EmployeeVendorInfoes" EntityType="MCK_INTEGRATIONModel.EmployeeVendorInfo" />
+          <FunctionImport Name="sp_ExtractTimesheets" ReturnType="Collection(MCK_INTEGRATIONModel.sp_ExtractTimesheets_Result)" />
+        </EntityContainer>
+        <EntityType Name="ExpenseDetail">
+          <Key>
+            <PropertyRef Name="ExpenseID" />
+            <PropertyRef Name="SequenceNumber" />
+          </Key>
+          <Property Name="ExpenseID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="SequenceNumber" Type="Int16" Nullable="false" />
+          <Property Name="EmployeeNumber" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="JobCompany" Type="Byte" />
+          <Property Name="JobNumber" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="PhaseCode" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="JobGLDept" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="EmployeeGLDept" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="CostType" Type="String" MaxLength="2" Unicode="true" FixedLength="true" />
+          <Property Name="ExpenseTitle" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ExpenseAmount" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ExpenseWireBatchID" Type="String" MaxLength="6" Unicode="true" FixedLength="true" />
+          <Property Type="String" Name="GLAccount" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ProcessStatus" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="JobPhaseCodeInfo">
+          <Key>
+            <PropertyRef Name="JCCo" />
+            <PropertyRef Name="Job" />
+            <PropertyRef Name="JobStatus" />
+            <PropertyRef Name="JobStatusDescription" />
+            <PropertyRef Name="PhaseIsInterfacedYN" />
+          </Key>
+          <Property Type="Byte" Name="JCCo" Nullable="false" />
+          <Property Type="String" Name="Job" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="McKJobNo" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobDescription" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="JobStatus" Nullable="false" />
+          <Property Type="String" Name="JobStatusDescription" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="PhaseGroup" />
+          <Property Type="String" Name="Phase" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="McKPhase" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobPhaseDescription" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PhaseMasterDescription" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PhaseActive" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Byte" Name="PhaseCostType" />
+          <Property Type="String" Name="PhaseCostTypeCode" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PhaseCostTypeDescription" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MailAddress" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MailAddress2" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MailCity" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MailState" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MailZip" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobPhone" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ContactCode" />
+          <Property Type="String" Name="UpdatedDate" MaxLength="23" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CreatedDate" />
+          <Property Type="String" Name="PhaseIsInterfacedYN" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SourceStatus" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="DateTime" Name="InterfaceDate" />
+        </EntityType>
+        <EntityType Name="TimeSheet">
+          <Key>
+            <PropertyRef Name="TimesheetID" />
+          </Key>
+          <Property Type="Int32" Name="StatusCode" />
+          <Property Type="Int32" Name="CompanyNumber" Nullable="true" />
+          <Property Type="Int32" Name="DivisionNumber" />
+          <Property Type="Int32" Name="GroupNumber" />
+          <Property Type="Int32" Name="SequenceNumber" />
+          <Property Type="String" Name="CheckType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ErrorCode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="EmployeeNumber" Nullable="false" />
+          <Property Type="Int32" Name="WeekNumber" />
+          <Property Type="String" Name="JobNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JSDistribution" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CostType" MaxLength="50" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="String" Name="EmployeeClass" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="StateCode" />
+          <Property Type="Int32" Name="LocalCode" />
+          <Property Type="Int32" Name="DayOfWeek" Nullable="true" />
+          <Property Type="String" Name="EmployeeType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="WorkersCompCode" />
+          <Property Type="Int32" Name="WorkersCompreference" />
+          <Property Type="Decimal" Name="RegularHours" Precision="5" Scale="2" />
+          <Property Type="Decimal" Name="OvertimeHours" Precision="5" Scale="2" />
+          <Property Type="Decimal" Name="OtherHours" Precision="5" Scale="2" />
+          <Property Type="Decimal" Name="RegularRate" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="OverTimeRate" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="OtherRate" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="AdjustmentAmount" Precision="19" Scale="4" />
+          <Property Type="Int32" Name="DeductionNumber" />
+          <Property Type="Int32" Name="UnionCode" />
+          <Property Type="Int32" Name="AdjustmentGLAccount" />
+          <Property Type="Int32" Name="ShiftNumber" />
+          <Property Type="Int32" Name="DepartmentNumber" />
+          <Property Type="Int32" Name="DistributionCompany" />
+          <Property Type="Int32" Name="DistributionDivision" />
+          <Property Type="Decimal" Name="Salary" Precision="19" Scale="4" />
+          <Property Type="Int32" Name="WorkOrderNumber" />
+          <Property Type="Int32" Name="EquipmentCostType" />
+          <Property Type="Int32" Name="TicketNumber" />
+          <Property Type="Int32" Name="CustomerNumber" />
+          <Property Type="Int32" Name="WorkmensCompStateCodeAlsoUsedForSutaCode" />
+          <Property Type="Int32" Name="WeekEndingDate_YYYY_MMDD" Nullable="true" />
+          <Property Type="String" Name="ExemptCertified_N_NO_Y_YES_R_Report" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CrewNumber" />
+          <Property Type="String" Name="ExecutiveNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="LocalCode2UsedForRecipocalTax" />
+          <Property Type="String" Name="CustomerWorkOrderNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="EquipmentLineNumber" />
+          <Property Type="Int32" Name="BatchNumber" />
+          <Property Type="Int32" Name="RecStateCode" />
+          <Property Type="Int32" Name="HomeStateCode" />
+          <Property Type="Int32" Name="SDIStateCode" />
+          <Property Type="Int32" Name="EquipRegularHours" />
+          <Property Type="Int32" Name="EquipmentOverTimeHours" />
+          <Property Type="Int32" Name="EquipmentOtherHours" />
+          <Property Type="Int32" Name="Quantity" />
+          <Property Type="Double" Name="QuantityRate" />
+          <Property Type="Int32" Name="SocialSecurityNumber" />
+          <Property Type="Int32" Name="CostCodeSequence" />
+          <Property Type="Int32" Name="CheckNumber" />
+          <Property Type="Int32" Name="EmployeeNumberLDA" />
+          <Property Type="Int32" Name="EmplCompanyNo" />
+          <Property Type="Int32" Name="EmplDivisionNo" />
+          <Property Type="String" Name="EmployeeName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TimeSheetSource" Nullable="false" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Type="Int64" Name="TimesheetID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="ProcessStatus" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Binary" Name="ProcessTimeStamp" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="ProcessDesc" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="MailCounter" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EWCheckNumber">
+          <Key>
+            <PropertyRef Name="APCo" />
+            <PropertyRef Name="CMCo" />
+            <PropertyRef Name="CMAcct" />
+            <PropertyRef Name="PayMethod" />
+            <PropertyRef Name="CMRef" />
+            <PropertyRef Name="CMRefSeq" />
+            <PropertyRef Name="EFTSeq" />
+            <PropertyRef Name="Vendor" />
+            <PropertyRef Name="ExpenseID" />
+          </Key>
+          <Property Type="Byte" Name="APCo" Nullable="false" />
+          <Property Type="Byte" Name="CMCo" Nullable="false" />
+          <Property Type="Int16" Name="CMAcct" Nullable="false" />
+          <Property Type="String" Name="PayMethod" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="CMRef" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="CMRefSeq" Nullable="false" />
+          <Property Type="Int16" Name="EFTSeq" Nullable="false" />
+          <Property Type="Int16" Name="PDEFTSeq" />
+          <Property Type="Int32" Name="Vendor" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ExpenseID" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="ExpenseWireBatchID" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ExpenseHeader">
+          <Key>
+            <PropertyRef Name="ExpenseID" />
+          </Key>
+          <Property Type="String" Name="ExpenseID" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="EmployeeNumber" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="ExpenseTitle" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Byte" Name="EmployeeCompany" />
+          <Property Type="String" Name="EmployeeVendorNumber" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="EmployeeGLDept" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="InvoiceNumber" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="DateTime" Name="DueDate" />
+          <Property Type="DateTime" Name="CreatedDate" />
+          <Property Type="Decimal" Name="ExpenseTotal" Precision="19" Scale="4" />
+          <Property Type="String" Name="ExpenseWireBatchID" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="ProcessStatus" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Int16" Name="MailCounter" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EmployeeInfo">
+          <Key>
+            <PropertyRef Name="PRCo" />
+            <PropertyRef Name="PRDept" />
+            <PropertyRef Name="PRGroup" />
+            <PropertyRef Name="Employee" />
+          </Key>
+          <Property Type="Byte" Name="PRCo" Nullable="false" />
+          <Property Type="String" Name="Craft" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Class" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PRDept" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="PRGroup" Nullable="false" />
+          <Property Type="Int32" Name="Employee" Nullable="false" />
+          <Property Type="Byte" Name="MatlGroup" />
+          <Property Type="Byte" Name="TaxGroup" />
+          <Property Type="String" Name="GLDept" MaxLength="4" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="EmployeeVendorInfo">
+          <Key>
+            <PropertyRef Name="PRCo" />
+            <PropertyRef Name="PRDept" />
+            <PropertyRef Name="PRGroup" />
+            <PropertyRef Name="Employee" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="Vendor" />
+          </Key>
+          <Property Type="Byte" Name="PRCo" Nullable="false" />
+          <Property Type="String" Name="Craft" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Class" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PRDept" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="PRGroup" Nullable="false" />
+          <Property Type="Int32" Name="Employee" Nullable="false" />
+          <Property Type="Byte" Name="VendorGroup" Nullable="false" />
+          <Property Type="Byte" Name="MatlGroup" />
+          <Property Type="Byte" Name="TaxGroup" />
+          <Property Type="Int32" Name="Vendor" Nullable="false" />
+          <Property Type="String" Name="GLDept" MaxLength="4" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <ComplexType Name="sp_ExtractTimesheets_Result">
+          <Property Type="String" Name="OUTPUTDATA" Nullable="true" MaxLength="8000" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MCK_INTEGRATIONModelStoreContainer" CdmEntityContainer="MCK_INTEGRATIONEntities">
+          <EntitySetMapping Name="ExpenseDetails"><EntityTypeMapping TypeName="MCK_INTEGRATIONModel.ExpenseDetail"><MappingFragment StoreEntitySet="ExpenseDetails">
+            <ScalarProperty Name="ProcessStatus" ColumnName="ProcessStatus" />
+                <ScalarProperty Name="GLAccount" ColumnName="GLAccount" />
+                <ScalarProperty Name="ExpenseID" ColumnName="ExpenseID" />
+            <ScalarProperty Name="SequenceNumber" ColumnName="SequenceNumber" />
+            <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+            <ScalarProperty Name="JobCompany" ColumnName="JobCompany" />
+            <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+            <ScalarProperty Name="PhaseCode" ColumnName="PhaseCode" />
+            <ScalarProperty Name="JobGLDept" ColumnName="JobGLDept" />
+            <ScalarProperty Name="EmployeeGLDept" ColumnName="EmployeeGLDept" />
+            <ScalarProperty Name="CostType" ColumnName="CostType" />
+            <ScalarProperty Name="ExpenseTitle" ColumnName="ExpenseTitle" />
+            <ScalarProperty Name="ExpenseAmount" ColumnName="ExpenseAmount" />
+            <ScalarProperty Name="ExpenseWireBatchID" ColumnName="ExpenseWireBatchID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="JobPhaseCodeInfoes">
+            <EntityTypeMapping TypeName="MCK_INTEGRATIONModel.JobPhaseCodeInfo">
+              <MappingFragment StoreEntitySet="vwVPJobPhaseCodeCostType">
+                <ScalarProperty Name="InterfaceDate" ColumnName="InterfaceDate" />
+                <ScalarProperty Name="SourceStatus" ColumnName="SourceStatus" />
+                <ScalarProperty Name="PhaseIsInterfacedYN" ColumnName="PhaseIsInterfacedYN" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="ContactCode" ColumnName="ContactCode" />
+                <ScalarProperty Name="JobPhone" ColumnName="JobPhone" />
+                <ScalarProperty Name="MailZip" ColumnName="MailZip" />
+                <ScalarProperty Name="MailState" ColumnName="MailState" />
+                <ScalarProperty Name="MailCity" ColumnName="MailCity" />
+                <ScalarProperty Name="MailAddress2" ColumnName="MailAddress2" />
+                <ScalarProperty Name="MailAddress" ColumnName="MailAddress" />
+                <ScalarProperty Name="PhaseCostTypeDescription" ColumnName="PhaseCostTypeDescription" />
+                <ScalarProperty Name="PhaseCostTypeCode" ColumnName="PhaseCostTypeCode" />
+                <ScalarProperty Name="PhaseCostType" ColumnName="PhaseCostType" />
+                <ScalarProperty Name="PhaseActive" ColumnName="PhaseActive" />
+                <ScalarProperty Name="PhaseMasterDescription" ColumnName="PhaseMasterDescription" />
+                <ScalarProperty Name="JobPhaseDescription" ColumnName="JobPhaseDescription" />
+                <ScalarProperty Name="McKPhase" ColumnName="McKPhase" />
+                <ScalarProperty Name="Phase" ColumnName="Phase" />
+                <ScalarProperty Name="PhaseGroup" ColumnName="PhaseGroup" />
+                <ScalarProperty Name="JobStatusDescription" ColumnName="JobStatusDescription" />
+                <ScalarProperty Name="JobStatus" ColumnName="JobStatus" />
+                <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+                <ScalarProperty Name="McKJobNo" ColumnName="McKJobNo" />
+                <ScalarProperty Name="Job" ColumnName="Job" />
+                <ScalarProperty Name="JCCo" ColumnName="JCCo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TimeSheets">
+            <EntityTypeMapping TypeName="MCK_INTEGRATIONModel.TimeSheet">
+              <MappingFragment StoreEntitySet="TimeSheets">
+                <ScalarProperty Name="MailCounter" ColumnName="MailCounter" />
+                <ScalarProperty Name="ProcessDesc" ColumnName="ProcessDesc" />
+                <ScalarProperty Name="ProcessTimeStamp" ColumnName="ProcessTimeStamp" />
+                <ScalarProperty Name="ProcessStatus" ColumnName="ProcessStatus" />
+                <ScalarProperty Name="TimesheetID" ColumnName="TimesheetID" />
+                <ScalarProperty Name="TimeSheetSource" ColumnName="TimeSheetSource" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="EmplDivisionNo" ColumnName="EmplDivisionNo" />
+                <ScalarProperty Name="EmplCompanyNo" ColumnName="EmplCompanyNo" />
+                <ScalarProperty Name="EmployeeNumberLDA" ColumnName="EmployeeNumberLDA" />
+                <ScalarProperty Name="CheckNumber" ColumnName="CheckNumber" />
+                <ScalarProperty Name="CostCodeSequence" ColumnName="CostCodeSequence" />
+                <ScalarProperty Name="SocialSecurityNumber" ColumnName="SocialSecurityNumber" />
+                <ScalarProperty Name="QuantityRate" ColumnName="QuantityRate" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="EquipmentOtherHours" ColumnName="EquipmentOtherHours" />
+                <ScalarProperty Name="EquipmentOverTimeHours" ColumnName="EquipmentOverTimeHours" />
+                <ScalarProperty Name="EquipRegularHours" ColumnName="EquipRegularHours" />
+                <ScalarProperty Name="SDIStateCode" ColumnName="SDIStateCode" />
+                <ScalarProperty Name="HomeStateCode" ColumnName="HomeStateCode" />
+                <ScalarProperty Name="RecStateCode" ColumnName="RecStateCode" />
+                <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+                <ScalarProperty Name="EquipmentLineNumber" ColumnName="EquipmentLineNumber" />
+                <ScalarProperty Name="CustomerWorkOrderNumber" ColumnName="CustomerWorkOrderNumber" />
+                <ScalarProperty Name="LocalCode2UsedForRecipocalTax" ColumnName="LocalCode2UsedForRecipocalTax" />
+                <ScalarProperty Name="ExecutiveNumber" ColumnName="ExecutiveNumber" />
+                <ScalarProperty Name="CrewNumber" ColumnName="CrewNumber" />
+                <ScalarProperty Name="ExemptCertified_N_NO_Y_YES_R_Report" ColumnName="ExemptCertified_N_NO_Y_YES_R_Report" />
+                <ScalarProperty Name="WeekEndingDate_YYYY_MMDD" ColumnName="WeekEndingDate_YYYY_MMDD" />
+                <ScalarProperty Name="WorkmensCompStateCodeAlsoUsedForSutaCode" ColumnName="WorkmensCompStateCodeAlsoUsedForSutaCode" />
+                <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+                <ScalarProperty Name="TicketNumber" ColumnName="TicketNumber" />
+                <ScalarProperty Name="EquipmentCostType" ColumnName="EquipmentCostType" />
+                <ScalarProperty Name="WorkOrderNumber" ColumnName="WorkOrderNumber" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="DistributionDivision" ColumnName="DistributionDivision" />
+                <ScalarProperty Name="DistributionCompany" ColumnName="DistributionCompany" />
+                <ScalarProperty Name="DepartmentNumber" ColumnName="DepartmentNumber" />
+                <ScalarProperty Name="ShiftNumber" ColumnName="ShiftNumber" />
+                <ScalarProperty Name="AdjustmentGLAccount" ColumnName="AdjustmentGLAccount" />
+                <ScalarProperty Name="UnionCode" ColumnName="UnionCode" />
+                <ScalarProperty Name="DeductionNumber" ColumnName="DeductionNumber" />
+                <ScalarProperty Name="AdjustmentAmount" ColumnName="AdjustmentAmount" />
+                <ScalarProperty Name="OtherRate" ColumnName="OtherRate" />
+                <ScalarProperty Name="OverTimeRate" ColumnName="OverTimeRate" />
+                <ScalarProperty Name="RegularRate" ColumnName="RegularRate" />
+                <ScalarProperty Name="OtherHours" ColumnName="OtherHours" />
+                <ScalarProperty Name="OvertimeHours" ColumnName="OvertimeHours" />
+                <ScalarProperty Name="RegularHours" ColumnName="RegularHours" />
+                <ScalarProperty Name="WorkersCompreference" ColumnName="WorkersCompreference" />
+                <ScalarProperty Name="WorkersCompCode" ColumnName="WorkersCompCode" />
+                <ScalarProperty Name="EmployeeType" ColumnName="EmployeeType" />
+                <ScalarProperty Name="DayOfWeek" ColumnName="DayOfWeek" />
+                <ScalarProperty Name="LocalCode" ColumnName="LocalCode" />
+                <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+                <ScalarProperty Name="EmployeeClass" ColumnName="EmployeeClass" />
+                <ScalarProperty Name="CostType" ColumnName="CostType" />
+                <ScalarProperty Name="JSDistribution" ColumnName="JSDistribution" />
+                <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+                <ScalarProperty Name="WeekNumber" ColumnName="WeekNumber" />
+                <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+                <ScalarProperty Name="ErrorCode" ColumnName="ErrorCode" />
+                <ScalarProperty Name="CheckType" ColumnName="CheckType" />
+                <ScalarProperty Name="SequenceNumber" ColumnName="SequenceNumber" />
+                <ScalarProperty Name="GroupNumber" ColumnName="GroupNumber" />
+                <ScalarProperty Name="DivisionNumber" ColumnName="DivisionNumber" />
+                <ScalarProperty Name="CompanyNumber" ColumnName="CompanyNumber" />
+                <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EWCheckNumbers">
+            <EntityTypeMapping TypeName="MCK_INTEGRATIONModel.EWCheckNumber">
+              <MappingFragment StoreEntitySet="vmEWCheckNumbers">
+                <ScalarProperty Name="ExpenseWireBatchID" ColumnName="ExpenseWireBatchID" />
+                <ScalarProperty Name="ExpenseID" ColumnName="ExpenseID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="PDEFTSeq" ColumnName="PDEFTSeq" />
+                <ScalarProperty Name="EFTSeq" ColumnName="EFTSeq" />
+                <ScalarProperty Name="CMRefSeq" ColumnName="CMRefSeq" />
+                <ScalarProperty Name="CMRef" ColumnName="CMRef" />
+                <ScalarProperty Name="PayMethod" ColumnName="PayMethod" />
+                <ScalarProperty Name="CMAcct" ColumnName="CMAcct" />
+                <ScalarProperty Name="CMCo" ColumnName="CMCo" />
+                <ScalarProperty Name="APCo" ColumnName="APCo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExpenseHeaders">
+            <EntityTypeMapping TypeName="MCK_INTEGRATIONModel.ExpenseHeader">
+              <MappingFragment StoreEntitySet="ExpenseHeader">
+                <ScalarProperty Name="MailCounter" ColumnName="MailCounter" />
+                <ScalarProperty Name="ProcessStatus" ColumnName="ProcessStatus" />
+                <ScalarProperty Name="ExpenseWireBatchID" ColumnName="ExpenseWireBatchID" />
+                <ScalarProperty Name="ExpenseTotal" ColumnName="ExpenseTotal" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+                <ScalarProperty Name="EmployeeGLDept" ColumnName="EmployeeGLDept" />
+                <ScalarProperty Name="EmployeeVendorNumber" ColumnName="EmployeeVendorNumber" />
+                <ScalarProperty Name="EmployeeCompany" ColumnName="EmployeeCompany" />
+                <ScalarProperty Name="ExpenseTitle" ColumnName="ExpenseTitle" />
+                <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+                <ScalarProperty Name="ExpenseID" ColumnName="ExpenseID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeInfoes">
+            <EntityTypeMapping TypeName="MCK_INTEGRATIONModel.EmployeeInfo">
+              <MappingFragment StoreEntitySet="vwVPEmployeeInfo">
+                <ScalarProperty Name="GLDept" ColumnName="GLDept" />
+                <ScalarProperty Name="TaxGroup" ColumnName="TaxGroup" />
+                <ScalarProperty Name="MatlGroup" ColumnName="MatlGroup" />
+                <ScalarProperty Name="Employee" ColumnName="Employee" />
+                <ScalarProperty Name="PRGroup" ColumnName="PRGroup" />
+                <ScalarProperty Name="PRDept" ColumnName="PRDept" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="Craft" ColumnName="Craft" />
+                <ScalarProperty Name="PRCo" ColumnName="PRCo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeVendorInfoes">
+            <EntityTypeMapping TypeName="MCK_INTEGRATIONModel.EmployeeVendorInfo">
+              <MappingFragment StoreEntitySet="vwVPEmployeeVendorInfo">
+                <ScalarProperty Name="GLDept" ColumnName="GLDept" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="TaxGroup" ColumnName="TaxGroup" />
+                <ScalarProperty Name="MatlGroup" ColumnName="MatlGroup" />
+                <ScalarProperty Name="VendorGroup" ColumnName="VendorGroup" />
+                <ScalarProperty Name="Employee" ColumnName="Employee" />
+                <ScalarProperty Name="PRGroup" ColumnName="PRGroup" />
+                <ScalarProperty Name="PRDept" ColumnName="PRDept" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="Craft" ColumnName="Craft" />
+                <ScalarProperty Name="PRCo" ColumnName="PRCo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_ExtractTimesheets" FunctionName="MCK_INTEGRATIONModel.Store.sp_ExtractTimesheets">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="MCK_INTEGRATIONModel.sp_ExtractTimesheets_Result">
+                <ScalarProperty Name="OUTPUTDATA" ColumnName="OUTPUTDATA" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="IntegrationDB">
+        <EntityTypeShape EntityType="MCK_INTEGRATIONModel.ExpenseDetail" Width="1.5" PointX="5.875" PointY="1.125" Height="3.346396484375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MCK_INTEGRATIONModel.JobPhaseCodeInfo" Width="1.5" PointX="1.625" PointY="1.25" Height="5.2494108072916656" />
+        <EntityTypeShape EntityType="MCK_INTEGRATIONModel.TimeSheet" Width="1.5" PointX="9.5" PointY="1.25" Height="13.133769531250003" />
+        <EntityTypeShape EntityType="MCK_INTEGRATIONModel.EWCheckNumber" Width="1.5" PointX="4.375" PointY="5.75" Height="3.3263964843749996" />
+        <EntityTypeShape EntityType="MCK_INTEGRATIONModel.ExpenseHeader" Width="1.5" PointX="7.625" PointY="1.625" Height="3.1340950520833317" />
+        <EntityTypeShape EntityType="MCK_INTEGRATIONModel.EmployeeInfo" Width="1.5" PointX="6.75" PointY="5.75" Height="2.5571907552083317" />
+        <EntityTypeShape EntityType="MCK_INTEGRATIONModel.EmployeeVendorInfo" Width="1.5" PointX="0.75" PointY="7.75" Height="2.9417936197916674" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

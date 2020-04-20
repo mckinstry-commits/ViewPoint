@@ -1,0 +1,7 @@
+2014-06-20 11:23:38Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\
+2014-06-20 11:23:38Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140604.zip
+2014-06-20 11:23:38Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.23.37Z_1
+2014-06-20 11:23:38Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.23.37Z_1
+2014-06-20 11:23:38Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-20 11.23.37Z_1
+2014-06-20 11:23:38Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140604.zip
+2014-06-20 11:23:38Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\

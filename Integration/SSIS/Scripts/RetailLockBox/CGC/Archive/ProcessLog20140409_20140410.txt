@@ -1,0 +1,42 @@
+3:49:52 PM	-----------------------------------------------
+3:49:52 PM	Thursday, April 10, 2014
+3:49:52 PM	-----------------------------------------------
+3:49:52 PM	FTP Source:   sftp.retaillockbox.com
+3:49:52 PM	FTP Protocol: Sftp
+3:49:52 PM	Remote AR Upload Dir:   /Inbound/
+3:49:52 PM	Remote AR Download Dir:   /Outbound/
+3:49:52 PM	Remote AP Upload Dir:   /Inbound/
+3:49:52 PM	Remote AP Download Dir:   /Outbound/
+3:49:52 PM	Server:       SEABILLOXPS
+3:49:52 PM	Local Dir:    C:\TFS\ViewPoint\Integration\RetailLockBox\CGC\Download\
+3:49:52 PM	SQL Server:    SESQL08
+3:49:52 PM	Database:    Repository_Load
+3:49:52 PM	-----------------------------------------------
+3:49:56 PM	** AR Export "select  INVOICENUMBER,INVOICEAMOUNT,INVOICECOMPANYNUMBER,INVOICECUSTOMER,INVOICECUSTOMERNAME,JOBNUMBER,INVOICEDATE,CURRENTDATE from CMS.S1017192.CMSFIL.MCK_RETAILLOCKBOX_AR ORDER BY INVOICECOMPANYNUMBER, INVOICENUMBER" (10690 records)
+3:49:56 PM		to C:\TFS\ViewPoint\Integration\RetailLockBox\CGC\Upload\AR\MCK_AR_EXPORT_20140409_20140410.csv
+3:49:57 PM	
+3:50:00 PM	** Upload SEABILLOXPS:"C:\TFS\ViewPoint\Integration\RetailLockBox\CGC\Upload\AR\MCK_AR_EXPORT_20140409_20140410.csv"
+3:50:00 PM		 -->> sftp.retaillockbox.com/Inbound/
+3:50:00 PM	        	C:\TFS\ViewPoint\Integration\RetailLockBox\CGC\Upload\AR\MCK_AR_EXPORT_20140409_20140410.csv (0 %) ... 
+3:50:00 PM	        	C:\TFS\ViewPoint\Integration\RetailLockBox\CGC\Upload\AR\MCK_AR_EXPORT_20140409_20140410.csv (0 %) ... 
+3:50:00 PM	        	C:\TFS\ViewPoint\Integration\RetailLockBox\CGC\Upload\AR\MCK_AR_EXPORT_20140409_20140410.csv (100 %) ... 
+3:50:01 PM	        	C:\TFS\ViewPoint\Integration\RetailLockBox\CGC\Upload\AR\MCK_AR_EXPORT_20140409_20140410.csv (100 %) ... 
+3:50:01 PM	
+3:50:01 PM	** Download AR Files from sftp.retaillockbox.com:/Outbound/
+3:50:01 PM		 to SEABILLOXPS:C:\TFS\ViewPoint\Integration\RetailLockBox\CGC\Download\AR\
+3:50:04 PM		sftp.retaillockbox.com/Outbound/3895Report20140410.csv
+3:50:04 PM		 -->> SEABILLOXPS:"C:\TFS\ViewPoint\Integration\RetailLockBox\CGC\Download\AR\3895Report20140410.csv"
+3:50:04 PM	
+3:50:04 PM	        	3895Report20140410.csv (0 %) ... 
+3:50:04 PM	        	3895Report20140410.csv (0 %) ... 
+3:50:04 PM	        	3895Report20140410.csv (100 %) ... 
+3:50:04 PM	        	3895Report20140410.csv (100 %) ... 
+3:50:04 PM	        	3895Report20140410.csv (100 %) ... 
+3:50:04 PM	
+3:50:04 PM	
+3:50:04 PM	Archive File: C:\TFS\ViewPoint\Integration\RetailLockBox\CGC\Upload\MCK_RLB_20140409_20140410.zip
+3:50:04 PM	* Zipping MCK_AR_EXPORT_20140409_20140410.csv
+3:50:05 PM	* Zipping 3895Report20140410.csv
+3:50:05 PM	Finished zipping successfully
+3:50:05 PM	** Sending Email
+3:50:05 PM		To: billo@mckinstry.com

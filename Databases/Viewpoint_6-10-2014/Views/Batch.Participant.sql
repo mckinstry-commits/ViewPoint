@@ -1,0 +1,7 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE VIEW [Batch].[Participant]
+	AS SELECT * FROM Batch.vParticipant
+GO

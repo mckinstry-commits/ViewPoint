@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>McKinstry.VSTO.ETC.SQL</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{c055ba46-b077-44f4-8f79-fa31f456689d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>McKinstry.VSTO.ETC.SQL</RootNamespace>
+    <AssemblyName>McKinstry.VSTO.ETC.SQL</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="FinalSQL" />
+    <Folder Include="01_Promote_SQL" />
+    <Folder Include="02_Master_SQL" />
+    <Folder Include="03_Dev_SQL" />
+    <Folder Include="04_Archive_SQL" />
+    <Folder Include="02_Master_SQL\01_Excel_Build" />
+    <Folder Include="02_Master_SQL\02_Report_Data" />
+    <Folder Include="04_Archive_SQL\Triggers" />
+    <Folder Include="02_Master_SQL\03_Projection_Data" />
+    <Folder Include="04_Archive_SQL\Job_Projection" />
+    <Folder Include="02_Master_SQL\04_Projection_Build" />
+    <Folder Include="04_Archive_SQL\Contract" />
+    <Folder Include="04_Archive_SQL\Job" />
+    <Folder Include="02_Master_SQL\05_Database_Prep" />
+    <Folder Include="04_Archive_SQL\ExcelBuild" />
+    <Folder Include="03_Dev_SQL\01_Excel_Build" />
+    <Folder Include="03_Dev_SQL\02_Report_Data" />
+    <Folder Include="03_Dev_SQL\03_Projection_Data" />
+    <Folder Include="03_Dev_SQL\04_Projection_Build" />
+    <Folder Include="03_Dev_SQL\05_Database_Prep" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Contract\mers.mfnContractHeader.sql" />
+    <None Include="02_Master_SQL\05_Database_Prep\ProjectionTemplateData.sql" />
+    <None Include="02_Master_SQL\05_Database_Prep\mers.ProphecyLog.sql" />
+    <None Include="04_Archive_SQL\BuildList.txt" />
+    <None Include="03_Dev_SQL\02_Report_Data\mers.mfnGetJobsList.sql" />
+    <None Include="01_Promote_SQL\Aug_19_Changes.sql" />
+    <None Include="02_Master_SQL\05_Database_Prep\dbo.mckbtJCCIPRG_i.sql" />
+    <None Include="02_Master_SQL\05_Database_Prep\dbo.mckbtJCCIPRG_u.sql" />
+    <None Include="02_Master_SQL\05_Database_Prep\zPermissionGrant.sql" />
+    <None Include="03_Dev_SQL\05_Database_Prep\dbo.bspPREmplVal.sql" />
+    <None Include="03_Dev_SQL\02_Report_Data\mers.mfnGetGMAXData.sql" />
+    <None Include="01_Promote_SQL\Aug 29 Changes.sql" />
+    <None Include="01_Promote_SQL\Fix_JCUO.sql" />
+    <None Include="03_Dev_SQL\02_Report_Data\mckspEmplidList.sql" />
+    <None Include="03_Dev_SQL\01_Excel_Build\mers.mckfnContractPostRefresh.sql" />
+    <None Include="03_Dev_SQL\02_Report_Data\mers.mckfnLaborForecastReport.sql" />
+    <None Include="03_Dev_SQL\02_Report_Data\mers.mckfnGetLastPayrollWeekEnd.sql" />
+    <None Include="01_Promote_SQL\dbo.mckfnJCStrLnRevReport.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\01_Excel_Build\mers.mfnGetUserProfile.sql">
+      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\02_Report_Data\mers.mfnJCPRGSummary.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\02_Report_Data\mers.mfnJCParentPhaseSummary.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\02_Report_Data\mers.mfnJobHeaderSM.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\02_Report_Data\mers.mfnProjectCTSum.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Triggers\bspJCIRPost.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Triggers\btJCPDu.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Triggers\dbo.mspJCIRDPlug.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Triggers\mtrbJCIDi.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Triggers\mtrbJCIRd.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Triggers\mtrbJCIRi.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\03_Projection_Data\mers.mspGetJCProjOtherDyn.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\03_Projection_Data\mers.mfnJCProjPhaseSummary.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\03_Projection_Data\mers.mfnGetRevProjBatch.sql">
+      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Job_Projection\mers.mfnGetRevProjBatch.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Job_Projection\mers.mfnJCParentPhaseSummary.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Job_Projection\mers.mfnJCPRGPivot.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Job_Projection\mers.mfnJCPRGSummary.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Job_Projection\mers.mfnJCProjPhaseSummary.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Job_Projection\mers.mfnJobHeaderSM.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Job_Projection\mers.mspGetJCProjHrsDyn.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Job_Projection\mers.mspGetJCProjOtherDyn.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Job_Projection\mers.mspGetRevProjBatchPivot.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\04_Projection_Build\mers.mspJCProjInitJCPD.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Contract\mers.mfnContractItem.sql" />
+    <None Include="02_Master_SQL\01_Excel_Build\mers.mspLogProphecyAction.sql">
+      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
+    </None>
+    <None Include="02_Master_SQL\01_Excel_Build\mers.mfnJobSelectorList.sql">
+      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
+    </None>
+    <None Include="02_Master_SQL\01_Excel_Build\mers.mfnContractJobSelector.sql">
+      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
+    </None>
+    <None Include="04_Archive_SQL\Job\ContractJobCostOverride.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnContractJobCostProjection.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnContractJobCostProjectionByCostType.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnContractJobCostProjectionByMonth.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnContractJobCostProjectionByPhase.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnContractJobCostProjectionDetail.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnContractJobCostProjectionRaw.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnContractJobPhaseCostTypes.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnContractJobPhases.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnContractJobs.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnContractProjectPhaseCostTypeProjectionSum.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnProjectCTSum.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnProjectHeaderDtl.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mfnProjectPhaseCTProjectionSum.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mspGetCostBatchHoursPivot.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mspGetCostBatchPivot.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mspGetCostBatchPivot_Dyn.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mspGetCostProjectionHoursPivot.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mspGetCostProjectionPivot.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mspGetCostProjectionPivot_Dyn.sql" />
+    <None Include="04_Archive_SQL\Job\mers.mspJCProjInitJCPD.sql" />
+    <None Include="02_Master_SQL\01_Excel_Build\mers.mfnGetContractCompany.sql">
+      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
+    </None>
+    <None Include="02_Master_SQL\01_Excel_Build\mers.mfnJCBatchAllowedDates.sql">
+      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
+    </None>
+    <None Include="02_Master_SQL\05_Database_Prep\btJCPDu.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="02_Master_SQL\05_Database_Prep\ParentPhaseCleanup.sql" />
+    <None Include="04_Archive_SQL\ContractJobCostProjection.sql" />
+    <None Include="04_Archive_SQL\Dynamic_CreatedModifiedFields.sql" />
+    <None Include="04_Archive_SQL\JCCH_PercentOfContractItem.sql" />
+    <None Include="04_Archive_SQL\JCCH_PercentOfJob.sql" />
+    <None Include="04_Archive_SQL\JCCI_PercentOfContract.sql" />
+    <None Include="04_Archive_SQL\JCJP_PercentOfContractAndJob.sql" />
+    <None Include="04_Archive_SQL\JCJP_PercentOfContractItem.sql" />
+    <None Include="04_Archive_SQL\JCJP_PercentOfContractItemGroup.sql" />
+    <None Include="04_Archive_SQL\JCJP_PercentOfJob.sql" />
+    <None Include="04_Archive_SQL\mspGetCostBatchHoursPivot.sql" />
+    <None Include="04_Archive_SQL\mspGetCostBatchPivot.sql" />
+    <None Include="04_Archive_SQL\mspGetCostProjectionHoursPivot.sql" />
+    <None Include="04_Archive_SQL\mspGetCostProjectionPivot.sql" />
+    <None Include="04_Archive_SQL\PercentCalcAudit.sql" />
+    <None Include="04_Archive_SQL\Populate_JCIRD_JCIPD_Sample.sql" />
+    <None Include="04_Archive_SQL\SQLScratch.sql" />
+    <None Include="04_Archive_SQL\VACustomButton_PlugJCIRD_to_JCIR.sql" />
+    <None Include="04_Archive_SQL\VP_Populate_JCPD_AmountSpread.sql" />
+    <None Include="04_Archive_SQL\VP_Populate_JCPD_forLaborTypes.sql" />
+    <None Include="04_Archive_SQL\VP_Populate_JCPD_HoursSpread.sql" />
+    <None Include="04_Archive_SQL\VP_UtilityProcs.sql" />
+    <None Include="04_Archive_SQL\ExcelBuild\mers.mfnContractJobSelector.sql" />
+    <None Include="04_Archive_SQL\ExcelBuild\mers.mfnContractSelectorList.sql" />
+    <None Include="04_Archive_SQL\ExcelBuild\mers.mfnGetContractCompany.sql" />
+    <None Include="04_Archive_SQL\ExcelBuild\mers.mfnGetUserProfile.sql" />
+    <None Include="04_Archive_SQL\ExcelBuild\mers.mfnJCBatchAllowedDates.sql" />
+    <None Include="04_Archive_SQL\ExcelBuild\mers.mfnJCBatchMinMaxDates.sql" />
+    <None Include="04_Archive_SQL\ExcelBuild\mers.mfnJobSelectorList.sql" />
+    <None Include="04_Archive_SQL\ExcelBuild\mers.mspLogProphecyAction.sql" />
+    <None Include="04_Archive_SQL\ParentPhaseCleanup.sql" />
+    <None Include="04_Archive_SQL\Tester.sql" />
+    <None Include="03_Dev_SQL\01_Excel_Build\mers.mfnContractJobSelector.sql" />
+    <None Include="03_Dev_SQL\01_Excel_Build\mers.mfnGetContractCompany.sql" />
+    <None Include="03_Dev_SQL\01_Excel_Build\mers.mfnGetUserProfile.sql" />
+    <None Include="03_Dev_SQL\01_Excel_Build\mers.mfnJCBatchAllowedDates.sql" />
+    <None Include="03_Dev_SQL\01_Excel_Build\mers.mfnJCBatchMinMaxDates.sql" />
+    <None Include="03_Dev_SQL\01_Excel_Build\mers.mfnJobSelectorList.sql" />
+    <None Include="03_Dev_SQL\01_Excel_Build\mers.mspLogProphecyAction.sql" />
+    <None Include="03_Dev_SQL\02_Report_Data\mers.mfnJCParentPhaseSummary.sql" />
+    <None Include="03_Dev_SQL\02_Report_Data\mers.mfnJCPRGSummary.sql" />
+    <None Include="03_Dev_SQL\02_Report_Data\mers.mfnJobHeaderSM.sql" />
+    <None Include="03_Dev_SQL\02_Report_Data\mers.mfnProjectCTSum.sql" />
+    <None Include="03_Dev_SQL\03_Projection_Data\mers.mfnGetRevProjBatch.sql" />
+    <None Include="03_Dev_SQL\03_Projection_Data\mers.mfnJCProjPhaseSummary.sql" />
+    <None Include="03_Dev_SQL\03_Projection_Data\mers.mspGetJCProjHrsDyn.sql" />
+    <None Include="03_Dev_SQL\03_Projection_Data\mers.mspGetJCProjOtherDyn.sql" />
+    <None Include="03_Dev_SQL\04_Projection_Build\mers.mspJCProjInitJCPD.sql" />
+    <None Include="03_Dev_SQL\05_Database_Prep\btJCPDu.sql" />
+    <None Include="03_Dev_SQL\05_Database_Prep\mers.ProphecyLog.sql" />
+    <None Include="03_Dev_SQL\05_Database_Prep\ParentPhaseCleanup.sql" />
+    <None Include="03_Dev_SQL\05_Database_Prep\ProjectionTemplateData.sql" />
+    <None Include="02_Master_SQL\02_Report_Data\mers.mfnGetJobsList.sql" />
+    <None Include="04_Archive_SQL\mers.mfnContractJobs.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04_Archive_SQL\Contract\mers.mfnContractItemProjections.sql" />
+    <None Include="04_Archive_SQL\Contract\mers.mfnContractItemProjectionSum.sql" />
+    <None Include="04_Archive_SQL\Contract\mers.mfnContractItems.sql" />
+    <None Include="04_Archive_SQL\Contract\mers.mfnContractProjects.sql" />
+    <None Include="04_Archive_SQL\Contract\mers.mfnContractRevenueOverride.sql" />
+    <None Include="04_Archive_SQL\Contract\mers.mfnContractRevenueProjection.sql" />
+    <None Include="04_Archive_SQL\Contract\mers.mfnContractRevenueProjectionByMonth.sql" />
+    <None Include="04_Archive_SQL\Contract\mers.mfnContractRevenueProjectionDetail.sql" />
+    <None Include="04_Archive_SQL\Contract\mers.mspGetRevenueProjectionBatchPivot.sql" />
+    <None Include="04_Archive_SQL\Contract\mers.mspGetRevenueProjectionPivot.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="03_Dev_SQL\02_Report_Data\mers.mspJCPRGPivot.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\05_Database_Prep\dbo.bspPREmplVal.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\03_Projection_Data\mers.mspGetJCProjHrsDyn.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\02_Report_Data\mers.mspJCPRGPivot.sql" />
+    <None Include="03_Dev_SQL\05_Database_Prep\zPermissionGrant.sql" />
+    <None Include="03_Dev_SQL\05_Database_Prep\dbo.mckbtJCCIPRG_i.sql" />
+    <None Include="03_Dev_SQL\05_Database_Prep\dbo.mckbtJCCIPRG_u.sql" />
+    <None Include="01_Promote_SQL\mers.mfnGetGMAXData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\01_Excel_Build\mers.mckfnContractPostRefresh.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="01_Promote_SQL\mers.mfnJobHeaderSM.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="01_Promote_SQL\mers.mspJCPRGPivot.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="01_Promote_SQL\mers.mspGetJCProjHrsDyn.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="01_Promote_SQL\mers.mspGetJCProjOtherDyn.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="01_Promote_SQL\mers.mfnJCProjPhaseSummary.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\01_Excel_Build\mers.mckfnGetLastPayrollWeekEnd.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="02_Master_SQL\02_Report_Data\mers.mckfnLaborForecastReport.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="01_Promote_SQL\mers.mfnJCPRGSummary.sql" />
+  </ItemGroup>
+</Project>

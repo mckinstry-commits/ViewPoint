@@ -1,0 +1,14 @@
+2014-10-28 21:57:16Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-10-28 21:57:16Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\TestThree.zip
+2014-10-28 21:57:16Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 21.57.16Z_1
+2014-10-28 21:57:16Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 21.57.16Z_1
+2014-10-28 21:57:18Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 21.57.16Z_1\TestThree.csv
+2014-10-28 21:57:18Z	Environment: Server: VIEWPOINTAG\VIEWPOINT Database: Viewpoint
+2014-10-28 21:57:18Z	Upload record 12218, Batch ID  : Unsuccessful : Standalone attachment created.  Error creating batch record.
+2014-10-28 21:57:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 21.57.16Z_1\images\AR_204854_12218.pdf' to '\\setestconimg\Viewpoint\Company101\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 21:57:19Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 21.57.16Z_1\TestThree.csv
+2014-10-28 21:57:19Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 21.57.16Z_1
+2014-10-28 21:57:19Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AR\TestThree.zip' to '': Successful
+2014-10-28 21:57:19Z	Removing file 'C:\Scripts\RetailLockBox\Download\AR\TestThree.zip': Successful
+2014-10-28 21:57:19Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\TestThree.zip
+2014-10-28 21:57:19Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

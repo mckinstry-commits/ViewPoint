@@ -1,0 +1,12 @@
+2014-05-29 13:47:16Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\
+2014-05-29 13:47:16Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_TEST.zip
+2014-05-29 13:47:16Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-05-29 13.47.16Z_1
+2014-05-29 13:47:16Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-05-29 13.47.16Z_1
+2014-05-29 13:47:17Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-05-29 13.47.16Z_1\McKinstryRLBAP_20140318.csv
+2014-05-29 13:47:17Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-05-29 13:47:17Z	Upload record 1-10036029: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-05-29 13:47:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-05-29 13.47.16Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\03-2014\': Successful
+2014-05-29 13:47:17Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-05-29 13.47.16Z_1\McKinstryRLBAP_20140318.csv
+2014-05-29 13:47:17Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-05-29 13.47.16Z_1
+2014-05-29 13:47:17Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_TEST.zip
+2014-05-29 13:47:17Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\

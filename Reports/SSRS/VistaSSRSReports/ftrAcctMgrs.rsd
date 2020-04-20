@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="ftrAcctMgrs">
+    <Query>
+      <DataSourceReference>Viewpoint</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@SMCo">
+          <DefaultValue>1</DefaultValue>
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>Set transaction isolation level read uncommitted
+--Declare @SMCo int=1 -- for ssms
+
+select distinct ss.SMCo, ss.udAccountMgr AcctMgr, p1.FullName  from dbo.SMServiceSite ss 
+Join [dbo].[mvwPREHReports] p1 on p1.PRCo=ss.SMCo and ss.udAccountMgr=p1.Employee
+where udAccountMgr is not null 
+union
+select distinct ss.SMCo, ss.udAccountMgr2 AcctMgr2, p2.FullName from dbo.SMServiceSite ss 
+Join [dbo].[mvwPREHReports] p2 on p2.PRCo=ss.SMCo and ss.udAccountMgr2=p2.Employee
+where udAccountMgr2 is not null
+union 
+select @SMCo, -1,' Any'
+union
+select @SMCo, -2,'(Blank)'
+order by 3</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="SMCo">
+        <DataField>SMCo</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="AcctMgr">
+        <DataField>AcctMgr</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FullName">
+        <DataField>FullName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

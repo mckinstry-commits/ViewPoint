@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.Data.Models.Viewpoint", "McKinstry.Data.Models.Viewpoint\McKinstry.Data.Models.Viewpoint.csproj", "{2B5E4734-E295-4C4A-AEC1-003626778576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.VSTO.ETC", "McKinstry.VSTO.ETC\McKinstry.VSTO.ETC.csproj", "{DDC82898-F8A4-4E2B-96F2-81CF8FC00820}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B482CC5F-3A1E-443E-88D2-00DF994BC0D4} = {B482CC5F-3A1E-443E-88D2-00DF994BC0D4}
+		{5786FD60-57A9-482A-B83C-04D5FF84146B} = {5786FD60-57A9-482A-B83C-04D5FF84146B}
+		{0A55DC97-D57A-4943-B5EA-D1CA1AA18661} = {0A55DC97-D57A-4943-B5EA-D1CA1AA18661}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.VSTO", "McKinstry.VSTO\McKinstry.VSTO.csproj", "{5786FD60-57A9-482A-B83C-04D5FF84146B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.Data.Viewpoint", "McKinstry.Data.Viewpoint\McKinstry.Data.Viewpoint.csproj", "{B482CC5F-3A1E-443E-88D2-00DF994BC0D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.API", "McKinstry.API\McKinstry.API.csproj", "{0A55DC97-D57A-4943-B5EA-D1CA1AA18661}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "McKinstry.VSTO.ETC.SQL", "McKinstry.VSTO.ETC.SQL\McKinstry.VSTO.ETC.SQL.sqlproj", "{C055BA46-B077-44F4-8F79-FA31F456689D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B5E4734-E295-4C4A-AEC1-003626778576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5E4734-E295-4C4A-AEC1-003626778576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5E4734-E295-4C4A-AEC1-003626778576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5E4734-E295-4C4A-AEC1-003626778576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC82898-F8A4-4E2B-96F2-81CF8FC00820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC82898-F8A4-4E2B-96F2-81CF8FC00820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC82898-F8A4-4E2B-96F2-81CF8FC00820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC82898-F8A4-4E2B-96F2-81CF8FC00820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5786FD60-57A9-482A-B83C-04D5FF84146B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5786FD60-57A9-482A-B83C-04D5FF84146B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5786FD60-57A9-482A-B83C-04D5FF84146B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5786FD60-57A9-482A-B83C-04D5FF84146B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B482CC5F-3A1E-443E-88D2-00DF994BC0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B482CC5F-3A1E-443E-88D2-00DF994BC0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B482CC5F-3A1E-443E-88D2-00DF994BC0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B482CC5F-3A1E-443E-88D2-00DF994BC0D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A55DC97-D57A-4943-B5EA-D1CA1AA18661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A55DC97-D57A-4943-B5EA-D1CA1AA18661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A55DC97-D57A-4943-B5EA-D1CA1AA18661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A55DC97-D57A-4943-B5EA-D1CA1AA18661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C055BA46-B077-44F4-8F79-FA31F456689D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C055BA46-B077-44F4-8F79-FA31F456689D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C055BA46-B077-44F4-8F79-FA31F456689D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C055BA46-B077-44F4-8F79-FA31F456689D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.mckinstry.com:8080/tfs/mckinstry%20team
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = McKinstry.API\\McKinstry.API.csproj
+		SccProjectName1 = McKinstry.API
+		SccLocalPath1 = McKinstry.API
+		SccProjectUniqueName2 = McKinstry.Data.Models.Viewpoint\\McKinstry.Data.Models.Viewpoint.csproj
+		SccProjectName2 = McKinstry.Data.Models.Viewpoint
+		SccLocalPath2 = McKinstry.Data.Models.Viewpoint
+		SccProjectUniqueName3 = McKinstry.Data.Viewpoint\\McKinstry.Data.Viewpoint.csproj
+		SccProjectName3 = McKinstry.Data.Viewpoint
+		SccLocalPath3 = McKinstry.Data.Viewpoint
+		SccProjectUniqueName4 = McKinstry.VSTO.ETC\\McKinstry.VSTO.ETC.csproj
+		SccProjectName4 = McKinstry.VSTO.ETC
+		SccLocalPath4 = McKinstry.VSTO.ETC
+		SccProjectUniqueName5 = McKinstry.VSTO\\McKinstry.VSTO.csproj
+		SccProjectName5 = McKinstry.VSTO
+		SccLocalPath5 = McKinstry.VSTO
+		SccProjectUniqueName6 = McKinstry.VSTO.ETC.SQL\\McKinstry.VSTO.ETC.SQL.sqlproj
+		SccProjectName6 = McKinstry.VSTO.ETC.SQL
+		SccLocalPath6 = McKinstry.VSTO.ETC.SQL
+	EndGlobalSection
+EndGlobal

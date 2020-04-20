@@ -1,0 +1,12 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE view [dbo].[PRTS] as select a.* From bPRTS a
+
+GO
+GRANT SELECT ON  [dbo].[PRTS] TO [public]
+GRANT INSERT ON  [dbo].[PRTS] TO [public]
+GRANT DELETE ON  [dbo].[PRTS] TO [public]
+GRANT UPDATE ON  [dbo].[PRTS] TO [public]
+GO

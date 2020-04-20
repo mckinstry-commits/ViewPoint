@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "FactoredChangeOrderRevenue", "FactoredChangeOrderRevenue.rptproj", "{980537D5-CAEB-4FD3-94D1-9F78B05944BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{980537D5-CAEB-4FD3-94D1-9F78B05944BB}.Debug|Default.ActiveCfg = Debug
+		{980537D5-CAEB-4FD3-94D1-9F78B05944BB}.Debug|Default.Build.0 = Debug
+		{980537D5-CAEB-4FD3-94D1-9F78B05944BB}.Debug|Default.Deploy.0 = Debug
+		{980537D5-CAEB-4FD3-94D1-9F78B05944BB}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{980537D5-CAEB-4FD3-94D1-9F78B05944BB}.DebugLocal|Default.Build.0 = DebugLocal
+		{980537D5-CAEB-4FD3-94D1-9F78B05944BB}.Release|Default.ActiveCfg = Release
+		{980537D5-CAEB-4FD3-94D1-9F78B05944BB}.Release|Default.Build.0 = Release
+		{980537D5-CAEB-4FD3-94D1-9F78B05944BB}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

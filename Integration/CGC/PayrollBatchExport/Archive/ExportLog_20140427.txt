@@ -1,0 +1,30 @@
+1:12:43 PM	-----------------------------------------------
+1:12:43 PM	Sunday, April 27, 2014
+1:12:43 PM	-----------------------------------------------
+1:12:43 PM	FTP Source:   file:
+1:12:43 PM	FTP Protocol: Sftp
+1:12:43 PM	Remote Upload Dir:   \\SOME\NETWORK\Location\TBD
+1:12:43 PM	Remote Download Dir:   /Outbound/
+1:12:43 PM	Server:       SEABILLOXPS
+1:12:43 PM	Local Dir:    C:\TFS\ViewPoint\Integration\CGC\PayrollBatchExport\Download\
+1:12:43 PM	SQL Server:    MCKTESTSQL04\VIEWPOINT
+1:12:43 PM	Database:    MCK_INTEGRATION
+1:12:43 PM	-----------------------------------------------
+1:12:45 PM	** CGC Payroll Batch Export PRPBCH "exec mspGetCGCPayrollBatch @WeekEnding=20140323" (1 records)
+1:12:45 PM		to C:\TFS\ViewPoint\Integration\CGC\PayrollBatchExport\Upload\20140323_PRPBCH_CGC_PayrollBatch_Export.csv
+1:12:45 PM	** CGC Payroll Batch Export PRPBCI "exec mspGetCGCPayrollBatch @WeekEnding=20140323" (1 records)
+1:12:45 PM		to C:\TFS\ViewPoint\Integration\CGC\PayrollBatchExport\Upload\20140323_PRPBCI_CGC_PayrollBatch_Export.csv
+1:12:45 PM	** CGC Payroll Batch Export PRPIND "exec mspGetCGCPayrollBatch @WeekEnding=20140323" (5 records)
+1:12:45 PM		to C:\TFS\ViewPoint\Integration\CGC\PayrollBatchExport\Upload\20140323_PRPIND_CGC_PayrollBatch_Export.csv
+1:12:45 PM			10909	710.1	602	00121 .   .                (L)
+1:12:45 PM			10909	710.2	602	00121 .   .                (L)
+1:12:45 PM			10909	710.3	602	00121 .   .                (L)
+1:12:45 PM			10909	710.4	602	      .   .                ( )
+1:12:45 PM			10909	710.5	602	      .   .                ( )
+1:12:45 PM	Achive File: C:\TFS\ViewPoint\Integration\CGC\PayrollBatchExport\Upload\20140323_CGC_PayrollBatch_Export_20140427.zip
+1:12:45 PM	* Zipping 20140323_PRPBCH_CGC_PayrollBatch_Export.csv
+1:12:45 PM	* Zipping 20140323_PRPBCI_CGC_PayrollBatch_Export.csv
+1:12:46 PM	* Zipping 20140323_PRPIND_CGC_PayrollBatch_Export.csv
+1:12:46 PM	Finished zipping successfully
+1:12:46 PM	** Sending Email
+1:12:46 PM		To: billo@mckinstry.com

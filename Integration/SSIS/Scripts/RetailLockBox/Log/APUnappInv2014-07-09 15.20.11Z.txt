@@ -1,0 +1,322 @@
+2014-07-09 15:20:11Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\
+2014-07-09 15:20:12Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703_v2.zip
+2014-07-09 15:20:12Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1
+2014-07-09 15:20:12Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1
+2014-07-09 15:20:14Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\McKinstryRLBAP_20140707.csv
+2014-07-09 15:20:14Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184070.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000003.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000004.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000005.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000006.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000007.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000008.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000009.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000010.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000011.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000012.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000013.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184071.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:15Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000015.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:15Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000016.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000017.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000018.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000019.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000020.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000021.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000022.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000023.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184072.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000025.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000026.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000027.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000028.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000029.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000030.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000031.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000032.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000033.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000034.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000035.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184067.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000037.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000038.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000039.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000040.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000041.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000042.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000043.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000044.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184068.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000046.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000047.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000048.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000049.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000050.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000051.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000052.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000053.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000054.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000055.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000056.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184069.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000058.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000059.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000060.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000061.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000062.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000063.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000064.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184064.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184066.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184065.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184061.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184062.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184063.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184058.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184059.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184060.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184055.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184056.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184057.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184052.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184053.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184049.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184054.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184051.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184050.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184046.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184048.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184047.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184044.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184043.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184045.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184040.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184076.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184041.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184037.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184042.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184038.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184034.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184039.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184035.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184031.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184036.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184077.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184033.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184032.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184029.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184028.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184025.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184030.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184026.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184027.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184022.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184023.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184024.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184078.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184020.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184019.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184021.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184016.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184017.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184013.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184018.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184014.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184073.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184015.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184010.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184012.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184011.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184008.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184007.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184009.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184005.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184004.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000133.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184006.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184074.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000136.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000137.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000138.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000139.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000140.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000141.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000142.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000143.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000144.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000145.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000146.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\PO_201_14184075.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000148.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000149.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000150.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000151.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000152.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000153.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000154.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000155.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-07-09 15:20:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\Images\AP_201407030000156.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-07-09 15:20:20Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1\McKinstryRLBAP_20140707.csv
+2014-07-09 15:20:20Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-07-09 15.20.11Z_1
+2014-07-09 15:20:20Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703_v2.zip
+2014-07-09 15:20:20Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\

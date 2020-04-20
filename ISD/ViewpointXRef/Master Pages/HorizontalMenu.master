@@ -1,0 +1,27 @@
+﻿<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Tagprefix="ViewpointXRef" TagName="Menu" Src="../Menu Panels/Menu.ascx" %>
+
+<%@ Master Language="C#" MasterPageFile="../Master Pages/SharePointMaster.master" %>
+<%@ Register Tagprefix="ViewpointXRef" TagName="Footer" Src="../Header and Footer/Footer.ascx" %>
+
+<%@ Register Tagprefix="Selectors" Namespace="ViewpointXRef" Assembly="ViewpointXRef" %>
+
+<%@ Register Tagprefix="ViewpointXRef" TagName="Header" Src="../Header and Footer/Header.ascx" %>
+
+<%@ Register Tagprefix="BaseClasses" Namespace="BaseClasses.Web.UI.WebControls" Assembly="BaseClasses" %><asp:Content id="PageTitleContent_PlaceHolderPageTitle" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
+			<asp:Literal id="PageTitle" runat="server" text="ViewpointXRef" /> </asp:Content>
+			<asp:Content id="PageTitleContent_PlaceHolderMain" ContentPlaceHolderID="PlaceHolderMain" runat="server">
+<input type="hidden" name="isd_geo_location" id="isd_geo_location" value="<%= BaseFormulaUtils.GetBrowserLocationForHiddenField() %>" />
+<script type="text/javascript">
+<!--
+ISD_GeolocationInit();
+//-->
+</script>
+            <BaseClasses:ScrollCoordinates id="ScrollCoordinates1" runat="server"></BaseClasses:ScrollCoordinates>
+            <BaseClasses:BasePageSettings id="PageSettings" runat="server"></BaseClasses:BasePageSettings>
+            <script language="JavaScript" type="text/javascript">clearRTL()</script>
+            
+          <table cellpadding="0" cellspacing="0" border="0" class="pWrapper"><tr><td colspan="3"><table border="0" cellpadding="0" cellspacing="0" style="width:100%;"><tr><td class="pageTL"><img src="../Images/space.gif" class="pageTLSpace" alt="" /></td><td class="pageT"><img src="../Images/space.gif" class="pageTSpace" alt="" /></td><td class="pageTR"><img src="../Images/space.gif" class="pageTRSpace" alt="" /></td></tr></table>
+</td></tr><tr><td class="pageL"><img src="../Images/space.gif" class="pageLSpace" alt="" /></td><td class="pageC"><table border="0" cellpadding="0" cellspacing="0" style="width: 100%"><tr><td class="marginTL">&nbsp;</td><td class="pcT" colspan="2"><ViewpointXRef:Header runat="server" id="_PageHeader"></ViewpointXRef:Header></td><td class="marginTR">&nbsp;</td></tr><tr><td class="marginmL">&nbsp;</td><td class="pcmL"></td><td class="pcmC"><ViewpointXRef:Menu runat="server" id="_Menu" hilitesettings=""></ViewpointXRef:Menu></td><td class="marginmR">&nbsp;</td></tr><tr><td class="marginL">&nbsp;</td><td class="pcL"></td><td class="pcC"><asp:ContentPlaceHolder id="PageContent" Runat="server" /></td><td class="marginR">&nbsp;</td></tr><tr><td class="marginBL">&nbsp;</td><td class="pcB" colspan="2"><ViewpointXRef:Footer runat="server" id="_PageFooter"></ViewpointXRef:Footer></td><td class="marginBR">&nbsp;</td></tr></table>
+</td><td class="pageR"><img src="../Images/space.gif" class="pageRSpace" alt="" /></td></tr><tr><td colspan="3"><table cellpadding="0" cellspacing="0" border="0"><tr><td class="pageBL"><img src="../Images/space.gif" class="pageBLSpace" alt="" /></td><td class="pageB"><img src="../Images/space.gif" class="pageBSpace" alt="" /></td><td class="pageBR"><img src="../Images/space.gif" class="pageBRSpace" alt="" /></td></tr></table>
+</td></tr></table></asp:Content>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>ThemeButtonMobile</Name>
+    <Type>Button</Type>
+    <GenerateDirectory>Shared</GenerateDirectory>
+    <Layout>Shared\ThemeButtonMobile.html</Layout>
+    <DisplayName>ThemeButtonMobile</DisplayName>
+    <Description>(Description)</Description>
+    <DeviceSize>Small</DeviceSize>
+  </Self>
+  <ComposedOf>
+    <ContainedComponent>
+      <Name>Button</Name>
+      <Type>LinkButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CssClass</Name>
+          <Value>mobileButtonLink</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+  </ComposedOf>
+	
+  <LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-16"?&gt;
+    &lt;LayoutDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+	
+      &lt;Layout Name="Page" Type="RootLayout"&gt;
+	  
+		&lt;TableAttributes&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;cellspacing&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;cellpadding&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;border&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;onclick&lt;/Name&gt;
+			&lt;AttributeValue&gt;clickLinkButtonText(this, event);&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		&lt;/TableAttributes&gt;	   
+			  
+		&lt;Prolog&gt;
+		  &lt;Value&gt;&lt;/Value&gt;
+	    &lt;/Prolog&gt;
+
+	&lt;Row&gt;
+
+          &lt;Cell&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;mobileThemeButton&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+            &lt;Value&gt;&amp;lt;GEN:LINKBUTTON NAME="Button"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+
+	&lt;/Row&gt;
+
+	    &lt;Epilog&gt;
+		  &lt;Value&gt;&lt;/Value&gt;
+	    &lt;/Epilog&gt;
+      &lt;/Layout&gt;
+	  	  		 
+	&lt;/LayoutDefinition&gt;]]&gt;
+  </LayoutDefinition>
+
+</ComponentDefinition>

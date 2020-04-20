@@ -1,0 +1,17 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [dbo].[DDCL] AS SELECT * FROM vDDCL
+
+GO
+GRANT SELECT ON  [dbo].[DDCL] TO [public]
+GRANT INSERT ON  [dbo].[DDCL] TO [public]
+GRANT DELETE ON  [dbo].[DDCL] TO [public]
+GRANT UPDATE ON  [dbo].[DDCL] TO [public]
+GRANT SELECT ON  [dbo].[DDCL] TO [Viewpoint]
+GRANT INSERT ON  [dbo].[DDCL] TO [Viewpoint]
+GRANT DELETE ON  [dbo].[DDCL] TO [Viewpoint]
+GRANT UPDATE ON  [dbo].[DDCL] TO [Viewpoint]
+GO

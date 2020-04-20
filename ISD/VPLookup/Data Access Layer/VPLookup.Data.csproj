@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C90F5D98-2E59-468E-BE52-DEE2DA8D47E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>VPLookup.Data</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseClasses">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\BaseClasses.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ciloci.Flee">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Ciloci.Flee.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Shared\BaseFormulaEvaluator.cs" />
+    <Compile Include="Shared\BaseFormulaUtils.cs" />
+    <Compile Include="My Project\AssemblyInfo.cs" />
+    <Compile Include="Shared\DatabaseObjects.cs" />
+    <Compile Include="MvwISDCustomerXrefDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDCustomerXrefSqlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDCustomerXrefSqlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDJobPhaseXrefDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDJobPhaseXrefSqlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDJobPhaseXrefSqlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDJobXrefDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDJobXrefSqlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDJobXrefSqlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDVendorXrefDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDVendorXrefSqlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDVendorXrefSqlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDPhaseMasterDefinition.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDPhaseMasterSqlView.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDPhaseMasterSqlView.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDPhaseMasterCostTypesDefinition.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDPhaseMasterCostTypesSqlView.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDPhaseMasterCostTypesSqlView.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

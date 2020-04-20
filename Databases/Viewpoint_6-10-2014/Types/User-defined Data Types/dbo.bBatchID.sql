@@ -1,0 +1,2 @@
+CREATE TYPE [dbo].[bBatchID] FROM int NOT NULL
+GO

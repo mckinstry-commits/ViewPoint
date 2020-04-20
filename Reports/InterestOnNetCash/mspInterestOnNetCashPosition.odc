@@ -1,0 +1,25 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta http-equiv="Content-Type" content="text/x-ms-odc; charset=utf-8" />
+    <meta name="ProgId" content="ODC.Table" />
+    <meta name="SourceType" content="OLEDB" />
+    <meta name="Catalog" content="Viewpoint" />
+    <meta name="Table" content="HQCO" />
+    <title>mspInterestOnNetCashPosition</title>
+    <xml id="docprops">
+      <o:DocumentProperties xmlns:o="urn:schemas-microsoft-com:office:office">
+        <o:Name>mspInterestOnNetCashPosition</o:Name>
+      </o:DocumentProperties>
+    </xml>
+    <xml id="msodc">
+      <odc:OfficeDataConnection xmlns:odc="urn:schemas-microsoft-com:office:odc">
+        <odc:Connection odc:Type="OLEDB">
+          <odc:ConnectionString>Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=True;Data Source=VIEWPOINTAG\VIEWPOINT;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Use Encryption for Data=False;Tag with column collation when possible=False;Initial Catalog=Viewpoint</odc:ConnectionString>
+          <odc:CommandType>SQL</odc:CommandType>
+          <odc:CommandText>exec dbo.mspInterestOnNetCashPosition @JCCo=null, @Contract=null, @Month=null</odc:CommandText>
+        </odc:Connection>
+      </odc:OfficeDataConnection>
+    </xml>
+  </head>
+  <body></body>
+</html>

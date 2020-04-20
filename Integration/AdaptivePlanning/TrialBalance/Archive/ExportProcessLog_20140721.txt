@@ -1,0 +1,29 @@
+12:33:23 PM	-----------------------------------------------
+12:33:23 PM	Monday, July 21, 2014
+12:33:23 PM	-----------------------------------------------
+12:33:23 PM	FTP Source:   file:
+12:33:23 PM	FTP Protocol: Sftp
+12:33:23 PM	Remote Upload Dir:   \\SOME\NETWORK\Location\TBD
+12:33:23 PM	Remote Download Dir:   /Outbound/
+12:33:23 PM	Server:       SEABILLOXPS
+12:33:23 PM	Local Dir:    C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Download\
+12:33:23 PM	SQL Server:    MCKTESTSQL04\VIEWPOINT
+12:33:23 PM	Database:    Viewpoint
+12:33:23 PM	-----------------------------------------------
+12:33:23 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP4_Adaptive_TrialBalance_Export.csv
+12:33:23 PM	** VP Adaptive Trial Balance Export "exec msprptGLFinDet 
+					@GLCo			=	4
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2014'
+				,	@EndMonth		=	'03/01/2014'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" ( records)
+12:33:23 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP4_Adaptive_TrialBalance_Export.csv
+12:33:23 PM	Achive File: C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP_Adaptive_TrialBalance_Export_20140721.zip
+12:33:23 PM	* Zipping VP4_Adaptive_TrialBalance_Export.csv
+12:33:24 PM	Finished zipping successfully
+12:33:24 PM	** Sending Email
+12:33:24 PM		To: billo@mckinstry.com

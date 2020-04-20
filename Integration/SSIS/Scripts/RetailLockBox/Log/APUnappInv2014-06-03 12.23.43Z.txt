@@ -1,0 +1,78 @@
+2014-06-03 12:23:43Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\
+2014-06-03 12:23:43Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140318 V4.zip
+2014-06-03 12:23:43Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1
+2014-06-03 12:23:43Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1
+2014-06-03 12:23:44Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1\McKinstryRLBAP_20140318.csv
+2014-06-03 12:23:44Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-06-03 12:23:44Z	Upload record 14062021-299: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\03-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14013192-14064: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14059141-71371: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14051149-205126: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\03-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14050175-3189: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14057147-305477: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:44Z	Upload record GL565: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14056137-50202: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14050198-7731: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\03-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14058107-918707: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14043103-1409: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14043102-204827: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:44Z	Upload record 14055175-1423: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record 13345191-50191: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record 13292003-50191: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record 13292003-50191: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record 13292003-50191: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record 13292003-50191: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record 14059086-205256: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company101\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\03-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-03 12:23:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\02-2014\': Successful
+2014-06-03 12:23:45Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1\McKinstryRLBAP_20140318.csv
+2014-06-03 12:23:45Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-03 12.23.43Z_1
+2014-06-03 12:23:45Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140318 V4.zip
+2014-06-03 12:23:45Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\

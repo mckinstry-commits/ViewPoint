@@ -1,0 +1,32 @@
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewpointXRef", "ViewpointXRef.csproj", "{4ADC4916-3395-4983-AA35-664224F35581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewpointXRef.Data", "Data Access Layer\ViewpointXRef.Data.csproj", "{0C9FF2DF-9CE3-4037-9727-CA15D827B30C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewpointXRef.Business", "Business Layer\ViewpointXRef.Business.csproj", "{3187F8CE-8CFB-43CD-9955-954BC1C27946}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ADC4916-3395-4983-AA35-664224F35581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ADC4916-3395-4983-AA35-664224F35581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ADC4916-3395-4983-AA35-664224F35581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ADC4916-3395-4983-AA35-664224F35581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C9FF2DF-9CE3-4037-9727-CA15D827B30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C9FF2DF-9CE3-4037-9727-CA15D827B30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C9FF2DF-9CE3-4037-9727-CA15D827B30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C9FF2DF-9CE3-4037-9727-CA15D827B30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3187F8CE-8CFB-43CD-9955-954BC1C27946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3187F8CE-8CFB-43CD-9955-954BC1C27946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3187F8CE-8CFB-43CD-9955-954BC1C27946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3187F8CE-8CFB-43CD-9955-954BC1C27946}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

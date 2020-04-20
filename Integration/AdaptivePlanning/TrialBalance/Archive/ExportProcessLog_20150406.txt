@@ -1,0 +1,120 @@
+12:28:04 PM	-----------------------------------------------
+12:28:04 PM	Monday, April 06, 2015
+12:28:04 PM	-----------------------------------------------
+12:28:04 PM	FTP Source:   file:
+12:28:04 PM	FTP Protocol: Sftp
+12:28:04 PM	Remote Upload Dir:   \\SOME\NETWORK\Location\TBD
+12:28:04 PM	Remote Download Dir:   /Outbound/
+12:28:04 PM	Server:       SEABILLOXPS
+12:28:04 PM	Local Dir:    C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Download\
+12:28:04 PM	SQL Server:    VIEWPOINTAG\VIEWPOINT
+12:28:04 PM	Database:    Viewpoint
+12:28:04 PM	-----------------------------------------------
+12:28:04 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP1_Adaptive_TrialBalance_Export.csv
+12:28:20 PM	** VP Adaptive Trial Balance Export "exec msprptGLFinDet 
+					@GLCo			=	1
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'12/01/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" (191051 records)
+12:28:20 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP1_Adaptive_TrialBalance_Export.csv
+12:28:31 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP4_Adaptive_TrialBalance_Export.csv
+12:28:31 PM	** VP Adaptive Trial Balance Export "exec msprptGLFinDet 
+					@GLCo			=	4
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'12/01/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" (23 records)
+12:28:31 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP4_Adaptive_TrialBalance_Export.csv
+12:28:31 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP11_Adaptive_TrialBalance_Export.csv
+12:28:31 PM	** VP Adaptive Trial Balance Export "exec msprptGLFinDet 
+					@GLCo			=	11
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'12/01/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" ( records)
+12:28:31 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP11_Adaptive_TrialBalance_Export.csv
+12:28:31 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP12_Adaptive_TrialBalance_Export.csv
+12:28:31 PM	** VP Adaptive Trial Balance Export "exec msprptGLFinDet 
+					@GLCo			=	12
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'12/01/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" ( records)
+12:28:31 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP12_Adaptive_TrialBalance_Export.csv
+12:28:31 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP20_Adaptive_TrialBalance_Export.csv
+12:28:33 PM	** VP Adaptive Trial Balance Export "exec msprptGLFinDet 
+					@GLCo			=	20
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'12/01/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" (27502 records)
+12:28:33 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP20_Adaptive_TrialBalance_Export.csv
+12:28:35 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP21_Adaptive_TrialBalance_Export.csv
+12:28:35 PM	** VP Adaptive Trial Balance Export "exec msprptGLFinDet 
+					@GLCo			=	21
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'12/01/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" (92 records)
+12:28:35 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP21_Adaptive_TrialBalance_Export.csv
+12:28:35 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP22_Adaptive_TrialBalance_Export.csv
+12:28:35 PM	** VP Adaptive Trial Balance Export "exec msprptGLFinDet 
+					@GLCo			=	22
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'12/01/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" (49 records)
+12:28:35 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP22_Adaptive_TrialBalance_Export.csv
+12:28:35 PM	C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP60_Adaptive_TrialBalance_Export.csv
+12:28:35 PM	** VP Adaptive Trial Balance Export "exec msprptGLFinDet 
+					@GLCo			=	60
+				,	@BegAcct 		=	'          '
+				,	@EndAcct		=	'zzzzzzzzzz'
+				,	@BegMonth		=	'01/01/2015'
+				,	@EndMonth		=	'12/01/2015'
+				,	@IncludeInactive=	'N'
+				,	@Source			=	' '
+				,	@Journal		=	' '
+				,	@DetailLevel	=	'D'" (337 records)
+12:28:35 PM		to C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP60_Adaptive_TrialBalance_Export.csv
+12:28:35 PM	Achive File: C:\TFS\ViewPoint\Integration\AdaptivePlanning\TrialBalance\Upload\VP_Adaptive_TrialBalance_Export_20150406.zip
+12:28:35 PM	* Zipping VP1_Adaptive_TrialBalance_Export.csv
+12:28:35 PM	* Zipping VP11_Adaptive_TrialBalance_Export.csv
+12:28:36 PM	* Zipping VP12_Adaptive_TrialBalance_Export.csv
+12:28:36 PM	* Zipping VP20_Adaptive_TrialBalance_Export.csv
+12:28:37 PM	* Zipping VP21_Adaptive_TrialBalance_Export.csv
+12:28:37 PM	* Zipping VP22_Adaptive_TrialBalance_Export.csv
+12:28:38 PM	* Zipping VP4_Adaptive_TrialBalance_Export.csv
+12:28:38 PM	* Zipping VP60_Adaptive_TrialBalance_Export.csv
+12:28:39 PM	Finished zipping successfully
+12:28:39 PM	** Sending Email
+12:28:39 PM		To: billo@mckinstry.com

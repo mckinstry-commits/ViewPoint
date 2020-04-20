@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpenseWire>
+  <DataTransaction>
+    <Customer></Customer>
+    <Project></Project>
+    <User></User>
+
+
+    <!-- Approved Expenses -->
+    <!--<Expense>
+      <Search ApprovalDepth="All" DetailLevel="All">
+        <StatusID>5</StatusID>
+      </Search>
+    </Expense>-->
+    
+  </DataTransaction>
+</ExpenseWire>

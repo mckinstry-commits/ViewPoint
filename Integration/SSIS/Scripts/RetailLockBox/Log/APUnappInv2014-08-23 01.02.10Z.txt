@@ -1,0 +1,600 @@
+2014-08-23 01:02:10Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\
+2014-08-23 01:02:11Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703.zip
+2014-08-23 01:02:11Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_1
+2014-08-23 01:02:11Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_1
+2014-08-23 01:02:13Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_1\McKinstryRLBAP_20140703.csv
+2014-08-23 01:02:13Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:13Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:14Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:15Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_1\McKinstryRLBAP_20140703.csv
+2014-08-23 01:02:15Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_1
+2014-08-23 01:02:15Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703.zip' to '': Successful
+2014-08-23 01:02:15Z	Removing file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703.zip': Successful
+2014-08-23 01:02:15Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703.zip
+2014-08-23 01:02:15Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703_v2.zip
+2014-08-23 01:02:15Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_2
+2014-08-23 01:02:15Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_2
+2014-08-23 01:02:17Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_2\McKinstryRLBAP_20140707.csv
+2014-08-23 01:02:17Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-08-23 01:02:17Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:17Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:17Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:18Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:18Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:18Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:18Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:18Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:18Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:19Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:20Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:21Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:22Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_2\McKinstryRLBAP_20140707.csv
+2014-08-23 01:02:22Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_2
+2014-08-23 01:02:23Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703_v2.zip' to '': Successful
+2014-08-23 01:02:23Z	Removing file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703_v2.zip': Successful
+2014-08-23 01:02:23Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703_v2.zip
+2014-08-23 01:02:23Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140722.zip
+2014-08-23 01:02:23Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_3
+2014-08-23 01:02:23Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_3
+2014-08-23 01:02:27Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_3\McKinstryRLBAP_20140722.csv
+2014-08-23 01:02:27Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-08-23 01:02:27Z	Upload record PO-201-14184002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:27Z	Upload record PO-201-150000-0110002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:27Z	Upload record PO-201-150000-0110003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:27Z	Upload record PO-201-150000-0120001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:27Z	Upload record PO-201-150000-0120003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:27Z	Upload record PO-201-150000-0120002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0130001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0130002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0130003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0140001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-14184003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0140002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0140003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0150001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0150002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0160001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0150003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0160002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0160003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0170002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0170001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0170003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-14184004: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0180002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0180001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:28Z	Upload record PO-201-150000-0180003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0190002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0190001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0190003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0200001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0200002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0210001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0200003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-14184005: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0210002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0220001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0210003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0220002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0220003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0230001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0230002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0240001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0230003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0240002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:29Z	Upload record PO-201-14184006: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:29Z	Upload record PO-201-150000-0240003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0250002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0250001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0250003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0260001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0260002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0260003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0270001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0270003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0270002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0280001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-14184007: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0280002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0280003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0290001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0290002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0290003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0300001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0300002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-150000-0300003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:30Z	Upload record PO-201-14184008: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:31Z	Upload record PO-201-150000-0310001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-150000-0310002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-150000-0310003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-150000-0320002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-150000-0320001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-150000-0320003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-150000-0330001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-150000-0330002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-150000-0330003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-999015-0010001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-999024-0010001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-999037-0010001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-14184009: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:31Z	Upload record PO-201-999037-0010002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-999041-0010001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-999037-0010003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record PO-201-999041-0010002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:31Z	Upload record RI-201-2539226080: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:31Z	Upload record RI-201-828585588: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:31Z	Upload record RI-201-3606946159: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:31Z	Upload record RI-201-828591188: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:31Z	Upload record SC-201-150000-008001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:31Z	Upload record SC-201-150000-008002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record PO-201-14184010: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-008003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-009001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-009002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-010001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-009003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-010002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-010003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-010005: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-010004: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:32Z	Upload record PO-201-14184011: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-011001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-011003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-011002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-012001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-012002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-013001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-012003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-013002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-014001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-013003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record PO-201-130100210: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:32Z	Upload record PO-201-14184012: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-014003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-014002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-015001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-015002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-016001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-015003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-016002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-016003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-017002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-017001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record PO-201-14184013: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-017003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-018001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-018003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-018002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:32Z	Upload record SC-201-150000-019001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-019002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-020001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-019003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-020002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-020003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record PO-201-14184014: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-021002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-021001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-021003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-022001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-022002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-023001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-022003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-023002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-023003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record PO-201-14184015: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-024001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-024002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-024003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-025002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-025001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-025003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-026001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-026003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-026002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-027001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-027001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record PO-201-14184016: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-027003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-028001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-028003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-028002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-029001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-029002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-030001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-029003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-030002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-030003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:33Z	Upload record SC-201-150000-031001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14184017: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record SC-201-150000-031002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record SC-201-150000-031003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record SC-201-150000-032002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record SC-201-150000-032001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record SC-201-150000-032003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record SC-201-150000-033002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record SC-201-150000-033001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14184018: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14184020: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14184019: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14184021: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14141001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14184022: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14184023: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14184024: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14184025: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:34Z	Upload record PO-201-14184026: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184028: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184027: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184029: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184030: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14174001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184031: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184032: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184033: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184035: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184036: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184034: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:35Z	Upload record PO-201-14184037: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184038: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184039: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184040: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184061: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184053: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184054: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184055: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184056: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184058: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184057: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184060: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184059: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:36Z	Upload record PO-201-14184045: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184050: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184049: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184048: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184052: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14183001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184051: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184069: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184070: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184073: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184072: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184071: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184075: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:37Z	Upload record PO-201-14184077: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:38Z	Upload record PO-201-14184076: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:38Z	Upload record PO-201-14184074: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:38Z	Upload record PO-201-14184080: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:38Z	Upload record PO-201-14184001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:38Z	Upload record PO-201-14184079: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:38Z	Upload record PO-201-14184078: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:38Z	Upload record PO-201-14198003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-150000-0080002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-150000-0080001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-150000-0080003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-150000-0100002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-150000-0090003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-150000-0100001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-150000-0090002: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-150000-0090001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-150000-0110001: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-150000-0100003: Unsuccessful : No records created.  Attachment exists.
+2014-08-23 01:02:38Z	Upload record PO-201-14184041: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14176001: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184042: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184046: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184044: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184043: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184047: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14183002: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184064: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184062: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184066: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184063: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184065: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:39Z	Upload record PO-201-14184068: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:40Z	Upload record PO-201-14184067: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:40Z	Upload record PO-201-14183003: Successful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-23 01:02:40Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_3\McKinstryRLBAP_20140722.csv
+2014-08-23 01:02:40Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-23 01.02.10Z_3
+2014-08-23 01:02:40Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140722.zip' to '': Successful
+2014-08-23 01:02:40Z	Removing file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140722.zip': Successful
+2014-08-23 01:02:40Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140722.zip
+2014-08-23 01:02:40Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\

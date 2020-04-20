@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>Menu_Item_HighlightedVertical</Name>
+    <Type>Button</Type>
+    <GenerateDirectory>Shared</GenerateDirectory>
+    <Layout>Shared\Menu_Item_HighlightedVertical.html</Layout>
+    <DisplayName>Menu_Item_HighlightedVertical</DisplayName>
+    <Description>(Description)</Description>
+  </Self>
+  <ComposedOf>
+    <ContainedComponent>
+      <Name>Button</Name>
+      <Type>LinkButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CssClass</Name>
+          <Value>menu</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+  </ComposedOf>
+	
+  <LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-16"?&gt;
+    &lt;LayoutDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+	
+      &lt;Layout Name="Page" Type="RootLayout"&gt;
+	  
+		&lt;TableAttributes&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;cellspacing&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;cellpadding&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;border&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;onmouseover&lt;/Name&gt;
+			&lt;AttributeValue&gt;this.style.cursor='pointer'; return true;&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;onclick&lt;/Name&gt;
+			&lt;AttributeValue&gt;clickLinkButtonText(this, event);&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+      &lt;Attribute&gt;
+      &lt;Name&gt;width&lt;/Name&gt;
+      &lt;AttributeValue&gt;100%&lt;/AttributeValue&gt;
+      &lt;/Attribute&gt;
+    &lt;/TableAttributes&gt;	   
+			  
+		&lt;Prolog&gt;
+		  &lt;Value&gt;&lt;/Value&gt;
+	    &lt;/Prolog&gt;
+		  
+	    &lt;Row&gt;        
+		  &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:LINKBUTTON NAME="Button" CssClass="menu"/&amp;gt;&lt;/Value&gt;
+			&lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;ms-rteImage-4&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;		
+		&lt;/Row&gt;
+			  	  
+	    &lt;Epilog&gt;
+		  &lt;Value&gt;&lt;/Value&gt;
+	    &lt;/Epilog&gt;
+      &lt;/Layout&gt;
+	  	  		 
+	&lt;/LayoutDefinition&gt;]]&gt;
+  </LayoutDefinition>
+</ComponentDefinition>

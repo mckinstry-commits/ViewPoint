@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{434B47F1-06D3-4DF0-9BB7-CBA3DBC3A4BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>VPLookup.Business</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseClasses">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\BaseClasses.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ciloci.Flee">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Ciloci.Flee.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.cs" />
+    <Compile Include="MvwISDCustomerXrefView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDCustomerXrefView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDCustomerXrefRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDCustomerXrefRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDJobPhaseXrefView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDJobPhaseXrefView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDJobPhaseXrefRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDJobPhaseXrefRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDJobXrefView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDJobXrefView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDJobXrefRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDJobXrefRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDVendorXrefView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDVendorXrefView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDVendorXrefRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDVendorXrefRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDPhaseMasterView.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDPhaseMasterView.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDPhaseMasterRecord.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDPhaseMasterRecord.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDPhaseMasterCostTypesView.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDPhaseMasterCostTypesView.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MvwISDPhaseMasterCostTypesRecord.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseMvwISDPhaseMasterCostTypesRecord.cs" >
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data Access Layer\VPLookup.Data.csproj">
+      <Project>{C90F5D98-2E59-468E-BE52-DEE2DA8D47E0}</Project>
+      <Name>VPLookup.Data</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

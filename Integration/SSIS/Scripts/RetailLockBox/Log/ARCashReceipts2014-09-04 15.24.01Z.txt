@@ -1,0 +1,28 @@
+2014-09-04 15:24:01Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-09-04 15:24:01Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140607.zip
+2014-09-04 15:24:01Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-09-04 15.24.01Z_1
+2014-09-04 15:24:01Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-09-04 15.24.01Z_1
+2014-09-04 15:24:03Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-09-04 15.24.01Z_1\McKinstryRLBAR_20140607.csv
+2014-09-04 15:24:03Z	Environment: Server: VIEWPOINTAG\VIEWPOINT Database: Viewpoint
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-09-04 15:24:03Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-09-04 15.24.01Z_1\McKinstryRLBAR_20140607.csv
+2014-09-04 15:24:03Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-09-04 15.24.01Z_1
+2014-09-04 15:24:04Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140607.zip' to '': Successful
+2014-09-04 15:24:04Z	Removing file 'C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140607.zip': Successful
+2014-09-04 15:24:04Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140607.zip
+2014-09-04 15:24:04Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

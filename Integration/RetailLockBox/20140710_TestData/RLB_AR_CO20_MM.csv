@@ -1,0 +1,10 @@
+Company,InvoiceNumber,CustGroup,Customer,CustomerName,TransactionDate,InvoiceDescription,DetailLineCount,AmountDue,OriginalAmount,Tax
+20,31248,1,209692,LBA Realty BPCC          ,2/22/2012 0:00,Q1 LA               ,28,-146060.8,49449.6,0
+20,31248,1,209692,LBA Realty BPCC          ,5/23/2014 0:00,CREDIT AND REBILL   ,4,-49449.6,-49449.6,0
+20,31248,1,209692,LBA Realty BPCC          ,5/27/2014 0:00,Feb-14,4,48877.6,48877.6,0
+20,31448,1,204928,Dept of Ecology Bldg Svcs,7/25/2012 0:00,JULY BILLING        ,4,-132000,0,0
+20,31449,1,220044,DEPT OF ECOLOGY          ,6/11/2013 0:00,                    ,4,45600,0,0
+20,31817,1,209692,LBA Realty BPCC          ,2/1/2013 0:00,Q1 2013             ,32,-142513.2,48076.4,0
+20,37772,1,209410,Keystone Property Group  ,8/14/2013 0:00,Q2-2013             ,4,3728.24,3728.24,0
+20,37851,1,217116,The Walt Disney Company  ,9/12/2013 0:00,Aug-13,4,14882.96,14882.96,0
+20,37888,1,200436,ALEXANDRIA REAL ESTATE   ,10/11/2013 0:00,Jul-13,16,-595009.32,214141.88,-21243.52

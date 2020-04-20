@@ -1,0 +1,31 @@
+11:22:25 AM	-----------------------------------------------
+11:22:25 AM	Monday, March 17, 2014
+11:22:25 AM	-----------------------------------------------
+11:22:25 AM	FTP Server:   METFTP2.METLIFE.COM
+11:22:25 AM	FTP Protocol: Ftp
+11:22:25 AM	Remote Upload Dir:   /ToMet/
+11:22:25 AM	Remote Download Dir:   /ToXT17130478/
+11:22:25 AM	Server:       SEABILLOXPS
+11:22:25 AM	Local Dir:    C:\TFS\ViewPoint\Integration\MetLife\Download\
+11:22:25 AM	-----------------------------------------------
+11:22:46 AM	** Benefits Eligible Roster Export "SELECT * FROM dbo.mfnBenefitEligibleEmployees(20140309)" (935 records)
+11:22:46 AM		to C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls
+11:22:46 AM	
+11:22:46 AM	-----------------------------------------------
+11:22:46 AM	Upload File: C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls to METFTP2.METLIFE.COM:/ToMet/
+11:22:46 AM	-----------------------------------------------
+11:22:46 AM	Encypting C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls for secured delivery.
+11:22:46 AM	C:\TFS\ViewPoint\Integration\MetLife\gnupgp\gpg2.exe -q -e -u McKinstry -r 96765440 C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls
+11:22:51 AM	** Upload SEABILLOXPS:"C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls.pgp" -->> METFTP2.METLIFE.COM/ToMet/
+11:22:51 AM	        	C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls.pgp (0 %) ... 
+11:22:51 AM	        	C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls.pgp (0 %) ... 
+11:22:52 AM	        	C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls.pgp (0 %) ... 
+11:22:53 AM	        	C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls.pgp (41 %) ... 
+11:22:53 AM	        	C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls.pgp (100 %) ... 
+11:22:53 AM	        	C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls.pgp (100 %) ... 
+11:22:53 AM	
+11:22:53 AM	** Sending Email
+11:22:53 AM		To: billo@mckinstry.com
+11:22:54 AM	
+11:22:54 AM	Archive C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls to C:\TFS\ViewPoint\Integration\MetLife\Archive
+11:22:54 AM	Archive C:\TFS\ViewPoint\Integration\MetLife\Upload\mckins_mah_elig.xls.pgp to C:\TFS\ViewPoint\Integration\MetLife\Archive

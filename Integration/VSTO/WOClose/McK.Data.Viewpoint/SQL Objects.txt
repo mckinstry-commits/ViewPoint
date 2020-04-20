@@ -1,0 +1,18 @@
+﻿
+TABLES:
+---------------------
+dbo.MCKWOCloseStage
+
+
+FUNCTIONS:
+-----------------------
+dbo.mfnJCBatchAllowedDates
+
+
+SPs:
+-----------------------
+dbo.MCKspWOCloseInsert
+dbo.MCKspWOCloseProcess
+	--> dbo.vspSMWorkOrderChangeStatus
+	--> dbo.bspHQBCInsert
+	

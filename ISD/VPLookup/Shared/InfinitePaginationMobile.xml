@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>InfinitePaginationMobile</Name>
+    <Type>Pagination</Type>
+    <SubType>DotNet</SubType>
+    <PopupCssClass>QPageSize</PopupCssClass>
+    <GenerateDirectory>Shared</GenerateDirectory>
+    <Layout>Shared\InfinitePaginationMobile.html</Layout>
+    <DisplayName>InfinitePaginationMobile</DisplayName>
+    <Description>(Description)</Description>
+    <CheckSum>CUSTOMIZED</CheckSum>
+    <DeviceSize>Small</DeviceSize>
+  </Self>
+  <ComposedOf>
+    <ContainedComponent>
+      <Name>CurrentPage</Name>
+      <Type>Label</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>Visible</Name>
+          <Value>False</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>FirstPage</Name>
+      <Type>ImageButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>alt</Name>
+          <Value>Btn:FirstPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>FirstPage</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ImageURL</Name>
+          <Value>../Images/MobileButtonFirst.png</Value>
+        </Attribute>
+        <Attribute>
+          <Name>onclientclick</Name>
+          <Value>return SubmitHRefOnce(this, "");</Value>
+        </Attribute>
+        <Attribute>
+          <Name>style</Name>
+          <Value>visibility:hidden;display:none</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ToolTip</Name>
+          <Value>Btn:FirstPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>Visible</Name>
+          <Value>False</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>LastPage</Name>
+      <Type>ImageButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>alt</Name>
+          <Value>Btn:LastPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>LastPage</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ImageURL</Name>
+          <Value>../Images/MobileButtonLast.png</Value>
+        </Attribute>
+        <Attribute>
+          <Name>onclientclick</Name>
+          <Value>return SubmitHRefOnce(this, "");</Value>
+        </Attribute>
+        <Attribute>
+          <Name>style</Name>
+          <Value>visibility:hidden;display:none</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ToolTip</Name>
+          <Value>Btn:LastPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>Visible</Name>
+          <Value>False</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>NextPage</Name>
+      <Type>ImageButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>alt</Name>
+          <Value>Btn:NextPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>NextPage</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ImageURL</Name>
+          <Value>../Images/MobileButtonNext.png</Value>
+        </Attribute>
+        <Attribute>
+          <Name>onclientclick</Name>
+          <Value>return SubmitHRefOnce(this, "");</Value>
+        </Attribute>
+        <Attribute>
+          <Name>style</Name>
+          <Value>visibility:hidden;display:none</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ToolTip</Name>
+          <Value>Btn:NextPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PageSize</Name>
+      <Type>TextBox</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CssClass</Name>
+          <Value>Pagination_Input</Value>
+        </Attribute>
+        <Attribute>
+          <Name>EnableIncrementDecrementButtons</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>MaxLength</Name>
+          <Value>5</Value>
+        </Attribute>
+        <Attribute>
+          <Name>onchange</Name>
+          <Value>ISD_InfiScrollHandler(this)</Value>
+        </Attribute>
+        <Attribute>
+          <Name>PageSizeRequiredFieldValidator:Text</Name>
+          <Value>20</Value>
+        </Attribute>
+        <Attribute>
+          <Name>style</Name>
+          <Value>visibility:hidden;display:none</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>20</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PageSizeButton</Name>
+      <Type>LinkButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>PageSize</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CssClass</Name>
+          <Value>button_link</Value>
+        </Attribute>
+        <Attribute>
+          <Name>style</Name>
+          <Value>visibility:hidden;display:none</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Txt:PageSize</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PreviousPage</Name>
+      <Type>ImageButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>alt</Name>
+          <Value>Btn:PreviousPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>PreviousPage</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ImageURL</Name>
+          <Value>../Images/MobileButtonPrevious.png</Value>
+        </Attribute>
+        <Attribute>
+          <Name>onclientclick</Name>
+          <Value>return SubmitHRefOnce(this, "");</Value>
+        </Attribute>
+        <Attribute>
+          <Name>style</Name>
+          <Value>visibility:hidden;display:none</Value>
+        </Attribute>
+        <Attribute>
+          <Name>ToolTip</Name>
+          <Value>Btn:PreviousPage</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>Summary</Name>
+      <Type>TextBox</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>style</Name>
+          <Value>visibility:hidden;display:none</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Infinite Pagination</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+  </ComposedOf>
+  <LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;LayoutDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Layout Name="Pagination" Type="RootLayout"&gt;
+    &lt;Prolog /&gt;
+    &lt;Row&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:ImageButton Name="FirstPage" /&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;mobilePaginationAreaFirst&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:ImageButton Name="PreviousPage" /&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;mobilePaginationAreaPrevious&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;
+&amp;lt;GEN:Label Name="CurrentPage" /&amp;gt;
+&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;mobilePaginationAreaCurrentPage&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;nowrap&lt;/Name&gt;
+            &lt;AttributeValue&gt;nowrap&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:ImageButton Name="NextPage" /&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;mobilePaginationAreaNext&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:ImageButton Name="LastPage" /&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;mobilePaginationAreaLast&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:LINKBUTTON NAME="PageSizeButton" /&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;prbggo&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;%= SystemUtils.GenerateEnterKeyCaptureBeginTag(FindControl("_PageSizeButton")) %&amp;gt;&amp;lt;GEN:TextBox Name="PageSize" /&amp;gt;&amp;lt;%= SystemUtils.GenerateEnterKeyCaptureEndTag(FindControl("_PageSizeButton")) %&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;prbg&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:TEXTBOX Name="Summary" /&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;prbg&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;RowAttributes /&gt;
+    &lt;/Row&gt;
+    &lt;Epilog&gt;
+      &lt;Value&gt;&amp;lt;div&amp;gt;&amp;lt;iframe id="Infiniteframe" runat= "server" style="width:0px;height:0px;visibility:hidden"&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;script type="text/javascript"&amp;gt;
+    var bool = "False";
+    if (window != top) {
+        if (window.parent.bool == "True") {
+            window.parent.bool == "False"
+        }
+    }
+    var NewRecords = "True";
+    var index = 0;
+    var id = "";
+    var OrgPageSize = 0;
+    var ScrollFlag = "True";
+    var rowfetch = 0;
+    var i = 0;
+    var j = 0;
+    var CurrPageinfo = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSize")) %&amp;gt;');
+    if (OrgPageSize == 0) {
+        OrgPageSize = parseInt(CurrPageinfo.value);
+    }
+    var currpagesize = OrgPageSize;
+
+    //Function is invoked when the page is scrolled down
+    $(window).scroll(function() {
+        if ((($(window).scrollTop() + 10) &amp;gt;= $(document).height() - $(window).height()) || (($(window).scrollTop() + 10) &amp;gt;= $(document).height() - window.innerHeight)) {
+            var olddiv = document.getElementById('loadgif');
+			var t = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("Infiniteframe")) %&amp;gt;');
+            if (olddiv == null) {
+                if (NewRecords == "True") {
+                ScrollFlag = "False";
+                $('#' + '&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSizeButton")) %&amp;gt;').after('&amp;lt;div id=\"loadgif\" align=\"center\"&amp;gt;&amp;lt;img id=\"loading-image\" src=\"../Images/Mobile.ajax-loader.gif\"&amp;gt;&amp;lt;/img&amp;gt;&amp;lt;/div&amp;gt;');
+                }
+            }
+            if (bool == "True" &amp;amp;&amp;amp; t.contentWindow.document.readyState == 'complete') {
+                onScroll();
+                ScrollFlag = "True";
+            }
+        }
+    });
+
+    //Function invoked when the page is refreshed
+    window.onbeforeunload = function() {
+        if (sessionStorage.getItem("is_reloaded") != "true") {
+                sessionStorage.setItem("is_reloaded", true);
+            }
+                }
+    window.onunload = function() {
+        if (sessionStorage.getItem("is_reloaded") != "true") {
+                    sessionStorage.setItem("is_reloaded", true);
+        }
+    }
+
+    window.onload = function() {
+        try {
+            var IfraNam = "";
+            if (window != top) {
+                IfraNam = window.parent.document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("Infiniteframe")) %&amp;gt;');
+            }
+            if (sessionStorage.getItem("is_scroll") == "true" &amp;amp;&amp;amp; window != top &amp;amp;&amp;amp; IfraNam.name == "PostbackIframe") {
+                var olddiv = window.parent.document.getElementById('loadgif');
+                olddiv.outerHTML = "";
+                delete olddiv;
+                var x = window.parent.document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSizeButton")) %&amp;gt;');
+                var ParentTable = window.parent.document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSizeButton")) %&amp;gt;');
+                var xx = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSizeButton")) %&amp;gt;');
+                var iFrameBody = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSizeButton")) %&amp;gt;');
+                var ParentVS = window.parent.document.getElementById('__VIEWSTATE');
+                var a = [];
+                var IframeVSCode = document.getElementById("__VIEWSTATE");
+                j = 0;
+                if (iFrameBody != "null") {
+                    var rowLength = iFrameBody.rows.length;
+                    var parentrowlength = ParentTable.rows.length;
+                    for (i = 0; i &amp;lt; rowLength; i++) {
+                        if (i &amp;gt;= window.parent.rowfetch) {
+                            a[j] = iFrameBody.rows.item(i).outerHTML;
+                            j += 1;
+                        }
+                    }
+                    for (i = (parentrowlength - 1); i &amp;gt;= (parentrowlength - window.parent.counter); i--) {
+                        ParentTable.deleteRow(i);
+                    }
+                    if (rowLength == window.parent.rowfetch) { window.parent.NewRecords = "False"; }
+                    if (window == top) {
+                        initialframe.contentWindow.rowfetch = rowLength - window.parent.counter;
+                        rowfetch = rowLength - window.parent.counter;
+                    }
+                    if (window != top) {
+                        window.parent.rowfetch = rowLength - window.parent.counter;
+                        rowfetch = rowLength - window.parent.counter;
+                    }
+                    for (var i = 0; i &amp;lt; a.length; i++) { window.parent.$('#' + x.id + ' &amp;gt; tbody:last').append(a[i]); }
+                    if (a.length &amp;gt; 0) { ParentVS.value = IframeVSCode.value; }
+                }
+                window.parent.bool = "True";
+                sessionStorage.setItem("is_scroll", null);
+            }
+            else {
+                if (window == top) {
+                    var infinitecheck = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("Infiniteframe")) %&amp;gt;');
+                    if (infinitecheck != null) {
+                        var MyCurrForm = document.getElementById('aspnetForm');
+                        var initialframe = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("Infiniteframe")) %&amp;gt;');
+                        var mystring = document.documentElement.outerHTML;
+                        var ind1 = mystring.indexOf("action=\"", mystring.indexOf("&amp;lt;form"));
+                        var ind2 = mystring.indexOf("\"", (ind1 + 8));
+                        var replace = mystring.substring(ind1, (ind2));
+                        mystring = mystring.replace(replace, "action = \"" + MyCurrForm.action + "?Index=" + index)
+                        var index1 = mystring.indexOf("&amp;lt;iframe id=\"" + '&amp;lt;%= SystemUtils.InfinitePagination(FindControl("Infiniteframe")) %&amp;gt;');
+                        var index2 = mystring.indexOf("&amp;lt;/iframe&amp;gt;");
+                        if (index1 != -1) {
+                            var outerstuff = mystring.substring(0, index1) + mystring.substring((index2 + 9), mystring.length);
+                        } else {
+                            var outerstuff = mystring
+                        }
+                        var dstDoc = initialframe.contentWindow.document;
+                        dstDoc.open();
+                        dstDoc.write(outerstuff);
+                        dstDoc.close();
+                        bool = "False";
+                        initialframe.name = "PostbackIframe";
+                        sessionStorage.setItem("is_reloaded", false);
+                        var CurrPagBut = initialframe.contentWindow.document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSize")) %&amp;gt;');
+                        if (CurrPagBut != null) {
+                            CurrPagBut.onchange();
+                        }
+                    }
+                }
+            }
+        }
+        catch (err) {
+        }
+        try {
+        var iframtable = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSizeButton")) %&amp;gt;');
+        var parenttframe = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("Infiniteframe")) %&amp;gt;');
+        if (window == top) {
+            rowfetch = CalculateRowFetch();
+            parenttframe.contentWindow.rowfetch = rowfetch;
+            parenttframe.contentWindow.counter = counter
+            if (bool == "True" &amp;amp;&amp;amp; ScrollFlag == "False") {
+                ScrollFlag = "True";
+                onScroll();
+            }
+        } else {
+                if (IfraNam.name == "PostbackIframe") {
+            rowfetch = CalculateRowFetch();
+            window.parent.rowfetch = rowfetch;
+            window.parent.counter = counter;
+            if (window.parent.ScrollFlag == "False") {
+                window.parent.ScrollFlag = "True";
+                window.parent.onScroll();
+            } else {
+                ScrollBarCheck();
+                    }
+                    window.parent.bool = "True";
+                }
+            }
+        }
+        catch (err) {
+        }
+    }
+    $(document).ready(function() {
+        if (window != top) {
+            var parenttframe = window.parent.document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("Infiniteframe")) %&amp;gt;');
+            var infinitecheck = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("Infiniteframe")) %&amp;gt;');
+            if (parenttframe.name == "PostbackIframe" &amp;amp;&amp;amp; infinitecheck == null) {
+                var CurrPagBut = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSize")) %&amp;gt;');
+				 if (CurrPagBut != null) {
+                CurrPagBut.onchange();
+                 }
+            }
+        }
+    });
+    
+    //Called When The Scroll Bar Reaches The Bottom
+    function onScroll() {
+        var t = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("Infiniteframe")) %&amp;gt;');
+        if (t != null) {
+            var iFrameBod = t.contentWindow.document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSizeButton")) %&amp;gt;');
+            var rowLengt = iFrameBod.rows.length;
+            var IframePageSize = t.contentWindow.document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSize")) %&amp;gt;');
+            if (NewRecords == "True") {
+                currpagesize = parseInt(IframePageSize.value) + parseInt(OrgPageSize);
+                IframePageSize.value = currpagesize;
+                IframePageSize.onchange();
+                sessionStorage.setItem("is_scroll", true);
+            }
+            bool = "False";
+        }
+   }
+    function CalculateRowFetch() {
+        var iframtable = document.getElementById('&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSizeButton")) %&amp;gt;');
+        var rowLength = iframtable.rows.length;
+        var bolCheck = "False";
+        rowfetch = iframtable.rows.length;
+        counter = 0;
+        for (i = (rowLength - 1); i &amp;gt;= 0; i--) {
+            if (iframtable.rows[i].attributes.length != 0 &amp;amp;&amp;amp; bolCheck == "False") {
+                for (j = 0; j &amp;lt; iframtable.rows[i].attributes.length; j++) {
+                    bolCheck = "True";
+                    if (iframtable.rows[i].attributes[j].value == "Footer") {
+                        counter = counter + 1;
+                        bolCheck = "False";
+                    }
+                }
+            }
+            else {
+                break;
+            }
+        }
+        rowfetch = rowfetch - counter;
+        return rowfetch;
+    }
+    function ScrollBarCheck() {
+        if ($(window.parent).scrollTop() == 0) {
+            $(window.parent).scrollTop(10);
+        }
+        sessionStorage.setItem("is_reloaded", false);
+        var Height = document.body.scrollHeight;
+        var Top = $(window.parent).scrollTop();
+        var CHeight = document.body.scrollHeight;
+        if (Height == (Top + CHeight) &amp;amp;&amp;amp; window.parent.NewRecords == "True") {
+            if ($(window.parent).scrollTop() == 0) {
+                $(window.parent).scrollTop(10);
+            }
+            window.parent.$('#' + '&amp;lt;%= SystemUtils.InfinitePagination(FindControl("_PageSizeButton")) %&amp;gt;').after('&amp;lt;div id=\"loadgif\" align=\"center\"&amp;gt;&amp;lt;img id=\"loading-image\" src=\"../Images/Mobile.ajax-loader.gif\"&amp;gt;&amp;lt;/img&amp;gt;&amp;lt;/div&amp;gt;');
+            window.parent.ScrollFlag = "True";
+            window.parent.bool = "True"
+            window.parent.onScroll();
+        }
+    }
+&amp;lt;/script&amp;gt;&lt;/Value&gt;
+    &lt;/Epilog&gt;
+    &lt;TableAttributes&gt;
+      &lt;Attribute&gt;
+        &lt;Name&gt;class&lt;/Name&gt;
+        &lt;AttributeValue&gt;mobileHeaderPagination&lt;/AttributeValue&gt;
+      &lt;/Attribute&gt;
+    &lt;/TableAttributes&gt;
+  &lt;/Layout&gt;
+&lt;/LayoutDefinition&gt;]]&gt;</LayoutDefinition>
+</ComponentDefinition>

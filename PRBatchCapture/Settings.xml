@@ -1,0 +1,24 @@
+<settings>
+	<DatabaseSettings>
+		<!-- STAGING -->
+		<Server>VPSTAGINGAG\VIEWPOINT</Server>
+		<!-- PRODUCTION -->
+		<!-- <Server>VIEWPOINTAG\VIEWPOINT</Server> -->
+		<Database>Viewpoint</Database>
+	</DatabaseSettings>
+	<ExportSettings>
+		<ExportType>DB</ExportType>
+		<!-- <ExportType>FS</ExportType> -->
+		<ArchiveTable>dbo.mckbPRTB_Snapshot</ArchiveTable>
+	</ExportSettings>
+	<EmailSettings>
+		<Server>mail.mckinstry.com</Server>
+		<!-- STAGING -->
+		<MailFrom>viewpointstaging@mckinstry.com</MailFrom>
+		<!-- PRODUCTION -->
+		<!-- <MailFrom>viewpoint@mckinstry.com</MailFrom> -->
+		<MailTo>billo@mckinstry.com</MailTo>
+		<MailCc></MailCc>
+		<MailSubject>PR Batch Capture </MailSubject>
+	</EmailSettings>
+</settings>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>Viewpoint</DataSourceReference>
+      <CommandText>SELECT        LTRIM(RTRIM(Instance)) AS GLDepartment, LTRIM(RTRIM(Instance)) + ' - ' + MAX(Description) AS GLDepartmentName
+FROM            GLPI
+WHERE        (PartNo = 3) AND (GLCo &lt; 100) AND (LTRIM(RTRIM(Instance)) &lt;&gt; '0999')
+GROUP BY LTRIM(RTRIM(Instance))
+ORDER BY GLDepartment</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="GLDepartment">
+        <DataField>GLDepartment</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="GLDepartmentName">
+        <DataField>GLDepartmentName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

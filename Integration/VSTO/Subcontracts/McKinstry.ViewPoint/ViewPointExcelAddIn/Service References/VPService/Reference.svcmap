@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1104855d-59e9-497e-a805-768571e158a2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://setestviewpoint/ViewPointService/UnionClassService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UnionClassService1.wsdl" MetadataType="Wsdl" ID="f719af2f-8f0f-414c-a5d1-8f63d54c1d97" SourceId="1" SourceUrl="http://setestviewpoint/ViewPointService/UnionClassService.svc?wsdl" />
+    <MetadataFile FileName="UnionClassService61.xsd" MetadataType="Schema" ID="8779851e-3cc0-44ee-84c5-e34a24239c95" SourceId="1" SourceUrl="http://setestviewpoint/ViewPointService/UnionClassService.svc?xsd=xsd4" />
+    <MetadataFile FileName="UnionClassService62.xsd" MetadataType="Schema" ID="26f51de6-5170-4c87-9b50-11b9487914a2" SourceId="1" SourceUrl="http://setestviewpoint/ViewPointService/UnionClassService.svc?xsd=xsd1" />
+    <MetadataFile FileName="UnionClassService63.xsd" MetadataType="Schema" ID="aa4980c5-44c1-4dca-807e-9b021cc30c47" SourceId="1" SourceUrl="http://setestviewpoint/ViewPointService/UnionClassService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UnionClassService64.xsd" MetadataType="Schema" ID="bed3b684-7a2d-4c95-9d02-ba98d2c2e856" SourceId="1" SourceUrl="http://setestviewpoint/ViewPointService/UnionClassService.svc?xsd=xsd3" />
+    <MetadataFile FileName="UnionClassService65.xsd" MetadataType="Schema" ID="91d0f28f-9552-4a45-a2b1-e7c2aead2ec1" SourceId="1" SourceUrl="http://setestviewpoint/ViewPointService/UnionClassService.svc?xsd=xsd2" />
+    <MetadataFile FileName="UnionClassService1.disco" MetadataType="Disco" ID="44341fd1-df73-4a45-b0d0-ee25c27178c3" SourceId="1" SourceUrl="http://setestviewpoint/ViewPointService/UnionClassService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

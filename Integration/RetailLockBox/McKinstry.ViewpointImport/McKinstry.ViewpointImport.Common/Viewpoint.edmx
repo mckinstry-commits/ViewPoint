@@ -1,0 +1,1084 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ViewpointModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Viewpoint.dbo.APUI' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="APUI">
+          <Key>
+            <PropertyRef Name="APCo" />
+            <PropertyRef Name="UIMth" />
+            <PropertyRef Name="UISeq" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="InvTotal" />
+            <PropertyRef Name="PayMethod" />
+            <PropertyRef Name="CMCo" />
+            <PropertyRef Name="V1099YN" />
+            <PropertyRef Name="PayOverrideYN" />
+            <PropertyRef Name="SeparatePayYN" />
+            <PropertyRef Name="KeyID" />
+            <PropertyRef Name="udAPBatchProcessedYN" />
+          </Key>
+          <Property Name="APCo" Type="tinyint" Nullable="false" />
+          <Property Name="UIMth" Type="smalldatetime" Nullable="false" />
+          <Property Name="UISeq" Type="smallint" Nullable="false" />
+          <Property Name="VendorGroup" Type="tinyint" Nullable="false" />
+          <Property Name="Vendor" Type="int" />
+          <Property Name="APRef" Type="varchar" MaxLength="15" />
+          <Property Name="Description" Type="varchar" MaxLength="30" />
+          <Property Name="InvDate" Type="smalldatetime" />
+          <Property Name="DiscDate" Type="smalldatetime" />
+          <Property Name="DueDate" Type="smalldatetime" />
+          <Property Name="InvTotal" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+          <Property Name="HoldCode" Type="varchar" MaxLength="10" />
+          <Property Name="PayControl" Type="varchar" MaxLength="10" />
+          <Property Name="PayMethod" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CMCo" Type="tinyint" Nullable="false" />
+          <Property Name="CMAcct" Type="smallint" />
+          <Property Name="V1099YN" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="V1099Type" Type="varchar" MaxLength="10" />
+          <Property Name="V1099Box" Type="tinyint" />
+          <Property Name="PayOverrideYN" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="PayName" Type="varchar" MaxLength="60" />
+          <Property Name="PayAddress" Type="varchar" MaxLength="60" />
+          <Property Name="PayCity" Type="varchar" MaxLength="30" />
+          <Property Name="PayState" Type="varchar" MaxLength="4" />
+          <Property Name="PayZip" Type="varchar" MaxLength="12" />
+          <Property Name="InUseMth" Type="smalldatetime" />
+          <Property Name="InUseBatchId" Type="int" />
+          <Property Name="PayAddInfo" Type="varchar" MaxLength="60" />
+          <Property Name="DocName" Type="varchar" MaxLength="128" />
+          <Property Name="SeparatePayYN" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Notes" Type="varchar" MaxLength="2000" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="AddressSeq" Type="tinyint" />
+          <Property Name="KeyID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReviewerGroup" Type="varchar" MaxLength="10" />
+          <Property Name="SLKeyID" Type="bigint" />
+          <Property Name="PayCountry" Type="char" MaxLength="2" />
+          <Property Name="udFreightCost" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="udAPBatchProcessedYN" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="udDestAPCo" Type="tinyint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Viewpoint.dbo.ARBH' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="ARBH">
+          <Key>
+            <PropertyRef Name="Co" />
+            <PropertyRef Name="Mth" />
+            <PropertyRef Name="BatchId" />
+            <PropertyRef Name="BatchSeq" />
+            <PropertyRef Name="TransType" />
+            <PropertyRef Name="Source" />
+            <PropertyRef Name="ARTransType" />
+            <PropertyRef Name="KeyID" />
+          </Key>
+          <Property Name="Co" Type="tinyint" Nullable="false" />
+          <Property Name="Mth" Type="smalldatetime" Nullable="false" />
+          <Property Name="BatchId" Type="int" Nullable="false" />
+          <Property Name="BatchSeq" Type="int" Nullable="false" />
+          <Property Name="TransType" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="ARTrans" Type="int" />
+          <Property Name="Source" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="ARTransType" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CustGroup" Type="tinyint" />
+          <Property Name="Customer" Type="int" />
+          <Property Name="RecType" Type="tinyint" />
+          <Property Name="JCCo" Type="tinyint" />
+          <Property Name="Contract" Type="varchar" MaxLength="10" />
+          <Property Name="CustRef" Type="varchar" MaxLength="20" />
+          <Property Name="CustPO" Type="varchar" MaxLength="20" />
+          <Property Name="Invoice" Type="char" MaxLength="10" />
+          <Property Name="CheckNo" Type="char" MaxLength="10" />
+          <Property Name="Description" Type="varchar" MaxLength="30" />
+          <Property Name="MSCo" Type="tinyint" />
+          <Property Name="TransDate" Type="smalldatetime" />
+          <Property Name="DueDate" Type="smalldatetime" />
+          <Property Name="DiscDate" Type="smalldatetime" />
+          <Property Name="CheckDate" Type="smalldatetime" />
+          <Property Name="AppliedMth" Type="smalldatetime" />
+          <Property Name="AppliedTrans" Type="int" />
+          <Property Name="CMCo" Type="tinyint" />
+          <Property Name="CMAcct" Type="smallint" />
+          <Property Name="CMDeposit" Type="varchar" MaxLength="10" />
+          <Property Name="CreditAmt" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="PayTerms" Type="varchar" MaxLength="10" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="oldCustRef" Type="varchar" MaxLength="20" />
+          <Property Name="oldCustPO" Type="varchar" MaxLength="20" />
+          <Property Name="oldInvoice" Type="char" MaxLength="10" />
+          <Property Name="oldCheckNo" Type="char" MaxLength="10" />
+          <Property Name="oldDescription" Type="varchar" MaxLength="30" />
+          <Property Name="oldMSCo" Type="tinyint" />
+          <Property Name="oldTransDate" Type="smalldatetime" />
+          <Property Name="oldDueDate" Type="smalldatetime" />
+          <Property Name="oldDiscDate" Type="smalldatetime" />
+          <Property Name="oldCheckDate" Type="smalldatetime" />
+          <Property Name="oldCMCo" Type="tinyint" />
+          <Property Name="oldCMAcct" Type="smallint" />
+          <Property Name="oldCMDeposit" Type="varchar" MaxLength="10" />
+          <Property Name="oldCreditAmt" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="oldPayTerms" Type="varchar" MaxLength="10" />
+          <Property Name="ReasonCode" Type="varchar" MaxLength="10" />
+          <Property Name="oldReasonCode" Type="varchar" MaxLength="10" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="oldRecType" Type="tinyint" />
+          <Property Name="oldJCCo" Type="tinyint" />
+          <Property Name="oldContract" Type="varchar" MaxLength="10" />
+          <Property Name="KeyID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Viewpoint.dbo.HQAT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="HQAT">
+          <Key>
+            <PropertyRef Name="HQCo" />
+            <PropertyRef Name="FormName" />
+            <PropertyRef Name="KeyField" />
+            <PropertyRef Name="AttachmentID" />
+            <PropertyRef Name="DocAttchYN" />
+            <PropertyRef Name="CurrentState" />
+            <PropertyRef Name="IsEmail" />
+          </Key>
+          <Property Name="HQCo" Type="tinyint" Nullable="false" />
+          <Property Name="FormName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="KeyField" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="255" />
+          <Property Name="AddedBy" Type="varchar" MaxLength="128" />
+          <Property Name="AddDate" Type="smalldatetime" />
+          <Property Name="DocName" Type="varchar" MaxLength="512" />
+          <Property Name="AttachmentID" Type="int" Nullable="false" />
+          <Property Name="TableName" Type="varchar" MaxLength="128" />
+          <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+          <Property Name="OrigFileName" Type="varchar" MaxLength="512" />
+          <Property Name="DocAttchYN" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CurrentState" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="AttachmentTypeID" Type="int" />
+          <Property Name="IsEmail" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Viewpoint.dbo.mvwAPAllInvoices' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="mvwAPAllInvoices">
+          <Key>
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="APCo" />
+            <PropertyRef Name="Mth" />
+            <PropertyRef Name="APTrans" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="InvTotal" />
+          </Key>
+          <Property Name="Type" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="APCo" Type="tinyint" Nullable="false" />
+          <Property Name="Mth" Type="smalldatetime" Nullable="false" />
+          <Property Name="APTrans" Type="int" Nullable="false" />
+          <Property Name="VendorGroup" Type="tinyint" Nullable="false" />
+          <Property Name="Vendor" Type="int" />
+          <Property Name="APRef" Type="varchar" MaxLength="15" />
+          <Property Name="InvDate" Type="smalldatetime" />
+          <Property Name="Description" Type="varchar" MaxLength="30" />
+          <Property Name="DueDate" Type="smalldatetime" />
+          <Property Name="InvTotal" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Viewpoint.dbo.mvwRLBAPExport' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="mvwRLBAPExport">
+          <Key>
+            <PropertyRef Name="RecordType" />
+            <PropertyRef Name="Company" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="Vendor" />
+          </Key>
+          <Property Name="RecordType" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="Company" Type="tinyint" Nullable="false" />
+          <Property Name="Number" Type="varchar" MaxLength="20" />
+          <Property Name="VendorGroup" Type="tinyint" Nullable="false" />
+          <Property Name="Vendor" Type="int" Nullable="false" />
+          <Property Name="VendorName" Type="varchar" MaxLength="60" />
+          <Property Name="TransactionDate" Type="smalldatetime" />
+          <Property Name="JCCo" Type="tinyint" />
+          <Property Name="Job" Type="varchar" MaxLength="10" />
+          <Property Name="JobDescription" Type="varchar" MaxLength="8000" />
+          <Property Name="Description" Type="varchar" MaxLength="8000" />
+          <Property Name="DetailLineCount" Type="int" />
+          <Property Name="TotalOrigCost" Type="numeric" Precision="38" Scale="2" />
+          <Property Name="TotalOrigTax" Type="numeric" Precision="38" Scale="2" />
+          <Property Name="RemainingAmount" Type="numeric" Precision="38" Scale="2" />
+          <Property Name="RemainingTax" Type="numeric" Precision="38" Scale="2" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Viewpoint.dbo.mvwRLBARExport' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="mvwRLBARExport">
+          <Key>
+            <PropertyRef Name="Company" />
+            <PropertyRef Name="CustGroup" />
+            <PropertyRef Name="TransactionDate" />
+            <PropertyRef Name="AmountDue" />
+          </Key>
+          <Property Name="Company" Type="tinyint" Nullable="false" />
+          <Property Name="InvoiceNumber" Type="varchar" MaxLength="10" />
+          <Property Name="CustGroup" Type="tinyint" Nullable="false" />
+          <Property Name="Customer" Type="int" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="8000" />
+          <Property Name="TransactionDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="InvoiceDescription" Type="varchar" MaxLength="8000" />
+          <Property Name="DetailLineCount" Type="int" />
+          <Property Name="AmountDue" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+          <Property Name="OriginalAmount" Type="numeric" Precision="38" Scale="2" />
+          <Property Name="Tax" Type="numeric" Precision="38" Scale="2" />
+        </EntityType>
+        <Function Name="mckfnAPCompanyMove" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="APCo" Type="tinyint" Nullable="false" />
+                <Property Name="UIMth" Type="smalldatetime" Nullable="false" />
+                <Property Name="UISeq" Type="smallint" Nullable="false" />
+                <Property Name="VendorGroup" Type="tinyint" Nullable="false" />
+                <Property Name="Vendor" Type="int" />
+                <Property Name="APRef" Type="varchar" MaxLength="15" />
+                <Property Name="Description" Type="varchar" MaxLength="30" />
+                <Property Name="Notes" Type="varchar" MaxLength="2000" />
+                <Property Name="InvDate" Type="smalldatetime" />
+                <Property Name="InvTotal" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+                <Property Name="UniqueAttchID" Type="uniqueidentifier" />
+                <Property Name="DestAPCo" Type="tinyint" />
+                <Property Name="KeyID" Type="bigint" Nullable="false" />
+                <Property Name="FreightCost" Type="numeric" Precision="12" Scale="2" />
+                <Property Name="AttachmentCount" Type="int" />
+                <Property Name="HasDetailLine" Type="bit" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="mckspAPUIAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Company" Type="tinyint" Mode="In" />
+          <Parameter Name="UIMonth" Type="smalldatetime" Mode="In" />
+          <Parameter Name="VendorGroup" Type="tinyint" Mode="In" />
+          <Parameter Name="Vendor" Type="int" Mode="In" />
+          <Parameter Name="CollectedInvoiceNumber" Type="varchar" Mode="In" />
+          <Parameter Name="Description" Type="varchar" Mode="In" />
+          <Parameter Name="Notes" Type="varchar" Mode="In" />
+          <Parameter Name="CollectedInvoiceDate" Type="smalldatetime" Mode="In" />
+          <Parameter Name="CollectedInvoiceAmount" Type="numeric" Mode="In" />
+          <Parameter Name="CollectedShippingAmount" Type="numeric" Mode="In" />
+          <Parameter Name="HeaderKeyID" Type="bigint" Mode="InOut" />
+          <Parameter Name="UISeq" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="mckspAPUIAddItemWithFile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="RecordType" Type="nvarchar" Mode="In" />
+          <Parameter Name="Company" Type="tinyint" Mode="In" />
+          <Parameter Name="TransactionDate" Type="datetime" Mode="In" />
+          <Parameter Name="Number" Type="varchar" Mode="In" />
+          <Parameter Name="VendorGroup" Type="tinyint" Mode="In" />
+          <Parameter Name="Vendor" Type="int" Mode="In" />
+          <Parameter Name="CollectedInvoiceNumber" Type="varchar" Mode="In" />
+          <Parameter Name="Description" Type="varchar" Mode="In" />
+          <Parameter Name="CollectedInvoiceDate" Type="smalldatetime" Mode="In" />
+          <Parameter Name="CollectedInvoiceAmount" Type="numeric" Mode="In" />
+          <Parameter Name="CollectedTaxAmount" Type="numeric" Mode="In" />
+          <Parameter Name="CollectedShippingAmount" Type="numeric" Mode="In" />
+          <Parameter Name="Module" Type="varchar" Mode="In" />
+          <Parameter Name="FormName" Type="varchar" Mode="In" />
+          <Parameter Name="ImageFileName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserAccount" Type="nvarchar" Mode="In" />
+          <Parameter Name="UnmatchedCompany" Type="tinyint" Mode="In" />
+          <Parameter Name="UnmatchedVendorGroup" Type="tinyint" Mode="In" />
+          <Parameter Name="UnmatchedVendor" Type="int" Mode="In" />
+          <Parameter Name="AttachmentID" Type="int" Mode="InOut" />
+          <Parameter Name="UniqueAttachmentID" Type="uniqueidentifier" Mode="InOut" />
+          <Parameter Name="AttachmentFilePath" Type="varchar" Mode="InOut" />
+          <Parameter Name="HeaderKeyID" Type="bigint" Mode="InOut" />
+          <Parameter Name="FooterKeyID" Type="bigint" Mode="InOut" />
+          <Parameter Name="Message" Type="varchar" Mode="InOut" />
+          <Parameter Name="RetVal" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="mckspAPUIDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="KeyID" Type="bigint" Mode="In" />
+          <Parameter Name="Message" Type="varchar" Mode="InOut" />
+          <Parameter Name="RetVal" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="mckspARBHAddItemWithFile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Company" Type="tinyint" Mode="In" />
+          <Parameter Name="TransactionDate" Type="datetime" Mode="In" />
+          <Parameter Name="Customer" Type="int" Mode="In" />
+          <Parameter Name="CustomerGroup" Type="tinyint" Mode="In" />
+          <Parameter Name="CheckAmount" Type="numeric" Mode="In" />
+          <Parameter Name="Module" Type="varchar" Mode="In" />
+          <Parameter Name="FormName" Type="varchar" Mode="In" />
+          <Parameter Name="InvoiceNumber" Type="char" Mode="In" />
+          <Parameter Name="CheckNumber" Type="char" Mode="In" />
+          <Parameter Name="CheckDate" Type="smalldatetime" Mode="In" />
+          <Parameter Name="ImageFileName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserAccount" Type="nvarchar" Mode="In" />
+          <Parameter Name="BatchId" Type="int" Mode="InOut" />
+          <Parameter Name="HeaderKeyID" Type="bigint" Mode="InOut" />
+          <Parameter Name="AttachmentID" Type="int" Mode="InOut" />
+          <Parameter Name="Message" Type="varchar" Mode="InOut" />
+          <Parameter Name="RetVal" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="mckspHQATAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Company" Type="tinyint" Mode="In" />
+          <Parameter Name="HeaderKeyID" Type="bigint" Mode="In" />
+          <Parameter Name="TransactionDate" Type="smalldatetime" Mode="In" />
+          <Parameter Name="Description" Type="varchar" Mode="In" />
+          <Parameter Name="Module" Type="varchar" Mode="In" />
+          <Parameter Name="FormName" Type="varchar" Mode="In" />
+          <Parameter Name="TableName" Type="varchar" Mode="In" />
+          <Parameter Name="AttachmentTypeID" Type="int" Mode="In" />
+          <Parameter Name="ImageFileName" Type="nvarchar" Mode="In" />
+          <Parameter Name="AddedBy" Type="nvarchar" Mode="In" />
+          <Parameter Name="KeyID" Type="int" Mode="InOut" />
+          <Parameter Name="UniqueAttchID" Type="uniqueidentifier" Mode="InOut" />
+          <Parameter Name="AttachmentFilePath" Type="varchar" Mode="InOut" />
+          <Parameter Name="Message" Type="varchar" Mode="InOut" />
+          <Parameter Name="RetVal" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="mckspHQATDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="AttachmentID" Type="int" Mode="In" />
+          <Parameter Name="Message" Type="varchar" Mode="InOut" />
+          <Parameter Name="RetVal" Type="int" Mode="InOut" />
+        </Function>
+        <EntityContainer Name="ViewpointModelStoreContainer">
+          <EntitySet Name="APUI" EntityType="Self.APUI" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [APUI].[APCo] AS [APCo], 
+    [APUI].[UIMth] AS [UIMth], 
+    [APUI].[UISeq] AS [UISeq], 
+    [APUI].[VendorGroup] AS [VendorGroup], 
+    [APUI].[Vendor] AS [Vendor], 
+    [APUI].[APRef] AS [APRef], 
+    [APUI].[Description] AS [Description], 
+    [APUI].[InvDate] AS [InvDate], 
+    [APUI].[DiscDate] AS [DiscDate], 
+    [APUI].[DueDate] AS [DueDate], 
+    [APUI].[InvTotal] AS [InvTotal], 
+    [APUI].[HoldCode] AS [HoldCode], 
+    [APUI].[PayControl] AS [PayControl], 
+    [APUI].[PayMethod] AS [PayMethod], 
+    [APUI].[CMCo] AS [CMCo], 
+    [APUI].[CMAcct] AS [CMAcct], 
+    [APUI].[V1099YN] AS [V1099YN], 
+    [APUI].[V1099Type] AS [V1099Type], 
+    [APUI].[V1099Box] AS [V1099Box], 
+    [APUI].[PayOverrideYN] AS [PayOverrideYN], 
+    [APUI].[PayName] AS [PayName], 
+    [APUI].[PayAddress] AS [PayAddress], 
+    [APUI].[PayCity] AS [PayCity], 
+    [APUI].[PayState] AS [PayState], 
+    [APUI].[PayZip] AS [PayZip], 
+    [APUI].[InUseMth] AS [InUseMth], 
+    [APUI].[InUseBatchId] AS [InUseBatchId], 
+    [APUI].[PayAddInfo] AS [PayAddInfo], 
+    [APUI].[DocName] AS [DocName], 
+    [APUI].[SeparatePayYN] AS [SeparatePayYN], 
+    [APUI].[Notes] AS [Notes], 
+    [APUI].[UniqueAttchID] AS [UniqueAttchID], 
+    [APUI].[AddressSeq] AS [AddressSeq], 
+    [APUI].[KeyID] AS [KeyID], 
+    [APUI].[ReviewerGroup] AS [ReviewerGroup], 
+    [APUI].[SLKeyID] AS [SLKeyID], 
+    [APUI].[PayCountry] AS [PayCountry], 
+    [APUI].[udFreightCost] AS [udFreightCost], 
+    [APUI].[udAPBatchProcessedYN] AS [udAPBatchProcessedYN], 
+    [APUI].[udDestAPCo] AS [udDestAPCo]
+    FROM [dbo].[APUI] AS [APUI]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="ARBH" EntityType="Self.ARBH" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [ARBH].[Co] AS [Co], 
+    [ARBH].[Mth] AS [Mth], 
+    [ARBH].[BatchId] AS [BatchId], 
+    [ARBH].[BatchSeq] AS [BatchSeq], 
+    [ARBH].[TransType] AS [TransType], 
+    [ARBH].[ARTrans] AS [ARTrans], 
+    [ARBH].[Source] AS [Source], 
+    [ARBH].[ARTransType] AS [ARTransType], 
+    [ARBH].[CustGroup] AS [CustGroup], 
+    [ARBH].[Customer] AS [Customer], 
+    [ARBH].[RecType] AS [RecType], 
+    [ARBH].[JCCo] AS [JCCo], 
+    [ARBH].[Contract] AS [Contract], 
+    [ARBH].[CustRef] AS [CustRef], 
+    [ARBH].[CustPO] AS [CustPO], 
+    [ARBH].[Invoice] AS [Invoice], 
+    [ARBH].[CheckNo] AS [CheckNo], 
+    [ARBH].[Description] AS [Description], 
+    [ARBH].[MSCo] AS [MSCo], 
+    [ARBH].[TransDate] AS [TransDate], 
+    [ARBH].[DueDate] AS [DueDate], 
+    [ARBH].[DiscDate] AS [DiscDate], 
+    [ARBH].[CheckDate] AS [CheckDate], 
+    [ARBH].[AppliedMth] AS [AppliedMth], 
+    [ARBH].[AppliedTrans] AS [AppliedTrans], 
+    [ARBH].[CMCo] AS [CMCo], 
+    [ARBH].[CMAcct] AS [CMAcct], 
+    [ARBH].[CMDeposit] AS [CMDeposit], 
+    [ARBH].[CreditAmt] AS [CreditAmt], 
+    [ARBH].[PayTerms] AS [PayTerms], 
+    [ARBH].[Notes] AS [Notes], 
+    [ARBH].[oldCustRef] AS [oldCustRef], 
+    [ARBH].[oldCustPO] AS [oldCustPO], 
+    [ARBH].[oldInvoice] AS [oldInvoice], 
+    [ARBH].[oldCheckNo] AS [oldCheckNo], 
+    [ARBH].[oldDescription] AS [oldDescription], 
+    [ARBH].[oldMSCo] AS [oldMSCo], 
+    [ARBH].[oldTransDate] AS [oldTransDate], 
+    [ARBH].[oldDueDate] AS [oldDueDate], 
+    [ARBH].[oldDiscDate] AS [oldDiscDate], 
+    [ARBH].[oldCheckDate] AS [oldCheckDate], 
+    [ARBH].[oldCMCo] AS [oldCMCo], 
+    [ARBH].[oldCMAcct] AS [oldCMAcct], 
+    [ARBH].[oldCMDeposit] AS [oldCMDeposit], 
+    [ARBH].[oldCreditAmt] AS [oldCreditAmt], 
+    [ARBH].[oldPayTerms] AS [oldPayTerms], 
+    [ARBH].[ReasonCode] AS [ReasonCode], 
+    [ARBH].[oldReasonCode] AS [oldReasonCode], 
+    [ARBH].[UniqueAttchID] AS [UniqueAttchID], 
+    [ARBH].[oldRecType] AS [oldRecType], 
+    [ARBH].[oldJCCo] AS [oldJCCo], 
+    [ARBH].[oldContract] AS [oldContract], 
+    [ARBH].[KeyID] AS [KeyID]
+    FROM [dbo].[ARBH] AS [ARBH]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="HQAT" EntityType="Self.HQAT" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [HQAT].[HQCo] AS [HQCo], 
+    [HQAT].[FormName] AS [FormName], 
+    [HQAT].[KeyField] AS [KeyField], 
+    [HQAT].[Description] AS [Description], 
+    [HQAT].[AddedBy] AS [AddedBy], 
+    [HQAT].[AddDate] AS [AddDate], 
+    [HQAT].[DocName] AS [DocName], 
+    [HQAT].[AttachmentID] AS [AttachmentID], 
+    [HQAT].[TableName] AS [TableName], 
+    [HQAT].[UniqueAttchID] AS [UniqueAttchID], 
+    [HQAT].[OrigFileName] AS [OrigFileName], 
+    [HQAT].[DocAttchYN] AS [DocAttchYN], 
+    [HQAT].[CurrentState] AS [CurrentState], 
+    [HQAT].[AttachmentTypeID] AS [AttachmentTypeID], 
+    [HQAT].[IsEmail] AS [IsEmail]
+    FROM [dbo].[HQAT] AS [HQAT]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="mvwAPAllInvoices" EntityType="Self.mvwAPAllInvoices" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [mvwAPAllInvoices].[Type] AS [Type], 
+    [mvwAPAllInvoices].[APCo] AS [APCo], 
+    [mvwAPAllInvoices].[Mth] AS [Mth], 
+    [mvwAPAllInvoices].[APTrans] AS [APTrans], 
+    [mvwAPAllInvoices].[VendorGroup] AS [VendorGroup], 
+    [mvwAPAllInvoices].[Vendor] AS [Vendor], 
+    [mvwAPAllInvoices].[APRef] AS [APRef], 
+    [mvwAPAllInvoices].[InvDate] AS [InvDate], 
+    [mvwAPAllInvoices].[Description] AS [Description], 
+    [mvwAPAllInvoices].[DueDate] AS [DueDate], 
+    [mvwAPAllInvoices].[InvTotal] AS [InvTotal]
+    FROM [dbo].[mvwAPAllInvoices] AS [mvwAPAllInvoices]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="mvwRLBAPExport" EntityType="Self.mvwRLBAPExport" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [mvwRLBAPExport].[RecordType] AS [RecordType], 
+    [mvwRLBAPExport].[Company] AS [Company], 
+    [mvwRLBAPExport].[Number] AS [Number], 
+    [mvwRLBAPExport].[VendorGroup] AS [VendorGroup], 
+    [mvwRLBAPExport].[Vendor] AS [Vendor], 
+    [mvwRLBAPExport].[VendorName] AS [VendorName], 
+    [mvwRLBAPExport].[TransactionDate] AS [TransactionDate], 
+    [mvwRLBAPExport].[JCCo] AS [JCCo], 
+    [mvwRLBAPExport].[Job] AS [Job], 
+    [mvwRLBAPExport].[JobDescription] AS [JobDescription], 
+    [mvwRLBAPExport].[Description] AS [Description], 
+    [mvwRLBAPExport].[DetailLineCount] AS [DetailLineCount], 
+    [mvwRLBAPExport].[TotalOrigCost] AS [TotalOrigCost], 
+    [mvwRLBAPExport].[TotalOrigTax] AS [TotalOrigTax], 
+    [mvwRLBAPExport].[RemainingAmount] AS [RemainingAmount], 
+    [mvwRLBAPExport].[RemainingTax] AS [RemainingTax]
+    FROM [dbo].[mvwRLBAPExport] AS [mvwRLBAPExport]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="mvwRLBARExport" EntityType="Self.mvwRLBARExport" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [mvwRLBARExport].[Company] AS [Company], 
+    [mvwRLBARExport].[InvoiceNumber] AS [InvoiceNumber], 
+    [mvwRLBARExport].[CustGroup] AS [CustGroup], 
+    [mvwRLBARExport].[Customer] AS [Customer], 
+    [mvwRLBARExport].[CustomerName] AS [CustomerName], 
+    [mvwRLBARExport].[TransactionDate] AS [TransactionDate], 
+    [mvwRLBARExport].[InvoiceDescription] AS [InvoiceDescription], 
+    [mvwRLBARExport].[DetailLineCount] AS [DetailLineCount], 
+    [mvwRLBARExport].[AmountDue] AS [AmountDue], 
+    [mvwRLBARExport].[OriginalAmount] AS [OriginalAmount], 
+    [mvwRLBARExport].[Tax] AS [Tax]
+    FROM [dbo].[mvwRLBARExport] AS [mvwRLBARExport]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ViewpointModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ViewpointEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="APUIs" EntityType="ViewpointModel.APUI" />
+          <EntitySet Name="mvwRLBAPExports" EntityType="ViewpointModel.mvwRLBAPExport" />
+          <EntitySet Name="mvwRLBARExports" EntityType="ViewpointModel.mvwRLBARExport" />
+          <EntitySet Name="ARBHs" EntityType="ViewpointModel.ARBH" />
+          <EntitySet Name="HQATs" EntityType="ViewpointModel.HQAT" />
+          <FunctionImport Name="mckspAPUIAddItemWithFile">
+            <Parameter Name="RecordType" Mode="In" Type="String" />
+            <Parameter Name="Company" Mode="In" Type="Byte" />
+            <Parameter Name="TransactionDate" Mode="In" Type="DateTime" />
+            <Parameter Name="Number" Mode="In" Type="String" />
+            <Parameter Name="VendorGroup" Mode="In" Type="Byte" />
+            <Parameter Name="Vendor" Mode="In" Type="Int32" />
+            <Parameter Name="CollectedInvoiceNumber" Mode="In" Type="String" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="CollectedInvoiceDate" Mode="In" Type="DateTime" />
+            <Parameter Name="CollectedInvoiceAmount" Mode="In" Type="Decimal" />
+            <Parameter Name="CollectedTaxAmount" Mode="In" Type="Decimal" />
+            <Parameter Name="CollectedShippingAmount" Mode="In" Type="Decimal" />
+            <Parameter Name="Module" Mode="In" Type="String" />
+            <Parameter Name="FormName" Mode="In" Type="String" />
+            <Parameter Name="ImageFileName" Mode="In" Type="String" />
+            <Parameter Name="UserAccount" Mode="In" Type="String" />
+            <Parameter Name="UnmatchedCompany" Mode="In" Type="Byte" />
+            <Parameter Name="UnmatchedVendorGroup" Mode="In" Type="Byte" />
+            <Parameter Name="UnmatchedVendor" Mode="In" Type="Int32" />
+            <Parameter Name="AttachmentID" Mode="InOut" Type="Int32" />
+            <Parameter Name="UniqueAttachmentID" Mode="InOut" Type="Guid" />
+            <Parameter Name="AttachmentFilePath" Mode="InOut" Type="String" />
+            <Parameter Name="HeaderKeyID" Mode="InOut" Type="Int64" />
+            <Parameter Name="FooterKeyID" Mode="InOut" Type="Int64" />
+            <Parameter Name="Message" Mode="InOut" Type="String" />
+            <Parameter Name="RetVal" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="mckspARBHAddItemWithFile">
+            <Parameter Name="Company" Mode="In" Type="Byte" />
+            <Parameter Name="TransactionDate" Mode="In" Type="DateTime" />
+            <Parameter Name="Customer" Mode="In" Type="Int32" />
+            <Parameter Name="CustomerGroup" Mode="In" Type="Byte" />
+            <Parameter Name="CheckAmount" Mode="In" Type="Decimal" />
+            <Parameter Name="Module" Mode="In" Type="String" />
+            <Parameter Name="FormName" Mode="In" Type="String" />
+            <Parameter Name="InvoiceNumber" Mode="In" Type="String" />
+            <Parameter Name="CheckNumber" Mode="In" Type="String" />
+            <Parameter Name="CheckDate" Mode="In" Type="DateTime" />
+            <Parameter Name="ImageFileName" Mode="In" Type="String" />
+            <Parameter Name="UserAccount" Mode="In" Type="String" />
+            <Parameter Name="BatchId" Mode="InOut" Type="Int32" />
+            <Parameter Name="HeaderKeyID" Mode="InOut" Type="Int64" />
+            <Parameter Name="AttachmentID" Mode="InOut" Type="Int32" />
+            <Parameter Name="Message" Mode="InOut" Type="String" />
+            <Parameter Name="RetVal" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="mckspAPUIDelete">
+            <Parameter Name="KeyID" Mode="In" Type="Int64" />
+            <Parameter Name="Message" Mode="InOut" Type="String" />
+            <Parameter Name="RetVal" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="mckspHQATDelete">
+            <Parameter Name="AttachmentID" Mode="In" Type="Int32" />
+            <Parameter Name="Message" Mode="InOut" Type="String" />
+            <Parameter Name="RetVal" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="mckspAPUIAdd">
+            <Parameter Name="Company" Mode="In" Type="Byte" />
+            <Parameter Name="UIMonth" Mode="In" Type="DateTime" />
+            <Parameter Name="VendorGroup" Mode="In" Type="Byte" />
+            <Parameter Name="Vendor" Mode="In" Type="Int32" />
+            <Parameter Name="CollectedInvoiceNumber" Mode="In" Type="String" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="Notes" Mode="In" Type="String" />
+            <Parameter Name="CollectedInvoiceDate" Mode="In" Type="DateTime" />
+            <Parameter Name="CollectedInvoiceAmount" Mode="In" Type="Decimal" />
+            <Parameter Name="CollectedShippingAmount" Mode="In" Type="Decimal" />
+            <Parameter Name="HeaderKeyID" Mode="InOut" Type="Int64" />
+            <Parameter Name="UISeq" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="mckfnAPCompanyMove" IsComposable="true" ReturnType="Collection(ViewpointModel.mckfnAPCompanyMove_Result)" />
+          <FunctionImport Name="mckspHQATAdd">
+            <Parameter Name="Company" Mode="In" Type="Byte" />
+            <Parameter Name="HeaderKeyID" Mode="In" Type="Int64" />
+            <Parameter Name="TransactionDate" Mode="In" Type="DateTime" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="Module" Mode="In" Type="String" />
+            <Parameter Name="FormName" Mode="In" Type="String" />
+            <Parameter Name="TableName" Mode="In" Type="String" />
+            <Parameter Name="AttachmentTypeID" Mode="In" Type="Int32" />
+            <Parameter Name="ImageFileName" Mode="In" Type="String" />
+            <Parameter Name="AddedBy" Mode="In" Type="String" />
+            <Parameter Name="KeyID" Mode="InOut" Type="Int32" />
+            <Parameter Name="UniqueAttchID" Mode="InOut" Type="Guid" />
+            <Parameter Name="AttachmentFilePath" Mode="InOut" Type="String" />
+            <Parameter Name="Message" Mode="InOut" Type="String" />
+            <Parameter Name="RetVal" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="mvwAPAllInvoices" EntityType="ViewpointModel.mvwAPAllInvoice" />
+        </EntityContainer>
+        <EntityType Name="APUI">
+          <Key>
+            <PropertyRef Name="APCo" />
+            <PropertyRef Name="UIMth" />
+            <PropertyRef Name="UISeq" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="InvTotal" />
+            <PropertyRef Name="PayMethod" />
+            <PropertyRef Name="CMCo" />
+            <PropertyRef Name="V1099YN" />
+            <PropertyRef Name="PayOverrideYN" />
+            <PropertyRef Name="SeparatePayYN" />
+            <PropertyRef Name="KeyID" />
+            <PropertyRef Name="udAPBatchProcessedYN" />
+          </Key>
+          <Property Name="APCo" Type="Byte" Nullable="false" />
+          <Property Name="UIMth" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="UISeq" Type="Int16" Nullable="false" />
+          <Property Name="VendorGroup" Type="Byte" Nullable="false" />
+          <Property Name="Vendor" Type="Int32" />
+          <Property Name="APRef" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="InvDate" Type="DateTime" Precision="0" />
+          <Property Name="DiscDate" Type="DateTime" Precision="0" />
+          <Property Name="DueDate" Type="DateTime" Precision="0" />
+          <Property Name="InvTotal" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+          <Property Name="HoldCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PayControl" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PayMethod" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="CMCo" Type="Byte" Nullable="false" />
+          <Property Name="CMAcct" Type="Int16" />
+          <Property Name="V1099YN" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="V1099Type" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="V1099Box" Type="Byte" />
+          <Property Name="PayOverrideYN" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="PayName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="PayAddress" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="PayCity" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="PayState" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="PayZip" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="InUseMth" Type="DateTime" Precision="0" />
+          <Property Name="InUseBatchId" Type="Int32" />
+          <Property Name="PayAddInfo" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="DocName" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="SeparatePayYN" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="Notes" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="UniqueAttchID" Type="Guid" />
+          <Property Name="AddressSeq" Type="Byte" />
+          <Property Name="KeyID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReviewerGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="SLKeyID" Type="Int64" />
+          <Property Name="PayCountry" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="udFreightCost" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="udAPBatchProcessedYN" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="udDestAPCo" Type="Byte" />
+        </EntityType>
+        <EntityType Name="mvwRLBAPExport">
+          <Key>
+            <PropertyRef Name="RecordType" />
+            <PropertyRef Name="Company" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="Vendor" />
+          </Key>
+          <Property Name="RecordType" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Company" Type="Byte" Nullable="false" />
+          <Property Name="Number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="VendorGroup" Type="Byte" Nullable="false" />
+          <Property Name="Vendor" Type="Int32" Nullable="false" />
+          <Property Name="VendorName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="TransactionDate" Type="DateTime" Precision="0" />
+          <Property Name="JCCo" Type="Byte" />
+          <Property Name="Job" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="JobDescription" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="DetailLineCount" Type="Int32" />
+          <Property Name="TotalOrigCost" Type="Decimal" Precision="38" Scale="2" />
+          <Property Name="TotalOrigTax" Type="Decimal" Precision="38" Scale="2" />
+          <Property Name="RemainingAmount" Type="Decimal" Precision="38" Scale="2" />
+          <Property Name="RemainingTax" Type="Decimal" Precision="38" Scale="2" />
+        </EntityType>
+        <EntityType Name="mvwRLBARExport">
+          <Key>
+            <PropertyRef Name="Company" />
+            <PropertyRef Name="CustGroup" />
+            <PropertyRef Name="TransactionDate" />
+            <PropertyRef Name="AmountDue" />
+          </Key>
+          <Property Name="Company" Type="Byte" Nullable="false" />
+          <Property Name="InvoiceNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CustGroup" Type="Byte" Nullable="false" />
+          <Property Name="Customer" Type="Int32" />
+          <Property Name="CustomerName" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="TransactionDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="InvoiceDescription" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="DetailLineCount" Type="Int32" />
+          <Property Name="AmountDue" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+          <Property Name="OriginalAmount" Type="Decimal" Precision="38" Scale="2" />
+          <Property Name="Tax" Type="Decimal" Precision="38" Scale="2" />
+        </EntityType>
+        <EntityType Name="ARBH">
+          <Key>
+            <PropertyRef Name="Co" />
+            <PropertyRef Name="Mth" />
+            <PropertyRef Name="BatchId" />
+            <PropertyRef Name="BatchSeq" />
+            <PropertyRef Name="TransType" />
+            <PropertyRef Name="Source" />
+            <PropertyRef Name="ARTransType" />
+            <PropertyRef Name="KeyID" />
+          </Key>
+          <Property Name="Co" Type="Byte" Nullable="false" />
+          <Property Name="Mth" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="BatchId" Type="Int32" Nullable="false" />
+          <Property Name="BatchSeq" Type="Int32" Nullable="false" />
+          <Property Name="TransType" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ARTrans" Type="Int32" />
+          <Property Name="Source" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="ARTransType" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="CustGroup" Type="Byte" />
+          <Property Name="Customer" Type="Int32" />
+          <Property Name="RecType" Type="Byte" />
+          <Property Name="JCCo" Type="Byte" />
+          <Property Name="Contract" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CustRef" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CustPO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Invoice" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="CheckNo" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="MSCo" Type="Byte" />
+          <Property Name="TransDate" Type="DateTime" Precision="0" />
+          <Property Name="DueDate" Type="DateTime" Precision="0" />
+          <Property Name="DiscDate" Type="DateTime" Precision="0" />
+          <Property Name="CheckDate" Type="DateTime" Precision="0" />
+          <Property Name="AppliedMth" Type="DateTime" Precision="0" />
+          <Property Name="AppliedTrans" Type="Int32" />
+          <Property Name="CMCo" Type="Byte" />
+          <Property Name="CMAcct" Type="Int16" />
+          <Property Name="CMDeposit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CreditAmt" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="PayTerms" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="oldCustRef" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="oldCustPO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="oldInvoice" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="oldCheckNo" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="oldDescription" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="oldMSCo" Type="Byte" />
+          <Property Name="oldTransDate" Type="DateTime" Precision="0" />
+          <Property Name="oldDueDate" Type="DateTime" Precision="0" />
+          <Property Name="oldDiscDate" Type="DateTime" Precision="0" />
+          <Property Name="oldCheckDate" Type="DateTime" Precision="0" />
+          <Property Name="oldCMCo" Type="Byte" />
+          <Property Name="oldCMAcct" Type="Int16" />
+          <Property Name="oldCMDeposit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="oldCreditAmt" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="oldPayTerms" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ReasonCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="oldReasonCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="UniqueAttchID" Type="Guid" />
+          <Property Name="oldRecType" Type="Byte" />
+          <Property Name="oldJCCo" Type="Byte" />
+          <Property Name="oldContract" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="KeyID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="HQAT">
+          <Key>
+            <PropertyRef Name="HQCo" />
+            <PropertyRef Name="FormName" />
+            <PropertyRef Name="KeyField" />
+            <PropertyRef Name="AttachmentID" />
+            <PropertyRef Name="DocAttchYN" />
+            <PropertyRef Name="CurrentState" />
+            <PropertyRef Name="IsEmail" />
+          </Key>
+          <Property Name="HQCo" Type="Byte" Nullable="false" />
+          <Property Name="FormName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="KeyField" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="AddedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="AddDate" Type="DateTime" Precision="0" />
+          <Property Name="DocName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="AttachmentID" Type="Int32" Nullable="false" />
+          <Property Name="TableName" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="UniqueAttchID" Type="Guid" />
+          <Property Name="OrigFileName" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="DocAttchYN" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="CurrentState" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="AttachmentTypeID" Type="Int32" />
+          <Property Name="IsEmail" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <ComplexType Name="mckfnAPCompanyMove_Result">
+          <Property Type="Byte" Name="APCo" Nullable="false" />
+          <Property Type="DateTime" Name="UIMth" Nullable="false" Precision="16" />
+          <Property Type="Int16" Name="UISeq" Nullable="false" />
+          <Property Type="Byte" Name="VendorGroup" Nullable="false" />
+          <Property Type="Int32" Name="Vendor" Nullable="true" />
+          <Property Type="String" Name="APRef" Nullable="true" MaxLength="15" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Notes" Nullable="true" MaxLength="2000" />
+          <Property Type="DateTime" Name="InvDate" Nullable="true" Precision="16" />
+          <Property Type="Decimal" Name="InvTotal" Nullable="false" Precision="12" Scale="2" />
+          <Property Type="Guid" Name="UniqueAttchID" Nullable="true" />
+          <Property Type="Byte" Name="DestAPCo" Nullable="true" />
+          <Property Type="Int64" Name="KeyID" Nullable="false" />
+          <Property Type="Decimal" Name="FreightCost" Nullable="true" Precision="12" Scale="2" />
+          <Property Type="Int32" Name="AttachmentCount" Nullable="true" />
+          <Property Type="Boolean" Name="HasDetailLine" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="mvwAPAllInvoice">
+          <Key>
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="APCo" />
+            <PropertyRef Name="Mth" />
+            <PropertyRef Name="APTrans" />
+            <PropertyRef Name="VendorGroup" />
+            <PropertyRef Name="InvTotal" />
+          </Key>
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="APCo" Type="Byte" Nullable="false" />
+          <Property Name="Mth" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="APTrans" Type="Int32" Nullable="false" />
+          <Property Name="VendorGroup" Type="Byte" Nullable="false" />
+          <Property Name="Vendor" Type="Int32" />
+          <Property Name="APRef" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="InvDate" Type="DateTime" Precision="0" />
+          <Property Name="Description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="DueDate" Type="DateTime" Precision="0" />
+          <Property Name="InvTotal" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ViewpointModelStoreContainer" CdmEntityContainer="ViewpointEntities">
+          <EntitySetMapping Name="APUIs">
+            <EntityTypeMapping TypeName="ViewpointModel.APUI">
+              <MappingFragment StoreEntitySet="APUI">
+                <ScalarProperty Name="udDestAPCo" ColumnName="udDestAPCo" />
+                <ScalarProperty Name="udAPBatchProcessedYN" ColumnName="udAPBatchProcessedYN" />
+                <ScalarProperty Name="udFreightCost" ColumnName="udFreightCost" />
+                <ScalarProperty Name="PayCountry" ColumnName="PayCountry" />
+                <ScalarProperty Name="SLKeyID" ColumnName="SLKeyID" />
+                <ScalarProperty Name="ReviewerGroup" ColumnName="ReviewerGroup" />
+                <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+                <ScalarProperty Name="AddressSeq" ColumnName="AddressSeq" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="SeparatePayYN" ColumnName="SeparatePayYN" />
+                <ScalarProperty Name="DocName" ColumnName="DocName" />
+                <ScalarProperty Name="PayAddInfo" ColumnName="PayAddInfo" />
+                <ScalarProperty Name="InUseBatchId" ColumnName="InUseBatchId" />
+                <ScalarProperty Name="InUseMth" ColumnName="InUseMth" />
+                <ScalarProperty Name="PayZip" ColumnName="PayZip" />
+                <ScalarProperty Name="PayState" ColumnName="PayState" />
+                <ScalarProperty Name="PayCity" ColumnName="PayCity" />
+                <ScalarProperty Name="PayAddress" ColumnName="PayAddress" />
+                <ScalarProperty Name="PayName" ColumnName="PayName" />
+                <ScalarProperty Name="PayOverrideYN" ColumnName="PayOverrideYN" />
+                <ScalarProperty Name="V1099Box" ColumnName="V1099Box" />
+                <ScalarProperty Name="V1099Type" ColumnName="V1099Type" />
+                <ScalarProperty Name="V1099YN" ColumnName="V1099YN" />
+                <ScalarProperty Name="CMAcct" ColumnName="CMAcct" />
+                <ScalarProperty Name="CMCo" ColumnName="CMCo" />
+                <ScalarProperty Name="PayMethod" ColumnName="PayMethod" />
+                <ScalarProperty Name="PayControl" ColumnName="PayControl" />
+                <ScalarProperty Name="HoldCode" ColumnName="HoldCode" />
+                <ScalarProperty Name="InvTotal" ColumnName="InvTotal" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="DiscDate" ColumnName="DiscDate" />
+                <ScalarProperty Name="InvDate" ColumnName="InvDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="APRef" ColumnName="APRef" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="VendorGroup" ColumnName="VendorGroup" />
+                <ScalarProperty Name="UISeq" ColumnName="UISeq" />
+                <ScalarProperty Name="UIMth" ColumnName="UIMth" />
+                <ScalarProperty Name="APCo" ColumnName="APCo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mvwRLBAPExports">
+            <EntityTypeMapping TypeName="ViewpointModel.mvwRLBAPExport">
+              <MappingFragment StoreEntitySet="mvwRLBAPExport">
+                <ScalarProperty Name="RemainingTax" ColumnName="RemainingTax" />
+                <ScalarProperty Name="RemainingAmount" ColumnName="RemainingAmount" />
+                <ScalarProperty Name="TotalOrigTax" ColumnName="TotalOrigTax" />
+                <ScalarProperty Name="TotalOrigCost" ColumnName="TotalOrigCost" />
+                <ScalarProperty Name="DetailLineCount" ColumnName="DetailLineCount" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+                <ScalarProperty Name="Job" ColumnName="Job" />
+                <ScalarProperty Name="JCCo" ColumnName="JCCo" />
+                <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="VendorGroup" ColumnName="VendorGroup" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="RecordType" ColumnName="RecordType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mvwRLBARExports">
+            <EntityTypeMapping TypeName="ViewpointModel.mvwRLBARExport">
+              <MappingFragment StoreEntitySet="mvwRLBARExport">
+                <ScalarProperty Name="Tax" ColumnName="Tax" />
+                <ScalarProperty Name="OriginalAmount" ColumnName="OriginalAmount" />
+                <ScalarProperty Name="AmountDue" ColumnName="AmountDue" />
+                <ScalarProperty Name="DetailLineCount" ColumnName="DetailLineCount" />
+                <ScalarProperty Name="InvoiceDescription" ColumnName="InvoiceDescription" />
+                <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="CustGroup" ColumnName="CustGroup" />
+                <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ARBHs">
+            <EntityTypeMapping TypeName="ViewpointModel.ARBH">
+              <MappingFragment StoreEntitySet="ARBH">
+                <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+                <ScalarProperty Name="oldContract" ColumnName="oldContract" />
+                <ScalarProperty Name="oldJCCo" ColumnName="oldJCCo" />
+                <ScalarProperty Name="oldRecType" ColumnName="oldRecType" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="oldReasonCode" ColumnName="oldReasonCode" />
+                <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+                <ScalarProperty Name="oldPayTerms" ColumnName="oldPayTerms" />
+                <ScalarProperty Name="oldCreditAmt" ColumnName="oldCreditAmt" />
+                <ScalarProperty Name="oldCMDeposit" ColumnName="oldCMDeposit" />
+                <ScalarProperty Name="oldCMAcct" ColumnName="oldCMAcct" />
+                <ScalarProperty Name="oldCMCo" ColumnName="oldCMCo" />
+                <ScalarProperty Name="oldCheckDate" ColumnName="oldCheckDate" />
+                <ScalarProperty Name="oldDiscDate" ColumnName="oldDiscDate" />
+                <ScalarProperty Name="oldDueDate" ColumnName="oldDueDate" />
+                <ScalarProperty Name="oldTransDate" ColumnName="oldTransDate" />
+                <ScalarProperty Name="oldMSCo" ColumnName="oldMSCo" />
+                <ScalarProperty Name="oldDescription" ColumnName="oldDescription" />
+                <ScalarProperty Name="oldCheckNo" ColumnName="oldCheckNo" />
+                <ScalarProperty Name="oldInvoice" ColumnName="oldInvoice" />
+                <ScalarProperty Name="oldCustPO" ColumnName="oldCustPO" />
+                <ScalarProperty Name="oldCustRef" ColumnName="oldCustRef" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="PayTerms" ColumnName="PayTerms" />
+                <ScalarProperty Name="CreditAmt" ColumnName="CreditAmt" />
+                <ScalarProperty Name="CMDeposit" ColumnName="CMDeposit" />
+                <ScalarProperty Name="CMAcct" ColumnName="CMAcct" />
+                <ScalarProperty Name="CMCo" ColumnName="CMCo" />
+                <ScalarProperty Name="AppliedTrans" ColumnName="AppliedTrans" />
+                <ScalarProperty Name="AppliedMth" ColumnName="AppliedMth" />
+                <ScalarProperty Name="CheckDate" ColumnName="CheckDate" />
+                <ScalarProperty Name="DiscDate" ColumnName="DiscDate" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="TransDate" ColumnName="TransDate" />
+                <ScalarProperty Name="MSCo" ColumnName="MSCo" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CheckNo" ColumnName="CheckNo" />
+                <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+                <ScalarProperty Name="CustPO" ColumnName="CustPO" />
+                <ScalarProperty Name="CustRef" ColumnName="CustRef" />
+                <ScalarProperty Name="Contract" ColumnName="Contract" />
+                <ScalarProperty Name="JCCo" ColumnName="JCCo" />
+                <ScalarProperty Name="RecType" ColumnName="RecType" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="CustGroup" ColumnName="CustGroup" />
+                <ScalarProperty Name="ARTransType" ColumnName="ARTransType" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="ARTrans" ColumnName="ARTrans" />
+                <ScalarProperty Name="TransType" ColumnName="TransType" />
+                <ScalarProperty Name="BatchSeq" ColumnName="BatchSeq" />
+                <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+                <ScalarProperty Name="Mth" ColumnName="Mth" />
+                <ScalarProperty Name="Co" ColumnName="Co" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HQATs">
+            <EntityTypeMapping TypeName="ViewpointModel.HQAT">
+              <MappingFragment StoreEntitySet="HQAT">
+                <ScalarProperty Name="IsEmail" ColumnName="IsEmail" />
+                <ScalarProperty Name="AttachmentTypeID" ColumnName="AttachmentTypeID" />
+                <ScalarProperty Name="CurrentState" ColumnName="CurrentState" />
+                <ScalarProperty Name="DocAttchYN" ColumnName="DocAttchYN" />
+                <ScalarProperty Name="OrigFileName" ColumnName="OrigFileName" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="TableName" ColumnName="TableName" />
+                <ScalarProperty Name="AttachmentID" ColumnName="AttachmentID" />
+                <ScalarProperty Name="DocName" ColumnName="DocName" />
+                <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="KeyField" ColumnName="KeyField" />
+                <ScalarProperty Name="FormName" ColumnName="FormName" />
+                <ScalarProperty Name="HQCo" ColumnName="HQCo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="mckspAPUIAddItemWithFile" FunctionName="ViewpointModel.Store.mckspAPUIAddItemWithFile" />
+          <FunctionImportMapping FunctionImportName="mckspARBHAddItemWithFile" FunctionName="ViewpointModel.Store.mckspARBHAddItemWithFile" />
+          <FunctionImportMapping FunctionImportName="mckspAPUIDelete" FunctionName="ViewpointModel.Store.mckspAPUIDelete" />
+          <FunctionImportMapping FunctionImportName="mckspHQATDelete" FunctionName="ViewpointModel.Store.mckspHQATDelete" />
+          <FunctionImportMapping FunctionImportName="mckspAPUIAdd" FunctionName="ViewpointModel.Store.mckspAPUIAdd" />
+          <FunctionImportMapping FunctionImportName="mckfnAPCompanyMove" FunctionName="ViewpointModel.Store.mckfnAPCompanyMove">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ViewpointModel.mckfnAPCompanyMove_Result">
+                <ScalarProperty Name="APCo" ColumnName="APCo" />
+                <ScalarProperty Name="UIMth" ColumnName="UIMth" />
+                <ScalarProperty Name="UISeq" ColumnName="UISeq" />
+                <ScalarProperty Name="VendorGroup" ColumnName="VendorGroup" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="APRef" ColumnName="APRef" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="InvDate" ColumnName="InvDate" />
+                <ScalarProperty Name="InvTotal" ColumnName="InvTotal" />
+                <ScalarProperty Name="UniqueAttchID" ColumnName="UniqueAttchID" />
+                <ScalarProperty Name="DestAPCo" ColumnName="DestAPCo" />
+                <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+                <ScalarProperty Name="FreightCost" ColumnName="FreightCost" />
+                <ScalarProperty Name="AttachmentCount" ColumnName="AttachmentCount" />
+                <ScalarProperty Name="HasDetailLine" ColumnName="HasDetailLine" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="mckspHQATAdd" FunctionName="ViewpointModel.Store.mckspHQATAdd" />
+          <EntitySetMapping Name="mvwAPAllInvoices">
+            <EntityTypeMapping TypeName="ViewpointModel.mvwAPAllInvoice">
+              <MappingFragment StoreEntitySet="mvwAPAllInvoices">
+                <ScalarProperty Name="InvTotal" ColumnName="InvTotal" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="InvDate" ColumnName="InvDate" />
+                <ScalarProperty Name="APRef" ColumnName="APRef" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="VendorGroup" ColumnName="VendorGroup" />
+                <ScalarProperty Name="APTrans" ColumnName="APTrans" />
+                <ScalarProperty Name="Mth" ColumnName="Mth" />
+                <ScalarProperty Name="APCo" ColumnName="APCo" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,36 @@
+﻿<%@Master language="C#"%>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html runat="server" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head runat="server">
+	<meta name="progid" content="SharePoint.WebPartPage.Document"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Expires" content="0"/>
+	<title id="onetidTitle"><asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server"/></title>
+	<script type="text/javascript">
+	var _fV4UI = true;
+	</script>
+</head>
+<body scroll="yes">
+  <form runat="server" >
+  <asp:ToolkitScriptManager id="ScriptManager1" runat="server" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true" EnableScriptLocalization="true" />
+<div id="isd-workspace">
+		<div id="s4-bodyContainer">
+			<div id="s4-mainarea" class="s4-pr s4-widecontentarea">			
+						<div class='s4-ba'><div class='ms-bodyareacell'>
+							<div id="MSO_ContentDiv" runat="server">
+						<a name="mainContent"></a>
+                             				<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server">
+						</asp:ContentPlaceHolder>
+							</div>
+						</div>									
+				</div>
+			</div>			
+		</div>
+</div>
+   <input type="text" name="__spText1" title="text" style="display:none;" />
+   <input type="text" name="__spText2" title="text" style="display:none;" />
+  </form>
+</body>
+</html>

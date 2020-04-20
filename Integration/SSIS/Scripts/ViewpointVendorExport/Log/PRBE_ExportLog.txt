@@ -1,0 +1,10 @@
+5:00:03 AM	-----------------------------------------------
+5:00:03 AM	Monday, November 3, 2014
+5:00:03 AM	-----------------------------------------------
+5:00:03 AM	SQL Server:    VIEWPOINTAG\VIEWPOINT
+5:00:03 AM	Database:    Viewpoint
+5:00:03 AM	-----------------------------------------------
+5:00:03 AM	** VP Vendor Export "SELECT * FROM mvwCreateACheckVendorExport ORDER BY VendorName" (1049 records)
+5:00:03 AM		to C:\Scripts\ViewpointVendorExport\VP_CAC_Vendor_Export.csv
+5:00:04 AM	** Sending Email
+5:00:04 AM		To: billo@mckinstry.com

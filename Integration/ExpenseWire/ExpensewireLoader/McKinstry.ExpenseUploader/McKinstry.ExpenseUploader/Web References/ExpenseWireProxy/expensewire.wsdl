@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ExpenseWire.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s2="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ExpenseWire.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ExpenseWire.com/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:import namespace="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" />
+      <s:element name="SSO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParterKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptedSSOKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SSOResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SingleSignOn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlUserData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SingleSignOnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SingleSignOnResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpenDataConnection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpenDataConnectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpenDataConnectionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpsertPurchaseData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="targetUser" type="tns:UserRef" />
+            <s:element minOccurs="0" maxOccurs="1" name="targetProvider" type="tns:ProviderRef" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserRef" abstract="true" />
+      <s:complexType name="UserRefByGuid">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:UserRef">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="UserGuid" type="s1:guid" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="UserRefByUserId">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:UserRef">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="UserID" nillable="true" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="CompanyID" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="UserRefByExternal">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:UserRef">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ExternalCompanyKey" nillable="true" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ExternalUserKey" nillable="true" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="SSOProviderGUID" type="s1:guid" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ProviderRef">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ProviderGuid" type="s1:guid" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpsertPurchaseDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpsertPurchaseDataResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Header" type="tns:ResponseHeader" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResponseHeader">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SequenceNumber" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="hasError" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorMessage" nillable="true" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="InnerMessage" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResponseTravel">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Response">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="TravelHeader" type="tns:Travel" />
+              <s:element minOccurs="0" maxOccurs="1" name="TravelDetails" type="tns:ArrayOfTravelDetails" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Travel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:TravelStatus" />
+          <s:element minOccurs="0" maxOccurs="1" name="TravelData" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserGuid" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProviderGuid" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExternalId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastEditUser" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TripName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TripAmount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Insert" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="TravelStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Parsed" />
+          <s:enumeration value="Invalid" />
+          <s:enumeration value="Cancelled" />
+          <s:enumeration value="Expensed" />
+          <s:enumeration value="Volatile" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfTravelDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TravelDetails" nillable="true" type="tns:TravelDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TravelDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TravelID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BookedDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="BookedAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vendor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VendorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ConfirmationNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Segment" type="tns:TravelSegment" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExternalId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TravelSegment" abstract="true" />
+      <s:complexType name="AirSegment">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:TravelSegment">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="FlightNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SeatNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ArrivalAirportCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DepartureAirportCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SeatClass" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="HotelSegment">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:TravelSegment">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RoomType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="GuestCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CancelPolicy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ChainCode" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CarSegment">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:TravelSegment">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="VehicleClass" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PickupLocation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ReturnLocation" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="OASSegment">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:TravelSegment">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="VoucherName" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="UpsertPurchaseData_NEW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="targetUser" type="tns:UserRef" />
+            <s:element minOccurs="0" maxOccurs="1" name="targetProvider" type="tns:ProviderRef" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpsertPurchaseData_NEWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpsertPurchaseData_NEWResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Signer" type="tns:Signer" />
+      <s:complexType name="Signer">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Timestamp" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Partner" type="s:int" />
+        </s:sequence>
+        <s:attribute ref="s2:Id" />
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="SendDataTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlRequest" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendDataTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendDataTransactionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloseDataConnection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloseDataConnectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CloseDataConnectionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDataTransactionSchema">
+        <s:complexType />
+      </s:element>
+      <s:element name="getDataTransactionSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDataTransactionSchemaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getResponseSchema">
+        <s:complexType />
+      </s:element>
+      <s:element name="getResponseSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getResponseSchemaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="returnEnum">
+        <s:complexType />
+      </s:element>
+      <s:element name="returnEnumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="returnEnumResult" type="tns:ErrorCodes" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="ErrorCodes">
+        <s:list>
+          <s:simpleType>
+            <s:restriction base="s:string">
+              <s:enumeration value="OK" />
+              <s:enumeration value="Warning" />
+              <s:enumeration value="AuthenticationException" />
+              <s:enumeration value="SessionKeyInvalid" />
+              <s:enumeration value="SchemaViolation" />
+              <s:enumeration value="ExpenseWireException" />
+              <s:enumeration value="DataConversion" />
+              <s:enumeration value="SQLException" />
+              <s:enumeration value="XMLException" />
+              <s:enumeration value="FormatException" />
+              <s:enumeration value="UknownException" />
+              <s:enumeration value="FatalError" />
+            </s:restriction>
+          </s:simpleType>
+        </s:list>
+      </s:simpleType>
+      <s:element name="getTimeStamp">
+        <s:complexType />
+      </s:element>
+      <s:element name="getTimeStampResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getTimeStampResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <s:attribute name="Id" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SSOSoapIn">
+    <wsdl:part name="parameters" element="tns:SSO" />
+  </wsdl:message>
+  <wsdl:message name="SSOSoapOut">
+    <wsdl:part name="parameters" element="tns:SSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="SingleSignOnSoapIn">
+    <wsdl:part name="parameters" element="tns:SingleSignOn" />
+  </wsdl:message>
+  <wsdl:message name="SingleSignOnSoapOut">
+    <wsdl:part name="parameters" element="tns:SingleSignOnResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpenDataConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:OpenDataConnection" />
+  </wsdl:message>
+  <wsdl:message name="OpenDataConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:OpenDataConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpsertPurchaseDataSoapIn">
+    <wsdl:part name="parameters" element="tns:UpsertPurchaseData" />
+  </wsdl:message>
+  <wsdl:message name="UpsertPurchaseDataSoapOut">
+    <wsdl:part name="parameters" element="tns:UpsertPurchaseDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpsertPurchaseData_NEWSoapIn">
+    <wsdl:part name="parameters" element="tns:UpsertPurchaseData_NEW" />
+  </wsdl:message>
+  <wsdl:message name="UpsertPurchaseData_NEWSoapOut">
+    <wsdl:part name="parameters" element="tns:UpsertPurchaseData_NEWResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpsertPurchaseData_NEWSigner">
+    <wsdl:part name="Signer" element="tns:Signer" />
+  </wsdl:message>
+  <wsdl:message name="SendDataTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:SendDataTransaction" />
+  </wsdl:message>
+  <wsdl:message name="SendDataTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:SendDataTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CloseDataConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:CloseDataConnection" />
+  </wsdl:message>
+  <wsdl:message name="CloseDataConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:CloseDataConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDataTransactionSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:getDataTransactionSchema" />
+  </wsdl:message>
+  <wsdl:message name="getDataTransactionSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:getDataTransactionSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getResponseSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:getResponseSchema" />
+  </wsdl:message>
+  <wsdl:message name="getResponseSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:getResponseSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="returnEnumSoapIn">
+    <wsdl:part name="parameters" element="tns:returnEnum" />
+  </wsdl:message>
+  <wsdl:message name="returnEnumSoapOut">
+    <wsdl:part name="parameters" element="tns:returnEnumResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTimeStampSoapIn">
+    <wsdl:part name="parameters" element="tns:getTimeStamp" />
+  </wsdl:message>
+  <wsdl:message name="getTimeStampSoapOut">
+    <wsdl:part name="parameters" element="tns:getTimeStampResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ExpenseWireServiceSoap">
+    <wsdl:operation name="SSO">
+      <wsdl:input message="tns:SSOSoapIn" />
+      <wsdl:output message="tns:SSOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SingleSignOn">
+      <wsdl:input message="tns:SingleSignOnSoapIn" />
+      <wsdl:output message="tns:SingleSignOnSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpenDataConnection">
+      <wsdl:input message="tns:OpenDataConnectionSoapIn" />
+      <wsdl:output message="tns:OpenDataConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertPurchaseData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Upsert a Purchase Data transaction with the need of a previously established session.</wsdl:documentation>
+      <wsdl:input message="tns:UpsertPurchaseDataSoapIn" />
+      <wsdl:output message="tns:UpsertPurchaseDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertPurchaseData_NEW">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Upsert a Purchase Data transaction without the need of a previously established session via SOAP Header Digital Signature.</wsdl:documentation>
+      <wsdl:input message="tns:UpsertPurchaseData_NEWSoapIn" />
+      <wsdl:output message="tns:UpsertPurchaseData_NEWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendDataTransaction">
+      <wsdl:input message="tns:SendDataTransactionSoapIn" />
+      <wsdl:output message="tns:SendDataTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseDataConnection">
+      <wsdl:input message="tns:CloseDataConnectionSoapIn" />
+      <wsdl:output message="tns:CloseDataConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDataTransactionSchema">
+      <wsdl:input message="tns:getDataTransactionSchemaSoapIn" />
+      <wsdl:output message="tns:getDataTransactionSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getResponseSchema">
+      <wsdl:input message="tns:getResponseSchemaSoapIn" />
+      <wsdl:output message="tns:getResponseSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="returnEnum">
+      <wsdl:input message="tns:returnEnumSoapIn" />
+      <wsdl:output message="tns:returnEnumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTimeStamp">
+      <wsdl:input message="tns:getTimeStampSoapIn" />
+      <wsdl:output message="tns:getTimeStampSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ExpenseWireServiceSoap" type="tns:ExpenseWireServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SSO">
+      <soap:operation soapAction="http://ExpenseWire.com/SSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SingleSignOn">
+      <soap:operation soapAction="http://ExpenseWire.com/SingleSignOn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenDataConnection">
+      <soap:operation soapAction="http://ExpenseWire.com/OpenDataConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertPurchaseData">
+      <soap:operation soapAction="http://ExpenseWire.com/UpsertPurchaseData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertPurchaseData_NEW">
+      <soap:operation soapAction="http://ExpenseWire.com/UpsertPurchaseData_NEW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpsertPurchaseData_NEWSigner" part="Signer" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpsertPurchaseData_NEWSigner" part="Signer" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDataTransaction">
+      <soap:operation soapAction="http://ExpenseWire.com/SendDataTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseDataConnection">
+      <soap:operation soapAction="http://ExpenseWire.com/CloseDataConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDataTransactionSchema">
+      <soap:operation soapAction="http://ExpenseWire.com/getDataTransactionSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getResponseSchema">
+      <soap:operation soapAction="http://ExpenseWire.com/getResponseSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="returnEnum">
+      <soap:operation soapAction="http://ExpenseWire.com/returnEnum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTimeStamp">
+      <soap:operation soapAction="http://ExpenseWire.com/getTimeStamp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExpenseWireServiceSoap12" type="tns:ExpenseWireServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SSO">
+      <soap12:operation soapAction="http://ExpenseWire.com/SSO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SingleSignOn">
+      <soap12:operation soapAction="http://ExpenseWire.com/SingleSignOn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenDataConnection">
+      <soap12:operation soapAction="http://ExpenseWire.com/OpenDataConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertPurchaseData">
+      <soap12:operation soapAction="http://ExpenseWire.com/UpsertPurchaseData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertPurchaseData_NEW">
+      <soap12:operation soapAction="http://ExpenseWire.com/UpsertPurchaseData_NEW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpsertPurchaseData_NEWSigner" part="Signer" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpsertPurchaseData_NEWSigner" part="Signer" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDataTransaction">
+      <soap12:operation soapAction="http://ExpenseWire.com/SendDataTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseDataConnection">
+      <soap12:operation soapAction="http://ExpenseWire.com/CloseDataConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDataTransactionSchema">
+      <soap12:operation soapAction="http://ExpenseWire.com/getDataTransactionSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getResponseSchema">
+      <soap12:operation soapAction="http://ExpenseWire.com/getResponseSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="returnEnum">
+      <soap12:operation soapAction="http://ExpenseWire.com/returnEnum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTimeStamp">
+      <soap12:operation soapAction="http://ExpenseWire.com/getTimeStamp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExpenseWireService">
+    <wsdl:port name="ExpenseWireServiceSoap" binding="tns:ExpenseWireServiceSoap">
+      <soap:address location="https://web.expensewire.com/openaccess/webmethods/expensewire.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExpenseWireServiceSoap12" binding="tns:ExpenseWireServiceSoap12">
+      <soap12:address location="https://web.expensewire.com/openaccess/webmethods/expensewire.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

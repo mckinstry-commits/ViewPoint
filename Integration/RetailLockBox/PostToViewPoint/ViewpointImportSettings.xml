@@ -1,0 +1,47 @@
+<Settings>
+  <Setting Name="AP Unapproved Invoice Settings"
+		UserAccount="mckinstry\briang"
+    DataFilePath="D:\ViewPointImport\Data\AP\"
+    ArchiveFilePath="D:\ViewPointImport\Archive\AP\"
+    Server="MCKTESTSQL04\VIEWPOINT"
+    Database="Viewpoint"
+		Module="AP" 
+    UnmatchedCompany="1" 
+    UnmatchedVendorGroup="1" 
+    UnmatchedVendor="9" 
+		Form="APUnappInv"
+		LogFileName="APUnappInv"
+		LogFilePath="D:\ViewPointImport\Log\">
+  </Setting>
+  <Setting Name="AP Unmatched Company Move Settings"
+		UserAccount="mckinstry\briang"
+    Server="MCKTESTSQL04\VIEWPOINT"
+    Database="Viewpoint"
+		Module="AP"
+		Form="APUnappInv"
+		LogFileName="APUnmatchedCoMove"
+		LogFilePath="D:\ViewPointImport\Log\">
+  </Setting>
+  <Setting Name="AR Cash Receipts Settings"
+		UserAccount="mckinstry\briang"
+    DataFilePath="D:\ViewPointImport\Data\AR\"
+    ArchiveFilePath="D:\ViewPointImport\Archive\AR\"
+    Server="MCKTESTSQL04\VIEWPOINT"
+    Database="VPIntegration"
+		Module="AR"
+		Form="ARCashReceipts"
+		LogFileName="ARCashReceipts"
+		LogFilePath="D:\ViewPointImport\Log\">
+  </Setting>
+  <Setting Name="ExpenseWire AP Entry Settings"
+    UserAccount="mckinstry\briang"
+    DataFilePath="D:\ViewPointImport\Data\ExpenseWire\"
+    ArchiveFilePath="D:\ViewPointImport\Archive\ExpenseWire\"
+    Server="MCKTESTSQL04\VIEWPOINT"
+    Database="VPIntegration"
+    Module="AP"
+    Form="APEntry"
+    LogFileName="APEntry"
+    LogFilePath="D:\ViewPointImport\Log\">
+  </Setting>
+</Settings>

@@ -1,0 +1,2 @@
+2014-11-02 15:46:12Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-11-02 15:46:12Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

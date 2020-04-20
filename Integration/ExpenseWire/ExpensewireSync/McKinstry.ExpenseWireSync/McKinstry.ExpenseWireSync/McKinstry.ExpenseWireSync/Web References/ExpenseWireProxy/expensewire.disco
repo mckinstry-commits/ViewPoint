@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://sandbox.expensewire.com/openaccess/webmethods/expensewire.asmx?wsdl" docRef="https://sandbox.expensewire.com/openaccess/webmethods/expensewire.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://sandbox.expensewire.com/openaccess/webmethods/expensewire.asmx" xmlns:q1="http://ExpenseWire.com/" binding="q1:ExpenseWireServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://sandbox.expensewire.com/openaccess/webmethods/expensewire.asmx" xmlns:q2="http://ExpenseWire.com/" binding="q2:ExpenseWireServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

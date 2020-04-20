@@ -1,0 +1,19 @@
+-- if a VP Job, get the work order scope based on the labor phase
+SELECT w.SMWorkOrderID, s.Scope, h.PhaseGroup, t.SMCostType, t.JCCostType, p.PayType, w.RequestedBy
+FROM dbo.SMWorkOrder w 
+INNER JOIN HQCO h ON h.HQCo = @Co
+INNER JOIN SMWorkOrderScope s ON w.SMCo = s.SMCo AND w.WorkOrder = s.WorkOrder AND s.Phase = @Phase AND s.PhaseGroup = h.PhaseGroup
+INNER JOIN PREHFullName e ON e.Employee = @Employee AND e.PRCo = @Co
+INNER JOIN SMCostType t ON e.PRCo = t.SMCo AND t.SMCostTypeCategory = 'L'
+INNER JOIN SMPayType p ON p.PayType = @EarnCode AND p.SMCo = e.PRCo
+WHERE w.WorkOrder = @WorkOrder AND w.SMCo = @SMCo AND @IsVPJob = 'Y'
+UNION ALL
+-- if not a VP job, get Service scope
+SELECT w.SMWorkOrderID, s.Scope 'Scope', h.PhaseGroup, t.SMCostType, t.JCCostType, p.PayType, w.RequestedBy
+FROM dbo.SMWorkOrder w 
+INNER JOIN HQCO h ON h.HQCo = @Co
+INNER JOIN SMWorkOrderScope s ON w.SMCo = s.SMCo AND w.WorkOrder = s.WorkOrder AND s.WorkScope = '003' AND s.PhaseGroup = h.PhaseGroup
+INNER JOIN PREHFullName e ON e.Employee = @Employee AND e.PRCo = @Co
+INNER JOIN SMCostType t ON e.PRCo = t.SMCo AND t.SMCostTypeCategory = 'L'
+INNER JOIN SMPayType p ON p.PayType = @EarnCode AND p.SMCo = e.PRCo
+WHERE w.WorkOrder = @WorkOrder AND w.SMCo = @SMCo AND @IsVPJob = 'N'

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>Mobile</Name>
+    <Type>Master</Type>
+
+	<SubType>SharePointNested</SubType>
+    <GenerateDirectory>Master Pages</GenerateDirectory>
+    <Layout>Master Pages\Mobile.html</Layout>
+    <DisplayName>Mobile</DisplayName>
+    <Description>Standard Mobile Master Page.</Description>
+    <DeviceSize>Small</DeviceSize>
+  </Self>
+  <ComposedOf>
+    <ContainedComponent>
+      <Name>PageFooter</Name>
+      <Type>Footer</Type>
+      <Layout>..\Header and Footer\FooterMobile.ascx</Layout>
+    </ContainedComponent>
+  </ComposedOf>
+  <LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-16"?&gt;
+    &lt;LayoutDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+    
+      &lt;Layout Name="Master" Type="RootLayout"&gt;
+      
+        &lt;Prolog&gt;
+
+          &lt;Value&gt;&amp;lt;asp:Content id="PageTitleContent_PlaceHolderPageTitle" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server"&amp;gt;
+		    &amp;lt;asp:Literal id="PageTitle" runat="server" text="ViewpointXRef" /&amp;gt; &amp;lt;/asp:Content&amp;gt;
+		    &amp;lt;asp:Content id="PageTitleContent_PlaceHolderMain" ContentPlaceHolderID="PlaceHolderMain" runat="server"&amp;gt;
+		    &amp;lt;BaseClasses:ScrollCoordinates id="ScrollCoordinates1" runat="server"&amp;gt;&amp;lt;/BaseClasses:ScrollCoordinates&amp;gt;
+            &amp;lt;BaseClasses:BasePageSettings id="PageSettings" runat="server"&amp;gt;&amp;lt;/BaseClasses:BasePageSettings&amp;gt;
+            &amp;lt;script language="JavaScript" type="text/javascript"&amp;gt;{ScriptDirectionTemplate}&amp;lt;/script&amp;gt;
+            
+          &lt;/Value&gt;
+        &lt;/Prolog&gt;      
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;asp:ContentPlaceHolder id="PageContent" Runat="server"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:FOOTER NAME="PageFooter"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;                
+        &lt;Epilog&gt;
+
+	       &lt;Value&gt;&amp;lt;/asp:Content&amp;gt;&lt;/Value&gt;
+        &lt;/Epilog&gt;
+
+        &lt;TableAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;width&lt;/Name&gt;
+            &lt;AttributeValue&gt;100%&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellpadding&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellspacing&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;mobileBase&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/TableAttributes&gt;
+    
+      &lt;/Layout&gt;
+
+    &lt;/LayoutDefinition&gt;]]&gt;
+  </LayoutDefinition>
+</ComponentDefinition>

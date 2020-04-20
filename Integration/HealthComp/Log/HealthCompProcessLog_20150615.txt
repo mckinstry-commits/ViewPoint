@@ -1,0 +1,94 @@
+2:31:45 PM	-----------------------------------------------
+2:31:45 PM	Monday, June 15, 2015
+2:31:45 PM	-----------------------------------------------
+2:31:52 PM	FTP Server:   ftp.healthcomp.com
+2:31:52 PM	FTP Protocol: Ftp
+2:31:52 PM	Remote Upload Dir:   /ToHealthComp/
+2:31:52 PM	Remote Download Dir:   
+2:31:52 PM	Server:       SEABNDEV
+2:31:52 PM	Local Dir:    E:\Source\HealthComp\Download\
+2:31:52 PM	-----------------------------------------------
+2:32:06 PM	-----------------------------------------------
+2:32:06 PM	Export HealthComp File
+2:32:06 PM	-----------------------------------------------
+2:32:06 PM	** HealthComp Export "select P.ninumber 'Employee SSN'
+, P.FIRSTNAME 'First Name'
+, COALESCE(P.MIDDLENAMES,' ') as 'Mid Initial'
+, P.LASTNAME 'Last Name'
+, COALESCE(SUFFIX, ' ') as 'Name Suffix'
+, ADDRESS1 'Address 1'
+, ADDRESS2 'Address 2'
+, CITY 'City'
+, COUNTY 'State'
+, POSTCODE 'Zip Code'
+, (case
+	when c.COMPANYREFNO = '20' then '002'
+	when c.COMPANYREFNO = '01' then '001'
+	else c.COMPANYREFNO
+	end) as 'Dept/Location'
+,' ' 'Home Telephone'
+,' ' 'E-mail Address'
+, GENDER 'Gender'
+, convert(char,DATEOFBIRTH,112) 'Date of Birth'
+, convert(char, DATEOFJOIN, 112) 'Hire Date'
+,' ' 'Marital Status'
+,' ' 'Married on Date'
+, Coalesce(convert(char, DATEOFLEAVING, 112), ' ') 'Termination Date'
+from PEOPLE P
+join JOBDETAIL JB on P.people_id = JB.people_id
+join POST pst on pst.POST_ID = jb.JOBTITLE
+join COMPANY c on JB.COMPANY=c.COMPANY_ID
+where
+P.STATUS = 'A' and jb.FULLPARTTIME = 'Full Time' and jb.CURRENTRECORD = 'YES' 
+and p.PRIMARYUNION = 'NONMEMBER' 
+and pst.TITLE not like '%Intern%' and pst.TITLE not like '%Temp%'
+Union
+select P.ninumber 'Employee SSN'
+, P.FIRSTNAME 'First Name'
+, COALESCE(P.MIDDLENAMES,' ') as 'Mid Initial'
+, P.LASTNAME 'Last Name'
+, COALESCE(SUFFIX, ' ') as 'Name Suffix'
+, ADDRESS1 'Address 1'
+, ADDRESS2 'Address 2'
+, CITY 'City'
+, COUNTY 'State'
+, POSTCODE 'Zip Code'
+,  (case
+	when c.COMPANYREFNO = '20' then '002'
+	when c.COMPANYREFNO = '01' then '001'
+	else c.COMPANYREFNO
+	end) as 'Dept/Location'
+,' ' 'Home Telephone'
+,' ' 'E-mail Address'
+, GENDER 'Gender'
+, convert(char,DATEOFBIRTH,112) 'Date of Birth'
+, convert(char, DATEOFJOIN, 112) 'Hire Date'
+,' ' 'Marital Status'
+,' ' 'Married on Date'
+, Coalesce(convert(char, DATEOFLEAVING, 112), ' ') 'Termination Date'
+from PEOPLE P
+join JOBDETAIL JB on P.people_id = JB.people_id
+join POST pst on pst.POST_ID = jb.JOBTITLE
+join COMPANY c on JB.COMPANY=c.COMPANY_ID
+where
+P.STATUS = 'T' and jb.FULLPARTTIME = 'Full Time' and jb.CURRENTRECORD = 'YES' 
+and p.PRIMARYUNION = 'NONMEMBER' and DATEDIFF(DAY, p.DATEOFLEAVING, getdate()) < 61
+ and pst.TITLE not like '%Intern%' and pst.TITLE not like '%Temp%'" (1075 records)
+2:32:06 PM		to E:\Source\HealthComp\Upload\HC_20150615.csv
+2:32:12 PM	
+2:32:23 PM	-----------------------------------------------
+2:32:25 PM	Upload File: E:\Source\HealthComp\Upload\HC_20150615.csv to ftp.healthcomp.com:/ToHealthComp/
+2:32:26 PM	-----------------------------------------------
+2:32:30 PM	Encypting E:\Source\HealthComp\Upload\HC_20150615.csv for secured delivery.
+2:32:32 PM	E:\GNU\GnuPG\gpg2.exe -q -e -u McKinstry -r HealthComp E:\Source\HealthComp\Upload\HC_20150615.csv
+2:33:00 PM	** Upload SEABNDEV:"E:\Source\HealthComp\Upload\HC_20150615.csv.pgp" -->> ftp.healthcomp.com/ToHealthComp/
+2:33:05 PM	        	E:\Source\HealthComp\Upload\HC_20150615.csv.pgp (0 %) ... 
+2:33:05 PM	        	E:\Source\HealthComp\Upload\HC_20150615.csv.pgp (0 %) ... 
+2:33:05 PM	        	E:\Source\HealthComp\Upload\HC_20150615.csv.pgp (100 %) ... 
+2:33:05 PM	        	E:\Source\HealthComp\Upload\HC_20150615.csv.pgp (100 %) ... 
+2:33:11 PM	
+2:33:11 PM	** Sending Email
+2:33:11 PM		To: peterk@mckinstry.com
+2:33:18 PM	
+2:33:22 PM	Archive E:\Source\HealthComp\Upload\HC_20150615.csv to E:\Source\HealthComp\Archive
+2:33:26 PM	Archive E:\Source\HealthComp\Upload\HC_20150615.csv.pgp to E:\Source\HealthComp\Archive

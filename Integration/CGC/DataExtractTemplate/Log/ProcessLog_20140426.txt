@@ -1,0 +1,15 @@
+7:56:55 PM	SEABILLOXPS
+7:56:55 PM	C:\TFS\ViewPoint\Integration\CGC\DataExtractTemplate
+7:56:55 PM	C:\TFS\ViewPoint\Integration\CGC\DataExtractTemplate\DataExtractTemplate.ps1
+7:56:55 PM	S1017192.mckinstry.com
+7:56:55 PM	C:\TFS\ViewPoint\Integration\CGC\DataExtractTemplate\Log\ProcessLog_20140426.txt
+7:56:55 PM	----------------------------------------------------------------------------------------------------
+7:56:55 PM	Start ==>Saturday, April 26, 2014
+7:56:55 PM	----------------------------------------------------------------------------------------------------
+7:56:55 PM	Server:      S1017192.mckinstry.com
+7:56:55 PM	Week Ending: 20140420
+7:56:55 PM	SQL:         select * from CMSFIL.PRPTCH where CHDTWE=20140420
+7:56:56 PM	Connection:  DataSource=S1017192.mckinstry.com;UserID=BILLO;Password=OREBA1U;DataCompression=True;
+7:57:06 PM	Records:      12988
+7:57:10 PM	----------------------------------------------------------------------------------------------------
+7:57:10 PM	End ==>Saturday, April 26, 2014

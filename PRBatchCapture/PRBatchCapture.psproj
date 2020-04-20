@@ -1,0 +1,11 @@
+﻿<Project>
+  <Version>1</Version>
+  <FileID>0aa14e75-287a-49e2-b103-bdc7ec5b482e</FileID>
+  <ProjectType>0</ProjectType>
+  <Files>
+    <File ReferenceName="" Build="0">Startup.pss</File>
+    <File ReferenceName="Call-frmSelectBatch_psf" Build="0">frmSelectBatch.psf</File>
+    <File ReferenceName="Call-Settings_xml" Build="1">Settings.xml</File>
+    <File ReferenceName="Call-McKinstry_Logo_png" Build="1">McKinstry_Logo.png</File>
+  </Files>
+</Project>

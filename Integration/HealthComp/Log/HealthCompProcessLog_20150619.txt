@@ -1,0 +1,95 @@
+7:00:10 PM	-----------------------------------------------
+7:00:10 PM	Friday, June 19, 2015
+7:00:10 PM	-----------------------------------------------
+7:00:10 PM	FTP Server:   ftp.healthcomp.com
+7:00:10 PM	FTP Protocol: Ftp
+7:00:10 PM	Remote Upload Dir:   /ToHealthComp/
+7:00:10 PM	Remote Download Dir:   
+7:00:10 PM	Server:       SEABNDEV
+7:00:10 PM	Local Dir:    E:\source\HealthComp\Download\
+7:00:10 PM	-----------------------------------------------
+7:00:10 PM	-----------------------------------------------
+7:00:10 PM	Export HealthComp File
+7:00:10 PM	-----------------------------------------------
+7:00:11 PM	** HealthComp Export "select P.ninumber 'Employee SSN'
+, P.FIRSTNAME 'First Name'
+, COALESCE(P.MIDDLENAMES,' ') as 'Mid Initial'
+, P.LASTNAME 'Last Name'
+, COALESCE(SUFFIX, ' ') as 'Name Suffix'
+, ADDRESS1 'Address 1'
+, ADDRESS2 'Address 2'
+, CITY 'City'
+, COUNTY 'State'
+, POSTCODE 'Zip Code'
+, (case
+	when c.COMPANYREFNO = '20' then '002'
+	when c.COMPANYREFNO = '01' then '001'
+	else c.COMPANYREFNO
+	end) as 'Dept/Location'
+,' ' 'Home Telephone'
+,' ' 'E-mail Address'
+, GENDER 'Gender'
+, convert(char,DATEOFBIRTH,112) 'Date of Birth'
+, convert(char, DATEOFJOIN, 112) 'Hire Date'
+,' ' 'Marital Status'
+,' ' 'Married on Date'
+, Coalesce(convert(char, DATEOFLEAVING, 112), ' ') 'Termination Date'
+from PEOPLE P
+join JOBDETAIL JB on P.people_id = JB.people_id
+join POST pst on pst.POST_ID = jb.JOBTITLE
+join COMPANY c on JB.COMPANY=c.COMPANY_ID
+where
+P.STATUS = 'A' and jb.FULLPARTTIME = 'Full Time' and jb.CURRENTRECORD = 'YES' 
+and p.PRIMARYUNION = 'NONMEMBER' 
+and pst.TITLE not like '%Intern%' and pst.TITLE not like '%Temp%'
+Union
+select P.ninumber 'Employee SSN'
+, P.FIRSTNAME 'First Name'
+, COALESCE(P.MIDDLENAMES,' ') as 'Mid Initial'
+, P.LASTNAME 'Last Name'
+, COALESCE(SUFFIX, ' ') as 'Name Suffix'
+, ADDRESS1 'Address 1'
+, ADDRESS2 'Address 2'
+, CITY 'City'
+, COUNTY 'State'
+, POSTCODE 'Zip Code'
+,  (case
+	when c.COMPANYREFNO = '20' then '002'
+	when c.COMPANYREFNO = '01' then '001'
+	else c.COMPANYREFNO
+	end) as 'Dept/Location'
+,' ' 'Home Telephone'
+,' ' 'E-mail Address'
+, GENDER 'Gender'
+, convert(char,DATEOFBIRTH,112) 'Date of Birth'
+, convert(char, DATEOFJOIN, 112) 'Hire Date'
+,' ' 'Marital Status'
+,' ' 'Married on Date'
+, Coalesce(convert(char, DATEOFLEAVING, 112), ' ') 'Termination Date'
+from PEOPLE P
+join JOBDETAIL JB on P.people_id = JB.people_id
+join POST pst on pst.POST_ID = jb.JOBTITLE
+join COMPANY c on JB.COMPANY=c.COMPANY_ID
+where
+P.STATUS = 'T' and jb.FULLPARTTIME = 'Full Time' and jb.CURRENTRECORD = 'YES' 
+and p.PRIMARYUNION = 'NONMEMBER' and DATEDIFF(DAY, p.DATEOFLEAVING, getdate()) < 61
+ and pst.TITLE not like '%Intern%' and pst.TITLE not like '%Temp%'" (1080 records)
+7:00:11 PM		to E:\source\HealthComp\Upload\HC_20150619.csv
+7:00:11 PM	
+7:00:11 PM	-----------------------------------------------
+7:00:11 PM	Upload File: E:\source\HealthComp\Upload\HC_20150619.csv to ftp.healthcomp.com:/ToHealthComp/
+7:00:11 PM	-----------------------------------------------
+7:00:11 PM	Encypting E:\source\HealthComp\Upload\HC_20150619.csv for secured delivery.
+7:00:11 PM	E:\GNU\GnuPG\gpg2.exe -q -e -u McKinstry -r HealthComp E:\source\HealthComp\Upload\HC_20150619.csv
+7:00:14 PM	** Upload SEABNDEV:"E:\source\HealthComp\Upload\HC_20150619.csv.pgp" -->> ftp.healthcomp.com/ToHealthComp/
+7:00:14 PM	        	E:\source\HealthComp\Upload\HC_20150619.csv.pgp (0 %) ... 
+7:00:14 PM	        	E:\source\HealthComp\Upload\HC_20150619.csv.pgp (0 %) ... 
+7:00:15 PM	        	E:\source\HealthComp\Upload\HC_20150619.csv.pgp (32 %) ... 
+7:00:15 PM	        	E:\source\HealthComp\Upload\HC_20150619.csv.pgp (100 %) ... 
+7:00:15 PM	        	E:\source\HealthComp\Upload\HC_20150619.csv.pgp (100 %) ... 
+7:00:15 PM	
+7:00:15 PM	** Sending Email
+7:00:15 PM		To: peterk@mckinstry.com
+7:00:15 PM	
+7:00:15 PM	Archive E:\source\HealthComp\Upload\HC_20150619.csv to E:\source\HealthComp\Archive
+7:00:15 PM	Archive E:\source\HealthComp\Upload\HC_20150619.csv.pgp to E:\source\HealthComp\Archive

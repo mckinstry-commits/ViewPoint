@@ -1,0 +1,2 @@
+CREATE TYPE [dbo].[bPO] FROM char (10) NOT NULL
+GO

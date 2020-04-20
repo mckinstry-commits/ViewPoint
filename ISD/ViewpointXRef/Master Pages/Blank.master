@@ -1,0 +1,18 @@
+﻿<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Master Language="C#" MasterPageFile="../Master Pages/SharePointMaster.master" %>
+<%@ Register Tagprefix="Selectors" Namespace="ViewpointXRef" Assembly="ViewpointXRef" %>
+
+<%@ Register Tagprefix="BaseClasses" Namespace="BaseClasses.Web.UI.WebControls" Assembly="BaseClasses" %><asp:Content id="PageTitleContent_PlaceHolderPageTitle" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
+		    <asp:Literal id="PageTitle" runat="server" text="ViewpointXRef" /> </asp:Content>
+		    <asp:Content id="PageTitleContent_PlaceHolderMain" ContentPlaceHolderID="PlaceHolderMain" runat="server">
+<input type="hidden" name="isd_geo_location" id="isd_geo_location" value="<%= BaseFormulaUtils.GetBrowserLocationForHiddenField() %>" />
+<script type="text/javascript">
+<!--
+ISD_GeolocationInit();
+//-->
+</script>
+		    <BaseClasses:ScrollCoordinates id="ScrollCoordinates1" runat="server"></BaseClasses:ScrollCoordinates>
+            <BaseClasses:BasePageSettings id="PageSettings" runat="server"></BaseClasses:BasePageSettings>
+            <script language="JavaScript" type="text/javascript">clearRTL()</script>
+            
+          <table><tr><td class="pcC"><asp:ContentPlaceHolder id="PageContent" Runat="server" /></td></tr></table></asp:Content>

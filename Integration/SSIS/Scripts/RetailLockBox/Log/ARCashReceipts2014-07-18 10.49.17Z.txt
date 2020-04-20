@@ -1,0 +1,22 @@
+2014-07-18 10:49:17Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-07-18 10:49:17Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\20140606_AR_TestLoadToVP.zip
+2014-07-18 10:49:17Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1
+2014-07-18 10:49:17Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1
+2014-07-18 10:49:17Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1\20140606_AR_TestLoadToVP.csv
+2014-07-18 10:49:17Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-07-18 10:49:17Z	Upload record 12257: Successful : Batch, Header and Attachment records created successfully.
+2014-07-18 10:49:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1\Images\AR_1_215905_5247.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\06-2014': Successful
+2014-07-18 10:49:18Z	Upload record 12301: Successful : Batch, Header and Attachment records created successfully.
+2014-07-18 10:49:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1\Images\AR_1_200274_8947.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\06-2014': Successful
+2014-07-18 10:49:18Z	Upload record 14061: Successful : Batch, Header and Attachment records created successfully.
+2014-07-18 10:49:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1\Images\AR_1_211216_769.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\06-2014': Successful
+2014-07-18 10:49:18Z	Upload record 12200: Successful : Batch, Header and Attachment records created successfully.
+2014-07-18 10:49:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1\Images\AR_1_210312_4923.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\06-2014': Successful
+2014-07-18 10:49:18Z	Upload record 12218: Successful : Batch, Header and Attachment records created successfully.
+2014-07-18 10:49:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1\Images\AR_1_204854_3336.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\06-2014': Successful
+2014-07-18 10:49:18Z	Upload record 12251: Unsuccessful : Standalone attachment created.  Error creating batch record.
+2014-07-18 10:49:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1\Images\AR_1_219056_392.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\06-2014': Successful
+2014-07-18 10:49:18Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1\20140606_AR_TestLoadToVP.csv
+2014-07-18 10:49:18Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-07-18 10.49.17Z_1
+2014-07-18 10:49:18Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\20140606_AR_TestLoadToVP.zip
+2014-07-18 10:49:18Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

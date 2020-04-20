@@ -1,0 +1,24 @@
+2014-10-28 09:51:41Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-10-28 09:51:41Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140928.zip
+2014-10-28 09:51:41Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 09.51.41Z_1
+2014-10-28 09:51:41Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 09.51.41Z_1
+2014-10-28 09:51:43Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 09.51.41Z_1\McKinstryRLBAR_20140928.csv
+2014-10-28 09:51:43Z	Environment: Server: VIEWPOINTAG\VIEWPOINT Database: Viewpoint
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 09:51:44Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 09.51.41Z_1\McKinstryRLBAR_20140928.csv
+2014-10-28 09:51:44Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 09.51.41Z_1
+2014-10-28 09:51:44Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140928.zip' to '': Successful
+2014-10-28 09:51:44Z	Removing file 'C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140928.zip': Unsuccessful
+2014-10-28 09:51:44Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140928.zip
+2014-10-28 09:51:44Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

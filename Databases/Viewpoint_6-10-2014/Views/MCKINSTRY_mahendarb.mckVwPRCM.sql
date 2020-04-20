@@ -1,0 +1,9 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+Create View [MCKINSTRY\mahendarb].[mckVwPRCM]
+as 
+SELECT PRCo,Craft,Description,VendorGroup FROM PRCM
+WHERE PRCo <99
+GO

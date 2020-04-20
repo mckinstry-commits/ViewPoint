@@ -1,0 +1,15 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+CREATE VIEW [dbo].[SMBC]
+AS
+SELECT a.* FROM dbo.vSMBC a
+GO
+GRANT SELECT ON  [dbo].[SMBC] TO [public]
+GRANT INSERT ON  [dbo].[SMBC] TO [public]
+GRANT DELETE ON  [dbo].[SMBC] TO [public]
+GRANT UPDATE ON  [dbo].[SMBC] TO [public]
+GO

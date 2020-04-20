@@ -1,0 +1,36 @@
+2014-10-28 11:50:37Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-10-28 11:50:37Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140928.zip
+2014-10-28 11:50:37Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1
+2014-10-28 11:50:37Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1
+2014-10-28 11:50:39Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\McKinstryRLBAR_20140928.csv
+2014-10-28 11:50:39Z	Environment: Server: VIEWPOINTAG\VIEWPOINT Database: Viewpoint
+2014-10-28 11:50:40Z	Upload record 6125, Batch ID 1 : Successful : Batch, Header and Attachment records created successfully.
+2014-10-28 11:50:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_219383_6125.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:40Z	Upload record 7880, Batch ID 1 : Successful : Batch, Header and Attachment records created successfully.
+2014-10-28 11:50:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_206341_7880.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:40Z	Upload record 12218, Batch ID 1 : Successful : Batch, Header and Attachment records created successfully.
+2014-10-28 11:50:41Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_204854_12218.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:41Z	Upload record 3174, Batch ID 1 : Unsuccessful : Standalone attachment created.  Error creating header record.
+2014-10-28 11:50:41Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_206805_3174.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:41Z	Upload record 1979, Batch ID 1 : Unsuccessful : Standalone attachment created.  Error creating header record.
+2014-10-28 11:50:41Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_215782_1979.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:41Z	Upload record 293, Batch ID  : Unsuccessful : Standalone attachment created.  Error creating batch record.
+2014-10-28 11:50:41Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_215905_293.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:41Z	Upload record 37041, Batch ID 1 : Successful : Batch, Header and Attachment records created successfully.
+2014-10-28 11:50:41Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_206135_37041.pdf' to '\\setestconimg\Viewpoint\Company20\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:41Z	Upload record 31861, Batch ID 1 : Successful : Batch, Header and Attachment records created successfully.
+2014-10-28 11:50:42Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_209410_31861.pdf' to '\\setestconimg\Viewpoint\Company20\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:42Z	Upload record 36474, Batch ID 1 : Successful : Batch, Header and Attachment records created successfully.
+2014-10-28 11:50:42Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_216148_36474.pdf' to '\\setestconimg\Viewpoint\Company20\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:42Z	Upload record 37198, Batch ID 1 : Successful : Batch, Header and Attachment records created successfully.
+2014-10-28 11:50:42Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_200436_37198.pdf' to '\\setestconimg\Viewpoint\Company20\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:42Z	Upload record 37182, Batch ID 1 : Unsuccessful : Standalone attachment created.  Error creating header record.
+2014-10-28 11:50:42Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_205675_37182.pdf' to '\\setestconimg\Viewpoint\Company20\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:42Z	Upload record 31817, Batch ID 1 : Unsuccessful : Standalone attachment created.  Error creating header record.
+2014-10-28 11:50:42Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\images\AR_209692_31817.pdf' to '\\setestconimg\Viewpoint\Company20\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 11:50:42Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1\McKinstryRLBAR_20140928.csv
+2014-10-28 11:50:42Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.50.36Z_1
+2014-10-28 11:50:43Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140928.zip' to '': Successful
+2014-10-28 11:50:43Z	Removing file 'C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140928.zip': Unsuccessful
+2014-10-28 11:50:43Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140928.zip
+2014-10-28 11:50:43Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

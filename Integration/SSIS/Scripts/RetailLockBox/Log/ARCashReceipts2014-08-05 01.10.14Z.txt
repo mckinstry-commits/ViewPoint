@@ -1,0 +1,176 @@
+2014-08-05 01:10:14Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-08-05 01:10:14Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\20140606_AR_TestLoadToVP.zip
+2014-08-05 01:10:14Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-08-05 01.10.14Z_1
+2014-08-05 01:10:14Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-08-05 01.10.14Z_1
+2014-08-05 01:10:15Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-08-05 01.10.14Z_1\20140606_AR_TestLoadToVP.csv
+2014-08-05 01:10:15Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-08-05 01:10:15Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:15Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:15Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:15Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:15Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:15Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:15Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-08-05 01.10.14Z_1\20140606_AR_TestLoadToVP.csv
+2014-08-05 01:10:15Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-08-05 01.10.14Z_1
+2014-08-05 01:10:15Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AR\20140606_AR_TestLoadToVP.zip' to '': Successful
+2014-08-05 01:10:15Z	Removing file 'C:\Scripts\RetailLockBox\Download\AR\20140606_AR_TestLoadToVP.zip': Successful
+2014-08-05 01:10:15Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\20140606_AR_TestLoadToVP.zip
+2014-08-05 01:10:15Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140318.zip
+2014-08-05 01:10:15Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-08-05 01.10.14Z_2
+2014-08-05 01:10:15Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-08-05 01.10.14Z_2
+2014-08-05 01:10:19Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-08-05 01.10.14Z_2\McKinstryRLBAR_20140318.csv
+2014-08-05 01:10:19Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:19Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:20Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Error processing record: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fnMckARDepositNumber", or the name is ambiguous.
+2014-08-05 01:10:21Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-08-05 01.10.14Z_2\McKinstryRLBAR_20140318.csv
+2014-08-05 01:10:21Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-08-05 01.10.14Z_2
+2014-08-05 01:10:21Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140318.zip' to '': Successful
+2014-08-05 01:10:21Z	Removing file 'C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140318.zip': Successful
+2014-08-05 01:10:21Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\McKinstryRLBAR_20140318.zip
+2014-08-05 01:10:21Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

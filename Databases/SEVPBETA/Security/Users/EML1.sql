@@ -1,0 +1,5 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'EML1')
+CREATE LOGIN [EML1] WITH PASSWORD = 'p@ssw0rd'
+GO
+CREATE USER [EML1] FOR LOGIN [EML1]
+GO

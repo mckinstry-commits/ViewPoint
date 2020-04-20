@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "JCReports", "JCReports\JCReports.rptproj", "{B5423815-BF27-4686-A5D3-DB23AD143041}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "AdminReports", "AdminReports\AdminReports\AdminReports.rptproj", "{B9601638-6EA5-45BD-8C5E-0025F358C0C0}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://setfs01:8080/tfs/mckinstry%20team
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = JCReports\\JCReports.rptproj
+		SccProjectName1 = JCReports
+		SccLocalPath1 = JCReports
+		SccProjectUniqueName2 = AdminReports\\AdminReports\\AdminReports.rptproj
+		SccProjectName2 = AdminReports/AdminReports
+		SccLocalPath2 = AdminReports\\AdminReports
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5423815-BF27-4686-A5D3-DB23AD143041}.Debug|Default.ActiveCfg = Debug
+		{B5423815-BF27-4686-A5D3-DB23AD143041}.Debug|Default.Build.0 = Debug
+		{B5423815-BF27-4686-A5D3-DB23AD143041}.Debug|Default.Deploy.0 = Debug
+		{B5423815-BF27-4686-A5D3-DB23AD143041}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{B5423815-BF27-4686-A5D3-DB23AD143041}.DebugLocal|Default.Build.0 = DebugLocal
+		{B5423815-BF27-4686-A5D3-DB23AD143041}.Release|Default.ActiveCfg = Release
+		{B5423815-BF27-4686-A5D3-DB23AD143041}.Release|Default.Build.0 = Release
+		{B5423815-BF27-4686-A5D3-DB23AD143041}.Release|Default.Deploy.0 = Release
+		{B9601638-6EA5-45BD-8C5E-0025F358C0C0}.Debug|Default.ActiveCfg = Release
+		{B9601638-6EA5-45BD-8C5E-0025F358C0C0}.Debug|Default.Build.0 = Release
+		{B9601638-6EA5-45BD-8C5E-0025F358C0C0}.Debug|Default.Deploy.0 = Release
+		{B9601638-6EA5-45BD-8C5E-0025F358C0C0}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{B9601638-6EA5-45BD-8C5E-0025F358C0C0}.DebugLocal|Default.Build.0 = DebugLocal
+		{B9601638-6EA5-45BD-8C5E-0025F358C0C0}.DebugLocal|Default.Deploy.0 = DebugLocal
+		{B9601638-6EA5-45BD-8C5E-0025F358C0C0}.Release|Default.ActiveCfg = Release
+		{B9601638-6EA5-45BD-8C5E-0025F358C0C0}.Release|Default.Build.0 = Release
+		{B9601638-6EA5-45BD-8C5E-0025F358C0C0}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

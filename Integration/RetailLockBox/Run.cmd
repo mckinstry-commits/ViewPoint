@@ -1,0 +1,1 @@
+"c:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" .\VP_RLB_Processing.ps1

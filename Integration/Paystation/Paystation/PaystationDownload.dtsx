@@ -1,0 +1,626 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/28/2019 11:07:37 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SEA-BENWI03"
+  DTS:CreatorName="MCKINSTRY\BenWi"
+  DTS:DTSID="{25DE851F-BA28-452A-A280-11A4CBFA97AE}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.107"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="PaystationDownload"
+  DTS:PackageType="5"
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{637FE3A1-50DA-4FBB-9871-6FB35722D9AB}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[RLB SFTP Connection]"
+      DTS:CreationName="ZS-SFTP"
+      DTS:DTSID="{996D47F4-01D4-4884-8A9E-3DBB19810723}"
+      DTS:ObjectName="RLB SFTP Connection">
+      <DTS:ObjectData>
+        <ConnectionManager
+          ConnectionString="Protocol=Sftp;ServerName=sftp.retaillockbox.com;Port=22;LogonType=Normal;UserName=mckinstry;Domain=;EncryptionMode=None;KeyFilePath=;ClientCertFilePath=;Account=;VerifyChecksum=False;IgnoreCertErrors=False;MinSslTlsVersion=Any;MaxSslTlsVersion=Any;DoNotReuseSslSessions=False;DoNotReuseControlConnectionSession=False;ProxyType=None;ProxyAuthMode=Basic;ProxyServer=;ProxyPort=1080;ProxyUserName=;ProxyDomain=;TransferMode=Binary;TrustedFingerprints=;MaxUploadSpeedKbps=0;MaxDownloadSpeedKbps=0;UseActiveMode=False;EnableCompression=False;EnableRestoreDateTime=False;DateTimeItemsForRestore=Default;Timeout=60;DefaultDirectory=;TreatUnknownItemsAsFiles=False;DisableSftp4=False;DisableTransferQueue=False;UseSmallPackets=False;WaitForServerWelcomeMessage=False;MinimumKeySize=1023;KeyExchangeAlgorithms=;HostKeyAlgorithms=;MacAlgorithms=;EncryptionAlgorithms=;DoNotSendSignals=False;DoNotSendAbort=False;KeepAliveDuringTransfer=False;PauseBeforeUploadClose=False;SslDoNotInsertEmptyFragment=False;UseLargeBuffer=False;RetainSameConnection=False">
+          <Password
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAlmD4AzwKy0KcwqCt1M4kAAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABrIPSyb+4emqldxe2+6FDjAAAAAASAAACgAAAAEAAAAO8WDPmT+pphTaK5T5q/o+sYAAAAdjnRi4qdPnDfIlCIki3dU2avHXRaXeMRFAAAAOez5FkgB0DT0t9uomoMv6ZEvTod</Password>
+        </ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SMTP Connection Manager]"
+      DTS:CreationName="SMTP"
+      DTS:Description="MCK SMTP Server"
+      DTS:DTSID="{E0DC8247-911A-4EE4-955C-E429957AA73D}"
+      DTS:ObjectName="SMTP Connection Manager">
+      <DTS:ObjectData>
+        <SmtpConnectionManager
+          ConnectionString="SmtpServer=mail.mckinstry.com;UseWindowsAuthentication=False;EnableSsl=False;Timeout=1000;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7E796370-F4F3-42D1-AC3B-E7A4498E379F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DestinationDir">
+      <DTS:VariableValue
+        DTS:DataType="8">\\mckviewpoint\RLB_CC_Download\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{554135CA-BD75-43C3-903D-A3B04745F896}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::FileCountPost] -  @[User::FileCountPre]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileCount">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EDC1D549-CBDE-43D2-979E-E472C70AA9D6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileCountPost">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{05941332-8631-4254-AD9B-8CF934C77E2E}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileCountPre">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{38E5CF53-C877-42B4-86CF-B61495F3F11F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E197C49C-2C89-4EBD-B8F3-5898227979F8}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_WSTR,10) @[User::FileCount] + &quot; file(s) picked up from Paystation.&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="MailMessage">
+      <DTS:VariableValue
+        DTS:DataType="8">0 file(s) picked up from Paystation.</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5C52C059-9849-4A0E-AC7A-80717CC8759F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SourceArchive">
+      <DTS:VariableValue
+        DTS:DataType="8">/VPERP/Archive/CC/</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C6846F9F-1741-4AA2-B856-D08AFD5F5C68}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SourceDir">
+      <DTS:VariableValue
+        DTS:DataType="8">/VPERP/Outbound/CC/</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BC9C57AB-16D3-41F8-8E80-97CC8E4F470C}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::SourceDir] + &quot;*.*&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SourceFilesAll">
+      <DTS:VariableValue
+        DTS:DataType="8">/VPERP/Outbound/CC/*.*</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DL to Dir FTP Task"
+      DTS:CreationName="ZappySys.SecureFtpTask"
+      DTS:Description="ZS Secure FTP Task"
+      DTS:DTSID="{1A5D2A81-6F5A-44CF-98E9-0F652A2086F7}"
+      DTS:ExecutableType="ZappySys.SecureFtpTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DL to Dir FTP Task"
+      DTS:TaskContact="Secure FTP Task; ZappySys LLC (c) All Rights Reserved; SSIS PowerPack; http://www.zappysys.com/support"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SecureFtpTask
+          StorageAction="DownloadFileFromFtp"
+          FileOverwriteAction="ThrowException"
+          ContinueOnError="False"
+          ThrowErrorIfSourceNotFound="True"
+          DeleteSourceWhenDone="False"
+          SourceStorageConnection="RLB SFTP Connection"
+          SourcePathAccessMode="Variable"
+          SourcePathValue=""
+          SourcePathConnection=""
+          SourcePathVariable="User::SourceDir"
+          Recursive="False"
+          ResultVariable=""
+          TargetStorageConnection=""
+          TargetPathAccessMode="Variable"
+          TargetPathValue=""
+          TargetPathConnection=""
+          TargetPathVariable="User::DestinationDir"
+          CreateMissingTargetFolder="True"
+          ExcludeRegXPattern=""
+          IncludeRegXPattern=""
+          SortBy="Size"
+          SortDirection="Asc"
+          WhereClause=""
+          EnableSort="False"
+          MaxItems="0"
+          LogLevel="Normal"
+          PrefixTimestamp="False" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Loop Container"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{C73A355E-F4AB-4B2A-8DF2-91649D72FA61}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Loop Container">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{E7AD4447-7CE8-4C6F-95BB-744B5C6F453E}"
+        DTS:ObjectName="{E7AD4447-7CE8-4C6F-95BB-744B5C6F453E}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::DestinationDir]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="\\mckviewpoint\RLB_CC_Download\" />
+            <FEFEProperty
+              FileSpec="*.*" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Expression Task"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{8CBEB686-76CD-43FF-9269-51CEF3F20472}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Expression Task"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::FileCountPre] =  @[User::FileCountPre] +1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\ZS Logging Task"
+          DTS:CreationName="ZappySys.LoggingTask"
+          DTS:Description="ZS Logging Task"
+          DTS:Disabled="True"
+          DTS:DTSID="{3f857333-58b7-46a1-af50-9407d11353b5}"
+          DTS:ExecutableType="ZappySys.LoggingTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="ZS Logging Task"
+          DTS:TaskContact="Logging Task; ZappySys LLC (c) All Rights Reserved; SSIS PowerPack; http://www.zappysys.com/support"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <LoggingTask
+              Message="pre: {{User::FileCountPre}}&#xA;post: {{User::FileCountPost}}&#xA;filename: {{User::FileName}}"
+              LogVariableName=""
+              MessageType="Information"
+              LogMode="MessageBox"
+              LogFilePath=""
+              LogFileAppend="True"
+              LogDateTime="True"
+              DateTimeFormat="HH:mm:ss"
+              LogLevel="Normal"
+              PrefixTimestamp="False" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{2AC9130C-8EC4-46ED-AA4F-619D0C2DEB5F}"
+          DTS:From="Package\Foreach Loop Container\Expression Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Foreach Loop Container\ZS Logging Task" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{D51334AA-F998-4E7B-84AA-FBB930F2C12D}"
+          DTS:ObjectName="{D51334AA-F998-4E7B-84AA-FBB930F2C12D}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::FileName" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Loop Container 1"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{c054af4a-6351-4bf9-92b2-3462d0c97e5a}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Loop Container 1">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{bb5a0586-1db3-459b-83c3-4937741540e6}"
+        DTS:ObjectName="{E7AD4447-7CE8-4C6F-95BB-744B5C6F453E}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::DestinationDir]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="\\mckviewpoint\RLB_CC_Download\" />
+            <FEFEProperty
+              FileSpec="*.*" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container 1\Expression Task"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{36e1b813-4cf5-45d5-bfea-a9baaebfc3c8}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Expression Task"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::FileCountPost] =  @[User::FileCountPost] + 1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Send Mail Task"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Send Mail Task"
+      DTS:DTSID="{1AC946E8-421A-41D1-A649-F6817ECE08D4}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Send Mail Task"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{E0DC8247-911A-4EE4-955C-E429957AA73D}"
+          SendMailTask:From="erpinfo@mckinstry.com"
+          SendMailTask:To="AccountsReceivable@mckinstry.com"
+          SendMailTask:Subject="Paystion Payment"
+          SendMailTask:MessageSourceType="Variable"
+          SendMailTask:MessageSource="User::MailMessage" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Source File Move FTP Task"
+      DTS:CreationName="ZappySys.SecureFtpTask"
+      DTS:Description="ZS Secure FTP Task"
+      DTS:DTSID="{6A48383F-2C69-4D64-8C1F-BF9449FAFF79}"
+      DTS:ExecutableType="ZappySys.SecureFtpTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Source File Move FTP Task"
+      DTS:TaskContact="Secure FTP Task; ZappySys LLC (c) All Rights Reserved; SSIS PowerPack; http://www.zappysys.com/support"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SecureFtpTask
+          StorageAction="MoveFtpFileToFtp"
+          FileOverwriteAction="ThrowException"
+          ContinueOnError="False"
+          ThrowErrorIfSourceNotFound="True"
+          DeleteSourceWhenDone="False"
+          SourceStorageConnection="RLB SFTP Connection"
+          SourcePathAccessMode="Variable"
+          SourcePathValue=""
+          SourcePathConnection=""
+          SourcePathVariable="User::SourceFilesAll"
+          Recursive="False"
+          ResultVariable=""
+          TargetStorageConnection="RLB SFTP Connection"
+          TargetPathAccessMode="Variable"
+          TargetPathValue=""
+          TargetPathConnection=""
+          TargetPathVariable="User::SourceArchive"
+          CreateMissingTargetFolder="True"
+          ExcludeRegXPattern=""
+          IncludeRegXPattern=""
+          SortBy="Size"
+          SortDirection="Asc"
+          WhereClause=""
+          EnableSort="False"
+          MaxItems="0"
+          LogLevel="Normal"
+          PrefixTimestamp="False" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{9AFC882F-A456-48F5-9D61-F69F1942EC1F}"
+      DTS:From="Package\DL to Dir FTP Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Foreach Loop Container 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{970DBAA5-F7C8-45AF-B09D-4ADEF33D12BF}"
+      DTS:From="Package\Source File Move FTP Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Send Mail Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{247EFA7F-F9CF-44DC-A898-A9C5E93D62C4}"
+      DTS:From="Package\Foreach Loop Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\DL to Dir FTP Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{440C9BDC-9F6A-4206-8748-B08EAC06A7CC}"
+      DTS:From="Package\Foreach Loop Container 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Source File Move FTP Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="167,42"
+          Id="Package\DL to Dir FTP Task"
+          TopLeft="352,188" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Foreach Loop Container\Expression Task"
+          TopLeft="72,34" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Foreach Loop Container\ZS Logging Task"
+          TopLeft="72,136" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="150,76">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="282,206"
+          Size="282,249"
+          Id="Package\Foreach Loop Container"
+          TopLeft="953,35" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Foreach Loop Container 1\Expression Task"
+          TopLeft="64,46" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="282,158"
+          Size="282,201"
+          Id="Package\Foreach Loop Container 1"
+          TopLeft="742.5,319" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Send Mail Task"
+          TopLeft="514,453" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\Source File Move FTP Task"
+          TopLeft="274,362" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="435.5,230">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="448,89"
+              Start="0,0"
+              End="448,81.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.5"
+                    Point2="0,44.5"
+                    Point3="4,44.5" />
+                  <mssgle:LineSegment
+                    End="444,44.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="444,44.5"
+                    Point2="448,44.5"
+                    Point3="448,48.5" />
+                  <mssgle:LineSegment
+                    End="448,81.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="376.5,404">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="212.5,49"
+              Start="0,0"
+              End="212.5,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5"
+                    Point2="0,24.5"
+                    Point3="4,24.5" />
+                  <mssgle:LineSegment
+                    End="208.5,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="208.5,24.5"
+                    Point2="212.5,24.5"
+                    Point3="212.5,28.5" />
+                  <mssgle:LineSegment
+                    End="212.5,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="953,159.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-434,49.5"
+              Start="0,0"
+              End="-426.5,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-213,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-213,0"
+                    Point2="-217,0"
+                    Point3="-217,4" />
+                  <mssgle:LineSegment
+                    End="-217,45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-217,45.5"
+                    Point2="-217,49.5"
+                    Point3="-221,49.5" />
+                  <mssgle:LineSegment
+                    End="-426.5,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="742.5,419.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-263.5,-36.5"
+              Start="0,0"
+              End="-256,-36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-127.75,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-127.75,0"
+                    Point2="-131.75,0"
+                    Point3="-131.75,-4" />
+                  <mssgle:LineSegment
+                    End="-131.75,-32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-131.75,-32.5"
+                    Point2="-131.75,-36.5"
+                    Point3="-135.75,-36.5" />
+                  <mssgle:LineSegment
+                    End="-256,-36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

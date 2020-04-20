@@ -1,0 +1,5 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'POL1')
+CREATE LOGIN [POL1] WITH PASSWORD = 'p@ssw0rd'
+GO
+CREATE USER [POL1] FOR LOGIN [POL1]
+GO

@@ -1,0 +1,2563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by John Veney (SamePage Solutions) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:group name="Log">
+    <xs:sequence>
+      <xs:element name="CreatedUser" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="UserID" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="CreatedDate" type="Date" nillable="true" />
+      <xs:element name="LastEditUser" type="UserID" />
+      <xs:element name="LastEditDate" type="Date" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="Header">
+    <xs:sequence>
+      <xs:element name="SequenceNumber" type="xs:int" />
+      <xs:element name="ErrorCode" type="xs:int" />
+      <xs:element name="ErrorMessage" type="xs:string" nillable="true" />
+    </xs:sequence>
+  </xs:group>
+  <xs:simpleType name="Guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ID">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="2147483647" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Date">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}T\p{Nd}{2}:\p{Nd}{2}:\p{Nd}{2}(\.\p{Nd}{1,3})?" />
+      <xs:pattern value="" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="OrgMapType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Expense" />
+      <xs:enumeration value="Detail" />
+      <xs:enumeration value="User" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="UserID">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ExpenseStatus">
+    <xs:restriction base="xs:int">
+      <xs:enumeration value="1" id="Unsubmitted" />
+      <xs:enumeration value="2" id="Pending_Approval" />
+      <xs:enumeration value="3" id="Approved" />
+      <xs:enumeration value="4" id="Denied" />
+      <xs:enumeration value="5" id="Pending_Payment" />
+      <xs:enumeration value="6" id="Paid" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ExpenseStatusAll">
+    <xs:restriction base="xs:int">
+      <xs:enumeration value="0" id="All" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Payor">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Company" />
+      <xs:enumeration value="Personal" />
+      <xs:enumeration value="Employee" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="UserClass">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="User" />
+      <xs:enumeration value="Manager" />
+      <xs:enumeration value="Department Head" />
+      <xs:enumeration value="Administrator" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TripStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Parsed" />
+      <xs:enumeration value="Invalid" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Expensed" />
+      <xs:enumeration value="Volatile" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="EncryptedKey">
+    <xs:restriction base="xs:base64Binary" />
+  </xs:simpleType>
+  <xs:attribute name="ApprovalDepth" default="Extended">
+    <xs:annotation>
+      <xs:documentation>* All is for Admins Only</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Mine" />
+        <xs:enumeration value="Direct" />
+        <xs:enumeration value="Extended" />
+        <xs:enumeration value="All" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="Comparison">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="equal" />
+        <xs:enumeration value="lessequal" />
+        <xs:enumeration value="greaterequal" />
+        <xs:enumeration value="notequal" />
+        <xs:enumeration value="like" />
+        <xs:enumeration value="null" />
+        <xs:enumeration value="notnull" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="Operator">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="AND" />
+        <xs:enumeration value="OR" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attributeGroup name="Search">
+    <xs:attribute ref="Comparison" use="optional" default="equal" />
+    <xs:attribute ref="Operator" use="prohibited" />
+  </xs:attributeGroup>
+  <xs:group name="RefUser">
+    <xs:sequence>
+      <xs:element name="Guid" type="Guid" />
+      <xs:element name="UserID" type="UserID" />
+      <xs:element name="ExternalID" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="250" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefItinerary">
+    <xs:sequence>
+      <xs:element name="Guid" type="Guid" />
+      <xs:element name="ItineraryKey">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="255" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefCustomer">
+    <xs:sequence>
+      <xs:element name="Guid" type="Guid" />
+      <xs:element name="Name">
+        <xs:annotation>
+          <xs:documentation>* not static ref</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="100" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefExpense">
+    <xs:sequence>
+      <xs:element name="Guid" type="Guid" />
+      <xs:element name="ID" type="ID" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefExpenseType">
+    <xs:sequence>
+      <xs:element name="Guid" type="Guid" />
+      <xs:element name="ID" type="ID" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefExpenseTypeDetailed">
+    <xs:sequence>
+      <xs:element name="GLCode" />
+      <xs:element name="GLDescription" />
+      <xs:element name="Reimbursable" />
+      <xs:element name="ExternalID" />
+      <xs:element name="defaultAmount" />
+      <xs:element name="lockAmount" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefGLAccount">
+    <xs:sequence>
+      <xs:element name="Guid" type="Guid" />
+      <xs:element name="GLCode">
+        <xs:annotation>
+          <xs:documentation>* not static ref</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefProject">
+    <xs:sequence>
+      <xs:element name="Guid" type="Guid" />
+      <xs:element name="ProjectNumber">
+        <xs:annotation>
+          <xs:documentation>* not static ref</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="100" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ExternalID">
+        <xs:annotation>
+          <xs:documentation>Unique Identifier from an external system.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="250" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefNote">
+    <xs:sequence>
+      <xs:element name="ID" type="ID" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefBatch">
+    <xs:sequence>
+      <xs:element name="ID" type="ID">
+        <xs:annotation>
+          <xs:documentation>ExpenseWire internal BatchID</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BatchNumber">
+        <xs:annotation>
+          <xs:documentation>BatchID visible on the Pay Tab</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Status" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefStatus">
+    <xs:sequence>
+      <xs:element name="ID" type="ID" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefCompany">
+    <xs:sequence>
+      <xs:element name="ID" type="ID" />
+      <xs:element name="ExternalID">
+        <xs:annotation>
+          <xs:documentation>Unique Identifier from an external system.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="250" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefDivision">
+    <xs:sequence>
+      <xs:element name="ID" type="ID" />
+      <xs:element name="ExternalID">
+        <xs:annotation>
+          <xs:documentation>Unique Identifier from an external system.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="250" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefDepartment">
+    <xs:sequence>
+      <xs:element name="ID" type="ID" />
+      <xs:element name="ExternalID" minOccurs="0" maxOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Unique Identifier from an external system.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="250" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefDepartmentDetailed">
+    <xs:sequence>
+      <xs:element name="Department" />
+      <xs:element name="LocationID" />
+      <xs:element name="Location" />
+      <xs:element name="LocationGLPrefix" />
+      <xs:element name="DivisionID" />
+      <xs:element name="Division" />
+      <xs:element name="DivisionGLPrefix" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefOrganization">
+    <xs:sequence>
+      <xs:element name="ID" type="ID" />
+      <xs:element name="ExternalID" minOccurs="0" maxOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Unique Identifier from an external system.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="250" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="OrganizationDetails">
+    <xs:sequence>
+      <xs:element name="OrgId" type="ID" />
+      <xs:element name="OrgName" />
+      <xs:element name="OrgTypeId" />
+      <xs:element name="OrgTypeName" />
+      <xs:element name="OrgLevel" />
+      <xs:element name="OrgGroup" />
+      <xs:element name="OrgRank" />
+      <xs:element name="OrgGLPrefix" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefOrganizationType">
+    <xs:sequence>
+      <xs:element name="ID" type="ID" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefCurrency">
+    <xs:sequence>
+      <xs:element name="ID" type="ID" />
+      <xs:element name="Code">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:length value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefExpenseDetail">
+    <xs:sequence>
+      <xs:element name="Guid" type="Guid" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefPaymentType">
+    <xs:sequence>
+      <xs:element name="Guid" type="Guid" />
+      <xs:element name="ID" type="ID" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefPaymentTypeDetailed">
+    <xs:sequence>
+      <xs:element name="PaymentType" />
+      <xs:element name="Reimbursable" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefQBAccount">
+    <xs:sequence>
+      <xs:element name="ExportID" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="RefCustomField">
+    <xs:sequence>
+      <xs:element name="ID" type="ID" />
+      <xs:element name="Name">
+        <xs:annotation>
+          <xs:documentation>* Unique based on ExpenseType</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:element name="ExpenseWire">
+    <xs:annotation>
+      <xs:documentation>Comment describing your root element</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="SingleSignOn">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:group ref="Header" />
+              <xs:element name="URL" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OpenDataConnection">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:group ref="Header" />
+              <xs:element name="SessionKey" type="Guid" />
+              <xs:element name="UserKey" type="Guid" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CloseDataConnection">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:group ref="Header" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SendDataTransaction">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:group ref="Header" />
+              <xs:element name="Blank" minOccurs="0" maxOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="Blank" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Blank" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="Blank" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="ExternalID" type="xs:string" />
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Partner" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CreateAccount" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="UserID" />
+                          <xs:element name="UserKey" />
+                          <xs:element name="DefaultDepartmentID">
+                            <xs:annotation>
+                              <xs:documentation>DEPRECATED</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="CompanyID" />
+                          <xs:element name="CompanyKey" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AccountUser" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:group ref="Header" />
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefUser" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="ExternalID" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ExistingUser" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref" minOccurs="0">
+                            <xs:complexType>
+                              <xs:group ref="RefUser" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="CompanyID" type="xs:int" minOccurs="0" />
+                          <xs:element name="CompanyKey" type="Guid" minOccurs="0" />
+                          <xs:element name="EncryptedKey" type="EncryptedKey" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Provider" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="MapUser" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Currency" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefCurrency" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Currency" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefCurrency" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Description" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="LastEditUser" type="UserID" />
+                                <xs:element name="LastEditDate" type="Date" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="GLAccount" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefGLAccount" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefGLAccount" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="GLAccount" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefGLAccount" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Description" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="100" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Comments" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="4000" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="BudgetedAmount" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ExternalID" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ExpenseType" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefExpenseType" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefExpenseType" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="ExpenseType" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefExpenseType" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="GLAccount">
+                                  <xs:complexType>
+                                    <xs:group ref="RefGLAccount" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="CustomFields" minOccurs="0" maxOccurs="0">
+                                  <xs:complexType />
+                                </xs:element>
+                                <xs:element name="ExpenseType">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Comments" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="GraphicFile" default="Personal.gif" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="150" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Reimbursable" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ExternalID" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="PaymentType" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefPaymentType" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefPaymentType" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="PaymentType" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefPaymentType" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="User">
+                                  <xs:complexType>
+                                    <xs:group ref="RefUser" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PaymentType">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="100" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Payor" type="Payor" nillable="true" />
+                                <xs:element name="Reimbursable" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsSystemType" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsCreditCard" default="0" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="CardType" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="255" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Customer" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefCustomer" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="250" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefCustomer" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="250" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Customer" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefCustomer" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="ContactName" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="100" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Addr1" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="100" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Addr2" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="100" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="City" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="State" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Zip" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="10" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Country" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Phone" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="EmailAddress" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="150" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="WebSite" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="150" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="BudgetedAmount" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ExternalID" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Project" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefProject" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="250" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefProject" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="250" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Project" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefProject" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Customer">
+                                  <xs:complexType>
+                                    <xs:group ref="RefCustomer" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="ProjectDescription" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="3000" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="BudgetedAmount" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ExternalID" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="OrganizationType" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="InsertParent" minOccurs="0" maxOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefOrganizationType" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefOrganizationType" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="OrganizationType" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefOrganizationType" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Parent">
+                                  <xs:complexType>
+                                    <xs:group ref="RefOrganizationType" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Name" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Organization" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefOrganization" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefOrganization" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Organization" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefOrganization" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="OrgType">
+                                  <xs:complexType>
+                                    <xs:group ref="RefOrganizationType" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Parent">
+                                  <xs:complexType>
+                                    <xs:group ref="RefOrganization" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Name" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="GLPrefix" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="10" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ExternalID" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="10" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="MapList" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="OrgMaps">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="OrgMap" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:sequence>
+                                        <xs:annotation>
+                                          <xs:documentation>ByOrg</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:group ref="RefOrganization" />
+                                      </xs:sequence>
+                                      <xs:sequence>
+                                        <xs:annotation>
+                                          <xs:documentation>ByType</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:element name="OrgMapType" type="OrgMapType" />
+                                        <xs:element name="EntityGuid" type="Guid" />
+                                      </xs:sequence>
+                                      <xs:group ref="Log" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Company" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>DEPRECATED</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefCompany" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefCompany" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Company" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefCompany" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Company" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="GLPrefix" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="10" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Division" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>DEPRECATED</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefDivision" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefDivision" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Division" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefDivision" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Company">
+                                  <xs:complexType>
+                                    <xs:group ref="RefCompany" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Division" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="GLPrefix" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="10" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Department" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>DEPRECATED</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefDepartment" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefDepartment" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Department" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefDepartment" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Division">
+                                  <xs:complexType>
+                                    <xs:group ref="RefDivision" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Department" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="GLPrefix" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="10" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="User" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefUser" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="250" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefUser" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="250" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="User" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefUser" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Currency">
+                                  <xs:complexType>
+                                    <xs:group ref="RefCurrency" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Department" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>DEPRECATED, use MapList</xs:documentation>
+                                  </xs:annotation>
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:group ref="RefDepartment" />
+                                      <xs:group ref="RefDepartmentDetailed" minOccurs="0" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Organizations" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:annotation>
+                                    <xs:documentation>Organization Mapping List</xs:documentation>
+                                  </xs:annotation>
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Organization" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:group ref="OrganizationDetails" minOccurs="0" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="ParentApprover">
+                                  <xs:complexType>
+                                    <xs:group ref="RefUser" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="FirstName" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="LastName" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Addr1" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Addr2" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="City" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="State" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Zip" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="15" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Country" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="25" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Phone" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Email" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="NotificationCC" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="5000" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="DateFormat" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="MaxAmount" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="22" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-1000000000000000000" />
+                                      <xs:maxExclusive value="1000000000000000000" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="MaxAmountSelf" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="22" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-1000000000000000000" />
+                                      <xs:maxExclusive value="1000000000000000000" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="UserClass" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="4000" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="AlertNotificationByEmail" default="1" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsAllowedToPay" default="0" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsAccountingUser" default="0" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ApproveUnsubmitted" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ExternalID" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ExternalName" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="100" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="SSN" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="88" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="IsActive" default="0">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="MyProfileUpdate" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefUser" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="250" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="MyProfileShow" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="User" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefUser" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Currency">
+                                  <xs:complexType>
+                                    <xs:group ref="RefCurrency" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="FirstName" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="LastName" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Addr1" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Addr2" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="City" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="State" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Zip" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="15" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Country" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="25" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Phone" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Email" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="NotificationCC" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="5000" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="DateFormat" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="AlertNotificationByEmail" default="1" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Expense" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Upsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefExpense" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="250" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefExpense" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExternalID" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="250" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Expense" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefExpense" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Customer">
+                                  <xs:complexType>
+                                    <xs:group ref="RefCustomer" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Project">
+                                  <xs:complexType>
+                                    <xs:group ref="RefProject" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="User">
+                                  <xs:complexType>
+                                    <xs:group ref="RefUser" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="ApprovedBy">
+                                  <xs:complexType>
+                                    <xs:group ref="RefUser" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="NeedsApprovedBy">
+                                  <xs:complexType>
+                                    <xs:group ref="RefUser" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PaidBy">
+                                  <xs:complexType>
+                                    <xs:group ref="RefUser" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="DeniedBy">
+                                  <xs:complexType>
+                                    <xs:group ref="RefUser" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Currency">
+                                  <xs:complexType>
+                                    <xs:group ref="RefCurrency" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Department" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>DEPRECATED, use MapList</xs:documentation>
+                                  </xs:annotation>
+                                  <xs:complexType>
+                                    <xs:group ref="RefDepartment" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Organizations" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:annotation>
+                                    <xs:documentation>Organization Mapping List</xs:documentation>
+                                  </xs:annotation>
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Organization" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:group ref="OrganizationDetails" minOccurs="0" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Batch">
+                                  <xs:complexType>
+                                    <xs:group ref="RefBatch" minOccurs="0" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="StatusID" type="ExpenseStatus" default="1" />
+                                <xs:element name="ExpenseTitle">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="100" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="CashAdvanced" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ApprovedDate" type="Date" nillable="true" />
+                                <xs:element name="AmountDue" default="0" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="DeniedDate" type="Date" nillable="true" />
+                                <xs:element name="ExpenseTotal" default="0" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="NeedsApprovedByAssignedDate" type="Date" nillable="true" />
+                                <xs:element name="PaidDate" type="Date" nillable="true" />
+                                <xs:element name="PaidAmount" default="0" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Purpose" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="2000" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ExpenseStartDate" type="Date" nillable="true" />
+                                <xs:element name="ExpenseEndDate" type="Date" nillable="true" />
+                                <xs:element name="CheckNbr" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="AmountToPay" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="SubmittedDate" type="Date" nillable="true" />
+                                <xs:element name="SubmittedForPaymentDate" type="Date" nillable="true" />
+                                <xs:element name="PaymentMethod" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ReceiptsVerified" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ReceiptsVerifiedDate" type="Date" nillable="true" />
+                                <xs:element name="ReceiptsVerifiedbyUser" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="TotalReimbursable" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="TotalNotReimbursable" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="TotalEmployeeOwes" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:totalDigits value="19" />
+                                      <xs:fractionDigits value="4" />
+                                      <xs:minExclusive value="-922337203685477" />
+                                      <xs:maxExclusive value="922337203685477" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ExternalID" nillable="true">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:group ref="Log" />
+                                <xs:element ref="ExpenseDetail" minOccurs="0" maxOccurs="unbounded" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Pay" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefBatch" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ExpenseDetail" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Insert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefExpenseDetail" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefExpenseDetail" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Search" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element ref="ExpenseDetail" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Itinerary" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Insert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefItinerary" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Update" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefItinerary" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Cancel" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Ref">
+                            <xs:complexType>
+                              <xs:group ref="RefItinerary" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Lookup" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Itinerary" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Ref">
+                                  <xs:complexType>
+                                    <xs:group ref="RefItinerary" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="TripStatus">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="TripName">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="TripAmount" type="xs:decimal" />
+                                <xs:element name="StartDate" type="Date" />
+                                <xs:element name="EndDate" type="Date" />
+                                <xs:element name="ExpenseGuid" type="Guid" />
+                                <xs:group ref="Log" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Receipt" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ExpenseTypes" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Type" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Name" />
+                                <xs:element name="Value" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PaymentTypes" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="Type" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Name" />
+                                <xs:element name="Value" />
+                                <xs:element name="CardTypeID" type="xs:int" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>CCTypeID if CC</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="ID4" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>Last 4 digit of CC</xs:documentation>
+                                  </xs:annotation>
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="4" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CreateExpense" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                          <xs:element name="ExpenseKey" type="Guid" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="UploadDocument" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:group ref="Header" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:group name="Blank">
+    <xs:sequence />
+  </xs:group>
+  <xs:element name="ExpenseDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Ref">
+          <xs:complexType>
+            <xs:group ref="RefExpenseDetail" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Expense">
+          <xs:complexType>
+            <xs:group ref="RefExpense" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ParentDetail">
+          <xs:complexType>
+            <xs:group ref="RefExpenseDetail" minOccurs="0" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Customer">
+          <xs:complexType>
+            <xs:group ref="RefCustomer" minOccurs="0" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Project">
+          <xs:complexType>
+            <xs:group ref="RefProject" minOccurs="0" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Department" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>DEPRECATED, use MapList</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:group ref="RefDepartment" />
+              <xs:group ref="RefDepartmentDetailed" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Organizations" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Organization Mapping List</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Organization" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:group ref="OrganizationDetails" minOccurs="0" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ExpenseType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:group ref="RefExpenseType" />
+              <xs:group ref="RefExpenseTypeDetailed" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PaymentType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:group ref="RefPaymentType" />
+              <xs:group ref="RefPaymentTypeDetailed" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Currency">
+          <xs:complexType>
+            <xs:group ref="RefCurrency" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ExpenseDate" type="Date" nillable="true" />
+        <xs:element name="Description" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="2000" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="VendorDescription" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="2000" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ExpenseAmount" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+              <xs:totalDigits value="19" />
+              <xs:fractionDigits value="4" />
+              <xs:minExclusive value="-922337203685477" />
+              <xs:maxExclusive value="922337203685477" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="SourceAmount" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+              <xs:totalDigits value="19" />
+              <xs:fractionDigits value="4" />
+              <xs:minExclusive value="-922337203685477" />
+              <xs:maxExclusive value="922337203685477" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ConversionRate" default="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+              <xs:totalDigits value="18" />
+              <xs:fractionDigits value="9" />
+              <xs:minExclusive value="-1000000000" />
+              <xs:maxExclusive value="1000000000" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ConversionDate" type="Date" nillable="true" />
+        <xs:element name="CustomRate" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+              <xs:totalDigits value="18" />
+              <xs:fractionDigits value="9" />
+              <xs:minExclusive value="-1000000000" />
+              <xs:maxExclusive value="1000000000" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="Reimbursable" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:int">
+              <xs:minInclusive value="-2147483648" />
+              <xs:maxInclusive value="2147483647" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="HasRequiredData" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:boolean" />
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="IsSplit" default="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:boolean" />
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="IsParentSplit" default="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:boolean" />
+          </xs:simpleType>
+        </xs:element>
+        <xs:group ref="Log" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

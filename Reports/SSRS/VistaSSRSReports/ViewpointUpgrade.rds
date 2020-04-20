@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ViewpointUpgrade">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=SEA-STGSQL01\VIEWPOINT;Initial Catalog=Viewpoint</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>583ac06a-a8c4-4f3c-bba2-ebb0dcd1e6b2</DataSourceID>
+</RptDataSource>

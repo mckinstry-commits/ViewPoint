@@ -1,0 +1,251 @@
+﻿<File version="2">
+  <Code><![CDATA[<#
+2015.07.09 - LWO PRBatchCapture Created
+
+Script to provide a UI for the selection and extraction of Viewpoint PR Timecard data from existing batches
+and subseqeuent archival to either a specified alternate table or to a file system based set of csv files.
+
+Options are configurable via the associated Settings.xml file.
+#>
+
+#Define a Param block to use custom parameters in the project
+#Param ($CustomParameter)
+
+$myComputer = gc env:computername
+$myScript = $MyInvocation.MyCommand.Path
+
+# Import email settings from config file
+$ConfigurationFile = "Settings.xml"
+[xml]$ConfigFile = Get-Content "$ConfigurationFile"
+
+$Server = $ConfigFile.Settings.DatabaseSettings.Server
+$Database = $ConfigFile.Settings.DatabaseSettings.Database
+$DBConnection = "Data Source=$Server;Initial Catalog=$Database;Integrated Security=True;"
+$ExportType = $ConfigFile.Settings.ExportSettings.ExportType
+$ArchiveTable = $ConfigFile.Settings.ExportSettings.ArchiveTable
+
+$LogFile = ("Log\PRBatchCapture_{0:yyyyMMdd_hhmmss}.txt" -f (Get-Date))
+
+$EmailServer = $ConfigFile.Settings.EmailSettings.Server
+$EmailFrom = $ConfigFile.Settings.EmailSettings.MailFrom
+$EmailTo = $ConfigFile.Settings.EmailSettings.MailTo
+$EmailCc = $ConfigFile.Settings.EmailSettings.MailCc
+$EmailSubject = $ConfigFile.Settings.EmailSettings.MailSubject #Allows {0}{1} replacement option fro Prefix and Suffix
+
+$mailmessage = New-Object system.net.mail.mailmessage
+$mailmessage.from = $EmailFrom
+$mailmessage.To.add($EmailTo)
+$mailmessage.To.add($EmailCc)
+
+#$Image = “log-icon.png”
+$Image = “McKinstry_Logo.png”
+#Embed Image
+$att1 = new-object Net.Mail.Attachment($Image)
+$att1.ContentType.MediaType = “image/png”
+$att1.ContentId = “LogImgAttachment”
+$att1.ContentDisposition.Inline = $true
+$att1.ContentDisposition.DispositionType = “Inline”
+
+#Add attachment to the mail
+$mailmessage.Attachments.Add($att1)
+
+#Mail body
+$global:EmailBody = “<p style=’font-family: Calibri, sans-serif’>
+<img src=cid:LogImgAttachment align=right height=50 width=120 /><br />
+Viewpoint PR Batch Capture Log
+</p><hr/>
+<font size=-2>
+<UL>
+<li>Run from Computer:     <b>" + $myComputer + "</b></li>
+<li>Extract from Database: <b>" + $Server + " : " + $Database + "</b></li>
+</UL>
+</font>
+<hr/>”
+
+$mailmessage.Subject = $EmailSubject + "(" + $myComputer + ") " + $Server + " : " + $Database
+
+if (!(Test-Path "Log"))
+{
+	New-Item "Log" -Force -ItemType Directory
+	Write-Log -Message "Creating Log Directory" -Path $LogFile -Level 'Info'
+}
+
+if (!(Test-Path "Export"))
+{
+	New-Item "Export" -Force -ItemType Directory
+	Write-Log -Message "Creating Export Directory" -Path $LogFile -Level 'Info'
+}
+
+function SendMail
+{
+	
+	$mailmessage.Body = $global:EmailBody
+	$mailmessage.IsBodyHtml = $true
+
+	$SMTPClient = New-Object Net.Mail.SmtpClient($EmailServer, 25)
+	$SMTPClient.Send($mailmessage)
+
+	#Dispose attachments
+	$att1.dispose()
+	$att2.dispose()
+	
+	
+}
+
+function Main {
+<#
+    .SYNOPSIS
+        The Main function starts the project application.
+    
+    .PARAMETER Commandline
+        $Commandline contains the complete argument string passed to the script packager executable.
+    
+    .NOTES
+        Use this function to initialize your script and to call GUI forms.
+		
+    .NOTES
+        To get the console output in the Packager (Forms Engine) use:
+		$ConsoleOutput (Type: System.Collections.ArrayList)
+#>
+	Param ([String]$Commandline)
+	
+	Write-Log -Message "---------------------------------------------------------------------------------------------" -Path $LogFile -Level 'Info'
+	Write-Log -Message "Starting ...." -Path $LogFile -Level 'Info'
+	Write-Log -Message "---------------------------------------------------------------------------------------------" -Path $LogFile -Level 'Info'
+	Write-Log -Message " " -Path $LogFile -Level 'Info'
+	Write-Log -Message ("Computer:   {0}" -f $myComputer) -Path $LogFile -Level 'Info'
+	Write-Log -Message ("Script:     {0}" -f $myScript) -Path $LogFile -Level 'Info'
+	Write-Log -Message ("Log File:   {1}:{0}" -f $LogFile, $myComputer) -Path $LogFile -Level 'Info'
+	Write-Log -Message ("DB Server:  {0}" -f $Server) -Path $LogFile -Level 'Info'
+	Write-Log -Message ("Database:   {0}" -f $Database) -Path $LogFile -Level 'Info'
+	Write-Log -Message ("Export Dir: \Export") -Path $LogFile -Level 'Info'
+	Write-Log -Message " " -Path $LogFile -Level 'Info'
+	
+	Call-frmSelectBatch_psf
+	
+	Write-Log -Message "---------------------------------------------------------------------------------------------" -Path $LogFile -Level 'Info'
+	Write-Log -Message "Ended ...." -Path $LogFile -Level 'Info'
+	
+	$statusbar.Text = ("Emailing Log '{0}'" -f $LogFile)
+	Write-Log -Message "Emailing Log ...." -Path $LogFile -Level 'Info'
+	
+	$global:EmailBody = $global:EmailBody + "<hr/>"
+	$global:EmailBody = $global:EmailBody + "<font size=-2><i>" + $LogFile + "</i></font>"
+	
+	$att2 = new-object Net.Mail.Attachment($LogFile)
+	$att2.ContentType.MediaType = “image/txt”
+	$att2.ContentId = “LogImgAttachment”
+	
+	#Add attachment to the mail
+	$mailmessage.Attachments.Add($att2)
+	
+	SendMail
+	
+	#--------------------------------------------------------------------------
+	#TODO: Add initialization script here (Load modules and check requirements)
+	
+	$global:ExitCode = 0 #Set the exit code for the Packager
+}
+
+function Write-Log
+{
+	[CmdletBinding()]
+	#[Alias('wl')]
+	[OutputType([int])]
+	Param
+	(
+		# The string to be written to the log.
+		[Parameter(Mandatory = $true,
+				   ValueFromPipelineByPropertyName = $true,
+				   Position = 0)]
+		[ValidateNotNullOrEmpty()]
+		[Alias("LogContent")]
+		[string]$Message,
+		
+		# The path to the log file.
+		[Parameter(Mandatory = $false,
+				   ValueFromPipelineByPropertyName = $true,
+				   Position = 1)]
+		[Alias('LogPath')]
+		[string]$Path = "C:\Logs\PowerShellLog.log",
+		[Parameter(Mandatory = $false,
+				   ValueFromPipelineByPropertyName = $true,
+				   Position = 3)]
+		[ValidateSet("Error", "Warn", "Info")]
+		[string]$Level = "Info",
+		[Parameter(Mandatory = $false)]
+		[switch]$NoClobber
+	)
+	
+	Begin
+	{
+	}
+	Process
+	{
+		
+		if ((Test-Path $Path) -AND $NoClobber)
+		{
+			Write-Warning "Log file $Path already exists, and you specified NoClobber. Either delete the file or specify a different name."
+			Return
+		}
+		
+		# If attempting to write to a log file in a folder/path that doesn't exist
+		# to create the file include path.
+		elseif (!(Test-Path $Path))
+		{
+			Write-Verbose "Creating $Path."
+			$NewLogFile = New-Item $Path -Force -ItemType File
+		}
+		
+		else
+		{
+			# Nothing to see here yet.
+		}
+		
+		# Now do the logging and additional output based on $Level
+		switch ($Level)
+		{
+			'Error' {
+				Write-Error $Message
+				Write-Output "$(Get-Date -Format "yyyy-MM-dd HH:mm:ss") ERROR: $Message" | Out-File -FilePath $Path -Append
+			}
+			'Warn' {
+				Write-Warning $Message
+				Write-Output "$(Get-Date -Format "yyyy-MM-dd HH:mm:ss") WARNING: $Message" | Out-File -FilePath $Path -Append
+			}
+			'Info' {
+				Write-Verbose $Message
+				Write-Output "$(Get-Date -Format "yyyy-MM-dd HH:mm:ss") INFO: $Message" | Out-File -FilePath $Path -Append
+			}
+		}
+	}
+	End
+	{
+	}
+}
+
+function Get-ScriptDirectory
+{
+	$Invocation = (Get-Variable MyInvocation -Scope 1).Value
+	Split-Path $Invocation.MyCommand.Path
+}
+]]></Code>
+  <Bookmarks />
+  <BreakPoints>
+    <Line Disabled="False">80</Line>
+    <Line Disabled="False">87</Line>
+  </BreakPoints>
+  <TracePoints />
+  <Assemblies>
+    <Assembly>System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</Assembly>
+    <Assembly>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <Assembly>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <Assembly>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.ServiceProcess, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+  </Assemblies>
+</File>

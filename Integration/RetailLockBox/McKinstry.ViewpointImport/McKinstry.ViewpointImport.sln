@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.ViewpointImport.Common", "McKinstry.ViewpointImport.Common\McKinstry.ViewpointImport.Common.csproj", "{7258E06E-D8C7-40FF-990A-87633629CE45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.Viewpoint.RemoteFileUpload", "McKinstry.Viewpoint.RemoteFileUpload\McKinstry.Viewpoint.RemoteFileUpload.csproj", "{28FE7C79-15CC-4F66-A976-B3F671E6B4A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.Viewpoint.RemoteFileDownload", "McKinstry.Viewpoint.RemoteFileDownload\McKinstry.Viewpoint.RemoteFileDownload.csproj", "{1BF3668D-8860-477E-99D6-207853FC088E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.Viewpoint.ARImport", "McKinstry.Viewpoint.ARImport\McKinstry.Viewpoint.ARImport.csproj", "{605490F0-D670-464A-A745-6E9A2EE3B5AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.Viewoint.CompanyMove", "McKinstry.Viewoint.CompanyMove\McKinstry.Viewoint.CompanyMove.csproj", "{112FE69C-E998-4F32-A4B9-8A943C5E08EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.Viewpoint.DropFolderWatcher", "McKinstry.Viewpoint.DropFolderWatcher\McKinstry.Viewpoint.DropFolderWatcher.csproj", "{EC27C70F-70DE-465F-9FDA-2F3DC468EBBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.Viewpoint.APProcess", "McKinstry.Viewpoint.APProcess\McKinstry.Viewpoint.APProcess.csproj", "{CEA50E0E-2CBA-4DE3-9C68-A291D2532348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.Viewpoint.APImport", "McKinstry.Viewpoint.APImport\McKinstry.Viewpoint.APImport.csproj", "{8B09520F-8956-45E1-BD60-7DDEE3F8B7EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKinstry.Viewpoint.AttachmentUtility", "McKinstry.Viewpoint.AttachmentUtility\McKinstry.Viewpoint.AttachmentUtility.csproj", "{D70FE0AF-2275-439C-80B6-DACCD93D2FAA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://setfs01:8080/tfs/mckinstry%20team
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = McKinstry.Viewpoint.ARImport\\McKinstry.Viewpoint.ARImport.csproj
+		SccProjectName1 = McKinstry.Viewpoint.ARImport
+		SccLocalPath1 = McKinstry.Viewpoint.ARImport
+		SccProjectUniqueName2 = McKinstry.Viewpoint.RemoteFileDownload\\McKinstry.Viewpoint.RemoteFileDownload.csproj
+		SccProjectName2 = McKinstry.Viewpoint.RemoteFileDownload
+		SccLocalPath2 = McKinstry.Viewpoint.RemoteFileDownload
+		SccProjectUniqueName3 = McKinstry.Viewpoint.RemoteFileUpload\\McKinstry.Viewpoint.RemoteFileUpload.csproj
+		SccProjectName3 = McKinstry.Viewpoint.RemoteFileUpload
+		SccLocalPath3 = McKinstry.Viewpoint.RemoteFileUpload
+		SccProjectUniqueName4 = McKinstry.ViewpointImport.Common\\McKinstry.ViewpointImport.Common.csproj
+		SccProjectName4 = McKinstry.ViewpointImport.Common
+		SccLocalPath4 = McKinstry.ViewpointImport.Common
+		SccProjectUniqueName5 = McKinstry.Viewoint.CompanyMove\\McKinstry.Viewoint.CompanyMove.csproj
+		SccProjectName5 = McKinstry.Viewoint.CompanyMove
+		SccLocalPath5 = McKinstry.Viewoint.CompanyMove
+		SccProjectUniqueName6 = McKinstry.Viewpoint.DropFolderWatcher\\McKinstry.Viewpoint.DropFolderWatcher.csproj
+		SccProjectName6 = McKinstry.Viewpoint.DropFolderWatcher
+		SccLocalPath6 = McKinstry.Viewpoint.DropFolderWatcher
+		SccProjectUniqueName7 = McKinstry.Viewpoint.APProcess\\McKinstry.Viewpoint.APProcess.csproj
+		SccProjectName7 = McKinstry.Viewpoint.APProcess
+		SccLocalPath7 = McKinstry.Viewpoint.APProcess
+		SccProjectUniqueName8 = McKinstry.Viewpoint.APImport\\McKinstry.Viewpoint.APImport.csproj
+		SccProjectName8 = McKinstry.Viewpoint.APImport
+		SccLocalPath8 = McKinstry.Viewpoint.APImport
+		SccProjectUniqueName9 = McKinstry.Viewpoint.AttachmentUtility\\McKinstry.Viewpoint.AttachmentUtility.csproj
+		SccProjectName9 = McKinstry.Viewpoint.AttachmentUtility
+		SccLocalPath9 = McKinstry.Viewpoint.AttachmentUtility
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7258E06E-D8C7-40FF-990A-87633629CE45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7258E06E-D8C7-40FF-990A-87633629CE45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7258E06E-D8C7-40FF-990A-87633629CE45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7258E06E-D8C7-40FF-990A-87633629CE45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28FE7C79-15CC-4F66-A976-B3F671E6B4A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FE7C79-15CC-4F66-A976-B3F671E6B4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FE7C79-15CC-4F66-A976-B3F671E6B4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FE7C79-15CC-4F66-A976-B3F671E6B4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BF3668D-8860-477E-99D6-207853FC088E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF3668D-8860-477E-99D6-207853FC088E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF3668D-8860-477E-99D6-207853FC088E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF3668D-8860-477E-99D6-207853FC088E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605490F0-D670-464A-A745-6E9A2EE3B5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605490F0-D670-464A-A745-6E9A2EE3B5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605490F0-D670-464A-A745-6E9A2EE3B5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605490F0-D670-464A-A745-6E9A2EE3B5AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{112FE69C-E998-4F32-A4B9-8A943C5E08EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{112FE69C-E998-4F32-A4B9-8A943C5E08EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{112FE69C-E998-4F32-A4B9-8A943C5E08EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{112FE69C-E998-4F32-A4B9-8A943C5E08EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC27C70F-70DE-465F-9FDA-2F3DC468EBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC27C70F-70DE-465F-9FDA-2F3DC468EBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC27C70F-70DE-465F-9FDA-2F3DC468EBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC27C70F-70DE-465F-9FDA-2F3DC468EBBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA50E0E-2CBA-4DE3-9C68-A291D2532348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA50E0E-2CBA-4DE3-9C68-A291D2532348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA50E0E-2CBA-4DE3-9C68-A291D2532348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA50E0E-2CBA-4DE3-9C68-A291D2532348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B09520F-8956-45E1-BD60-7DDEE3F8B7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B09520F-8956-45E1-BD60-7DDEE3F8B7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B09520F-8956-45E1-BD60-7DDEE3F8B7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B09520F-8956-45E1-BD60-7DDEE3F8B7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70FE0AF-2275-439C-80B6-DACCD93D2FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70FE0AF-2275-439C-80B6-DACCD93D2FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70FE0AF-2275-439C-80B6-DACCD93D2FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70FE0AF-2275-439C-80B6-DACCD93D2FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

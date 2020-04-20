@@ -1,0 +1,1012 @@
+2014-08-28 01:02:12Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\
+2014-08-28 01:02:12Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703.zip
+2014-08-28 01:02:12Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1
+2014-08-28 01:02:12Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1
+2014-08-28 01:02:16Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\McKinstryRLBAP_20140703.csv
+2014-08-28 01:02:16Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-08-28 01:02:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000001.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000002.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000003.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000004.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000005.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000006.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000007.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:16Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000008.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000009.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000010.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000011.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000012.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000013.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000014.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000015.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000016.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000017.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000018.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000019.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000020.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000021.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000022.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000023.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000024.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000025.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000026.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000027.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000028.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000029.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000030.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000031.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000032.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000033.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000034.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:17Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000035.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000036.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000037.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000038.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000039.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000040.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000041.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000042.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000043.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000044.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000045.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000046.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000047.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000048.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000049.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000050.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000051.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000052.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000053.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000054.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:18Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000055.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000056.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000057.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000058.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000059.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000060.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000061.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000062.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000063.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000064.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000065.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000066.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000067.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000068.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000069.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000070.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000071.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000072.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000073.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000074.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000075.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000076.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000077.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000078.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000079.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000080.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000081.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000082.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:19Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000083.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000084.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000085.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000086.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000087.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000088.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000089.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000090.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000091.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000092.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000093.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000094.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000095.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000096.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000097.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000098.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000099.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000100.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000101.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000102.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000103.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000104.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000105.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000106.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000107.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000108.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:20Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000109.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000110.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000111.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000112.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000113.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000114.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000115.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000116.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000117.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000118.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000119.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000120.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000121.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000122.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000123.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000124.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000125.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000126.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000127.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000128.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000129.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000130.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000131.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000132.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000133.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000134.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000135.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000136.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:21Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000137.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000138.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000139.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000140.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000141.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000142.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000143.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000144.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000145.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000146.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000147.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000148.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000149.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000150.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000151.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000152.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000153.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000154.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000155.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:02:22Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\Images\AP_201407030000156.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:22Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1\McKinstryRLBAP_20140703.csv
+2014-08-28 01:02:22Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_1
+2014-08-28 01:02:22Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703.zip' to '': Successful
+2014-08-28 01:02:23Z	Removing file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703.zip': Successful
+2014-08-28 01:02:23Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703.zip
+2014-08-28 01:02:23Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703_v2.zip
+2014-08-28 01:02:23Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2
+2014-08-28 01:02:23Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2
+2014-08-28 01:02:26Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\McKinstryRLBAP_20140707.csv
+2014-08-28 01:02:26Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-08-28 01:02:27Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:27Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:27Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184070.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:27Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184071.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184072.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184067.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184068.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:28Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:29Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184069.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:29Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:29Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:29Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:29Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:29Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:29Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:29Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:02:29Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184064.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:29Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184066.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:29Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184065.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:29Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:30Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184061.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:30Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184062.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:30Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184063.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:30Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184058.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:30Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184059.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:30Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184060.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:30Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184055.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:30Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184056.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:31Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184057.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:31Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184052.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:31Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184053.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:31Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:31Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184049.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:31Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184054.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:31Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184051.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:32Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184050.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:32Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184046.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:32Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184048.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:32Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184047.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:32Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184044.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:32Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184043.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:33Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184045.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:33Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184040.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:33Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184076.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:33Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184041.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:34Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184037.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:35Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184042.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:36Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184038.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:37Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184034.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:38Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:02:39Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184039.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:39Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184035.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:40Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:41Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184031.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:41Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:02:42Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184036.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Successful
+2014-08-28 01:02:42Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:16Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184077.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:17Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184033.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:17Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184032.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:17Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184029.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:17Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184028.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:17Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184025.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:17Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:17Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184030.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:18Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184026.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:18Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184027.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:18Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184022.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:18Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184023.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:18Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184024.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:18Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:18Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184078.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:19Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184020.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:19Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184019.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:19Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184021.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:19Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184016.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:19Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184017.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:19Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:19Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184013.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:20Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184018.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:20Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184014.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:20Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184073.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:20Z	Upload record : Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184015.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:20Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184010.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:20Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184012.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:20Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184011.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:20Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:20Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184008.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184007.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184009.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184005.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184004.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184006.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184074.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:21Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\Images\PO_201_14184075.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Upload record : Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:21Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2\McKinstryRLBAP_20140707.csv
+2014-08-28 01:03:21Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_2
+2014-08-28 01:03:22Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703_v2.zip' to '': Successful
+2014-08-28 01:03:22Z	Removing file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703_v2.zip': Successful
+2014-08-28 01:03:22Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140703_v2.zip
+2014-08-28 01:03:22Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140722.zip
+2014-08-28 01:03:22Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3
+2014-08-28 01:03:22Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3
+2014-08-28 01:03:28Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\McKinstryRLBAP_20140722.csv
+2014-08-28 01:03:28Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-08-28 01:03:28Z	Upload record PO-201-14184002: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:28Z	Upload record PO-201-150000-0110002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0110002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:28Z	Upload record PO-201-150000-0110003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0110003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:28Z	Upload record PO-201-150000-0120001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0120001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:28Z	Upload record PO-201-150000-0120003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0120003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:28Z	Upload record PO-201-150000-0120002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0120002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:28Z	Upload record PO-201-150000-0130001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0130001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:28Z	Upload record PO-201-150000-0130002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0130002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:28Z	Upload record PO-201-150000-0130003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0130003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:28Z	Upload record PO-201-150000-0140001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:28Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0140001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:28Z	Upload record PO-201-14184003: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0140002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0140002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0140003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0140003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0150001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0150001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0150002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0150002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0160001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0160001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0150003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0150003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0160002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0160002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0160003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0160003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0170002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0170002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0170001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0170001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0170003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0170003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-14184004: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0180002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0180002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0180001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0180001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0180003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0180003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:29Z	Upload record PO-201-150000-0190002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:29Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0190002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0190001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0190001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0190003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0190003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0200001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0200001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0200002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0200002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0210001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0210001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0200003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0200003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-14184005: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0210002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0210002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0220001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0220001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0210003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0210003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0220002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0220002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0220003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0220003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0230001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0230001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0230002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0230002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0240001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0240001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0230003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0230003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-150000-0240002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:30Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0240002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:30Z	Upload record PO-201-14184006: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0240003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0240003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0250002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0250002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0250001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0250001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0250003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0250003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0260001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0260001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0260002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0260002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0260003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0260003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0270001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0270001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0270003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0270003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0270002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0270002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0280001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0280001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-14184007: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0280002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0280002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0280003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0280003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0290001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0290001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0290002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0290002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0290003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0290003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:31Z	Upload record PO-201-150000-0300001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:31Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0300001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0300002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0300002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0300003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0300003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-14184008: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0310001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0310001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0310002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0310002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0310003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0310003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0320002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0320002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0320001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0320001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0320003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0320003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0330001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0330001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0330002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0330002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-150000-0330003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0330003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-999015-0010001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_999015-0010001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-999024-0010001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_999024-0010001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-999037-0010001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_999037-0010001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:32Z	Upload record PO-201-14184009: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:32Z	Upload record PO-201-999037-0010002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:32Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_999037-0010002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record PO-201-999041-0010001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_999041-0010001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record PO-201-999037-0010003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_999037-0010003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record PO-201-999041-0010002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_999041-0010002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record RI-201-2539226080: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\RI_201_2539226080.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record RI-201-828585588: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\RI_201_828585588.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record RI-201-3606946159: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\RI_201_3606946159.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record RI-201-828591188: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\RI_201_828591188.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record SC-201-150000-008001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-008001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record SC-201-150000-008002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-008002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record PO-201-14184010: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:33Z	Upload record SC-201-150000-008003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-008003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record SC-201-150000-009001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-009001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record SC-201-150000-009002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-009002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:33Z	Upload record SC-201-150000-010001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:33Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-010001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-009003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-009003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-010002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-010002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-010003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-010003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-010005: Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\AP_201407220000098.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-010004: Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\AP_201407220000099.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record PO-201-14184011: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:34Z	Upload record SC-201-150000-011001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-011001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-011003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-011003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-011002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-011002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-012001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-012001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-012002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-012002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-013001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-013001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-012003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-012003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:34Z	Upload record SC-201-150000-013002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:34Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-013002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record SC-201-150000-014001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-014001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record SC-201-150000-013003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-013003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record PO-201-130100210: Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\AP_201407220000111.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record PO-201-14184012: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:35Z	Upload record SC-201-150000-014003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-014003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record SC-201-150000-014002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-014002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record SC-201-150000-015001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-015001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record SC-201-150000-015002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-015002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record SC-201-150000-016001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-016001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record SC-201-150000-015003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-015003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record SC-201-150000-016002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-016002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record SC-201-150000-016003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-016003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:35Z	Upload record SC-201-150000-017002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:35Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-017002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record SC-201-150000-017001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-017001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record PO-201-14184013: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:36Z	Upload record SC-201-150000-017003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-017003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record SC-201-150000-018001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-018001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record SC-201-150000-018003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-018003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record SC-201-150000-018002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-018002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record SC-201-150000-019001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-019001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record SC-201-150000-019002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-019002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record SC-201-150000-020001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-020001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record SC-201-150000-019003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-019003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record SC-201-150000-020002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-020002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record SC-201-150000-020003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-020003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:36Z	Upload record PO-201-14184014: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:36Z	Upload record SC-201-150000-021002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:36Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-021002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record SC-201-150000-021001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-021001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record SC-201-150000-021003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-021003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record SC-201-150000-022001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-022001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record SC-201-150000-022002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-022002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record SC-201-150000-023001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-023001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record SC-201-150000-022003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-022003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record SC-201-150000-023002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-023002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record SC-201-150000-023003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-023003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record PO-201-14184015: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:37Z	Upload record SC-201-150000-024001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-024001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record SC-201-150000-024002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-024002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:37Z	Upload record SC-201-150000-024003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:37Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-024003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:38Z	Upload record SC-201-150000-025002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:38Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-025002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:38Z	Upload record SC-201-150000-025001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:38Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-025001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:38Z	Upload record SC-201-150000-025003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:38Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-025003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:38Z	Upload record SC-201-150000-026001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:38Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-026001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:38Z	Upload record SC-201-150000-026003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:38Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-026003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:38Z	Upload record SC-201-150000-026002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:38Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-026002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:38Z	Upload record SC-201-150000-027001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:38Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-027001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:38Z	Upload record SC-201-150000-027001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:38Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-027002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:38Z	Upload record PO-201-14184016: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:39Z	Upload record SC-201-150000-027003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:39Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-027003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:39Z	Upload record SC-201-150000-028001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:39Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-028001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:39Z	Upload record SC-201-150000-028003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:39Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-028003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:39Z	Upload record SC-201-150000-028002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:39Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-028002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:39Z	Upload record SC-201-150000-029001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:39Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-029001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:39Z	Upload record SC-201-150000-029002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:39Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-029002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:39Z	Upload record SC-201-150000-030001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:39Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-030001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:39Z	Upload record SC-201-150000-029003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:39Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-029003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:39Z	Upload record SC-201-150000-030002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:39Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-030002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record SC-201-150000-030003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-030003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record SC-201-150000-031001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-031001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record PO-201-14184017: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:40Z	Upload record SC-201-150000-031002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-031002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record SC-201-150000-031003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-031003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record SC-201-150000-032002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-032002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record SC-201-150000-032001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-032001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record SC-201-150000-032003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-032003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record SC-201-150000-033002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-033002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record SC-201-150000-033001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\SC_201_150000-033001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record PO-201-14184018: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:40Z	Upload record PO-201-14184020: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:40Z	Upload record PO-201-14184019: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:40Z	Upload record PO-201-14184021: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:40Z	Upload record PO-201-14141001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:40Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_14141001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:40Z	Upload record PO-201-14184022: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:40Z	Upload record PO-201-14184023: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:40Z	Upload record PO-201-14184024: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184025: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184026: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184028: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184027: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184029: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184030: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14174001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:41Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_14174001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:41Z	Upload record PO-201-14184031: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184032: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184033: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184035: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184036: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184034: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:41Z	Upload record PO-201-14184037: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184038: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184039: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184040: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184061: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184053: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184054: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184055: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184056: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184058: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184057: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184060: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184059: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184045: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184050: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:42Z	Upload record PO-201-14184049: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184048: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184052: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14183001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:43Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_14183001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:43Z	Upload record PO-201-14184051: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184069: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184070: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184073: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184072: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184071: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184075: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184077: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184076: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:43Z	Upload record PO-201-14184074: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:44Z	Upload record PO-201-14184080: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_14184080.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-14184001: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:44Z	Upload record PO-201-14184079: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_14184079.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-14184078: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:44Z	Upload record PO-201-14198003: Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\AP_201407220000230.pdf' to '\\setestconimg\Viewpoint\No Company\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-150000-0080002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0080002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-150000-0080001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0080001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-150000-0080003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0080003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-150000-0100002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0100002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-150000-0090003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0090003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-150000-0100001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0100001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-150000-0090002: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0090002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-150000-0090001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0090001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-150000-0110001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0110001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:44Z	Upload record PO-201-150000-0100003: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-08-28 01:03:44Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_150000-0100003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:45Z	Upload record PO-201-14184041: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:45Z	Upload record PO-201-14176001: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_14176001.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:45Z	Upload record PO-201-14184042: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:45Z	Upload record PO-201-14184046: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:45Z	Upload record PO-201-14184044: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:45Z	Upload record PO-201-14184043: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:45Z	Upload record PO-201-14184047: Unsuccessful : No records created.  Attachment exists.
+2014-08-28 01:03:45Z	Upload record PO-201-14183002: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:45Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_14183002.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:45Z	Upload record PO-201-14184064: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:45Z	Upload record PO-201-14184062: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:45Z	Upload record PO-201-14184066: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:45Z	Upload record PO-201-14184063: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:45Z	Upload record PO-201-14184065: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:46Z	Upload record PO-201-14184068: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:46Z	Upload record PO-201-14184067: Unsuccessful : Header, Footer records created successfully. Attachment not created, already exists.
+2014-08-28 01:03:46Z	Upload record PO-201-14183003: Successful : Header, Footer and Attachment records created successfully.
+2014-08-28 01:03:54Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\Images\PO_201_14183003.pdf' to '\\setestconimg\Viewpoint\Company201\AP\APUnappInv\07-2014': Unsuccessful
+2014-08-28 01:03:54Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3\McKinstryRLBAP_20140722.csv
+2014-08-28 01:03:54Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-08-28 01.02.12Z_3
+2014-08-28 01:03:54Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140722.zip' to '': Successful
+2014-08-28 01:03:54Z	Removing file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140722.zip': Successful
+2014-08-28 01:03:54Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140722.zip
+2014-08-28 01:03:54Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\

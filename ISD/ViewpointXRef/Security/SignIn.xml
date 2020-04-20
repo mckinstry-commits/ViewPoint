@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>SignIn</Name>
+    <Type>Page</Type>
+    <SubType>DotNet</SubType>
+    <MasterLayout>../Master Pages/HorizontalMenu.master</MasterLayout>
+    <NewWindowMasterLayout>../Master Pages/Blank.master</NewWindowMasterLayout>
+    <PopupMasterLayout>../Master Pages/Popup.master</PopupMasterLayout>
+    <GenerateDirectory>Security</GenerateDirectory>
+    <Layout>Security\SignIn.html</Layout>
+    <DisplayName>SignIn</DisplayName>
+    <Description />
+    <CheckSum></CheckSum>
+  </Self>
+  <ComposedOf>
+    <ContainedComponent>
+      <Name>PageTitle</Name>
+      <Type>Literal</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>{Title:SignIn}</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>AutomaticallySignIn</Name>
+      <Type>Selection</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>CheckBoxAutoLogin_Command</Value>
+        </Attribute>
+        <Attribute>
+          <Name>PostBack</Name>
+          <Value>True</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>AutomaticallySignInLabel</Name>
+      <Type>Label</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>CheckBoxAutoLoginLbl_Command</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Txt:AutoLogin</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>CancelButton</Name>
+      <Type>Button</Type>
+      <Layout>..\Shared\ThemeButton.html</Layout>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>Button-CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Button-CommandName</Name>
+          <Value>Redirect</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Button-RedirectURL</Name>
+          <Value>Back</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Button-Text</Name>
+          <Value>Btn:Cancel</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>Button-ToolTip</Name>
+          <Value>Btn:Cancel</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>DialogTitle</Name>
+      <Type>Html</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>HtmlEncodeWhiteSpace</Name>
+          <Value>True</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Txt:SignIn</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>EmailLinkButton</Name>
+      <Type>LinkButton</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CausesValidation</Name>
+          <Value>False</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>ForgotUser</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Consumers</Name>
+          <Value>page</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Txt:ForgotPassword</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>LoginMessage</Name>
+      <Type>Label</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>LoginMsg_Command</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>OKButton</Name>
+      <Type>Button</Type>
+      <Layout>..\Shared\ThemeButton.html</Layout>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>Button-CausesValidation</Name>
+          <Value>True</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Button-CommandName</Name>
+          <Value>Login</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Button-Text</Name>
+          <Value>Btn:OK</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+        <Attribute>
+          <Name>Button-ToolTip</Name>
+          <Value>Btn:OK</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>Password</Name>
+      <Type>TextBox</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>Columns</Name>
+          <Value>50</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>TextBoxPassword_Command</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CssClass</Name>
+          <Value>field_input</Value>
+        </Attribute>
+        <Attribute>
+          <Name>PasswordRequiredFieldValidator:Display</Name>
+          <Value>None</Value>
+        </Attribute>
+        <Attribute>
+          <Name>PasswordRequiredFieldValidator:Enabled</Name>
+          <Value>True</Value>
+        </Attribute>
+        <Attribute>
+          <Name>TextMode</Name>
+          <Value>Password</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PasswordLabel</Name>
+      <Type>Label</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Txt:Password</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>PasswordMessage</Name>
+      <Type>Label</Type>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>RememberPassword</Name>
+      <Type>Selection</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>CheckBoxPass_Command</Value>
+        </Attribute>
+        <Attribute>
+          <Name>PostBack</Name>
+          <Value>True</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>RememberPasswordLabel</Name>
+      <Type>Label</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>CheckBoxPassLbl_Command</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Txt:RememberPassword</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>RememberUserName</Name>
+      <Type>Selection</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>CheckBoxUN_Command</Value>
+        </Attribute>
+        <Attribute>
+          <Name>PostBack</Name>
+          <Value>True</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>RememberUserNameLabel</Name>
+      <Type>Label</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>CheckBoxUNLbl_Command</Value>
+        </Attribute>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Txt:RememberUN</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>UserName</Name>
+      <Type>TextBox</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>Columns</Name>
+          <Value>50</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CommandName</Name>
+          <Value>TextBoxUserName_Command</Value>
+        </Attribute>
+        <Attribute>
+          <Name>CssClass</Name>
+          <Value>field_input</Value>
+        </Attribute>
+        <Attribute>
+          <Name>UserNameRequiredFieldValidator:Display</Name>
+          <Value>None</Value>
+        </Attribute>
+        <Attribute>
+          <Name>UserNameRequiredFieldValidator:Enabled</Name>
+          <Value>True</Value>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+    <ContainedComponent>
+      <Name>UserNameLabel</Name>
+      <Type>Label</Type>
+      <PassthroughAttributes>
+        <Attribute>
+          <Name>Text</Name>
+          <Value>Txt:UserName</Value>
+          <Type>ResourceReference</Type>
+        </Attribute>
+      </PassthroughAttributes>
+    </ContainedComponent>
+  </ComposedOf>
+  <LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-16"?&gt;
+    &lt;LayoutDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+    
+      &lt;Layout Name="Page" Type="RootLayout"&gt;
+        &lt;Prolog&gt;
+          &lt;Value&gt;&amp;lt;asp:Content id="Content" ContentPlaceHolderID="PageContent" runat="server"&amp;gt;
+    &amp;lt;a id="StartOfPageContent"&amp;gt;&amp;lt;/a&amp;gt;
+    &amp;lt;div id="scrollRegion" class="scrollRegion"&amp;gt;
+    &lt;/Value&gt;
+        &lt;/Prolog&gt;
+          
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:PANEL NAME="SignInPanelHeaderGroup"/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;ms-rteThemeBackColor-3-0 dh&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+			  &lt;Attribute&gt;&lt;Name&gt;style&lt;/Name&gt;&lt;AttributeValue&gt;border-left: 1px solid #cccccc; border-right: 1px solid #cccccc;&lt;/AttributeValue&gt;&lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+    
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;%= SystemUtils.GenerateEnterKeyCaptureBeginTag(FindControlRecursively("OKButton")) %&amp;gt;&amp;lt;GEN:PANEL NAME="SignInPanelControl"/&amp;gt;&amp;lt;%= SystemUtils.GenerateEnterKeyCaptureEndTag(FindControlRecursively("OKButton")) %&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;dBody securityForm&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        
+        &lt;TableAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;class&lt;/Name&gt;
+            &lt;AttributeValue&gt;dv&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellpadding&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellspacing&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;border&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/TableAttributes&gt;
+    
+        &lt;Epilog&gt;
+        &lt;Value&gt;&amp;lt;/div&amp;gt;&amp;lt;div id="detailPopup" class="detailRolloverPopup" onmouseout="detailRolloverPopupClose();" onmouseover="clearTimeout(gPopupTimer);"&amp;gt;&amp;lt;/div&amp;gt;          
+        &amp;lt;div class="QDialog" id="dialog" style="display:none;"&amp;gt;
+          &amp;lt;iframe id="QuickPopupIframe" style="width:100%;height:100%;border:none"&amp;gt;&amp;lt;/iframe&amp;gt;
+        &amp;lt;/div&amp;gt;   
+        &amp;lt;asp:ValidationSummary id="ValidationSummary1" ShowMessageBox="true" ShowSummary="false" runat="server"&amp;gt;&amp;lt;/asp:ValidationSummary&amp;gt;
+    &amp;lt;/asp:Content&amp;gt;
+          &lt;/Value&gt;
+        &lt;/Epilog&gt;
+      &lt;/Layout&gt;
+      
+      &lt;Layout Name="SignInPanelHeaderGroup" Type="Panel"&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;img src="../Images/space.gif" alt=""/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;dhel&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;asp:CollapsiblePanelExtender id="SignInCPExtender" runat="server" TargetControlid="SignInCollapsibleRegion" ExpandControlID="SignInToggleIcon" CollapseControlID="SignInToggleIcon" ImageControlID="SignInToggleIcon" ExpandedImage="../images/icon_panelcollapse.gif" CollapsedImage="../images/icon_panelexpand.gif" SuppressPostBack="true"/&amp;gt;
+                        &amp;lt;asp:ImageButton id="SignInToggleIcon" runat="server" ToolTip="&amp;lt;%# GetResourceValue(&amp;amp;quot;Btn:ExpandCollapse&amp;amp;quot;, &amp;amp;quot;ViewpointXRef&amp;amp;quot;) %&amp;gt;" causesvalidation="False" imageurl="../images/icon_panelcollapse.gif" /&amp;gt;
+            &lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;dheci&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;valign&lt;/Name&gt;
+                &lt;AttributeValue&gt;middle&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+		  &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:PANEL NAME="SignInTitleGroup"/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;dhb&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;img src="../Images/space.gif" alt=""/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;dher&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;TableAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellpadding&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellspacing&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;border&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;width&lt;/Name&gt;
+            &lt;AttributeValue&gt;100%&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/TableAttributes&gt;
+      &lt;/Layout&gt;
+	  
+	  &lt;Layout Name="SignInTitleGroup" Type="Panel"&gt;
+	     &lt;Row&gt;
+			&lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:HTML NAME="DialogTitle"/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;dht&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+			  &lt;Attribute&gt;
+                &lt;Name&gt;valign&lt;/Name&gt;
+                &lt;AttributeValue&gt;middle&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+	     &lt;/Row&gt;
+		 &lt;TableAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellpadding&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellspacing&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;border&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+       &lt;/TableAttributes&gt;
+	  &lt;/Layout&gt; 
+		 
+      &lt;Layout Name="SignInPanelControl" Type="Panel"&gt;
+        &lt;Prolog&gt;
+            &lt;Value&gt;&amp;lt;asp:panel id="SignInCollapsibleRegion" runat="server"&amp;gt;&lt;/Value&gt;
+        &lt;/Prolog&gt;
+        &lt;Epilog&gt;
+            &lt;Value&gt;&amp;lt;/asp:panel&amp;gt;&lt;/Value&gt;
+        &lt;/Epilog&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:PANEL NAME="SignInControl"/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;style&lt;/Name&gt;
+                &lt;AttributeValue&gt;padding-left:8px; padding-right:8px; padding-top:4px&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:PANEL NAME="PageButtons"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;TableAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellpadding&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellspacing&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;border&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;width&lt;/Name&gt;
+            &lt;AttributeValue&gt;325&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/TableAttributes&gt;
+      &lt;/Layout&gt;
+         
+      &lt;Layout Name="SignInControl" Type="Panel"&gt;
+    &lt;Row&gt;
+      &lt;Cell&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;colspan&lt;/Name&gt;
+            &lt;AttributeValue&gt;4&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;style&lt;/Name&gt;
+            &lt;AttributeValue&gt;height: 5px;&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;RowAttributes /&gt;
+    &lt;/Row&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:LABEL NAME="LoginMessage"/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;colspan&lt;/Name&gt;
+                &lt;AttributeValue&gt;4&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;colspan&lt;/Name&gt;
+                &lt;AttributeValue&gt;4&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;style&lt;/Name&gt;
+                &lt;AttributeValue&gt;height: 5px;&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:LABEL NAME="UserNameLabel"/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;field_label&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:TEXTBOX NAME="UserName" /&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;field_value&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:SELECTION NAME="RememberUserName"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:LABEL NAME="RememberUserNameLabel" /&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;field_label&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;colspan&lt;/Name&gt;
+            &lt;AttributeValue&gt;4&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;style&lt;/Name&gt;
+            &lt;AttributeValue&gt;height: 5px;&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+    &lt;/Row&gt;
+    &lt;Row&gt;
+      &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:LABEL NAME="PasswordLabel"/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;field_label&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:TEXTBOX NAME="Password"/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;field_value&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:SELECTION NAME="RememberPassword"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:LABEL NAME="RememberPasswordLabel"/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;field_label&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+    &lt;Row&gt;
+      &lt;Cell&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;colspan&lt;/Name&gt;
+            &lt;AttributeValue&gt;4&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;style&lt;/Name&gt;
+            &lt;AttributeValue&gt;height: 5px;&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+    &lt;/Row&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+        &lt;CellAttributes /&gt;
+      &lt;/Cell&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:LINKBUTTON NAME="EmailLinkButton" /&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+            &lt;Attribute&gt;
+              &lt;Name&gt;class&lt;/Name&gt;
+              &lt;AttributeValue&gt;fyp_link&lt;/AttributeValue&gt;
+            &lt;/Attribute&gt;                
+        &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:SELECTION NAME="AutomaticallySignIn"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:LABEL NAME="AutomaticallySignInLabel"/&amp;gt;&lt;/Value&gt;
+            &lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;class&lt;/Name&gt;
+                &lt;AttributeValue&gt;field_label&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+    &lt;/Row&gt;
+    &lt;Row&gt;
+      &lt;Cell&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;colspan&lt;/Name&gt;
+            &lt;AttributeValue&gt;4&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;style&lt;/Name&gt;
+            &lt;AttributeValue&gt;height: 5px;&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+        &lt;/Row&gt;
+    &lt;Row&gt;
+      &lt;Cell&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;style&lt;/Name&gt;
+            &lt;AttributeValue&gt;height: 5px;&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;Cell&gt;
+        &lt;Value&gt;&amp;lt;GEN:LABEL Name="PasswordMessage" /&amp;gt;&lt;/Value&gt;
+        &lt;CellAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;style&lt;/Name&gt;
+            &lt;AttributeValue&gt;height: 5px;&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;colspan&lt;/Name&gt;
+            &lt;AttributeValue&gt;3&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/CellAttributes&gt;
+      &lt;/Cell&gt;
+      &lt;RowAttributes /&gt;
+    &lt;/Row&gt;
+        &lt;TableAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellpadding&lt;/Name&gt;
+            &lt;AttributeValue&gt;1&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellspacing&lt;/Name&gt;
+            &lt;AttributeValue&gt;1&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;border&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/TableAttributes&gt;
+      &lt;/Layout&gt;
+         
+      &lt;Layout Name="PageButtons" Type="PageButton"&gt;
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:BUTTON NAME="OKButton"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;GEN:BUTTON NAME="CancelButton"/&amp;gt;&lt;/Value&gt;
+          &lt;/Cell&gt;
+        &lt;/Row&gt;
+        &lt;TableAttributes&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellpadding&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;cellspacing&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;border&lt;/Name&gt;
+            &lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;style&lt;/Name&gt;
+            &lt;AttributeValue&gt;padding-top:10px; padding-bottom:5px;&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute&gt;
+            &lt;Name&gt;align&lt;/Name&gt;
+            &lt;AttributeValue&gt;center&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/TableAttributes&gt;
+      &lt;/Layout&gt;
+    &lt;/LayoutDefinition&gt;]]&gt;
+  </LayoutDefinition>
+</ComponentDefinition>

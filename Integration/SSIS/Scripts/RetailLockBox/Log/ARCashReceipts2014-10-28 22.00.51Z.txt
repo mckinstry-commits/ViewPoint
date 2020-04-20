@@ -1,0 +1,14 @@
+2014-10-28 22:00:51Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-10-28 22:00:51Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\TestFour.zip
+2014-10-28 22:00:51Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.00.51Z_1
+2014-10-28 22:00:51Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.00.51Z_1
+2014-10-28 22:00:53Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.00.51Z_1\TestFour.csv
+2014-10-28 22:00:53Z	Environment: Server: VIEWPOINTAG\VIEWPOINT Database: Viewpoint
+2014-10-28 22:00:53Z	Upload record 12218, Batch ID 2 : Unsuccessful : Standalone attachment created.  Error creating header record.
+2014-10-28 22:00:53Z	Copying file 'C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.00.51Z_1\images\AR_204854_12218.pdf' to '\\setestconimg\Viewpoint\Company1\AR\ARCashReceipts\09-2014': Successful
+2014-10-28 22:00:53Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.00.51Z_1\TestFour.csv
+2014-10-28 22:00:53Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.00.51Z_1
+2014-10-28 22:00:53Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AR\TestFour.zip' to '': Successful
+2014-10-28 22:00:53Z	Removing file 'C:\Scripts\RetailLockBox\Download\AR\TestFour.zip': Successful
+2014-10-28 22:00:53Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\TestFour.zip
+2014-10-28 22:00:53Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

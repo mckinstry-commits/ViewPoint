@@ -1,0 +1,15 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE view [dbo].[HQDXPREH] as select a.* From bHQDXPREH a
+GO
+GRANT SELECT ON  [dbo].[HQDXPREH] TO [public]
+GRANT INSERT ON  [dbo].[HQDXPREH] TO [public]
+GRANT DELETE ON  [dbo].[HQDXPREH] TO [public]
+GRANT UPDATE ON  [dbo].[HQDXPREH] TO [public]
+GRANT SELECT ON  [dbo].[HQDXPREH] TO [Viewpoint]
+GRANT INSERT ON  [dbo].[HQDXPREH] TO [Viewpoint]
+GRANT DELETE ON  [dbo].[HQDXPREH] TO [Viewpoint]
+GRANT UPDATE ON  [dbo].[HQDXPREH] TO [Viewpoint]
+GO

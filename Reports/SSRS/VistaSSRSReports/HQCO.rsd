@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="HQCO">
+    <Query>
+      <DataSourceReference>Viewpoint</DataSourceReference>
+      <CommandText>set transaction isolation level read uncommitted
+SELECT       h.HQCo, h.Name
+FROM            dbo.HQCO h (nolock)
+where h.HQCo in (1,20,100)  --needed to have more than just SMCo, this will need to be manually updated.
+--Join dbo.SMCO s on s.SMCo=h.HQCo</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="HQCo">
+        <DataField>HQCo</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="Name">
+        <DataField>Name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

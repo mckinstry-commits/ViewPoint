@@ -1,0 +1,24 @@
+2014-10-29 11:15:16Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-10-29 11:15:16Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\TestOneOne.zip
+2014-10-29 11:15:16Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-29 11.15.16Z_1
+2014-10-29 11:15:16Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-29 11.15.16Z_1
+2014-10-29 11:15:18Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-29 11.15.16Z_1\TestOneOne.csv
+2014-10-29 11:15:18Z	Environment: Server: VIEWPOINTAG\VIEWPOINT Database: Viewpoint
+2014-10-29 11:15:18Z	Upload record 36474, Batch ID 28 : Successful : Batch, Header and Attachment records created successfully.  Attachment exists.
+2014-10-29 11:15:18Z	Upload record 3174, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Upload record 37182, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Upload record 37041, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Upload record 31861, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Upload record 12218, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Upload record 37198, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Upload record 293, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Upload record 1979, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Upload record 6125, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Upload record 7880, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Upload record 31817, Batch ID 28 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-29 11:15:18Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-29 11.15.16Z_1\TestOneOne.csv
+2014-10-29 11:15:18Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-29 11.15.16Z_1
+2014-10-29 11:15:19Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AR\TestOneOne.zip' to '': Successful
+2014-10-29 11:15:19Z	Removing file 'C:\Scripts\RetailLockBox\Download\AR\TestOneOne.zip': Successful
+2014-10-29 11:15:19Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\TestOneOne.zip
+2014-10-29 11:15:19Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

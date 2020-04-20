@@ -1,0 +1,9 @@
+2014-10-28 11:09:02Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-10-28 11:09:02Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\TestOne.zip
+2014-10-28 11:09:02Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.09.02Z_1
+2014-10-28 11:09:02Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.09.02Z_1
+2014-10-28 11:09:03Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.09.02Z_1\TestOne.csv
+2014-10-28 11:09:03Z	Environment: Server: VIEWPOINTAG\VIEWPOINT Database: Viewpoint
+2014-10-28 11:09:03Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 11.09.02Z_1\TestOne.csv
+2014-10-28 11:09:03Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\TestOne.zip
+2014-10-28 11:09:03Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

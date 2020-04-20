@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE view [dbo].[EMJC] as select a.* From bEMJC a
+GO
+GRANT SELECT ON  [dbo].[EMJC] TO [public]
+GRANT INSERT ON  [dbo].[EMJC] TO [public]
+GRANT DELETE ON  [dbo].[EMJC] TO [public]
+GRANT UPDATE ON  [dbo].[EMJC] TO [public]
+GO

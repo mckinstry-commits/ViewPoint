@@ -1,0 +1,41 @@
+CREATE TABLE [dbo].[vSMINBatch]
+(
+[SMINBatchID] [bigint] NOT NULL IDENTITY(1, 1),
+[SMCo] [dbo].[bCompany] NOT NULL,
+[Mth] [dbo].[bMonth] NOT NULL,
+[BatchId] [dbo].[bBatchID] NOT NULL,
+[BatchSeq] [int] NOT NULL,
+[WorkOrder] [int] NOT NULL,
+[WorkCompleted] [int] NOT NULL,
+[SMWorkCompletedID] [bigint] NOT NULL,
+[Scope] [int] NOT NULL,
+[IsReversingEntry] [bit] NOT NULL,
+[SaleDate] [dbo].[bDate] NOT NULL,
+[INCo] [dbo].[bCompany] NOT NULL,
+[INLocation] [dbo].[bLoc] NOT NULL,
+[MaterialGroup] [dbo].[bGroup] NOT NULL,
+[Material] [dbo].[bMatl] NOT NULL,
+[MaterialDescription] [dbo].[bItemDesc] NULL,
+[UM] [dbo].[bUM] NOT NULL,
+[Quantity] [dbo].[bUnits] NOT NULL,
+[UnitCost] [dbo].[bUnitCost] NOT NULL,
+[CostECM] [dbo].[bECM] NOT NULL,
+[TotalCost] [dbo].[bDollar] NOT NULL,
+[UnitPrice] [dbo].[bUnitCost] NOT NULL,
+[PriceECM] [dbo].[bECM] NOT NULL,
+[TotalPrice] [dbo].[bDollar] NOT NULL,
+[SMGLCo] [dbo].[bCompany] NOT NULL,
+[INGLCo] [dbo].[bCompany] NOT NULL,
+[CostOfGoodsGLAccount] [dbo].[bGLAcct] NULL,
+[InventoryGLAccount] [dbo].[bGLAcct] NULL,
+[SMCostGLAccount] [dbo].[bGLAcct] NULL,
+[ServiceSalesGLAccount] [dbo].[bGLAcct] NULL,
+[StockUM] [dbo].[bUM] NOT NULL,
+[StockUnits] [dbo].[bUnits] NOT NULL,
+[StockUnitCost] [dbo].[bUnitCost] NOT NULL,
+[StockECM] [dbo].[bECM] NOT NULL,
+[StockTotalCost] [dbo].[bDollar] NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[vSMINBatch] ADD CONSTRAINT [PK_vSMINBatch] PRIMARY KEY CLUSTERED  ([SMINBatchID]) ON [PRIMARY]
+GO

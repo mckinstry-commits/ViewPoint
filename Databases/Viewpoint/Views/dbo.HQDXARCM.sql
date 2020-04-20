@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE view [dbo].[HQDXARCM] as select a.* From bHQDXARCM a
+GO
+GRANT SELECT ON  [dbo].[HQDXARCM] TO [public]
+GRANT INSERT ON  [dbo].[HQDXARCM] TO [public]
+GRANT DELETE ON  [dbo].[HQDXARCM] TO [public]
+GRANT UPDATE ON  [dbo].[HQDXARCM] TO [public]
+GO

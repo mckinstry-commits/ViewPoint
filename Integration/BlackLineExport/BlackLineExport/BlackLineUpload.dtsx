@@ -1,0 +1,3318 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/11/2018 10:47:53 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SEA-BENWI03"
+  DTS:CreatorName="MCKINSTRY\BenWi"
+  DTS:DTSID="{382AC3F6-01BB-4EB5-AFBD-07021B86921E}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.107"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="BlackLineUpload"
+  DTS:PackageType="5"
+  DTS:VersionBuild="233"
+  DTS:VersionGUID="{2EC77567-C79D-4C56-8B60-CC7F5A0499DF}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[AP OutputDir Flat File Connection]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="AP OutputDir Flat File Connection"
+      DTS:DTSID="{7D323EDE-C233-423A-AE2A-F924ACAC38D4}"
+      DTS:ObjectName="AP OutputDir Flat File Connection">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::OutputDirFileNameAP]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\mckviewpoint\Viewpoint Repository\bulk inserts\ETL\Outbound\BlackLine\Output\SUB_AP_extract_05152019.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{E441902A-D35E-432F-91F5-E86DEFE54BC5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 1"
+              DTS:DTSID="{0E4DEC14-81D6-42B0-A30D-54C7DDD5D88D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 2"
+              DTS:DTSID="{524F94B5-2F6C-4C29-A5F7-D47FA4F2618B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{CB984ED6-CE84-4FF1-9AB9-829F5ACDE1BD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 4"
+              DTS:DTSID="{B192CCDA-55D4-49A1-B659-8BD08D904EF9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 5"
+              DTS:DTSID="{F2774AB7-86A2-4A73-AED1-D3E1A0C30D07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{1D4E12C7-5007-4F71-BE5A-F1C9040A9760}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 7"
+              DTS:DTSID="{A2D4A67E-A8A7-42D0-A65F-65BC3E408F47}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 8"
+              DTS:DTSID="{6D5054B5-1D80-4017-9BFE-7F96DDB02279}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 9"
+              DTS:DTSID="{14A7B3F2-910A-4BD5-8642-E4EF552C1BDD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 10"
+              DTS:DTSID="{61D15801-CD4C-4770-A681-B529A7D86821}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 11"
+              DTS:DTSID="{71C0C08B-4BDF-44FA-9396-545E59EC8016}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 12"
+              DTS:DTSID="{F26F57F9-9C62-434C-9599-4CEEE8C3F1CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 13"
+              DTS:DTSID="{A293433F-34BF-467D-A7E9-AA12C3C85DC3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[AR OutputDir Flat File Connection]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="AR OutputDir Flat File Connection"
+      DTS:DTSID="{EC49107A-D4D1-41DF-907C-8AE4596DD0ED}"
+      DTS:ObjectName="AR OutputDir Flat File Connection">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::OutputDirFileNameAR]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\mckviewpoint\Viewpoint Repository\bulk inserts\ETL\Outbound\BlackLine\Output\SUB_AR_extract_05152019.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{5B253BB2-02CB-4B4B-B9CB-17592E778849}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 1"
+              DTS:DTSID="{3D4669BD-D902-4DCE-B8A6-5183F724ABB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 2"
+              DTS:DTSID="{2AF05735-BA77-4C70-84EE-AF088B0841A6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{88655501-DB87-4EBB-956F-03ED9AC7BC4B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 4"
+              DTS:DTSID="{7ABFA012-E2DA-4EFF-A4D3-B36BF8F6C1D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 5"
+              DTS:DTSID="{E53CA384-4945-4DB1-81AC-9C4F81FB9B16}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{DBDA9407-596B-4144-932F-BB206C7CF7B8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 7"
+              DTS:DTSID="{32A3DF74-0FB1-4107-83A4-9F25A4B0C84D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 8"
+              DTS:DTSID="{FF724AA2-C476-4069-9399-E325E11E809A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 9"
+              DTS:DTSID="{B35B5B88-00E8-474E-B7F3-BAAF7346391C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 10"
+              DTS:DTSID="{09CE33BB-C40A-49E5-9767-8C68F18B1517}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 11"
+              DTS:DTSID="{EF903235-33E6-4F90-9036-C39F8E2C3266}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 12"
+              DTS:DTSID="{FEDDC6EF-9322-4497-A32A-2310D8EB3F3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 13"
+              DTS:DTSID="{EBD9BF18-52E5-45CE-8C3E-379D243AC769}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BlackLine SFTP Connection]"
+      DTS:CreationName="ZS-SFTP"
+      DTS:DTSID="{3E319BD7-6848-4A7F-8189-2B68BF3105F2}"
+      DTS:ObjectName="BlackLine SFTP Connection">
+      <DTS:ObjectData>
+        <ConnectionManager
+          ConnectionString="Protocol=Sftp;ServerName=ftp.blackline.com;Port=22;LogonType=Normal;UserName=mckinstry;Domain=;EncryptionMode=None;KeyFilePath=;ClientCertFilePath=;Account=;VerifyChecksum=False;IgnoreCertErrors=False;MinSslTlsVersion=Any;MaxSslTlsVersion=Any;DoNotReuseSslSessions=False;DoNotReuseControlConnectionSession=False;ProxyType=None;ProxyAuthMode=Basic;ProxyServer=;ProxyPort=1080;ProxyUserName=;ProxyDomain=;TransferMode=Binary;TrustedFingerprints=56:87:2c:44:db:43:4a:7d:4c:0a:89:65:7c:8d:c9:99;MaxUploadSpeedKbps=0;MaxDownloadSpeedKbps=0;UseActiveMode=True;EnableCompression=False;EnableRestoreDateTime=False;DateTimeItemsForRestore=Default;Timeout=300;DefaultDirectory=;TreatUnknownItemsAsFiles=False;DisableSftp4=False;DisableTransferQueue=False;UseSmallPackets=False;WaitForServerWelcomeMessage=False;MinimumKeySize=1023;KeyExchangeAlgorithms=;HostKeyAlgorithms=;MacAlgorithms=;EncryptionAlgorithms=;DoNotSendSignals=False;DoNotSendAbort=False;KeepAliveDuringTransfer=False;PauseBeforeUploadClose=False;SslDoNotInsertEmptyFragment=False;UseLargeBuffer=False;RetainSameConnection=False">
+          <Password
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAAkjkBkqJpESrFGPdpjM9vgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACvMaQjk1V6lJuWFaH3UzOYAAAAAASAAACgAAAAEAAAAIGiu5bpI7kKIsP3o6nW41oYAAAA2EqAzG5IUhuO8MgIXjLpfxAzj+7HXxzXFAAAANQr/P9DY7qg7W54J5erF2iM79Gf</Password>
+        </ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[GL OutputDir Flat File Connection]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="GL OutputDir Flat File Connection"
+      DTS:DTSID="{116B48B3-657D-42B3-AA30-766FAB713802}"
+      DTS:ObjectName="GL OutputDir Flat File Connection">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::OutputDirFileNameGL]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\mckviewpoint\Viewpoint Repository\bulk inserts\ETL\Outbound\BlackLine\Output\GL_Extract_05152019.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{4CBA2B12-45CA-47F8-AD9E-FDAA81AEE671}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 1"
+              DTS:DTSID="{0F6A4F35-265D-4295-AF84-A6F772A8A445}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 2"
+              DTS:DTSID="{AC120E7C-2BE3-424F-ACFF-2F754E2A8243}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{B406A0B4-647F-43FC-8F64-F16E27323902}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 4"
+              DTS:DTSID="{99B2B345-50B8-4A56-A104-A9F6808F430A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 5"
+              DTS:DTSID="{158B5851-0CB2-4446-B063-7A3E37E14205}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{D49C853C-06AD-4FC7-9EF0-E82C4D3F853D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 7"
+              DTS:DTSID="{ED4DE978-2A09-423D-B6C5-411724EDFD0F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 8"
+              DTS:DTSID="{95242988-5CE1-4A0B-AB18-9C905427ED74}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 9"
+              DTS:DTSID="{185D080F-13BF-471B-8986-23E51404E2BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 10"
+              DTS:DTSID="{32CCF79A-98C9-4706-8F0B-6D364E2DBF1F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 11"
+              DTS:DTSID="{CD337A8D-1B94-48A0-8CDE-EB3472AA85C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 12"
+              DTS:DTSID="{AEB87C63-1BCA-46C9-BAEC-A003653F2AFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 13"
+              DTS:DTSID="{9F695A1A-6F29-45F8-8FE1-50EB3A33E98D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 14"
+              DTS:DTSID="{E1039707-5E93-4BF5-92BE-E64097C2EFDC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 15"
+              DTS:DTSID="{DE6B9A58-4121-4E76-A065-970D22AFA9CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 16"
+              DTS:DTSID="{3921CAE8-6A49-4478-AF9A-D47DC6E9A050}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 17"
+              DTS:DTSID="{2BC5F4B1-172C-4D32-9490-BA9003D85FEC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 18"
+              DTS:DTSID="{E2CCFEB7-2115-4447-B957-3D9C6167CA34}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 19"
+              DTS:DTSID="{4C0E14CD-6903-4A6E-8350-12B0DE4B6E35}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 20"
+              DTS:DTSID="{EB3E5258-8B21-4521-89EC-49C6CA28A822}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 21"
+              DTS:DTSID="{A3A506AF-80EB-4DBA-87F3-805A38E66B62}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[VIEWPOINTAG\VIEWPOINT.Viewpoint1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{3C057DAC-DEAE-44DC-BA54-A47D12DC5F2D}"
+      DTS:ObjectName="VIEWPOINTAG\VIEWPOINT.Viewpoint1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=VIEWPOINTAG\VIEWPOINT;Initial Catalog=Viewpoint;Integrated Security=True;Application Name=SSIS-Package-{3C057DAC-DEAE-44DC-BA54-A47D12DC5F2D}VPSTAGINGAG\VIEWPOINT.Viewpoint1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2F85C5EF-421C-43BA-B76C-04FC4117532C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ArchiveDir">
+      <DTS:VariableValue
+        DTS:DataType="8">\\sestgviewpoint\Viewpoint Repository\bulk inserts\ETL\Outbound\BlackLine\Archive\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8EAECD8C-3EEE-4DD9-8184-1E2AB9DAAC06}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="dummyFileName">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\Public\BlackLine\Output1\GL_Extract_09062018.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F0C9AC72-D3F9-4055-BCF0-1B5106B1799E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileNameDelete">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\benwi\Desktop\BlackLine Test\Output\AR_Extract_08012018.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E6031153-9557-4BBE-898D-3D7A00F8120F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="OutputDir">
+      <DTS:VariableValue
+        DTS:DataType="8">\\mckviewpoint\Viewpoint Repository\bulk inserts\ETL\Outbound\BlackLine\Output\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1270608E-8DDB-4507-ABAA-EA6F93D832C1}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::OutputDir] + &quot;SUB_AP_extract_&quot; + Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;m&quot;,getdate()),2) + Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;d&quot;,getdate()),2) + (DT_STR,4,1252) DatePart(&quot;yyyy&quot;,getdate()) + &quot;.txt&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="OutputDirFileNameAP">
+      <DTS:VariableValue
+        DTS:DataType="8">\\mckviewpoint\Viewpoint Repository\bulk inserts\ETL\Outbound\BlackLine\Output\SUB_AP_extract_05152019.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{02F8F322-3ED5-4A33-A21B-D79B8657E501}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::OutputDir] + &quot;SUB_AR_extract_&quot; + Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;m&quot;,getdate()),2) + Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;d&quot;,getdate()),2) + (DT_STR,4,1252) DatePart(&quot;yyyy&quot;,getdate()) + &quot;.txt&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="OutputDirFileNameAR">
+      <DTS:VariableValue
+        DTS:DataType="8">\\mckviewpoint\Viewpoint Repository\bulk inserts\ETL\Outbound\BlackLine\Output\SUB_AR_extract_05152019.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9F737A8B-2E9E-4B7A-B707-EAECA17EFD33}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::OutputDir] + &quot;GL_Extract_&quot; + Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;m&quot;,getdate()),2) + Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;d&quot;,getdate()),2) + (DT_STR,4,1252) DatePart(&quot;yyyy&quot;,getdate()) + &quot;.txt&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="OutputDirFileNameGL">
+      <DTS:VariableValue
+        DTS:DataType="8">\\mckviewpoint\Viewpoint Repository\bulk inserts\ETL\Outbound\BlackLine\Output\GL_Extract_05152019.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{198DAC19-70F4-4703-AFD8-160925FECD62}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="OutputFileNameAP">
+      <DTS:VariableValue
+        DTS:DataType="8">SUB_AP_extract_" + Right("0" + (DT_STR,4,1252) DatePart("m",getdate()),2) + Right("0" + (DT_STR,4,1252) DatePart("d",getdate()),2) + (DT_STR,4,1252) DatePart("yyyy",getdate()) + ".txt"</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5CB933B6-A6D7-4830-AA8C-3B902E424B57}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="OutputFileNameAR">
+      <DTS:VariableValue
+        DTS:DataType="8">SUB_AR_extract_" + Right("0" + (DT_STR,4,1252) DatePart("m",getdate()),2) + Right("0" + (DT_STR,4,1252) DatePart("d",getdate()),2) + (DT_STR,4,1252) DatePart("yyyy",getdate()) + ".txt"</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{477BBD9B-2DE1-4CFC-B874-0D16FCD41B10}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="OutputFileNameGL">
+      <DTS:VariableValue
+        DTS:DataType="8">"GL_Extract_" + Right("0" + (DT_STR,4,1252) DatePart("m",getdate()),2) + Right("0" + (DT_STR,4,1252) DatePart("d",getdate()),2) + (DT_STR,4,1252) DatePart("yyyy",getdate()) + ".txt"</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3FD342E2-13ED-44C5-A57E-CA34B5DE068D}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::OutputDir] + &quot;*.txt&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="OutputTXTFiles">
+      <DTS:VariableValue
+        DTS:DataType="8">\\mckviewpoint\Viewpoint Repository\bulk inserts\ETL\Outbound\BlackLine\Output\*.txt</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\AP Data Flow"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{abf7ceaa-f148-4e8f-b76c-15d0f40d541f}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="AP Data Flow"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\AP Data Flow\ADO NET Source AP"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source AP"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">EXECUTE mckspBlackLineSumRpt 'AP'</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\AP Data Flow\ADO NET Source AP.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[VIEWPOINTAG\VIEWPOINT.Viewpoint1]"
+                  connectionManagerRefId="Package.ConnectionManagers[VIEWPOINTAG\VIEWPOINT.Viewpoint1]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[EUI]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[EUI]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[EUI]"
+                      name="EUI"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Account Number]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Account Number]"
+                      length="4"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Account Number]"
+                      name="Account Number"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key3]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key3]"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key3]"
+                      name="Key3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key4]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key4]"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key4]"
+                      name="Key4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key5]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key5]"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key5]"
+                      name="Key5"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key6]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key6]"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key6]"
+                      name="Key6"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key7]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key7]"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key7]"
+                      name="Key7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key8]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key8]"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key8]"
+                      name="Key8"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key9]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key9]"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key9]"
+                      name="Key9"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key10]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key10]"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key10]"
+                      name="Key10"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Period End Date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Period End Date]"
+                      length="10"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Period End Date]"
+                      name="Period End Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Subledger Reporting Balance]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Subledger Reporting Balance]"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Subledger Reporting Balance]"
+                      name="Subledger Reporting Balance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Subledger Alternate Balance]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Subledger Alternate Balance]"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Subledger Alternate Balance]"
+                      name="Subledger Alternate Balance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Subledger Account Balance]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Subledger Account Balance]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Subledger Account Balance]"
+                      name="Subledger Account Balance"
+                      precision="38"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[EUI]"
+                      dataType="ui1"
+                      name="EUI" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Account Number]"
+                      dataType="wstr"
+                      length="4"
+                      name="Account Number" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key3]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key3" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key4]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key4" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key5]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key5" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key6]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key6" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key7]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key7" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key8]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key8" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key9]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key9" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Key10]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key10" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Period End Date]"
+                      dataType="wstr"
+                      length="10"
+                      name="Period End Date" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Subledger Reporting Balance]"
+                      dataType="wstr"
+                      length="1"
+                      name="Subledger Reporting Balance" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Subledger Alternate Balance]"
+                      dataType="wstr"
+                      length="1"
+                      name="Subledger Alternate Balance" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].ExternalColumns[Subledger Account Balance]"
+                      dataType="numeric"
+                      name="Subledger Account Balance"
+                      precision="38"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[EUI]"
+                      dataType="ui1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[EUI]"
+                      name="EUI" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Account Number]"
+                      dataType="wstr"
+                      length="4"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Account Number]"
+                      name="Account Number" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key3]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key3]"
+                      name="Key3" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key4]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key4]"
+                      name="Key4" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key5]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key5]"
+                      name="Key5" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key6]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key6]"
+                      name="Key6" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key7]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key7]"
+                      name="Key7" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key8]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key8]"
+                      name="Key8" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key9]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key9]"
+                      name="Key9" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key10]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Key10]"
+                      name="Key10" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Period End Date]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Period End Date]"
+                      name="Period End Date" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Subledger Reporting Balance]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Subledger Reporting Balance]"
+                      name="Subledger Reporting Balance" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Subledger Alternate Balance]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Subledger Alternate Balance]"
+                      name="Subledger Alternate Balance" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Subledger Account Balance]"
+                      dataType="numeric"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[Subledger Account Balance]"
+                      name="Subledger Account Balance"
+                      precision="38"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\AP Data Flow\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\AP Data Flow\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[AP OutputDir Flat File Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[AP OutputDir Flat File Connection]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[EUI]"
+                      cachedDataType="ui1"
+                      cachedName="EUI"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 0]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[EUI]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Account Number]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="Account Number"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 1]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Account Number]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key3]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key3"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 2]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key3]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key4]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key4"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 3]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key4]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key5]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key5"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 4]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key5]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key6]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key6"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 5]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key6]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key7]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key7"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key7]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key8]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key8"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 7]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key8]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key9]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key9"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 8]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key9]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key10]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key10"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 9]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Key10]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Period End Date]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="Period End Date"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 10]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Period End Date]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Subledger Reporting Balance]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Subledger Reporting Balance"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 11]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Subledger Reporting Balance]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Subledger Alternate Balance]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Subledger Alternate Balance"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 12]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Subledger Alternate Balance]" />
+                    <inputColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Subledger Account Balance]"
+                      cachedDataType="numeric"
+                      cachedName="Subledger Account Balance"
+                      cachedPrecision="38"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 13]"
+                      lineageId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output].Columns[Subledger Account Balance]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 0" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 1" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 2" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 3" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 4" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 5" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 6" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 7]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 7" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 8]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 8" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 9]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 9" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 10]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 10" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 11]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 11" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 12]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 12" />
+                    <externalMetadataColumn
+                      refId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 13" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\AP Data Flow.Paths[ADO NET Source Output]"
+              endId="Package\AP Data Flow\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\AP Data Flow\ADO NET Source AP.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\AR Data Flow"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{b3662114-1575-4c02-b020-4e33fc9a603b}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="AR Data Flow"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\AR Data Flow\ADO NET Source AR"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source AR"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">EXECUTE mckspBlackLineSumRpt 'AR'</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\AR Data Flow\ADO NET Source AR.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[VIEWPOINTAG\VIEWPOINT.Viewpoint1]"
+                  connectionManagerRefId="Package.ConnectionManagers[VIEWPOINTAG\VIEWPOINT.Viewpoint1]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[EUI]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[EUI]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[EUI]"
+                      name="EUI"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Account Number]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Account Number]"
+                      length="4"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Account Number]"
+                      name="Account Number"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key3]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key3]"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key3]"
+                      name="Key3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key4]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key4]"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key4]"
+                      name="Key4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key5]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key5]"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key5]"
+                      name="Key5"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key6]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key6]"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key6]"
+                      name="Key6"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key7]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key7]"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key7]"
+                      name="Key7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key8]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key8]"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key8]"
+                      name="Key8"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key9]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key9]"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key9]"
+                      name="Key9"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key10]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key10]"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key10]"
+                      name="Key10"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Period End Date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Period End Date]"
+                      length="10"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Period End Date]"
+                      name="Period End Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Subledger Reporting Balance]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Subledger Reporting Balance]"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Subledger Reporting Balance]"
+                      name="Subledger Reporting Balance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Subledger Alternate Balance]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Subledger Alternate Balance]"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Subledger Alternate Balance]"
+                      name="Subledger Alternate Balance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Subledger Account Balance]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Subledger Account Balance]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Subledger Account Balance]"
+                      name="Subledger Account Balance"
+                      precision="38"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[EUI]"
+                      dataType="ui1"
+                      name="EUI" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Account Number]"
+                      dataType="wstr"
+                      length="4"
+                      name="Account Number" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key3]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key3" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key4]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key4" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key5]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key5" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key6]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key6" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key7]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key7" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key8]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key8" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key9]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key9" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Key10]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key10" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Period End Date]"
+                      dataType="wstr"
+                      length="10"
+                      name="Period End Date" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Subledger Reporting Balance]"
+                      dataType="wstr"
+                      length="1"
+                      name="Subledger Reporting Balance" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Subledger Alternate Balance]"
+                      dataType="wstr"
+                      length="1"
+                      name="Subledger Alternate Balance" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].ExternalColumns[Subledger Account Balance]"
+                      dataType="numeric"
+                      name="Subledger Account Balance"
+                      precision="38"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[EUI]"
+                      dataType="ui1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[EUI]"
+                      name="EUI" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Account Number]"
+                      dataType="wstr"
+                      length="4"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Account Number]"
+                      name="Account Number" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key3]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key3]"
+                      name="Key3" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key4]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key4]"
+                      name="Key4" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key5]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key5]"
+                      name="Key5" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key6]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key6]"
+                      name="Key6" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key7]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key7]"
+                      name="Key7" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key8]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key8]"
+                      name="Key8" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key9]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key9]"
+                      name="Key9" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key10]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Key10]"
+                      name="Key10" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Period End Date]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Period End Date]"
+                      name="Period End Date" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Subledger Reporting Balance]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Subledger Reporting Balance]"
+                      name="Subledger Reporting Balance" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Subledger Alternate Balance]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Subledger Alternate Balance]"
+                      name="Subledger Alternate Balance" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Subledger Account Balance]"
+                      dataType="numeric"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[Subledger Account Balance]"
+                      name="Subledger Account Balance"
+                      precision="38"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\AR Data Flow\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\AR Data Flow\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[AR OutputDir Flat File Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[AR OutputDir Flat File Connection]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[EUI]"
+                      cachedDataType="ui1"
+                      cachedName="EUI"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 0]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[EUI]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Account Number]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="Account Number"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 1]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Account Number]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key3]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key3"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 2]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key3]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key4]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key4"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 3]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key4]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key5]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key5"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 4]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key5]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key6]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key6"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 5]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key6]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key7]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key7"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key7]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key8]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key8"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 7]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key8]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key9]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key9"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 8]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key9]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key10]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key10"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 9]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Key10]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Period End Date]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="Period End Date"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 10]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Period End Date]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Subledger Reporting Balance]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Subledger Reporting Balance"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 11]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Subledger Reporting Balance]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Subledger Alternate Balance]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Subledger Alternate Balance"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 12]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Subledger Alternate Balance]" />
+                    <inputColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Subledger Account Balance]"
+                      cachedDataType="numeric"
+                      cachedName="Subledger Account Balance"
+                      cachedPrecision="38"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 13]"
+                      lineageId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output].Columns[Subledger Account Balance]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 0" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 1" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 2" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 3" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 4" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 5" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 6" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 7]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 7" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 8]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 8" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 9]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 9" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 10]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 10" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 11]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 11" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 12]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 12" />
+                    <externalMetadataColumn
+                      refId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 13" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\AR Data Flow.Paths[ADO NET Source Output]"
+              endId="Package\AR Data Flow\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\AR Data Flow\ADO NET Source AR.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Old File Delete"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Old File Delete"
+      DTS:DTSID="{58B66F0E-E624-43C9-95D0-03CE2C5250C5}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Old File Delete">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{6BBCB183-00E5-4ECC-BA2A-4A28DDCDAB49}"
+        DTS:ObjectName="{6BBCB183-00E5-4ECC-BA2A-4A28DDCDAB49}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::OutputDir]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="\\mckviewpoint\Viewpoint Repository\bulk inserts\ETL\Outbound\BlackLine\Output\" />
+            <FEFEProperty
+              FileSpec="*.txt" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Old File Delete\File System Task"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{F756DA64-774C-4AEF-8A17-759E79ACF3AD}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="File System Task"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="DeleteFile"
+              TaskSourcePath="User::FileNameDelete"
+              TaskIsSourceVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{D2B26052-13EC-4F1B-A34A-8DE2F60BE0CC}"
+          DTS:ObjectName="{D2B26052-13EC-4F1B-A34A-8DE2F60BE0CC}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::FileNameDelete" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\GL Data Flow"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4a636919-cd91-4c26-a0a0-71d22d669234}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="GL Data Flow"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\GL Data Flow\ADO NET Source GL"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source GL"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">EXEC mckspBlackLineGLRpt</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">600</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\GL Data Flow\ADO NET Source GL.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[VIEWPOINTAG\VIEWPOINT.Viewpoint1]"
+                  connectionManagerRefId="Package.ConnectionManagers[VIEWPOINTAG\VIEWPOINT.Viewpoint1]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Entity Unique Identifier]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Entity Unique Identifier]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Entity Unique Identifier]"
+                      name="Entity Unique Identifier"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Number]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Account Number]"
+                      length="20"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Number]"
+                      name="Account Number"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[SubAcct Key 3]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[SubAcct Key 3]"
+                      length="20"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[SubAcct Key 3]"
+                      name="SubAcct Key 3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[DeptKey 4]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[DeptKey 4]"
+                      length="20"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[DeptKey 4]"
+                      name="DeptKey 4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 5]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 5]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 5]"
+                      name="Key 5"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 6]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 6]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 6]"
+                      name="Key 6"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 7]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 7]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 7]"
+                      name="Key 7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 8]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 8]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 8]"
+                      name="Key 8"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 9]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 9]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 9]"
+                      name="Key 9"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 10]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 10]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 10]"
+                      name="Key 10"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Description]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Account Description]"
+                      length="30"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Description]"
+                      name="Account Description"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Reference]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Account Reference]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Reference]"
+                      name="Account Reference"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Financial Statement]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Financial Statement]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Financial Statement]"
+                      name="Financial Statement"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Type]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Account Type]"
+                      length="9"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Type]"
+                      name="Account Type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Active Account]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Active Account]"
+                      length="5"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Active Account]"
+                      name="Active Account"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Activity in Period]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Activity in Period]"
+                      length="5"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Activity in Period]"
+                      name="Activity in Period"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Alternative Currency]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Alternative Currency]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Alternative Currency]"
+                      name="Alternative Currency"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Currency]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Account Currency]"
+                      length="3"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Currency]"
+                      name="Account Currency"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Period End Date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Period End Date]"
+                      length="4000"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Period End Date]"
+                      name="Period End Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[GL Reporting Balance]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[GL Reporting Balance]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[GL Reporting Balance]"
+                      name="GL Reporting Balance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[GL Alternative Balance]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[GL Alternative Balance]"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[GL Alternative Balance]"
+                      name="GL Alternative Balance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[GL Account Balance]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[GL Account Balance]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[GL Account Balance]"
+                      name="GL Account Balance"
+                      precision="38"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Entity Unique Identifier]"
+                      dataType="ui1"
+                      name="Entity Unique Identifier" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Account Number]"
+                      dataType="wstr"
+                      length="20"
+                      name="Account Number" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[SubAcct Key 3]"
+                      dataType="wstr"
+                      length="20"
+                      name="SubAcct Key 3" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[DeptKey 4]"
+                      dataType="wstr"
+                      length="20"
+                      name="DeptKey 4" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 5]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key 5" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 6]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key 6" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 7]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key 7" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 8]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key 8" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 9]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key 9" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Key 10]"
+                      dataType="wstr"
+                      length="1"
+                      name="Key 10" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Account Description]"
+                      dataType="wstr"
+                      length="30"
+                      name="Account Description" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Account Reference]"
+                      dataType="wstr"
+                      length="1"
+                      name="Account Reference" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Financial Statement]"
+                      dataType="wstr"
+                      length="1"
+                      name="Financial Statement" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Account Type]"
+                      dataType="wstr"
+                      length="9"
+                      name="Account Type" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Active Account]"
+                      dataType="wstr"
+                      length="5"
+                      name="Active Account" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Activity in Period]"
+                      dataType="wstr"
+                      length="5"
+                      name="Activity in Period" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Alternative Currency]"
+                      dataType="wstr"
+                      length="1"
+                      name="Alternative Currency" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Account Currency]"
+                      dataType="wstr"
+                      length="3"
+                      name="Account Currency" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[Period End Date]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Period End Date" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[GL Reporting Balance]"
+                      dataType="wstr"
+                      length="1"
+                      name="GL Reporting Balance" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[GL Alternative Balance]"
+                      dataType="wstr"
+                      length="1"
+                      name="GL Alternative Balance" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].ExternalColumns[GL Account Balance]"
+                      dataType="numeric"
+                      name="GL Account Balance"
+                      precision="38"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Entity Unique Identifier]"
+                      dataType="ui1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Entity Unique Identifier]"
+                      name="Entity Unique Identifier" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Account Number]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Account Number]"
+                      name="Account Number" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[SubAcct Key 3]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[SubAcct Key 3]"
+                      name="SubAcct Key 3" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[DeptKey 4]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[DeptKey 4]"
+                      name="DeptKey 4" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 5]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 5]"
+                      name="Key 5" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 6]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 6]"
+                      name="Key 6" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 7]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 7]"
+                      name="Key 7" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 8]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 8]"
+                      name="Key 8" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 9]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 9]"
+                      name="Key 9" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 10]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Key 10]"
+                      name="Key 10" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Account Description]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Account Description]"
+                      name="Account Description" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Account Reference]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Account Reference]"
+                      name="Account Reference" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Financial Statement]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Financial Statement]"
+                      name="Financial Statement" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Account Type]"
+                      dataType="wstr"
+                      length="9"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Account Type]"
+                      name="Account Type" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Active Account]"
+                      dataType="wstr"
+                      length="5"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Active Account]"
+                      name="Active Account" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Activity in Period]"
+                      dataType="wstr"
+                      length="5"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Activity in Period]"
+                      name="Activity in Period" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Alternative Currency]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Alternative Currency]"
+                      name="Alternative Currency" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Account Currency]"
+                      dataType="wstr"
+                      length="3"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Account Currency]"
+                      name="Account Currency" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Period End Date]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[Period End Date]"
+                      name="Period End Date" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[GL Reporting Balance]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[GL Reporting Balance]"
+                      name="GL Reporting Balance" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[GL Alternative Balance]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[GL Alternative Balance]"
+                      name="GL Alternative Balance" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[GL Account Balance]"
+                      dataType="numeric"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[GL Account Balance]"
+                      name="GL Account Balance"
+                      precision="38"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\GL Data Flow\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\GL Data Flow\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[GL OutputDir Flat File Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[GL OutputDir Flat File Connection]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Entity Unique Identifier]"
+                      cachedDataType="ui1"
+                      cachedName="Entity Unique Identifier"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 0]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Entity Unique Identifier]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Account Number]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Account Number"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 1]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Number]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[SubAcct Key 3]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="SubAcct Key 3"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 2]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[SubAcct Key 3]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[DeptKey 4]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="DeptKey 4"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 3]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[DeptKey 4]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key 5]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key 5"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 4]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 5]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key 6]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key 6"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 5]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 6]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key 7]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key 7"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 7]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key 8]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key 8"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 7]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 8]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key 9]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key 9"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 8]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 9]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Key 10]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Key 10"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 9]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Key 10]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Account Description]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Account Description"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 10]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Description]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Account Reference]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Account Reference"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 11]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Reference]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Financial Statement]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Financial Statement"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 12]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Financial Statement]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Account Type]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="Account Type"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 13]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Type]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Active Account]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="Active Account"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 14]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Active Account]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Activity in Period]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="Activity in Period"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 15]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Activity in Period]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Alternative Currency]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Alternative Currency"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 16]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Alternative Currency]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Account Currency]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="Account Currency"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 17]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Account Currency]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[Period End Date]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Period End Date"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 18]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[Period End Date]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[GL Reporting Balance]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="GL Reporting Balance"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 19]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[GL Reporting Balance]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[GL Alternative Balance]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="GL Alternative Balance"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 20]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[GL Alternative Balance]" />
+                    <inputColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].Columns[GL Account Balance]"
+                      cachedDataType="numeric"
+                      cachedName="GL Account Balance"
+                      cachedPrecision="38"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 21]"
+                      lineageId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output].Columns[GL Account Balance]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 0" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 1" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 2" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 3" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 4" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 5" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 6" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 7]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 7" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 8]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 8" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 9]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 9" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 10]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 10" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 11]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 11" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 12]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 12" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 13" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 14]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 14" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 15]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 15" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 16]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 16" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 17]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 17" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 18]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 18" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 19]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 19" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 20]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 20" />
+                    <externalMetadataColumn
+                      refId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 21]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 21" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\GL Data Flow.Paths[ADO NET Source Output]"
+              endId="Package\GL Data Flow\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\GL Data Flow\ADO NET Source GL.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ZS Secure FTP Task"
+      DTS:CreationName="ZappySys.SecureFtpTask"
+      DTS:Description="ZS Secure FTP Task"
+      DTS:DTSID="{E9109364-213C-440C-ACA1-0920AB99C0D3}"
+      DTS:ExecutableType="ZappySys.SecureFtpTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ZS Secure FTP Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SecureFtpTask
+          StorageAction="UploadFileToFtp"
+          FileOverwriteAction="OverwriteAll"
+          ContinueOnError="False"
+          ThrowErrorIfSourceNotFound="True"
+          DeleteSourceWhenDone="False"
+          SourceStorageConnection=""
+          SourcePathAccessMode="Direct"
+          SourcePathValue="{{User::OutputTXTFiles}}"
+          SourcePathConnection=""
+          SourcePathVariable=""
+          Recursive="False"
+          ResultVariable=""
+          TargetStorageConnection="BlackLine SFTP Connection"
+          TargetPathAccessMode="Direct"
+          TargetPathValue="/PROD"
+          TargetPathConnection=""
+          TargetPathVariable=""
+          CreateMissingTargetFolder="True"
+          ExcludeRegXPattern=""
+          IncludeRegXPattern=""
+          SortBy="Size"
+          SortDirection="Asc"
+          WhereClause=""
+          EnableSort="False"
+          MaxItems="0"
+          LogLevel="Debugging"
+          PrefixTimestamp="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{73AEC771-BB0D-432B-8BCD-3129A392E679}"
+      DTS:From="Package\Foreach Old File Delete"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\GL Data Flow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{E2487067-CF37-4F94-A041-FE1B66BD38CB}"
+      DTS:From="Package\Foreach Old File Delete"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\AP Data Flow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{685FE64A-C0E3-4BEF-A83F-011E5885D6BD}"
+      DTS:From="Package\Foreach Old File Delete"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\AR Data Flow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{9652A1CC-0816-48E2-97C4-3EE36D2603EE}"
+      DTS:From="Package\GL Data Flow"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\ZS Secure FTP Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{675A95E7-99AA-4A7F-A1D5-AE0C9D2674D7}"
+      DTS:From="Package\AP Data Flow"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\ZS Secure FTP Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{887DEBB3-EFC1-41BB-849D-42ADB61908DB}"
+      DTS:From="Package\AR Data Flow"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\ZS Secure FTP Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="142,42"
+          Id="Package\AP Data Flow"
+          TopLeft="588,272" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\AR Data Flow"
+          TopLeft="750,274" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Foreach Old File Delete\File System Task"
+          TopLeft="50,46" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="285,144"
+          Size="285,187"
+          Id="Package\Foreach Old File Delete"
+          TopLeft="520,9" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\GL Data Flow"
+          TopLeft="413,271" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\ZS Secure FTP Task"
+          TopLeft="580,427" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="593.25,196">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-109.25,75"
+              Start="0,0"
+              End="-109.25,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.4634994206257" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.4634994206257"
+                    Point2="0,25.4634994206257"
+                    Point3="-4,25.4634994206257" />
+                  <mssgle:LineSegment
+                    End="-105.25,25.4634994206257" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-105.25,25.4634994206257"
+                    Point2="-109.25,25.4634994206257"
+                    Point3="-109.25,29.4634994206257" />
+                  <mssgle:LineSegment
+                    End="-109.25,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="660.75,196">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,76"
+              Start="0,0"
+              End="0,68.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="731.75,196">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="89.25,78"
+              Start="0,0"
+              End="89.25,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.4820393974508" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.4820393974508"
+                    Point2="0,26.4820393974508"
+                    Point3="4,26.4820393974508" />
+                  <mssgle:LineSegment
+                    End="85.25,26.4820393974508" />
+                  <mssgle:CubicBezierSegment
+                    Point1="85.25,26.4820393974508"
+                    Point2="89.25,26.4820393974508"
+                    Point3="89.25,30.4820393974508" />
+                  <mssgle:LineSegment
+                    End="89.25,70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="484,313">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="141,114"
+              Start="0,0"
+              End="141,106.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.8396946564885" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,70.8396946564885"
+                    Point2="0,74.8396946564885"
+                    Point3="4,74.8396946564885" />
+                  <mssgle:LineSegment
+                    End="137,74.8396946564885" />
+                  <mssgle:CubicBezierSegment
+                    Point1="137,74.8396946564885"
+                    Point2="141,74.8396946564885"
+                    Point3="141,78.8396946564885" />
+                  <mssgle:LineSegment
+                    End="141,106.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="662.5,314">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,113"
+              Start="0,0"
+              End="0,105.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,105.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="821,316">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-114,111"
+              Start="0,0"
+              End="-114,103.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68.8702290076336" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,68.8702290076336"
+                    Point2="0,72.8702290076336"
+                    Point3="-4,72.8702290076336" />
+                  <mssgle:LineSegment
+                    End="-110,72.8702290076336" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-110,72.8702290076336"
+                    Point2="-114,72.8702290076336"
+                    Point3="-114,76.8702290076336" />
+                  <mssgle:LineSegment
+                    End="-114,103.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\AP Data Flow">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="174,42"
+          Id="Package\AP Data Flow\ADO NET Source AP"
+          TopLeft="705,68" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\AP Data Flow\Flat File Destination"
+          TopLeft="952,254" />
+        <EdgeLayout
+          Id="Package\AP Data Flow.Paths[ADO NET Source Output]"
+          TopLeft="792,110">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="246,144"
+              Start="0,0"
+              End="246,136.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,68"
+                    Point2="0,72"
+                    Point3="4,72" />
+                  <mssgle:LineSegment
+                    End="242,72" />
+                  <mssgle:CubicBezierSegment
+                    Point1="242,72"
+                    Point2="246,72"
+                    Point3="246,76" />
+                  <mssgle:LineSegment
+                    End="246,136.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\AR Data Flow">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="175,42"
+          Id="Package\AR Data Flow\ADO NET Source AR"
+          TopLeft="632,46" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\AR Data Flow\Flat File Destination"
+          TopLeft="870,194" />
+        <EdgeLayout
+          Id="Package\AR Data Flow.Paths[ADO NET Source Output]"
+          TopLeft="719.5,88">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="236.5,106"
+              Start="0,0"
+              End="236.5,98.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49"
+                    Point2="0,53"
+                    Point3="4,53" />
+                  <mssgle:LineSegment
+                    End="232.5,53" />
+                  <mssgle:CubicBezierSegment
+                    Point1="232.5,53"
+                    Point2="236.5,53"
+                    Point3="236.5,57" />
+                  <mssgle:LineSegment
+                    End="236.5,98.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\GL Data Flow">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="172,42"
+          Id="Package\GL Data Flow\Flat File Destination"
+          TopLeft="680,209" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\GL Data Flow\ADO NET Source GL"
+          TopLeft="450,66" />
+        <EdgeLayout
+          Id="Package\GL Data Flow.Paths[ADO NET Source Output]"
+          TopLeft="537,108">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="229,101"
+              Start="0,0"
+              End="229,93.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,46.5"
+                    Point2="0,50.5"
+                    Point3="4,50.5" />
+                  <mssgle:LineSegment
+                    End="225,50.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="225,50.5"
+                    Point2="229,50.5"
+                    Point3="229,54.5" />
+                  <mssgle:LineSegment
+                    End="229,93.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpenseWire>
+  <DataTransaction>
+    <Project>
+      <Search MaxRows="200">
+        <!--<ProjectNumber Comparison="like"></ProjectNumber>-->
+        <ProjectDescription Comparison="equal">*</ProjectDescription>
+        <IsActive>true</IsActive>
+      
+      </Search>
+    </Project>
+
+    <!-- Approved Expenses -->
+    <!--<User>
+      <Search>
+        <ExternalID></ExternalID>
+      </Search>
+    </User>-->
+   
+  </DataTransaction>
+</ExpenseWire>

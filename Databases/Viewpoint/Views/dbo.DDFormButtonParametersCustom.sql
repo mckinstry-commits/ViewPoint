@@ -1,0 +1,14 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE view [dbo].[DDFormButtonParametersCustom] as
+select * from vDDFormButtonParametersCustom
+
+GO
+GRANT SELECT ON  [dbo].[DDFormButtonParametersCustom] TO [public]
+GRANT INSERT ON  [dbo].[DDFormButtonParametersCustom] TO [public]
+GRANT DELETE ON  [dbo].[DDFormButtonParametersCustom] TO [public]
+GRANT UPDATE ON  [dbo].[DDFormButtonParametersCustom] TO [public]
+GO

@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.POBatchCreationTool.Viewpoint", "McK.POBatchCreationTool.Viewpoint\McK.POBatchCreationTool.Viewpoint.csproj", "{69C30C5D-FA2F-464C-811C-27BDEDE5812D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151} = {8098057C-BD3D-49FF-BC7F-404ACA9CD151}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McK.Data.Viewpoint", "McK.Data.Viewpoint\McK.Data.Viewpoint.csproj", "{8098057C-BD3D-49FF-BC7F-404ACA9CD151}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "McK.SQL.Objects", "McK.SQL.Objects\McK.SQL.Objects.sqlproj", "{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|x64.Build.0 = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Debug|x86.Build.0 = Debug|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|x64.ActiveCfg = Release|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|x64.Build.0 = Release|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|x86.ActiveCfg = Release|Any CPU
+		{69C30C5D-FA2F-464C-811C-27BDEDE5812D}.Release|x86.Build.0 = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|x64.Build.0 = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Debug|x86.Build.0 = Debug|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|x64.ActiveCfg = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|x64.Build.0 = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|x86.ActiveCfg = Release|Any CPU
+		{8098057C-BD3D-49FF-BC7F-404ACA9CD151}.Release|x86.Build.0 = Release|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Debug|x64.Build.0 = Debug|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Debug|x86.Build.0 = Debug|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Release|x64.ActiveCfg = Release|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Release|x64.Build.0 = Release|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Release|x64.Deploy.0 = Release|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Release|x86.ActiveCfg = Release|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Release|x86.Build.0 = Release|Any CPU
+		{ECA8A62C-C6AD-4196-909D-0CA5BD91E29B}.Release|x86.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5539164F-B3A4-46A0-B90A-947922F1E748}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.mckinstry.com:8080/tfs/mckinstry%20team
+		SccProjectUniqueName0 = McK.POBatchCreationTool.Viewpoint\\McK.POBatchCreationTool.Viewpoint.csproj
+		SccProjectName0 = McK.POBatchCreationTool.Viewpoint
+		SccLocalPath0 = McK.POBatchCreationTool.Viewpoint
+		SccProjectUniqueName1 = McK.SQL.Objects\\McK.SQL.Objects.sqlproj
+		SccProjectName1 = McK.SQL.Objects
+		SccLocalPath1 = McK.SQL.Objects
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = McK.Data.Viewpoint\\McK.Data.Viewpoint.csproj
+		SccProjectName3 = McK.Data.Viewpoint
+		SccLocalPath3 = McK.Data.Viewpoint
+	EndGlobalSection
+EndGlobal

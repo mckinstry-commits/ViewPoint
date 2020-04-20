@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>IncludeComponent</Name>
+    <Type>UserControl</Type>
+    <GenerateDirectory>Shared</GenerateDirectory>
+    <Layout>Shared\IncludeComponent.html</Layout>
+    <DisplayName>IncludeComponent</DisplayName>
+    <Description>(Description)</Description>
+  </Self>
+  <ComposedOf/>
+<LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-16"?&gt;
+    &lt;LayoutDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+	
+      &lt;Layout Name="UserControl" Type="RootLayout"&gt;
+	  
+		&lt;TableAttributes&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;cellspacing&lt;/Name&gt;
+			&lt;AttributeValue&gt;1&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;cellpadding&lt;/Name&gt;
+			&lt;AttributeValue&gt;1&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;border&lt;/Name&gt;
+			&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		  &lt;Attribute&gt;
+			&lt;Name&gt;style&lt;/Name&gt;
+			&lt;AttributeValue&gt;text-align: center;&lt;/AttributeValue&gt;
+		  &lt;/Attribute&gt;
+		&lt;/TableAttributes&gt;	   
+			  
+		&lt;Prolog&gt;
+		  &lt;Value&gt;&lt;/Value&gt;
+	    &lt;/Prolog&gt;
+
+        &lt;Row&gt;
+          &lt;Cell&gt;
+            &lt;Value&gt;&amp;lt;img src="../Images/ASCXControlPlaceholder.gif" alt="" /&amp;gt;&lt;/Value&gt;
+			&lt;CellAttributes&gt;
+              &lt;Attribute&gt;
+                &lt;Name&gt;colspan&lt;/Name&gt;
+                &lt;AttributeValue&gt;4&lt;/AttributeValue&gt;
+              &lt;/Attribute&gt;
+            &lt;/CellAttributes&gt;
+          &lt;/Cell&gt;
+		&lt;/Row&gt;
+			  
+	    &lt;Epilog&gt;
+		  &lt;Value&gt;&lt;/Value&gt;
+	    &lt;/Epilog&gt;
+      &lt;/Layout&gt;
+	  	  		 
+	&lt;/LayoutDefinition&gt;]]&gt;
+  </LayoutDefinition>
+</ComponentDefinition>

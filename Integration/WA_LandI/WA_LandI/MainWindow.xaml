@@ -1,0 +1,19 @@
+﻿<Window x:Class="WA_LandI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WA_LandI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DatePicker Name="startDatePick" SelectedDateChanged="startDatePick_SelectedDateChanged" HorizontalAlignment="Left" Margin="330,220,0,0" VerticalAlignment="Top" Width="116" />
+        <TextBlock HorizontalAlignment="Left" Margin="100,224,0,0" TextWrapping="Wrap" Text="Select a Start Date using the date picker." VerticalAlignment="Top" Width="225"/>
+        <DatePicker x:Name="endDatePick" SelectedDateChanged="endDatePick_SelectedDateChanged" HorizontalAlignment="Left" Margin="330,262,0,0" VerticalAlignment="Top" Width="116"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,266,0,0" TextWrapping="Wrap" Text="Select an End Date using the date picker." VerticalAlignment="Top" Width="225"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,189,0,0" TextWrapping="Wrap" Text="Optionally enter an Intent ID." VerticalAlignment="Top" Width="225" RenderTransformOrigin="0.485,-2.963"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="330,182,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="genXML" Click="genXML_Click" Content="Generate XML " HorizontalAlignment="Left" Margin="330,318,0,0" VerticalAlignment="Top" Width="116"/>
+        <Image HorizontalAlignment="Left" Height="126" Margin="100,20,0,0" VerticalAlignment="Top" Width="230" Source="MCK.png"/>
+    </Grid>
+</Window>

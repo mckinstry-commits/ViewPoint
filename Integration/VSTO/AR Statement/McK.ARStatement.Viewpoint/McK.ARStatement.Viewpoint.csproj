@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>McK.ARStatement.Viewpoint</RootNamespace>
+    <AssemblyName>McK.ARStatement.Viewpoint</AssemblyName>
+    <VSTO_HostDocumentName>McK.ARStatement.Viewpoint.xltx</VSTO_HostDocumentName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DefineConstants>VSTO40</DefineConstants>
+    <OfficeApplication>Excel</OfficeApplication>
+    <ProjectGuid>{69C30C5D-FA2F-464C-811C-27BDEDE5812D}</ProjectGuid>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
+    <SolutionID>BCE53203-02F8-48A5-B5CC-EAC85F4A0E11</SolutionID>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <PublishUrl>\\MCKVIEWPOINT\Viewpoint Repository\Reports\Custom\TrustedAPP\VSTO\McK.ARStatement.Viewpoint\</PublishUrl>
+    <InstallUrl>\\MCKVIEWPOINT\Viewpoint Repository\Reports\Custom\TrustedAPP\VSTO\McK.ARStatement.Viewpoint\</InstallUrl>
+    <TargetCulture>en</TargetCulture>
+    <ApplicationVersion>1.0.1.9</ApplicationVersion>
+    <AutoIncrementApplicationRevision>false</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>0</UpdateInterval>
+    <UpdateIntervalUnits>days</UpdateIntervalUnits>
+    <ProductName>McK.ARStatements.Viewpoint</ProductName>
+    <PublisherName>McKinstry</PublisherName>
+    <SupportUrl />
+    <FriendlyName>McK.ARStatements.Viewpoint</FriendlyName>
+    <OfficeApplicationDescription>This Microsoft Excel VSTO solution was developed by McKinstry in 2019 in order to faciliate generate AR open item statements from Vista by Viewpoint.</OfficeApplicationDescription>
+  </PropertyGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <PropertyGroup>
+    <VSTO_EmbedTypeLibraryInAssembly>false</VSTO_EmbedTypeLibraryInAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!--
+    This section specifies references for the project.
+  -->
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.Common.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionPane1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActionPane1.Designer.cs">
+      <DependentUpon>ActionPane1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperUI.cs" />
+    <Compile Include="IOexcel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BaseResults.cs">
+      <DependentUpon>McK.ARStatement.Viewpoint.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseResults.Designer.cs">
+      <DependentUpon>BaseResults.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="RegEx.cs" />
+    <Compile Include="Customers.cs">
+      <DependentUpon>McK.ARStatement.Viewpoint.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="McK.cs">
+      <DependentUpon>McK.ARStatement.Viewpoint.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="McK.Designer.cs">
+      <DependentUpon>McK.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="BaseStatement.cs">
+      <DependentUpon>McK.ARStatement.Viewpoint.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseStatement.Designer.cs">
+      <DependentUpon>BaseStatement.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="BaseStatementPg2.cs">
+      <DependentUpon>McK.ARStatement.Viewpoint.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseStatementPg2.Designer.cs">
+      <DependentUpon>BaseStatementPg2.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="SheetBuilderDynamic.cs" />
+    <Compile Include="StatementBuilder.cs" />
+    <Compile Include="StringExt.cs" />
+    <Compile Include="ThisWorkbook.cs">
+      <DependentUpon>McK.ARStatement.Viewpoint.xltx</DependentUpon>
+    </Compile>
+    <Compile Include="ThisWorkbook.Designer.cs">
+      <DependentUpon>ThisWorkbook.Designer.xml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActionPane1.resx">
+      <DependentUpon>ActionPane1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseStatementPg2.resx">
+      <DependentUpon>BaseStatementPg2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="McK.resx">
+      <DependentUpon>McK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseStatement.resx">
+      <DependentUpon>BaseStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="McK.ARStatement.Viewpoint.xltx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ThisWorkbook.Designer.xml">
+      <DependentUpon>ThisWorkbook.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\McK.Data.Viewpoint\McK.Data.Viewpoint.csproj">
+      <Project>{D575BE10-AFB2-48A1-BF07-30EB08723C05}</Project>
+      <Name>McK.Data.Viewpoint</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BaseResults.Designer.xml">
+      <DependentUpon>BaseResults.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customers.Designer.xml">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="McK.Designer.xml">
+      <DependentUpon>McK.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BaseStatement.Designer.xml">
+      <DependentUpon>BaseStatement.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BaseStatementPg2.Designer.xml">
+      <DependentUpon>BaseStatementPg2.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7A2516851BBCB80F77AB89D27174A1502B5B1C06</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
+        <ProjectProperties HostName="McK.ARStatement.Viewpoint.xltx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLT" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files (x86)\Microsoft Office\root\Office16\excel.exe" DebugInfoCommandLine="/t /x &quot;[$OUTPUT]McK.ARStatement.Viewpoint.xltx&quot;" />
+        <Host Name="Excel Document" Path=".\McK.ARStatement.Viewpoint.xltx" GeneratedCodeNamespace="McK.ARStatement.Viewpoint" PublishedHash="679753C936E24E8B6969D24CACF2B3E30391F3CC">
+          <HostItem Name="Sheet11" Code="BaseResults.cs" CanonicalName="Sheet11" PublishedHash="13BA12B987FA57789A3DDB62624C5C12BA104FA7" CanActivate="false" DisplayName="BaseResults" Blueprint="BaseResults.Designer.xml" GeneratedCode="BaseResults.Designer.cs" />
+          <HostItem Name="Sheet4" Code="BaseStatement.cs" CanonicalName="Sheet4" PublishedHash="7406D93EC5A8CCE3B50EB8E6571F23990BA7AD6D" CanActivate="false" DisplayName="BaseStatement" Blueprint="BaseStatement.Designer.xml" GeneratedCode="BaseStatement.Designer.cs" />
+          <HostItem Name="Sheet2" Code="BaseStatementPg2.cs" CanonicalName="Sheet2" PublishedHash="906607B519CB753802D047FAA38842E97E8244AB" CanActivate="false" DisplayName="BaseStatementPg2" Blueprint="BaseStatementPg2.Designer.xml" GeneratedCode="BaseStatementPg2.Designer.cs" />
+          <HostItem Name="Sheet1" Code="Customers.cs" CanonicalName="Sheet1" PublishedHash="9E8285A5CE209CD20DD5A1B5185400B408504035" CanActivate="false" DisplayName="Customers" Blueprint="Customers.Designer.xml" GeneratedCode="Customers.Designer.cs" />
+          <HostItem Name="Sheet21" Code="McK.cs" CanonicalName="Sheet21" PublishedHash="D861B4F31B901D85F1377EBFD3914A1A5B5A9177" DisplayName="McK" Blueprint="McK.Designer.xml" GeneratedCode="McK.Designer.cs" />
+          <HostItem Name="ThisWorkbook" Code="ThisWorkbook.cs" CanonicalName="ThisWorkbook" PublishedHash="495CDADBFCB63CFCFB548CB845DBCCC57C58A4A3" Blueprint="ThisWorkbook.Designer.xml" GeneratedCode="ThisWorkbook.Designer.cs" />
+        </Host>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!--
+    To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

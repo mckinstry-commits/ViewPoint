@@ -1,0 +1,14 @@
+﻿<Project>
+  <Version>1</Version>
+  <FileID>7aae12de-7fec-48fa-8e64-a53811324944</FileID>
+  <SourceControl>
+    <SourceControlProject>$/ViewPoint/Maintenance/Admin Scripts and PS/ViewpointUserCreate</SourceControlProject>
+    <SourceControlProvider>SOFTWARE\Microsoft\Team Foundation Server MSSCCI Provider</SourceControlProvider>
+  </SourceControl>
+  <ProjectType>0</ProjectType>
+  <Files>
+    <File ReferenceName="" Build="0">Startup.pss</File>
+    <File ReferenceName="Call-MainForm_psf" Build="0">MainForm.psf</File>
+    <File ReferenceName="Call-Global_ps1" Build="0" CommandExtension="True">Globals.ps1</File>
+  </Files>
+</Project>

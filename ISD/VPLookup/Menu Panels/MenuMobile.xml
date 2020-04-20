@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ComponentDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ironspeed.com/designer">
+  <Generator>Iron Speed Designer</Generator>
+  <Version>11.1.0</Version>
+  <Self>
+    <Name>MenuMobile</Name>
+    <Type>Menu</Type>
+    <SubType>DotNet</SubType>
+    <MenuType>MultiLevelMenu</MenuType>
+    <MenuOrientation>Vertical</MenuOrientation>
+    <PopupCssClass>QPageSize</PopupCssClass>
+    <GenerateDirectory>Menu Panels</GenerateDirectory>
+    <Layout>Menu Panels\MenuMobile.xml</Layout>
+    <DisplayName>MenuMobile</DisplayName>
+    <Description>(Description)</Description>
+    <CheckSum />
+    <DeviceSize>Small</DeviceSize>
+  </Self>
+  <ComposedOf>
+    <ContainedComponent>
+      <Name>MultiLevelMenu</Name>
+      <Type>Aspx</Type>
+      <ControlClass>System.Web.UI.WebControls.Menu</ControlClass>
+    </ContainedComponent>
+  </ComposedOf>
+  <LayoutDefinition>&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;LayoutDefinition xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:menuCG="urn:MenuTransformCodeGen"&gt;&lt;Layout Name="Menu" Type="RootLayout"&gt;&lt;Row&gt;&lt;Cell&gt;&lt;Value&gt;&amp;lt;GEN:PANEL NAME="MenuRegion"/&amp;gt;&lt;/Value&gt;&lt;/Cell&gt;&lt;/Row&gt;&lt;TableAttributes&gt;&lt;Attribute&gt;&lt;Name&gt;cellpadding&lt;/Name&gt;&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;&lt;/Attribute&gt;&lt;Attribute&gt;&lt;Name&gt;cellspacing&lt;/Name&gt;&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;&lt;/Attribute&gt;&lt;Attribute&gt;&lt;Name&gt;border&lt;/Name&gt;&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;&lt;/Attribute&gt;&lt;Attribute&gt;&lt;Name&gt;width&lt;/Name&gt;&lt;AttributeValue&gt;100%&lt;/AttributeValue&gt;&lt;/Attribute&gt;&lt;/TableAttributes&gt;&lt;/Layout&gt;&lt;Layout Name="MenuRegion" Type="Panel"&gt;&lt;Row&gt;&lt;Cell&gt;&lt;Value&gt;&amp;lt;asp:Menu ID="MultiLevelMenu" DataSourceID="SiteMapDataSource1" runat="server" itemwrap="True" DynamicItemFormatString="&amp;amp;lt;div class='mobileMenu' style='width: 96%;'&amp;amp;gt;{0}&amp;amp;lt;/div&amp;amp;gt;" StaticItemFormatString="&amp;amp;lt;div class='mobileMenu' style='width: 96%;'&amp;amp;gt;{0}&amp;amp;lt;/div&amp;amp;gt;" StaticEnableDefaultPopOutImage="False" MaximumDynamicDisplayLevels="100" width="100%" orientation="Vertical"&amp;gt; 
+							&amp;lt;StaticMenuItemStyle CssClass="" /&amp;gt;
+							&amp;lt;DynamicMenuStyle CssClass="mobileSubmenuContainer" /&amp;gt;
+							&amp;lt;DynamicMenuItemStyle CssClass="" /&amp;gt;
+						&amp;lt;/asp:Menu&amp;gt;
+						&amp;lt;asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="MenuMobileElementsProvider" ShowStartingNode="false"/&amp;gt;
+					&lt;/Value&gt;&lt;CellAttributes&gt;&lt;Attribute&gt;&lt;Name&gt;colspan&lt;/Name&gt;&lt;AttributeValue&gt;3&lt;/AttributeValue&gt;&lt;/Attribute&gt;&lt;/CellAttributes&gt;&lt;/Cell&gt;&lt;/Row&gt;&lt;TableAttributes&gt;&lt;Attribute&gt;&lt;Name&gt;cellpadding&lt;/Name&gt;&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;&lt;/Attribute&gt;&lt;Attribute&gt;&lt;Name&gt;cellspacing&lt;/Name&gt;&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;&lt;/Attribute&gt;&lt;Attribute&gt;&lt;Name&gt;border&lt;/Name&gt;&lt;AttributeValue&gt;0&lt;/AttributeValue&gt;&lt;/Attribute&gt;&lt;Attribute&gt;&lt;Name&gt;width&lt;/Name&gt;&lt;AttributeValue&gt;100%&lt;/AttributeValue&gt;&lt;/Attribute&gt;&lt;/TableAttributes&gt;&lt;/Layout&gt;&lt;/LayoutDefinition&gt;]]&gt;</LayoutDefinition>
+</ComponentDefinition>

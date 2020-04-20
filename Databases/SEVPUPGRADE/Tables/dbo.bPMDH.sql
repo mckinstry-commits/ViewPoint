@@ -1,0 +1,41 @@
+CREATE TABLE [dbo].[bPMDH]
+(
+[PMCo] [dbo].[bCompany] NOT NULL,
+[Project] [dbo].[bJob] NOT NULL,
+[DocType] [dbo].[bDocType] NULL,
+[Document] [dbo].[bDocument] NOT NULL,
+[Rev] [tinyint] NULL,
+[Seq] [int] NOT NULL,
+[ActionDateTime] [datetime] NOT NULL,
+[Action] [varchar] (255) COLLATE Latin1_General_BIN NOT NULL,
+[UniqueAttchID] [uniqueidentifier] NULL,
+[DocCategory] [varchar] (10) COLLATE Latin1_General_BIN NOT NULL,
+[FieldType] [varchar] (1) COLLATE Latin1_General_BIN NULL,
+[FieldName] [varchar] (60) COLLATE Latin1_General_BIN NULL,
+[OldValue] [varchar] (255) COLLATE Latin1_General_BIN NULL,
+[NewValue] [varchar] (255) COLLATE Latin1_General_BIN NULL,
+[UserName] [dbo].[bVPUserName] NULL,
+[AssignToDoc] [dbo].[bDocument] NULL,
+[Item] [int] NULL,
+[PCOItem] [varchar] (10) COLLATE Latin1_General_BIN NULL,
+[RFQPCO] [dbo].[bDocument] NULL,
+[ACOItem] [varchar] (10) COLLATE Latin1_General_BIN NULL,
+[DrawingRev] [varchar] (10) COLLATE Latin1_General_BIN NULL,
+[SLCo] [dbo].[bCompany] NULL,
+[SL] [varchar] (30) COLLATE Latin1_General_BIN NULL,
+[KeyID] [bigint] NOT NULL IDENTITY(1, 1),
+[SubCO] [smallint] NULL,
+[POCo] [dbo].[bCompany] NULL,
+[PO] [varchar] (30) COLLATE Latin1_General_BIN NULL,
+[POCONum] [smallint] NULL,
+[Contract] [dbo].[bContract] NULL,
+[ContractCO] [int] NULL,
+[SubmittalRegisterNumber] [varchar] (20) COLLATE Latin1_General_BIN NULL,
+[SubmittalRegisterRev] [varchar] (20) COLLATE Latin1_General_BIN NULL,
+[SubmittalRegisterSeq] [bigint] NULL,
+[SubmittalPackage] [varchar] (20) COLLATE Latin1_General_BIN NULL,
+[SubmittalPackageRev] [varchar] (5) COLLATE Latin1_General_BIN NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[bPMDH] ADD CONSTRAINT [PK_bPMDH] PRIMARY KEY CLUSTERED  ([PMCo], [Project], [DocCategory], [Seq]) WITH (FILLFACTOR=90) ON [PRIMARY]
+GO

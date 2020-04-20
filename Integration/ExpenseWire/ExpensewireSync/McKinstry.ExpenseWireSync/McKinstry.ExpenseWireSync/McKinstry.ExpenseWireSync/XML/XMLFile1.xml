@@ -1,0 +1,2037 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ExpenseWire>
+  <SendDataTransaction>
+    <SequenceNumber>0</SequenceNumber>
+    <ErrorCode>0</ErrorCode>
+    <ErrorMessage />
+    <Expense>
+      <Search>
+        <SequenceNumber>1</SequenceNumber>
+        <ErrorCode>0</ErrorCode>
+        <ErrorMessage />
+        <Expense>
+          <Ref>
+            <Guid>9f090555-8749-4d7c-9c0f-44bec4bbd131</Guid>
+            <ID>24</ID>
+          </Ref>
+          <Customer>
+            <Guid>afe55616-f2fe-4e89-87c2-f0aafb1a9035</Guid>
+            <Name>Overhead</Name>
+            <ExternalID>OH</ExternalID>
+          </Customer>
+          <Project>
+            <Guid>5797358a-5359-46a2-9ad7-fbc3f01106da</Guid>
+            <ProjectNumber>OH</ProjectNumber>
+            <GLSuffix />
+            <ExternalID />
+          </Project>
+          <User>
+            <Guid>ea96338f-37d5-41ed-9c94-b9ac94aca5b1</Guid>
+            <UserID>dougm@McKinstry.com</UserID>
+            <ExternalID>61662</ExternalID>
+            <ExternalName />
+          </User>
+          <ApprovedBy>
+            <Guid>ea96338f-37d5-41ed-9c94-b9ac94aca5b1</Guid>
+            <UserID>dougm@McKinstry.com</UserID>
+            <ExternalID>61662</ExternalID>
+            <ExternalName />
+          </ApprovedBy>
+          <NeedsApprovedBy />
+          <PaidBy />
+          <DeniedBy />
+          <Currency>
+            <ID>1</ID>
+            <Code>USD</Code>
+          </Currency>
+          <Department>
+            <ID>125315</ID>
+            <Department>000 - MCK CORP OH</Department>
+            <GLPrefix>0</GLPrefix>
+            <LocationID>125309</LocationID>
+            <Location>Not Applicable</Location>
+            <LocationGLPrefix>0</LocationGLPrefix>
+            <DivisionID>125303</DivisionID>
+            <Division>1 - MCKINSTRY CO, LLC</Division>
+            <DivisionGLPrefix>1</DivisionGLPrefix>
+          </Department>
+          <Organizations>
+            <Organization>
+              <OrgId>125315</OrgId>
+              <OrgName>000 - MCK CORP OH</OrgName>
+              <OrgTypeId>3541</OrgTypeId>
+              <OrgTypeName>Department</OrgTypeName>
+              <OrgLevel>1</OrgLevel>
+              <OrgGroup>1</OrgGroup>
+              <OrgRank>1</OrgRank>
+              <OrgGLPrefix>0</OrgGLPrefix>
+            </Organization>
+            <Organization>
+              <OrgId>125309</OrgId>
+              <OrgName>Not Applicable</OrgName>
+              <OrgTypeId>3540</OrgTypeId>
+              <OrgTypeName>Division</OrgTypeName>
+              <OrgLevel>2</OrgLevel>
+              <OrgGroup>1</OrgGroup>
+              <OrgRank>1</OrgRank>
+              <OrgGLPrefix>0</OrgGLPrefix>
+            </Organization>
+            <Organization>
+              <OrgId>125303</OrgId>
+              <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+              <OrgTypeId>3539</OrgTypeId>
+              <OrgTypeName>Company</OrgTypeName>
+              <OrgLevel>3</OrgLevel>
+              <OrgGroup>1</OrgGroup>
+              <OrgRank>2</OrgRank>
+              <OrgGLPrefix>1</OrgGLPrefix>
+            </Organization>
+          </Organizations>
+          <Batch />
+          <StatusID>3</StatusID>
+          <ExpenseTitle>Travel test</ExpenseTitle>
+          <CashAdvanced>0.0000</CashAdvanced>
+          <ApprovedDate>2010-09-28T18:14:00</ApprovedDate>
+          <AmountDue>0.0000</AmountDue>
+          <DeniedDate />
+          <ExpenseTotal>0.0000</ExpenseTotal>
+          <NeedsApprovedByAssignedDate />
+          <PaidDate />
+          <PaidAmount>0.0000</PaidAmount>
+          <Purpose />
+          <ExpenseStartDate />
+          <ExpenseEndDate />
+          <CheckNbr />
+          <AmountToPay>0.0000</AmountToPay>
+          <SubmittedDate>2010-09-28T18:14:00</SubmittedDate>
+          <SubmittedForPaymentDate />
+          <PaymentMethod />
+          <ReceiptsVerified>false</ReceiptsVerified>
+          <ReceiptsVerifiedDate />
+          <ReceiptsVerifiedbyUser />
+          <TotalReimbursable>0.0000</TotalReimbursable>
+          <TotalNotReimbursable>0.0000</TotalNotReimbursable>
+          <TotalEmployeeOwes>0.0000</TotalEmployeeOwes>
+          <ExternalID />
+          <CreatedUser>dougm@McKinstry.com</CreatedUser>
+          <CreatedDate>2010-09-27T18:44:14</CreatedDate>
+          <LastEditUser>dougm@McKinstry.com</LastEditUser>
+          <LastEditDate>2010-09-28T18:14:00</LastEditDate>
+        </Expense>
+        <Expense>
+          <Ref>
+            <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+            <ID>21</ID>
+          </Ref>
+          <Customer>
+            <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+            <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+            <ExternalID>170119</ExternalID>
+          </Customer>
+          <Project>
+            <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+            <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+            <GLSuffix />
+            <ExternalID>008</ExternalID>
+          </Project>
+          <User>
+            <Guid>ea96338f-37d5-41ed-9c94-b9ac94aca5b1</Guid>
+            <UserID>dougm@McKinstry.com</UserID>
+            <ExternalID>61662</ExternalID>
+            <ExternalName />
+          </User>
+          <ApprovedBy>
+            <Guid>ea96338f-37d5-41ed-9c94-b9ac94aca5b1</Guid>
+            <UserID>dougm@McKinstry.com</UserID>
+            <ExternalID>61662</ExternalID>
+            <ExternalName />
+          </ApprovedBy>
+          <NeedsApprovedBy />
+          <PaidBy />
+          <DeniedBy />
+          <Currency>
+            <ID>1</ID>
+            <Code>USD</Code>
+          </Currency>
+          <Department>
+            <ID>125315</ID>
+            <Department>000 - MCK CORP OH</Department>
+            <GLPrefix>0</GLPrefix>
+            <LocationID>125309</LocationID>
+            <Location>Not Applicable</Location>
+            <LocationGLPrefix>0</LocationGLPrefix>
+            <DivisionID>125303</DivisionID>
+            <Division>1 - MCKINSTRY CO, LLC</Division>
+            <DivisionGLPrefix>1</DivisionGLPrefix>
+          </Department>
+          <Organizations>
+            <Organization>
+              <OrgId>125315</OrgId>
+              <OrgName>000 - MCK CORP OH</OrgName>
+              <OrgTypeId>3541</OrgTypeId>
+              <OrgTypeName>Department</OrgTypeName>
+              <OrgLevel>1</OrgLevel>
+              <OrgGroup>1</OrgGroup>
+              <OrgRank>1</OrgRank>
+              <OrgGLPrefix>0</OrgGLPrefix>
+            </Organization>
+            <Organization>
+              <OrgId>125309</OrgId>
+              <OrgName>Not Applicable</OrgName>
+              <OrgTypeId>3540</OrgTypeId>
+              <OrgTypeName>Division</OrgTypeName>
+              <OrgLevel>2</OrgLevel>
+              <OrgGroup>1</OrgGroup>
+              <OrgRank>1</OrgRank>
+              <OrgGLPrefix>0</OrgGLPrefix>
+            </Organization>
+            <Organization>
+              <OrgId>125303</OrgId>
+              <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+              <OrgTypeId>3539</OrgTypeId>
+              <OrgTypeName>Company</OrgTypeName>
+              <OrgLevel>3</OrgLevel>
+              <OrgGroup>1</OrgGroup>
+              <OrgRank>2</OrgRank>
+              <OrgGLPrefix>1</OrgGLPrefix>
+            </Organization>
+          </Organizations>
+          <Batch>
+            <ID>61978</ID>
+            <BatchNumber>1</BatchNumber>
+            <Status>Pending</Status>
+          </Batch>
+          <StatusID>3</StatusID>
+          <ExpenseTitle>Test Report 9/21</ExpenseTitle>
+          <CashAdvanced>0.0000</CashAdvanced>
+          <ApprovedDate>2010-09-21T14:53:07</ApprovedDate>
+          <AmountDue>0.0000</AmountDue>
+          <DeniedDate />
+          <ExpenseTotal>1036.3900</ExpenseTotal>
+          <NeedsApprovedByAssignedDate />
+          <PaidDate />
+          <PaidAmount>0.0000</PaidAmount>
+          <Purpose />
+          <ExpenseStartDate>2010-07-29T00:00:00</ExpenseStartDate>
+          <ExpenseEndDate>2010-09-21T00:00:00</ExpenseEndDate>
+          <CheckNbr>xxxxx</CheckNbr>
+          <AmountToPay>0.0000</AmountToPay>
+          <SubmittedDate>2010-09-21T14:53:07</SubmittedDate>
+          <SubmittedForPaymentDate />
+          <PaymentMethod>Check</PaymentMethod>
+          <ReceiptsVerified>false</ReceiptsVerified>
+          <ReceiptsVerifiedDate />
+          <ReceiptsVerifiedbyUser />
+          <TotalReimbursable>0.0000</TotalReimbursable>
+          <TotalNotReimbursable>1036.3900</TotalNotReimbursable>
+          <TotalEmployeeOwes>0.0000</TotalEmployeeOwes>
+          <ExternalID />
+          <CreatedUser>dougm@McKinstry.com</CreatedUser>
+          <CreatedDate>2010-09-21T13:41:59</CreatedDate>
+          <LastEditUser>larisaa@mckinstry.com</LastEditUser>
+          <LastEditDate>2010-09-21T18:36:15</LastEditDate>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>fa332caf-bb53-4296-aaf7-0b887da6d14e</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>637195cb-53d8-41f9-88a8-bc4248e4e91a</Guid>
+              <ID>50394</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-09-21T00:00:00</ExpenseDate>
+            <Description>Towncar to SeaTac airport.</Description>
+            <VendorDescription />
+            <ExpenseAmount>65.0000</ExpenseAmount>
+            <SourceAmount>65.0000</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T13:44:09</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T13:50:24</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>31f100d1-4c0d-489c-a815-1f2b09dbbc3b</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>0</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>4913caaa-5dd3-43ee-ad8f-71105d570506</Guid>
+              <ID>50393</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-08-02T00:00:00</ExpenseDate>
+            <Description>Parking</Description>
+            <VendorDescription />
+            <ExpenseAmount>6.0000</ExpenseAmount>
+            <SourceAmount>6.0000</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:15:46</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:15:46</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>2cc78083-9180-4740-a630-20ee02d78393</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>6a928202-e7f0-488e-ba06-434b758b346e</Guid>
+              <ID>50401</ID>
+              <GLCode>8371</GLCode>
+              <GLDescription>MEALS &amp; EVENTS - 50% DED</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-08-11T00:00:00</ExpenseDate>
+            <Description>Jim Brady/Doug Moore- Dinner in Portland</Description>
+            <VendorDescription />
+            <ExpenseAmount>48.7500</ExpenseAmount>
+            <SourceAmount>48.7500</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:23:07</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:23:07</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>f9d568c5-d4a6-4532-9da3-29235de0805d</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>4913caaa-5dd3-43ee-ad8f-71105d570506</Guid>
+              <ID>50393</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-08-11T00:00:00</ExpenseDate>
+            <Description>Sellen Event</Description>
+            <VendorDescription />
+            <ExpenseAmount>4.0000</ExpenseAmount>
+            <SourceAmount>4.0000</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:21:42</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:21:42</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>84d92002-ec54-477f-8530-3231b321638d</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>f82feb7a-9c1a-4de5-a426-c448a65f0325</Guid>
+              <ID>50400</ID>
+              <GLCode>8371</GLCode>
+              <GLDescription>MEALS &amp; EVENTS - 50% DED</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-08-02T00:00:00</ExpenseDate>
+            <Description>Breakfast- Portland</Description>
+            <VendorDescription />
+            <ExpenseAmount>10.3400</ExpenseAmount>
+            <SourceAmount>10.3400</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:18:11</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:18:11</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>67704078-7263-44ea-bb43-4a8a57f6cebc</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>eb4459a0-c635-4a8e-ad58-77c565470c16</Guid>
+              <ID>50397</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-08-11T00:00:00</ExpenseDate>
+            <Description>Portland Hotel</Description>
+            <VendorDescription />
+            <ExpenseAmount>111.3800</ExpenseAmount>
+            <SourceAmount>111.3800</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:25:39</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:25:39</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>fb8d41c8-39fe-44ae-8c77-570792b61361</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>6a928202-e7f0-488e-ba06-434b758b346e</Guid>
+              <ID>50401</ID>
+              <GLCode>8371</GLCode>
+              <GLDescription>MEALS &amp; EVENTS - 50% DED</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-09-21T00:00:00</ExpenseDate>
+            <Description>Dinner with Phil Venderbrake</Description>
+            <VendorDescription />
+            <ExpenseAmount>61.4000</ExpenseAmount>
+            <SourceAmount>61.4000</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T13:47:49</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T13:47:49</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>5e0df2a2-8587-4bdf-8584-6c6010344323</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>eb4459a0-c635-4a8e-ad58-77c565470c16</Guid>
+              <ID>50397</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-08-02T00:00:00</ExpenseDate>
+            <Description>Hotel- Portland</Description>
+            <VendorDescription />
+            <ExpenseAmount>111.3800</ExpenseAmount>
+            <SourceAmount>111.3800</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:19:18</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:19:18</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>7e2f67df-c25f-4b48-83a3-7f62cb1506a5</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>0</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>eb4459a0-c635-4a8e-ad58-77c565470c16</Guid>
+              <ID>50397</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-07-29T00:00:00</ExpenseDate>
+            <Description>Road Show- Dallas</Description>
+            <VendorDescription />
+            <ExpenseAmount>117.5200</ExpenseAmount>
+            <SourceAmount>117.5200</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:12:57</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:12:57</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>c2239e61-4878-4aa8-94b7-a74c7e6cb331</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>4913caaa-5dd3-43ee-ad8f-71105d570506</Guid>
+              <ID>50393</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-08-02T00:00:00</ExpenseDate>
+            <Description>SeaTac Parking</Description>
+            <VendorDescription />
+            <ExpenseAmount>46.0000</ExpenseAmount>
+            <SourceAmount>46.0000</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:20:28</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:20:28</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>8a6aac01-9c91-4225-8603-afb21abbd1a2</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>0</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>4913caaa-5dd3-43ee-ad8f-71105d570506</Guid>
+              <ID>50393</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-09-21T00:00:00</ExpenseDate>
+            <Description>Denver Airport Parking</Description>
+            <VendorDescription />
+            <ExpenseAmount>3.0000</ExpenseAmount>
+            <SourceAmount>3.0000</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T13:45:28</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T13:45:28</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>4e6f2245-7985-4ac2-b213-bbcaa7c19a2b</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>6a928202-e7f0-488e-ba06-434b758b346e</Guid>
+              <ID>50401</ID>
+              <GLCode>8371</GLCode>
+              <GLDescription>MEALS &amp; EVENTS - 50% DED</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-08-02T00:00:00</ExpenseDate>
+            <Description>Dinner with Ray Kelly- Portland</Description>
+            <VendorDescription />
+            <ExpenseAmount>44.5700</ExpenseAmount>
+            <SourceAmount>44.5700</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:17:01</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:17:01</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>03e0c708-a2cd-4805-8d48-bc976937cad3</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>0</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>6a928202-e7f0-488e-ba06-434b758b346e</Guid>
+              <ID>50401</ID>
+              <GLCode>8371</GLCode>
+              <GLDescription>MEALS &amp; EVENTS - 50% DED</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-07-29T00:00:00</ExpenseDate>
+            <Description>Ash/Doug Dinner, MSP Airport</Description>
+            <VendorDescription />
+            <ExpenseAmount>16.1600</ExpenseAmount>
+            <SourceAmount>16.1600</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:08:31</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:08:31</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>0f629cdc-f994-4880-8500-cf6893e35959</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>4913caaa-5dd3-43ee-ad8f-71105d570506</Guid>
+              <ID>50393</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-08-06T00:00:00</ExpenseDate>
+            <Description>SeaTac Parking</Description>
+            <VendorDescription />
+            <ExpenseAmount>27.0000</ExpenseAmount>
+            <SourceAmount>27.0000</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:21:08</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:21:08</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>f4243608-a1f7-43f6-ae2e-d95c2556c643</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>f94868e8-8700-4655-bc18-0aa1a76cde16</Guid>
+              <ID>50395</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-07-29T00:00:00</ExpenseDate>
+            <Description>Road Show- Dallas</Description>
+            <VendorDescription />
+            <ExpenseAmount>106.9700</ExpenseAmount>
+            <SourceAmount>106.9700</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:03:44</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:04:04</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>32b244a7-9ed3-45c8-9e93-e69ae45c4a2f</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>0298ed0e-f749-4993-92ec-5954f41604f8</Guid>
+              <ID>50399</ID>
+              <GLCode>8371</GLCode>
+              <GLDescription>MEALS &amp; EVENTS - 50% DED</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-07-29T00:00:00</ExpenseDate>
+            <Description>Road Show- Coffee</Description>
+            <VendorDescription />
+            <ExpenseAmount>7.8800</ExpenseAmount>
+            <SourceAmount>7.8800</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T14:11:00</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T14:11:00</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>c4d2bdef-1ca2-4dd3-a5c0-e7085f7f1e1f</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>21</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>eb4459a0-c635-4a8e-ad58-77c565470c16</Guid>
+              <ID>50397</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-09-21T00:00:00</ExpenseDate>
+            <Description>Road Show- Colorado</Description>
+            <VendorDescription />
+            <ExpenseAmount>98.4300</ExpenseAmount>
+            <SourceAmount>98.4300</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T13:50:15</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T13:54:06</LastEditDate>
+          </ExpenseDetail>
+          <ExpenseDetail>
+            <Ref>
+              <Guid>bb38d737-780c-4119-a65e-f82b3af82937</Guid>
+            </Ref>
+            <Expense>
+              <Guid>c35b37c1-6885-4fa5-b938-7473b89488a6</Guid>
+              <ID>0</ID>
+            </Expense>
+            <ParentDetail />
+            <Customer>
+              <Guid>3c24c34b-b459-4eb8-9b6c-26c14479a5b7</Guid>
+              <Name>TEST4 : 170119 - CLT Design Build Eve</Name>
+              <ExternalID>170119</ExternalID>
+            </Customer>
+            <Project>
+              <Guid>256c4695-88b9-4185-9f7b-96871635fcda</Guid>
+              <ProjectNumber>C10149 - 008 - OTHER DIRECT COSTS</ProjectNumber>
+              <GLSuffix />
+              <ExternalID>008</ExternalID>
+            </Project>
+            <Department>
+              <ID>125315</ID>
+              <Department>000 - MCK CORP OH</Department>
+              <GLPrefix>0</GLPrefix>
+              <LocationID>125309</LocationID>
+              <Location>Not Applicable</Location>
+              <LocationGLPrefix>0</LocationGLPrefix>
+              <DivisionID>125303</DivisionID>
+              <Division>1 - MCKINSTRY CO, LLC</Division>
+              <DivisionGLPrefix>1</DivisionGLPrefix>
+            </Department>
+            <Organizations>
+              <Organization>
+                <OrgId>125315</OrgId>
+                <OrgName>000 - MCK CORP OH</OrgName>
+                <OrgTypeId>3541</OrgTypeId>
+                <OrgTypeName>Department</OrgTypeName>
+                <OrgLevel>1</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125309</OrgId>
+                <OrgName>Not Applicable</OrgName>
+                <OrgTypeId>3540</OrgTypeId>
+                <OrgTypeName>Division</OrgTypeName>
+                <OrgLevel>2</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>1</OrgRank>
+                <OrgGLPrefix>0</OrgGLPrefix>
+              </Organization>
+              <Organization>
+                <OrgId>125303</OrgId>
+                <OrgName>1 - MCKINSTRY CO, LLC</OrgName>
+                <OrgTypeId>3539</OrgTypeId>
+                <OrgTypeName>Company</OrgTypeName>
+                <OrgLevel>3</OrgLevel>
+                <OrgGroup>1</OrgGroup>
+                <OrgRank>2</OrgRank>
+                <OrgGLPrefix>1</OrgGLPrefix>
+              </Organization>
+            </Organizations>
+            <ExpenseType>
+              <Guid>eb4459a0-c635-4a8e-ad58-77c565470c16</Guid>
+              <ID>50397</ID>
+              <GLCode>8370</GLCode>
+              <GLDescription>TRAVEL &amp;amp; LODGING</GLDescription>
+              <Reimbursable>True</Reimbursable>
+              <ExternalID />
+              <defaultAmount>0.0000</defaultAmount>
+              <lockAmount>False</lockAmount>
+            </ExpenseType>
+            <PaymentType>
+              <Guid>6504d0ec-6aca-4cab-b26b-4ffd110a2ec0</Guid>
+              <ID>36066</ID>
+              <PaymentType> Corporate P-Card</PaymentType>
+              <Reimbursable>False</Reimbursable>
+            </PaymentType>
+            <Currency>
+              <ID>1</ID>
+              <Code>USD</Code>
+            </Currency>
+            <ExpenseDate>2010-09-21T00:00:00</ExpenseDate>
+            <Description>Road Show- San Antonio</Description>
+            <VendorDescription />
+            <ExpenseAmount>150.6100</ExpenseAmount>
+            <SourceAmount>150.6100</SourceAmount>
+            <ConversionRate>1.000000000</ConversionRate>
+            <ConversionDate />
+            <CustomRate>0.000000000</CustomRate>
+            <Reimbursable>0</Reimbursable>
+            <HasRequiredData>true</HasRequiredData>
+            <IsSplit>false</IsSplit>
+            <IsParentSplit>false</IsParentSplit>
+            <CreatedUser>dougm@McKinstry.com</CreatedUser>
+            <CreatedDate>2010-09-21T13:53:35</CreatedDate>
+            <LastEditUser>dougm@McKinstry.com</LastEditUser>
+            <LastEditDate>2010-09-21T13:53:35</LastEditDate>
+          </ExpenseDetail>
+        </Expense>
+      </Search>
+    </Expense>
+  </SendDataTransaction>
+</ExpenseWire>

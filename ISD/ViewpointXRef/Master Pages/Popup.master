@@ -1,0 +1,34 @@
+﻿<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Master Language="C#" %>
+<%@ Register Tagprefix="Selectors" Namespace="ViewpointXRef" Assembly="ViewpointXRef" %>
+
+<%@ Register Tagprefix="BaseClasses" Namespace="BaseClasses.Web.UI.WebControls" Assembly="BaseClasses" %><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="keywords" content="ViewpointXRef" />
+    <title></title>
+    </head>
+ 	
+    
+    
+    <body id="Body1" class="QpBack" runat="server">
+        <form id="Form1" method="post" runat="server">
+            <BaseClasses:ScrollCoordinates id="ScrollCoordinates1" runat="server"></BaseClasses:ScrollCoordinates>
+            <BaseClasses:BasePageSettings id="PageSettings" runat="server"></BaseClasses:BasePageSettings>
+            <script language="JavaScript" type="text/javascript">clearRTL()</script>
+
+      <asp:ScriptManager ID="scriptManager1" runat="server" EnablePartialRendering="True" EnablePageMethods="True" EnableScriptGlobalization="True" EnableScriptLocalization="True">
+      </asp:ScriptManager>
+    <table border="0" cellpadding="0" cellspacing="0"><tr><td><div class="QPCloseBar"></div>
+<div class="QPCloseBarButtonContainer">
+<table border="0" cellpadding="0" cellspacing="0" style="width: 100%"><tr><td class="QPCloseBarButtonPosition"><input id="CloseButton" type="image" style="border-width:0px;" onclick="closePopupPage(); return false;" src="../Images/closeButton.gif" onmouseover="this.src='../Images/closeButtonOver.gif'" onmouseout="this.src='../Images/closeButton.gif'" title="<%= BaseClasses.Resources.AppResources.GetResourceValue("Btn:Close", "")%>"/></td></tr></table>
+
+</div> 
+</td></tr><tr><td><table class="QSContainer"><tr><td class="QPContainerPanelPadding"><asp:ContentPlaceHolder id="PageContent" Runat="server" /></td></tr></table>
+</td></tr><tr><td><!--when this control receives focus by tabbing, the onfocus javascript will set focus back to the first focus control within this popup-->
+<input type="image" id="focusTrigger" class="hide" onfocus="focusControl(Fev_FocusOnFirstFocusableFormElement())" src="../Images/space.gif" /></td></tr></table>
+        </form>
+    </body>
+</html>
+          

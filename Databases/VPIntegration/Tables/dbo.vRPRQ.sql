@@ -1,0 +1,12 @@
+CREATE TABLE [dbo].[vRPRQ]
+(
+[ReportID] [int] NOT NULL,
+[DataSetName] [varchar] (50) COLLATE Latin1_General_BIN NOT NULL,
+[QueryText] [varchar] (max) COLLATE Latin1_General_BIN NOT NULL,
+[KeyID] [int] NOT NULL IDENTITY(1, 2)
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[vRPRQ] ADD CONSTRAINT [PK_vRPRQ] PRIMARY KEY CLUSTERED  ([KeyID]) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [IX_vRPRQ_ReportID] ON [dbo].[vRPRQ] ([ReportID]) ON [PRIMARY]
+GO

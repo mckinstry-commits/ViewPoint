@@ -1,0 +1,28 @@
+4:31:24 PM	-----------------------------------------------
+4:31:24 PM	Monday, February 24, 2014
+4:31:24 PM	-----------------------------------------------
+4:31:24 PM	FTP Server:   upload.brighthorizons.com
+4:31:24 PM	FTP Protocol: Sftp
+4:31:24 PM	Remote Upload Dir:   
+4:31:24 PM	Remote Download Dir:   
+4:31:24 PM	Server:       SEABILLOXPS
+4:31:24 PM	Local Dir:    C:\TFS\ViewPoint\Integration\BrightHorizons\Download\
+4:31:24 PM	SQL Server:    SESQL08
+4:31:24 PM	Database:    HRNET
+4:31:24 PM	-----------------------------------------------
+4:31:56 PM	** Benefits Eligible Roster Export "SELECT * FROM dbo.mfnBenefitEligibleEmployees(20140216)" (941 records)
+4:31:56 PM		to C:\TFS\ViewPoint\Integration\BrightHorizons\Upload\McKinstry_BrightHorizons_Benefits_Elligible_20140224.csv
+4:31:56 PM	
+4:32:00 PM	** Upload SEABILLOXPS:"C:\TFS\ViewPoint\Integration\BrightHorizons\Upload\McKinstry_BrightHorizons_Benefits_Elligible_20140224.csv"
+4:32:00 PM		 -->> upload.brighthorizons.com/Eligibility/McKinstry-sftp/
+4:32:00 PM	        	C:\TFS\ViewPoint\Integration\BrightHorizons\Upload\McKinstry_BrightHorizons_Benefits_Elligible_20140224.csv (0 %) ... 
+4:32:00 PM	        	C:\TFS\ViewPoint\Integration\BrightHorizons\Upload\McKinstry_BrightHorizons_Benefits_Elligible_20140224.csv (0 %) ... 
+4:32:00 PM	        	C:\TFS\ViewPoint\Integration\BrightHorizons\Upload\McKinstry_BrightHorizons_Benefits_Elligible_20140224.csv (100 %) ... 
+4:32:00 PM	        	C:\TFS\ViewPoint\Integration\BrightHorizons\Upload\McKinstry_BrightHorizons_Benefits_Elligible_20140224.csv (100 %) ... 
+4:32:00 PM	        	C:\TFS\ViewPoint\Integration\BrightHorizons\Upload\McKinstry_BrightHorizons_Benefits_Elligible_20140224.csv (100 %) ... 
+4:32:00 PM	        	C:\TFS\ViewPoint\Integration\BrightHorizons\Upload\McKinstry_BrightHorizons_Benefits_Elligible_20140224.csv (100 %) ... 
+4:32:00 PM	        	C:\TFS\ViewPoint\Integration\BrightHorizons\Upload\McKinstry_BrightHorizons_Benefits_Elligible_20140224.csv (100 %) ... 
+4:32:00 PM	        	C:\TFS\ViewPoint\Integration\BrightHorizons\Upload\McKinstry_BrightHorizons_Benefits_Elligible_20140224.csv (100 %) ... 
+4:32:01 PM	
+4:32:01 PM	** Sending Email
+4:32:01 PM		To: billo@mckinstry.com

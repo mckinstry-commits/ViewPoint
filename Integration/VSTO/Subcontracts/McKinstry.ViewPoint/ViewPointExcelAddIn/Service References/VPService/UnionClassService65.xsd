@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://setestviewpoint/ViewPointService/UnionClassService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://setestviewpoint/ViewPointService/UnionClassService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:complexType name="ArrayOfCraftInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CraftInfo" nillable="true" type="tns:CraftInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCraftInfo" nillable="true" type="tns:ArrayOfCraftInfo" />
+  <xs:complexType name="CraftInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Class" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Craft" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EEOClass" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="KeyID" type="xs:long" />
+          <xs:element minOccurs="0" name="NewCapLimit" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OldCapLimit" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PRCo" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="SuperWeeklyMin" type="xs:decimal" />
+          <xs:element minOccurs="0" name="UniqueAttchID" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="WghtAvgOT" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="udShopYN" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CraftInfo" nillable="true" type="tns:CraftInfo" />
+  <xs:complexType name="ArrayOfDeduction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Deduction" nillable="true" type="tns:Deduction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDeduction" nillable="true" type="tns:ArrayOfDeduction" />
+  <xs:complexType name="Deduction">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q2:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Class" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Craft" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DLCode" type="xs:short" />
+          <xs:element minOccurs="0" name="Factor" type="xs:decimal" />
+          <xs:element minOccurs="0" name="KeyID" type="xs:long" />
+          <xs:element minOccurs="0" name="NewRate" type="xs:decimal" />
+          <xs:element minOccurs="0" name="OldRate" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PRCo" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="UniqueAttchID" nillable="true" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Deduction" nillable="true" type="tns:Deduction" />
+  <xs:complexType name="ArrayOfEarning">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Earning" nillable="true" type="tns:Earning" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEarning" nillable="true" type="tns:ArrayOfEarning" />
+  <xs:complexType name="Earning">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q3:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Class" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Craft" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EarnCode" type="xs:short" />
+          <xs:element minOccurs="0" name="Factor" type="xs:decimal" />
+          <xs:element minOccurs="0" name="KeyID" type="xs:long" />
+          <xs:element minOccurs="0" name="NewRate" type="xs:decimal" />
+          <xs:element minOccurs="0" name="OldRate" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PRCo" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="UniqueAttchID" nillable="true" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Earning" nillable="true" type="tns:Earning" />
+  <xs:complexType name="ArrayOfShiftRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShiftRate" nillable="true" type="tns:ShiftRate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShiftRate" nillable="true" type="tns:ArrayOfShiftRate" />
+  <xs:complexType name="ShiftRate">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q4:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Class" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Craft" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="KeyID" type="xs:long" />
+          <xs:element minOccurs="0" name="NewRate" type="xs:decimal" />
+          <xs:element minOccurs="0" name="OldRate" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PRCo" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="Shift" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="UniqueAttchID" nillable="true" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ShiftRate" nillable="true" type="tns:ShiftRate" />
+  <xs:complexType name="ArrayOfMasterEarning">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MasterEarning" nillable="true" type="tns:MasterEarning" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMasterEarning" nillable="true" type="tns:ArrayOfMasterEarning" />
+  <xs:complexType name="MasterEarning">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q5:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EarnCode" type="xs:short" />
+          <xs:element minOccurs="0" name="Factor" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Method" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PRCo" type="xs:unsignedByte" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MasterEarning" nillable="true" type="tns:MasterEarning" />
+  <xs:complexType name="ArrayOfMasterDeduction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MasterDeduction" nillable="true" type="tns:MasterDeduction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMasterDeduction" nillable="true" type="tns:ArrayOfMasterDeduction" />
+  <xs:complexType name="MasterDeduction">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q6:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DLCode" type="xs:short" />
+          <xs:element minOccurs="0" name="DLType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Method" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PRCo" type="xs:unsignedByte" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MasterDeduction" nillable="true" type="tns:MasterDeduction" />
+  <xs:complexType name="ArrayOfMasterCraft">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MasterCraft" nillable="true" type="tns:MasterCraft" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMasterCraft" nillable="true" type="tns:ArrayOfMasterCraft" />
+  <xs:complexType name="MasterCraft">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q7:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Craft" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PRCo" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="VendorGroup" nillable="true" type="xs:unsignedByte" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MasterCraft" nillable="true" type="tns:MasterCraft" />
+</xs:schema>

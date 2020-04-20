@@ -1,0 +1,1212 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/16/2019 11:09:25 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="VPAPPDEV"
+  DTS:CreatorName="VPAPPDEV\thirdparty"
+  DTS:DTSID="{3A490CBC-9452-4275-82DD-6994BEB848DA}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.107"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="WFPaymentOutbound"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="119"
+  DTS:VersionGUID="{190830A6-4351-4EE6-8254-8988C8B046FE}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SFTP File Source]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{92E759CB-64A9-4D7E-BFC6-F12266F48E06}"
+      DTS:ObjectName="SFTP File Source">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::ExportPath] +  REPLACE(@[User::ExportFileName], "|ts|", @[User::TS] )</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SMTP 1]"
+      DTS:CreationName="ZS-SMTP"
+      DTS:DTSID="{61EA35CB-43AF-48ED-9DA5-FC4A9D36784C}"
+      DTS:ObjectName="SMTP 1">
+      <DTS:ObjectData>
+        <ConnectionManager
+          ConnectionString="SmtpServer=mail.mckinstry.com;UserName=;Port=25;EnableSsl=True;Timeout=10000;EnableAnonymousAuth=True" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Viewpoint]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F09F6421-4340-42F6-AACA-B51DFE5579C5}"
+      DTS:ObjectName="Viewpoint">
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[$Package::RunProduction] ?  @[User::DBServerProd] :  @[User::DBServerStaging]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=VPSTAGINGAG\VIEWPOINT;Initial Catalog=Viewpoint;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F09F6421-4340-42F6-AACA-B51DFE5579C5}VPAPPDEV.ThirdParty;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[WF File Output]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BFBA0E62-BFB6-433C-83BA-403A2F7A1A1C}"
+      DTS:ObjectName="WF File Output">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::ExportPath] +  REPLACE(@[User::ExportFileName], "|ts|", @[User::TS] )</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="RaggedRight"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="8000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LineData"
+              DTS:DTSID="{CAB8D000-EA63-4927-A6FE-6EB571F223C7}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[WF SFTP]"
+      DTS:CreationName="ZS-SFTP"
+      DTS:DTSID="{2CB8BC5B-F0E8-4DCD-858C-99EF381AFF7B}"
+      DTS:ObjectName="WF SFTP">
+      <DTS:PropertyExpression
+        DTS:Name="KeyFilePath">@[$Package::RunProduction] ?  @[User::SSHKeyLocationProd] :  @[User::SSHKeyLocationStaging]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="PassPhrase">@[$Package::SSHPW]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[$Package::RunProduction] ?  @[User::WFHostNameProd] :  @[User::WFHostNameStaging]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="UserName">@[$Package::RunProduction] ?  @[User::WFUserNameProd] :  @[User::WFUserNameStaging]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ConnectionManager
+          ConnectionString="Protocol=Sftp;ServerName=safetransvalidate.wellsfargo.com;Port=22;LogonType=KeyFile;UserName=t8nj4d8x;Domain=;EncryptionMode=None;KeyFilePath=\\evl-sql02\SSHKeys\WellsFargo Verification Private SSH Key.ppk;ClientCertFilePath=;Account=;VerifyChecksum=False;IgnoreCertErrors=False;MinSslTlsVersion=Any;MaxSslTlsVersion=Any;DoNotReuseSslSessions=False;DoNotReuseControlConnectionSession=False;ProxyType=None;ProxyAuthMode=Basic;ProxyServer=;ProxyPort=1080;ProxyUserName=;ProxyDomain=;TransferMode=Binary;TrustedFingerprints=;MaxUploadSpeedKbps=0;MaxDownloadSpeedKbps=0;UseActiveMode=False;EnableCompression=False;EnableRestoreDateTime=False;DateTimeItemsForRestore=Default;Timeout=60;DefaultDirectory=;TreatUnknownItemsAsFiles=False;DisableSftp4=False;DisableTransferQueue=False;UseSmallPackets=False;WaitForServerWelcomeMessage=False;MinimumKeySize=0;KeyExchangeAlgorithms=;HostKeyAlgorithms=;MacAlgorithms=;EncryptionAlgorithms=;DoNotSendSignals=False;DoNotSendAbort=False;KeepAliveDuringTransfer=False;PauseBeforeUploadClose=False;SslDoNotInsertEmptyFragment=False;UseLargeBuffer=False;RetainSameConnection=False">
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="Io/C2wF1dfM="
+            IV="UyGQ+S1tJodqkQ8dyHWrOw==" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+            <CipherData>
+              <CipherValue>UyGQ+S1tJodqkQ8dyHWrO+CutEepOiEYkuctNpQ6r/ctVXs2Yqj5GXcbNuK9xIwzmpLH5Fv1lR0JD6zm2/IR1r2Nka6MsGlD74sPGjApbsA=</CipherValue>
+            </CipherData>
+          </EncryptedData>
+        </ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="11"
+      DTS:DTSID="{892DAD0D-319F-4CC9-83E6-009DCA302873}"
+      DTS:ObjectName="RunProduction"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="11"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{24101A94-AD8A-499E-BA43-230459D7C7BB}"
+      DTS:ObjectName="SSHPW"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">wisps-FYbbsRv</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:Description="Export File Name"
+      DTS:DTSID="{C8FFCA24-C7FC-49D0-B863-084F3D1F37D7}"
+      DTS:ObjectName="WFExportFileName">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue"
+        xml:space="preserve"></DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:Description="Export Path"
+      DTS:DTSID="{F1B21D16-7DDB-4C78-A405-54D7A1A34D3B}"
+      DTS:ObjectName="WFExportPath">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue"
+        xml:space="preserve"></DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:Description="Pay Control"
+      DTS:DTSID="{90367C03-7779-4D5E-AC2B-1EC588F1350F}"
+      DTS:ObjectName="WFPayControl">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue"
+        xml:space="preserve"></DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A40120CE-A606-4561-B4D3-7030263E38FE}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::ExportPath] + &quot;\\Archive&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ArchivePath">
+      <DTS:VariableValue
+        DTS:DataType="8">\Archive</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D6EDC951-0376-4D18-B57C-92BDB44D0907}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Count">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DB0C9469-CB99-4FE9-8662-454B6A9636B7}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DBServerProd">
+      <DTS:VariableValue
+        DTS:DataType="8">VIEWPOINTAG\VIEWPOINT</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5347A2C2-0AEA-439E-882E-D555B88DB972}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DBServerStaging">
+      <DTS:VariableValue
+        DTS:DataType="8">VPSTAGINGAG\VIEWPOINT</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2622799C-5A2E-4C31-BC84-A0FBA4610E34}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::RunProduction] ? &quot;Production&quot; : &quot;Test&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Environment">
+      <DTS:VariableValue
+        DTS:DataType="8">Test</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{83F5A58C-40C4-4918-8962-627776BB45D2}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ExportFileName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0D572894-49B5-4C57-B6F0-D1C94A05A01A}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="REPLACE(@[User::ExportFileName], &quot;|ts|&quot;, @[User::TS] )"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ExportFilePathAndName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{891AD6C7-8945-487C-8445-F0443D783ADA}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ExportPath">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8D3AE12C-D569-40A2-8D14-61D7FC3C6CBA}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PayControl">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{623073A0-3443-4D10-A90E-9090F7EBCF3A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SSHKeyLocationProd">
+      <DTS:VariableValue
+        DTS:DataType="8">\\SEA-SQLETL01\SSHKeys\WellsFargo Production Private SSH Key.ppk</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1694ADEE-3D2E-4F98-A2DE-0432513AB55A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SSHKeyLocationStaging">
+      <DTS:VariableValue
+        DTS:DataType="8">\\evl-sql02\SSHKeys\WellsFargo Verification Private SSH Key.ppk</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3A06D423-06CE-41E3-9807-68CBBF1EAC1A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TS">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{68A3501E-915B-41AA-80A4-A6B2FFA340AA}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="WFHostNameProd">
+      <DTS:VariableValue
+        DTS:DataType="8">safetrans.wellsfargo.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4F169848-488B-4A91-8BB0-1A8B78B01A78}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="WFHostNameStaging">
+      <DTS:VariableValue
+        DTS:DataType="8">safetransvalidate.wellsfargo.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CBD8482D-D7E7-4A0F-B62B-56CE35327E6B}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="WFUserNameProd">
+      <DTS:VariableValue
+        DTS:DataType="8">a4k7ylc3</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3A238C3D-B8DF-40DA-8807-AC19134C29D4}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="WFUserNameStaging">
+      <DTS:VariableValue
+        DTS:DataType="8">t8nj4d8x</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Archive File"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:DelayValidation="True"
+      DTS:Description="File System Task"
+      DTS:DTSID="{ECD11EFD-47F7-4ED8-83E5-E4F800CFC50E}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Archive File"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskSourcePath="{BFBA0E62-BFB6-433C-83BA-403A2F7A1A1C}"
+          TaskDestinationPath="User::ArchivePath"
+          TaskIsDestinationVariable="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Check for Valid Data"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{101D6E50-9A3F-40F2-B2FF-F41D69932070}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Check for Valid Data"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F09F6421-4340-42F6-AACA-B51DFE5579C5}"
+          SQLTask:SqlStatementSource="select count(*) as cnt  From custWFPayExportOutput&#xA;"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="cnt"
+            SQLTask:DtsVariableName="User::Count" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{1B760C67-A158-4EA0-97FC-96EEFC1CFBD6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[WF File Output]"
+                  connectionManagerRefId="Package.ConnectionManagers[WF File Output]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[LineData]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8000"
+                      cachedName="LineData"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LineData]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LineData]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LineData]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8000"
+                      name="LineData" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select LineData from custWFPayExportOutput
+Order By CMCo, BatchID, Sort</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Viewpoint]"
+                  connectionManagerRefId="Package.ConnectionManagers[Viewpoint]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LineData]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LineData]"
+                      length="8000"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LineData]"
+                      name="LineData"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LineData]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8000"
+                      name="LineData" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LineData]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8000"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LineData]"
+                      name="LineData" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Delete Original"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="File System Task"
+      DTS:DTSID="{4ED7F5AD-3576-4DAA-975C-93A94FBA352F}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Delete Original"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="DeleteFile"
+          TaskSourcePath="{BFBA0E62-BFB6-433C-83BA-403A2F7A1A1C}" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute Pay Export Proc"
+      DTS:DTSID="{DB5827E5-425F-4397-B69F-75AADA96C8B5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F09F6421-4340-42F6-AACA-B51DFE5579C5}"
+          SQLTask:SqlStatementSource="EXEC dbo.custWFPayExport" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Generate Timestamp"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{4E5CCCC2-F6A1-4DD9-8323-60CE4EA05656}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Generate Timestamp"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F09F6421-4340-42F6-AACA-B51DFE5579C5}"
+          SQLTask:SqlStatementSource="SELECT format(getdate(),'yyyyMMddHHmmss') AS ts"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="ts"
+            SQLTask:DtsVariableName="User::TS" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Get Variables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{4DDB1600-2743-4939-BB8D-F44DE259F408}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get Variables"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F09F6421-4340-42F6-AACA-B51DFE5579C5}"
+          SQLTask:SqlStatementSource="select &#xA;&#xA;CMCo,&#xA;udWFExportPath,&#xA;udWFExportFileName&#xA; from Viewpoint.dbo.bCMAC&#xA;&#xA; WHERE  udWFAcctYN = 'Y'"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="udWFExportPath"
+            SQLTask:DtsVariableName="User::ExportPath" />
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="udWFExportFileName"
+            SQLTask:DtsVariableName="User::ExportFileName" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Send to WF"
+      DTS:CreationName="ZappySys.SecureFtpTask"
+      DTS:Description="ZS Secure FTP Task (SFTP, FTP, FTPS)"
+      DTS:DTSID="{F0DB8814-295A-46E9-A11B-417519A52356}"
+      DTS:ExecutableType="ZappySys.SecureFtpTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Send to WF"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SecureFtpTask
+          StorageAction="UploadFileToFtp"
+          FileOverwriteAction="OverwriteOlder"
+          ContinueOnError="False"
+          ThrowErrorIfSourceNotFound="True"
+          DeleteSourceWhenDone="False"
+          SourceStorageConnection=""
+          SourcePathAccessMode="Connection"
+          SourcePathValue=""
+          SourcePathConnection="SFTP File Source"
+          SourcePathVariable=""
+          Recursive="False"
+          ResultVariable=""
+          TargetStorageConnection="WF SFTP"
+          TargetPathAccessMode="Direct"
+          TargetPathValue="inbound/MCKIN986_PMGR_1"
+          TargetPathConnection=""
+          TargetPathVariable=""
+          CreateMissingTargetFolder="True"
+          ExcludeRegXPattern=""
+          IncludeRegXPattern=""
+          SortBy="Size"
+          SortDirection="Asc"
+          WhereClause=""
+          EnableSort="False"
+          MaxItems="0"
+          LogLevel="Detail"
+          PrefixTimestamp="False" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ZS HTML Email Task"
+      DTS:CreationName="ZappySys.HtmlEmailTask"
+      DTS:Description="ZS HTML Email Task"
+      DTS:DTSID="{3A50281F-6E3A-427A-B624-521F1F1C6F2C}"
+      DTS:ExecutableType="ZappySys.HtmlEmailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ZS HTML Email Task"
+      DTS:TaskContact="HTML Email Task; ZappySys LLC (c) All Rights Reserved; SSIS PowerPack; http://www.zappysys.com/support"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Attachments">@[User::ExportPath] +  REPLACE(@[User::ExportFileName], "|ts|", @[User::TS] )</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <HtmlEmailTask
+          SmtpConnection="SMTP 1"
+          IsHtmlEmail="True"
+          DefaultStyle="&#xA;&lt;style type=&quot;text/css&quot;&gt;&#xA;body,div,p,span,td,th,table {&#xA; font-family: Helvetica, Arial, sans-serif;&#xA; font-size: 10pt; &#xA;}&#xA;h1,h2,h3,h4,h5{&#xA;font-family: Helvetica, Arial, sans-serif;&#xA;}&#xA;&#xA;table { &#xA; border-collapse: &#xA; collapse; border-spacing: 0; &#xA;}&#xA;&#xA;tr.odd    {background-color: #cccccc}&#xA;tr.even   {background-color: #fafafa}&#xA;td, th { border: 1px solid #bbb;padding: 5 5 5 5} &#xA;th { background: #F3F3F3;  font-weight: bold;}&#xA;&lt;/style&gt;&#xA;&#xA;"
+          Subject="Wells Fargo CC payment file sent"
+          From="ssisservice@mckinstry.com"
+          To="p-cards@mckinstry.com;jeann@mckinstry.com"
+          Cc=""
+          ReplyTo=""
+          Bcc=""
+          Attachments=""
+          EmailPriority="Low"
+          MessageSourceType="Direct"
+          MessageDirectValue="The following file has been sent to Wells Fargo:&#xA;&#xA;{{User::ExportFilePathAndName}};&#xA;&#xA;Environment: {{User::Environment}}&#xA;"
+          MessageFileConnection=""
+          MessageVariable=""
+          LogLevel="Normal"
+          PrefixTimestamp="False" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ZS Logging Task"
+      DTS:CreationName="ZappySys.LoggingTask"
+      DTS:Description="ZS Logging Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{D36B1B6E-169E-43FD-ABE1-65FAF1068703}"
+      DTS:ExecutableType="ZappySys.LoggingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ZS Logging Task"
+      DTS:TaskContact="Logging Task; ZappySys LLC (c) All Rights Reserved; SSIS PowerPack; http://www.zappysys.com/support"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <LoggingTask
+          Message="{{$Package::WFExportFileName}}&#xA;{{User::ExportPath}}&#xA;{{User::ExportFileName}}&#xA;BW&#xA;{{User::WFPasswordStaging}}"
+          LogVariableName=""
+          MessageType="Information"
+          LogMode="MessageBox"
+          LogFilePath=""
+          LogFileAppend="True"
+          LogDateTime="True"
+          DateTimeFormat="HH:mm:ss"
+          LogLevel="Debugging"
+          PrefixTimestamp="False" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{970B43BE-AF38-4C46-97A2-7416CC455100}"
+      DTS:From="Package\Get Variables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Execute SQL Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{A0FD51BD-9C09-4715-8F58-565B0AE8B2FA}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Check for Valid Data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{000F25CC-F024-4BC8-8577-FEE3344D98A5}"
+      DTS:EvalOp="3"
+      DTS:Expression="@[User::Count]&gt;=&quot;1&quot;"
+      DTS:From="Package\Check for Valid Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Data Flow Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{A9259ABF-266E-4DB6-825E-74002A7EBC10}"
+      DTS:From="Package\Data Flow Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\ZS Logging Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{22897E5B-B8B6-46CB-A1D8-DF9CD519CDC7}"
+      DTS:From="Package\Generate Timestamp"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Execute SQL Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{0468DC8B-9932-42C7-9AEB-77C0AD650388}"
+      DTS:From="Package\Send to WF"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\ZS HTML Email Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{2FC42F49-FB06-45EC-8891-8BDE85D7B57C}"
+      DTS:From="Package\Archive File"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Delete Original" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{24AC02D4-4844-4E9B-9EB4-FDFAD9CFE44A}"
+      DTS:From="Package\ZS Logging Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Send to WF" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{B762C3F8-B66E-4D00-929E-320C4E50FABF}"
+      DTS:From="Package\ZS HTML Email Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\Archive File" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Archive File"
+          TopLeft="527.5,340.714285714286" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Check for Valid Data"
+          TopLeft="74,252" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="325.857142857143,257.071428571428" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\Delete Original"
+          TopLeft="332.5,343.928571428572" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="99,182" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Generate Timestamp"
+          TopLeft="287,21.2142857142857" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Get Variables"
+          TopLeft="70,33" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Send to WF"
+          TopLeft="561.5,255" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\ZS HTML Email Task"
+          TopLeft="767,305" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\ZS Logging Task"
+          TopLeft="447,106" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="140.5,75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="14.1666666666667,107"
+              Start="0,0"
+              End="14.1666666666667,99.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.5759416767922" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,59.5759416767922"
+                    Point2="0,63.5759416767922"
+                    Point3="4,63.5759416767922" />
+                  <mssgle:LineSegment
+                    End="10.1666666666667,63.5759416767922" />
+                  <mssgle:CubicBezierSegment
+                    Point1="10.1666666666667,63.5759416767922"
+                    Point2="14.1666666666667,63.5759416767922"
+                    Point3="14.1666666666667,67.5759416767922" />
+                  <mssgle:LineSegment
+                    End="14.1666666666667,99.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="180.5,224">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-19,28"
+              Start="0,0"
+              End="-19,20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10"
+                    Point2="0,14"
+                    Point3="-4,14" />
+                  <mssgle:LineSegment
+                    End="-15,14" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-15,14"
+                    Point2="-19,14"
+                    Point3="-19,18" />
+                  <mssgle:LineSegment
+                    End="-19,20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="249,275.535714285714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="76.8571428571429,0"
+              Start="0,0"
+              End="69.3571428571429,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="69.3571428571429,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="26.6785714285714,5,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="401.357142857143,257.071428571428">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="99.3095238095237,-109.071428571428"
+              Start="0,0"
+              End="99.3095238095237,-101.571428571428">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-60.7826517744547" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-60.7826517744547"
+                    Point2="0,-64.7826517744547"
+                    Point3="4,-64.7826517744547" />
+                  <mssgle:LineSegment
+                    End="95.3095238095237,-64.7826517744547" />
+                  <mssgle:CubicBezierSegment
+                    Point1="95.3095238095237,-64.7826517744547"
+                    Point2="99.3095238095237,-64.7826517744547"
+                    Point3="99.3095238095237,-68.7826517744547" />
+                  <mssgle:LineSegment
+                    End="99.3095238095237,-101.571428571428" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="376,63.2142857142857">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-169.666666666667,118.785714285714"
+              Start="0,0"
+              End="-169.666666666667,111.285714285714">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.5786321819129" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,66.5786321819129"
+                    Point2="0,70.5786321819129"
+                    Point3="-4,70.5786321819129" />
+                  <mssgle:LineSegment
+                    End="-165.666666666667,70.5786321819129" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-165.666666666667,70.5786321819129"
+                    Point2="-169.666666666667,70.5786321819129"
+                    Point3="-169.666666666667,74.5786321819129" />
+                  <mssgle:LineSegment
+                    End="-169.666666666667,111.285714285714" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="695.5,276">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="71.5,44.3333333333333"
+              Start="0,0"
+              End="64,44.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="37.3256880733945,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="37.3256880733945,0"
+                    Point2="41.3256880733945,0"
+                    Point3="41.3256880733945,4" />
+                  <mssgle:LineSegment
+                    End="41.3256880733945,40.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41.3256880733945,40.3333333333333"
+                    Point2="41.3256880733945,44.3333333333333"
+                    Point3="45.3256880733945,44.3333333333333" />
+                  <mssgle:LineSegment
+                    End="64,44.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="527.5,363.321428571429">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-46.5,0"
+              Start="0,0"
+              End="-39,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-39,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="550.333333333333,148">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="78.1666666666666,107"
+              Start="0,0"
+              End="78.1666666666666,99.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.4476670870113" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.4476670870113"
+                    Point2="0,43.4476670870113"
+                    Point3="4,43.4476670870113" />
+                  <mssgle:LineSegment
+                    End="74.1666666666666,43.4476670870113" />
+                  <mssgle:CubicBezierSegment
+                    Point1="74.1666666666666,43.4476670870113"
+                    Point2="78.1666666666666,43.4476670870113"
+                    Point3="78.1666666666666,47.4476670870113" />
+                  <mssgle:LineSegment
+                    End="78.1666666666666,99.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="767,331.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-106.5,30.0476190476193"
+              Start="0,0"
+              End="-99,30.0476190476193">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-40.9449541284403,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-40.9449541284403,0"
+                    Point2="-44.9449541284403,0"
+                    Point3="-44.9449541284403,4" />
+                  <mssgle:LineSegment
+                    End="-44.9449541284403,26.0476190476193" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-44.9449541284403,26.0476190476193"
+                    Point2="-44.9449541284403,30.0476190476193"
+                    Point3="-48.9449541284403,30.0476190476193" />
+                  <mssgle:LineSegment
+                    End="-99,30.0476190476193" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Data Flow Task\OLE DB Source"
+          TopLeft="76,30" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Data Flow Task\Flat File Destination"
+          TopLeft="246,135" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="151,72">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="181,63"
+              Start="0,0"
+              End="181,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.5"
+                    Point2="0,31.5"
+                    Point3="4,31.5" />
+                  <mssgle:LineSegment
+                    End="177,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="177,31.5"
+                    Point2="181,31.5"
+                    Point3="181,35.5" />
+                  <mssgle:LineSegment
+                    End="181,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

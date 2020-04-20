@@ -1,0 +1,1 @@
+"c:\Windows\syswow64\WindowsPowerShell\v1.0\powershell.exe" .\DataExtractTemplate.ps1 /u BILLO /p OREBA1U

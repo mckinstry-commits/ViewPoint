@@ -1,0 +1,13 @@
+2014-10-28 22:43:34Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-10-28 22:43:34Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\TestSix.zip
+2014-10-28 22:43:34Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.43.34Z_1
+2014-10-28 22:43:34Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.43.34Z_1
+2014-10-28 22:43:36Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.43.34Z_1\TestSix.csv
+2014-10-28 22:43:36Z	Environment: Server: VIEWPOINTAG\VIEWPOINT Database: Viewpoint
+2014-10-28 22:43:36Z	Upload record 12218, Batch ID 2 : Unsuccessful : Header record created successfully. Error creating attachment record.
+2014-10-28 22:43:36Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.43.34Z_1\TestSix.csv
+2014-10-28 22:43:36Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 22.43.34Z_1
+2014-10-28 22:43:36Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AR\TestSix.zip' to '': Successful
+2014-10-28 22:43:36Z	Removing file 'C:\Scripts\RetailLockBox\Download\AR\TestSix.zip': Successful
+2014-10-28 22:43:36Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\TestSix.zip
+2014-10-28 22:43:36Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

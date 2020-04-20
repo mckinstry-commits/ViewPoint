@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://setestviewpoint/ViewPointService/ContractService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" />
+  <xs:element name="getContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SubContractNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getContractResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="getContractResult" nillable="true" type="q1:ArrayOfSubcontract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLocations">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLocationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="getLocationsResult" nillable="true" type="q2:ArrayOfDocLocation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCompanies">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCompaniesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="getCompaniesResult" nillable="true" type="q3:ArrayOfCompany" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMasterContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VendorNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CompanyNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VendorGroup" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMasterContractResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="getMasterContractResult" nillable="true" type="q4:ArrayOfMasterContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSubcontractCOs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SubcontractNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CO" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSubcontractCOsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/McKinstry.ViewPoint.Data" minOccurs="0" name="getSubcontractCOsResult" nillable="true" type="q5:ArrayOfSubcontractCO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

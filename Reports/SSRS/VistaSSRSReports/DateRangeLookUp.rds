@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DateRangeLookUp">
+  <ConnectionProperties>
+    <Extension>XML</Extension>
+    <ConnectString>http://reporting.mckinstry.com/CustomReportingServices/DateRange.xml</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+  </ConnectionProperties>
+  <DataSourceID>5de041e3-7343-4d0f-99b4-d4f75fe60dc1</DataSourceID>
+</RptDataSource>

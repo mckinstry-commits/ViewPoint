@@ -1,0 +1,30 @@
+2014-06-05 13:42:56Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\
+2014-06-05 13:42:56Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140604.zip
+2014-06-05 13:42:56Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1
+2014-06-05 13:42:56Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1
+2014-06-05 13:42:57Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1\McKinstryRLBAP_20140604.csv
+2014-06-05 13:42:57Z	Environment: Server: VPSTAGINGAG\VIEWPOINT Database: Viewpoint
+2014-06-05 13:42:57Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-05 13:42:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1' to '\\setestconimg\Viewpoint\Company20\No Module\No Form Name\06-2014\': Successful
+2014-06-05 13:42:57Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-05 13:42:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1' to '\\setestconimg\Viewpoint\Company20\No Module\No Form Name\06-2014\': Successful
+2014-06-05 13:42:57Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-05 13:42:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1' to '\\setestconimg\Viewpoint\Company20\No Module\No Form Name\06-2014\': Successful
+2014-06-05 13:42:57Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-05 13:42:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\06-2014\': Successful
+2014-06-05 13:42:57Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-05 13:42:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\06-2014\': Successful
+2014-06-05 13:42:57Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-05 13:42:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1' to '\\setestconimg\Viewpoint\Company20\No Module\No Form Name\06-2014\': Successful
+2014-06-05 13:42:57Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-05 13:42:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1' to '\\setestconimg\Viewpoint\Company20\No Module\No Form Name\06-2014\': Successful
+2014-06-05 13:42:57Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-05 13:42:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1' to '\\setestconimg\Viewpoint\Company20\No Module\No Form Name\06-2014\': Successful
+2014-06-05 13:42:57Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-05 13:42:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\06-2014\': Successful
+2014-06-05 13:42:58Z	Upload record : Unsuccessful : Standalone attachment created.  Missing header parameters.
+2014-06-05 13:42:58Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1' to '\\setestconimg\Viewpoint\Company1\No Module\No Form Name\06-2014\': Successful
+2014-06-05 13:42:58Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1\McKinstryRLBAP_20140604.csv
+2014-06-05 13:42:58Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-06-05 13.42.56Z_1
+2014-06-05 13:42:58Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140604.zip
+2014-06-05 13:42:58Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\

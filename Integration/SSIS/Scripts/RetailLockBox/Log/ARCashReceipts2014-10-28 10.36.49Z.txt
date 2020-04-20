@@ -1,0 +1,13 @@
+2014-10-28 10:36:49Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\
+2014-10-28 10:36:49Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AR\Test.zip
+2014-10-28 10:36:49Z	Creating directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 10.36.49Z_1
+2014-10-28 10:36:49Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 10.36.49Z_1
+2014-10-28 10:36:50Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 10.36.49Z_1\Test.csv
+2014-10-28 10:36:50Z	Environment: Server: VIEWPOINTAG\VIEWPOINT Database: Viewpoint
+2014-10-28 10:36:50Z	Upload record , Batch ID  : Unsuccessful : No records created.  Missing attachment parameters.
+2014-10-28 10:36:50Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 10.36.49Z_1\Test.csv
+2014-10-28 10:36:51Z	Removing directory: C:\Scripts\RetailLockBox\Download\AR\2014-10-28 10.36.49Z_1
+2014-10-28 10:36:51Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AR\Test.zip' to '': Successful
+2014-10-28 10:36:51Z	Removing file 'C:\Scripts\RetailLockBox\Download\AR\Test.zip': Unsuccessful
+2014-10-28 10:36:51Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AR\Test.zip
+2014-10-28 10:36:51Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AR\

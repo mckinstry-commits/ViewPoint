@@ -1,0 +1,3 @@
+CREATE SCHEMA [Viewpoint]
+AUTHORIZATION [Viewpoint]
+GO

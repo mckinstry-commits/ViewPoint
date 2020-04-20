@@ -1,0 +1,40 @@
+CREATE TABLE [dbo].[bPORG]
+(
+[POCo] [dbo].[bCompany] NOT NULL,
+[Mth] [dbo].[bMonth] NOT NULL,
+[BatchId] [dbo].[bBatchID] NOT NULL,
+[GLCo] [dbo].[bCompany] NOT NULL,
+[GLAcct] [dbo].[bGLAcct] NOT NULL,
+[BatchSeq] [dbo].[bTrans] NOT NULL,
+[APLine] [smallint] NOT NULL CONSTRAINT [DF_bPORG_APLine] DEFAULT ((1)),
+[OldNew] [tinyint] NOT NULL,
+[POTrans] [smallint] NULL,
+[VendorGroup] [dbo].[bGroup] NOT NULL,
+[Vendor] [dbo].[bVendor] NOT NULL,
+[SortName] [varchar] (15) COLLATE Latin1_General_BIN NOT NULL,
+[POItemType] [tinyint] NULL,
+[Description] [dbo].[bDesc] NULL,
+[RecDate] [dbo].[bDate] NULL,
+[Receiver#] [varchar] (20) COLLATE Latin1_General_BIN NULL,
+[JCCo] [dbo].[bCompany] NULL,
+[Job] [dbo].[bJob] NULL,
+[PhaseGroup] [dbo].[bGroup] NULL,
+[Phase] [dbo].[bPhase] NULL,
+[JCCType] [dbo].[bJCCType] NULL,
+[EMCo] [dbo].[bCompany] NULL,
+[Equip] [dbo].[bEquip] NULL,
+[EMGroup] [dbo].[bGroup] NULL,
+[CostCode] [dbo].[bCostCode] NULL,
+[EMCType] [dbo].[bEMCType] NULL,
+[INCo] [dbo].[bCompany] NULL,
+[Loc] [dbo].[bLoc] NULL,
+[MatlGroup] [dbo].[bGroup] NULL,
+[Material] [dbo].[bMatl] NULL,
+[TotalCost] [dbo].[bDollar] NOT NULL,
+[PO] [varchar] (30) COLLATE Latin1_General_BIN NULL,
+[POItem] [dbo].[bItem] NULL,
+[POItemLine] [int] NULL
+) ON [PRIMARY]
+GO
+CREATE UNIQUE CLUSTERED INDEX [biPORG] ON [dbo].[bPORG] ([POCo], [Mth], [BatchId], [GLCo], [GLAcct], [BatchSeq], [APLine], [OldNew]) WITH (FILLFACTOR=90) ON [PRIMARY]
+GO

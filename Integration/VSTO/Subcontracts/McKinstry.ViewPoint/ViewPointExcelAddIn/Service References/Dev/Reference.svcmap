@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cb8db590-ecf4-4382-81b0-d4c542f0d3e6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address=" http://localhost:64312/UnionClassService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UnionClassService1.wsdl" MetadataType="Wsdl" ID="8ffd888a-d4ec-4d9c-818f-0aef6a536da8" SourceId="1" SourceUrl="http://localhost:64312/UnionClassService.svc?wsdl" />
+    <MetadataFile FileName="UnionClassService6.xsd" MetadataType="Schema" ID="ae8172ad-3930-4a34-abbb-a548091b279a" SourceId="1" SourceUrl="http://localhost:64312/UnionClassService.svc?xsd=xsd3" />
+    <MetadataFile FileName="UnionClassService61.xsd" MetadataType="Schema" ID="9a327a2c-7ca2-4bbb-a876-ba4b17ed69a5" SourceId="1" SourceUrl="http://localhost:64312/UnionClassService.svc?xsd=xsd2" />
+    <MetadataFile FileName="UnionClassService62.xsd" MetadataType="Schema" ID="e930b5b6-bd83-4b11-be78-90eb9f5bed1c" SourceId="1" SourceUrl="http://localhost:64312/UnionClassService.svc?xsd=xsd1" />
+    <MetadataFile FileName="UnionClassService63.xsd" MetadataType="Schema" ID="431b7248-5549-4fb1-9509-05c86cc18ed8" SourceId="1" SourceUrl="http://localhost:64312/UnionClassService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UnionClassService65.xsd" MetadataType="Schema" ID="3904af66-0d83-4697-afc4-6aa4dbc4c6d7" SourceId="1" SourceUrl="http://localhost:64312/UnionClassService.svc?xsd=xsd4" />
+    <MetadataFile FileName="UnionClassService1.disco" MetadataType="Disco" ID="953f0a34-0b17-4e03-bd4d-02544e67bd07" SourceId="1" SourceUrl="http://localhost:64312/UnionClassService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

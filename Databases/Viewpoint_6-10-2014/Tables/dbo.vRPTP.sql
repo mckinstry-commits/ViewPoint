@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[vRPTP]
+(
+[ReportID] [int] NOT NULL,
+[ViewName] [varchar] (60) COLLATE Latin1_General_BIN NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[vRPTP] ADD CONSTRAINT [PK_vRPTP] PRIMARY KEY CLUSTERED  ([ReportID], [ViewName]) ON [PRIMARY]
+GO

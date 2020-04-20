@@ -1,0 +1,2 @@
+CREATE APPLICATION ROLE [Viewpoint] WITH PASSWORD = 'p@ssw0rd', DEFAULT_SCHEMA = [Viewpoint]
+GO

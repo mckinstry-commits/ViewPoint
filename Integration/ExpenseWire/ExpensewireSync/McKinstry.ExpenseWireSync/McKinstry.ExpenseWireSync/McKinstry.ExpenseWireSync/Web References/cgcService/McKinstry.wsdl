@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://mckinstry.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://mckinstry.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://mckinstry.com/">
+      <s:element name="GetCGCDataByQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="queryString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCGCDataByQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCGCDataByQueryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addCGCDataByQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="queryString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addCGCDataByQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="addCGCDataByQueryResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCGCDataByQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:GetCGCDataByQuery" />
+  </wsdl:message>
+  <wsdl:message name="GetCGCDataByQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:GetCGCDataByQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="addCGCDataByQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:addCGCDataByQuery" />
+  </wsdl:message>
+  <wsdl:message name="addCGCDataByQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:addCGCDataByQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCGCDataByQueryHttpGetIn">
+    <wsdl:part name="queryString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCGCDataByQueryHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="addCGCDataByQueryHttpGetIn">
+    <wsdl:part name="queryString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="addCGCDataByQueryHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetCGCDataByQueryHttpPostIn">
+    <wsdl:part name="queryString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCGCDataByQueryHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="addCGCDataByQueryHttpPostIn">
+    <wsdl:part name="queryString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="addCGCDataByQueryHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:portType name="UtilitySoap">
+    <wsdl:operation name="GetCGCDataByQuery">
+      <wsdl:input message="tns:GetCGCDataByQuerySoapIn" />
+      <wsdl:output message="tns:GetCGCDataByQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addCGCDataByQuery">
+      <wsdl:input message="tns:addCGCDataByQuerySoapIn" />
+      <wsdl:output message="tns:addCGCDataByQuerySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="UtilityHttpGet">
+    <wsdl:operation name="GetCGCDataByQuery">
+      <wsdl:input message="tns:GetCGCDataByQueryHttpGetIn" />
+      <wsdl:output message="tns:GetCGCDataByQueryHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addCGCDataByQuery">
+      <wsdl:input message="tns:addCGCDataByQueryHttpGetIn" />
+      <wsdl:output message="tns:addCGCDataByQueryHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="UtilityHttpPost">
+    <wsdl:operation name="GetCGCDataByQuery">
+      <wsdl:input message="tns:GetCGCDataByQueryHttpPostIn" />
+      <wsdl:output message="tns:GetCGCDataByQueryHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addCGCDataByQuery">
+      <wsdl:input message="tns:addCGCDataByQueryHttpPostIn" />
+      <wsdl:output message="tns:addCGCDataByQueryHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UtilitySoap" type="tns:UtilitySoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCGCDataByQuery">
+      <soap:operation soapAction="http://mckinstry.com/GetCGCDataByQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCGCDataByQuery">
+      <soap:operation soapAction="http://mckinstry.com/addCGCDataByQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UtilitySoap12" type="tns:UtilitySoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCGCDataByQuery">
+      <soap12:operation soapAction="http://mckinstry.com/GetCGCDataByQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCGCDataByQuery">
+      <soap12:operation soapAction="http://mckinstry.com/addCGCDataByQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UtilityHttpGet" type="tns:UtilityHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetCGCDataByQuery">
+      <http:operation location="/GetCGCDataByQuery" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCGCDataByQuery">
+      <http:operation location="/addCGCDataByQuery" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UtilityHttpPost" type="tns:UtilityHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetCGCDataByQuery">
+      <http:operation location="/GetCGCDataByQuery" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCGCDataByQuery">
+      <http:operation location="/addCGCDataByQuery" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Utility">
+    <wsdl:port name="UtilitySoap" binding="tns:UtilitySoap">
+      <soap:address location="http://seapp02:81/McKinstry.CGC.WebServices/McKinstry.WebServices.Utility.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UtilitySoap12" binding="tns:UtilitySoap12">
+      <soap12:address location="http://seapp02:81/McKinstry.CGC.WebServices/McKinstry.WebServices.Utility.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UtilityHttpGet" binding="tns:UtilityHttpGet">
+      <http:address location="http://seapp02:81/McKinstry.CGC.WebServices/McKinstry.WebServices.Utility.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UtilityHttpPost" binding="tns:UtilityHttpPost">
+      <http:address location="http://seapp02:81/McKinstry.CGC.WebServices/McKinstry.WebServices.Utility.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

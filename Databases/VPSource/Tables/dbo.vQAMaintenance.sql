@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[vQAMaintenance]
+(
+[RecordNumber] [int] NOT NULL,
+[DateValue] [dbo].[bDate] NOT NULL CONSTRAINT [DF_vQAMaintenance_DateValue] DEFAULT ('7/1/2009'),
+[BatchId] [int] NOT NULL CONSTRAINT [DF_vQAMaintenance_BatchId] DEFAULT ((1)),
+[EventType] [int] NOT NULL,
+[Priority] [int] NOT NULL,
+[ShortText] [varchar] (20) COLLATE Latin1_General_BIN NULL CONSTRAINT [DF_vQAMaintenance_ShortText] DEFAULT ('<Default>'),
+[LongText] [varchar] (100) COLLATE Latin1_General_BIN NULL CONSTRAINT [DF_vQAMaintenance_LongText] DEFAULT ('<Default>'),
+[Employee] [int] NULL,
+[Vendor] [int] NULL,
+[PRCo] [dbo].[bCompany] NULL,
+[VendorGroup] [dbo].[bGroup] NULL,
+[Notes] [varchar] (max) COLLATE Latin1_General_BIN NULL,
+[TinyIntegerValue] [tinyint] NULL,
+[SmallIntegerValue] [smallint] NULL,
+[IntegerValue] [int] NULL,
+[DecimalValue] [decimal] (18, 0) NULL,
+[PercentageValue] [dbo].[bPct] NULL,
+[MonthValue] [dbo].[bMonth] NULL,
+[SecondDateValue] [dbo].[bDate] NULL,
+[SecondMonthValue] [dbo].[bMonth] NULL,
+[ECMField] [dbo].[bECM] NULL,
+[UnitsField] [dbo].[bUnits] NULL,
+[RateField] [dbo].[bRate] NULL,
+[YesOrNo] [dbo].[bYN] NULL,
+[WebURL] [varchar] (60) COLLATE Latin1_General_BIN NULL,
+[JobValue] [dbo].[bJob] NULL,
+[LocValue] [dbo].[bLoc] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

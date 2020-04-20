@@ -1,0 +1,30 @@
+*
+--------------------------- 10/31/2014 11:11:06 AM, Import results C:\Scripts\ViewpointVendorExport\VP_CAC_Vendor_Export.csv ---------------------------
+Import to vendors Successful
+*
+--------------------------- 10/31/2014 11:18:55 AM, Import results C:\Scripts\ViewpointVendorExport\VP_CAC_Vendor_Export.csv ---------------------------
+Import to vendors Successful
+*
+--------------------------- 10/31/2014 12:04:36 PM, Import results C:\Scripts\ViewpointVendorExport\VP_CAC_Vendor_Export.csv ---------------------------
+Cannot find file C:\Scripts\ViewpointVendorExport\VP_CAC_Vendor_Export.csv.
+*
+--------------------------- 10/31/2014 12:33:23 PM, Import results C:\Scripts\ViewpointVendorExport\VP_CAC_Vendor_Export.csv ---------------------------
+Import to vendors Successful
+Connecting to SMTP server...
+rsp: 220 SECASHUB01.mckinstry.com Microsoft ESMTP MAIL Service ready at Fri, 31 Oct 2014 12:33:58 -0700
+< 220 SECASHUB01.mckinstry.com Microsoft ESMTP MAIL Service ready at Fri, 31 Oct 2014 12:33:58 -0700
+RequestDone Rq=0 Error=0
+cmd: HELO CREATE-A-CHECK
+> HELO CREATE-A-CHECK
+rsp: 250 SECASHUB01.mckinstry.com Hello [172.16.5.100]
+< 250 SECASHUB01.mckinstry.com Hello [172.16.5.100]
+RequestDone Rq=1 Error=0
+cmd: MAIL FROM:<createacheck@mckinstry.com>
+> MAIL FROM:<createacheck@mckinstry.com>
+rsp: 421 4.4.2 Message submission rate for this client has exceeded the configured limit
+< 421 4.4.2 Message submission rate for this client has exceeded the configured limit
+RequestDone Rq=2 Error=421 4.4.2 Message submission rate for this client has exceeded the configured limit
+Error, stopped
+*
+--------------------------- 11/3/2014 5:00:04 AM, Import results C:\Scripts\ViewpointVendorExport\VP_CAC_Vendor_Export.csv ---------------------------
+Import to vendors Successful

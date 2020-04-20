@@ -1,0 +1,235 @@
+2014-09-16 13:18:50Z	Started import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\
+2014-09-16 13:18:50Z	Started processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140910EB.zip
+2014-09-16 13:18:50Z	Creating directory: C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1
+2014-09-16 13:18:50Z	Unpackaging zip files to directory: C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1
+2014-09-16 13:18:53Z	Started import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\McKinstryRLBAP_20140910EB.csv
+2014-09-16 13:18:53Z	Environment: Server: VIEWPOINTAG\VIEWPOINT Database: Viewpoint
+2014-09-16 13:18:54Z	Upload record 14239001: Unsuccessful : Standalone attachment created.  Error creating footer record.
+2014-09-16 13:18:54Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14239001.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:56Z	Upload record 14245001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:56Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245001.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:56Z	Upload record 14245002: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:56Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245002.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:56Z	Upload record 14245003: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:56Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245003.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:56Z	Upload record 14245004: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:56Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245004.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:56Z	Upload record 14245005: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245005.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:57Z	Upload record 14245006: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245006.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:57Z	Upload record 14245007: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245007.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:57Z	Upload record 14245008: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245008.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:57Z	Upload record 14245009: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245009.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:57Z	Upload record 14245010: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:57Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245010.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:58Z	Upload record 14245011: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:58Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245011.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:58Z	Upload record 14245012: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:58Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245012.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:58Z	Upload record 14245013: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:58Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245013.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:58Z	Upload record 14245014: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:58Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245014.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:58Z	Upload record 14245015: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:58Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245015.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:58Z	Upload record 14245016: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:58Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245016.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:58Z	Upload record 14245017: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:58Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245017.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:58Z	Upload record 14245018: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:59Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245018.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:59Z	Upload record 14245019: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:59Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245019.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:59Z	Upload record 14245020: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:59Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245020.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:59Z	Upload record 14245021: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:59Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245021.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:59Z	Upload record 14245022: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:59Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245022.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:59Z	Upload record 14245023: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:59Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245023.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:59Z	Upload record 14245024: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:59Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245024.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:18:59Z	Upload record 14245025: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:18:59Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245025.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:00Z	Upload record 14245026: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:00Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245026.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:00Z	Upload record 14245027: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:00Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245027.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:00Z	Upload record 14245028: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:00Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245028.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:00Z	Upload record 14245029: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:00Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245029.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:00Z	Upload record 14245030: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:00Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245030.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:00Z	Upload record 14245031: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:00Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245031.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:00Z	Upload record 14245032: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:00Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245032.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:00Z	Upload record 14245033: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:00Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245033.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:00Z	Upload record 14245034: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:00Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245034.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:01Z	Upload record 14245035: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:01Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245035.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:01Z	Upload record 14245036: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:01Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245036.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:01Z	Upload record 14245037: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:01Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245037.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:01Z	Upload record 14245038: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:01Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245038.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:01Z	Upload record 14245039: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:01Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14245039.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:01Z	Upload record 14239001: Unsuccessful : No records created.  Attachment exists.
+2014-09-16 13:19:01Z	Upload record 14245001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:01Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246002.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:02Z	Upload record 14245002: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:02Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246003.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Unsuccessful
+2014-09-16 13:19:02Z	Upload record 14245003: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:02Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246004.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:02Z	Upload record 14245004: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:02Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246005.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:02Z	Upload record 14245005: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:02Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246006.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:02Z	Upload record 14245006: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:02Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246007.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:02Z	Upload record 14245007: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:02Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246008.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:02Z	Upload record 14245008: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:02Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246009.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Unsuccessful
+2014-09-16 13:19:02Z	Upload record 14245009: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:02Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246010.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:03Z	Upload record 14245010: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:03Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246011.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Unsuccessful
+2014-09-16 13:19:03Z	Upload record 14245011: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:03Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246012.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:03Z	Upload record 14245012: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:03Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246013.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:03Z	Upload record 14245013: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:03Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246014.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:03Z	Upload record 14245014: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:03Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246015.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:03Z	Upload record 14245015: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:03Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246016.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:03Z	Upload record 14245016: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:03Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246017.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:03Z	Upload record 14245017: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:03Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246018.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:04Z	Upload record 14245018: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:04Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246019.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:04Z	Upload record 14245019: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:04Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246020.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:04Z	Upload record 14245020: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:04Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246021.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:04Z	Upload record 14245021: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:04Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246022.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:04Z	Upload record 14245022: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:04Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246023.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:04Z	Upload record 14245023: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:04Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246024.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:04Z	Upload record 14245024: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:04Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246025.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:04Z	Upload record 14245025: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:04Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246026.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:05Z	Upload record 14245026: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:05Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246027.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:05Z	Upload record 14245027: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:05Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246028.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:05Z	Upload record 14245028: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:05Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246029.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:05Z	Upload record 14245029: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:05Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\PO_222_14246030.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:05Z	Upload record 100131-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:05Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000017.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:05Z	Upload record 100132-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:05Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000018.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:05Z	Upload record 100133-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:05Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000020.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:06Z	Upload record 100134-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:06Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000019.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:06Z	Upload record 100135-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:06Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000021.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:06Z	Upload record 100136-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:06Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000022.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:06Z	Upload record 100137-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:06Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000024.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:06Z	Upload record 100138-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:06Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000025.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:06Z	Upload record 100139-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:06Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000026.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:06Z	Upload record 100140-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:06Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000027.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:06Z	Upload record 100141-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:06Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000141.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:06Z	Upload record 100142-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:06Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000142.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:07Z	Upload record 100143-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:07Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000143.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:07Z	Upload record 100144-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:07Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000144.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:07Z	Upload record 100145-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:07Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000145.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:07Z	Upload record 100146-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:07Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000146.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:07Z	Upload record 100147-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:07Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000147.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:07Z	Upload record 100148-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:07Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000148.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:07Z	Upload record 100149-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:07Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000149.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:07Z	Upload record 100150-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:07Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000150.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:07Z	Upload record 100151-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:07Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000151.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:08Z	Upload record 100152-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000152.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:08Z	Upload record 100153-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000153.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:08Z	Upload record 100154-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000154.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:08Z	Upload record 100155-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000155.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:08Z	Upload record 100156-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000156.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:08Z	Upload record 100157-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000157.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:08Z	Upload record 100158-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000158.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:08Z	Upload record 100159-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000159.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:08Z	Upload record 100160-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:08Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000160.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:08Z	Upload record 100161-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000161.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:09Z	Upload record 100162-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000162.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:09Z	Upload record 100163-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000163.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:09Z	Upload record 100164-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000164.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:09Z	Upload record 100165-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000165.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:09Z	Upload record 100166-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000166.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:09Z	Upload record 100167-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000167.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:09Z	Upload record 100168-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000168.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:09Z	Upload record 100169-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000169.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:09Z	Upload record 100170-002001: Successful : Header, Footer and Attachment records created successfully.
+2014-09-16 13:19:09Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000170.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:09Z	Upload record 100141-0020002: Unsuccessful : Standalone attachment created.  Missing footer parameters.
+2014-09-16 13:19:10Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000060.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:10Z	Upload record 100141-0020003: Unsuccessful : Standalone attachment created.  Missing footer parameters.
+2014-09-16 13:19:10Z	Copying file 'C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\Images\AP_201409090000061.pdf' to '\\setestconimg\Viewpoint\Company222\AP\APUnappInv\09-2014': Successful
+2014-09-16 13:19:10Z	Completed import for data file: C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1\McKinstryRLBAP_20140910EB.csv
+2014-09-16 13:19:10Z	Removing directory: C:\Scripts\RetailLockBox\Download\AP\2014-09-16 13.18.49Z_1
+2014-09-16 13:19:10Z	Archiving file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140910EB.zip' to '': Successful
+2014-09-16 13:19:10Z	Removing file 'C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140910EB.zip': Unsuccessful
+2014-09-16 13:19:10Z	Finished processing zip file: C:\Scripts\RetailLockBox\Download\AP\McKinstryRLBAP_20140910EB.zip
+2014-09-16 13:19:10Z	Completed import for data files in folder: C:\Scripts\RetailLockBox\Download\AP\

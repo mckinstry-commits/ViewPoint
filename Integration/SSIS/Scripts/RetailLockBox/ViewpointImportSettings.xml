@@ -1,0 +1,35 @@
+<Settings>
+  <Setting Name="AP Unapproved Invoice Settings"
+	UserAccount="MCKINSTRY\vpsvcacct"
+    DataFilePath="C:\Scripts\RetailLockBox\Download\AP\"
+    ArchiveFilePath="C:\Scripts\RetailLockBox\Archive\AP\"
+    Server="VIEWPOINTAG\VIEWPOINT"
+    Database="Viewpoint"
+	Module="AP"
+	Form="APUnappInv"
+	LogFileName="APUnappInv"
+	LogFilePath="C:\Scripts\RetailLockBox\Log\">
+  </Setting>
+  <Setting Name="AR Cash Receipts Settings"
+	UserAccount="MCKINSTRY\vpsvcacct"
+    DataFilePath="C:\Scripts\RetailLockBox\Download\AR\"
+    ArchiveFilePath="C:\Scripts\RetailLockBox\Archive\AR\"
+    Server="VIEWPOINTAG\VIEWPOINT"
+    Database="Viewpoint"
+	Module="AR"
+	Form="ARCashReceipts"
+	LogFileName="ARCashReceipts"
+	LogFilePath="C:\Scripts\RetailLockBox\Log\">
+  </Setting>
+  <Setting Name="ExpenseWire AP Entry Settings"
+    UserAccount="MCKINSTRY\vpsvcacct"
+    DataFilePath="C:\Scripts\RetailLockBox\Download\ExpenseWire\20140623\"
+    ArchiveFilePath="C:\Scripts\RetailLockBox\Archive\ExpenseWire\"
+    Server="VIEWPOINTAG\VIEWPOINT"
+    Database="Viewpoint"
+    Module="AP"
+    Form="APEntry"
+    LogFileName="APEntry"
+    LogFilePath="C:\Scripts\RetailLockBox\Log\">
+  </Setting>
+</Settings>

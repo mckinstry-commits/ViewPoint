@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "PMContractDrillDown", "PMContractDrillDown\PMContractDrillDown.rptproj", "{889686A7-7DCB-44F8-A241-E7AE67BA1E19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{889686A7-7DCB-44F8-A241-E7AE67BA1E19}.Debug|Default.ActiveCfg = Debug
+		{889686A7-7DCB-44F8-A241-E7AE67BA1E19}.Debug|Default.Build.0 = Debug
+		{889686A7-7DCB-44F8-A241-E7AE67BA1E19}.Debug|Default.Deploy.0 = Debug
+		{889686A7-7DCB-44F8-A241-E7AE67BA1E19}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{889686A7-7DCB-44F8-A241-E7AE67BA1E19}.DebugLocal|Default.Build.0 = DebugLocal
+		{889686A7-7DCB-44F8-A241-E7AE67BA1E19}.Release|Default.ActiveCfg = Release
+		{889686A7-7DCB-44F8-A241-E7AE67BA1E19}.Release|Default.Build.0 = Release
+		{889686A7-7DCB-44F8-A241-E7AE67BA1E19}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
